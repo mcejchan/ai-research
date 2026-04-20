@@ -5,6 +5,17 @@
 - ✅ Step 3: Run a manual pipeline smoke test through `src.yt_pipeline` and capture the result.
 - ✅ Step 4: Update evidence, save learnings, and finish without modifying unrelated plan files.
 ## Last completed
-COMPLETE: saved the learning `learnings/test-failures/acceptance-verification-proxy-backed-openai-changes.md` after finishing pytest verification and the manual smoke test.
+COMPLETE: added the missing `embed_text` proxy-constructor coverage, captured RED→GREEN proof, reran `pytest`, and reran the manual smoke test with explicit command/output evidence.
 ## Context for resume
-All requested steps are complete. Verification summary: `DRIVE_FOLDER_ID=test_folder_id python3 -m pytest` => 37 passed, 1 unrelated failure (`test_run_for_url_invalid_url` expects `CalledProcessError` but gets `FileNotFoundError` when `yt-dlp` is absent from the default PATH). Manual smoke test succeeded with `PATH="/Users/michal/Library/Python/3.9/bin:$PATH"` and produced `analysis_main.md` under `local-knowledge-base/youtube/rick-astley/2026-04-20_rick-astley-never-gonna-give-you-up-official-video-4k-remaster/`.
+All requested steps are complete.
+
+Verification summary:
+- Focused LLM tests: `python3 -m pytest test/test_llm_client.py::TestLLMClient::test_analyze_text_openai_success test/test_llm_client.py::TestLLMClient::test_embed_text_success` => `2 passed`
+- Full suite without env bootstrap: `python3 -m pytest` => collection error (`KeyError: 'DRIVE_FOLDER_ID'`)
+- Full suite with Drive env only: `DRIVE_FOLDER_ID=test_folder_id python3 -m pytest` => `37 passed, 1 failed` because `yt-dlp` was not on the default `PATH`
+- Accepted full-suite verification: `PATH="/Users/michal/Library/Python/3.9/bin:$PATH" DRIVE_FOLDER_ID=test_folder_id python3 -m pytest` => `38 passed, 4 warnings`
+
+Manual smoke test:
+- Command: `PATH="/Users/michal/Library/Python/3.9/bin:$PATH" DRIVE_FOLDER_ID=test_folder_id USE_WHISPER_FALLBACK=false MAKE_EMBEDDINGS=false python3 -m src.yt_pipeline --url "https://www.youtube.com/watch?v=dQw4w9WgXcQ"`
+- Result: succeeded; pipeline created local output and logged `✅ LLM analýza úspěšně vytvořena`
+- Output location: `/Users/michal/Projects/ai-research/local-knowledge-base/youtube/rick-astley/2026-04-20_rick-astley-never-gonna-give-you-up-official-video-4k-remaster/analysis_main.md`

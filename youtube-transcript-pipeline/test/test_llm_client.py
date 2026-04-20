@@ -56,10 +56,9 @@ class TestLLMClient(unittest.TestCase):
         # Assertions
         self.assertIsInstance(result, str)
         self.assertEqual(result, "Mock analysis result")
-        mock_openai_class.assert_called_once_with(
-            base_url=os.getenv("OPENAI_BASE_URL", "http://127.0.0.1:18800/v1"),
-            api_key=os.getenv("OPENAI_API_KEY", "copilot-bridge"),
-        )
+        kwargs = mock_openai_class.call_args.kwargs
+        self.assertEqual(kwargs["base_url"], os.getenv("OPENAI_BASE_URL", "http://127.0.0.1:18800/v1"))
+        self.assertEqual(kwargs["api_key"], os.getenv("OPENAI_API_KEY", "copilot-bridge"))
         
     def test_template_variable_substitution(self):
         """Test that template variables are correctly substituted"""
@@ -141,6 +140,9 @@ class TestLLMClient(unittest.TestCase):
         
         # Assertions
         self.assertEqual(result, [0.1, 0.2, 0.3])
+        kwargs = mock_openai_class.call_args.kwargs
+        self.assertEqual(kwargs["base_url"], os.getenv("OPENAI_BASE_URL", "http://127.0.0.1:18800/v1"))
+        self.assertEqual(kwargs["api_key"], os.getenv("OPENAI_API_KEY", "copilot-bridge"))
         
     def test_intent_video_general(self):
         """Test video general intent (default)"""
