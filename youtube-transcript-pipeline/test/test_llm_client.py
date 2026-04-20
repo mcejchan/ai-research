@@ -56,7 +56,10 @@ class TestLLMClient(unittest.TestCase):
         # Assertions
         self.assertIsInstance(result, str)
         self.assertEqual(result, "Mock analysis result")
-        mock_openai_class.assert_called_once_with(api_key=os.getenv("OPENAI_API_KEY"))
+        mock_openai_class.assert_called_once_with(
+            base_url=os.getenv("OPENAI_BASE_URL", "http://127.0.0.1:18800/v1"),
+            api_key=os.getenv("OPENAI_API_KEY", "copilot-bridge"),
+        )
         
     def test_template_variable_substitution(self):
         """Test that template variables are correctly substituted"""
