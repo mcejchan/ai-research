@@ -1,0 +1,17 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "permission": {
+    "external_directory": {
+      "~/Projects/ai-education/**": "allow",
+      "~/Projects/ai-research/**": "allow",
+      "/Users/michal/Projects/ai-education/**": "allow",
+      "/Users/michal/Projects/ai-research/**": "allow",
+      "~/.openclaw/workspace/**": "allow",
+      "~/.openclaw/**": "allow",
+      "/opt/homebrew/bin/**": "allow",
+      "/opt/homebrew/sbin/**": "allow",
+      "/tmp/**": "allow"
+    },
+    "question": "deny"
+  }
+}
