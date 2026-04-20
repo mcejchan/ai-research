@@ -1,3 +1,11 @@
+---
+title: "Anchor viewer follow-up plans in the live file and exact style source"
+date: 2026-04-20
+category: tooling
+component: frontend
+tags: [planning, frontend, viewer, css, source-of-truth]
+---
+
 # Plan viewer follow-up tasks by anchoring in the live file and external style source
 
 For a UI follow-up on an existing single-file viewer, the fastest useful plan came from reading the current target file and the external reference file before proposing any steps.
