@@ -59,6 +59,33 @@ class TestLLMClient(unittest.TestCase):
         kwargs = mock_openai_class.call_args.kwargs
         self.assertEqual(kwargs["base_url"], os.getenv("OPENAI_BASE_URL", "http://127.0.0.1:18800/v1"))
         self.assertEqual(kwargs["api_key"], os.getenv("OPENAI_API_KEY", "copilot-bridge"))
+
+    @patch('src.llm_client.OpenAI')
+    def test_analyze_text_uses_llm_model_env_and_default(self, mock_openai_class):
+        """Test that analyze_text uses env-selected and default chat models"""
+        mock_client = MockOpenAI(response_content="Model-aware analysis")
+        mock_openai_class.return_value = mock_client
+
+        scenarios = [
+            ({"LLM_MODEL": "gpt-4.1"}, "gpt-4.1"),
+            ({}, "gpt-4o"),
+        ]
+
+        for env_updates, expected_model in scenarios:
+            with self.subTest(expected_model=expected_model):
+                with patch.dict(os.environ, env_updates, clear=False):
+                    if "LLM_MODEL" not in env_updates:
+                        os.environ.pop("LLM_MODEL", None)
+
+                    analyze_text(
+                        transcript=self.test_text,
+                        intent="video_general",
+                        lang="cs",
+                        extra_context=self.test_extra_context,
+                    )
+
+                call_kwargs = mock_client.chat.completions.create.call_args.kwargs
+                self.assertEqual(call_kwargs["model"], expected_model)
         
     def test_template_variable_substitution(self):
         """Test that template variables are correctly substituted"""

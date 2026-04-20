@@ -119,7 +119,7 @@ def analyze_text(transcript: str, intent: str, lang: str, extra_context: Dict) -
                        .replace("{{url}}", extra_context.get("url","")) + "\n\n" + transcript
     
     resp = client.chat.completions.create(
-        model="gpt-4o-mini",
+        model=os.getenv("LLM_MODEL", "gpt-4o"),
         messages=[{"role":"system","content": system}, {"role":"user","content": content}],
         temperature=0.2,
         max_tokens=15000,  # Využít maximum modelu pro dlouhé výstupy

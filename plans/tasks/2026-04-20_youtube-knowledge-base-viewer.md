@@ -67,3 +67,8 @@ curl -s -o /dev/null -w "%{http_code}" http://localhost:4001/
 - Modify anything in ai-education project
 - Modify the knowledge-base data files
 - Use frameworks (React, Vue etc.) — vanilla JS only
+
+## Previous Plan (rejected - attempt 1)
+Plan file: /Users/michal/Projects/ai-research/plans/2026-04-20_bright-vale-3672_youtube-knowledge-base-viewer.md
+Review feedback: The plan content is missing—without any implementation details it cannot be judged for simplicity or alignment, and key requirements are silently omitted.
+Read the previous plan, understand what was wrong, and produce a corrected plan.

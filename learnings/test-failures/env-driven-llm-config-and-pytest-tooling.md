@@ -1,3 +1,11 @@
+---
+title: "Test env-driven LLM config directly, and separate tooling failures from product regressions"
+date: 2026-04-20
+category: test-failures
+component: tooling
+tags: [llm, openai, pytest, environment, configuration]
+---
+
 # Test env-driven LLM config directly, and separate tooling failures from product regressions
 
 For `youtube-transcript-pipeline/src/llm_client.py`, a model switch from a hardcoded value to `os.getenv("LLM_MODEL", "gpt-4o")` should be validated at the request callsite, not indirectly.
