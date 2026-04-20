@@ -1,3 +1,12 @@
+---
+title: "Keep config-only LLM plans anchored in code and tests"
+date: 2026-04-20
+category: tooling
+component: tooling
+tags: [planning, llm, pytest, env-config]
+file_type: rules
+---
+
 # Keep config-only LLM plans anchored in code and tests
 
 When a task looks like a one-line configuration change in `src/llm_client.py`, the plan still needs to read the adjacent tests before deciding scope.
