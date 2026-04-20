@@ -103,7 +103,10 @@ INSTRUCTIONS:
 }
 
 def analyze_text(transcript: str, intent: str, lang: str, extra_context: Dict) -> str:
-    client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+    client = OpenAI(
+        base_url=os.getenv("OPENAI_BASE_URL", "http://127.0.0.1:18800/v1"),
+        api_key=os.getenv("OPENAI_API_KEY", "copilot-bridge"),
+    )
     
     # Use English prompt for English content to avoid translation bias
     prompt_lang = "en" if transcript.strip().startswith(('I', 'We', 'You', 'The', 'This', 'That')) else lang
@@ -125,7 +128,10 @@ def analyze_text(transcript: str, intent: str, lang: str, extra_context: Dict) -
 
 
 def embed_text(text: str):
-    client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+    client = OpenAI(
+        base_url=os.getenv("OPENAI_BASE_URL", "http://127.0.0.1:18800/v1"),
+        api_key=os.getenv("OPENAI_API_KEY", "copilot-bridge"),
+    )
     return client.embeddings.create(
         model=os.getenv("OPENAI_EMBEDDING_MODEL", "text-embedding-3-large"), 
         input=text
