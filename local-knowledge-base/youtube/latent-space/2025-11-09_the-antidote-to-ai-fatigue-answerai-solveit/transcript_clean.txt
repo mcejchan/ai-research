@@ -1,0 +1,467 @@
+Hey everyone, welcome back to the lid in space podcast.
+This is Allesio, founder of Colonels and today I'm joined by the answer gang, Jeremy, Eric, Jono.
+Welcome guys. >> Thank you.
+Hello. >> Thank you very much.
+Nice to be here. >> Jeremy's on number four now.
+He he going to be busy like a co-host at this point that you've been obviously a fan favorite.
+Um Eric and Jon Jonah, I think a lot of people met you at different events.
+I know you were at IEL this year. where you were in Europe a couple years ago in New Orleans.
+Eric, obviously people, you know, have known you.
+I don't think there's many people in the Bay Area or at least that are in the startup world that have not heard about you.
+So, we will not do the usual formal introductions, but um Eric and Jeremy, you guys started now almost two years ago.
+I remember we were doing legal for the term sheet over Thanksgiving.
+I was in Wisconsin and they didn't understand that you worked after 5 p.m.
+Let's give people an update on how you got here and we'll talk about some of the exciting stuff you work with with solve it and but I think there's maybe a question of why did it make sense to build solit and so let's start let's do the quick what did you start answer which we did a you know a good amount of content in the past and then what was the idea maze that got you to solve it and what is solve it a tool for in your mind >> she started Eric that's it >> gosh I can't believe we're two years in already yeah you know Jeremy and I have been talking about what to do with AI for a long time and how it is that we could maximize the probability that AI is used for useful stuff and we just felt like there were a series of research and product directions that weren't being explored in the gold rush over over AI and the and the eagerness of people to get to AGI and we you know had this idea that we could we could build a really different kind of AI company as I think we talked about in the last uh in the last podcast you know we were inspired very much by the Edison labs and the advent of electricity where which which is like a bit of a throwback to an older time where research and development were not seen as two independent separate fields but rather one integrated process and we wanted to see like could we really push the envelope what kind of team could we build if we took the thesis of AI's transformative potential seriously and we both know and I know you do too many many many AI labs whose rhetoric about the power and transformative potential of AI is unmatched but whose actual behavior is relatively conventional.
+It's still organized as a relatively conventional company using relatively conventional techniques.
+And we thought that doesn't really make sense.
+We ought to be able to see what is possible if we treat AI tooling as a kind of a ability to create superhumanly productive people.
+How many how many of those people would you really need in order to create something really transformational? And then of course we also really believe in you know the MVP iterative development approach.
+So rather than try to build one massive super application, our idea was to try to in parallel explore many different possible domains where there was uh a new way of you finding something useful to do with AI.
+And you we can talk a lot about the philosophy of it and how it led to solve it.
+But like very broadly speaking the idea is to have really do AI with human in the loop.
+Not just as like a check to make sure the AI is doing the right thing, but really the AI that the human is the agent driving the process end to end.
+And we have found that that basic idea of breaking problems down into subpros.
+Really making sure that as the human operator you understand each of the step steps and substeps of the thing that you're doing has allowed us to be just ridiculously productive in a wide range of applications which I'm sure we'll we'll talk about and yeah so that's you know so we're two years in.
+I can still remember exactly where I was.
+You I remember the term sheet negotiation we were having over Thanksg I remember certain seminal moments and I can remember where I was when Jeremy told me by the way he doesn't think the company will ever need more than 12 employees and I was like oh sure you mean like this month you know but he's like no over its entire life and I think that's also been really transformational is just by by creating an artificial constraint at the beginning forcing ourselves to really try to find truly exceptional multid-disiplinary people who can go deep into many many many different topics who are true generalists and who really believe in the mission of using AI in the way that Jeremy has has advocated for this like humanistic approach to AI.
+I've just been shocked at how much we've been able to get done even as someone who spends a lot of time around very very productive startups this is at a whole different level.
+I mean to give a sense of that we've this group of which has averaged about 10 to 12 people currently nine I think have built a pretty transformational and complex uh piece of software which we can do a quick demo of later if you're interested using a complete web application development platform we built inhouse uh using a styling system we built in that house deployed to a new deployment platform we built inhouse doing all the DevOps and CIS admin and everything using our own tools that we built in-house.
+No AWS, no Google Cloud, whatever.
+We've built our own fully integrated professional services firm providing legal accounting, bookkeeping.
+They're all using Solver, by the way.
+They're all using our AI and we were their first client.
+So, all of our back office, everything is being done by a complete system developed inhouse.
+Yeah, that's pretty unusual for a company I think with thousands of people that's operated for some decades and so it is a really core level of productivity to have. >> Yeah.
+You know, I was I interviewed um Dylan Field from Figma yesterday. >> Oh, great. >> And one thing we were talking about is like how do you have software is like one a way to limit the projection of your ideas into the laten space, you know? So like how do you like take away a lot of that mental complexity and then on the other way is like there's so much into the model like it's it's almost overwhelming to get it all back you know and so how do you build these experiences and in their case it's like how do you explore you know different designs and like what's possible and what comes back and what goes in and in your case it's almost like if there's you know billions of economic value in the latent space of the model it's like what's the tool through which you expand that back from you know training is compression and so what you're doing is almost like expansion right you're like trying to turn that back into like valuable things so yeah how did you get to this approach were there like other interesting approaches that you tried uh that didn't work like what were maybe the core tenants so I think just you know this is the first time we're having the in-depth conversation but based on what I've seen one is stepby-step explanability that's like branchable you know so there's kind of like the main task and then there's like explaining and understanding ing each piece of it.
+Was that there from the beginning or is that something that you came up after? And then you know the handoff between AI and human when it comes to like writing code for example and like uh you know I'm sure also Eric you've been writing your book using it.
+So even though it's not code you're still writing some sort of artifact.
+Yeah.
+Maybe you talk people through the different patterns that you've been through. >> Yeah.
+So Allesio it's it's funny.
+Turns out that Eric and I have both spent some decades building up the same ideas and trying to convince other people of them in quite different areas.
+But the idea in both cases is basically do things in as small iterative steps as you can get as immediate and accurate feedback as you can and go on to the next step.
+And Eric studied this as a concept much more than I have and documented it in his previous books, you know, and it and it does go back to the the UDO loop of, you know, aerial dog fighting and the Toyota production system from decades ago and so forth.
+It's certainly not something actually that we've come up with from scratch or at least like it's we're kind of rediscovering things other people have discovered.
+So I've spent years trying to embed that idea into software development and again I wouldn't say I'm doing anything that new there.
+Steven Wolfram certainly has been doing that for decades with Mathematica.
+So this idea of doing it at every level of the organization and everything we do.
+So so when our lawyers now work on contracts they're doing that same thing small steps you know.
+And what was the interesting discovery here was that when we built a platform that allows an AI to see all of those steps and to contribute to those steps, you get all of those benefits of lean startup, Uber, you know, UDA, NVDE, whatever, multiplied by the capabilities of an LLM.
+And then you add agent pieces.
+So one of the really interesting things we've done is we've made it easier to add tools to the LLM than anything exists in the world.
+Literally any Python function that you put right there in that system.
+It's immediately a tool.
+And it's extraordinary what happens when you write a threeline function that can call GP or RG or whatever.
+And then you say like hey LLM, you now have access to this tool. you know, go figure out why this pi module I downloaded is broken and suddenly it zips off.
+So, yeah, I think the idea is basically an expression of um what we had both been working on for years.
+Does that sound right, Eric? >> Yeah.
+And I also would say that there's a bit of a return to like the general purpose computer in this that I didn't even really appreciate.
+I a lot of people of our generation, you know, we started out programming computers like when the dominant platform was like a PC that was relatively hackable.
+So it was like the idea that that a computer is something that you can kind of program and reprogram was a very natural part of what it means to be a computer.
+As we've moved both to more consumer level devices that are not they're closed systems also as we've moved infrastructure into the cloud we now very often we are interfacing with general purpose computers mediated through layers upon layers upon layers of interface which sometimes are designed for composability and reusability but quite often really aren't.
+They're about having a defined workflow and keeping everybody in their lane.
+And I I I don't mean to criticize those products.
+They've been extremely helpful and useful in a lot of situations, but it's been really interesting because because having access to LM in a kind of a native way makes a lot of the safeguards and kind of like handholding that those systems provide less needed.
+It's been really interesting to just combine, you know, like this kind of LLM style intelligence with the general purpose computer that's just always on and available to you and mix them together.
+And it's kind of to me it's felt a little bit like hacking felt like in the early days of learning to program.
+There's just been so many times when, you know, I want to solve a problem and as you say, I I've lately been mostly using the product to write pros, not code.
+But even like to have a bunch of data from a research report, you know, in a CSV file and be able to just like instead of having to go somewhere else, figure out what to do with that, think about it, bring it back, and just just add that to the canvas directly, be able to access it programmatically, and then to pull that information directly into the writing process.
+It's just created a much more natural flow for a really wide range of tasks that I have found very surprising, very interesting. >> Just to explain the the general purpose computer thing, you know, one of the things we really tried with solver is to make it as easy to use as chat GPT.
+And so you can just you can just start a chat.
+You can start chatting.
+But behind the scenes, we've actually launched a persistent Linux Docker container for you and attached it to a unique URL for you.
+And so you actually now have your own computer.
+It's basically a VPS that you're that you're now running this in.
+And so you can install software and create servers.
+And so, for example, one of our team created this really cool thing called Discord buddy, which is kind of like takes some of the things we learned from Solit, puts it into Discord.
+Um, can show you later if you're interested.
+That's actually running.
+It's a server.
+It's just running in a solvent instance.
+It never got deployed anywhere.
+And so this is this really cool thing where we're we're we're giving folks this ability to fully harness a computer that they can instantly spin up and learn about with the help of AI and with the help of experiments and with the help of iterations.
+And they're not limited by what SAS APIs you have. and you don't have sudden horrifying bills because accidentally you ran a big query thing over 5 terabytes of data and it ran it across every row or something.
+It's it's all, you know, it's affordable and and convenient and it's more like having a 1990s shell account.
+This might be a bit before your time, Alyssio, you know, where you upload a PHP file to it and instantly anybody in the world can start playing with your program. >> Yeah.
+Well, yeah.
+In my age, it was already FTP.
+You'll get Fzilla and like some server and then just dump things into it. >> There you go. >> Um, yeah, maybe let's just do a >> Yeah, let's start from a demo, I think, like give people >> Okay.
+Sure. >> through just what it looks like and then we can kind of talk through the different pieces of it. >> So, yeah, I mean, basically when you start, you can just create a chat or load up an existing chat.
+We call them dialogues.
+And you'll remember Allesio, we we told you guys about dialogue engineering before this idea of context engineering existed.
+So that was actually first discussed uh on your podcast.
+So dialogue engineering actually goes a lot >> as usual.
+As usual, >> it actually goes a lot further than what most people think of as context engineering.
+But yeah, I can start typing.
+Um, hi.
+Can you tell me something about the latent space and uh, you know, we're we're chatting and so it's it has gone and done some searches.
+So, these links are going to be, you know, to more information. >> Look at that.
+Jeremy Howard, Chris Latner.
+That's a great bunch of guests.
+Cool. >> That's a That's a good duo right there. >> Chris Latner.
+Yeah, pretty impressive lineup. >> I see.
+Um, so you know, like you can treat it just like chat GPT. >> And so like how should people think about these though? Like do you call them chats? Do you call them >> these are dialogues? Like >> is the name of each? >> Yeah.
+Exactly right. >> Like a conversation plus the VPS plus the tools. >> Yeah.
+So this is this is a discord this is a docker instance running here.
+Um and so I can I can name this.
+So this is my latent space.
+If I um you know you can see I've got a this kind of unique URL that's been created.
+And if I go over there you'll see here you go.
+I've got a running latent space.
+So kernel is the thing behind the scenes that's running the dialogue.
+And you know where it gets interesting is um you know I can I can change the the answers even to to redirect things any way I want.
+Right? So for example here I could change this and say did you mean the actor or the data scientist and now I'm actually changing answer um and this is very important because as I'm sure you know Allesio the the auto reggressive nature of language models means that if they make a mistake and you correct it and then say no that was a mistake please do it this way instead.
+The more often you do that, the worse the dialogue answers get because it's in the training data when it seen mistakes, it tends to be followed by more mistakes.
+So this way you can continually guide it by actually changing its answers, right? And this is one of the pieces with a lot of existing chat things that drives me a little crazy now that I've seen the difference.
+Like the fact that you can't go back and remove messages, shift the order, change the responses, edit the history.
+Your only options are like, "Oh, this context is getting polluted.
+I have to start a brand new clean slate." Yeah.
+That very immediately feels like such a waste to throw all of that useful context away just because you've gone off the rails in one piece. >> Yeah.
+And then you can um add um notes which is markdown messages.
+So here's our um you know about the podcast section.
+And so then I could add a loading insolvent section.
+And so just like you can treat it like it's chat GPT, you could also treat it like it's a Jupyter notebook.
+So instead of being in prompt mode, I'll switch it to code mode and I'll say uh you know print I'll say like a = 1 b= 0 a over b.
+Um that's like and now a key thing about this dialogue and a key fundamental thing of like basically all the AI work we do now is we realized the AI must be able to see everything that we can see exactly like like we see it and vice versa.
+We need to be able to see everything that the AI can see.
+So here I can say like damn I broke something.
+Please tell me what went wrong here.
+And one of the other unique things we do is we have these modes you can choose.
+And in learning mode, it's going to do everything it can to try to make sure that I'm solving my own problems.
+It's teaching me things in really small steps.
+It's using all the best information we've learned about how to how to teach the best.
+We can also ask it to use thinking mode.
+So, it's going to use reasoning.
+Um, so it's having a good old think there.
+And so you can see here it's not going ahead and giving me pages and pages of code to say like here's everything you need to know but it's like very small steps.
+Would you like to see how to handle this situation in your code? What models are you guys using for this? >> We're using anthropic models.
+Um but we're not just using system prompts.
+We've got a whole kind of different system for how we get it to work the way we want it to.
+Actually actually here's a here's an interesting thing.
+Now by having it go in these small steps and being you know we we it gives us bits of code and we can now immediately run that code.
+So I can hit a button and it pulls the code out.
+You see so by kind of having this integrated prompts and code all in the one place I can immediately run it and then I can say like it's very interactive.
+You can see.
+So we've we've seen a lot of folks using this.
+I'm actually give you a sense.
+It's like it so we we kind of had to do this test run OSO where we we thought like this has been so useful for us.
+I suspect other people are going to like this as well.
+So we decided to just let a few people try it.
+And we opened up along with a course this kind of preview a year ago when we opened it up and we said okay does anybody else want to try this idea and we're going to teach you a bit about it and within 24 hours we had a thousand signups.
+So we immediately shut it down and so we just did a thousand people a year ago and we actually have it's amazing we have this like list now of hundreds and hundreds and hundreds and hundreds of bits of feedback from those first thousand people you know everything from a professor of English to a college student to a psychiatrist to a 15 years of experience AI engineer um and I think they they're interesting to analyze to see what people got out of it.
+Right? So the professor of English noted it provides a hedge against AI tools that totally replace the human creator comes out of a deep philosophy of AI that fits with a deep commitment to craft and attention to detail which hopefully you kind of get right this idea that you do things in small steps and you're trying to learn from it.
+You're trying to do small pieces. um you know this guy's an EVP so he's kind of helping realize he can use this to help the developers in organization and in fact uh one of the alumni kind of created a showcase of projects that were developed during the course by students again this is from just the number of people that signed up within 24 hours and in fact he built this whole page using solve it so he's got this description here of how he >> built the whole thing using the stuff that he learned in our course. >> Yeah.
+So that's a very quick um overview of what's >> you feel this you know there's a lot of talk about you know more user generated software and kind of like everything moving more towards personal tools to help you versus like building these kind of like SAS tools that try to help everybody and that maybe it doesn't quite fit what you do.
+How do you think about that? It's like, you know, if I had solve it, like, you know, Eric probably is not going to buy another word processing thing for writers.
+You know, he might just keep using solve it.
+And then, you know, you do this for learning Python and then you kind of play out.
+I know Jono, you love plants and so I'm sure there's going to be a smaller even smaller market now for like plant analysis apps, you know, because you can just kind of do it yourself.
+Is that kind of the feeling that people should have? Because I feel like in a way the the name almost it's so broad.
+It's like solve it.
+It's like it is like the it all all of it, you know? How how do you think about what that people should do with it today and maybe like the vision that you have for it overall is like the impact that it should have on people's work and life that it's not working. >> I'll take it because I you know uh people I get asked quite frequently about how I use AI.
+You know, it's like a very common question I get from other writers and also from founders, you know, are you using it? Are you not using it? And I've actually had to be a little bit careful what I say because as a as a writer, it's made me really productive.
+But as soon as I tell people that, they're like, "Oh my god, you're letting the AI write for you." You know, it's really scary.
+It's like, "No. Oh no, you cannot let the AI write for you." Okay, just super disclaimer.
+You cannot let the you will wind up with slop just like everybody else winds up with.
+That that is not helpful.
+But you don't appreciate until you have the right affordances around you like how much crap there is in almost every workflow. >> Would it help to show Eric to give a sense of how you >> do you want to see a demo? I'm happy happy to show like um >> and I want to make sure we got to hear from Jonno as well because uh you know I think he's got interesting ideas. >> Maybe Jonno's demo would be better to do next if you want to do a demo. >> Yeah, sure.
+I mean I was just thinking about the you know plants you know Jono I'd love to hear your thoughts about about what about Leio's question and then how you analy let me answer the question just because your what it's done for me is it has changed my perspective on what is an app in a in like a very profound way because like I there's like a huge range of problems that I would never even if an app for solving that problem existed I would never feel like it's worth it to download an app build download app install integ created my workflow.
+It's like look, I need to use the default tools.
+I'm too busy.
+I can't be learning a new thing.
+And it's just like I I have very narrow view of it.
+And yet, just by building up really bit by bit what I've needed just for the writing tasks that I have, I now have basically a completely custom piece of software that is highly tuned to the kinds of writing tasks that I've been doing with the new book.
+So Jonno, maybe you can give some some demos of just like how these applications come together because I think it changes our idea about what is an application in the first place. >> Definitely.
+And Alysia, I thought it was funny that you said that like one of the tabs that was open but that I wasn't planning on showing was feeding some pictures of plants to AI as a a sort of mini eval. >> Yeah, I guess you're right that the the sort of just in time software spinning up custom pieces.
+It's solve it and and AI more broadly.
+It just feels like such a potent piece for people.
+So, this was a thing.
+There's a a fumery, a perfume shop I walked past and I just read Gu's post about avantgard perfume, right? So, if you wanted to learn if there's a perfume that smells like wet asphalt, I wanted to make a little like search for the the scents and um like obviously perfume people will be yelling at the screens because these are like text descriptions of like very ephemeral pieces, but I can show you what it took to make that.
+And it's we're not talking about like a multi-week, you know, multi-person endeavor.
+It's like an hour or so of fiddling around.
+And I I I did this as a a demo kind of role playing someone who's a bit more of a beginner.
+And but you'll see like I'm in this document, this dialogue.
+I'm laying out like this is kind of what I want to do.
+I want to get some smells and embed them and search them.
+I'm picking up some data.
+And then the AI here is very much like it's in it's in the learning mode.
+It's kind of the default we leave it in.
+And it's only ever suggesting very little pieces like, oh, here's how you might get rid of all of the excess HTML.
+Okay, beautiful soup.
+That's a fine idea.
+Um and so then I'm if I'm on the message, I hit that key.
+I have the code that the AI suggests and I try >> the reason for this is like we want to make sure at the end of building something two things have happened.
+The first is you understand every line of code fully why it's there what it does and that you've learned from the process.
+So at the end of this process, you're a better developer or scent analyst or whatever than you were when you started, which is very different to vibe coding, which is maybe also has its place where it's like, no, I just want to get the artifact out as fast as possible.
+It's a one-off and I'm done, you know, whereas most of the work we do, we want to improve our capabilities as human beings, you know, and and build an artifact that we can continue to work on. >> Yeah.
+And um it's also like this this task is is small enough that you could almost do this.
+I think you could give this to an agent today and it could quite confidently build you a a smell search engine except that there's pieces like so here for example I gave it the um I gave it the the docs from Gemini.
+Uh here's the the Google Gemini embeddings info just so that it had that in context and then I asked it for the code to to get the embeddings of some text and it gave me the snippet which I split up and ran.
+Um but then you'll see like it's calling um it wants to show result.0 getting zero and there's an error and so you could imagine like I ship this off to an agent it does all of that and then at the end of the whole process when it's written everything you try and run it and you get the error and now you have to do the loop of okay can we fix this whereas here because everything's live you can see what does result look like oh it's actually something that has a dot values where the actual numbers are so I don't know the the like collaboration of I'm in this environment the AI is in this environment when there's a an error that crops up you can inspect the output immediately I can see how to fix it if I wanted instead like I could just ask the AI you know >> and the AI and here like instead of like in claude code or codeex and store something it's generally going to have to guess at what went wrong whereas here you or it can immediately add a message to check exactly what's there in this dynamic environment and immediately fix it.
+So it's a very efficient software engineering process. >> And how sorry how far can the branches so to speak go? So, could I respond to the assistant there and kind of just keep traversing down a conversation fixing the error and then go back to the main? >> I'm just curious like how you can dump it all in a collapsible heading section for example, you know, kind of go down rabbit holes or delete them when you're done or keep them.
+There's a lot of flexibility. >> Yeah.
+And and curating the context.
+I know people are coming around to this idea now that that's really important but but this takes takes that context curation to a whole different level and one of the things that it's made me very very aware of just as a user of the tool is how the attention mechanism works like you you start to get good at directing the full model's attention to the thing you really want it to be focused on in the moment of what you're working on and and avoiding avoiding it getting distracted.
+And what's it's just so interesting to me how similar that is to human distraction, you know, like no matter how intelligent you are, if you spread that intelligence over too wide of a surface area, it's really hard to focus.
+It's hard to to make progress.
+And so it's like >> this interface thing is cool, too.
+Eric, I think you might definitely get Janna to show this. >> Yeah.
+So, um, like Alisa, you could see, I kind of just collapse away my my rabbit hole or, you know, I can delete those messages if it's too far of a a thing.
+But it it makes it really um effortless.
+I think the goal is to encourage people like, "Oh, okay.
+Hey, I need this this measurement.
+What is cosine similarity? If I want, I can go and have that chat.
+I don't have to start a separate chat and load in, hey, I'm working on this problem and I would like to learn about cosine similarity.
+Like, it's all there and ready.
+And then you can scrap it all or keep it there for reference depending on what you want.
+And then, yeah, I think that that Jeremy likes.
+So, here I wanted to make the actual little search widget.
+And this part is something that I I'm actually very familiar with, but I also imagine like it's very tangential to I would like to search embeddings.
+I just want to get some UI up.
+And so I told it like, hey, go figure out how to show the results of the search in a nice way.
+Um, and then it designs a little card and I get the live preview of exactly what that looks like.
+So you can see why here having this ripple in a browser is another unique kind of capability. you know, you can build a web app or a report or a graph or whatever interactively and the back and forth the answers it's all there, right? So, he's creating a web component and he's now got a clickable usable web component right there.
+Yeah.
+So, it's all it's all live.
+It's very easy to share this result.
+Like this is just at a a URL route and there's a public URL for all the solvent instances.
+But yeah, just having the like back and forth of again you're not starting a new context to say now let me build a UI for this and not knowing what this is and having to explain it.
+It can see we're doing search.
+We're getting five results.
+So we should probably make a search route that returns the results and we have our search function that we've already written.
+So all of the pieces, even though by this stage in the dialogue, I was kind of just like relying on the AI to do the actual writing of the pieces of code, there's still pieces of code that very much fit in my head and can be immediately tested, right? I can immediately preview that and then make a new page and and open it in the fulls size app.
+There's no um skipping out to some new context.
+So the the fact that it all fits in my head and it also all fits in the AI's head because this dialogue is the context that it's seeing you know rabbit holes and all if I want to include those um from the start where we've got the like initial quotequote prompt for me and the AI this is what we want to do we're going to embed some things and then make an interface.
+So it's very satisfying >> because it's your own. >> Yeah, because it's your own virtual server that's running.
+You don't have to deploy it somewhere.
+It's like literally the thing that's running inside that dialogue.
+You can view it and interact with it.
+And so like our our legal team for example do a very similar thing with with contracts where they have, you know, they're going paragraph by paragraph.
+The AI can see exactly which paragraph you're currently reading.
+You can refer, you know, you can say like, hey, what if we did this or what if we did that? Or like, can you check out the Delaware Channel story records to see how they would respond to this? And then gradually build up, you know, this this other kind of artifact, which is a contract or, you know, and of course in Eric's case, I mean, one of the interesting ones for Eric is he's been going through all this feedback from his trial readers in a similar way, right, Eric? >> Yeah.
+Yeah.
+Yeah.
+Um what I was just also thinking about um fact-checking you know fact-checking a long document is still well outside the capabilities of most AI systems because you know for the attention reasons but if you're working in sections it's really easy to be like while I'm here just do you mind doing a quick fact check make sure everything in here is is accurate.
+So, I'm happy to demo that if you want along with the test reader comments if that's >> Yeah.
+Yeah, that would be fun. >> Who knows what? Hold on.
+Let me make sure I have the right tab.
+Give me one second. >> Don't spoil the ending. >> Well, I'm like I'm like, what is actually going to come up here? Okay.
+So, all right.
+So, here.
+Can you see that? All right.
+So, I am working on chapter 11.
+So, hi everybody.
+I'm working on a new book.
+It's not announced yet, so don't don't look too too closely at what this is, but the book is called The Incorruptible.
+It'll come out next year.
+And I have some kind of system prompt like stuff like here's a list of this is a Wikipedia list of AIES things to avoid because I found test readers are exceptionally sensitive to AIES.
+Now can't use an M dash for anything or people get really upset.
+Here's like a briefing about what all the different chapters are about and you know just to give us some context about the book.
+And then the rest of this is just um you know just code like Jeremy was saying.
+So here it uses some meta programming to figure out what chapter it is that we're working on so that it can find the the name of the file where that chapter is is stored.
+I I work in markdown and we tried to do this in Google Docs and their API is so bad that it was actually easier for us to just make our own Google Docs replacement in Markdown to do this in.
+So anyway, so that's uh a lot of this is just boilerplate stuff relating to managing the context.
+But here I can ask it, okay, this is just a general purpose thing here.
+The actual chapter is now loaded into a variable here inside of solve it.
+Give me an evaluation of it. >> And the AI can see those variables. >> Yeah, I can see the variables.
+So you look on the side here, you can see that txt is a variable that contains the text of chapter 11.
+Um, I'll skip over it's detailed analysis of my style and tone issues that I got to address.
+Um, work from a to-do list.
+And then this is a new thing I've just been playing around with.
+I use this test reading platform.
+Shout out to help thisbook.com.
+I've had a few test readers going through and reading the manuscript and they can flag with comments things that they found confusing or interesting or whatever.
+So, uh, this is all me giving it instruction about what I like it to do.
+But if I come down here, I will show you.
+I'll run this.
+This is a little bit of code that I that this solvent helped me write to find oops, the old one. find all the comments in the CSV that relates to this um chapter and it will give me a little summary here.
+I got 4,49 comments I got to work through of which 168 of them relate to this chapter and then I can be like great uh give me an analysis of these comments.
+You know, what do people think about them? And so you can see here this is a tool call.
+It has gone to grab all the comments that relate that filter related to this particular chapter.
+And here we go.
+Here are things that people really like.
+They like these seven things.
+They found these things confusing.
+People have requested these.
+Here are some specific comments from specific test readers that relate to recent changes.
+So, I get a nice overview.
+But the nice thing about it is now that I go through I'm going to go through step by step by step by step, section by section in this chapter.
+And we're going to do them one at a time.
+And it's going to follow the same procedure each time, which is to find the relevant section of the text, find the relevant comments that relate to that text.
+And I'm using solvent meta programming, which we haven't talked about, but uh very easy way for it to like create its own messages to create a briefing note, which is just a single message that has all of the context related to this section of the chapter.
+So here's the text of it.
+Here's its assessment of things that I need to work on. here are some relevant comments that relate specifically to that section and then you know I can say I want to do the next one and I going to go through and do this section by section and here this one I was working this just before we started I was giving it some correction like oh we need to make sure that um this stuff needs to happen it's like oh okay well I'll update the briefing note then to make these fixes so then it went back and it actually updated this text you'll notice my four points are right here have been added to the note and and off we go so then we check for redundancy with a chapter.
+I can say, you know, give me a web search fact check of this section.
+And if you will give it a second, it will do that.
+And you know, just like any AI tool, you have to make sure that you don't let that turn your brain off.
+That really is like to me the number one thing I've learned from this and all forms of vibe coding and all the things that I've I've uh played with is that it's just extremely easy to get into this kind of like soporrific state where the AI is doing the thinking for you and you start to think that all the information that it's generating for you is like an asset rather than a liability that you're getting having trouble.
+So anyway, so this Yeah, that Yeah.
+Yeah.
+And like I happen to know this fact is in fact true, but I understand why I had trouble finding it anyway.
+So you can't you can't just you can't just uh rely on what it says, but it just I don't know for me being able to transform this like very complicated task of I got to work on this book today.
+I got to make progress on this chapter.
+I got to achieve this goal and just break it down to these extremely discreet points of like here's one reader comment.
+They were confused about this word in this section.
+What do you want to do about it? It's just it's been a game changer. >> Yeah.
+I mean to me that's almost like more impressive than the coding use case because I think you're like eliciting something out of the model that you you just could not in any other interface you know I feel like if I squint that like the coding use case is like well if you have a Jupyter notebook in IDE you can maybe it's still not as effective but you can kind of like this it's just like impossible like you just >> nothing there's nothing like it nothing like it >> yeah you just could not do it you cannot put the whole thing in in cursor and ask it to fix it.
+So that's super interesting.
+How do you guys feel about composibility of like the blocks themselves? I feel like some of those tools that you had in that dialogue, Eric, you might probably want to use in a future book or like other book writers might be helpful in using the same the same system.
+How do you think about >> Well, maybe it's like a dialogue library.
+I don't know. >> It's it I I I thought this was going to be super complicated and difficult to do when we first started building this out.
+Yeah, dialogue libraries and templates and things that would be shared and and all credit to Jeremy really for this by by getting back to the general purpose computer.
+It's like it's actually quite easy.
+I skipped over this, but in that dialogue, you'll see that it said something like import reader comments as a as a Python module.
+I have a special module for reading these comments out of a CSV.
+That is actually just a different dialogue in my in my solvent.
+It's named reader comments.
+Jeremy and I paired for 25 minutes or an hour.
+I don't know.
+For a few minutes one day to be like really think through what's the best way to put this get make this into a Python model. >> Yeah, it was more like 25 minutes.
+Yeah. >> Yeah.
+It was like 20 minutes.
+We just It was like we were just riffing one day.
+Oh, you let's let's mess around with this.
+I didn't wasn't like I was planning to bring reader comments in to solve it.
+It just occurred to me one day.
+Oh, I should do that. >> We did the dialogue and I remember we got to the end and you know and and Jeremy was was helping me understand how to use the dialogue to accomplish this task, not just doing it for me.
+And we were kind of pair programming together and asking Solvent to explain the things that didn't understand and figure it out.
+And when we got to the end, I remember saying, "Okay, now um what do I need to do to you know publish this module or this dialogue?" And he's like, "You you don't have to do anything.
+It's already done.
+That file is now an importable Python module on your on the disk of this general purpose computer that you're in.
+So go into your other dialogue, type import reader comments, and you're done.
+And that was really mindbending to me because it's making the promise of composability like possible in ways that it really wasn't before.
+And now we've started to do more fancy things like we have some modules where after you import the Python module, it kicks out a bunch of notes with extra context information.
+We have this idea of turning functions into tool calls.
+So it automatically will make some of the Pythons and we'll promote them into tools that you can call.
+So it gets a little fancier than just regular Python import.
+But you can start to see how you know this because it's just a file on disk.
+So then when we started to talk about multi-user solve it, it's like well let's have a shared mount and put the file in the shared mount and then you can import it in both places.
+It's like it's it's just I don't know somehow programming has gotten away from these really simple abstractions for natural reasons, but it's been really fun to to get back into that.
+And so just to close that off on the writing thing.
+So I I like effectively have a highly customized Eric's exact writing system that I like to use.
+It's perfectly the way I like it.
+And it's not a piece of software that I wrote.
+I don't think of it that way.
+It's just a dialogue that every time I want to make a new one, I just duplicate the one from before, change that title to be the chapter that I'm working on now, and rerun it.
+I delete the old stuff, and I customize it a little bit each time to deal with the task at hand.
+But it's like a really interesting question of like so what is the application? People ask me what do you use for writing on AI? And then one answer is I just I use solve it.
+You should use solve it too.
+If you could access it you you could try it.
+I feel really guilty every time I tell people that.
+I'm like you should really probably make this available to you too.
+But another way I I'm using an application that doesn't exist for anybody else in the world.
+It's my completely custom thing.
+It wasn't vibecoded for me.
+I wrote it myself and I understand every line of it.
+But also, I had a lot of help in making it.
+It was actually very relatively easy to make.
+It wasn't like I said, "Okay, I'm going to spend a month writing this piece of software and ship it." I mean, I'm last I remember the last time I wrote a a Mac application, you know? I just spent a month like how do you make a DMG file again? And how do you sign it? How do you publish it? And just like the amount of time I spent on the UI of that application compared to how much time I spent on the meta programming of like how to make it into an application was probably like 10 to one the bad way.
+And now and if you ask me would you write me an application? If ever like a friend comes to me and say would do you mind writing me an application real quick to solve problem X.
+My mind is not thinking about how easy is solving problem X.
+My first question is like how do I encapsulate this thing into a form they can access? How much support are they going to need when the dependencies change? Who are they going to call when it doesn't work? And it's just like forget it.
+The answer is no.
+I'm not going to write that program for you.
+I'm sorry.
+Even though the actual thing is as easy as generating the Fibonacci sequence, you know, probably would take me 5 seconds to write the actual logic for the thing.
+And I think that's really a really interesting promise of solve it that we could get to a situation where those caliber of applications can be written economically because questions are just yeah, we made solve it for ourselves entirely and for you Allesio, our investor.
+We had to create something where we could be the platform that would allow 12 people to create thousands of valuable products and and investigate what AI is good for. >> Yeah.
+How do you think about the picking? So, you have, you know, Eric built it himself.
+Um, what are the things that you want to guide people to build or dialogue through and what are things that you want to build kind of like first party so to speak? Like what's that decision making process? We just do it, you know, like we really like we just we just do it like it's like a like God, I wanted to have a way of searching since you just did it.
+What what happens is as we scratch our own itches actually, can I show you something? I think this is going to blow your mind.
+Um, we discover things that just work great and we want to make available to everybody.
+So I show you something we do want to make available to everybody although we haven't yet.
+How do I do this? I think it's here.
+So we discovered for example that and this is something we do all the time is we we don't just have meeting notes but when we have a meeting we have the ever do it.
+We want it to be incredibly valuable.
+And so we want to create something out of it that that's really rich.
+And as we did that, we realized like, wow, our, you know, Eric's seen every meeting notes AI app in the world, you know, and he was like, how did you make this? This is so much better than any other meeting notes.
+It's so valuable.
+It's like, I just did it and solve it.
+And so we were like, this is such a great way to turn um discussions into into text that we took on Andre Capathy's challenge. and his challenge was, "Hey, can anybody take my let's build the GPT tokenizer video and turn it into a blog?" And here is that blog.
+We haven't released yet, but look, it's got pictures.
+It's got all of this code, tables, you know, hyperlinks.
+I mean this sounds like a great thing to put into solitude. >> Yeah.
+And you can exactly you can load this into solvent and actually run this code and try it out yourself.
+But so we took on this challenge which you know nobody else has managed to do yet which is to kind of use AI to create a very very high quality version of a very very high quality video.
+And basically, yeah, you know, this is something we we're kind of building an API around this.
+We want to make this available not just in solver it, but for anybody to turn their discussions, their videos, their interviews into very very high quality text outputs.
+And the way we do it again, it's not send it off to an AI to do it.
+It's it's have a just discussion.
+So, here's the actual dialogue.
+So, um one of our guys, Kum did did this.
+As you can see, he he's going through it line by line, you know, paragraph by paragraph, starting with the transcript and saying, you know, um, okay, here's the bit of the transcript, right? go ahead and show me the code.
+It's like, okay, here's the code.
+Um, and it's like, okay, add a hyperlink to all of the Python functions mentioned.
+Right? So, when this mentions or there should be a hyperlink, it's like, great.
+Okay, add the dock string.
+Okay, great.
+Here it is.
+And so, this is way faster than writing out that whole thing yourself, right? But it's also way slower than just saying like press a single button.
+But again, it's it's this human in the loop going through.
+And the nice thing is that with the dialogue engineering we discussed, the longer your dialogue is, the better the AI gets, which is the opposite to what we're used to, right? Because you can edit the outputs that aren't great.
+So it's like, oh, this this is nice, but I need some minimal code examples for UTF comparisons.
+So yeah, that's like a an example of of something that we've started out as being we're using this for all of our own transcripts and turning things into notes and discovering it was working really well and now we're like, okay, we want to turn that into a kind of boxed up application for everybody where they can take advantage of this and they can also do it and solve it. >> Awesome.
+What should people expect from you guys, I guess, like on a >> So, we've got >> Yeah.
+So, we've got our first full version of the solve it course coming up.
+You know, it won't just be a test preview.
+We're taking everything we've learned from the last year and we're going to make it available to many, many more people.
+So, folks can, if people want to try this, they should sign up.
+So, um the URL is solve.
+For solvit.
+Check that out.
+There's a really great Discord community of people who have now for a year been help all those thousand people who've been helping each other out for the last year.
+You know the hundreds of them have told us it's changed their lives and now they're helping each other change their lives.
+So it's the most kind, helpful, powerful community of people I've ever seen.
+And in fact, Eric, you remember when when we first talked about it, I said, like, do you think we should make this available to other people, you said to me, yes, the number one thing you're going to get out of it is a community, right? >> That part has been really exceptional. >> Remember that I'm an Italian citizen, so if you need solve.it, I can I can love solve. >> Yeah, please.
+Yes, use your >> We didn't manage to get that one, but you know, the.com is pretty good. >> That's true.
+That's true.
+I should I got a lot a lot of new friends in Italy.
+I should I should have asked about this.
+Um Jeremy, do you want to give the dates just um in case people are listening and they want to know when to sign up because last time it it sign up period wind up being quite short.
+That may happen again.
+So we might want to just let people know. >> Yeah, I mean we want to leave it open for longer.
+This time we've we we've we've we've built our own horizontal scaling deployment platform.
+So we can handle a lot more people now.
+But it is quite a lot of work to host these full computers for everybody's chats as you can imagine.
+So, it won't be an infinite number of people that we can handle.
+Jonno, do you have the dates off hand? It's October the 20th, I think, is when we're going to be starting, I think, is what it's >> Yeah, I think we're going to earlier than that.
+We'll open signups probably beginning. >> We'll open Well, hopefully by the time people watch this, signups will be ready.
+So, you should be able to come and >> sign up.
+And the course is going to be five weeks, several lessons every week, but also live demos and explorations.
+The the funnest part by far is seeing what everyone else builds with the tools.
+You know, it's always surprising.
+And >> there'll be office hours.
+There'll be >> Yeah, it like some folks last time kind of pretty much were like full-time doing the course.
+Like it's a you could get as much out of it as you want to put into. >> We hired some of them, right? >> We did hire some of >> our best employees. >> Yeah, that's true. >> It's a great way to hire these exceptional people actually. >> It's been really great.
+Allesio, I don't know if you want to include in the show notes.
+We can send you some of the blog posts from people in co in cohort one.
+I feel like that's actually more powerful any demo.
+We'll throw everything in there.
+Um, awesome guys.
+Any other call to action for people, even, you know, requests for research? I don't know, anything that that you want to get out to the world.
+I would like to say that you don't have to do this approach in our tool.
+Like I I like the stuff that we've done, but a more general appreciation for this iterative like human-driven way of working.
+It's one of those very paradoxical things that can feel slower than the magical tools of the day in the short term. and is extremely rewarding.
+So, if you've been getting into coding or if you're building tools, like try it out.
+Like, spend some time attempting to understand the pieces as they come together um and doing things in small chunks and and learning.
+And it's really like it feels good.
+Come on in.
+The water is warm. >> Yeah.
+It's actually really important point that maybe we didn't emphasize enough in this conversation is that the the course is really about how to think in the solvent way. the tool is just one possible implementation of how that way can be can be used.
+So I'd actually encourage people who are who are thinking about it.
+We're going to do a unit on writing with solvent not not just with code.
+Also for people who have not learned to code but would like to this actually is a very good way to learn programming.
+I say as someone who's taught a lot of people programming in my life this is a really exceptional way to do that.
+And we're also going to do a unit on entrepreneurship.
+So people want to think about I feel like one of the big missing pieces in all this AI revolution and all these AI agents is like where where's the new software? Where where are the MVPs? Like there's just not as many MVPs being created as there ought to be if the software works as well as it claims it does.
+So we'd like to actually really help people turn these into useful applications.
+That's our that's our mission. >> I should mention Yeah, talking of missions, >> Allesio and his company supported us in becoming a public benefit corporation.
+Our job is not just to give LCO the highest possible returns.
+Our job is actually to maximize human flourishing by taking advantage of AI.
+Eric's book is going to be all about helping companies deliver actual value to society and he'll be talking during the course about how to you in your company or if you want to start a company can do that.
+So what Jonno said about like hey you don't have to use our tool you know that that's very that's our values right is we're trying to we want to help everybody flourish even if that's not necessarily the profit maximizing step for us. >> Yeah.
+No, that's definitely been from day one.
+I think the most important thing and the thesis behind why answers should exist, which is why which is more people should have access to this in a way that makes them great and makes them flourish versus us making the most money because at some point you don't need more money.
+You know, you need more more people to do great in life.
+So yeah, thank you guys for taking the time and I'm sure you'll be back on the show soon.
+So well, thank you for all your support in these past to partner with you. [Music]

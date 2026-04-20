@@ -1,0 +1,383 @@
+Forget JGBT.
+Here is how to run your own LLM locally.
+So, a local AI model is one that runs entirely on your computer.
+Now, you might be thinking, "Okay, David, why would I even need local LLMs?" Well, there are many reasons.
+Number one, cost.
+No API fees, no subscriptions.
+Since it runs on your own computer, it's completely free.
+Number two, no rate limits.
+You can use it as much as you want.
+Number three, everything is private.
+The data never leaves your device.
+So, Sam Ultman can never read your messages.
+Local models also work offline.
+They don't need internet to run.
+So you can use them on the plane or in the middle of a forest.
+You also have complete ownership over the version of the model.
+If you download a certain AI model locally, you always have that specific version and nobody can change it.
+Plus, if you want to make your own model, you can fine-tune an open source model and run that locally, which allows you to create a model specific for your own use case.
+Now, there's a huge myth that local AI models are somehow bad and that they're much worse than chbd or clo.
+Well, that might have been true a couple years ago.
+It's definitely not true today.
+And here are four charts to prove it.
+As China has been getting more and more into AI, they've been basically making all of their models open source, which caused them to lead over USA.
+This means that today we have 50 times more options of amazing local models than even 12 months ago.
+Next, we can see that the capability of the open source models is quickly catching up to the closed source ones.
+In fact, on a lot of benchmarks, they're even ahead.
+For example, GPQA Diamond, which is Google proof question and answer, you're going to see that the gap is also getting smaller.
+Now, pay attention.
+This is not the best open source models.
+These are open models available to run on a consumer GPU.
+These are models you and me can run on our laptops and they're getting close to the huge Grog 4 GBD5 cuttingedge models that are running in the cloud.
+And that's because the training is way more efficient for smaller models than the bigger ones.
+If you've been paying attention to the AI field for more than a year, you will know that the progress in the huge cutting edge models has kind of been stagnating, right? It's much slower than it used to be.
+But the progress in the small 20 billion 30 billion models is insane.
+And by the way, you don't need a GPU cluster to run local models, right? Even though a lot of people are popularizing this.
+For example, PewDiePie recently made his own cluster.
+And I absolutely love to see it that PewDiePie is more dabbling with AI.
+You can get started with just a single GPU either like a Mac or Mac Studio or Nvidia GPU.
+Doesn't matter.
+There is local models of all shapes and sizes and you don't need to spend 20k on a home supercomput because you can just start running local models that your GPU can handle.
+So in this video you will learn number one the fundamentals of Olama which is absolutely essential for local models.
+Number two, how to download the model locally on your machine.
+Number three, how to turn your model into an API server which allows it to connect to any app you want.
+Number four, what are the best local AI models as of right now? Number five, how to choose your model depending on your specs on your computer and your needs, of course.
+And number six, as a bonus, I'll explain the concept of quantization and how this allows us to run much more powerful models that you your computer normally couldn't handle, but then we can take the quantized versions of those models and actually run them locally.
+So, make sure to watch until the end.
+All right, let's start by looking into Olama.
+So, Olama is how you download AI models that run on your computer.
+It's one of the easiest ways to run models locally.
+Plus, Olama is open source, which means you can look into how it actually works.
+You can literally pull up their GitHub and look through the codebase yourself and if you think you can improve it, you can fork it and build your own version of Ola.
+But before we dive deeper, it is important to clarify what even is an AI model.
+Because even though AI is taking over the world, the amount of people that can even answer this question is very, very few.
+So AI models are essentially large files that store billions of weights or parameters.
+And those weights represent patterns, knowledge, conclusions that the AI learned from the training data.
+So you give it trillions of tokens of training data.
+Then you do a training run when the AI tries to reduce the loss function and try to understand that training data as much as possible.
+And at the end you get a bunch of weights and biases also known as parameters that comprise the model itself.
+So basically an AI model is a collection of weights.
+Now to use an AI model you need number one the file that contains those weights number two a program that can read the weights and interpret them and number three a way to run inference aka to generate responses from that model.
+There is a great graphic from free blue one brown of how words break up into weights inside of a large language model.
+So when someone says that a certain model has 70 billion parameters it is just a series of numbers like this.
+Now to understand this concept even more, we can visualize how an LLM looks like on this website.
+So this is nano GPT.
+Uh this might not even be an LLM.
+This is not a large language model by today's standards.
+So it has only 85,000 parameters, right? Modern AI models have like a trillion parameters.
+But you can see here how the weights and biases and vectors are organized within the model itself.
+We also have the softmax function here, the attention matrix, which is an essential component of the transformer.
+That's a topic for a separate video.
+But this is a really good way to visualize the inner workings of a model.
+And if you want to see a bigger model, GPD3, this is the original model that OpenAI used when CH GBD first released.
+And you can see that this is much bigger, 175 billion parameters.
+Here is the exact amount of parameters.
+And this is a great visualization of what the model looks like inside.
+Just a massive amounts of weights and biases, which are the parameters that make up the model.
+Now, here's what Olama actually does, and I'm going to break it into three parts.
+So number one, it's a downloader.
+It lets you download these huge AI models into your computer and it stores them in an organized and safe way which is the safe tensors file format.
+So a tensor is just an ndimensional array of numbers.
+So a one-dimensional tensor is known as a vector.
+Twodimensional is a matrix.
+Three-dimensional is a cube.
+Four-dimensional is a vector of cubes.
+Fivedimensional tensor is a matrix of cubes and so on.
+So the that safe tensors format is an efficient file format for storing these model weights on your computer.
+So this is the first thing that Olama allows us to do actually download the models.
+The second thing is acting as the engine.
+Olama reads the model file.
+It loads the billions of parameters into your memory.
+This is why it's important to have a lot of memory.
+Now, if you have a Mac computer with a M1 M2 chip, then your RAM is unified memory, meaning it's accessible both by the CPU and the GPU.
+However, if you have a Windows computer with an Nvidia GPU, your RAM doesn't matter.
+What matters is the VRAMm of your GPU.
+So, this is the major difference of how memory works in an x86 architecture compared to the ARMbased architecture that you can find in M1, M2, M3, M4, all of the M series Apple silicon chips.
+Let's talk about the third thing which is the interface.
+Now, even though Olama now has the UI, if you've been watching my channel, you know that they're mostly known for the terminal, right? You can use LLMs in the terminal thanks to Olama.
+However, in this video, I'm going to show you both.
+I'm going to show you how you can use the terminal super simple way and how you can have a nice GUI graphical user interface with LM Studio.
+And actually, the setup for both of these is much simpler than you think.
+And if that's all that you do, you will already be ahead of 99% of people who have no idea how to run local models.
+But more on that in a bit.
+Okay, so now let's start by downloading Olava.
+And I'm going to show you everything step by step.
+So you don't have to be an expert at all.
+In fact, you can be a complete beginner with zero programming experience, zero experience with running local models, you'll be able to follow this.
+Trust me.
+Okay, so let's go to ola.com and actually download the software.
+It's completely free.
+It's open source.
+So, click on this big download button.
+Select your operating system.
+I'm on Mac OS here and click download.
+Once you have the installer downloaded, just double click on it.
+Boom, there it is.
+And move it into the applications folder.
+Then type in Olama to actually open the application.
+Okay.
+So, we have Olama installed.
+And when you install Lama, it also automatically starts an API server.
+So a server is a way for other tools, software programs to connect to Ola and use the models that you have downloaded through it.
+So if Olama didn't have an API, you could just use it itself, but you couldn't use it to power cursor for example.
+Now if you want to see whether your Olama server is running, go to this URL localhost col1434 and you should see Oola Lama is running in the top left, which we do see.
+Beautiful.
+But before we can connect to our server and actually do something with it, we need to download a model.
+Right? This is the main thing running LLM locally.
+So let's do that.
+Now for downloading a model, the biggest question is what model should I download? Right? There's a lot of different LLMs you could download.
+And in a moment, I'll show you which ones are the best.
+But first, let me show you how to actually download a model using Olama because it is much simpler than you might think.
+Real quick, if you want me to make more videos on local models, fine-tuning, and stuff like that, consider subscribing.
+It's completely free and it takes two seconds.
+So, go below video and click subscribe.
+It's a strong signal for me.
+Hey, David, make more videos on local laps.
+So, to download the model, all you need to do is open your terminal.
+Boom.
+Terminal could be the global one as I did here.
+Could be one inside of VS Code.
+Doesn't really matter.
+Just open a terminal on your computer.
+And then in the terminal, just type in Olama run and the model name.
+So, if we go back to the Olama website and click on models in the top left, you're going to see all kinds of different models that Ola offers.
+For example, GPD OSS is the OpenAI's open model, right? It's like one of the only opensource models OpenAI ever released.
+Crazy, I know.
+Uh, but it has two versions, 20B and 120B.
+This is the amount of parameters.
+So, following this simple structure, all we need to type is Olama run and then GP to OSS 20B.
+It's literally copied right here.
+Boom.
+So, Ola gives it to you.
+It couldn't be simpler to be honest.
+Just click on the copy button, switch back to your terminal and then paste it in run GPD- OSS and hit enter.
+When you do this for the first time, it will pull the manifest aka it will download the model, right? Because for example, if we look at the 20B, this one is 14 GB.
+So, that's like a, you know, bigger than a video game.
+So when you first run it in your terminal, don't expect it to be instant like it was instant here for me because I already had the model downloaded.
+Now to see which models you have already downloaded and to manage them, you can just exit this by typing / buy.
+Let's clear the terminal in Olama list.
+This will show you a list of all the models you have locally installed through Olama and when did you download them and the size of them, right? So you can see I have four models right now which means those are the models that I can actually use.
+If I want to use any other model because Ola has way more obviously I would have to first download it by typing run and the model name.
+Now if you want to delete a model just type in Ola RM and the model name.
+So for example let's delete death right here.
+Olama RM devstrol colon latest.
+Boom.
+Hit enter and then it deleted death.
+So if you clear the terminal and do lama list again, you can see that I no longer have that one model which is important to delete models because first of all they get outdated very fast, right? 3 months ago in the AI field is forever.
+But three months ago in the open-source AI field is like three decades.
+This field is moving so fast.
+But also these models are very big, right? 65 GB, 30 GB.
+So it's good to manage your memory by deleting models that are outdated and that you no longer use.
+Now, as I mentioned earlier, Olama also runs on an API server.
+So, when we go to this local URL 11434, we'll see the server is running.
+But we can also use curl to test if we can connect to the API server and send a response to it.
+Right? So, I'm going to copy this curl command, then switch to the terminal, clear it again, and send it.
+Boom.
+Now, I got an error and it says GP OSS20B not found.
+So, I'm going to do list to debug this.
+And the problem is I downloaded it under this name GPOSS latest.
+Okay.
+So, I'm going to need to update the model name right here.
+Boom.
+Latest.
+And we should see it answer this question.
+Why is the sky blue answering short? We're going to enable token streaming.
+So, we see it.
+Enter.
+There it is.
+Okay.
+That's why the token stream was turned off because it's not parsed.
+But you see that we got an answer from the model and it is right here.
+We can see the tokens coming in, you know.
+So, okay, let me redo it without the stream.
+Boom.
+False.
+So, now we're going to wait until the whole message is constructed.
+And there it is.
+Response.
+Because the air molecules in Earth's atmosphere scatter sunlight, shorter brew wavelength are scattered far more efficiently than longer red ones.
+So, we got a response from a model that's running completely locally on my MacBook.
+No connection to the internet.
+No data ever leaves my machine.
+No SAM Ultimate decides my limits. and nobody's changing the model version.
+And yeah, you have complete control over this model.
+And if you want, you can fine-tune it so that it is your own.
+There are so many benefits to running models locally.
+It's crazy.
+But if you think this is impressive, we're just getting started because the rest of the video is about to get a lot more useful.
+Now, the terminal UI isn't the nicest and the lama user interface is kind of basic, right? So even though we can select you know for example 120B and I can say hey this is still um it's still very rudimentary compared to CIGBT if you come from clogb perplexity you're going to be used to a much nicer UI so this is where I would recommend you switch to LM studio so LM studio is just basically chat GBT but for local models you can see that the UI is way more advanced than Olama you have chat histories you have the reasoning effort, you have the message history, you can switch between different models, you can see the token count, power usage, how much RAM it's using, CPU.
+Actually, it gives you even more way more data than Chad GBT ever does.
+And so, go to lmstudio.ai and click on download.
+Once you have it downloaded, type in LM Studio to open the app.
+Okay, so when you first open LM Studio, it will look like this.
+Uh, if you go to the left, you have more stuff at the bottom.
+Actually, you can select between user, power user, and developer.
+So if you want mo most control, select developer, but you can remain in user and still use the app.
+It'll just be a lot simpler, right? You'll have less buttons to worry about.
+So that's fine.
+But for the sake of the video, I'm going to switch to developer on the left.
+I'm going to click on my models.
+And you can see that okay, we don't see the ama models, right? So you you might be thinking, okay, David, how can I use the models I've downloaded with Olma inside of LM Studio? The problem is that LM Studio is trying to like compete, right? Both Olama and LM Studio can be used to download models.
+Both of them can be used to install them.
+But there is a solution how you can use the models you've installed through Olama inside of LM Studio.
+So let me show you that.
+Now this might be a bit confusing, but the solution is Golama.
+Okay, so Olama is what we used before to download the models with our terminal, right? This is Olama.
+But Golama is a Mac OS Linux tool for managing the models that you've installed through Olama, right? So I know the naming could be a bit confusing, but this allows us to use our Olama models inside of LM Studio.
+Otherwise, we will have to download the same model twice, which is what a lot of people do, which is terribly inefficient because these models are many gigabytes in size.
+So unless you have infinite storage on your computer, it's better to just download them once.
+So, let's open our trusted terminal again.
+Boom.
+Let's type in all lama list to make sure we still have some models downloaded.
+Beautiful.
+Let's type in clear to reset.
+Then we're going to do brew install golama.
+By the way, I'll link this GitHub repo below the video.
+And all we need to do is just follow this.
+All the instructions are here.
+All the FAQ and common errors.
+If you want more info, just copy this.
+Boom.
+Paste it into chat GBT.
+It will tell you step by step how to set it up.
+But I'm going to show you the 8020, right? I'm gonna I'm gonna show you how to do it.
+So, brew install golama.
+Probably the easiest way with homebrew.
+All right, there it is.
+So, it took like 3 seconds.
+Let's clear the terminal, then type in Golama to start it.
+Boom.
+You can see that this opens a nice terminal UI where you can cycle between the models and it tells us even more info such as the exact file size, the exact amount of parameters.
+I think that's the quantization method, and then the model family.
+So select the model you want, click on L, and then at the bottom it says model GPOSS latest linked successfully.
+So if we go back to LM Studio, there we go.
+We can see that GPOSS now appears inside of LM Studio.
+Now let's say you want to download the model just through LM Studio to save time and you know keep it simpler.
+Go to the left, click on the search right here.
+This will open up the mission controls.
+In the model search, you can scroll across many different models, right? And you can even filter it at the top.
+For example, Hermes 470B.
+This is a less sensored model, so it will answer way more than your typical models.
+And it's a fine-tuned version of Llama 3.17B.
+So, this is nearly 40 GB.
+So, I'm going to download this model.
+And obviously, that's going to take some time, you know, 40 GB.
+Even if you have fast internet like I have here in Dubai, still going to take probably hour because it's not just up to my internet.
+Also the LM Studio servers have to send me the data fast enough.
+Right? So this is how you can manage which models you have in LM Studio.
+You can search like you know GPTOSS like defrol when models maybe.
+Okay they don't have KI.
+Kim is way too big one trillion parameters.
+And then here you can see your runtimes.
+Here you can see more info about your hardware.
+Uh honestly this is like enough for another video, right? LM Studios super configurable, especially in developer mode.
+So, if you want me to make a dedicated video just on LM Studio and how to set it up fully for maximum performance, comment below.
+And if I see a lot of comments, we can make it happen.
+Now, before we go into which of these models are actually the best and which ones you should ignore and which ones you absolutely need to have, I have to tell you about a special offer we're running in the new society, which starts on the 3rd of November and ends the 9th of November.
+Everyone who joins during this week will get the top seven AI opportunities of 2026.
+This is a detailed report that me and my team made on the biggest opportunities in the AI field for the coming year.
+Basically, this is hundreds of hours worth of research compacted into a single document that you will get if you join the new society this week.
+And this research report is only available if you join the new society in this week.
+And by the way, inside of the new society, you'll also learn how to code with AI, how to build AI agents, all the lessons, mistakes, and tips I've learned from scaling a SAS from zero to over $10,000 MR.
+So, if you want to build your own startup, we literally have this section right here, how to build an AI startup.
+And I'm going to be honest, most other people would put this into a high ticket course and charge like $5,000 for it.
+But this is just one of many things we have in the new society. going from the day one where I chose the idea, explained my reasoning to literally starting the project inside of cursor, building the back end in Python to all the way when I hit 10K MR and even past that, you know, as I was hiring developers, literally everything you need to know to build your own AI startup is in the user.
+And this is just one of the modules we have inside.
+Plus, I also share all of my AI agents, all the prompts, MD files, automations, everything you might need.
+You get this the moment you join.
+So the moment you join the new society inside of classroom right here, boom, templates and presets and you can access all of this one click away from downloading them and running them yourself.
+We also host multiple weekly calls where you can ask me anything.
+We had experts such as Den Martell's professional AI developers, sales experts, people who ran huge companies, consultants.
+I mean the level of people on these calls is actually enormous.
+If just for forget about everything else.
+If you join the youth society for one thing, it is the calls in the calendar.
+Right? Right now we're doing two a week every Thursday and every Saturday, but we're going to add a Tuesday one as well.
+So if there's just one thing you want to join for, it's the calls.
+This is the way to upskill yourself to be on the cutting edge of AI.
+You can ask any questions about your business, about your startup idea, about any technical problem you're facing.
+Doesn't matter.
+These calls are gold.
+So if you do decide to join, I advise you to take action because there's many people in the new society that used it to completely change their life.
+But one thing that they have in common is taking action.
+Now, if you're watching my channel, you know that AI isn't going anywhere and it's certainly not going to wait for anyone.
+So if you are serious about it and if you want to be on the cutting edge of AI, join the new society.
+It's going to be the first link below the video.
+And as I said, if you join this week, as a bonus, you'll get the AI checklist for 2026 with the seven biggest opportunities that I believe will completely change the field in the coming year.
+Now, as I promised, let's answer the question of what models are actually best to run locally, right? So, artificial analysis did a really good uh metric and actually they keep updating this benchmark.
+So, these are all open source models with less than 40 billion parameters.
+Now, obviously, if you have a great computer, you can run larger models.
+For example, like we looked at, you know, Hermes 70B, you 70 billion parameters.
+I can run this on my MacBook because I have 128 GB of RAM.
+And on the Apple silicon chips, this is shared.
+So, this is between CPU is accessible between the CPU and the GPU, right? So, I can even squeeze out like the bigger models.
+For example, 120B OAMA, right? If we if we load up the terminal again, you see that I have the 120B here and I can hit enter.
+Let me clear.
+Boom.
+All lama list.
+So, we have the 12B installed.
+So, I'm going to do all lama run GPD OSS 12B.
+And this will load it, which will maybe slow down my recording because, you know, recording and running a 120 billion parameter AI model at the same time.
+It's not optimal for a single MacBook, but there is.
+So I can do hey and it should start reasoning and then see it's running at a very great speeds.
+Teach me fundamentals of u software engineering.
+So this is very usable right and this is a 120 billion model.
+So I just want to say like if you have a great computer yeah don't limit yourself to below 4dB.
+But for most of you unless you spend $5,000 or more on a computer this is the perfect size you need to be looking at between 4 and 4 dB.
+And artificial analysis has these benchmarks that compare these models, right? And you can also go into the media model category.
+And you can see that GBT OS 12B is the best even though for example Elon Musk was recently on this model saying that it's trash.
+Uh even though it's the best mediumsized open source model.
+I mean uh there's no secret that Elon has beef with open AI.
+And then we can go into large models and you can see that Miniax M2 right now is the best.
+We have the Deep Seek V3.1 Terminus.
+Kim K2 is obviously the biggest.
+Link 1T.
+So yeah, these you probably won't be able to run locally, but hey, small models.
+These you can run on your laptop.
+Tiny models, this you can run on your phone even, right? So Quen 34B 257 probably the best small model right now or tiny model.
+But in terms of the small models, this is what most of you should be looking at.
+And then I'm also going to link the artificial analysis below the video so you can look into it because there is a different evals and different benchmarks raw intelligence.
+So GBD OS 20B is the best.
+We have the quenfree VL.
+We have the seat oss.
+I mean there's so many models it's crazy.
+Exone.
+I haven't even heard some of these.
+Then we have intelligence evaluations from the lab.
+Terminal bench t squared bench aircr.
+So different models are winning different categories obviously.
+So you can select the ones that you need for your own um stuff.
+So like for example coding you can see that oss are really good but for GPQA like Google Google proof question and answer uh the exone or quen are better right? So there is a very very good research from artificial analysis.
+I'm going to link this below video and again they constantly update this.
+So when a new model comes out they improve this.
+So yeah these are the best models that you can run.
+Now as a very rough calculation to understand which model you can run.
+So obviously again if you have a Mac or MacBook the RAM is shared.
+If you have an Nvidia GPU what matters is the VRAM of the GPU.
+So usually you need 2 GB of RAM for 1 billion parameters.
+But this is not the case always because um you know for example with a 96 GB MacBooks M3 with 96 GB of RAM can run a 120B model right the GPOS is 120B so yeah this is very rough maybe it's changing to be like one one more of a ratio as the models are more optimized as the hardware is more optimized now if you want to run local LMS you should also understand the basics of quantization so what is quantization well models as we discussed store millions often billions of parameters.
+These are the numbers also known as weights and biases.
+So quantization makes these weights less precise.
+So for example 13.4 blah blah blah this just rounds it up to 13, right? It kind of normalizes these values.
+This is to save space.
+So a large model can run on a smaller less powerful computer but obviously you lose some performance.
+So the good thing is that you need way less RAM to run those quantized models.
+The bad thing is that the model is less accurate and is less powerful.
+So here's another visualization of how quantization works in LLMs. But the beauty is that usually quantized models, you know, can get like 50% smaller, but they're not 50% worse, right? So like if you make the model three times as small, maybe it's only 20% worse, right? So quantization is very high leverage.
+It is like the 8020.
+So here's the process that usually follows.
+You get the original base model such as the Quenfree 8B.
+This is the raw model after it comes out of training with FP16 and this would be 16 GB uh of size.
+Then people fine-tune it.
+So usually they do instruct which is instruction fine-tuning so that it actually follows what you do right and u this is the fine tune version but it's still 16 GB but then you quantize the fine tune version.
+So you can see that's the quen 3 8B Q4 and this compresses the model to just 5 GB.
+So it's a massive difference like more than three times smaller but it's not three times worse.
+It's a little bit worse but it's significantly smaller.
+So this is the beauty of quantization.
+And in this example the quen 3B instruct when you go from 16 bit precision to 4bit precision you make the model 70% smaller while keeping most of its capabilities the same.
+Right? So that's obviously a massive saving and quantization is one of the many reasons why the local open source model market and just the progress in the open source field is much faster than on the cutting edge.
+So even though GPD5 was kind of a underwhelming release you know it's not a significantly better than GP40 on the local side especially in the medium and small model this is constantly changing the models are being released constantly and they're improving massively.
+So yeah, if you want to see more videos on local LLMs, make sure to subscribe and comment below.
+If I see a lot of people subscribing from this video, it's a strong signal that, hey, you want to see more videos on fine-tuning LM Studio, local models, and stuff like that, open source models.
+So I'm more than happy to go in that direction if you want to see it.
+So with that being said, thank you guys for watching and have a wonderful rest of the week.
+Yeah.

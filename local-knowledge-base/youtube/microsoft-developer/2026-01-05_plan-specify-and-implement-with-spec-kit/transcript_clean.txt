@@ -1,0 +1,459 @@
+[Music] Hey Dan, how's it going? Hey James, good seeing you.
+It's good seeing you again.
+I see Master Chief is Master Chief.
+It's the holidays.
+We're ready.
+We're ready.
+Let's do this.
+Ready.
+Uh well, let's get in our Warth Hog and let's ride, baby.
+Okay.
+If you know me and Den at all, we love just talking about uh everything including planning, specking, and doing real planning. real planning, real development on top of plans.
+Yes.
+I think so far today people have seen a lot of things with GitHub copilot with VS Code with Visual Studio, right? And often I think when we're demoing or we're actually writing software, we're just having an idea or a bug or assigning it and telling the agent what to do, right? And I was just meeting uh with a company and I said, you know, how I worked 2 months ago is so different to how I work now because I was doing what I just sort of described, which I had this idea in my head.
+I would write two or three sentences and let the AI figure it out for me, right? And there's pros to that, which is it went from my head into code pretty quick.
+But then there's a downside to that.
+And that downside often is that I haven't really given it the rails. haven't given it the the the plan, the spec on how to do it, right? Uh like I would normally get from my PM team that's assigning work uh our way or at least me assigning myself work, coming up with an idea.
+So plan mode inside of VS Code allows us to do a lot which is like I have an idea and turn it into a plan that I can then execute.
+When we think about spec driven development, that's a little bit different.
+And that's what we want to kind of talk about today.
+Yeah.
+Yeah.
+So what is spec driven development then? And why do people care? Yeah.
+So spectrum development is basically a practice like people think about it as some magical new thing right it's like oh it's all this agentic workflow and spec driven and it's all magic in reality it's essentially us formalizing the guard rails for AI models right because one of the things that if you talk to a lot of customers and they have tried vibe coding like all of us have right it's kind of exciting you start building things and you're like oh I'm going to tell the AI to build this website you start building my like the style and the buttons and the header and then you see it all light up and it's kind of cool.
+But if you start building production software, software that needs to be maintained by somebody, software that needs to evolve down the line beyond your initial prototype, that vibe coding approach doesn't really scale because the AI doesn't have necessarily the sense of taste or conventions that you need to be applying.
+So naturally, the model that you're using is going to make its own architectural choices, right? like it's going to decide to use a specific web framework if you didn't give it instructions.
+It's going to use a specific way to organize components and CSS and everything else.
+And that is problematic at scale because a lot of these decisions are not necessarily one-way doors like you can reverse them, but down the line once you build things out and then you realize that oh I want to add the shopping cart to my site and then you realize that the libraries that you use are now incompatible with some of the things that you're trying to build.
+So you start putting yourself in this corner where now you're like okay now I need to figure out a way out of this and spec driven development is a process by which we essentially frontload a lot of the thinking that you have to do and thinking with the help of LLMs right where you can say I am building an e-commerce site and I want to do X Y and Z and by the way my company is using Stripe for payments I'm using you know the Shopify front end for my store and you can assemble all these things together and a cohesive way and then have the AI help you build the things that you want to build in the way that also will scale in the future.
+So it essentially allows you to think first and get the outcome you want rather than offload that to the LLM itself to go and make the decisions for you.
+So I'm a developer now.
+I'm sort of want to live and breathe in the code, right? I want to live in my my repo.
+So how should I as a developer? I think that makes a lot of sense if I'm I'm like an architect or I'm a PM.
+But what if I'm a developer and I'm like okay I just want to write I want to jam on some code.
+How should I be thinking about spec driven development because maybe I'm a solo developer and I'm just like building and I want to build something or maybe I'm at a large enterprise or a startup or something like that.
+How should I as a engineer? Why is it important to me as an engineer to think spectrum and development? Well because one of the key pieces of data that you need for good software with the help of LLMs is context.
+Context on your codebase context on the decisions that you made.
+Right? Like if you throw an existing code base like let's say you take something as complex as VS code you know it's an open source project you go and you ask the LM to go and implement some feature it has no context as to like why did you decide the uh you know your status bar to be a certain color a certain style why did you decide the iconography to be a certain way right so the LM is going to start guessing when you have specs in place the LM can go and parse out and say okay let me look at how you've previously thought about styling okay now I understand well understand right but uh it essentially is going to look at it and have the context when you ask it to do other decisions around your product even though you're mostly in code but having that extra context is super helpful to make sure that any future code is going to be exactly what you wanted I see so in this instance once I've created some sort of infrastructure if I will then that infrastructure will continue to be followed yes now we have things like um uh custom instructions, agent MD files.
+How is this different? Because I'm hearing guard rails.
+I think about instructions and prompt files and those are my art own sort of guard rails.
+Yeah.
+When the agent is making code, how does this different than that? It actually uses a lot of them.
+It actually relies on a lot of them because specs themselves, if we think about the concept of spec development, there are certain artifacts that folks might have heard from previous videos and blog posts like we have the spec.
+MD file which is the specification that outlines the functional requirements for you're trying to build.
+There is the plan which is a technical plan.
+There is a set of tasks which is a broken down basically a list of things that allow LLM needs to execute to get you to the state that you want to get to.
+And all of these are just markdown files.
+And then you have agents.mmd to set up the uh instructions for the codebase which is by the way now supported by copilot uh the CLI.
+It's in VS code.
+You can use agents and dd everywhere.
+Everywhere, right? So, which is great.
+I love standards.
+I just love not to have to reimplement it over and over.
+But it it relies on a lot of these conventions and it basically assembles them together.
+Like this is what we launched, GitHub spec kit.
+And again, when I when I talk to people, they assume that this is like this magical product.
+Like it's just a bunch of prompts and scripts.
+All right, we just assembled them together to make it easy for folks to get started and see how they can leverage a lot of these spec driven workflows to build software in a more deterministic way than an LM typically could.
+Was this inspired like internally teams at Microsoft and GitHub or like where did it come about? Why did it come about like I think that sometimes like oh we built a thing but then like why did you build a thing? Okay.
+Yeah, that was actually a very fun story and I think I wish we had John Lamb here to to talk about this, but John is one of my colleagues who actually was the one that bootstrapped uh spec kit and a lot of the spec driven work inside Microsoft and the reason it was built is because John was using the clawed sonet models and as we both know sonet models can get a little bit overeager and you ask it to you know I want to build a website and it's going to go oh great let me write a whole new web framework first before you get build a website uh develops a programming language develops a programming language everything right the run time.
+Yeah.
+Exactly.
+And and using uh the spectral novel processes essentially set the guard rails for okay I want you to build X Y and Z only based on this plan.
+I see.
+And that's where it kind of started.
+But after that John quickly realized like oh there's actually value in this beyond.
+And this is where I work with him to like help productize this a little bit and then get it into the shape that we see now.
+Get our sweat kit.
+Well, I want to see it because it is one of the most popular repos on GitHub with over 53,000 stars.
+Let's bring up your machine here.
+Yeah.
+And let's take a look.
+Okay, cool. 53.6,000.
+Hopefully more after a when we recorded our video for VS Code, how many stars was it? Like 24,000 or something like that.
+And that was not that long ago.
+No. Yeah.
+No, it's it's wild.
+People are loving it.
+Okay, so what is this? So, SpecKit itself, as I mentioned, it's in its core, all it has is just a bunch of prompts and scripts, okay? Like that that's all it is.
+Prompts and scripts.
+Prompts and scripts.
+So, it's not like a uh it's not like a a package that you're like a like a npm package that you're installing.
+No, you're like you have to like you're not installing something into your project.
+No. Exactly.
+Because if you really wanted to like we have a helper CLI that I will show you in a second.
+It's called specify or specify, whichever way you pronounce it. uh you tell us uh but the CLI is actually not required because what you can do is you could go to releases you look at specit templates you just scroll scroll scroll and you find the agent that you want and the script language that you want like for example if I'm using codeex from openai I have a shell script or a powershell you can just download that right like if I get a powershell one and let's see let's download this let's let's pop it open and then we'll see it in a second that there is two folders in there.
+There's codeex that has a bunch of prompts, right? Specit, analyze, checklist, clarify, and so on.
+And we'll show you that in a second.
+And there's a bunch of metadata files like specified.
+There's scripts, there's some templates, right? Like again, it's all markdown files and scripts, nothing else.
+No batteries, no.
+And you said there's a bunch of different I'm seeing uh claw and kodakiler gemini.
+So, so this is really it's from GitHub, but it is you think of agent HQ like agents be everywhere.
+All agents can use this like an so it's almost a standardization but I'm assuming you've crafted them because these agents all work a little and require a little bit different setup.
+Right.
+Right.
+All right.
+They're a little bit different and also we are you heard it here first.
+We're working on spec kit v2.
+Well, that is going to remove the need for having these custom scripts per agent because it's all going to be bundled into specify CLI and it just like the agent will invoke, but we'll we'll we'll get to that.
+Um, but essentially when you are creating new projects with specify, you can you can install it and there is instructions if you go to the website and or the the repository here, you'll have instructions for using UV.
+We are big fans of UV if you're a Python developer.
+And that just happens because the specified CLI itself was written in Python, right? Like there's no Python requirement beyond this.
+Like you don't need to have it.
+Um, and again, you can install it.
+You can install it globally or for your instance.
+And then what you can do is you can do specify.
+Pump it up a little bit more for me.
+All right, let's do that.
+Beautiful.
+Let's let's let's clear it to make sure it's all aligned.
+Uh, all right.
+Nice.
+So specify and then init to initialize a new project.
+And then we're going to give it a project name.
+So we're going to call it test demo.
+So what's going to happen here is you'll see that again this was designed not with copilot in mind but with any agent in mind.
+So we have this uh beautiful ASKI arc here.
+Um and we have a selection of agent like what agent do I want to use and I can use my arrow keys because we use terminal interfaces as usual and I can pick any of them and all all this does is downloads the templates that I want.
+We're going to use copilot because of course we're going to be of showing copilot and then I'm being prompted to enter the shell that I'm going to be using.
+If I'm using PowerShell on Linux, you can use PowerShell on Linux.
+If you use shell scripts, you can use shell scripts.
+I'm going to use PowerShell.
+Just going to download it.
+Boom.
+Done.
+And all this did is basically just the the releases that you saw, the zip files that you saw, it just pulled them locally, extracted them, and made it ready for your project.
+That's it.
+So, we can go to our folder for test demo.
+And let's take a look here.
+If I look at inside the folder and I have the GitHub.specified vscode because copilot we designed it around VS Code.
+Got it.
+Okay.
+Now, here's one question for you.
+You did this in a brand new folder.
+Yes.
+Right.
+Because you're like, "Oh, I'm brand new project." And probably the majority of people watching this and streaming this in right now are like, I have an existing project.
+Yeah.
+Then like how do I do I add this to do I do the same thing on, you know, my web app on my solution? What do I do? For example, let's go just back just one folder and we're going to create a new folder test demo existing and we're going to go to cd test demo existing and here now I can do specify in it and I can do either here or just use the dot just that's it boom so and this is going to bootstrap the project in the current folder.
+So if I do again same workflow it's all console based you don't actually need to go through this interface it completely can be automated by using parameters or arguments in the terminal but I just happen to like the the two so I can show you how to how to navigate it but so this so this is nice and I want to point out that is because a lot of times we get the questions which is like hey yeah I'm already in an existing app right does spec kit make sense for me yes even if I already have an app that I've been maybe releasing in to the wild for years absolely Absolutely.
+Absolutely.
+You can use it with existing project.
+I have a YouTube video for it, too.
+Oh, nice.
+We'll link to that.
+We'll link to that.
+But, um, so we have our test demo project and here I can just start VS Code right from the folder.
+So, we'll see this uh light up in our Visual Studio Code instance.
+We're going to make this full screen and let's zoom in just a little bit.
+Beautiful.
+Just a little bit all the way.
+But notice certain things here.
+So, when we started that now there's suggested actions here.
+See this? So I don't as a developer because we have the GitHub specify all these folders that we talked about.
+We now have a suggested action for me to get started.
+I don't need to guess what's the command.
+I say oh constitution the constitution is a starting point.
+The whole idea behind a constitution with specit is that there's a set of non-negotiable principles for your project.
+We're actually in spec merging that into agents.mmd.
+So it's not going to be a constitution but for now there is.
+And the the purpose of this is to make sure that whatever decisions you make down the line for your project, for your functional spec, technical spec, the tasks, you're always following specific requirements like I always want to deploy to Azure.
+I always want to make sure that the packages that this tool is going to use are Azure specific and not pulling some other cloud provider, right? Because this where I'm deploying things.
+So establishing the constitution is very important.
+So in our example like we can do something like if I'm building let's say a um podcast website right I can just say it's a static website with minimal dependencies right like we we can make it more complex.
+Yeah.
+But I think that that's a good starting point.
+Now are you specifying like what technologies you're using because this is okay this is just generic like this is this is very generic.
+Right.
+And notice that also in the latest version of specket, we use the agent switcher.
+So for every instruction here, every command, we're actually using custom agents.
+Oh, I see.
+I can see it down here in the bottom that it it automatically switched Yeah. to this agent.
+So that would that means that it kind of works everywhere.
+If you're on GitHub, you you actually you could use the same exact agent.
+So it's not just like a prompt.
+Yes.
+Exactly.
+Very cool.
+And the the agent itself is going to invoke a prompt.
+Okay. for constitution and then it's going to run all the scripts that it needs to be.
+But this allows us to do things like handoffs, right? Where once the constitution is finished, I can say, "Oh, and now go write the spec.
+Oh, and now go do the technical plan and kind of jump around, right?" So again, for a lot of the things that you see here with the constitution and the the spec creation and design that we're going to see later, all of this can be done manually.
+Like you don't actually need to use specit for this. you can just manually type the commands but like come on we can do we can do better than that right so um here's a good question for you if I was in an existing project let's say I had an existing blazer web app or react you know application could I say hey go like look at this project and then create the constitution based off of what I have absolutely you could you can absolutely do that and this is when you saw me kind of prompt it you could totally ask it to just like go and first inspect the project and then give me the content I Gotcha.
+So, and notice that now it provides me a handoff, right? Like proceed from spec constitution build specification.
+Beautiful.
+So, the shout out to VS Code team who actually implemented this.
+Yeah, it's really neat.
+Very similar if you're using plan mode.
+It's like I create the plan then I do the next thing.
+You pull man hand off XYZ.
+Right.
+So, what's in this constitution? So, what's in the constitution? Let's hide chat mode for a second.
+So, we'll see that it has a definition for static website, right? So, minimal dependencies, great requirement.
+Static first also great requirement.
+I love it. simplicity, complexity must always be justified and yagney.
+There you go.
+Yeah, there we go.
+Um there's some performance standards and there's also this misconception that oh you use these commands it creates these artifacts and this is like ah now I have to go to chat and start like asking you to change things.
+It's a markdown file.
+Yeah.
+Just just go change it yourself.
+Like you don't you don't want the the change 3G to LTE and Right.
+Exactly. like or you know like things like governance or things like development workflow if you see like oh I actually don't want to test against Safari because I'm just remove it.
+What else would go in here Dan? Like you know it did some performance stuff like you know you very simplified but when I'm thinking about as a developer what else would I think about maybe I might want to add in in my own constitution here things that you want to be non-negotiable for your project.
+Right? So if you want like every developer that touches this project, I want to make sure that you're always using the latest version of TypeScript.
+This is where you go.
+I want to always use this particular package for logging.
+This is where it goes.
+Right? Like things that you want to make sure that are consistent across the project.
+I see.
+Got it.
+Okay.
+And that can include both technical requirements and non-technical requirements.
+I see.
+Gotcha.
+In this case, there's not a lot of technical requirements.
+There's kind of there's performance stuff, but it's not like talking about frameworks or this.
+It does talk about lighthouse performance, things like that, which is kind of nice.
+Uh, but so I'd be like, hey, always make sure I'm on the the LTS release of this thing of node orn net or something like that.
+And that's that's where I would specify this here.
+Or for example, if I want to say like it's a static site and I want to make sure it's always built with Hugo.
+Ah, got there you go.
+Like you can just say that.
+All right.
+But uh we're going to go to the chat and now I can click the build specification and notice that it's switched my agent to specit.specify command.
+Yes.
+Or the specify agent.
+And we can I'm just going to remove this placeholder here.
+And we can just say I want to build a podcast website with featured episodes like that, right? So minimal format again.
+And notice that also as I type this in, I enter the command.
+Now it gives me handoffs for other steps like I can build a technical plan or I can clarify spec requirements which is very important and we'll we'll get to that because we recognize the fact that once you build specifications like the we just oneotted it here like oh I'm going to ask the command to go and build the spec document and we're going to have the document here in a second but that on itself is not enough.
+I might be missing something.
+I might not know something that I required it to go and design in a way that I did not intend to.
+Under specification is also a problem.
+So here you've you know green field it here.
+So you said here I'm going to build this website.
+Yeah.
+Um again I think about this existing application that I may have.
+Um should I like retroactively go back and create like a default specification for what the app is first or should I think about should I break it down into features? Like for example here you're like yeah I want to create this page featured episodes should I should I think about it of this first even if I'm creating and going for the first time should each sort of uh fe specification be a feature like hey I'm creating a podcast website so create just the base website and then I'm going to have another specification for um episodes another one for guests another one for is that how I think about or should I try to oneshot everything in one huge specification first I think from my experience and us running this spec for a while with different projects.
+Mhm.
+The workflow you described probably would work best.
+Okay, that is and the reason for that is very simple is because you want to make sure that you chunk the context, right? When you start to kind of offload everything into one like it it could work, but then you have to be somewhat hands-on or have basically like an agent fleet to go and like check each other and be like, "Oh, is this right? Is it rendering correctly?" Versus start minimally.
+But also we'll get to that because for Greenfield projects what we've actually done is at the spec stage because here I'm building a whole new podcast website.
+It's an end to- end thing, right? Um, we make a lot of assumptions and we make a lot of experience pieces, but it's very hard to dissect from it.
+Like what exactly is the minimal product that I want? The MVP, right? Yeah.
+Yeah.
+But once we get to the last stage of tasks, we are actually smart about identifying what needs to go into the MVP and start with that and then incrementally build on top of it.
+So, you don't actually have to do that decision yourself.
+Well, let's take a look at the spec real quick.
+So, you created a new specs folder.
+We have our spec.mmd in our feature folder 001 podcast website.
+So, we're going to look at spec.md.
+I'm going to close the terminal and we're just going to keep all these changes because we just going to blindly trust the AI.
+So, notice that it broke it down for me in user story.
+So, I have browse featured episodes and landing page.
+Great.
+It has some scenarios.
+If you're a product manager, these might seem familiar.
+Love this.
+Uh you episode details.
+Great.
+Like notice I did not specify that I want to view episode details, but it just kind of assumed because you're building a podcast website.
+I kind of need it.
+And this is kind of interesting too because it's it's saying like do you want to even play episodes? It's going to assume that you want a audio player.
+So you may not.
+So you might want to edit that right in that instance.
+And this is the the interesting part.
+So we have the edge cases here and all the functional requirements.
+Notice that it broke it down into way that I can easily see them and see exactly what needs to be.
+But let's say that I read through this and say, "Oh, this this sounds reasonable.
+This sounds great." Yeah.
+Like, but I don't actually know what I don't know.
+Yeah.
+So, this is where we use clarify.
+I never know what I don't know.
+I never know what I know.
+So, we're going to use the clarify command.
+I just onecllicked it and it just bootstrapped the clarify agent with the clarify command.
+And what this is going to do, it's going to use the LLM again, use the model to look over the spec and then start thinking through like what are the things that are missing, right? And we kind of see this here where it created this table for us. that says coverage.
+Oh, there we go.
+That's my new favorite button.
+Yeah, today I learned.
+There you go.
+That's a great button.
+I love it.
+Um, so we see this table that I created, right? So like, oh, you have things like core user goals, they're pretty clear, like, okay, makes sense.
+Things that are out of scope are not defined.
+Things like user roles and personas not defined because, oh, hey, visitor like is this a new versus returning? Is it a podcast owner because you're right, which makes sense.
+It's a podcast website.
+Uh, identity and uniqueness rules, all the stuff that's missing here, which is like, yeah, I like this.
+And then it starts asking me questions.
+I like that.
+We limit it to five questions to start just because we want to make sure that we don't overwhelm you too much.
+But it's actually going to ask the question itself.
+So, how will episode data be managed and added to the website? And it recommends you an option, but also it gives you other options.
+Oh, nice.
+Right.
+So, it's like, oh, you can import things from an RSS.
+You can static JSON define things.
+And I think option B makes sense.
+So, I can just literally be lazy and say B.
+Oh, it's going to do one question at a time.
+Oh, nice.
+Interesting.
+Okay.
+I've recorded this answer.
+I like it.
+Okay, cool.
+Because it not only records the answer, but actually goes into the spec and it adds it.
+So, see it says clarifications and it has a session from today.
+Nice.
+And it's gonna Oh, okay.
+Let me add this to the plan.
+And then it's gonna like let's look at the changes.
+And it actually added the requirement here.
+Oh, nice.
+Now it jumps to the second question here, which is like what is the expected episodes catalog size this website needs to support? And it's like 10 to 50 episodes.
+I like D.
+I wanted this to be a popular podcast, so I'm going to use the 200 episodes.
+Podcasting forever, right? So you can be lazy and answer these with just one letters or you can give a short answer yourself.
+So you can say, actually, none of this is correct.
+Yeah.
+Uh, so you can kind of go through the the the steps here and we're not going to go through all the five questions because you get the idea, but like it it questions you and makes you rethink the assumptions that you have because it it's your step of like ask me questions about this and see what you say.
+This is my favorite part of plan mode when I'm thinking about planning just like a small implementation, right? In this instance, we're planning like bigger things as well and you could be planning things in plan mode.
+But I love the questions cuz it's thinking of things that I would have never thought of.
+Maybe I would have thought it but I just wouldn't have put it into a prompt to like fire off and even to create.
+Exactly.
+Yeah.
+Yeah.
+So once we're good with the spec we can build a technical plan and this is where we are establishing the technical requirements.
+So I can just say I am building with Hugo because I want a static site.
+You love Hugo and I can just add it you know like Tailwind CSS for styling.
+I don't know you can use any other libraries.
+But basically this this is where you come in and add all the technical requirements that you want to have for your project all of them.
+And the more detailed the problem the better right like you want to avoid the LM making assumptions and in this case again if you're in an existing application you have the technical correct because you you have the project so you just say go look at it figure it out.
+Exactly.
+And then review it to make sure and you might find some things maybe aren't what you expected.
+Right.
+Right.
+Right.
+Exactly.
+I notice also that VS code smartly enough does that it it has this kind of a set of stages that it goes through right because my my planning has several stages to it like I needs to generate a research file data model the contracts the quick start and so it's going to go and do all of this plan or setting the technical details is probably the more time consuming part of this gotcha it's gonna it's going to go and think a lot it's going to go and think now you also are using a opus model here when you are thinking about these different tasks.
+Do you just kind of stick with one model? Do you move around? I mean uh there's new models every week, every day, you know, like how are you think about this? Because uh I was just did a a recording for the VS Code podcast with Julia and we're talking about the exact same thing.
+What model use when XYZ for these different scenarios? It it really depends on your mood uh or well okay there there's more to that of course but it it depends on what you're trying to do.
+I am personally a fan of the anthropic models like the cloud models because they're much more I would say creative and much more like oh you're writing a spec document let me think through the various things that you can include in that spec.
+I think GPD5 for example can be a bit more reserved like it's not going to go as far about giving you all the options and it can actually sometimes interrupt and like oh it's I wrote this section for the spec.
+Would you like to me to continue thinking about the spec and like I I just don't like that.
+I I I let Claude like either Opus or Sonnet just go and run with it and then I can always interfere and then say nope stop let's do something else.
+Um but ultimately it depends on also scenarios like I've seen uh a lot of the sonnet models be really really good with C# code for example and GPD5 is like can hit or miss right but if you use GBD5 at TypeScript it's somehow better.
+So you have to try this out by yourself and then see see what it does.
+Yeah, and that's kind of the cool part is it's going to be part of your source code and I saw it created a branch automatically so you could always be committing rolling back as well if it wasn't exactly right and this actually something that we're looking at adding in spec v2 where you can autocommit things because we're already on a branch as it goes to different stages and you go from spec technop plan it commits it so then you can say nope never mind revert it back now I will also add that something that I love about the fact that you have this spec driven workflow in place in a repository is that it allows you to build multiple implementations, multiple variations.
+Like let's say we're building a podcast website right now and notice like I could have stopped at the spec and not even go into the plan and say I want to have one with Hugo but the other one what if we use Nex.js with a stat static site rendering.
+Yeah.
+What would that look like? What would that look like? And not just that, but maybe you want to compare the performance.
+I want to make sure like which one is faster, which one is going to be like better suited for my specific cloud provider.
+And if you have just one spec, you can easily fork that and start implementing like two, three, four, five different variations with Saab agents.
+Yeah.
+Right.
+Uh and they can create their own branches and you can use git work trees.
+Magical feature by the way.
+Uh everybody should be uh aware of git work trees.
+Yeah.
+But uh yeah, this is I I think this is the the thing that is really really going to change how how we work is that a lot of the workflows around spec driven development are heavily leaning into git based operations.
+And if you know git and you can use like this quick like oh did not like the spec revert back revert back right and and agents modern agents are really really good at operating on top of git.
+Yeah, I like that idea, too.
+When we're answering questions earlier on, there's a lot of different selections.
+You might in your mind say, "Okay, actually, I want to do another version of this with different answers to those and then be able to actually refine them in general." Right.
+All right.
+You you because you're not binding yourself to a specific implementation with the spec.
+Spec is detached from technical details.
+I see.
+You are able to essentially come in and say, "I want this to look different.
+I want this to be implemented with a different stack." It still binds itself to the constitution.
+So if you have like non-negotiables like it's it still needs to deploy to Azure successfully.
+I'm not going to say minimal stat but it gives you the ability to then fork off basically and then go and each iteration can work independently and you can see the outcomes of each and then decide which of them are more suited for you trying to do.
+That's very cool.
+Yeah.
+All right then.
+So what's the next step here? So now it's creating these uh requirements, checklist, what all what all is happening here? Yeah.
+So it's going to create the plan.
+It's going to give us technical details.
+And then the last stage here is just tasks.
+It's going to break things down into individual tasks.
+And uh you can watch some of the past videos.
+We'll have documentation for this.
+But you'll essentially have a broken down list of tasks that the LM can one by one proceed and implement.
+I see.
+And some of them can be parallelized.
+So, um, yeah, that's essentially the flow.
+That's the the gist of Spec Driven with SpecKit.
+We try to make it very straightforward.
+Like, there's only a handful of commands that you can just use and be on your merry way.
+All right.
+Well, before we get out of here, I do want to tap really quick on to the generated code in here.
+So, let's bring your your machine back up here because it's really close.
+It's on 80 of 8.
+So, if we open up, you know, this folder for this production, I want to kind of walk through really quick.
+We have the requirements.
+We have contracts, we have data models, and a plan.
+Can we just open them up really quick? Yeah, of course.
+So, let's Yeah, let's close the chat here.
+Let's close the terminal.
+Let's take a look at the I'm just going to keep the changes.
+And I'm actually we're going to use a chat and keep all of them so it's easier to parse that.
+Uh, but if we look at the plan, notice that it has a technical context.
+It actually structured based on a template that says okay it needs to use go templates because we're using Hugo with HTML 5 some dependencies target platform how we test things the scale the constitutional check that I mentioned right very important not to not to be missed uh because it made sure that okay whatever I generated does it fit the requirements to define a constitution minimal dependency static for simplicity perf and development workflow so it passed so it can continue it outlined the structure of like how is the content going to be laid out M this is great like I love this the archetypes the assets the content itself in the episode subfolder so this is great um all these details are now captured in the plan and again I can modify them if needed uh the data model itself it defines for example the entities are operating with because they're podcast like here's the podcast episodes right and like which of them are required which of them are not which again is very very convenient for us to manage this correctly and if anything stands out you can you can change it research is a very important one Because if you are using agents like claude code, it'll actually go out on the web and research.
+And we can probably use beast mode from our friend Burke.
+Yeah.
+To go and and do this.
+But right now, because it did not do this in VS Code, it basically research it from the corpus of data that it has.
+Very cool.
+In a training, right? But it actually looked and said like, oh, okay, what's the best way for me to do front matter? Okay, like this is the format for an episode.
+Like, okay, great.
+So, key findings and document all this stuff.
+Tailwind CSS integration with Hugo.
+Like, how do I do that? like, okay, I should probably use an npm build step for this.
+Makes sense.
+So, all the stuff is captured.
+All the stuff is now like because it's in a folder, the 001 podcast website, this means that this is the context that I can operate on.
+So, down the line after this podcast website is implemented, if I ever need to go back and change something, it now has the historical like what did you think about like the data model for podcast episodes? How is the configuration done? What are the where are episodes located? This is how context.
+So then we create the tasks and at that point is it just implementing it just like we would normally like at at this point if you go and create the task it's just going to go like I didn't need to type anything.
+I just clicked the button and it's going to just break this down based on the plan the spec and all the details and create a tasks.mmd file.
+It's just going to have the list of tasks and then at that point you just ask it to go and implement this.
+In fact there's a button for it.
+Implement implement.
+Yes.
+Um and you could fire that off in a background agent or anything you want to work.
+Very cool.
+So this is nice because you got that really super human in the loop understanding going through the requirements going through the specification going through the plan implementation not for for the first but for existing for every new feature.
+So now we're going to add a guest page.
+We do the same thing we created.
+It'll be a 002 then right.
+Yes.
+Yeah.
+Exactly.
+It's going to increment these and then if you want to add any capabilities you go through the the process that we just showed you.
+You don't need to create a constitution because it already exists.
+You can just go straight into spec.
+Yeah.
+And just go from there.
+Very cool.
+Den, this is awesome.
+We will to put this up in on demand.
+We'll put links into the show notes and all that stuff.
+Maybe we'll figure out some way of putting Den's YouTube on here.
+And we actually have some great videos on the the GitHub and the VS Code YouTube as well.
+Just look for SpecKit basically and and we'll go to the the GitHub github.com/githubspec-kit and you'll find a bunch of videos there.
+Dan, thanks so much for coming and showing us this off.
+I really appreciate it.
+Thank you.
+Awesome.
+All right, back to Katie and Christina as we go into our next episode or next session, whatever it is.
+What are we doing? What are we doing here? Sessions.
+Sessions.
+I'm in podcast.
+I'm in podcast mode.
+All right.
+Thanks, Den.
+And let us know and follow up in the Discord and ask questions in the chat and we'll have Den follow up as well.

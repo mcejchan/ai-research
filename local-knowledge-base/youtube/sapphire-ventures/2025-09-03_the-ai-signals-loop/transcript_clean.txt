@@ -1,0 +1,106 @@
+I I love coming to these events just because it's a little bit like a therapy session because I think we're all asking the same questions and we're all a little bit scared about what this journey is and then you get together, you talk to people and you find out that we're kind of all in it together.
+Um, so it makes me feel good.
+I I would say the other thing is what I've noticed is we're kind of in a we're kind of in a bubble a little bit.
+Uh, because we're always talking about AI at our companies.
+We're kind of at the forefront of it.
+But when you go a little bit outside of this bubble, you find that people really don't know what AI is about.
+I I heard people talking a little bit about agents and like people don't like the word agentic and I I think it's you know the definition we're trying to figure it out.
+But if you we just had our build conference uh recently and people were coming up to the booths and asking can you tell me what an agent is? Can you tell me what tool calls are? What are these new protocols that are going? What's MCP? it's A to A.
+Like these are things that we are moving at hyper speeds at, I think, at all of our companies.
+Um, but others aren't.
+So, I'm glad that we're here because I think we're enabling a lot of companies to use this technology to do better, be better, more efficient, things like that.
+Um, so, uh, again, my name is Pew Mangalick and I, uh, help head up our applied engineering team within Core AI at Microsoft.
+Our team really goes out and we we try to work with what we call our biggest fastest uh moving companies and bring AI uh into their workflows.
+That could be through agents that could be through uh other mechanisms but really we have a platform that really accommodates uh everything or we're trying to so that people can pick and choose uh what they want.
+Um I think through this period what we're seeing is like again it's a journey.
+We started with prompting, right? And there's been roles for prompt engineers uh to get really good and some people might have laughed about that initially and and I heard some people talking about like what are the next jobs? What are those going to be like? Prompt engineering.
+I mean that's one of those new jobs that was out there.
+You had to be really good at it.
+Um but then we moved to like things like rag uh in order to like ground your LLMs in your data.
+And now I think we're going to talk about fine-tuning custom modeling and and that's what I'm going to talk about today.
+Um, so I mean if you think about just a couple years ago there were just a few like foundational LLMs and like we were all really excited when the next one was coming out but that could have been like a year between periods, right? And then it went to maybe like uh 6 months between periods and you look at it today and there's just like this explosion of models.
+And obviously this isn't all of them, but like these models are all serving different purposes, right? From a cost perspective or being more grounded in like a certain industry or a certain type of function call that they're doing.
+And uh I think this is great.
+Like even just our platform alone, we have 11,000 models uh to offer you.
+And the question is like which one do you choose? And we try to give you the tools to do that.
+Um, but are you still choosing the right one, right? How do you how do you unlock the value in your business? Um, you know, there's a poll taken out to CEOs, CIOS, uh, CTO's uh, last year and this year and like just polling like what are they concerned about? And really data accuracy and consistency was the biggest thing, right? All of these things are important, but that was one of the biggest things.
+And that's because if you don't get this right in your LLM, it it's going to affect everything downstream.
+And you can put up guard rails and things like that, but the expense grows over time.
+So the the question is how do you solve for that? And I talked a little bit about uh prompts before and how we used to uh steer the LLM towards what it want through prompting, but we were we were limited by the context window, right? by how much uh we could put in there or how much data we can ground in it.
+Now we found other methods of doing that through rag and pulling in our own sources and the context windows have become really big which has been awesome but it's also costly right and it also creates latency uh especially if you're going to be creating something that goes out to your end customers. uh if you do it internally or if it's something kind of a little bit more in batch, maybe that's okay, but you still want to reduce that cost and get it uh the speed down and inevitably there's going to be more data that you're going to want to add to it and that context window is just going to blow up.
+So fine-tuning uh is the way to go.
+I think it's interesting because fine-tuning before like people really wouldn't do fine-tuning.
+Even if you went to like the LOM foundational sites and read about fine-tuning, they would say do it as a last measure.
+Um, and partially it's just because it was really expensive.
+It was expensive to go and figure out how to do it, how to prepare your data, and then how to evaluate it.
+Well, I think now uh I think like uh platforms like ourselves, we're trying to we're making it self-service so that you can actually do it easier. you can have checkpoints so that if it goes a little bit wrong, you can you can roll it back and just bring in some more traditional like software uh principles uh to the process.
+Um and then custom modeling, I mean custom models is still way out there.
+This is something actually that our team does and it takes a long time.
+This is what we call like uh mid-training where you're injecting a lot of data into the model itself and it's it's nowhere near doing like uh building an LLM from scratch.
+Um but it's really hard.
+Fine-tuning now looks really really easy.
+Um and so you can do this.
+So one of the things that we're really kind of uh promote is the AI signals loop.
+And that's about like when you get your uh your agentic workflow out there um you're building logs, you're building observability uh just to understand what's going on.
+Well, we want to take that and we want to label it for you so you know what the inputs were coming in from uh the people who are using your system and then what were the outputs and that'll be self-labeled so that you can drive this right back into your LLM and fine-tune it uh on the fly. again create a checkpoint if you need to in case you have to roll back.
+Um and so in the platform you've got you got model choice, you've got knowledge, you've got security, um agentic frameworks, memory, um and then you've got the post training and that's something that we just launched at build and there's a couple self-service uh mechanisms to do this.
+Um, but before we kind of talk about that, I I want to say that prompt and rag are still super important.
+And really on the journey, don't go to fine-tuning right off the bat because you think that you have all this great data and you want to go and uh do some post- training. you you still have to figure out how you can do it uh by prompting it first, seeing what you're seeing what the evaluations turnouts because you have to have a really good evaluation framework uh at hand and then bring rag and your grounded data into the process.
+If you get that to a good point, then then you're probably at a point where you can start thinking about fine-tuning.
+Uh and so a couple different methods, I'm only going to touch on three different methods.
+Um the first two are methods that you can do on our platform uh and you can uh self-s serve.
+So there's supervised fine-tuning if you look from left to right or this way going across.
+Um that is the easiest one to do.
+It's also the one that's going to affect the LLM the least.
+Right? It's very minor and it's really good for like kind of changing the tone of the writing or the output.
+Um, and this could be important for you.
+And I think here's an example.
+Uh, there was a mortgage uh, dispersement firm and they wanted to use uh, this to kind of change just the accuracy ever so much in how they did their parsing.
+And so supervised fine-tuning is really good for this.
+You have to prepare your data though for supervised uh, fine-tuning.
+So there's an effort.
+And if you don't prepare your data exactly right, it's going to skew or bias uh the results of of what your fine-tuning is.
+Um so just something to be wary about.
+While we're making it easier, you still are going to have to have your experts and understanding like what your outcomes are and then also how to prepare it.
+Um reinforced fine-tuning just going along the spectrum that goes and it can change the model a little bit more.
+And actually when I say change the model, I want to be clear, you're not ch you're not taking any data out. you're just biasing the LOM into like what it's actually going to produce.
+So, you're not pushing any data out with these.
+Um, but in the reinforced fine-tuning, you can go a little deeper.
+Um, and I'll I'll talk about this a little bit more later, but there's a a legal uh firm that we worked with and they used RFT in order to actually evaluate contracts.
+And with reinforced fine-tuning, unlike uh supervised, you use a reward system.
+And and maybe some of you have heard this, but like use a reward system in order to say whether the output was good or not.
+And uh we have built-in uh what are called graders uh to check on what the outputs are.
+But you can also bring your own graater.
+It's a little bit more work, but if you've got some uh if you have a situation that doesn't meet what the graders that we're already offering, you can actually build your own.
+And then at the very far side is full weight fine-tuning.
+And that one's going to take a long time.
+That's where you're changing a lot of parameters uh in the model.
+Um but you can get some really really big results.
+Um and I'll go into a little bit more detail on that.
+So that last one was a healthcare company and they used X-ray images in order to go and do a full fine-tuning on uh their 40 model and with that they saw 109% uh increase in quality.
+I know there was a little bit of a discussion on like outputs and quality and efficiency.
+Everything is like bespoke to what you're trying to achieve.
+But this is what they saw when they did this.
+They built it into a full stack, right? Where they had the app, they had the model, um the data, and then the infrastructure that created a solution for uh doctors and diagn uh people who were doing the diagnostics to actually get uh better results.
+Um I talked about the legal company.
+Similarly like these things when we talk about fine-tuning they're built into a full stack towards some outcome right apps models data infrastructure and in this case they used 40 mini uh to do the job right so they decided that they could use a lighterw weight model um and 40 min's really really good uh and if you'd like to try to do things with coding and stuff with it it's really good as well but they were to able to use that which is already small really fast inferencing time uh lower cost and they fine-tuned on top of that and they exposed it through uh word uh for what they wanted to do uh because they were dealing with contracts.
+Um and so it's really about the layers, right? It's about the infrastructure that you have.
+It's the data.
+Um Foundry is our platform and I'll I'll flash up a picture of that because we've got a lot of tools there um for you to develop on and bring your ideas and solve your business cases.
+Um, this is kind of the foundry ecosystem.
+I know it's kind of an eye chart of uh all the tools and stuff.
+One thing I want to be really clear about though is our philosophy is use what you want to use and uh from our systems keep stuff on prem, use stuff from other services as well.
+We play nicely with almost everything.
+And uh if you want to just bring a container because you're using open-source uh agentic frameworks, great. put it into a container, run it on our system, churn tokens on whatever model you want, do the fine-tuning.
+Um, we hope that you get maybe out of the business of uh kind of managing your own infrastructure uh and then use our agent service and then let that just kind of scale with you, but it's up to you.
+And so I think the main message is that we're totally here for whatever your needs are.
+We're listening.
+Um, if you're a startup, like think about this platform.
+I hadn't thought about Azure from a startup standpoint uh when when we had done our startup.
+Um but it's pretty incredible and I think just Microsoft they really lean in to do a lot of co-engineering uh work also like introductions.
+You know we have a a a massive amount of enterprise customers and we're willing to go and and bring you to those customers to solve problems because we know we're not actually bringing all the services that they want.
+Um so come and play with it, look into fine-tuning. go on that journey.
+Don't rush towards it.
+Make sure you know what your evals are and what problem you're trying to solve.
+Um, and you'll be good.
+So, thank you.

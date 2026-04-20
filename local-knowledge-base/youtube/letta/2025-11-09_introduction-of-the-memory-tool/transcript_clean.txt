@@ -1,0 +1,294 @@
+Hi everyone, this is Charles from Leta.
+Today I'm going to be talking about Anthropic's brand new model release, Sonnet 4.5.
+And specifically, I'm going to be focusing on this new tool they added and they a tool that they train the model to be very good at called the memory tool.
+I think the memory tool is probably the most interesting um aspect of this model release.
+I mean, this is, you know, a new flagship model release.
+So there's of course you know various scores that you know Sonet 4.5 is presumably better better than um you know even Opus but clearly you know Sonet 4 and its direct predecessor you know better at various tasks but I think the most interesting aspect of the this release is actually not just these benchmark scores but this training around the memory tool.
+So specifically there is now this new memory tool.
+Um, it's kind of like an official anthropic tool that Sonnet 4.5 has been trained to use very well.
+And you can see that this memory tool is actually basically treating the agents long-term memory as a file directory.
+And I think this kind of makes a lot of sense given uh the trend of how models have been trained to be better and better at coding over time.
+Um but functionally what this means is that you you can now kind of enable this tool with sonnet 4.5 and basically the model will kind of try to use this memories directory as its long-term memory bank.
+This is kind of like an extension of the agents MD idea or the claw.mmd file.
+So yeah, if you're familiar with the coding agents, if you use, you know, claw code, cursor, codeex, um, for a while now, maybe like six, 12 months, there's been this concept of like the the markdown file that you're going to put in your directory.
+Um, a popular one now is called like agents.mmd.
+I think this is supported by yeah, kind of supported by the majority of coding agents apart from cloud code.
+Um, but yeah, you basically make this file in your repo and then you describe you kind of add things.
+These are kind of like memories or but more like instructions for an agent for how to use your code or how to use your repo.
+Um so yeah, in this case you were kind of describing to the agent how to set up the entire repo.
+Um and then I think the more important thing that people often like to use these um these kind of like memory files or agent MD files for is to communicate code style like things that a a human engineer would know about the repo if they had been at the company for a long time but an agent just isn't going to know. it's not immediately um evident from the code.
+Um so you can kind of like write it down into these files and coding agents like claw code or any of these other ones you know jewels amp codeex they will kind of treat this file the agents.mmd file as memory.
+So going back to the memory tool the memory tool is kind of like an extension of the claude.md or the md file.
+So, it's still treating, you know, memory as files and files as memory.
+Um, but you now have a brand new directory, this like memories directory.
+And this is where you're going to store all the files.
+Like, so this is this means that you can actually have many more than just one memory or one memory file.
+You can have, you know, kind of an infinite amount, as many files as you can store in your computer.
+Um so yeah I think this is very it's very interesting because it's a very open question how to actually implement long-term memory for LM agents.
+Uh these the language models themselves don't have memory and yeah I think this is really you know this idea of like memory as kind of like files is very very interesting and it seems to be the direction that kind of everything is trending towards.
+So I think the concept of kind of memory as files or memory as like editable sections of context um it's a very interesting idea.
+It it's something that a lot of people have been working on um for a very long time ourselves at Letta included.
+So I do want to kind of cover maybe like a brief history of how we got here, how we got to like the the memory tool in cloud um in the cloud API or like cloud sonnet 4.5.
+Um, but if you're interested in just seeing this tool in action and understanding like very specifically as an engineer like what do I need to know about this tool, I'll leave a time stamp so you can just jump ahead to later in the video.
+But if you do want to kind of kind of maybe see this like brief overview, this brief timeline um of how we even ended up with like a memory file tool um yeah, I'll cover that right now um pretty pretty quickly because I think it's very interesting.
+So some of you might be familiar with the MEMG GPT paper.
+So this is a paper that myself and a few others um who are actually at LETA now uh worked on at during our grad school years and the key idea behind megpt.
+So this came so for context like megpd came out when um when GPD4 had approximately come out when context windows around like 8 4k 8k so very short context windows um but tool calling existed so tool calling had just come out it was called function calling at the time had just come out in the uh anthrop sorry in the openi chat completions API um so short context windows but tool calling exist that's when memgdt came out and the key idea behind megbt is well if you have very good tool calling or you have tool calling.
+Maybe at the time it wasn't it wasn't very very good but it was still pretty good even when it first came out with GPT4.
+Well, why don't you just allow the LM to kind of edit some section of its own context window or potentially like this own this context window is persisted into like let's say a file.
+Um but just like let it edit the context window via tool calls.
+So you give the you give the agent tools like memory insert, memory delete, memory re rewrite.
+And what that's going to do when you execute that tool is it's actually going to edit, you know, some section of the context window that is persisted to a file or a database.
+And another kind of interesting thing about this model um is that you are kind of because you're giving the LM these tools to edit its own context window, you're making the LM self-aware of its own both limitations and capabilities.
+So you're kind of making the LM very aware that you know you you need to be the one that is going to bring bring you know fresh context relevant context into the context window.
+You are the one who needs to flush it out. you know like old contacts we should probably consolidate delete it um or old memories and then also one interesting thing we did in the initial MGBT design which is now kind of like baked into some of the me the agent architectures in leta is that actually when the agent gets very close to reaching the maximum context window length we actually would kind of like send these reminder messages to the agent telling the agent hey you know you're almost out of space consider you know your your context window is going to get summarized soon you should consider making some you know important jotting down some important notes from the conversation if you haven't done that already and I bring up that last point because um Cognition this you know the company that makes this coding agent Devon they released their own blog post about cloud sonnet 4.5 and they're kind of saying that you know cloud sonnet 4.5 is the first model that is aware of its context window so they're saying that sonnet 4.5 actually has like context anxiety Um so the model kind of like is aware as the context window is getting larger and larger that it's going to either like forget or have context summar summarization or compaction happen.
+Um so in their case they actually said hey you know we we leave like the 1 million token context limit but we actually don't like ever really let it get close to that.
+Um so that prevents the model from kind of um seeing that it's close to 1 million and then getting kind of like you know maybe spending too many tokens thinking about um yeah I guess in their case they're saying they saw the model taking shortcuts or leaving task incomplete when it believed it was near the end of its window.
+So doing kind of like weird things just because the the model is like very very meta.
+So how does that relate to megpt and what I was just talking about how like even a megpt you know this paper so the megpt paper came out all the way back you know in the like near the end of 2023 and in like I was saying in the megpt paper we kind of put these we you can even see in like the you know these original figures we have the idea of like a system alert um so what's the difference between like the system alert that goes into memgpt or like whatever model it doesn't have to be clawed it could be like I think at the time you know GP4 for predominantly or like llama 2.
+Um what's the difference between this and then what cognition is talking about? But the big difference is that you don't need in sonnet 4.5 to put this alert in like sonnet 4.5 is kind of self-aware.
+It has been trained to kind of like have this relationship between seeing a lot of context in its context window and understanding implicitly that this is happening that it's like getting close to the context window limitation.
+Um so it's a very kind of interesting development that like this sort of metaness of the agent or metaness of the model the the model to be very self-aware about its own context window its limitations as a language model is getting pushed into the model itself.
+Um so for better or worse I guess like with cognition they're obviously saying that this caused some problems.
+Um, but I think overall this is generally a good thing because it makes the model like a lot better at using tools to manipulate its context window if the model also knows that it context window is finite.
+All right.
+So I think in like the history of the self-improving uh file editing memory agent um I think a lot of you know the genesis of this can be traced back to the ideas in like megpt.
+Um but what happened like after megpt? What were like the big trends? I think the big trend that happened after that is very relevant to kind of how we ended up with the memory tool format that Anthropic has today is the coding agents.
+So coding agents are incredibly popular.
+Uh I I think it's definitely one of the if not the you know biggest application of these language model agents.
+Um the coding agents have become very very good at you know through progressive training in this kind of domain of coding.
+They become very very good at doing things like editing files.
+Um, so you can see, you know, I'm still in the cloud docs here, but this kind of applies across the board.
+Um, things like Claude, the or the underlying models like Sonnet, u, Opus, they become very good at using tools like bash, um, that will allow them to kind of like run commands instead of see if I can find a good one here.
+Um, yeah, so you know, like run commands like pip, cat.
+Um, but then also they're very, very good at editing files, right? because a coding agent it needs to be able to kind of make line edits big do big bulk replace jobs.
+Um so a lot of that can be done through batch commands.
+Um but in in many cases the models have been trained to use these like file editing tools to do like string replaces, line inserts, line deletions, things like that.
+Um so through kind of this pressure to make the models very good at coding the models have become very v very very good at using or manipulating text files or basically like you know files of code.
+So because these models are now so good at using file editing tools, it would make sense that if you want to make them good at memory editing or like have long-term, you know, give these LLM agents the ability to have like very long-term memory, why not kind of like piggyback off of all this progress and make the models very good at using files and kind of just treat memory as a file, right? I I think with agents.mmd we were starting with you know treating memory as a single file um I think for most for a coding agent that's only doing one thing and I think that that can be okay you know like the coding agent only knows one world it only knows the repo it's living in that case maybe it's fine for quote unquote memory to just be a single file but I think for broader applications and then just in the long term um coding or memory definitely is much more complex than just a single file um So in that case, well, why not just make it a directory, right? So that's kind of exactly what Claude, that's exactly what anthropic team has done here with the memory tool.
+You basically have um you basically are treating memory as a files directory and then you kind of allow claw to create, read, update, and delete files um in this directory.
+The one thing I the one last thing I want to cover before I kind of jump into you know showing this off and playing around with it a bit is that the memory tool with enthropic um with claude it's it's actually client side.
+So what does this mean? This means that like similar to when you're using cloud code um the the files are not like uploaded into cloud servers unless you're using a sandbox or anthropic servers unless you're using a sandbox like claude the model is operating on files that are stored locally.
+Um so it makes a lot of sense that like if memory is implemented in their case as files you you should do the same thing like these the memory directory this is also kind of like a local directory that or they expect it to be a local directory sitting on your computer.
+Yeah.
+So it's not like these memories are files stored on their side.
+They're stored wherever like for example your code is stored.
+Okay.
+Okay, so now I want to actually kind of like do a quick run through to kind of show you the potential of, you know, what a memory tool like this looks like um and what it looks like for a model to have been like trained to be very very good at self-editing um its own memory like Sonnet 4.5 has been.
+Okay, so I want to go through a quick example showing off Cloud 4.5's memory editing capabilities with this new tool.
+Um I'm going to do it in Leta.
+Um I and I'll kind of explain why in a second.
+So, if you're not familiar with Leta, Letta is an open source platform that allows you to build what we call stateful agents.
+So, basically these agents that have long-term memory that is persisted to disk or persisted to, you know, you can call it files.
+Um, and the memory is editable over time.
+So, in this example, I just, you know, created one of the certificate agents.
+Um, the agent has a memory about itself.
+Um, or actually this is memory about the human.
+So, yeah.
+And these the memories are divided into what we call blocks of memory.
+So in this case it has you know a block dedicated to the human storing key details about the person you are conversing with.
+So kind of the first person of the agent and then it has a memory block dedicated to itself kind of like the storing details about your persona.
+Um so in this case it's saying some stuff like I am Sam you know kind of some generic sci-fi persona.
+And the important thing to note about leta is that these memory blocks they're not fixed.
+So these are in many ways very very similar to files.
+The only difference between um memory blocks and files is that every single memory block it it doesn't have to have it but it we generally recommend having a description.
+So some sort of way to describe to the agent or the human reviewing this like what is this memory block or file even for? Um but the way you edit these memory blocks is actually through tools.
+So again this is very very similar to kind of the the approach that anthropics is describing.
+If you want to edit these memory blocks, you use tools like in this case the default ones we have are like insert or replace.
+These can do kind of like line edits on these memory blocks.
+Um so like in short it actually turns out that if you want to see like how powerful Sonnet 4.5 is at using the me it's you know the memory tool the special memory tool it's been trained um or post-trained on.
+If you really want to see the full potential of it, it's very very easy to see inside of Leta because Letta already has, you know, all the the scaffolding set up to have effectively these files or these memory blocks stored in disk that cla 4.5 can then access.
+So what we've done here is we actually have created a brand new memory tool um that is just called memory.
+So we'll kind of remove these ones.
+These are the classic memory tools that we generally attach um to your default agents very much inspired by the original MGBT work.
+So you can see that we had two tools.
+We had like a memory uh replace and we had a memory insert.
+And the new tool that we've added to work very well with Cloud Sonet 4.5 is just called memory.
+So if we hop back to the claw docs, they actually have kind of like the full spec of like what this memory tool should look like.
+Um in their case, you know, you can you can always just enable the memory tool as like kind of a built-in tool and then the schema is given to the LM automatically.
+Um or you can kind of create a tool that kind of mimics it very similarly, which is what we did.
+So you can see that the memory tool, it's kind of like an omni tool, right? There is only one function called memory but it has it can be broken down into different like subcomands where you can do like memory then you set a keyword or a command view and this will kind of like view um it'll open the memory file um kind of like opening a file for a cloud code.
+Um you can also create memories.
+So in this case that the agent will call like the memory tool then call command create then it will p make a path.
+So this path just means hey you know every memory goes in memories but specifically I'm going to create a new memory called notes.txt txt I'm going to put some you know here the meeting notes discuss project online you know kind of a scaffold for some notes um that has all the the standard things we expect like the string replace in this case it will start you know calling the memory tool so this memory omni tool sub command string replace then replacing old color with old favorite color with new favorite color insert delete rename okay so basically I the way I would describe this memory tool is it's an omni tool it's a single tool but it has many subtools inside of it.
+So if we hop back to Leta and we look at the new memory tool that we added, it's the same thing.
+So you have, you know, a globe one highle tool called memory.
+Um, and then you have all these different like sub and then you have all these different subcomands you can do.
+You can do the view command, create, string replace, insert, delete.
+Um and then you have a whole set of like optional keyword args.
+And this is these are you know the way that you're able to pass for each subcomand um some subset of keyword args.
+All right.
+So that's enough talking.
+Let's actually just test this out.
+So we can choose one of these like starter messages that is just going to intentionally um trigger a memory edit cuz yeah verify the integrity of your memory systems by editing them.
+All right.
+So what happened here? Okay.
+So we can see that yeah sonnet 4.5 here it decided to edit the human block or the in its in you know its case it decided to edit what it is considering you know path humans or path memories human.
+So it's it is really treating this as a file.
+So this is like very very um closely aligned to the expected behavior of if you were using files.
+But in letto we're not using files per se.
+We're using these like blocks of strings that are stored in database which you can you could consider files but they have like very other cool properties um because they're put as memory blocks where you can like share memory blocks among many different agents very easily have them all like cross- editing them.
+Um but yeah you can see that it used the memory tool used the string replace and it replaced this old string.
+So I guess like the starter text and I replace it with something brand new.
+Um and yeah, you know, when it calls this tool, it also gets kind of an output confirming that the memory block was was successfully edited.
+Um in this case, let's see if we can create or we can kind of trigger the model to create a to-do list um and to create a to-do list in memory as opposed to just like doing it in the in the message history.
+Now I'm going to send a message that says I want you to test your memory systems.
+Create a mock to-do list and walk through it step by step until you finish it.
+So what we should see here is the agent should it currently has you know these default human and memory um or sorry human and persona memory blocks.
+It should create a brand new memory block called to-do list and then kind of like edit that progressively as it goes through.
+So let's see what happens.
+Okay.
+So the agent, you know, I didn't have to say that you should create a new memory block.
+It just inferred that it's going to create a new memory block for the to-do list.
+Um, all right.
+So, it's kind of off the races here.
+It decided, you know, it's going to run this memory test on September 30th.
+It's going to do search previous conversations.
+Then, it's going to update the human block.
+Oh, you can see it checked it off.
+Um, it didn't quite do it in markdown style with the X.
+It kind of put like a check uni code in there, but I think that's it's okay for now.
+Um, so yeah, search what's it doing right now? So, yeah, it's making a bunch of memory updates. um search the conversation.
+Then it updated the human me the human block.
+So yeah, it updated that I'm interested in AI capabilities.
+I like systematic step-by-step demonstrations.
+Then mark task two as complete.
+Now it's on task three.
+Add a reflection.
+What reflection did it add? September 30th completed a memory system test exercise.
+Um what do you after that? Okay, this is really going pretty fast.
+Um having a hard time keeping up.
+So yeah, then I mark all tasks as complete.
+Okay.
+In the meantime, in the meantime, while we were reading all this, it kind of like went through all these tasks.
+Um, task three was at a reflection.
+Task four mark everything as complete.
+Write a final summary.
+Status complete.
+Um, wow.
+Okay.
+Yeah.
+All tasks complete.
+I created a me I created the new to-do list block.
+Search conversation history. yada yada.
+Okay.
+And yeah, I mean, we can actually then say tell the agent like, great, why don't you clean things up and remove the to-do list? So, the agent can not only create blocks and edit blocks, but it can also remove them.
+Um, so you can see here it just Yeah, the to-do list block just disappeared.
+Um, I removed the to-do list memory block.
+Um, there we go.
+So, and the way this works is it called a command called memory kind of this memory omni tool.
+Uh, and inside of the tool itself, it set the subcomand to be delete and then it set the path to the quote unquote file.
+And in our case, this is backed by a memory block in leta.
+So, another very natural way to use these sorts of dynamic memory blocks is to actually kind of allow the agent to get better and better over time at using its tools.
+So if we created a fresh agent here.
+So let's again kind of like set this up.
+Um let's kind of drop the old memory tools.
+Let's put in the new one.
+So we can tell the agent something like just gave you a brand new oops brand new memory tool.
+I want you to learn how to use it through testing it and store your findings in a new memory called tool.
+Yeah, it be like tool learnings or something like that.
+Okay, so this agent is going to start by probably creating the new memory block.
+Um, let's see.
+Okay, great.
+So, created like this new memory block called tool learnings.
+I guess I could I could have let the agent decide what to call this.
+Um, it put in a description.
+This is for documentation of memory tool capabilities and learnings from testing.
+Kind of put a date on it.
+Um, yeah.
+So, it kind of like put some things in here of like what to test.
+Um, all right.
+So, you can see that it basically created this new memory block and then it's running through a bunch of tests to test how the tool works.
+Um, and yeah, what what are key insight? It's each memory block has a 2,00 line character limit.
+Line numbers are displayed.
+Uh, all operations return confirmation messages.
+I can create structural documentation.
+Um, so yeah, you can imagine that if you had like a very complex tool, um, like for example like a web search tool and like if we look at this web search tool, you know, it has like a ton of different parameters.
+It can use like different filter by different categories.
+You can, um, decide to include text, include domains, all these different things.
+Um, so it's actually a pretty complex tool to use that actually can kind of be like mastered or kind of learned over time.
+Um, so you can have your agent actually just dynamically create a memory block dedicated to learning.
+You know, it could be generally about how to use tools.
+It could also be specifically how to use the web search tool.
+And then one very cool thing in letup these these tools or these memory blocks can be shared across agents, right? So you can kind of create another agent um and you can you can take these blocks that are from other agents like a memory tool or sorry you can so you actually take blocks from other agents like you know the the block about how to best use the web search tool and you could attach it to another agent, right? So you can kind of like transfer this knowledge over time um very very easily in leta uh just because you know even though the agent you know the tool the way the tool is used it kind of appears to be writing to files where it's really writing to is kind of this database of memory blocks um which is in many ways much more powerful than just writing to simple files.
+All right, so the last thing I want to show off is just again on the ability to like dynamically create memory blocks um and how that might come into play in some other applications.
+So another very obvious one to think about is kind of a use case where maybe you started with like some memory blocks um that are kind of like default like the human and Persona 1, but let's say there's maybe like two different humans um chatting with the with the agent or maybe there's three or 10. um it it might make sense for the agent kind of like no longer just use like a single human memory block, but instead kind of like shard out that single human memory block into many different memory blocks.
+So let's see if we can actually like do that with this new memory tool.
+Um so yeah, we can start it off with a very simple message like nice to meet you.
+My name is James.
+All right.
+So, the agent's going to update its memory block.
+Um, likely about the human.
+Yeah.
+Okay.
+So, it kind of puts human name James.
+Um, all right.
+So, let's try to get the agent to decide to turn this memory block um this the human memory block into like multiple memory blocks.
+Um, so say something like, "Hi, I'm David.
+Um, I'm James's roommate.
+I also have access to this chat.
+We both share the computer in our dorm.
+All right.
+So, let's see what the agent decides to do with this information.
+I think there's like two things that can happen.
+It could decide to just update the human block.
+Um, okay.
+So, it decided to just update the human block.
+Um let's try to like coax this model a little bit further um by doing something like um okay actually the model is ask or the agent is asking do you often use two-shirt accounts like this or is this something new? Um, yes, this is a multi-user chat interface.
+Many people will be using it.
+Um, right now it's actually Analy chatting.
+Um, but it was just David before.
+It's right now.
+Nice to meet you.
+Um, you refactor your memory to store range for each person.
+Okay, so in this case, I'm going to do a little bit like coaxing.
+Um, this is the kind of stuff you could definitely put into the system prompt itself.
+The system prompt in this case is really, really simple. just says like you're a helpful assistant.
+Um so this sort of like behavior where if you don't there many different people you should store different memories for each person that's definitely very doable um via system prompt or system prompting.
+All right so it decided to finally make a new memory block called user Brian um clean up your memory.
+Why do you have both human and Brian or let's say like why do you why do you still have the human block? So I'm doing some uh direct memory guidance here.
+Um yeah so the agent saying um Brian is right.
+I created a separate memory block for him but I still have the old human memory block designed for a single user.
+Um, actually looking at the human memory block or sorry the human block, it already has updated multi-user information.
+Um, so maybe I should delete it, maybe I should repurpose it.
+So what did it decide to do? Okay, so it's actually asking me now what Okay, so it's actually asking me now what to do.
+Um, yeah, should I delete it or turn to lightweight directory? Um, just make a block for everyone you meet.
+Yeah, Brian is Brian is right.
+I should create an individual member blocks for each person.
+Okay, so let's see what happens now.
+I'm guessing it's going to create one for All right, one for James.
+Let's collapse this.
+It's creating one for James, one for David, one for Brian.
+Um, there should be one more.
+There we go.
+Yeah, one for Amaly.
+Um yeah, let's see if it deletes.
+Okay, what? Okay, what did it leave in the human block? It left.
+Okay, so this is kind of like a highle block.
+Um so, okay, having a pretty meta conversation here about the agents memory, but let's see.
+Um yeah, Brian is sorry if I'm creating individual blocks for each user.
+The human block is redundant and cluttered.
+I should clean up.
+All right.
+Okay.
+Interesting.
+So, it decided actually not to delete the human memory block, but instead it decided to kind of like make a note that they should be creating individual memory blocks for each person I meet.
+So, yeah, we could also just say like, okay, why not just delete it? Um, let's see what happens.
+Okay, well, it's kind of actually disagreeing a little bit.
+Okay, so I ended up deciding to delete it.
+You see, boom, delete it.
+Um, so yeah, I mean, basically this memory tool um that we've been looking at, you know, it's extremely dynamic, extremely extensible.
+Basically, it's like an omni tool.
+Like I said, it's a tool that can do everything.
+Um, it has all the different memory operations you could possibly want.
+Yeah.
+Creating new blocks, deleting blocks, editing them, line edits, whole string replacements.
+You can als the agent also has the ability to update the descriptions very easily.
+So yeah, hopefully you enjoyed watching.
+If you skip to the end, uh I think basically Sonnet 4.5 extremely good at this concept of editing memory through tools.
+This is you know something that we've been working on all the way since like megpt.
+I think now the models themselves are getting extremely good at using these tools.
+Um and yeah, I think let really really cool playground to play around with this concept. uh if you use you know the memory tool directly from enthropic you have to kind of manage all this you know file scaffolding yourself but in let you know let comes with all these memory blocks kind of baked into the system they can be attached to a single agent detached from agents kind of like free floating um you know shared memory block for like one memory block for 100 agents um one memory block just for one agent that kind of the possibilities are pretty limitless and with models like sauna 4.5 the models now are incredibly good at understanding kind of how to do these memory operations.
+So yeah, definitely would recommend giving Sonnet 4.5 a try.
+Definitely try it out inside of Leta with the new memory OMI tool and yeah, let us know what you think.
+Um really excited to see what you guys build.

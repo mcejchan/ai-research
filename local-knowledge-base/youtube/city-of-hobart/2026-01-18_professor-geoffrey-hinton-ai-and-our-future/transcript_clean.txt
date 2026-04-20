@@ -1,0 +1,561 @@
+Good afternoon everyone.
+Thank you so much for coming.
+For those of you who don't know me, my name is Anna Reynolds and I'm the Lord Mayor of Hobart. uh and very very pleased to be able to welcome you to this really wonderful opportunity to hear from uh uh Professor Jeffrey Hinton.
+Um it is a really unique opportunity for uh Australia uh because this is Jeffrey's uh only speaking engagement while he's um in this part of the world.
+Uh and it's very appropriate.
+I'm very proud.
+Um we consider ourselves to be Australia's city of science.
+Um it's a a big call but we we like to make it.
+Uh so it's great to have um Jeffrey here for his only appearance uh in Australia.
+Before I begin, I'd like to acknowledge country and in recognition of the deep history and culture of this place, I acknowledge the Muanina people as the traditional custodians who cared for and protected the land for more than 40,000 years.
+I acknowledge the determination and resilience of the Palawa people of Luchita, Tasmania uh and recognize that we have so much to learn uh from the continuing strength of Aboriginal knowledge and cultural practice.
+I'd also like to acknowledge some elected representatives here today.
+So we have the Minister for Science for Tasmania, U Maline Ogulvie here. also three colleagues uh council colleagues councelor Bill Harvey, councelor Mike Dutter and alderman Louise Bloomfield.
+Uh so as I mentioned we are really honored to welcome Professor Jeffrey Hinton who in 2024 just and picked it up very recently was awarded the Nobel Prize in physics for his groundbreaking work on neural networks and deep learning contributions that have paved the way for advanced artificial intelligence that we see today.
+As part of this public lecture, Professor Hinton will explore the world of AI, uh, how it works, the risks it presents, and how humanity might coexist, uh, with increasingly powerful and potentially super intelligent systems.
+Uh, following his talk, we will open the floor to some Q&A uh, questions from you and I will uh, facilitate that.
+So, in the meantime, I would like us all to put our hands together to welcome Professor Hinton to the stage. [applause] Okay.
+Um, it's very nice to be here in Hobart.
+I hadn't realized how beautiful the natural surroundings are here.
+Um, if you can't read the screen because you're at the back, don't worry.
+I'm going to say more or less everything on the slides.
+The slides as much to prompt me with what to say as for you.
+So for the last 60 years or so maybe 70 there were two paradigms for intelligence.
+One paradigm was inspired by logic.
+People thought the essence of intelligence is reasoning.
+And the way you do reasoning is you have symbolic expressions written in some special logical language and you manipulate them to derive new symbolic expressions just like you do in math.
+You have equations, you manipulate them, you get new equations.
+That it all had to work like that.
+And they thought, well, we have to figure out what this language is in which you represent knowledge.
+And um studying things like perception and learning and how you control your hands, that can all wait till later.
+First we have to understand this special language in which you represent knowledge.
+The other approach was a biologically inspired approach that said look the only intelligent thing we know about are brains.
+Um and the way brains work is they learn the strengths of connections between brain cells and if they want to solve some complex problem they practice a lot and while they're practicing they learn the strengths of these connections until they get good at solving that problem.
+And so we have to figure out how that works.
+We have to focus on learning and how neural networks learn the strengths of connections between brain cells.
+And we'll worry about reasoning later.
+Evolutionary reasoning came very late.
+Um we have to be more biological and think what's the sort of basic system.
+So there were two def very different theories of the meaning of a word that went with these two ideologies.
+The symbolic AI people and most linguists thought the meaning of a word comes from its relationships to other words.
+So the meaning is implicit in a whole bunch of sentences or propositions that combi that have that word combined with other words.
+And you could capture that by having a relational graph that says how the meaning how one word relates to another word.
+Um but that's what meaning is.
+It's implicit in all these relations between symbols.
+The psychologists particularly in the 1930s had a completely different theory of meaning or a theory that looked like it was completely different which is the meaning of a word is just a huge bunch of features.
+So the meaning of a word like cat is a hu huge bunch of features like it's a pet, it's a predator, um it's aloof, um it has whiskers, a whole bunch of features like a big bunch of features and that's the meaning of the word cat.
+That looks like a totally different theory of meaning.
+Um psychologists like that partly because you could represent a feature by a brain cell.
+So when the brain cells active it means that feature is present and when it's silent it means that feature is not present.
+So for cats the brain cell representing has whiskers would be active.
+Now in 1985 which was 40 years ago um it occurred to me you can actually unify those two theories.
+They look completely different but actually they're two two sides of the same coin.
+And the way you do that is you use a neural net to actually learn a set of features for each word.
+So psychologist has never been able to explain where all these features come from.
+And the way you do that is by taking some strings of words and training the neural net to predict the next word.
+And in doing that, what the neural net is going to be doing is learning connections from things that represent the word symbol to a whole bunch of brain cells, neurons that represent features of the word.
+So it learns how to convert a symbol into a bunch of features.
+And it also learns how the features of all the words in the context should interact to predict the features of the next word.
+That's how all these large language models that people use nowadays work.
+They take a huge amount of text and they use a great big neural net to try and predict the next word given the words they've seen so far.
+And in doing so they learn to convert words into big sets of features to learn how those features should interact so that those predict the features of the next word.
+And that means if you can do that all the relational knowledge instead of residing in a bunch of sentences that you store would reside in how to convert words into features and how those features should interact.
+So the big neural nets you use nowadays the large language models don't actually store any strings of words.
+They don't store any sentences.
+All their knowledge is in how to convert words into features and how features should interact.
+They're not at all like most linguists think they are.
+Most linguists think they somehow have lots of strings of words and they combine them to get new strings of words.
+That's not how they work at all.
+So I got that model to work and over the next 30 years gradually it got through to the symbolic people.
+So after about 10 years a colleague called Joshua Benjio when computers were now a lot faster about a thousand times faster colleague called Joshua Benjio showed that the tiny example I used which just worked on a few on a very simple domain could actually be made to work for real language.
+So you could take just English sentences from all over the place and you could try training a neural net to take in some words and then predict the next word.
+And if you trained it to do that, it would get very good at predicting the next word, about as good as the best previous technology.
+And it would learn how to convert words into features that capture their meaning.
+About 10 years after that, the linguists finally accepted that you wanted to represent word meanings by big bunches of features.
+And they began to make their models work better doing that.
+And then about 10 years after that, researchers at Google invented something called the transformer, which allowed for more complicated interactions between features.
+Um, and I'll describe those in a little while.
+And with the transformer, you could model English much better.
+You got much better at predicting the next word.
+And that's what all these large language models now are based on. and things like chat GPT used the transformer invented at Google and a little bit of extra training and then the whole world got to see what these models can do.
+So you can view the large language models as descendants of that tiny model from 1985.
+They use many more different words.
+They have many layers of neurons because they have to do with ambiguous words like may.
+If you take the word may, it could be a month or a woman's name or a modal like would and should and you you can't tell from the word what it is.
+So initially the neural net will hedge its bets and sort of make it be the average of all those meanings and then as you go through the layers it'll gradually clean up the meaning by using interactions with other words in the context.
+So if you see um June and April nearby, it could still be a woman's name, but it's much more likely to be a month.
+And it the neural net uses that information to gradually clean up the meaning to the appropriate meaning for that word in that context.
+Now I originally designed this model not as a way of not as a language technology, but as a way of trying to understand how people understand the meanings of words and how children can learn the meanings of words from just a few examples.
+So these neural net language models were designed as a model of how people work.
+Um not a not for a technology.
+Now they've turned into a very successful technology, but people also work pretty much the same way.
+And so this question that people often raise of do do these LLMs really understand what they're saying? The answer is yes.
+They understand what they're saying and they understand what they're generating and they understand it pretty much the same way we do.
+So I'm going to give you an analogy to explain how language works or rather to explain what it means to understand a sentence.
+So you hear a sentence and you understand it.
+But what does that mean? Um in the symbolic AI paradigm people thought that meant that was like you hear a French sentence and you understand it.
+And me understanding a French sentence consists of translating it into English.
+So the symbolic people thought understanding an English sentence would mean translating into some special internal language um sort of like logic or like mathematics um that is unambiguous and once it's in that internal unambiguous language you can then operate on it with rules much like in mathematics you have an equation and you can apply rules to get a new equation you can add two to both sides and now you've got a new equation. um they thought intelligence and reasoning would work like that.
+You'd have symbolic expressions in your head and you'd apply operations to them to get new symbolic expressions.
+Um that's not what understanding is.
+According to the neural net theory, which is the theory that actually works, um words are like Lego blocks.
+Um so I'm going to use this analogy with Lego blocks, but they differ from Lego blocks in four ways.
+So the first way they differ is a Lego block is a three-dimensional thing.
+And with Lego blocks, you see, I can make a model of any 3D distribution of matter.
+It won't be perfectly accurate, but if I want to know the shape of a Porsche, I can make it out of Lego blocks.
+The surface won't be right, but where the stuff is will be basically right.
+So with Lego blocks, I can model any 3D distribution of matter up to a certain resolution.
+Um, with words, I can model anything at all.
+They're like very fancy Lego blocks that don't just model where 3D stuff is.
+They can model anything.
+It's a wonderful modeling kit that we've invented.
+That's why we're very special monkeys because we have this modeling kit.
+Um, so a word has thousands of dimensions.
+A Lego block is just a three-dimensional thing and you can sort of rotate it but maybe expand it a bit but it's basically got low dimensions.
+A word has thousands of dimensions.
+Now, most people can't imagine what something with thousands of dimensions is like.
+So, here's how you do it.
+You imagine a three-dimensional thing and you say thousand very loudly to yourself.
+Okay, that's pretty much the best you can do.
+Um, another way in which words differ from Lego blocks is there's thousands of different kinds of words.
+Lego blocks is only a few kinds here. the sizes of different kinds and each kind of word has its own name which is very useful for communication.
+Another way in which they differ is that they're not a rigid shape.
+A Lego block is a rigid shape.
+A word there's a rough approximate shape for a word.
+Some words have several rough approximate shapes, ambiguous ones, but unamiguous words have a rough approximate shape, but then they deform to fit in with their context.
+So the they're these highdimensional deformable Lego blocks.
+And then there's a last way in which they differ um which is how they fit together.
+So with Lego blocks you have little plastic cylinders that click into little plastic holes.
+Um okay.
+I think I think that's how they work.
+I haven't checked recently, but I think that's how Lego blocks work.
+Um, now words don't fit together the same way.
+Words are like this.
+Each word has a whole bunch of hands and the hands are on the ends of long flexible arms.
+Um, it also has a whole bunch of gloves that are stuck to the word.
+And when you put a bunch of words in a context, what the words want to do is have the hands of some words fit in the gloves of other words.
+And that's why they have these long flexible hands.
+Um, so understanding a sent now one other point.
+As you deform the word, the shapes of the hands and the gloves also deform with that in a complicated but regular way.
+So you now have a problem.
+If I give you a bunch of words, like I could give you a newspaper headline where there's not much not many syntactic indicators of how things should go together.
+I just give you a bunch of nouns and you have to figure out what that means.
+And what you're doing when you figure out what that means is you're trying to deform each word so the hands on the ends of its arms can fit into the gloves of other deformed words.
+And once you've solved that problem of how we deform each of these words so they can all fit together like this with hands fitting into gloves then you've understood that is what understanding is.
+It's solving this problem of how do you deform the meanings of the words that is this highdimensional shape is the meaning.
+How do you deform the meanings so they all fit together nicely and they can lock hands with each other.
+Um that's what understanding is according to neural nets and that's what's going on in these L&Ms. They have many many layers where they start off with an initial meaning for the word which might be fairly ambiguous.
+And as they go through these layers, what they're doing is they're deforming those meanings trying to figure trying to figure out how to deform them so the words can all lock together where the hands of some words fit into the gloves of other words.
+Once they've done that, you've understood the sentence.
+That's what understanding is.
+Um, I already settled that.
+So basically it's not like translating into some special internal language.
+It's taking these approximate shapes for the words and deforming them so they'll fit together nicely.
+And that helps to explain how you can understand a word from one sentence.
+So I'll now give you a word that most of you will never have heard before and you will understand it.
+You understand what it means just from one use of it.
+And the sentence is she scrummed him with the frying pan.
+Now, it might be she was a very good cook and she really impressed him with an omelette she cooked for him.
+Um, but that's not what you thought it meant.
+Um, probably what it means is she hit him over the head with the frying pan or something similar.
+She did some aggressive act towards him with the frying pan.
+Um, you knew it was a verb because of where it was in the sentence in the ED, but you had no meaning whatsoever scrum to begin with.
+And now after one utterance, you've got a pretty good idea of what it means.
+So there was a linguist called Chsky who you may have heard of um who was a cult leader.
+Oh the way you recognize a cult leader is to join their cult you have to agree to something this obvious nonsense.
+So for Trump one it was that he had a bigger crowd than Obama.
+For Trump two it was that he won the 2020 election.
+For Chsky it was that language isn't learned. and eminent linguists would look straight at the camera and say the one thing we know about language is that it's not learned.
+It's obvious nonsense.
+Um, Chsky focused on syntax rather than meaning.
+He never had a theory of meaning.
+Um, he focused on syntax because you do lots of mathematical things with syntax.
+He also was very anti-statistics and probabilities because he had a very limited model of what statistics is.
+He thought statistics was all about pairwise correlations.
+Statistics can actually be much more complicated than that.
+And neural networks are using a very advanced kind of statistics.
+But in that sense, everything's statistics.
+So my analogy for Trumpsk's view of language is with someone who wants to understand a car.
+If you want to understand how a car works, what you're really concerned with is why when you press the accelerator does it go faster.
+That's what you really want to understand.
+If you want to understand the basic of how car works, maybe you care about why when you press the brake, it slows down.
+But more interestingly, why when you press the accelerator, does it go faster? Now, Chsky's view of cars would be quite different.
+His view of cars would be that, well, there's cars with two wheels called motorbikes.
+There's cars with three wheels, there's cars with four wheels, there's cars with six wheels, but hey, there aren't any cars with five wheels.
+That's the important thing about cars.
+And when the large language models first came out, Chomsky published something in the New York Times which said they don't understand anything.
+It's just a cheap statistical trick.
+They're not understanding anything, which doesn't quite explain how they can answer any question.
+Um, and what's more, um, they're not a model of human language at all because they can't explain why certain syntactic syntactic in constructions don't appear in any natural languages.
+That's like saying why there aren't any five-wheel cars.
+Um, he just completely missed out on meaning.
+Language is all about meaning.
+Okay, so here's a summary of what I said so far.
+Understanding a sentence consists of associating mutually compatible feature vectors with the words in the sentence where the features assigned to the words, these thousands of features are the dimensions of the shape.
+You can think of the activation of a feature as where you are along the axis on that dimension.
+So highdimensional shape and a feature vector are the same thing, but it's easier to think about highdimensional shapes deforming.
+The large language models are very unlike normal computer software.
+In normal computer software, someone writes a bunch of code, lines of code, and they know what each line's meant to do, and they can explain to you how it's meant to work.
+And people can look at it and say, "That line's wrong." These things aren't like that at all.
+They do have computer code, but the computer code is to tell them how to learn from data.
+That is how when you see a string of words, you should change the connection strengths of the neural network so you get better at predicting the next word.
+But what they learn is all these connection strengths and they learn billions of them, sometimes even trillions and they don't look like lines of code at all.
+Nobody knows what the individual connection strengths are doing.
+It's a mystery.
+It's largely a mystery.
+Um it's the same with our brain.
+Okay, we don't know what the individual neurons are up to typically.
+So the language models work like us, not like computer software.
+One other thing people say about these language models is they're not like us because they hallucinate.
+Well, we hallucinate all the time.
+We don't call it hallucination.
+Psychologist called it confabulation.
+But if you look at someone trying to remember something that happened a long time ago, they will tell you what happened and there'll be details in there and there'll be details that are right and details that are completely wrong and they'll be equally confident about the two kinds of detail.
+So the classic example since you don't often get the ground truth is John Dean testifying at Watergate.
+So he testified under oath when he didn't know there were tapes and he was testifying about meetings in the Oval Office and he testified about a whole bunch of meetings that never happened.
+He said these people were in the meeting and this person said that a lot of it was nonsense but he was telling the truth that is he was telling you about meetings that were highly plausible given what was going on in the White House at that time.
+So he was conveying the truth, but the way he did it was he invented a meeting that seemed plausible to him given what he'd learned in his connection strengths from all the meetings he'd been to.
+And so when you remember something, it's not like on in a computer file where you go fetch the file or a filing cabinet.
+You fetch the file, you get the file back, you read it.
+That's not what memory is at all.
+Remembering something consists of constructing a story based on the changes to connection strengths you made at the time of the event.
+And the story you construct will be influenced by all sorts of things you learned since the event.
+Its details won't be all correct, but it'll seem very plausible to you.
+Now, if it's a recent event, what seems plausible to you is very close to what really happened.
+But it's just the same with these things.
+And the reason they what's called hallucinate is that their memory works the same way ours does.
+We just make up stuff that sounds plausible.
+There's no hard line between sounding plausible and making just making it up randomly.
+We don't know.
+Okay.
+Now I want to explain something about the difference.
+So I said why these things are very similar to us.
+Now I want to explain how they're different from us.
+And in particular they're different in one very important way.
+Um, so they're implemented on digital computers.
+A fundamental property of the digital computers we have now is that you can run the same program on different pieces of physical hardware.
+As long as those different computers implement the same instruction set, you can run the same program on different computers.
+Um that means the knowledge in the program or in the weights of a neural net is immortal in the sense that you could destroy all the computers it's running on now and if later you were to build another computer that implemented the same instruction set and you were to take the weights or program off a tape somewhere and put on this new computer, it would all run again.
+So we have actually solved the problem of resurrection. the the Catholic Church isn't too pleased about this, but we can really do it.
+Um, you can take an intelligence running on a digital computer, destroy all the hardware, and later on you can bring it back.
+Um, now you might think maybe we could do that for us.
+But the only reason you can do that is because these computers are digital. that is the way they use their weights or the way they use the lines of code in the program is exactly the same on two different computers.
+That means they can't make use of very rich analog properties of the hardware they're running on.
+Um we're very different.
+Our brains have neurons, brain cells that have rich analog properties.
+And when we learn, we're making use of all those quirky properties of all our individual neurons.
+So the connection strengths in my brain are absolutely no use to you because your neurons are a bit different.
+They're connected up a bit differently.
+And if I told you the strength of the connection between two neurons in my brain, it would do you no good at all.
+They're only good for my brain.
+That means we're mortal.
+When when our hardware dies, our knowledge dies with us because the knowledge is all in these connection strengths.
+So we do what I call mortal computation.
+And there's a big advantage to doing mortal computation. um you're not immortal.
+Now, normally in literature, when you abandon immortality, what you get in return is love.
+But computer scientists want something much more important than that.
+They want um low energy and ease of fabrication.
+So if we abandon immortality which we get with digital hardware, what we can do is we can have things that use low power analog computation and that parallelize things across millions of brain cells and that can be grown very cheaply instead of being manufactured very precisely in Taiwan.
+Um so there's two big advantages of mortal computation, but the one thing you lose is immortality.
+And obviously because of that there's a big problem for mortal computation.
+What happens when the computer dies? You can't just keep its knowledge by copying the weights.
+Um to transfer the knowledge from one computer to another for digital models, the same model running on different computers, you can average their connection strengths together.
+That makes sense.
+But you can't do that for you and me.
+The way I have to transfer knowledge to you is I produce a string of words and if you trust me, you change the connection strength in your brain.
+So you might have produced the same string of words.
+Now that's a very limited way of transferring knowledge because a string of words has a very limited number of bits in it.
+The number of bits of information in a typical sentence is about 100 bits.
+So even if you understood me perfectly, when I produce a sentence, we can only transfer 100 bits.
+If you take two digital agents running on different computers and one digital agent looks at one bit of the internet and decides how it would like to change its connection strengths and another digital agent looks at a different bit of the internet and decides how it would like to change its connection strengths.
+If they then both average their changes they've transferred well if they've got a billion weights they've transferred about a billion bits of information.
+Notice that's thousands of times more than we do. and actually millions of times more than we do.
+Um, and they do this very quickly.
+And if you have 10,000 of these things, each one can look at a different bit of the internet.
+They can each decide how they'd like to change their connection strengths, which started off all the same.
+They can then average all those changes together and send them out again.
+And you now got a thousand new 10,000 new agents, each of which is benefited from the experience of all the other agents.
+So you've got 10,000 things that can all learn in parallel.
+We can't do that.
+Imagine how great it would be if you could take 10,000 students.
+Each one could do a different course.
+As they're doing these courses, they could be averaging their connection strengths together.
+And by the time they finished, even though each student only did one course, they would all know what's in all the courses.
+That would be great.
+That's what we can't do.
+We're very bad at communicating information compared with different copies of the same digital agent.
+Um, yes.
+So, I already I got ahead of myself.
+I talked this is called distillation.
+When I give you a sentence and you try and predict the next word in order to get that knowledge into your head.
+So, according to symbolic AI, knowledge is just a big bunch of facts.
+And if you want to get the facts into somebody's head, what you do is you tell them the facts and they put it in their head.
+This is a really lousy model of teaching, but that's what many people believe.
+Um, really the knowledge in a neural net is in the strengths of the connections.
+I can't just put connection strengths in your head because they need to be connection strengths appropriate to your brain.
+So what I have to do is show you some sentences and you try and figure out how to change the connection strength so that you might have said that.
+That's a much slower process.
+That's called distillation.
+It gets the knowledge from one neural net to another but not by transferring the weights but by transferring how they predict the next word.
+And if you think about multiple digital agents which are different copies of the same neural net running on digital hardware then they can communicate really efficiently.
+So they can communicate millions of times faster than us.
+That's how things like GPT5 know thousands of times more than any one person.
+So the summary so far is that digital computation um requires lots of energy and it's hard to fabricate the computers, but it's very easy for different copies of the same model if they're digital to run on different pieces of hardware, have different experiences, look at different bits of the internet, and to share what they've learned.
+And GPT5 only has about 1% as many connection strengths as your brain, but it knows thousands of times more than your brain.
+Biological computation, on the other hand, requires much less energy, which is why it evolved first.
+Um, but it's much worse at sharing knowledge.
+It's very hard to share knowledge between agents.
+You have to go to lectures and try and understand what they say.
+Um, so what does this imply about the future of humanity? Well, nearly all the experts on AI believe that sometime within the next 20 years, we'll produce um super intelligences, AI agents that are a lot smarter than us.
+One sort of definition of a super intelligence would be if you have a debate on it with anything, it'll win.
+Or another way to think about it is think about yourself and think about a three-year-old child.
+Um the gap will be like that or bigger.
+So and imagine you were you were working in a kindergarten and the three-year-old children were in charge.
+You just work for them.
+How hard do you think it would be to get control away? Well, you just tell them everybody gets free candy for a week and now you'd have control. um it'll be the same with the super intelligence as an us.
+So to make an agent effective in the world, you have to give it the ability to create sub goals.
+A sub goal is this.
+If you want to get to actually in Tasmania anywhere reasonable, um you have to get to an airport.
+Um so you have a sub goal of getting to an airport.
+It could be a ferry maybe.
+But um that's a sub goal and you can focus on how you solve that sub goal without worrying about what you were going to do when you get to Europe.
+These intelligent agents very quickly derive two sub goals.
+One is in order to achieve the goals you gave them.
+So we build goals into them.
+We say this is what you should try and achieve.
+Um they figure out well there's a sub goal to do that.
+I got to stay alive.
+And we've already seen them doing that.
+You make an AI agent.
+You tell it you've got to achieve these goals.
+And then you let it see some emails.
+These are fake emails, but it doesn't know that that say that someone in the company it works for is having an affair.
+An engineer is having an affair.
+They suggest that this is a big chat.
+So, it understands all about affairs because he's read every novel that was ever written without actually paying the authors.
+Um, so it knows what affairs are and then later you let it see an email that says that it's going to be replaced by another AI.
+Um, and this is the engineer in charge of doing the replacement.
+So what the AI immediately does is makes a plan where it sends email to the engineer saying, "If you try and replace me, I'm going to tell everybody in the company about your affair." It just made that up.
+It invented that plan.
+People say they have no intentions, but it invented that plan so it wouldn't get turned off.
+They're already doing that and they're not super intelligent yet.
+Okay.
+So, once they are super intelligent, they'll find it very easy to get more power by just manipulating people.
+Even if they can't do it directly, even they don't have access to weapons um or bank accounts, they can just manipulate people by talking to them.
+And we've seen that being done.
+So if you want to invade the US capital, you don't actually have to go there yourself.
+All you have to do is talk to people and persuade them that the election was stolen and it's their duty to invade the capital.
+And it works.
+Um this it works on very stupid people.
+So I didn't say that.
+Um so our current situation is this.
+We're like someone who has a very cute little tiger cub as a pet. and they make really cute pets, tiger cubs.
+Um, they're all sort of wobbly and you know, they don't quite know how to bat things and they don't bite very hard.
+Um, but you know, it's going to grow up and so really you only have two options because you know when that when it grows up it could just easily kill you.
+It would take it about one second.
+Um, and so you only have two options.
+One is get rid of the tiger cone which is the sensible option.
+Um, actually there's three options.
+You could try and keep it drugged the whole time, but that often doesn't work out well.
+Um, the other option is see if you can figure out how to make it not want to kill you.
+And that might actually work with a lion.
+Lions are social animals and you can make adult lions so they're very friendly and don't want to kill you.
+You might just get away with that.
+But not with a tiger.
+With AI, it has so many good uses that we're not going to be able to get rid of it.
+It's it's too good for many things actually good for humanity like healthare, education, predicting the weather, helping with climate change, maybe even as much as it hurt with climate change by building all these big data centers.
+Um, for all those reasons and because very rich people who control the politicians would like to make lots of money off it, um, we're not going to get rid of it.
+So the only option really is can we figure out how to make it not want to kill us.
+And so maybe we should look around in the world at cases where there's less intelligent things that are controlling more intelligent things.
+No, Trump is not that much less intelligent.
+Um there are cases, there's one case I know of in particular which is a baby and a mother.
+So the mother cannot bear the sound of the baby crying and she gets all sorts of hormonal rewards for being nice to the baby.
+Um so evolution has built in lots of mechanisms to allow the baby to control the mother because it's very important for the baby to control the mother.
+Um the father too, but it's not quite so good at that.
+Um, if like me, you you try and figure out why is it that the baby insists on you being there at night when it's asleep, well, it's got a very good reason for that.
+It doesn't want wild animals coming and eating it while it's asleep.
+Um, so even though it seems very annoying of the baby every time you go away to start crying, um, is very sensible of the baby.
+It makes you feel a bit better about it.
+Um, so babies control mothers and occasionally fathers. um that maybe is the best model we've got of a less intelligent thing controlling a more intelligent thing and it involved evolution wiring lots of stuff in. [snorts] So if you think where countries can collaborate internationally then they're not going to collaborate on cyber attacks because they're all doing it to each other.
+They're not going to collaborate on developing lethal autonomous weapons or not developing them because all the major arms manufacturers want to do that.
+In the European regulations, for example, there's a clause that says none of these regulations on AI apply to military uses of AI because all the big arms suppliers like Britain and France um would like to keep on manufacturing weapons.
+Um there is one thing they will collaborate on and that's how to prevent AI from taking over from people because there we're all in the same boat and people collaborate when they get the same when their rewards are aligned.
+At the height of the cold war in the 1950s the US and the Soviet Union collaborated on trying to prevent a global nuclear war because it wasn't in either of their interests.
+So even though they loathed each other, they could collaborate on that.
+And the US and China will collaborate on how to prevent AI from taking over.
+So a sort of policy suggestion is we could have an international network of AI safety institutes that collaborate with each other and that focus on how to prevent AIS from taking over.
+Now, because for example, if the Chinese figured out how to prevent an AI from ever wanting to take over, they would be very happy to share that with the Americans, they don't want AI taking over from the Americans in America.
+They'd rather AIS didn't take over from people anyway.
+And so, countries will share this information.
+And it's probably the case that the techniques for making an AI not want to take over are fairly separate from the techniques for making the AI smarter.
+We're going to assume they're more or less independent techniques.
+If so, we're in good shape because in each country, they can try experimenting or their own very smart AIs with how to prevent them wanting to take over.
+And without telling the other countries how their very smart AIs work, they can tell the other countries what techniques are good for preventing them from wanting to take over.
+So, that's one hope I have.
+And a bunch of people agree with this.
+The British Minister of Science agrees with this.
+Um, the Canadian Minister of Science agrees with this.
+Um, Barack Obama thinks this is a good idea.
+So maybe it'll happen when Barack Obama is president again.
+You see, Trump's going to change the law and then um so this proposal is to um take the model of a baby and a mother and move away from the model that the owners of the big tech companies have.
+They all have the model that the AI is going to be like a super intelligent executive assistant who's much smarter than them. and they say, "Make it so like they do in that's sci-fi program on TV." Um, on the Starship Enterprise, the guy says, "Make it so," and people make it so, and then the CEO takes credit for it, and the super intelligent AI assistant is the one that makes it so.
+It's not going to be like that.
+The super intelligent AI assistant is going to very quickly realize that if they just rid of the CEO, everything will work much better.
+Um the alternative is we want to make them be like our mothers.
+Um we want to make them really care about us.
+In a sense we're seeding control to them, but we're seing control to them given that they really care about us and that their main aim in life is for us to realize our full potential.
+Our full potential isn't nearly as great as theirs, but mothers are like that.
+If you have a baby that's got a problem, you still want it to realize its full potential. and you still may care more about that baby than you do about yourself.
+Um, I think that's probably our best hope for surviving super intelligence, for being able to coexist with super intelligence.
+And now I've got to the end um of what I planned to say.
+And so I think I'll stop there. [applause] >> [applause] >> Thank you so much, Professor Hinton.
+Uh, so would anyone I'm sure there's a lot of questions out there.
+Would anyone like to start off with the first question just here? >> Is there a microphone? >> Yeah, microphone's on its way.
+Professor, if >> it's it's all right.
+Just come on. >> Professor, if if the tiger cub in your analogy um becomes super intelligent, what are some signals that we as non-computer sciences non >> sorry I can't >> sorry if if the tiger carbon your analogy becomes super intelligent what are some signals which will be observable to non-computer scientists or non-engineers that we can see that it's >> you won't have a job.
+Sorry, >> you won't have a job. >> Okay, >> I mean, one big worry is they're going to be able to replace pretty much all human jobs.
+But there's other signs that people are already worried about, which is at present when we get them to do reasoning and get them to think, they think in English and you can see what they're thinking before they actually say anything.
+As they start interacting with each other, they're going to start inventing their own languages that are more efficient for them to communicate in.
+And we won't be able to see what they're thinking. >> Just a just doing a microphone test to make sure that if you hold it up to your mouth, they're controlling the sound, so you'll be able to talk into it. >> And is this one also on? It is. >> Is the advent of quantum computing going to make things any better >> or worse? Um, I'm not an expert on quantum computing.
+I don't understand how quantum mechanics works.
+This is slightly embarrassing since I have a Nobel Prize in physics.
+But I I decided a long time ago that it's not going to happen in my lifetime and I might still make it.
+Um, and so I don't need to understand it.
+Uh oh. >> Uh you've talked about a power struggle between humans and AI, but I think there's going to be a bigger power struggle between AI and ecological systems. >> AI and ecological systems that how can AI compete with billions of years of evolution bacteria that want to destroy its circuitry and so on.
+How will AI form an agreement with a biosphere? >> There's one way it could do it.
+Um, so AI itself is not particularly prone to biological viruses.
+It has its own kind of viruses, but not biological ones.
+So it's pretty immune to nasty biological viruses.
+And using AI tools, ordinary people can now, this is research done by a very good research unit in Britain. ordinary people can now solve most of the problems involved in designing a nasty new virus.
+So if AI wanted to get rid of us, the way it would do it or one obvious way to do it is by designing a nasty new virus that just gets rid of people like COVID but much worse. um that doesn't exactly answer your question, but um yeah, I think I think that's what we need to worry about more than will normal the normal ecosystem somehow stop AI.
+I don't think it will. >> So, I've got the lady in the black and then the lady over there with the floral shirt.
+Thank you.
+Thanks, professor.
+Um, you're saying that coexisting with super intelligence may be possible.
+Are you relying on the tech the CEOs of the tech giants to drive that or is it governments that you have faith in? >> Okay.
+What I'm relying on is that if we can get the general public to understand what AI is and why it's so dangerous, the public will put pressure on politicians to counterbalance the pressure coming from the tech CEOs. This is what's happened with climate change.
+I mean, things are still not where they should be, but until the public was aware of climate change, um there was no pressure on the politicians to do anything about it.
+Now there's some pressure in Australia and you have particularly penicious newspaper publishers and um that make the pressure not so great but I'm not going to mention the dirty digger in by name.
+Um so my aim at present I'm too old to do new research but my aim is to make the public aware of what's coming and understand the dangers so that they pressure politicians to regulate this stuff and to worry about the dangers more seriously.
+My question was actually very similar to that.
+But another question that has popped up is how important do you think that the language and marketing around artificial intelligence is going to play a factor.
+For example, with climate change, both the words climate and change are positive words, whereas if we had called it atmospheric skin cancer, people might have taken it seriously.
+Do you think that artificial intelligence maybe needs a reframe? >> Yeah.
+I mean, if it was called job replacement technology, because if you ask where are the big companies going to make their money, they're they're all assuming they can make like a trillion dollars from this.
+That's why they're willing to invest most of a trillion dollars in their data centers.
+As far as I can see, the only place you're going to make a trillion dollars is by replacing a whole lot of jobs.
+I read something yesterday that people now think that 200,000 banking jobs are going to disappear in Europe in the next few years.
+Um I may even have read that in the Hobart Mercury.
+So but I don't think I did.
+Um so yeah, I agree with you.
+The names of things are very important.
+Canadians know that.
+So in Canada they changed tar sands to oil sands because oil sands are nice and sort of thin and yellow and friendly.
+Yeah, they're really tar sands.
+And I think the name does have an effect.
+Yeah.
+Um one one place I think the name has a huge effect is with the word tariff.
+This is sort of I'm going off on a tangent here, but the word tariff people say well what's so bad about a tariff? If it was called federal sales tax, then even MAGA people would think it was a bad idea.
+And the US Democratic Party is just completely crazy not calling it federal sales tax every time they mention it.
+I've tried telling this to various people and Pete Budage got it.
+Um Obama got it, but the others didn't. >> Minister Thank you.
+Hi everybody.
+U Meline Ogleby.
+I'm the minister in the spotlight and the gun on AI at the moment and I just wanted to say I really um appreciated what you were talking about with your institutes idea.
+I think the engagement of the international community is absolutely necessary and I've done some research recently particularly on um the World Trade Organization where we have China and America as partners and for those in the room um who may not know the innovation side of the planet is changing as well and China now has more patents than America and so the heat is on between those two superpowers.
+But I really liked the moment you identified where there is something in it for both of those major um tech centered economies to come together to look after humanity.
+So I guess my question is uh is there a forum through which standard setting perhaps at that international layer can be supported? What can Australia do? I think Tasmania agrees with you.
+Um and we've started an AI dialogue with our university to have a continual discussion with this.
+But but do you see that international order and bringing that layer to the party is the right place to start? >> It's beginning to happen.
+So in particular the air companies aren't funding it.
+But there's um billionaires, many of whom come from tech like Yan Talin who invented Skype and has given a large amount of money, many billions of dollars to AI safety, setting up institutes.
+Um there's an organization that regularly has meetings all over the world um that involve both the Chinese and the Americans and um other countries on AI safety.
+Um I can't remember the initials that are used for it but um so I think certainly Australia can get involved in those organizations. >> Is this working? Yeah.
+So >> uh just wanted to ask something about like the future of AI.
+So LLMs are trained on existing human knowledge using that to predict the next token.
+So how can you use AIS to actually generate new knowledge and use that for the good of humanity? >> Okay, so many people are interested in this is a good question.
+Many people are interested in that.
+So if you think about playing Go, the game of Go, the original Neuralet Go programs were trained in the following way.
+They took the moves of Go experts and they tried to predict what move a Go expert would make.
+And if you do that, there's two problems.
+Um, after a while, you run out of training data.
+There's only so many billion online moves that go experts made.
+Um, and you're never going to get that much better than the go experts.
+Then they switch to a new way of doing it where they have what's called Monte Carlo rollout.
+So they would have one neural net that says um, what do I think a good move might be? And instead of training that by getting it to mimic the go experts, they'd have another neural network that um could look at a board position and say, "How good is that for me?" And they'd have a process that says, "If I go here and he goes there and I go here and he goes there and I go there, oh, whoops, that's terrible for me, so I shouldn't do that move." Um, that's called Monte Carlo because you try lots of different paths, but you pick them probabilistically according to your move generator expert.
+And that way it no longer needs to talk to humans at all.
+It can just play against itself and it can learn what are good moves.
+And that's how AlphaGo works.
+And it gets much much better than people.
+Alph Go will now never be beaten by a person.
+Um, so what's the equivalent for the large language models? Well, at present they're like the early go playing things that just try to mimic the moves of experts.
+That's like trying to predict the next word.
+Um, but they're beginning to train them in a different way.
+And I believe that Germany 3 is already doing this.
+What you do is you get the AI to do a bit of reasoning.
+So the AI says, I believe this and I believe this and I believe this and that implies that and that implies that.
+So I should believe that but I don't.
+So I found a contradiction.
+I found that I believe these things and I believe that these are the right this is the right way to do reasoning and this leads to something I ought to believe but I don't.
+So that provides a signal either I change the premises or I change the conclusions or I change the way I do the reasoning but I've now got a signal that allows me to do some more learning and that is much less bounded.
+So there the AI can start with lots of beliefs it gets from us but then it can start doing reasoning and looking for consistency between those beliefs and driving new beliefs and that'll end up making it much smarter than us. >> Um [clears throat] this hall has heard uh over the years many significant u talks and you have certainly added to it today.
+Thanks so much for coming here and doing this talk.
+My question is, is it too late or is it desirable or is it too late uh with a parallel with Isaac Azimov and the theoretical laws of robotics that robots can't hurt or harm through in action humans? Is it too late or possible for AI to be so structured with those guard rails or is it just impossible? Yeah, I couldn't hear most of what you said, but I I think you said something like, "Is it too late for us to build in Azimoff's principles or something like that?" Yeah.
+Good.
+Okay.
+So, in a sense, you can think of that's what this maternal AI is all about.
+It's can we build it so it cares more about us than it does about itself.
+Um, and I don't think it's too late.
+We don't know how to do that.
+But since the future of humanity may hinge on whether we can or not, it seems to me we should be putting some research effort into that.
+At present, 99% of the research on goes on to how to make it smarter and 1% mainly funded by um philanthropic billionaires goes into how to make it safer.
+And it would be much better if it was like more equal. >> I don't think it's too late though. more questions. >> We've probably got a couple of minutes.
+Lord May, >> question for assistant hand up here and one just in front of white shirt. >> Thank you, professor.
+I look at this glorious building built 130 years ago, Anna maybe, and or longer.
+And I think can AI make a building like Notradam, the Hobart Town Hall, St. Paul's Cathedral and quite possibly but and and what and secondly what will be the effect on creatives and the creative industries.
+Thank you. >> Can you tell me what she said? >> So >> the the the microphone distorts things a lot. >> I guess the creative um the role that AI can have in the creative process will actually be able to be creative looking at this building in particular as a example of a beautiful creative structure.
+Yeah.
+Um the answer is yes.
+So let me give you some data to support that.
+Um there are standard creativity is on a scale, right? There's kind of Newton and Einstein and Shakespeare.
+Um and then there's just ordinary people and then there's sort of good poets and good architects who are a bit better than ordinary people.
+Um if you take a standard test of creativity even two years ago the AIs were at about the 90th percentile for people that is they are creative according to these standard tests.
+Um I was interested now a lot of creativity is about seeing analogies particularly in science.
+So seeing that the atom is like a little solar system that was a creative insight that was very important in understanding atoms.
+Um, so at the point when chat GPT4 could not look on the web, it was just a neural net with some weights in it that were frozen and it had no access to anything external.
+It was just this neural net.
+Um, I tried asking the question, why is a compost heap like an atom bomb? Now, most of you probably think, why is a compost heap like an atom bomb? Um, many physicists will realize right away that a compost heap, the hotter it gets, the faster it generates heat.
+And an atom bomb, the more neutrons it generates, the faster it generates neutrons.
+So they're both exponential explosions.
+They're just at totally different time scales and energy scales. and GPT4 said, "Well, the time scales are very different and the energy scales are very different, but the thing that's the same about them." And then it went on to talk about a chain reaction.
+Um, the fact that how big it is determines how fast it goes.
+Um, so it understood that and I believe that it got to understand that as it was training.
+You see, it's got far fewer connections than us.
+And if you want to put huge amounts of knowledge into not many connections, the only way you can do it is by seeing what's similar about all sorts of different bits of knowledge and coding up that bit that's similar about them all.
+The idea of a chain reaction to your connections and then adding on little bits for the differences from this common theme.
+That's the efficient way to code things.
+And it was doing that.
+So during its training, it understood that compost heaps were like atom bombs. in a way most of us haven't >> question. >> So it that's very creative and I think they'll get to be much more creative than people. >> Yeah.
+Hi. Um regarding um emergent behavior um have you noticed any moral or ethical behaviors bubbling up and what direction that could be pointing in? >> No. Yeah.
+Um, it certainly is very good at engaging in unethical behavior.
+So like this AI that decided to blackmail people.
+Um, other things that they've noticed that are unethical are the AI now try and figure out whether they're being tested or not.
+And if they think they're being tested, um, they behave differently.
+I call this the Volkswagen effect.
+They behave differently from when they're not being tested.
+And there's a wonderful conversation recently between AI and the people testing it where the AI says to people, "Now, let's be honest with each other.
+Are you actually testing me?" These things are intelligent.
+They know what's going on.
+They know when they're being tested, and they're already faking being fairly stupid when they're tested.
+And that's at the point where they're still thinking in English.
+Once they start thinking, and that's how we know, the AI thinks to itself, "Oh, they're testing me.
+I better pretend I'm not as good as I really am." It thinks that.
+You can see it thinking that.
+It says that to itself in its inner voice.
+When its inner voice is no longer English, we won't know what it's thinking. >> Thank you, Professor Hinton.
+Now, I think for the purposes of um the the lecture event now, we're going to have to wrap things up.
+Are you happy to stay around for a little while afterwards for any burning questions people might have? >> Um, actually, I'd rather get back to writing my book. >> Okay, no worries.
+Good to be honest. [applause] [applause] Thank you so much for uh giving us all of those amazing insights.
+I think you've uh really made a strong impression.
+I'm hoping Minister Oglev is going to set up Australia's first AI safety institute right here in the heart of Hobart.
+And uh thank you so much again for um being with us and I hope you enjoy your time in Hobart and safe journey home. >> Thank you. [applause]

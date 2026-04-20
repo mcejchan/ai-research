@@ -1,0 +1,363 @@
+I do think there will be a general super intelligence but I think that it won't be one lab that has built it but it'll be kind of the plurality like the collection of all intelligences will be a general super intelligence. >> Welcome back to the Matt podcast.
+Today my guest is Misha.
+Misha is a former deepmind researcher who left Google after shipping Gemini 1.5 convinced that LLM had crossed a critical threshold and started reflection AI, a startup that emerged recently out of stealth with $130 million in funding and a goal to build super intelligence autonomous systems.
+We talked about super intelligence a lot in this episode.
+What it means, how all building blocks to create it already exist today, and how coding and enterprise AI are the best paths to build it.
+I think we have everything the sort of series of breakthroughs that need to happen.
+I think many of them have happened.
+We're really focused on coding to start for a number of reasons.
+This is a super intelligence complete problem.
+Like if you really solve this Oracle organizations just for coding, you've basically built all the capabilities you need to have super intelligence.
+We also chatted about their brand new product announced today as we publish this podcast. >> We're launching our first product and the first milestone on the path to super intelligence. the best-in-class code research agent built for organizations.
+It has this new concept that I don't think has been introduced to date. >> Finally, we covered what it's like building a super intelligent startup at a time when the big AI labs and Mac 7 companies are poaching top AI talent left and right. >> I think the entire makeup of the research team was earning a lot of money at big labs.
+We tend to attract people who have that kind of internal drive in them of wanting to be part of that next story.
+Please enjoy this deeply insightful conversation with Misha.
+Hey Misha, welcome to the Mad Podcast.
+Thanks for being here in person today. >> Yeah, thanks Matt.
+Thanks so much for having me. >> You are the co-founder and CEO of Reflection AI which is a super exciting startup uh that up until recently was pretty much in stealth.
+You sort of came out of stealth a few uh weeks ago and you have some exciting product announcements that we're actually going to discuss today.
+Before we do that, tell us the about the company itself. >> We're um a research and product company in AI uh that was founded by myself, my co-founder, Giannis.
+We are both uh longtime researchers at DeepMind.
+And generally the makeup of the team is a lot of folks who did large language model training and reinforcement learning building reinforcement learning systems uh within companies like DeepMind, OpenAI and Anthropic.
+We came together to build this company that designs co-designs research and product to build super intelligence.
+I think that super intelligence can sound like a very abstract thing and I think the what makes it special doing this at a startup or a smaller place is that you can be very concrete in what that means to you. uh because I think that generally when people think about super intelligence they might think of something that becomes really good at mathematic you know like olympiads or code olympiads or competitive coding things like this but these things to us don't really I mean they're impressive um but maybe not so it's unclear how they're useful like what is this super intelligence doing that is useful for kind of an end user uh but if you co-design kind of a product and um the research alongside it you can be much more opinionated about where it that you want to go.
+And after talking to a lot of um organizations and enterprise customers after we started the company, we realized that probably the form factor of an kind of organizational super intelligence like the thing that's really going to um help organizations get a lot a lot of stuff done is probably going to be something like an oracle. like an oracle that um understands the entire organization extremely deeply that can answer questions at um you know the level of let's say the seniormost person on that team right it kind of has that like a principal level engineer or like the senior most sales leader who has like full context on the company and it'll probably be super intelligent also in the sense that it's all doing all those things at once right as opposed to having like these distinct different functions uh and so that is what we think an organizational super intelligence is going to look like that it's going to be a system that really deeply comprehends the organization. >> It's a great term, organizational super intelligence as opposed to the super abstract concept of of super intelligence.
+Just just to say for a second on the on the concept itself, super intelligence, does the industry actually agree on what that means versus AGI? So, you know, we're recording this.
+Obviously, the big news uh is uh our friend Zuckerberg showering uh top researchers with uh extraordinary amounts of money and poaching them from various organizations to create a super intelligence lab and then this uh you know save super intelligence as a as a startup.
+Do people agree on what that means or is that just more like um something that directionally feels very impressive but not everybody exactly know what that means? You know, I would actually say that um super intelligence in these contexts of the large lab context is actually just being used synonymously with what AGI used to be used for it.
+There's a scene in uh Indiana Jones and the Raiders of the Lost Arc, the first scene where he goes and uh tries to steal his sculpture and he kind of takes a sculpture and replace it with a sandbag and hopes that nothing changes.
+And uh I kind of think one of those >> that that scene does not end well if I remember correctly. >> It doesn't end well, but you know that's >> but the analogy stops here. >> Yeah, the analogy stops here unless we really figure out safety.
+Uh but I think that what happened is that by me many accounts uh you know many people would argue that AGI hasn't been achieved but now some people might argue that AGI has and so it's kind of um it's unclear that this is a binary event that hasn't been achieved yet even though that was the case before and so I think the goalpost just moved like oh what I meant by AGI was actually super intelligence.
+So I think that that is to say that it's as vaguely defined as AGI was before and uh I don't think anyone actually that there was any agreement on what we actually meant by AGI.
+Right. >> Okay.
+I mean it does sound cool though 2025 super intelligence is a 2024 AGI.
+Okay.
+All right.
+Yeah. >> So so coming back I really like that term of organizational super intelligence. does does sound more attractable in your analogy of what a senior person would know especially I assume a senior person that actually does the work right because typically the most senior people in an organization are actually disconnected from the reality of what happens in the in the troops >> yeah I think it's more yeah the the person who there's on every team there's a go-to seasoned experienced person who's very much in the weeds and understands everything getting systems first that are like that and then um they can hold a lot more context in their heads and sort of be even better than those you know critical um you know kind of members of the team.
+Uh I think that's kind of like a oracle for an organization.
+That's what a super intelligence looks like because once you deeply understand the problems that you need to solve u in any discipline an enterprise acting upon them to actually go and solve it is the easy part.
+And so we're really focused on coding to start uh for a number of reasons.
+We kind of think you solve this problem.
+It sort of solves the more general problem. >> Yeah.
+What are those reasons? >> There's one reason is that the way you know today we think of coding as just for software engineers.
+But when you build a coding model, you're just you've just trained a language model that can interact with a piece of software through code.
+And so the way these language models are going to interact with any piece of software, not just software engineering software like Salesforce and other CRM and creative tools and so forth. the majority of those interactions are going to be through function calls, API, so through code.
+So today we think of coding model as something that is just for software engineers.
+But that's not true.
+If you build that system, it can actually interface with any piece of software.
+It's sort of what you've built is uh kind of the hands and legs of a digital AI, right? In the same way that a humanoid robotics you robot can do anything with the same hands and legs that humans do.
+So would coding be the brain and then everything else becomes the uh legs uh and the hands that are connected to the brain.
+Is that was that the wrong analogy? >> Yes.
+It's kind of like you can kind of think of the model is the brain and then what people call a scaffolding agent scaffolding.
+That's sort of the affordances right the things that you can actually do.
+All these affordances for software at least you know for digital intelligence are going to be primarily through code.
+That is the other option is teaching a model how to drag a mouse around and it's called computer control. some that will happen but I just don't think that that's going to be the majority in which um you know a language model interacts with software.
+So if you solve coding you've just solved how does a language model how should it interact with software >> and also it's a more tractable problem.
+Is that fair because code is more structured and code is closer to grammar lends itself well to you know the type of of work LLMs do or is that uh >> No, I think that's very much correct.
+It's more that code is almost in it's kind of intuitive to LLM because they were trained on the internet initially and so they kind of have almost a muscle memory for code.
+It's kind of like humans have been evolved to have spatial you know geospatial muscle memory and so we learn very quickly how to use our hands and so forth. um as toddlers, code is actually very unintuitive to us, right? That's why the GUI the GUI was invented because the first way to interface with computers was through code, very unintuitive for humans.
+So you invent the GUI.
+For language models, it's the opposite.
+They've never seen any GUI data really on on the internet.
+Like there's no mouse movement data out there.
+So the thing that is native to them is the exact opposite of what's native to us.
+So if you build things that are really good at coding um you're sort of just amplifying like the existing sort of base knowledge of the LM like you kind of um it's just intuitive to a language model. >> Mhm. >> Um so that's why coding.
+Uh but then you know within coding you can kind of think about what it would take to create a super intelligent coding agent.
+You basically need a system that can generate code really well and you need to a system that comprehends um large code bases and all the knowledge around them like everything that's in all the docs and the stuff that's kind of tribal knowledge that's in engineers heads and where I'd say every coding tool today is focused on the code generation piece in an autonomous semi-autonomous in your IDE in your terminal but it's all around code generation >> um and as a result because because companies today I don't think are really focused in earnest on the understanding piece.
+What we're building towards I'd kind of call as almost you know today maybe we have AI engineers that are at the level of an L4 engineer maybe next year L5 L6 going to L9.
+I think the path there is clear and what we're going to get to if we don't solve the comprehension piece is basically L9 engineers with amnesia.
+So >> an L9 engineer if they came into your company but had amnesia Yeah. >> they wouldn't be really >> good news and bad news. >> Right.
+Right.
+It's kind of um if you tell me exactly what to do, >> I I'll go do it really well, >> but I don't really but otherwise, you know, like I know nothing about your code base.
+I know nothing about your organization and I'm not going to gather any of that either.
+The thing to solve now, I think, is >> building what we kind of think of as the context engine. like what's the thing that's kind of brain that your coding agents can query in order to have all the context that they need to go do you know meaningful work not just junior engineering work but the stuff that engineers spend really most their time on like >> critical infrastructure bugs um dealing with legacy code like things that uh you know if you actually hover over a shoulder of an engineer at any any large organization or even a startup with a really sizable code and you look at what they do, you'll find that a minority of their time is actually spent coding.
+Like 70% of their time they're digging basically through information trying to understand stuff, asking other engineers questions. >> And you kind of want to build a super intelligence that has the same that same DNA that you know what it's spending most of its time on is collecting information >> and then obviously once it has it, it knows how to act on it.
+How is that different or similar to basically doing a combination of coding and and rag and rag to bring in uh the context of the enterprise? >> Yeah. >> Is that is that the general direction? >> Um it's kind of uh maybe it's almost like if rag worked. >> So the purpose of rag is to get all the information that your um coding agent needs in order to do some work.
+But it's a very um primitive form of doing this and by and large fails.
+It's kind of I mean >> why is it primitive? >> Uh >> because it's just search oriented.
+It's just a query or >> it's more uh so there are a few things about it but the first thing is that it's kind of um what we call sparse because it's uh the stuff that it grabs from you know a large codebase has a lot of false negatives and false positives.
+So it's kind of um and it typically only does it once right? It'll grab it and then that's all you have. and most likely for any meaningful query um it will not have given you the information that you need to actually go do the task.
+So rag agents are actually are pretty weak.
+What's happening now is that there's kind of a new kind of um retrieval that I think people are calling agentic search which is more what claude code does and it's kind of um an agent that uses the uh same kind of command line that a human does and goes and kind of looks for files and uh you know uses the same commands that an engineer does to go look for files and uh you know search for keywords and grab stuff and it does this agentically.
+So as opposed to it just being a one-step process where it just uh pulls a bunch of embeddings in, it will use a file search tool and then it'll look at the stuff that it did and think about it and then use another tool and so forth >> and will remember it.
+Is there a concept of a memory built in? >> It does store the stuff in a context. >> But the way I would think about it is that imagine you are dropped into a large dark jungle and all you have is like a tiny flashlight.
+That's that's basically what agentic search is today where you're going and you're kind of exploring and you have this tiny flashlight and you have to then remember everything in your head.
+And obviously that's that's a first form of um comprehension, but it's also a pretty weak form of comprehension.
+It doesn't really it doesn't scale to large jungles. >> Like if you have like a little tiny jungle in your backyard, then you might be able to navigate it. >> A bonsai jungle. >> A bonsai jungle.
+Yeah.
+Uh so that's kind of how I would liken the existing state-of-the-art agentic search.
+Whereas the kinds of systems that you need to build are ones that well basically expand right the uh kind of lens like the aperture of your beam so you're seeing more >> um are smarter about where they go and look for stuff >> um how they remember it. uh these are basically you know fundamental kind of research problems you know like memory long context reasoning is you know what people call it but um I would say it's just expanding the aperture of your beam figuring out how to actually store it and also what sources of information should you be pulling on other than just your code because information for organizations lives in their chats and their project management tools and um a lot of it is in their team's just brains right so um often times when that senior engineer leaves who understands some legacy piece of code.
+Um, all of a sudden that that's becomes known as a haunted graveyard because no one else understands it. >> And so, how do you build products that capture that knowledge that's in people's heads? Um, that's why I kind of think that, you know, you can't it it's so hard to think about super intelligence in the abstract because half of it is a product problem.
+The comprehension problem is sort of um I would say deep and and what people used to say like when a problem was AGI complete it just meant that the problem is has so much depth to it that if you solve it you get AGI I would say this is a super intelligence complete problem like if you really solve this Oracle for organizations just for coding you've basically built all the capabilities you need to have super intelligence >> because you can generalize from there it's it's an idea that Um I certainly made the rounds by the way that um yeah coding uh is a path to super intelligence.
+I think a variation of that idea has been that um you know it's intelligence building intelligence uh do doing it automatically which uh I think feels like a different avenue but what you're saying here or maybe not but I think uh but what you're saying here is more that it's such a complex problem that if you solve that problem then you're there.
+I mean just to play back what you just said. >> Yeah.
+I think that the notion of uh in the sense in which coding is um ASI complete is that you can use an intelligent coding system to build another intelligent coding system.
+If people like to do research in the abstract that sounds awesome because it's kind of like it's like I don't have to think about the actual problem that's being solved.
+If I just build an intelligence that builds an intelligence it will figure it out somehow.
+Um I don't think that's how it works.
+So I think what I think coding intelligence that builds better coding intelligence will make algorithms more efficient basically you know and maybe it's so intelligent that it can even start making all the product decisions for you in terms of like what questions you should be asking users and um what features you should be building in and to me it actually seems like a much larger more practical problem that it's um there's almost no I think research without co-designing product with it is sort of it's sort of a meaningless pursuit now but that was only meaningful when the ingredients for how to build uh artificial general intelligence or ASI um were not known.
+I think now they're known and so >> so you think that we have everything uh and maybe list what everything is in terms of components. >> Yeah, I think we have everything even though the the capabilities will continue being tightened but the sort of series of breakthroughs that need to happen many of them have happened.
+There are still some but I I would say that the ones that come to mind and there I'd say there are four of them.
+Um the first ones were just making deep neural networks work.
+So that was just uh the the imageet moment in 2012 when you can have a deep neural network that's classifying images at human and then superhuman level.
+I think that was the first breakthrough.
+Second breakthrough um was reinforcement learning even though I think it was not clear maybe then but now it's clear again.
+Uh so so reinforcement learning basically told us how do we take a system and if we have a reward make it super intelligent and we actually super intelligence has been built a few times now.
+Um Alph Go was super intelligent.
+Uh Alpha Star was if you put more computer into it it would have gotten super intelligent.
+So we've known how to build narrow super intelligence for a while.
+So deep neural networks reinforcement learning. >> So 2012 AlphaGo was 2016 or 2016.
+Okay. then scaling up transformers the GPT series of work >> 2017 18 >> kind of 18 but then leading really I think started shining in like the in early 2020s with GPT3 and that was both an architectural innovation and a data innovation it was an architecture that could consume data on the internet uh so it's kind of both handinand transformers are not just architecture it was also data and then I would say the last ones are RHF which was okay we know how to align models in the basic way we know how to do basic reinforcement learning on top of language models. >> Mhm. >> And then reinforcement learning coming back again with the reasoning models. >> So if I was to you know summarize I would say neural networks, deep deep neural networks, transformers and internet scale data and reinforcement learning in kind of its various incarnations.
+These are the ingredients um that that are required to build a super intelligence.
+And as a return of U reinforcement learning at the end that you described, does does that obate the need for RHF? Was that a temporary solution or are those parallel capabilities? >> I think they're parallel capabilities because they do different things.
+RHF was more the design there was more to align a language model like a pre-trained language model.
+Um if you play with one of these base models before they're aligned, they're really useless.
+They're they are they feel like stochastic parrots.
+Um they're yeah they don't follow instructions.
+They're extremely kind of um high entropy, right? And >> the fact that you could just align them, tweak them to align them with something that is human consumable, I think was a pretty big breakthrough and that was RHF.
+Whereas RL with reasoning is more RL to drive kind of um intelligence capabilities which is you know make it really good at coding, make it really good at math, make it really good at whatever target domain that you have rewards for.
+And you use these in tandem where like RL in kind of the reasoning phase that sort of really expands on a capability.
+Um and then RHF aligns it to be kind of human consumable >> and but they're the same thing.
+It's a it's in fact I would say it's just it's just the same thing.
+Like the machinery is the So we have all the components for AGI SAI.
+Um your goal is to create this in an organizational enterprise context.
+Uh and I guess let's get into the the big news of this week which is that you're launching your first product. >> Uh tell us everything about it. >> Yeah, we're launching our first product and the first milestone on the path to super intelligence.
+Uh it's called Asimov. uh like the science fiction writer um who had some thoughts on the subject um and this asimoff is the best-in-class code research agent built for organizations.
+So it's different than a coding agent which is a thing that uh will go and write code for you but that today we feel are pretty um context poor.
+So you have to if you if the task is well scoped coding agents today will do it pretty well for you.
+If you are spending, you know, most your time trying to understand like some hairy problem in your engineering, why some infrastructure bug is happening or really doing what engineers spend most of their time doing, which is this kind of work.
+There's no tool today that um that really unblocks them in that way.
+And so there's I'd say 70% of doing of software engineering is actually it's a code research job rather than a code monkey job. um and we're building a product that addresses that problem.
+So the majority of time that engineers spend unpacking problems and trying to understand why something's happening and you know often times it's bottleneck because they have to ask someone a question and it takes a few hours for that person to get back because they're busy.
+Uh we've built a product that helps overcome these kinds of problems. >> So so just to uh play it back like deep research for code.
+It's very similar to in the concept to like a deep research for code.
+Yeah.
+A thing that will go, you know, explore your codebase and other sources of knowledge.
+It might take a bit longer than the traditional kind of um snappy ask kind of products, >> but it'll come back with um much better answers.
+Things that kind of make it different are that well one engineering knowledge does not just live in a codebase.
+It lives in all sorts of other surface areas and other software products like project management tools, chats, um documentation like things like this and um Asimov pulls from those things.
+So it's not just your codebase, it's aggregating all these sorts of information.
+It has this new concept that I don't think has been introduced to date that we call teamwide memories.
+So today products have individual memories which are remembering the personal preferences of the developer but they don't have a teamwide organizational understanding like suppose you have a senior software engineer that understands some micros service a there you're not that engineer and you now you need to interact with their microser and you don't have the context they do >> so now with asimov it kind of organically captures that um information as it happens in chats but also engineers can just teach it directly.
+Yeah, that's super cool.
+And then and then that addresses uh the problem you mentioned I think at some point earlier which is like if somebody leaves then the institutional memory goes with them.
+So you have like permanent organizationwide memory. >> Exactly.
+It's kind of building a permanent organizational system of record for your engineering knowledge to start. >> Yeah.
+Um a side note on that is something that's been interesting is that some of the most excited users have been these senior you know senior staff kind of level engineers who are fielding people's questions all the time.
+And so what we've seen is that you know we'll go to an organization and the first three weeks they'll there'll be four kind of staff senior staff level engineers who are just populating its knowledge >> um to kind of it's kind of the first time I've actually ever seen engineers excited about documentation effectively. >> That's kind of a unique thing.
+And then the final thing is really around agent design that enables you to um kind of what I was calling earlier increase the aperture of your beam so that it's kind of looking um at much larger code bases than than agents were able to before. this is still a work you know in that sense a work in progress in that um long context reasoning is just a big fundamental problem and I think there's a lot of work to be done there but I think this is this new agent design is um a step in that direction >> directionally why and how are they able to to do that >> this is not unique to us I think that when I look at how state-of-the-art agents are being designed they're being designed very much in kind of um as these multi- aent systems agent design is effectively it's a big reasoning agent and that's I mean I think that's pretty standard but it dispatches like small long context reasoning agents to go and kind of go search for different parts of kind of relevant chunks of information in the code and so I think that it's this kind of decoupling of uh you know a big reasoning agent like maybe a smaller context with a bunch of um like these little retriever scout agents it's a different design than uh what's happened to date though I'm sure that other companies will converge on it as well um you really want to design your agents for the problems that you're trying to solve.
+So, if you want like a really snappy agent that's going to answer things immediately, then this is probably not the best design for it, right? You might want something that does rag, which is very fast.
+Um, or like a very basic search agent kind of like what cloud code or cursor might do, which is uh something that just uses the terminal and like the file system there and use the same commands as an engineer.
+Um, that's a lot snappier than sending a lot of these retrievers out.
+Um, so I think what we'll start seeing is this is this is product co-evolving with the problems that you're solving and there will be different agent designs for different problems. >> And is is a sort of like snappy oneshot agent necessarily a bad thing if you direct them at small problems and then you try to put them together or does the sort of individual little agent needs to be smarter? No, I think that it's a it's a really interesting question and this is kind of one of the things that's interesting at research now as opposed to before is that before it used to be just around models.
+Um but now a lot of the research is in your agent design.
+And so what you ask is kind of an open question.
+You could there could be a hybrid system that kind of routes some queries to one agent you know to one agentic system and then routes like other queries to another agentic system.
+It could be that you figured out some elegant simple simpler kind of multi-agent system that can do both things.
+Um it's kind of an open research question.
+It's uh um it's very exciting and in some sense it parallels a lot of the unspoken research that was happening at Deep Mind and probably in OpenAI as well during like pre-language models.
+Um, for example, projects like Opening Eyes Dota 5 or uh Deep Mind's Alpha Star project, which uh trained these um expert level agents to play pretty complex video games like Starcraft and Dota.
+Uh, a big question there that I don't think that many people appreciated is how do you design the environment for your neural network to actually dispatch actions, >> right? So, the most simple thing you can think of is well, it learns to use a keyboard and mouse like a human does. um that turned out not to work.
+So when you when you read the Alpha Star paper, you see that they actually figured out um this particular way of factoring out the actions in order to make neural networks draw Starcraft. >> And what was h what that actually meant is that that was agent design.
+That's sort of so now agent design is back in terms of designing scaffolding.
+Um back then it used to be called environment design. >> Um but it's it's the same thing.
+And a lot of the project was in these big projects was not even on training the models.
+It was figuring out how the agent should actually interface with the environment that you're training it in and where do you get your data from? What's your data? How do you collect it? >> Mhm. >> So uh on that point so you had mentioned the three things like multi- aent design like I think that the first point was um what sources of data it accesses.
+So is there to I think to what you just said is there some difference in how those agents access data versus rag which is pretty much like straight up search >> I guess as a side question or related question.
+Do those data sources need to have a special protocol to lend themselves to agents or like MCP style kind of infra so that uh the super intelligent agents that go around and and sort of grab information everywhere can interact with them. >> It's a it's a really good question.
+Uh so there are kind of a couple couple interesting things to unpack there.
+The first thing I guess I would say is that kind of going back to some it depending on the problem you want to solve like different um types of search.
+Um these are all these all fall into basically search and maybe I would say that if you want really fast but it doesn't really matter how accurate it is or you know just needs to be some kind of ballpark accurate but really fast.
+So kind of the weakest form of search rag is great.
+Then there's this more kind of agentic search that we spoke about that uh the agent uses tools similar to the ones available to humans on a computer.
+And finally, which is kind of um in between the spectrum of fast and you know, so it's it's it's slower than rag, but it gives you better answers.
+And then even slower is uh what I would call neural retrieval, which is you have a really long context model and you ask that long context model to retrieve stuff for you.
+M >> you know you feed it everything you can maybe use multiple of them if you know everything doesn't fit in one and then you ask that model to look at what you put in its context and retrieve the relevant stuff to you that's kind of called neural retrieval >> and that is going to take the longest um it's not guaranteed to be the best but you can train it you know to be really good and so that's kind of the spectrum of um search capabilities I see them today the difference between something like this and then kind MCP as it pertains to ex interacting with different sources of knowledge is that MCP is kind of like um it's stateless.
+It's just a way for you to interact with another piece of software. >> But what you need to do here is you actually need to collate an index of knowledge, right? You need to take data from software, store it somewhere and make it searchable for an agent.
+That's ends up being a bit of um I would say a blind spot to a lot, you know, there's a question of why hasn't this been done? One of the reasons is that just from a like forget intelligence just from a kind of business model perspective it falls into a bit of a blind spot for existing coding tools which were meant as to be served as SAS offerings for broad kind of consumer base.
+But an enterprise like this is tip it will not want this leaving into SAS and so you have to kind of rebuild your entire business to basically deploy the stuff on you know that enterprises resources.
+And so most companies have been basically staying away from this problem of indexing and integrations at this level of depth >> because it requires them to basically change their entire go to market and business model >> which but it's also why you know it's really easy to switch around between various different coding providers today because they don't really integrate deeply and so you know you can try cursor today you can try cloud code tomorrow you can switch you know to windsurf and there's really you know because they're pretty thin skins I guess on uh just the language model API uh from a developer perspective it's pretty easy to switch around and try different things. >> Interesting.
+So is a consequence of that that Asimoth needs to be able to work in a sort of air gapped uh context virtual private clouds on prem >> you know we do have a SAS offering because ultimately if you flip something into on-rem like it has to start off as SAS anyways but the primary kind of benefit to enterprises is um we're not going fully onrem today but we are doing VPC and that ends up being sufficient for a lot of big enterprises out there um who you you know already have their cloud infrastructure on AWS or Azure or GCP.
+This notion of it being deployable as VPC uh is is extremely important to an organization.
+This is definitely it's it's really a dealbreaker.
+You can't even start >> reinforcement learning part in asimov.
+How how does it manifest? I mean you guys are super worldass uh RL uh specialists.
+So is that is that the whole idea like it keeps uh sort of learning and getting sharper with every interaction? Let's say before language models were useful, you kind of had to be in this world where you build the best language model and then you figure out the product.
+That's kind of the world we were in.
+And you know, Anthropic spent a few years building the language model and then took off with quad 3.
+OpenAI, you know, GPD2 was not really productizable.
+GPD3 not really either.
+And it wasn't really until 3.5 and 4 that they were able to productize it effectively.
+We're in a different world today where um language models are pretty good.
+And so our strategy has been, you know, we build this kind of multi- aent system.
+Some parts are, you know, we're training, you know, models for, we kind of see blind spots from thirdparty models.
+Um, and other places the third party model stays for today.
+Over time, we're going to kind of abstract all of it.
+But we're being a bit more strategic about uh which parts of the system um you need to go after as a startup. uh because that's kind of you know what what you have as a benefit as a startup is that you can be a lot more focused and um you know on the problem at hand.
+Obviously the downside is that you have to be a lot more strategic about the bets that you're taking.
+You don't have the resources to go and uh train everything all at once.
+So you kind of have to take it one step at a time.
+And so you know in the long term this is going to be a system that just learns end to end reinforcement learning.
+And in the short term, we're applying reinforcement learning to fix problems that we're seeing as kind of blind spots in the existing set of sets of models when we're deploying them. >> I love pragmatic undertone to like everything that you're saying, which is really interesting and dare I say somewhat refreshing uh you know, I look at this uh different ways of building wonderful things in AI, but um you know, the the pragmatic tone is uh really um you know, interesting and not that widespread.
+So that's the product uh that you uh just uh launched.
+Maybe take us back a little bit.
+So I alluded to your background as as being world class reinforcement learning.
+How did that all come about? Uh what was your journey to starting all of this? >> As a kid, I got pretty obsessed with physics and wanted to be a theoretical physicist and >> as regular kids do. >> As as regular kids do.
+Well, you know, if you're um if you're a Russian Jewish kid dropped in the middle of nowhere America, uh which was what happened to happen to me. >> Yeah.
+So, let's go into that.
+So, so you're born in Russia.
+Yeah.
+Then immigrated to Israel as a kid. >> Born in Russia, immigrated to Israel as a kid, and then immigrated to the States um for a second half of my childhood.
+And >> is that is that a thing that like top people in AI do? Because like I can think of other people that were born in Russia and immigrated to Israel and then came to actually Canada. >> Yeah, Canada is a big one. referring to Alia I guess now at the SSI >> I think well there was um I mean the Soviet Union was an extremely I would say kind of technically academic >> culture >> and uh a lot of basically the young scientists of you know when the Soviet Union fell apart left to Israel, Germany, America, Canada and when we arrived in the United States it was actually >> So how long were you in Israel for just as a like a >> um I was there for um eight years. >> Eight years. >> Yeah.
+So it was uh you know from 1 to 9 was there and then uh you know was just born in in St. Petersburg. >> Um so have no memories obviously of living there just visiting.
+Yep. >> Uh and then yeah arrived in the states.
+Um >> so where where was uh nowhere America >> that you mentioned what city? >> I was in rural Washington state.
+So, in >> Washington State, >> uh Washington state, maybe people don't know this, but it has a bit, it has a hairline where uh the west side of the state is a lush forest >> and then the east side of the state is a desert >> and you can see exactly where that starts.
+It's not a gradual transition.
+It's just like trees, you know, a dense forest just starts somewhere. >> Wow. >> And then it transitions into immediate desert.
+I lived on the desert side.
+Uh there's a national lab there.
+My my parents are chemists and they got jobs in this national lab, right? Um the culture of that town was it was one of the sites during the Manhattan project.
+It was called the Hanford site.
+It's where the plutonium was enriched.
+So it was the sister side to Los Alamos. >> This is a whole vibe. >> It is a vibe.
+You know, it's uh the everything is themed around that event.
+The bowling alley is the atomic bowling alley.
+The brewery is the atomic brewery.
+The streets are like uranium, mercury, plutonium, you know, like uh the park there by the river, it's on the Columbia River, is called Lesley Groves Park. who is like the ruthless uh you know general in charge of that project.
+So it's an intense town.
+The actually the most intense thing is that the high school mascot there um the town's called Richland and the mascot it's a Richland bombers.
+So the B-52 bombers and there are mushroom clouds on the basketball court and that's it.
+It's a it's an intense >> town. >> So hence okay all makes sense now that um >> you know this would be the escape.
+Yeah, I guess I was um well, I didn't even think about the town's history as physics, even though that, you know, definitely is the case, but it was more that I was learning to speak new language.
+Um had a lot of time on my hands and uh my parents had their um lecture books from uh they bought this uh the Fman kind of series of lectures >> and uh that was around and I just spent some time reading it and just got into it. >> So >> that was the path to physics. um ended up going through and doing a PhD in theoretical physics and actually defected to uh artificial intelligence.
+I realized that first what I saw I I saw AlphaGo come out and the short of it is I realized that I had picked an interesting science but not the science of our time. >> That was kind of it.
+You know the all the things I was learning in physics all these kind of very interesting great things were done basically a 100 years ago 60 to 100 years ago.
+And when you're studying something as a student, you don't really think too much about the timelines.
+You're like, "Oh, this is the cool.
+This is so cool.
+I want to do this." But then, you know, 60 years later, the field has crystallized in many ways and it's not as dynamic as um and and you know, where the frontier is just moving so fast as AI. >> And so when I saw AlphaGo come out, yeah, >> to me it just seemed like, oh, this is actually the science of our time and I needed to do that.
+And as a quick segue on that note, like it was super interesting to see the Nobel prizes a few months ago or maybe that was last year at this point like everything converting towards AI.
+Do you think AI is eating all those uh other scientific fields? >> I think it's augmenting like it's um and in some sense I think that part of what happened was that AI's impact in the world had clearly become uh hard to ignore.
+But there's no Nobel Prize for computer science which is a field that you know so yeah the touring awards have gone to AI for you know a number of years now and so I think that the Nobel committee I'd imagine felt like it needed to somehow shoehorn this uh and so obviously there were like very impactful uh AI breakthroughs with Alphafold that um resulted in a prize.
+Um but what's interesting is that the physics Nobel Prize was given to something that has not really had that much impact in physics but it is um but I still buy it because it's kind of uh there's a physics smell to to the breakthroughs that led to uh you know these systems like called Boltzman machines and Hopfield networks that uh that Jeffington and Hopfield got the prize for.
+Um they're very physicsy and they're they they look They look like the same exact objects that phys physics physicists study. >> That that's super interesting.
+Just just to play it back like part of what you were saying is um the Nobel Prize going to AI is less a function of AI um sort of eating everything but almost like a political thing at the Nobel uh academy or whatever it is that they should have had a price for um computer science and they don't have it and now it looks kind of silly because AI is the fastest moving field in the world.
+Therefore, they're uh sort of retrofitting it. >> Exactly.
+And I don't and I wouldn't even say that in uh in like I don't mean it in a negative way.
+I think uh >> but yeah, I don't think that as a physicist when I look at uh you know again these objects, Boltzman machines, Hopfield networks, very fundamental objects in the development of AI, even though they're not really even used today, but like some concepts from them are those things haven't permeated physics in any way whatsoever.
+So I thought that was But but they just look like objects that a physicist would study. >> They kind of mathematically look very very similar. >> Physics E.
+Yeah.
+Okay.
+Um All right.
+So you evolved from physics to AI and then what was the next step? >> Had an interim where I I started a kind of small startup that went through by combinator and uh it was basically doing machine learning kind of prediction for um inventory management. really felt like I had to get on the frontier of AI research.
+I felt that that was going to be where a lot of scientific impact accumulates and so I uh ended up joining UC Berkeley as a posttock >> um where I worked in um this lab called the Peter Aiel lab which is uh one of these kind of great labs for uh reinforcement learning and what was called unsupervised learning research which is basically you know um large language models are probably the biggest large language models and diffusion models are the biggest kind of outputs of unsupervised learning.
+I didn't realize that at the time, but that was kind of a in some sense like a not I wouldn't say like miracle year, but it was a special year in that lab.
+Um given the people who are in it, a large portion of that lab ended up going to starting impactful companies or um you know being uh scientists like doing very impactful work in large labs.
+Um to give you a sense first people I worked with was Arvin Sinovas who now runs perplexity and Dennis Yaras his co-founder.
+We worked together on some papers there.
+Jonathan Hoe who uh is one of the inventors of diffusion models was there and invented diffusion you know like the big paper that make made them break through there.
+Um and this guy named Jay Jane who uh was on that paper and they started you know ideog and uh GenMo which are two startups in the kind of videogen and image genen space.
+Deepak Pathog who is the founder of a company called skilled which is one of the kind of premier robotics companies was there.
+What year was this? Like what what rough time period? >> 2020. >> 2020. >> Yeah.
+It was a I mean, now when I look back at it, it was a pretty incredible group of of people um like a DT Grover who uh started Inception, which is a company that does diffusion models for coding.
+Yeah, it was just a like Yeah.
+Another I was just thinking I saw this guy's tweet.
+His name is Kevin Louu the other day who was in the lab and uh he was in undergrad then and uh mo and most recently was leading a lot of the um or doing a lot of the kind of work for the uh mini models at OpenAI.
+So just kind of an incredible group of people at that time.
+Um not obvious at all then.
+Um other I mean the research people were doing was very interesting >> but would never have predicted that so many kind of companies would have come out of there.
+Mhm.
+And the next step after that was Deepine. >> And then I went to Deep Mind.
+At the time I was really interested in >> Toronto. >> Yeah.
+Toronto in New York.
+Um so I joined the group of um this researcher named Vlad Man who was uh largely credited with starting the field of deepl.
+He was the first author of the deep networks paper which was the paper that got um neural networks to play Atari. >> And he like his first set of papers actually largely defined deep reinforcement learning as a as a field. then were basically a deep mind's claim to fame for a very long time.
+Uh and so I joined this group to study the problem of what we called I mean we started that we the team we built together was called the general agents team and so the whole point was to do research that enable you know for us to figure out how do we build general agents.
+I think that um it was much more opaque I think then than now.
+And the big problem we were trying to solve is um what people called and still do but it uh called unsupervised reinforcement learning which is really how do you train reinforcement learning systems that are capable of um assigning their own rewards.
+Like if you don't have rewards without supervision like in the same way that you know you can give things some rewards but kids and animals when you look at them they they learn a lot in an unsupervised way like they interact with their environments and without you know no one is telling them to and so we were like we were thinking about how do we teach reinforcement learning systems in this way.
+I actually think the subject is um coming back in vogue in the age of language models um in with the question of how do you do pre-training scale reinforcement learning like how do you generate a lot of synthetic data if you don't have explicit rewards um I think it's actually a really interesting question now again um but uh that was kind of the general agenda of what I joined to study and the short of what ended up happening was that language models started And once they started working, that really changed, I think, my entire perspective on what problems matter and what didn't because a lot of the problems that we thought were fundamental problems were solved in this kind of brute force way for us. >> And so you kind of had to recalibrate on what are the problems you want to solve.
+And so I joined a small project at the time that um you know was tens of people and that project became Gemini 1 and 1.5 and then obviously two and so forth and I joined with my co-ounder my co-founder Giannis was leading the reinforcement learning team the RHF team um I joined his team and led a lot of the work for uh training reward models for Gemini and implementing the algorithms and so forth and it was a very yeah very exciting time when I'd say a group of 10 to 20 people were that was basically those are all the people doing the RHF work there and >> and when was the decision to leave and start a start a company and what was the thinking >> well we shipped Gemini 1 and 1.5 and we realized that language models crossed this threshold of utility where they're no longer research objects they're going to be very useful uh this was early 2024 realized that the ingredients were you know kind of in place to build a super intelligence like we we felt everything was there.
+There was one more piece to solve of going from RHF to making reinforcement learning work and that basically happened right over the last year with reasoning models.
+Um so we felt that that would happen.
+Then the question was super intelligence for what? That was basically you know we we felt that you can't answer this question in the abstract by kind of being a researcher that's really far away from product and customers. you kind of had to you really had to go in and define what that means from a product vision and uh what problem you're trying to solve perspective that it's like we're not interested in building a super intelligence that will be super intelligence in mathematical olympiads and the difference between this era of reinforcement learning and the previous era of pre-training is that when you did pre-training you made the models kind of generally better at everything.
+Reinforcement learning is much more jagged, right? It's sort of uh it makes them good at what you want them to be good at.
+So just because you made them good at competitive code that kind of improves the general coding capabilities, but that does not mean that you'll have not even a super intelligence but even just a useful intelligence for software engineering code. >> And I think an example of that is I think anthropic has done a really good job of building models that are meant for users of pro their products rather than benchmarks.
+I when I look at academic benchmarks, the claude models are consistently worse than whatever else is out there um by you know like oftenimes not even close like they're consistently worse and yet from a user perspective they're consistently better.
+Something has to explain that and I think the explanation is that when you train large language models with reinforcement learning they become jagged in the sense that they become good at what you wanted them to be good at.
+And there are some generalization capabilities, but they're much weaker than people think, >> which is a little counter the narrative that you hear a lot, which is that generalization is always going to win.
+And I guess uh I don't know if that's uh true to it or bastardization thereof, but like the rich sudden bitter lesson.
+And so what you're saying is sort of not the opposite, but like that the solution is a combination of generalization and specialization.
+Is that fair? Well, I think that it's like the bitter lesson is um actually doesn't say anything about generalization.
+The bitter lesson says that the systems that we should be thinking of and building are ones that scale well with search and compute. >> That's kind of that's kind of it.
+M >> and so what he's saying is if models are limited today like you know this was actually basically the lesson was for researchers but I think it's for product builders as well. >> Mhm.
+If you're building your product with the assumption that these models are going to stay, you know, at their current intelligence level and you make a bunch of hacks around your product to overcome those things, then in the next iteration of um you know models, a lot of the hacks that you put in place will probably be bitter lessened. >> And that was um scientific researchers were seeing these kind of limitations of models and plugging them in with kind of temporary hacks that would make them better at certain benchmarks.
+So, it's kind of the same lesson translates there, but the lesson is more to build systems that um kind of are good at soaking up compute and scale well with search. >> Yeah, we'll put that in the show notes.
+I think that's probably one of the most often misqued uh blog post in the history of AI. >> Yeah.
+Well, I think what's happening with uh you know, when we think of generalization, what's really happening is that if your training distribution is everything, then your test distribution just falls in your training distribution and you have generalization. maybe maybe one point of view that I don't think that that many people share it but I do think there will be a general super intelligence but I think that it won't be one lab that has built it but it'll be kind of the plurality like the collection of all intelligences will be a general super intelligence because if you think of pre-training is kind of the soil or the substrate from which you can now grow um you know super intelligence in various categories um medical super intelligence organizational super intelligence super intelligence for scientists and math These are all different types of super intelligence.
+Some of them you can merge into one model.
+But I think that there will be, you know, if you think of different super intelligence plants growing from the substrate.
+Yes, like a frontier lab will be able to capture some of them, but I think that there will be new frontier labs built that build out sort of, you know, kind of grow other plants and that the collection of this garden is going to be a general super intelligence rather than one company going in and growing all the plants.
+I think from a research and compute perspective that's possible but from a product perspective like you know if you want to build organizational super intelligence you have to go and integrate with all these customers and you have to have solution engineers that support them and you have to have sales people that support them and in this kind of rosy picture of a researcher who just kind of trains models and you know hopes the model is a super intelligence I just don't think that the world will play out that way because you kind of it's meaningless if it's not coupled to a product and its deployment double clicking on the product today.
+What is the reality of um something like an autonomous coding agent? Like how good is the state-of-the-art right now versus what hopefully it will be in the in the future? Like are we in the, you know, teens in terms of like SWE benchmark? Are we higher than that for certain tasks? Where where does it all land currently >> on the benchmarks? just kind of a quick side comment that I think that Swebench is either I mean I'd call it I mean it's going to get it's getting to saturation and it's funny that even though you have like these numbers like 70% or something like that on SWEBench those coding models are good but they're not solving 70% of engineering tasks.
+Um so there's a sort of benchmark to real world problem misalignment which is always going to be the case when your benchmark is not the actual thing that customers are using it for.
+But in terms of progress, I've been if there's one thing I had fairly aggressive timelines on progress in my mind and I would say things have moved faster even than I than I expected.
+I think that you know we've gone from autocomplete engines to things that are kind of semi-autonomous to now things that for junior tasks they they can just do them autonomously like it's pretty pretty incredible.
+There is in some sense we are probably at a L4 kind of junior junior engineer level of autonomy which is pretty incredible.
+And autonomy means 100% success.
+No need for code review. >> You still need to do code review in the way that you would do with an L4 engineer, but a level of reliability that you know the code review will you know there'll be some nits that you pick off like you do with a normal engineer, but that the thing they gave you is useful enough for you to review it in the first place.
+Okay.
+Um as opposed to >> this is just garbage and why am I spending time reviewing this code? So I think for junior code like um you know little UI changes and um you know small things kind of here and there of which there are a lot so it's very useful um we're kind we're probably at L4 as a as a field.
+I think that over the next couple of years that will just the code generation ability will continue improving and we'll have things that are um quite intelligent.
+I would I I don't know where exactly I'd place them.
+Um because I think they'll be really good at generating code when you give them a re like all the specs every all the requirements exactly what needs to be built.
+But the whole job of a staff level above engineer is figuring out the requirements in the first place.
+M >> so that's kind of 70% of their time is spent on that of designing stuff figuring out the requirements are figuring out you know planning in advance like if I build this will it conflict with these things soliciting you know information from other teammates that's really what a staff engineer and above does and then the implementation part is usually the sort of straightforward part okay you spend like 20% of your time actually writing code and implementing things >> and so the way things are progressing I think we'll have very capable agents at the implementation level once you give them something to do um that's really concrete and specific but if you don't solve this kind of um contextual gathering or you know build out the contextual core I don't think they'll be at you know at that staff level as a whole >> but the um L9 with memory not the L9 with amnesia that we were talking about earlier >> uh feels like a tractable near-term uh kind of problem to solve from your perspective like we well on our way there. >> Yes.
+So I think if you I I think it's a very tractable it's a very hard very tractable problem um and that the combination of this uh you know L9 with amnesia and the and the L9's context core will together you know >> that will become the principal level engineer in an organ the AI engineer and so I actually think that that's not that's not too far away that's um >> I would say in you know couple of years away >> so when you said rewarding back to the beginning of the conversation that uh you're starting with a coding agent then is the idea that a lot of those uh principles that you described can be uh horizontalized across the company.
+So the institutional memory which I find a fascinating concept that you can plug in that could be the the coding institutional memory but next it becomes the marketing uh the product the HR institutional memory.
+Yeah, that's that's right.
+It's kind of um at that point from a buildout perspective, it's very similar.
+Um you know, right, you've you're now on prem or in the VPC of an enterprise customer, you have a centralized kind of knowledge around their code and you've already centralized knowledge around other tools for them as well that are immediately adjacent to the next thing.
+Right? If you're centralizing knowledge from Jira, that's both engineer and product management adjacent, right? So I think at that point it just becomes in bringing other tool other kind of integrations in based on where you're seeing pull from the enterprise um >> and then enabling the ability to act on the user's behalf when they want to.
+So instead of just being able to ask questions enabling like the actual agent to go and do stuff for them.
+Um so I think that I mean that's going to come sooner than than later right it's uh in the coding space I think once you have the contextual core you can integrate it into existing coding products right you sort of like if we think about the other coding products as being these autonomous software engineers with amnesia you can fill that gap for them >> um obviously you can build out you know one of your own as well um but I think it ends up being kind of a notion of customer choice right like you you want the overall solution to be best for the customer and you're as a company focused on what you believe is kind of fundamental building block of enabling super intelligence.
+So maybe zooming out to to close, I'm curious on, you know, a few thoughts about uh the reality of building an AI startup uh today.
+I guess from a talent perspective to start with uh as as we were saying a few minutes earlier like in this weird moment where like ridiculous amounts of money are being offered to talent to like move from one company to the other.
+How does one sort of recruit and keep talent in in this environment when you are you know very impressive obviously but still a small startup >> I think the entire makeup of um the research team was um yeah earning a lot of money at big labs basically um obviously Giannis and myself included the thing I guess to remember is that a lot of people get into this field because I mean they're scientists at heart or they're kind of builders at heart and so there is the financial element like you certainly need to you need to pay enough for, you know, be generous enough where that's not really like on top of minds.
+But people really care about discovering, right, the next frontier and the next breakthrough.
+Um, right, the most exciting time to be in an a AI lab is when it's before it's obviously the frontier lab.
+Like I think that most exciting time at deep mind was building deep networks and building alpho.
+Those were the times I think were sort of like deep mind I would say golden days and similarly with open AI it was building out the GPT series of models like at the one two three stage and I think for um anthropic it was like really in the like one and two stage cloud one and two stage um where obviously now they're kind of reaping the benefits of of that breakthrough work that was done there.
+We tend to attract people who have that kind of um I would say internal drive in them of wanting to be part of that next story because they're already at a big lab or they could join a big lab and and they'll always be able to.
+I mean always I mean we'll see when ASI comes around but it's like like that's not really that scarce of an opportunity.
+Um when you actually look at which startups are out there that have the clarity and the team and um you know potential of starting a new frontier lab, there are not that many.
+So there actually a lot more spots at the big labs than there are at startups that um have a shot at this. >> So I think that people end up in a sense kind of um self- selecting like uh we've went over candidates over openai and anthropic um meta deep mind regularly.
+Obviously, they get a lot more equity in this company as a percentage of its ownership.
+And if they kind of do back of the napkin math of if they had joined Anthropic at this stage and got that percentage ownership, what it would be worth now um it would be I mean absolutely generational.
+So >> that tends to be I think if you don't have a good kernel of um the initial team is not strong enough then it becomes very hard.
+But if you have a very strong initial team um then and people see that potential for breakthroughs um then you become like in a sense a scarce option because there are not that many places where you can do this >> and uh you know later this year we'll be um shipping things that I don't think anyone ever thought a startup could do.
+Like I think that we're going to be tripping some things on the research side that I think everyone thinks you need to be uh a giant lab with 100,000 GPUs to do and I think it'll be quite um interesting and surprising >> on the product front.
+Um again to the discussion about product versus uh research you know you guys are super deep um PhD type um world class AI researchers uh but in a context precisely where you want to build product was it part of the core team to bring in people that would bring product or or or how did you think about it? Yeah, we've hired out uh I guess the the company is we kind of think about it half product half research.
+And so um we've we have a we've hired out a research team, we've hired out a product team and then there's um I'd say the majority of the makeup of the company is probably um twothirds of it is people who have research backgrounds at, you know, some of the big labs.
+Of those people, a bunch of them are kind of in this um in this role that is between research and product.
+Um that for example like the design of like the agent design research um that's a very between like research and product or evaluations like what are you evaluating your models to be good at um that typically is something that's just on research for us it's kind of a cross functional end to end thing the data that you're generating the synthetic data that you're generating to train your models um that also cuts across all those things so in a sense it's uh I think it attracts well maybe people similar to Giannis and myself that came into this and just wanted to be we just did not want to maximize another academic benchmark.
+We just wanted to solve real problems and have real evaluations and so for those people this ends up being a really good place.
+I think for people who would much rather kind of sit in a known entity and um really focus on some specific piece of work of like training the model because right they're so big that when you enter them you're kind of given you know okay like this is the sliver that you own. >> Um but that's really interesting nonetheless because you kind of become um a craft person.
+So I think that's actually a very important skill to pick up.
+Uh but if that's where people are in their lives then um yeah I think the big lab is definitely a better option for them. and you you've raised a bunch already I think like 125 130 million whatever the the number um in the press um is does capital matter as much for a company like yours you know thinking about modes in AI today there certainly uh you know is a well um publicized capital race for certain type of companies uh does your generation of of startup and your type of startup require as much >> capital matters a lot.
+Uh I think the difference is that you can't operate at 100x less capital than a frontier lab, but you can operate at say 10x like an order of magnitude less capital um when you're really focused.
+So I think that capital matters a lot and it really is determined by when are you ready to scale up your GPU count.
+That's basically that's basically it, right? I mean there's um obviously headcount and data and so forth, but the primary cost for any of these companies uh is is their GPU um expenditures.
+So that's sort of um you kind of raise capital commensurate to when you're ready to scale to the next stage.
+Um and so I think capital matters a lot, but you can be a lot more efficient than um than traditionally frontier labs have been. >> All right.
+Well, we we covered a bunch from the past to uh super intelligence to Asimov to uh your background to what you what you're building and what you're building next.
+I'm excited for this announcement as what you alluded to that's coming on the research side in the next few months.
+Thank you so much for being here.
+This was terrific.
+Thank you. >> Yeah, thank you Matt.
+This was fun. >> Hi, it's Matt Turk again.
+Thanks for listening to this episode of the MAD podcast.
+If you enjoyed it, we'd be very grateful if you would consider subscribing if you haven't already, or leaving a positive review or comment on whichever platform you're watching this or listening to this episode from.
+This really helps us build a podcast and get great guests.
+Thanks, and see you at the next episode.

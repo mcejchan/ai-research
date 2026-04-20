@@ -1,0 +1,137 @@
+Today I wanted to talk about the future of software engineering.
+And for those who don't know cognition, uh we are the makers of Devon.
+Devon is an AI software engineer for existing code bases.
+I guess could you raise your hand if you've ever heard of Devon before? Amazing.
+Okay.
+Basically the whole room.
+So uh before we talk about the future of software engineering, I thought it would be great to talk a little bit about the history of software engineering.
+Uh raise your hand if you recognize this thing on the on the top left.
+All right, about about half the room.
+Yeah.
+So, these were punch cards.
+Uh, and punch part punch cards were one of the earliest forms of uh software engineering.
+Originally, they only stored data.
+In fact, the 1890 uh 1890 census used punch cards to track the census of the US population and it was uh on time, under budget and a huge revolution uh for kind of now digital infrastructure.
+Uh but after punch cards we had assembly and assembly was a much higher level uh form of programming than punch cards.
+You could directly write machine instructions that would tell your computer what you wanted it to do.
+Uh but it was still very specific to the implementation of your computer.
+And so we invented higher and higher levels of abstraction.
+Uh later we had cobalt which let you write software uh once in a higher level of abstraction and run it uh in different types of environments.
+And then we got Java and more and more abstractions, higher and higher levels of programming.
+But when we sort of think about the history of these different forms of programming, I would argue they have one thing in common, which is that the history of software engineering is really the history of telling your computer what you want it to do.
+And we can do that in higher and higher levels of abstraction.
+Uh but that's the unifying theme of progress in building software for the last century plus.
+And we think that AI software engineering is just the next step on this existing ladder.
+There's been amazing progress in AI for software engineering so far.
+These are results of individual model scores on a popular benchmark called SWEBench from around a year ago till now.
+And this benchmark is now completely saturated uh because it's it's basically been solved by even base models themselves.
+And we look to higher and higher levels of abstraction. models are improving not just in software but in really everything.
+And there was really interesting research from an independent lab called Meter late last year that tried to estimate um how advanced are these different AI models getting at solving tasks end to end.
+And they measure task complexity on the y-axis here as the amount of time it would take a human to do the task and on the x-axis they show the model release date.
+They show basically an exponential improvement in models ability to handle increasingly complex tasks uh with 50th percentile reliability.
+And you can see in this sort of GPT2 era, you know, we could do tasks that were maybe two to three seconds of human time.
+Really just a quick pattern recognition uh job.
+But by the time we're at GPT3 and then 3.5, we're getting in the tens of seconds, maybe, you know, a whole minute saved writing a paragraph with GPT3.5.
+And as we got to four and beyond, uh, we're on this very steep exponential trajectory of progress.
+And the measurement of doubling time here for general AI agent tasks is every 7 months, which is pretty extraordinary.
+You think Moore's law was every 18 months.
+This is a significantly faster doubling period.
+And the trend is even more pronounced in software engineering. um the error bars are higher but the estimates in software engineering is a doubling time of every 70 days and you can see this graph ends around uh just towards the end of 2025 where tasks are taking about an hour for a human to do with 50th percentile reliability and I think we're basically on track now halfway through 2025 with another three doublings where you know we see tools like Devon solving tasks end to end that would have taken a human maybe up to eight hours four to eight hours and so if you really think about what this implies It implies if we had this event a year from now, there would be another five doublings of of task complexity, which is just an absolutely extraordinary rate of progress.
+Even if it slows down a little bit, this is obviously going to fundamentally change how we do programming.
+And I want to talk about the trends in AI for coding specifically because we've sort of moved faster in this domain than almost any other.
+Um, in many ways, the the sort of first mainstream product for AI software developers was GitHub Copilot.
+How many of you have used or tried GitHub Copilot before? Amazing tool, almost like autocomplete on steroids.
+Well, you're in your editor writing code and you're getting a real-time speed up of of what you can do faster.
+You can tab complete your way to success.
+The second wave of AI developer tools has been the AIDS.
+These are tools that are a fully integrated development environment where you're programming with the help of AI getting individual leverage on top.
+And we view Devon as part of the emerging third wave of AI software development tools.
+These are autonomous AI agents, AI software engineers that you delegate tasks to end to end and you get back a complete unit of work.
+So this has a very different set of technical trade-offs than an AI co-pilot or IDE because by the nature of this design you can do things asynchronously and in parallel asynchronously and in parallel.
+And so one engineer can have multiplicative impact for the problem domains where these AI software engineers are able to solve them.
+And the measurements that we hear all the time from our customers, you know, thousands of companies around the world is anywhere from a six to 12x human time savings with these asynchronous AI agents versus the autonom the the sort of local IDE experience.
+And these are complimentary these are complimentary approaches.
+People are still going to be sitting down and programming things themselves.
+But when the task can just be delegated entirely to an AI, when it's simple enough to fit in that 8 hours of engineering time block, uh you can save most of the time to just focus on review.
+Architecturally under the hood, the reason these things are complimentary is because the autonomous AI agents can run in the cloud asynchronously in parallel.
+Um and at Devon, we've spent a lot of infrastructure time making those agents be able to run either in our cloud or in your cloud. uh because we found that the local development environment of any individual organization is very particular and it's very useful to be deployed inside your own environment.
+The next trend that's associated with this is what parts of the engineering life cycle is AI going to actually help us with? Um one of the things about software engineering is that it's more than just writing code. uh and depends on the company you ask, but you look at research from software.com and Microsoft, there are estimates that really only 20% of a software engineer's time is actually spent sitting down at an editor and writing code.
+And there's so much more beyond that.
+There's planning what code to write.
+There's communicating and uh clarifying requirements with colleagues.
+There's writing the code.
+Then there's running the code.
+And rarely does it work on the first try.
+And then you've got to fix the code.
+You've got to add test cases.
+There's a CI/CD process.
+There's a PR review process.
+So there's all these parts of this software development life cycle beyond writing code.
+And part of the promise of AI agents is that you can capture much more of this life cycle than just the writing code part.
+And so we see this in production all the time from customers.
+Some examples from New Bank, from ramp, from access of uh meaningful engineering speed ups on projects big and small.
+Uh but they all have something in common which is there's engineering toil that has to get done that the human engineers aren't very excited to do but it's got to get done somehow.
+And whether it's a major refactor of ETL pipelines where you've got tens of thousands that all have to be reorganized in a new system or it's bug fixing longtail triage of alerts from security systems.
+Um there is enormous amounts of engineering work that could be done today that we just simply don't have the bandwidth to do.
+And so I figured it would be more fun to show a live example of this.
+And it's especially fun because half the internet is down today.
+Uh but um I wanted to I I I was looking at who's sort of the audience for this talk and there's some amazing tech companies uh in here.
+I was looking at some of the code from Honeycomb io uh which uh there's a great Helmcharts repo here, but there's a active community and people sort of want some upgrades.
+There's uh open issues in the Cloudflare workers SDK right now.
+I think there's some folks from Cloudflare here uh where there's a bug for uh binding output for KV when creating a new name space.
+Um Snowflake has a set of connectors for various languages including Python.
+Uh but there's some bugs in open telemetry imports.
+So uh we actually just let Devon loose on all of the issues for all of the companies uh in this room.
+Uh and I won't show you all of the results, but I'll I'll walk you through one and show you what this looks like.
+Um, the first thing you might do when you're when you're looking at a repo is try to really understand what is going on in this repo under the hood, get oriented.
+And so when you plug a repository into Devon, the first thing we do is we generate a complete wiki.
+Think of this like a real-time Confluence page that's self updating based on the code itself.
+And we can look through, in this case, the Snowflake connector Python repo and see an overview of how this code is organized. um automatically generated architecture diagrams that show the different data flows, code dependencies.
+Um and in many cases we found open source project maintainers tell us that this documentation is more thorough and accurate than their actual official documentation.
+And I think more than a thousand have already migrated to uh this Devon wiki as the official source of their own documentation.
+So uh once you have this kind of overview of the existing repo, you might want to ask questions about what's going on under the hood.
+And in the interest of time, I'll show you.
+I asked a question of where the code uh for telemetry is enabled or disabled in this snowflake connector Python repo and the result is something like deep research on your existing codebase where you get a natural language answer with links to the underlying source code to avoid hallucinations.
+Once you clarify those things, you often want to fix the issue yourself.
+And Devon philosophically tries to be more like an AI co-worker than co-pilot, which means it needs to plug in to the existing tools that human software engineers use to collaborate every day.
+One of the popular tools for that is linear or jira or these project management systems.
+And so if you have tickets in linear or jura and you want Devon to tackle them, all you do is assign it to Devon instead of human.
+And when we do that here for this existing open issue from this snowflake repository, uh Devon will first do some research in the codebase to really try to understand the problem.
+Uh it will understand the task, understand the state of the existing code and then create a proposed solution.
+And we found it's really important when you're using autonomous AI agents to get realistic estimates of how confident they are in the quality of their work.
+And so you can see here Devon says it's medium confident in its understanding of the task, high confident in its understanding of existing code and medium confidence in its understanding of the solution.
+Uh once we assign it, we can actually look at the session of Devon fixing the issue itself.
+So Devon has written itself a prompt to go actually fix this issue and it's given some details from its previous research from its understanding in the wiki of exactly what's already going on in this code.
+Uh and it gives sort of a full spec of what's expected to resolve the issue.
+And if you've ever used chat GPT, the interface on the left would be very familiar with you.
+This is a chatbot with an AI agent.
+The big difference with Devon is what's on the right.
+Uh where devon session runs in its own virtual machine with its own shell, its own web browser, its own code editor.
+And so when you give Devon a task, it gets to work the same way you or I would.
+It opens a shell.
+It makes a plan.
+It starts looking through the code, runs a git checkout command to create a new branch for it to solve the issue, and then gets to work understanding the existing code, searching through things, uh, executing commands, uh, and then ultimately creating a pull request, uh, from this as a result.
+And we can see at the end of this process, which again happens asynchronously while the human engineering manager does other work, results in a pull request.
+And if we go and we open that pull request, we can see it's created by this Devon AI integration.
+It explains what the problem was, what the solution was, the changes made, and it can be approved and merged directly into production.
+And so I want to briefly touch on at the end these use cases for where this uh where this can actually be applied.
+Broadly, it's all about engineering toil, the tasks, the P1's, the P2s that have to get done, but no one's super excited to do them.
+And these can be small projects or large projects.
+A lot of projects, for example, major refactors, migrations, modernization workloads, a lot of those can be broken down into a huge array of small tasks.
+And so, we're seeing this new programming paradigm emerge where the human engineer becomes an architect manager of an infinite army of AI agents.
+And it's your job to decompose complex problems into many small ones, fire off an army of agents to go solve them, and then review and combine the work.
+And we think where this is heading is towards a golden age of software engineering.
+And so as a very final note, I want to just share a few of the lessons we've learned from working with customers around the world who use AI agents in production.
+The first is that software engineers, human software engineers are becoming coding agent managers.
+Every IC is now a tech lead manager for an army of AIS.
+The second is that people are rolling out these autonomous AI agents more based on use cases than individual developers because with a single use case the time savings can be so high that it motivates the rest of the roll out immediately.
+The third is that centralized organizational knowledge is critical.
+Every company in this room does things in their own way at least part of the time.
+Custom libraries, custom frameworks, custom workflows.
+And so being able to teach your AI agents those workflows and share those learnings across individual engineers is critical.
+Next, these agents need access to systems to be productive.
+And so we're seeing now a trend of AI agents riding the same authentication rails as humans to get this done.
+And finally, because of all this, these switching costs are going to zero.
+It's becoming increasingly easy to move from one type of code to another.
+And we think in the future code will be much more mobile and people will be much more empowered to ship their best work.
+Thank you so much for having me. [Music]

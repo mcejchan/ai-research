@@ -1,0 +1,432 @@
+Hello and welcome back to another episode of Tash Teaches.
+I'm Tash and in today's video we're going to be talking about skills, the amazing new feature added to Claude Code in the past few weeks that effectively allows you to package up at times complex workflows and give them to Claude as a repeatable process.
+So, if there's any kind of thing that you're constantly finding yourself doing that needs a certain amount of niche knowledge or repeatable workflows, references, uh, scripts, or whatever, you can package them up into things that allows Claude to effectively have very specific domain knowledge to do cool [ __ ] I'm not just going to be showing you how to create skills, but I'm going to be giving you a very meta skill that I created called create agent skills.
+I went through and I researched every single thing possible about effective skill creation from all of Anthropic's documentation and I actually packaged it up into a skill that allows you to create skills with this skill.
+To make it even better, I'm going to show you in the process of creating them, often times you'll run into problems where things don't quite work exactly as you had anticipated.
+So, I've also created another system called heal skill that allows you to take the failures of using said skill uh and then package up what ended up working to fix it in the end and then use that to rewrite the skill for a sort of very meta self-improvement workflow.
+So, without further ado, let's jump right in and I'm going to show you exactly what I'm talking about.
+So, skills can be userwide or they can be project specific.
+I like to most of the time make my skills userwide, meaning I can access them anywhere on my entire machine.
+And they live kind of like where you would have your hooks or your slash commands or any of your sub agents.
+They are folders most of the time.
+I've opened up here just the skills folder in my home claude directory.
+You can see I've got a bunch of skills here that are all really quite useful, but really the most amazing one I've got here is the create agent skills skill.
+It's going to get very very weird and meta and loopy today as we talk about using Claude and its own ability to have skills to create skills.
+But anyway, these folders have inside of them a specific file called skill.mmd which effectively just lists what the skill is.
+It gives crucial information to Claude.
+Uh and then what's nice about it is because of the fact that in general they're supposed to be a little less than 500 lines is it doesn't actually take up that much context.
+However, you can add in reference files with all sorts of extra reading that Claude might need depending on how it ends up using said skill.
+So, you can see in here under the skills thing, I've got a bunch of extra reading such as here API security, being clear and direct, common patterns, core principles, executable code.
+And what I did was I went and I researched, again, not me, but I created some prompts that got cla to go and research all of the best findings from Anthropic's own documentation, from what other people have been doing, and I've packaged it up into this script.
+So, let's just have a quick look through the main skill file here.
+One thing that you might notice off the bat that may even seem a little different from Anthropic's own documentation on this is they tend to use markdown formatting.
+So they have headers saying like objective and blah blah blah blah blah.
+Thing is most of the time if not all the time I don't read or write code.
+I do everything for it to be easy for Claude code to understand and execute from.
+So across the board when I'm creating slash commands, sub aents, whatever, I always write them or I get Claude to write them using XML formatting.
+Um people have been commenting on my videos recently saying that XML isn't as good as markdown.
+Ask Claude yourself what would be better for you to follow complex instructions.
+Claude will always say XML because it gives clear boundaries of what each piece of information is about.
+Therefore, I've just completely gone 100% in on XML.
+And when I'm creating slash commands, skills, whatever, all of it ends up being created with XML formatting.
+And so when I run this create agent skill to create a new skill, not only does this skill file itself follow that, but it also then goes on and creates those skills using pure XML structure, which I've just found to be super clean and really, really efficient.
+So let's have a quick look at this create agent skills skill.
+In order for a skill to be created, it usually has a name.
+Well, it has to have a name and then a description.
+The description is so that Claude knows when to auto invoke it.
+But I'm going to get to that in a little bit because some people have problems with Claude just not invoking the skill when you'd want it to.
+So I have a solution for that as well.
+But in general, this description is it provides expert guidance for creating, writing, building and refining Claude code skills use when working with skill.md files, authoring new skills, improving existing skills or understanding skill structure, progressive disclosure, workflows, validation patterns and XML formatting.
+So it's super comprehensive here.
+The objective is agent skills are modular file systembased capabilities that provide domainspecific expertise through progressive disclosure.
+This skill teaches you how to create effective skills that Claude can discover and use successfully.
+Skills are organized prompts that get loaded on demand.
+All prompting best practices apply with an emphasis on pure XML structure for consistent passing and efficient token usage.
+Nice.
+So what happens is that Claude automatically at the beginning of every chat loads up every one of your skills is front matter.
+So this is this stuff here is front matter.
+Probably going to be like 50 to 100 tokens, this tiny amount of text.
+And so if it does auto invoke, it can see from these descriptions which ones it should invoke.
+It doesn't actually then read any of the rest of this, nor does it even start reading all of these, you know, potentially multiple thousands of lines of reference files until it has invoked the skill.
+And you'll see what that looks like in the terminal.
+And it won't go and look at those references unless it reaches a point in here where it knows that it has to do so.
+So the quick start workflow, identify the reusable pattern.
+What context or procedural knowledge would be useful for similar future tasks? This is me saying I want to create a skill that does eh cool.
+What is the procedural knowledge necessary to do that thing again and again consistently then it creates a directory for the skill and I've made it follow a very nice pattern which is verb noun skill.
+So create website manage email whatever it is it takes those two things and it puts it there.
+Then you can see here it tells claude to see the reference here as skill structure.
+And so if we have a look at the reference file, what it would then do is it goes and it reads the skill structure file, wherever that is, this one, skill structure.
+So we don't need to flick through that really.
+There's far too much information in these for us to really want to go and read.
+If you do want to know how I've built this, go in and read those.
+But I'm just going to go through this main skill before we actually go and then build one ourselves.
+So you can see what it does is it learns a little bit about that, takes the name, description, what it does and when to use it, blah blah blah blah blah. if the skill uses API credentials.
+So if I were to say something like, you know, I need it to access my Facebook business manager, it's going to then go ahead and read the API security.
+If it doesn't, it's not going to read it.
+Then it's going to write concise instructions, assuming that Claude is smart, only adding context that Claude doesn't have using pure XML structure.
+Test with real usage.
+Cool.
+Brilliant.
+So it gives a little example skill here.
+This is from Antropic's own documentation.
+Here's the objective.
+This is actually what they do use for their processing PDFs now.
+Um, very nice.
+Skipping down blah blah blah blah blah.
+Um, also we've got some conditional tags here as well.
+Um, whether or not something does need a security checklist or whether it needs testing or whatever kind of [ __ ] that it might necessarily need for that specific occasion, it will conditionally add those.
+Also, critical rules, no markdown headings from skill body content.
+I don't want any of that [ __ ] because although markdown is really useful for us as human beings to be able to like scan over something, I don't want to waste my tokens with content that I'm not going to read.
+So effectively, I just completely get rid of that and everything.
+Oh, what have I done? Literally everything is created to be most effective for Claude.
+And because these uh semantic XML tags, this Claude knows that because it's in these tags, critical rules, that these are critical rules that must be followed.
+Anyways, intelligence rules, it figures out blah blah blah, all of these kind of things.
+Skipping down here and then the generation protocol, you'll see when we actually run this um when we actually run this that it's nice because instead of doing anything straight away, it first wants to learn what you what it is that you want to do.
+I don't want it to make assumptions or jump forward.
+So if no context is provided, it asks what do you want to do? If I have provided context, it's then going to go in and well actually if it hasn't, it's going to say do you want to create a new skill, update an existing skill or get guidance blah blah blah blah blah.
+It's going to then ask some further questions if I have given description about okay cool well of that thing uh would you like to be able to do X? How many people would it need to serve? But it's going to ask them context specific.
+So, you'll see in a second.
+It's really, really cool the way that it asks.
+It doesn't ask generic questions or things that are already answerable from the initial description.
+And most importantly, anytime I'm building a system that uses the ask user system tool, um, which ask user questions tool, you'll see at the bottom it comes up with this really nice multiple choice thing is I never want for it to assume it has enough information.
+So, I always give the option at the end of answering those questions for Claude to ask me more questions so I can just keep going, keep going.
+So, we'll see in a second how nice that is.
+Then this decision gate, that's it where it says, "Do you want to now build or would you like me to ask more questions?" And then it loops back if that's the case.
+Um, also very nicely is that we have a few types of um, steps here.
+I'm actually just going to jump in and show you cuz I think the best way to describe this is to actually do something.
+So, let's jump in and I'm going to open up a new warp terminal here.
+I'm just going to go to a blank terminal and I want to show you how I would go about building a brand new skill because as soon as I built my first skill, I realized that the skill of creating skills is a repeatable skill in and of itself and there should therefore should be uh extracted into a sort of meta level skill. [laughter] I told you we were going to use the word skill a lot today.
+So, I'm going to go into my developer folder and I'm going to create a new thing just for today.
+I'm going to call this um skills demo and we'll go into the skills demo.
+So, I'm going to load up Claude in dangerously permissions mode and you're going to see how insanely easy it is to start this.
+So, one of the actually I mentioned that that sometimes Claude doesn't automatically invoke it.
+And I even see people on Reddit saying like, "Oh, Claude only was invoking my skill 20% of the time.
+I managed to get it to 80%." Now, that's stupid.
+All you need to do is to, and I'll just show you exactly how I did it.
+Um, cd cd claude commands.
+Uh, let's just open it up so you can see.
+I've created like very lean wrapper type slashcomands that you can see here.
+Um, let's go to create agent skill.
+This skill literally all it does is it uses the tool of skill and then invoke that skill. >> [laughter] >> So all I do, as you can see here, is when I run this slash command, if I don't say anything, it just starts the workflow.
+If I do, it passes through the arguments.
+So let me just show you how effective this is.
+If I just do create agent skill and press enter, it'll take a little second for it to pass all of the information necessary.
+But pretty quickly, it's just going to launch it.
+Boom. 100% of the time.
+I never have any issues with skills not activating.
+And straight away, it's given us this thing that was saying that ask user question workflow.
+Really nice.
+So, do we want to build a new skill, update an existing skill, or get guidance on skill? Now, [clears throat] I could press number one, and if I do such a thing, you'll see exactly what happens.
+It's going to take us on to the next stage.
+But the thing is, I don't always want to have to wait for that.
+Sometimes I just want to literally say create agent skill and describe what it is that I want to do.
+So, instead of me running through what was that like 10 seconds, 15 seconds, I'm just going to close this and show you what this looks like and how I would go about doing it.
+So I would do slashcreate agent skill and then now all I need to do is just describe what I want it to do.
+So I have an idea for something that could be kind of fun here.
+Um I'm a huge fan of entertaining diverse ideas, keeping what I like, throwing away what I don't.
+And something that I find very entertaining a lot of the time is astrology.
+Um for any of you who are interested in the idea of perhaps more um gnostic traditions, I recently came across a very uh very curious thread of thought that astrology is actually this energetic control system put in place by the archons.
+But that is a conversation for another video.
+So in the meantime, let's just build a skill that can help us create astrological readings and then ideally uh be able to chat with our astrological chart in a kind of personalized way.
+So I'm just going to use my dictation tool.
+I want to create a skill that allows me to give my birth day, birth time, birth location, and have it then do an astrological reading, birth chart, generation thing for me that outputs a beautiful HTML chart that shows all of my astrological natal chart, but also creates a JSON file with all of the actual information about my natal chart. part so that I can then in another part query it and I can talk to claude code with it understanding my natal chart so that it feels hyperpersonalized and really specific.
+So I'm just going to do that in there and you can see that all I have to do is now press enter and it's now going to just pass this through into the create agent skill.
+So it's not going to say to us up front what do you want to do? I've already told it what I want to do.
+So now it's going to bring this up and it will invoke it with the first set of questions.
+Cool.
+So here are our first questions.
+As I said, you see how nice this ask user question tool is.
+So what astronomical astrological calculations should this include? Obviously, we need all of these things.
+I want this to be super in-depth.
+Output location, where should the output files be saved? Clawed personal.
+I'm going to say it should be I'm going to create a new place for it.
+And I'll say uh document uh natal charts.
+There we go.
+We'll do that.
+And that's nice as well.
+As you can see, it gives you options, but you don't have to use them.
+You can always go to the type something here.
+But I just find it really helpful when I'm doing anything.
+Whatever it is I'm doing with AI, I love to have some suggestions because maybe I'll see a suggestion and go, I like that, but I think it a little different.
+And then literally all I'll do is I'll go down here.
+So what visualization style for the HTML chart? Um traditional circular natal chart.
+Okay.
+Yeah, we'll do that.
+Um yeah, we'll just do that.
+Let's see here.
+So should the JSON include written interpretations? No, we don't need any interpretations.
+So we'll just do data.
+So in theory, Claude does probably have enough information to get started here.
+However, I don't want it to get started right now.
+I want to keep talking.
+So, here's a cool thing as well is it's actually worked out and this is part of the skill is if the thing that you're asking about needs some form of external library or some form of API, it's going to consider that and it's actually going to take an API research stage.
+So, it's going to go and have a little look to see.
+So, here it's saying this involves astronomical calculations.
+Should I research current Python astrology libraries blah blah blah blah blah for accurate? Yeah, 100%.
+I don't want to just go ahead with general patterns and have it assume it.
+So, I could say yes, research.
+But I don't think um no, actually, let's just do that.
+So, we'll do yes, research and then decision gate, I'm going to get it to ask me a few more questions before it starts that research.
+Now, what's kind of cool is because we've told it that I want to do research, it's quite likely in this next batch of questions um to to perhaps ask about what what we want to research.
+So, in this case, it hasn't.
+How should it handle time zone location lookup? User provides coordinates directly.
+Nah, that sounds terrible.
+Um, maybe let's do both.
+Maybe people do want to just give their um, [clears throat] yeah, nice.
+Maybe people do just want to give their format.
+I'm going to go here.
+Placidus.
+Yeah, we'll go for the default of astrology.
+Now, I'm just going to do one more little batch of questions here.
+Uh, if it There we go.
+So, I'm going to say, let me add more details.
+No, we'll go for it.
+Actually, it hasn't said any more questions.
+It seems like it's good enough.
+So, I'm going to click submit.
+And what it's going to do is it's going to go ahead and it's going to go research what we said here.
+What would be the best library for this? So, you can see researching Python astrology libraries.
+It's doing a web search.
+It will probably There we go.
+It's already found Kira Kon astrology Python and it's pulled up the context 7 um what would you even call that? The library of the context 7.
+If we press CRO O, we can actually see a bunch of information in here that it's actually now pulling in before it goes and builds this.
+So, this is crucial.
+You know, when I first started building skills, one thing that I would do is I would just build a pretty [ __ ] skill and then refine it.
+A lot of the times the things that were causing those problems could have easily been uh what's the word? We could have avoided them if we' just done a bit of research ahead of time.
+But obviously, I don't want to do the research because I have no interest in the actual uh reading and writing of the code.
+I have a lot of interest in creating cool tools that I can play with, but most of the time I don't want to sit there and try and figure out the best options.
+I want them presented to me so that I can actually still have the kind of highle view of saying yes or no.
+Um, cool.
+So, you can see right now it's going ahead and it's automatically creating in this folder.
+You can see we've now created in skills um what did we call it? Generate natal chart.
+And you can see that is also created in my documents this natal charts folder.
+Nice.
+So it's going to move on to the next stage which I'm assuming will probably be starting to actually write the skills file themselves.
+There we go.
+Nice.
+So Claude has now created the initial skill.mmarkdown file.
+If we were to have a little look at this, obviously it's a markdown file, but actually inside of it is XML.
+So you can see here it's created generate natal chart.
+The description is to generate personalized natal chart with blah blah blah blah blah.
+Very nice.
+Generate a comprehensive natal chart is the objective uh using this library.
+Very good.
+Here's the basic information for generating the chart.
+Here is the workflow.
+Now, what's nice as well is you can see that it's also gone ahead and created for us the custom slashcomand.
+And if you look at that custom slashcomand, it really is pretty plain and simple.
+Let's just whip it up here.
+Uh, let's just open it in Finder.
+Literally, all it does is it generates a natal chart for I could put the the details straight in there and then it automatically roots through to that natal chart.
+Nice.
+So, what I could probably guess is that if we were to now run this straight away, it's not going to do a great job.
+So, what I'd like to do is show you how not a great job is not a big deal because we're going to use the heel skill.
+I'm assuming just by running this that it's not going to work.
+Um, and maybe it's not that not that it's not going to work, but it's not going to work straight away.
+Claude is going to figure out how to do it.
+But what we want is for that information to then like ripple back up to adjust the skill.
+So, I'm going to say my birthday here is 24th of uh well, I'll just call it Lex 24th January 1994.
+Uh 12 minutes past midnight.
+London, England.
+So, we'll pass this through and let's have a little look to see how it does straight off the bat because again, I have a feeling that it's probably not going to just give us exactly what we want off the bat.
+I may be wrong, but I doubt it.
+Okay, cool.
+So, you can see here that Claude went ahead and created the generate chart Python script, which as we expected is not right.
+Something wrong has happened in this case.
+You can see that it didn't quite get the geo names of like London or whatever, right? And as a consequence, this isn't going to work.
+So, you can see here it's now figured out that the API has changed.
+Let me fix the script to use the updated version.
+Now, interestingly, it didn't figure that out straight away when writing it.
+You know, perhaps if we had pushed it to do more research that would have been okay, but this isn't that much of a problem because what we want it to do is to run into a bunch of issues instead of I find um getting it to to to ver to how would I even word this? I want to run into the issues that it's actually going to face so that it can learn what it should have done, right? And then I'm going to show you the magic heal skill.
+So, this this is a game changer.
+You just wait for that.
+In the meantime, let's just let it do its job.
+I want it to actually create the chart for me.
+Uh, however, it figures out that it needs to do that to get it to work.
+Okay.
+Amazingly, it only took like this many fuckarounds for it to figure out what was right.
+So, let's go in here.
+You can see that this is right.
+I am an Aquarius sun, Gemini, Moon, Libra ascendant.
+This is all spot on.
+Let's have a look at what it created, then.
+So, I'm going to open this up.
+Boom.
+It is not got the chart.
+Uh maybe the SVG file has the chart.
+Let's have a look.
+Uh no, we don't want to open it like that.
+So, one thing I am going to just do straight away because we did manage to now get the chart is I'm going to do slash heal skill.
+And I don't need to say anything.
+I could if I wanted to, but check this out.
+What it's going to do is it's now going to analyze the conversation context up until that point to find problems.
+And the key thing here is there we go.
+The the skill references a deprecated V5 API properties that return none.
+So what it's going to do is it's going to go and look in this conversation context for things that the skill told it to do that were not right.
+And then it's going to compare that with what it actually did so that it can see okay well what did the skill say versus what I ended up having to do.
+Now you can see it's actually reading the full skill file and then it's going to propose a solution to updating that skill to make it so that it works correctly the next time.
+Cool.
+It's done a full analysis here.
+You can see that it's recognized that the skill being healed is generate natal chart.
+You can see what the issues were.
+You can see what needs to be adjusted.
+A major rewrite of API usage throughout.
+Brilliant.
+Cool.
+So the entire skill needs to be written for the actual Kira Kon API.
+Yeah, probably.
+So, let's just go down here.
+It requires a substantial rewrite.
+The skill documentation needs to be completely updated.
+Okay, fair enough.
+So, all I'm going to do is it says, should I apply them or don't commit? I'm going to say apply and commit all changes. [ __ ] it.
+Why not? You can see it's proposed a lot of changes here.
+It's deleted and added a lot.
+You can see even down here.
+Wow, this is a lot of changes.
+It's even gone in and added some API references.
+Very nice.
+All good.
+And now it's gone ahead and then it's committed uh those changes.
+Okay.
+So, let's try this again.
+I'm going to do generate natal chart lex uh 1994 January 24th 12 minutes past midnight London, England.
+And in theory, this should now get it right the first time.
+Check that out.
+Near instant.
+All I passed this through was that.
+And we now have the charts that have ended up bang on correct.
+Aquarius, Gemini, Libra.
+Very good.
+Look at that.
+Boom.
+That was one prompt.
+And all it took was running into an issue once and then healing that skill.
+So, one other thing that I think is kind of cool now is that it does seem as though if we open up the HTML file here in Arc, oh, oh my goodness, look at that.
+And it's even given us the proper chart.
+I didn't even have to tell it to fix that.
+I guess that was part of the the skill heel that it had.
+Uh, very nice.
+So, you can see how incredibly useful it is um to create these skills, run into real problems.
+So, one thing that might be kind of cool is let's explore now improving this skill, adding to it.
+So, I'm going to run create agent skill and I'm not going to pass through a parameter because I want to get access to a menu.
+I want to get access to the option to improve an existing skill.
+So, instead of creating a new skill, this time I'm going to say update an existing skill.
+I'm noticing that this actually isn't the most useful interface for this cuz if you have more than four options, I will I'm going to update this to just give an inline numbered thing, but I'm going to say generate natal charts because obviously I'd have to remember what they were called.
+I prefer if there's more than four options to have an inline numbered script.
+Uh, but still it's going to go ahead and find it.
+So, I want to add the functionality that we didn't really put in in the first place, which is I'm going to do add functionality, and it's going to ask me what it is that I want to add.
+I want the ability to talk to Claude code referencing that JSON file.
+So, I'm going to go down here, and I'm going to say type something.
+I would like the ability to chat to Claude code with it having pulled in the JSON file of my natal chart reading so that it can give me hyperspecific personalized life advice um pulling in all that information.
+So by I also would like to create a new custom slash command that allows me to maybe get reading and it could then pull in the natal chart of that specific JSON file and load it into context so that I can continue to talk about the information that we found.
+Whatever we'll do that we'll do submit.
+So, I don't even necessarily know whether this would need to be added into the skill, but we'll see what it thinks, whether or not it's worth including this.
+It's so annoying that my transcription tool always assumes I'm saying the word Clawad Claude.
+So, should the slash command auto detect your chart file or would you like to specify which person's chart to load? Um, list and choose.
+I think reading focus.
+I don't really want a reading per se.
+I just want for it to load the JSON file.
+So, if I ask questions, it has the context necessary to give me hyperspecific answers, but I don't want some lame reading about personal growth.
+Going to chuck that in there.
+We're going to see how this comes together.
+So, I'm going to get it to ask me a couple more questions just because I'm personally not yet sure exactly how this is going to work.
+So, it's going to ask me a few more questions to just really dial that in.
+And again, I just love the fact it gives you this multiplechoice uh selection.
+So, should the slash command just load the data.
+Also provide a quick summary of key placements.
+Um, yeah, we'll do that cuz that just makes sure that we know um yeah, we just know who we're talking about.
+We'll do numbered list.
+Yeah, we'll do that.
+And submit.
+That probably is enough context for us to update this.
+And again, I'm not sure if necessarily this is going to be a slash command or whether this will be um yeah, I guess it's just a slash command that's going to route through to it because it has that context.
+It's going to work nicely and very nicely as you can see whenever my system creates slash commands it always uses XML tags.
+So really nice you can see that it's then following onto there even in the skill here as well it's giving then the option for us to load the chart.
+Um so let's just see how this ends up adjusting apart from adding that in there.
+Will it add any more context? So maybe if I actually just invoke the the the skill, it's going to even ask.
+So I'll just actually say, would it be worth adding in to the skill that if you invoke it without an argument, it gives you the option to create a new reading or load a reading up front.
+I think this would actually be quite nice because then again I don't have to necessarily remember that it's load chart.
+I can just go okay well the skill is in relation to generate natal charts.
+Very nice.
+So it says here, yes, that's a good idea.
+Create a single entry point for all natal chart operations.
+Yes.
+So we'll do add routting.
+Yes, that's nice.
+Submit.
+And again, I just really like this approach to even if they are separate files and even if this option inside of the skill is just going to then root us to another slash command, being able to root in between by using the slash command skill invocation.
+All of that kind of stuff is just really helpful.
+You can see the rooting logic here.
+It's a game changer.
+Ideally, I don't want to have to remember a million different things.
+So, let's just let this do its thing.
+And I'm going to go ahead and create a new chat now.
+Generate natal chart use or when user asks provides.
+Okay, whatever.
+So, the skill now handles generate and load.
+What should happen to the load chart command? Uh, keep a shortcut.
+Yeah, we'll do that.
+Keep it going.
+Noticing that I've got some real I don't even know what you'd call these, but like fluffy old Englishman sideburns.
+Okay, I'm going to open up a new window and load up Claude.
+And I want to try our new load chart slash command and hopefully it's then going to route through to our folder.
+It's going to find the options.
+At this point, there is only one.
+So, you can see it's going to give me a list of one, which is just me, Lex.
+It's just loading it automatically.
+I guess if there was multiple people then it would have a little more context.
+So we'll try something like what are the ideal jobs for me? What is my life's purpose? And what should I spend my lifetime doing? Now this is like multi-layers of uh what's the word? Extricating yourself and personal responsibility.
+Not only are we using astrology here, we're also using AI to tell us.
+So, you know, by all means, by all means, go and live your life entirely based off of what AI told you about your astrology. [snorts] Nice.
+So, we've got a pretty good reading here, it seems. 10th house.
+So, leadership roles, creative direction, performance.
+I am a music producer.
+I'm touring music producer.
+I need recognition and creative autonomy in work.
+You're [ __ ] right.
+I do.
+Prefer independent, fast-paced work environments.
+Maybe like making content about AI online, initiating projects rather than maintaining them.
+Yep.
+Core identity tied to innovation. [ __ ] hell.
+Systems thinking and unconventional approaches.
+Fourth house placement suggests working from home or building something.
+Foundational private.
+Okay, fair enough.
+Uh heavy emphasis on foundations, roots in a world, private creation.
+You're damn right.
+Thinking, communicating about foundational ideas, systems, and technology.
+Oh my god, I'm in the right path.
+Serious long-term building, mastery over time, possibly late blooming career.
+Okay.
+Uh drive towards communication, ideas, and local connections, unconventional or technologydriven communication.
+I mean, come on.
+Structured ambitious execution, expansion through depth, research, transformation, intensity.
+So, ideal work would be innovation and technology, creative leadership, deep research and transformation.
+So we say technology founder, systems architect, content creator with technical depth, researcher, independent consultant, writer on unconventional topics, building platforms or tools others use.
+Get out of town.
+The fourth house emphasis.
+It suggests your purpose isn't about climbing public hierarchies.
+It's about building something foundational that others eventually recognize.
+Okay, very nice.
+I really, really love this.
+I think it's a hell of a lot of fun.
+Um, and I hope that you've enjoyed this video.
+The git repo will be down below for you to be able to actually go ahead and download the skill as well as then the heal command.
+Please go forth and create a [ __ ] ton of skills.
+This is so fun.
+I have just been having an absolute blast creating them.
+I'm also going to make some videos shortly about some of the other skills that I created that I think are also equally very helpful. uh such as you can see here we've got create slashcomand create sub aent create hook and I just want to leave you with a thought really which is that any piece of information that not necessarily even you know or can find but any repeatable piece of information that the AI can find and document and verify that can be packaged into a skill.
+So, don't just think in terms of how do I do things that I already know how to do.
+How can I do whatever I dream of? This is the thing that I'm just most excited about.
+There's a video definitely inside me that's waiting to come out about like the core, I believe, fundamental philosophy that we need to have when using AI.
+And one of them that I'm sure I will mention in there because it just keeps coming through is just this idea that with AI, it's your responsibility to assume that everything is possible.
+It's your responsibility to dream bigger than not even just what you believe is possible, but what everybody else is telling you is possible.
+You can probably do it or you can get a hell of a lot closer than the people who say you can't or don't even ask those questions.
+So, curiosity and I suppose just faith, faith that what you want to have happen can happen.
+So crucial.
+I mean, more than just in building things in AI, it's kind of a life path thing as well.
+But hope you've enjoyed this video.
+Make sure to like, comment, and subscribe, and star that GitHub repo and all that kind of jazz.
+Thank you so much for watching.

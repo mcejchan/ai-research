@@ -1,0 +1,9 @@
+[
+  {"text": "Welcome to this tutorial about Claude Code.", "start": 0.0, "duration": 2.5},
+  {"text": "Today we'll learn about advanced features.", "start": 2.5, "duration": 3.0},
+  {"text": "First tip is to use aliases for quick access.", "start": 5.5, "duration": 2.8},
+  {"text": "Second tip is to install local documentation.", "start": 8.3, "duration": 3.2},
+  {"text": "Use thinking modes for different types of work.", "start": 11.5, "duration": 2.7},
+  {"text": "Create subagents to divide complex tasks.", "start": 14.2, "duration": 2.9},
+  {"text": "Remember to manage context effectively.", "start": 17.1, "duration": 2.1}
+]

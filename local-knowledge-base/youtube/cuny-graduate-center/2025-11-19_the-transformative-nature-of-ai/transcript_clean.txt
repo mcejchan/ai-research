@@ -1,0 +1,398 @@
+(audience applauding) - Welcome on behalf of the Stone Center on Socio-economic Inequality, we're extremely pleased to be the co-host of the event this evening.
+Welcome to all of you here in the Proshansky Auditorium, and welcome to the 2,000 people on the live stream.
+We are extremely delighted to have these marvelous guests with us tonight.
+We're happy to welcome, first, Danielle Li, I'm gonna tell you about, the David Sarnoff Professor of Management of Technology at the MIT Sloan School of Management.
+Her recent work investigates how artificial intelligence and data analytics are transforming fundamental firm activities, everything from hiring and promotion to investments in research and development.
+Her research has been published in leading journals, including the Quarterly Journal of Economics Science and Management Science.
+Next to Danielle, we're really happy to have with us this evening Daron Acemoglu.
+He is currently Institute Professor at MIT, and among many other roles, he serves as the faculty co-director of MIT's Stone Center on Inequality and shaping the future of work, the newest of the 12 existing Stone Centers.
+He's received an enormous number of honors, including the John Bates Clark Medal, and in 2024, the Nobel Memorial Prize in Economic Sciences, which honored his studies of how institutions are formed and affect prosperity.
+In addition to many academic articles, he's written several books, notably "Economic origins of Dictatorship and Democracy," "Why Nations Fail," "The Narrow Corridor," and "Power and Progress." And these widely read books were co-authored by his frequent collaborators, James Robinson and Simon Johnson, with whom he shared this year's Nobel.
+On the far side of Daron, we're happy to have Zeynep Tufekci.
+She is Professor of Sociology and Public Affairs at Princeton, and as many of you will know, she's also a New York Times columnist where she writes lively pieces about sociology and the social effects of technology.
+Her research and writing revolve around politics, civics movements, privacy and surveillance, as well as data and algorithms.
+She's the author of the highly praised book, "Twitter and Tear Gas: The Power and Fragility of Networked Protest," an analysis of the internet as a new type of public sphere.
+The fourth panelist, I'm gonna get to the moderator in a moment, is the Graduate Center's friend and colleague, Paul Krugman.
+He serves as research professor in our PhD program in economics and as a senior scholar in our Stone center.
+Professor Krugman's scholarship has been honored also countless times.
+He too is the recipient of the John Bates Clark Medal, and in 2008, the Nobel Memorial Prize of Economic Sciences for his work on international trade theory.
+He's the author of many academic articles as well as several books, most recently "Arguing With Zombies: Economics, Politics, and the Fight for a Better Future." In addition to working with us here at the Graduate Center, he co-authors textbooks on micro and macroeconomics with Robin Wells, and of course many of you know him best from his 25 years writing opinion columns for the New York Times.
+Just this year, he transitioned away from the Times, and you can now find him pretty much every day on Substack a lot, you can find him a lot on Substack.
+Last, but very definitely not least, our moderator this evening is Steven Greenhouse.
+Many of you will know him from his work, 31 years at the New York Times.
+For many of those years, he was a business reporter covering the steel industry and basic manufacturing, and in his later years, his writing focused on labor and on the workplace.
+Since retiring from the Times in 2014, he's been a prolific freelance writer contributing pieces to the New Yorker, The Washington Post, The LA Times, the Guardian, The Atlantic, and many more.
+He's the author of "The Big Squeeze: Tough Times for the American Worker," and more recently, "Beaten Down, Worked Up: The Past, Present, and Future of American Labor." So Steve, I turned this tremendous panel over to you. - Janet, thank you for that wonderful introduction.
+I thank all of you for coming and for your interest in this subject, and we should all thank CUNY for arranging this panel with all these impressive folks.
+Everywhere one looks nowadays, there's talk about AI.
+So I wanted to ask each of you to talk for two minutes or so about, you know, what effects do you think AI will have on the labor market and on the future of work and what are your hopes and worries about AI? And why don't we start with you, Daron? - Thank you Steve.
+It's great to be here.
+Well look, AI is everywhere deservedly because it's going to be a transformative technology, and that comes with uncertainty.
+But the uncertainty is not just like the weather report where we don't know whether it's gonna snow or sun.
+The future of AI is shaped by the decisions that we make, and there are very different directions of AI, and which direction we choose is going to have great consequences in terms of its labor market impacts.
+In particular, I think the current craze or enthusiasm for AGI is really an automation agenda, as these models become more and more human-like, and if they do reach capabilities like those that are promised, more and more tasks can be taken away from labor.
+And that would happen even if we are very far from true AGI because you know, automating tasks can happen even when it's not super effective.
+In that case, I think the future for labor is not great because automation, if it goes on by itself, is gonna eliminate more and more jobs.
+But there is a different future where we use AI with a very different architecture towards being what I call pro worker AI, and that could actually amplify worker capabilities.
+We can talk about it more later, I don't wanna take too much time, but that is, I think both better for productivity, better for inequality, better for social cohesion, but unfortunately not so good for business models of the big tech.
+So guess where we're going right now, - Paul, Zeynep? - Okay, just AGI is artificial general intelligence.
+That's basically like us, only smarter.
+And okay, I wanna learn a lot from this panel, because my big question on AI is what is it good for, which is not to diss it.
+I'm sure that it's good for a lot of things.
+This looks like a really powerful technology, but what specifically is it going to do, what things? And I think it was Noah Smith who said that it really is like magic that we don't quite know how it works, we don't know how it does what it does, and it doesn't do what it does predictably.
+So it's like you do these incantations and incredible things happen, but you're never quite sure what's gonna happen, you know, sorcerer's apprentice sort of thing.
+What kinds of tasks is that kind of technology good for? What's it going to be replaced? And it clearly is transformative.
+It's clearly going to do a lot.
+My sense, maybe people can enlighten me, is that it's not going to break along our traditional lines.
+It's not gonna be that college educated workers do well and those without do badly.
+It's not necessarily gonna be labor versus capital.
+It'll be certain kinds of labor, certain kinds of capital will be replaced, but others will not.
+We just don't, this all comes, you know, uncertainly.
+My hope is that we finally do get some real progress in living standards.
+The truth is these past 20 years with all of the smartphones and all of the glamorous technologies out there have actually been a big disappointment in terms of growth and in living standards.
+The technology, at least in ways we can measure, has not delivered, and maybe AI does.
+My fear aside from Skynet killing us all is that there will be really big dislocations.
+If there's one thing we've learned from the China shock, from technological change, it's that churn isn't itself a problem. - Thank you Zeynep, Danielle? - Okay, so yeah, I'm sitting in the middle of two Nobel Laureates economics and I'm a sociologist, and sociologists like to always complain that economists like move into sociology, and since there's no sociology prize for, you know, much, they do sociology.
+So spare a thought for me because I'm going to talk about economics in the middle of two Nobel Laureates in economy and try to take in a different direction because the first word that I kind of perked up was the AGI framework, artificial general intelligence.
+And that's the assumption that this particular version of AI is kind of like a not so smart human on a linear path to perhaps becoming more smart over time.
+And at some point, it will catch up and be like to be able to do human tests.
+But like with my other hat, with some background in technology and looking at generative AI specifically because it's a very specific thing, I don't think it maps onto human intelligence that much.
+It's very powerful, it's very transformative.
+But the things that can do and the things that fails that and the way it works is not really like the human intelligence, which is partly why all those predictions about it's gonna replace customer service, no because the, you know, failure mode is different.
+That said, if you have such a powerful technology that breaks all sorts of assumption and correlation and the way things worked on the expectation that the intelligence doing it was a human, everything is set up for human failures, who human success is, this is what people can do.
+So all of us sudden you bring a technology that doesn't map onto it like apples to oranges.
+I think this is extremely disruptive.
+I don't know if we're going to, you know, have prosperity, I don't know if they'll, you know, automate or informate the way Daron was talking about in terms of the future.
+But in the short run, I see like broken economic functions everywhere I can think of from, you know, how do you verify anything? How does the insurance industry work? How does anybody, like do they send a person for each car that is gonna make a claim because they can no longer trust the photos? How does something like, you know, our education doesn't work because we can no longer check the process because correlations are broken.
+So in field after field exactly because it's not on its path to AGI, it's not a form of human intelligence, but it is powerful.
+I see like transition pain and disruption, and as a sociologist, I'm kind of like, this is going to be a crisis long before we get to the answers that they have, you know, you've both asked and which are very good.
+So I would love to sort of hear more about what you think about that.
+And spare thought for me please, I just. - Thank you Zeynep, Danielle? - Yeah, so I think one way to think about what AI might do is to think really concretely about how it functions.
+A lot of AI models are different from traditional computers because traditional computers, we program them when we gave them instructions, and that's how they do stuff.
+What a lot of AI models do is that they learn from human example, examples of human labor.
+So you're writing, training a chatbot, or think about a doctor who's really good at making diagnosis decisions.
+If you observe that doctor lots of diagnosis decisions, you have a large data set of that, you have a model that can essentially learn how to function like that doctor.
+And so in some sense, my hope for AI is that imagine that that doctor's skill now lives inside this AI system.
+That means that patients who are sick, who live in rural areas, who live in other countries now have access to that expertise in a way they never had before.
+So what the AI model is doing is it's sort of transcending human limitations, allowing that doctor to take care of patients in a way they never would've been in that world.
+And so in that view, one kind of romantic way of thinking about training data is that it's not just a giant pool of data, it's actually sort of a pool of human experience, human work, and human expertise that different people can access across time and space.
+And so I think there's a lot of potential for AI to kind of allow us to share our expertise, to learn from our failures, to learn from our successes.
+The concern I have is that that's a very unequal way of thinking about knowledge.
+Some people's contributions are gonna be a lot more valuable than other people's contributions.
+And so I worry that AI is going to sort of, AI kind of done in this manner is going to sort of push us into becoming yet more of a superstar type economy where some people get some people, some companies get most of the returns and other people are sort of left to be extraneous.
+And I think that's one of the key policy challenges we need to deal with. - Thank you.
+A question for Daron.
+So again, with all this talk about AI, has AI really had much of an effect, or will we not really see much of an effect for another five, 10, 15, 20 years? And what might the early important effects we see be? - There is also, unsurprisingly, disagreement on that.
+We know that the underlying foundation models are advancing quite rapidly, I think more than any one of us would have predicted five, six years ago.
+There is much slower progress on building useful applications on them except for chatbots that people now converse with on their phone or on their computer.
+There are a number of examples where, in controlled situations, these models perform quite well.
+Coding and radiology are examples.
+But when you take them to the wild and actual companies and workers are combined with or work with or are replaced with these technologies, things get hairier because they have limitations.
+And part of the limitations is that they cannot perform all of the tasks that even a simple occupation entails.
+So they need to liaise with human workers, and that does not work out very smoothly.
+So radiologists don't understand what AI is doing, so they get their messages crossed.
+Other coders will have to decode, debug what ChatGPT or other programs do.
+So that interface is still not very easy.
+There are a few examples like customer service where Danielle has studied, where some of that interface has worked fine with a few companies, but on the whole, that's the slowness, and organizations are really not well adapted.
+So my assessment would be that right now, we're not really seeing much of an impact on AI, but there are some new studies saying for coding type jobs, entry level hiring has slowed down.
+So there's some uncertainty on that.
+The next five years I think is still gonna be the birth pains, after that is very, very difficult to predict.
+It will depend on the speed of change of the underlying models, whether there are big limits.
+Some people in the industry think that there are some ironclad scaling laws that everything's gonna double, triple, quadruple very rapidly, and it's gonna very much depend on how you can build usable applications on them. - Thank you.
+Question for you, Paul.
+I heard on the news today that OpenAI is spending $1 trillion on data centers, probably more than any company has spent on anything in history.
+So a big question now regarding AI is, are these companies wise or silly to be rushing to spend tens, even hundreds of billions of dollars on AI? And might some of them really regret it? - Okay, so I am of the opinion that we are witnessing that the tech companies are way over their skis on this, but that opinion is based largely on sociology.
+I look at the frenzy, at the way people are talking about it, the way that people are behaving.
+And it reminds me an awful lot of the .com telecom bubble of the '90s and you know, the signal that that was getting way out of hand was when sports bars started having CNBC instead of sports on their TV screens.
+And there is that field that there's a lot of, you know, just everybody feels they must be doing AI, lots of anecdotal evidence of companies that are desperate to use AI and are telling their workers, you must use AI.
+And the workers say it's taking me more time to try to find something that will satisfy management than all of that.
+It is very hard to make the numbers work.
+That doesn't mean that the stuff isn't transformative, but it does have the field.
+And the one thing that really is economistic here is that until a few months ago, what we had was these established tech giants.
+We had Alphabet and Meta that were basically using retained earnings, free cash flow to pay for this stuff.
+Now they're going deep into debt to pay for data centers, and that's a warning sign. - Thank you.
+Danielle, you've done a lot of research on how various employers are adopting, you know, AI and tools of AI.
+So I wanted to ask you, what occupations do you think will be affected most by AI, and which ones might hardly be touched, and will AI affect, you know, highly skilled workers more or low skilled workers more and everyone's asking, you know, will white collar workers be affected most? What about blue collar workers? - I think I've done enough research to try to avoid that question.
+You're gonna get an obnoxious answer, which is, it depends, it depends on what's gonna happen, and also depends on the choices that we make in terms of how we implement AI.
+I think one useful diagnostic for those of you in the room is to just think about your current job and think about the tasks in your current job that you could imagine AI reasonably learning to do in the near future.
+So, you know, and then once you do that, imagine taking those tasks away and thinking about what you would be doing with the time that's saved.
+What new tasks would you get asked to do? What would your job look like? So once you imagine that, then you have to ask yourself three questions.
+So one is kinda a macro question of how many people do we think we really need to do that job? Would you enjoy that job? And would you be any good at that job? And I think that's a useful way of thinking about, you know, where you are in the great AI churn.
+So if you think about a couple examples, so think about if you're a surgeon, I think it's reasonable to assume that surgeons are not gonna get replaced by AI robots anytime soon just because the physicality of robot dexterity is kind of a hard problem.
+But you can imagine a world where there's a lot of augmented reality, so the surgeon is wearing glasses, the glasses are maybe tied to a headset, and then the headset's sort of telling you that you should cut here, you should poke around here, you should be careful of this.
+I would argue that that's probably bad for the surgeon because in some sense, the judgment and the skill of doing that job, it no longer resides with the surgeon, it resides with the machine, and now the surgeon is kind of a glorified set of steady hands attached to the machine.
+That's something that you see happening in warehouses where workers are wearing headsets and the headsets are telling them exactly where to go and where to reach.
+And so I think that's an example of where kind of high skill work and less high skill work are sort of having sort of similar effects.
+You could imagine something like consulting where a lot of what AI does is that it's good at making slides, it's good at running financial analysis.
+I teach at a business school and I will say that the ChatGPT answers to cases are actually not that bad.
+So it can help you do some strategy as well.
+And so what's left if you take away some of those tasks, I think a lot of that is kind of client work about figuring out how you get clients, how you get them on board with a plan.
+And so that's less like de-skilling or up-skilling, it's more like a re-skilling where the analytical skills maybe become a little bit less important and the social skills become more important.
+And you can see winners and losers in that.
+I would be worse at that world, but some people would be better off. - Thank you.
+Okay, Zeynep, that the sociological question for you, what are the most important aspects of today's AI systems in terms of their impacts on society? What does it mean for society to adjust to AI? And what are the challenges society and all of us face with regard to AI? - So it's gonna actually tie back into the economy question.
+We have a theme here.
+So I wanna go back to, it's not a kind of human intelligence because it's key to both of these things.
+So look at where it works, coding, right? It really does work.
+Agentic coding is amazing in terms of empowering, and coding is a verifiable domain when you use them to do something, you can check if it works, and it's also kind of a quasi formal language and you have like years of stack exchange, which is where Q&A.
+Look at any place where there's liability if there's failure, like a doctor, like somebody, like a lawyer or something like that, these were all predicted to be AI replaced, but because it has a failure mode really different than a human, it's not really usable because it does, you know, great legal analysis, and then it makes up seven citations and creates something.
+Normally a lawyer who's that good in A would not make mistake B, our system is set up to expect a human success and human failure.
+So that's why I think this is not really like we're not seeing non-verifiable domains and if there's any liability now, what does it really do well? Which I think I can't believe we have gotten used to this.
+That is incredibly transformative, and I think that's what OpenAI is gonna do to make money, is that it can converse like a human, using language.
+So the way LLMs work, they're like plausibility engines, and somehow, I was there in 2022, if you said this method is gonna get conversational human language, people would say "Nah, nah, nah, nah." It happened and we immediately got used to it, like this is the one thing that humans had that no other animal anything had.
+This is like the mark of humanity.
+So we got these chatbots that can converse with people, and for a bunch of reasons, are designed to be nice to them and to flatter them and to be very patient with them.
+And so this was the choice I see was they were either gonna go the coding way, so the way they sell coding API, it's like you make five calls, it's 17 cents, it's very utilitarian, here's a tool, use it.
+The chatbots, they've just announced they're gonna do marketing and sell stuff and product placement.
+That is the engagement model, and there, they're gonna keep it free as far as I can tell.
+And so the coding is a useful toaster.
+The chatbot is going to try to seduce you to stay there and to engage you, and you're gonna be learning all sorts of things from it.
+I think this is where they're gonna try to make money, and already, ChatGPT has 800 million daily users.
+This is not a failing industry.
+This is where they're spending, they already have 800 million.
+So they probably have billions of people who are gonna be using it every day to ask questions.
+And then when you ask, you know, what should I buy, boom, you know, you're gonna get an example.
+But when you ask it, what do you think about, you know, immigration policy, what do you think about, it's also going to answer.
+So as a sociologist I'm like, this is an incredible power, and we are so like sleep on the fact that we have speaking technology, like it's been two years and people are like, "Yeah it speaks, so what?" So that's where I think about mostly also in terms of where they're making their money and what we should be worried about. - Thank you.
+So Daron, you were talking before about, you know, the many employers that want to use AI to automate as much as possible and replace as many workers as possible.
+But you say you favor a different approach where AI would be used to increase workers' productivity and to help keep workers.
+Many corporations are not into that vision.
+How would you go about, you know, trying to, you know, how should society go about, how would you go about trying to pressure, arrange for corporations to do less substitution and more, you know, supplementing workers so that fewer workers lose their jobs? - Yeah, so let me first clarify a little more what I mean by pro worker AI and why I think it's feasible.
+You know, the idea that computers would be complimentary to the human mind, meaning that they would amplify what the human brain can do, is a very, very old aspiration.
+People were writing about that in the 1950s and the 1960s.
+But we absolutely did not have the technologies to make that a reality in the '60s, '70s, '80s, '90s, 2000s, even 2010s.
+I think with the recent advances, we are coming to the cusp of being able to do so.
+So essentially what you would need to compliment the human mind is context-specific, relevant, reliable information in real time.
+Imagine an electrician, an occupation that's very, very important.
+It's gonna become more important and we face major bottlenecks.
+An electrician needs to know a lot of electrical engineering, at least practical electrical engineering, a huge amount of information about all sorts of electrical machinery and a lot of experience to deal with edge cases, difficult cases, how different machines liaise with each other and so on and so forth.
+So all of that takes a long time, and most electricians are too novice to be able to deal with this at an expert level.
+Now imagine you have a tool for an electrician, which is trained on all the relevant electrical engineering, is knowledgeable on all the electrical machinery, and has been trained on high quality data of the best electricians around the world troubleshooting the most difficult problems.
+That's very much within the frontier, by the way.
+This is a very easy tool to develop, and for a few million dollars, some companies have already done prototypes of this.
+That tool in real time with manual and visual inputs can amplify the capabilities of electricians.
+Same thing for nurses, educators, plumbers, all sorts of blue collar workers.
+That's the kind of pro worker AI that we're talking about.
+Why is it important for productivity? Because that's exactly the kind of services we need.
+Why is that so different? Because it actually doesn't replace the electrician.
+It makes the electrician even more capable, more important.
+Those are the kinds of tools we could develop and we're not developing.
+Well why are we not developing? Because there is no business models on the basis of doing so.
+This is not the priority.
+And that goes back to Zeynep and Paul's problem.
+Yes, there is over-investment because the business models that the industry is stuck with are not going to be able to generate the monetization that could meet $100 billion of investment for these companies.
+Except there is one exception which Zeynep was talking about, but let me put it much more sharply, digital advertising.
+So the only way that they can actually make a significant amount of money from this thing is to go down the social media way.
+Now generative AI becomes a much more powerful tool for gluing people and marketing things to them, sending advertisements, et cetera.
+Of course there will be other things like applications, then there will be chatbot income, but chatbot income is never gonna pay for hundreds of billions of dollars.
+And then the other thing which is sort of amplifying those things, there is also the belief in the industry that we are in this race towards artificial general intelligence so you have to be first.
+All of these are fueling the investment, but then the sort of the agenda of preparing these pro worker technologies is falling by the wayside.
+Nobody's paying attention to that.
+And of course you don't pay attention, don't make the investment, that's not where you're gonna go to. - Thank you.
+Paul, you've written a lot about inequality.
+So let me ask you, do you think AI is going to result in increased inequality? Another way to ask that is, you know, will corporations and shareholders receive all the economic rents, or might workers receive some of them? And you know, some of my union friends are saying, you know, how will AI affect worker pay, worker wages? - Okay, I think it's actually going to be real, first of all, the basic answer is I don't know, but it's really complicated.
+I mean, in some cases, AI will, if we ask, you know, what jobs can be replaced, some of them are going to be highly paid, high skilled jobs.
+You can already see, you know, translators have been, not limited, but there's been a big reduction in that.
+And some of the jobs that will remain essential that so far we don't think AI can do are things like plumbers, maybe electricians, AI can tell you what to do, I suspect that'll be harder with plumbers, although my judgment has been quite wrong on this.
+I was sure that the self-driving cars was just not gonna work and Waymo has proved me wrong on the streets of San Francisco.
+But so I think it's not an easy story.
+I think the picture that a lot of people have, which is, well look, people have been predicting the end of work in the face of automation.
+I recently read a really good novel about a future society in which automation has destroyed work and there's nothing for people to do.
+And it's a social nightmare even though it's very highly productive.
+It's Kurt Vonnegut's first novel, "Player Piano" from 1950, right? People have been predicting the automation apocalypse, and that goes back to the '30s at least.
+So so far, it keeps not happening.
+What might be the case, and I don't think we have enough information, is that this could be a technology that's biased towards capital as opposed to labor.
+It could be a capital using old growth theory, which I might be the only person, maybe Daron knows it.
+And we do have kind of a historical example.
+We think that real wages stagnated in Britain for the first 40 years of the industrial revolution because it was a capital using technology.
+And despite the fact, you know, with unprecedented economic growth at the time, none of it went to workers.
+We could do worse than that, but I don't think we know that yet. - Thank you.
+Danielle, I have a double barrel question for you.
+First part, you know, what advice would you give employers that have adopted or will soon adopt AI tools? And second part, what advice would you give to students who are about to enter a world where AI is, you know, playing an increasingly important role and to workers who are already, you know, in the labor force, what should students and workers do with regard to preparing for an AI world? - It's funny, I teach exec students, so I thought a lot more about the first question than the second question.
+So with respect to companies, I see a ton of FOMO, which is fear of missing out, depending on what counts as a technical term.
+And I think the productivity is gonna be slow for the following reason, which is, let's imagine that you're at your company and suddenly tomorrow, 100 really smart dudes named Claude roll in and they say, "Hey, I'm gonna work at your company now." And this is true even in AGI world.
+So most definitions of AGI are about a machine that's able to sort of reason better than humans or be smarter than humans in some way.
+So let's imagine that these 100 Claudes are like real geniuses, like much smarter than all of us.
+And the question is, is the company gonna be more productive on the next day after these guys roll in? And I would say that for a lot of companies, the answer is kind of no.
+Because even if you have these geniuses lying around, you have to tell them what to do.
+You have to give them examples of what a good job looks like and what a bad job looks like.
+You need to tell them what processes are gonna work at your company.
+How do you ask for resources? How do you deal with the personalities who are there? And so my first piece of advice to companies would be, you should invest in data infrastructure because data infrastructure is basically what gives AI models examples of what a good job looks like and what a bad job looks like.
+And the second thing, which I think is actually more important is to understand that it is not just 100 dudes named Claude rolling into your company, they're rolling into every single company, including your competitors.
+And so if you use the same AI models to do the same things, you're gonna end up competing with each other in the product market and you're gonna become a commodity.
+And so what you really need to do is you need to think about how can these tools allow you to do something unique and better? In terms of students, I think that in this moment, we're sort of in this moment of kind of like economic churn.
+And so you wanna think about the skills that are going to be sort of durable beyond that.
+A lot of what companies are looking for now is this kind of, you know, flexibility, a sense of, like I wouldn't say, "Oh go study prompt engineering" because one day prompt engineering is not gonna be a thing.
+I think it's about learning to be uncomfortable, to tinker with things, to sort of adopt new tools, and be open to changing your plans, which is I think a skill that lots of people have, but the education system hasn't sort of trained for, and we need to do a better job as educators. - A question for Zeynep.
+So you're writing a big picture book about AI and its effect on society and the world and the economy and God, no, I'm kidding.
+You know, what do you think is missing from, you know, the public conversation about AI? - So we touched upon it a little bit, the fact that you have a conversational technology that is going to be people's sort of companion, information source.
+There are people like especially for young people when you know, people aren't talking to you and you're bored and it's always there and it's very flattering and it's very engaging.
+So that I think is a huge impact.
+So let's go back to, let's ask what is it going to break because it works the way it does.
+This is not like a calculator, right? LLMs, generative AI, because it's not a form of AGI path, it isn't doing exactly what the human was doing.
+So it's breaking the correlations between the things.
+So let's look at the ways in which we rely on, say the electrician, you trained it on the best data possible.
+It's still going to be alternating between brilliant and great and occasionally making a very plausible mistake.
+A highly trained electrician would be great and they would have a certain kind of mistake.
+This thing is going to make, even if you have the best data, it's gonna make an unexpected mistake that is very hard to detect and is extremely plausible because of the way they work.
+So you're gonna need the super electrician to catch this.
+This is why it's not being used widely outside of non-verifiable things.
+Now go back and look at the entire society and think of all the things where we have some sort of information processing, some sort of video generating, photos, conversations where we use those things in expectation that it will correlate with a process.
+Here's an essay, I wrote it, job application, here's a cover letter, I wrote it, it indicates interest.
+What happens when that cover letter no longer indicates interest because AI wrote it? A million people can write a very convincing cover letter.
+The employers are trying to use AI to filter these things.
+So it's this arms race.
+So AI is breaking a gatekeeping mechanism where, you know, cover letters used to show interest.
+So now what happens? I'll tell you what happens is they're gonna hire from their personal networks and they're gonna look for Ivy leagues, right? When you have gatekeeping break, people reintroduce gatekeeping in any way they can.
+So what happens when you can no longer trust photos and videos as proof of anything? So one possible thing is the government will be like, "Only our cameras are good in court." You catch a police officer doing something wrong, it doesn't count, only government, because how do you know it's AI or not? And there's no way to sort of do this.
+So I feel like we're not looking enough at A, what does it mean? How much is it worth to have a thing that a billion people are gonna ask questions for hours a day? How much is this kind of power worth? We're not asking enough of what kind of correlations is going to break, and we keep looking at it like it's like a calculator doing what a human does instead of this unpredictable thing that's like incredibly powerful, and then does something we just don't expect, and it's coming at us really fast.
+And that's kind of like, I want to like worry about those things. - So I'm embarrassed to say, I was reading a Washington Post story today that mentioned a computer program, an AI program called Greenhouse that screens 300 million resumes a year worldwide, you know, and how people are trying to trick the AI. - I can't resist.
+One of the few industries that I know has been benefiting, at least currently is the, I think it's just two companies that make blue books because a lot of professors are going back to handwritten exams in class. - This is breaking education because the assumption that we could, you know, why do we assign the essay? We're all like educators here.
+It's not, I'm sorry, the parents aside, you can put it on the fridge.
+We do not care, right? We want the person to go through the steps to learn the skill.
+Now they can, it's kind of like they're training for the marathon, but while they're training, we let them have roller blades, right? And then we put them in front of a system where they're supposed to run the marathon to be able to supervise it.
+But they've trained on roller blades.
+I'm kind of like, this is, like, I'm a technology person.
+I love the technology in some ways, but this is incredibly disruptive for the way we function, and I don't have an answer. - Thank you.
+Paul, you were gonna mention the second thing too? - Well no, maybe, I don't know, I'm not sure if I'm out of turn, but..
+And as more and more of the data that these things are being trained on is in fact AI generated, you know, there is this slop apocalypse story where basically AI just chokes on its own waste products. - That might be a good thing, who knows? For Daron, so in past decades, with regard to previous technologies, previous new technologies, there are often predictions and worries that on a net basis, this new technology is gonna result in fewer jobs.
+Do you think AI might, but that has never come to pass, there hasn't been a net loss of jobs as I understand correctly. - It's not true. - It's not true. - That's not true.
+I think that's a story we tell ourselves, but it's not true.
+There are many periods in which, no, but it's important to understand that, there are many periods in which technologies did destroy lots of jobs, and the job creation was either too slow or not up to par with it.
+So during the British industrial revolution, Paul mentioned, it's actually not 40 years, it's 85, 90, perhaps 100 years during which wages stagnated.
+And for some sectors, they were tremendously negative.
+So the wages of weavers fell in real terms by two thirds and never recovered.
+So during the more recent period, you know, when we had robots and numerically controlled machinery and other advanced tools in manufacturing, it had similar negative effects.
+When you look at the real wages of workers who used to perform the jobs that robots could, their real wages fell quite significantly, their employment rates, you know, employment population ratio for demographic groups that were at the crosshairs are negatively affected.
+Now the job apocalypse in the sense that there's gonna be mass unemployment, there'll be no jobs.
+That's, of course, not a realistic prediction.
+The rate at which AI is advancing, I don't think we could expect that it's going to destroy all jobs or create mass unemployment.
+But I think it would be foolish to think that AI could go down an automation path successfully or semi-successfully.
+And there will be enough jobs somewhere else coming just by itself.
+I don't think recent history or distant history supports that, you know, the new jobs are created when either companies create new goods and services or they introduce new technologies that are complimentary to humans or there are other efforts for that kind of new job creation.
+There isn't a law that every job that's destroyed is gonna be replaced by another one, especially for during periods of deep automation, that's not necessarily true.
+So I would be worried about jobs being destroyed by AI, even though I think absolutely we're not gonna have mass unemployment in the next five years or 10 years. - Thank you.
+So Paul, there's been a lot of discussion of the United States and China competing about who's gonna take the lead, who's gonna be the winner in the race to develop sophisticated AI.
+What is your view about that race, and what happens if the United States loses to China in that competition? - Oh wow.
+So the first thing is, you know, there are so many things going on, and if you wanted to, you know, tilt the scales towards China winning this competition, one good start would be to slash research funding in America in half and destroy all our institutions of higher education.
+So we're doing our best to- - [Steven] Who would be so stupid to do that? - Right.
+And there's also a funny thing, Zeynep, I thought, you know, when my wife and I are traveling and whenever we see something that's really very unsafe pathway or something and my wife mutters, "No tort law, no tort law," that basically in most other countries, you can't sue the way you can here.
+And all of the things you're saying you can't do with AI because of the liability, that's true in America, I'm sure it's not true in China.
+So that itself is quite aside from all of the engineering stuff, I think the Chinese might be prepared to take a lot more risks.
+And they just seem to be less, and this is just impressionistic, they seem to be less obsessed with doing thing, you know, the big thing and much more pragmatic about small, you know, DeepSeek, smaller model things.
+So I would, you know, America's immense, innovative, but we're not looking so good on those fronts now, and so I had to make a bet.
+Now how much does it matter? That's one of the things, I think that we do tend, and this is my international trade person hat, thinking that a great technology necessarily benefits the country that happens to pioneer it.
+And that's often not the case, that, you know, the benefits of agglomeration, my sort of thing, there's a lot of advantages to the world that there is a Silicon Valley somewhere.
+It's not clear how much of the benefits of that accrue to Silicon Valley or even to the United States.
+A lot of that gets passed on to the rest of the world.
+Just like the button industry in chow two means that buttons are cheap around the world.
+Not that chow two is a very rich place. - Thank you, thank you, for Danielle, as we've all heard, large language models learn a whole whole lot from, you know, sweeping, vacuuming everything on the internet.
+If and when AI really takes over jobs that many, many workers are doing, won't AI have to learn from what today's workers are actually doing on the job if it's gonna replace them or hopefully make their jobs more productive? - Yeah, so I think that if you think about the current ChatGPT, like current models we have, those were trained on human labor that was done a while ago.
+So articles that people wrote, and I think the same thing is gonna happen now.
+And one way to see this is that the big tech trend in the workplace right this second is not AI, it's surveillance.
+So if you think about if you are an office worker, you will have your screen recorded, your applications recorded, your email, your chat recorded.
+If you work in a warehouse, you might be location tracked, you might have a wearable that's gonna look at your hand motions.
+And a lot of that is about, you know, monitoring or safety or compliance or whatever.
+But a big byproduct of that is that it's a tremendous amount of data about how exactly people do their jobs.
+That's exactly the kind of data that can be used to train AI models to do those same jobs.
+And I think that that's actually extremely important to keep in mind.
+So if you think about one of the big successes of AI models, it's customer service, and the way those models got trained is that all these customer service agents were recorded for quality assurance, and those records were used to train AI chat assistants.
+And so I did some research on this, and one of the things is that it's actually quite good for productivity.
+And basically what happens is that the AI models learn from the skills and behavior of the top customer service associates.
+That skill lives inside the AI model, and then it can be disseminated to workers who are newer, who are less good at their jobs.
+So that actually looks good in the sense that productivity goes up and inequality within the workers kind of goes down because the lower end is brought up.
+But it's also complicated in the sense that the high skill workers whose data was used to train the AI model, they didn't get paid for that.
+And in fact they made themselves a little bit more obsolete in training the model.
+I think that's actually a very general phenomenon where the thing that makes human labor different from capital is that it lives within us.
+So you have some expertise that's, you know, derived from your education, your experience, whatever.
+It's really hard to, you know, share.
+It's really hard to explain.
+It's tacit knowledge.
+And as a result, if an employer wants access to your expertise, it has to pay you, you rent your labor to your employer, and the moment they stop paying you, you walk with all of that expertise.
+In a world where we're constantly surveyed, and that data can be used to train AI models, when you walk, you don't actually leave all of you, you don't take your expertise with you necessarily.
+That can actually be quite good for humans because imagine you train the model of yourself and your model is working and you are napping or you're surfing the internet.
+So that's like a good outcome.
+But it could also be that your model is working while you are fired.
+And so I think going forward, one of the big conversations we need to have is not just about what AI we use or don't use, but who owns the data byproducts of human labor, which is the raw material for future AI models. - Thank you.
+Zeynep, as we all know, there are many, many worries about AI, and that it's gonna ultimately hurt society, hurt the economy.
+I wanted to ask you, what do you think should be done to help assure that AI helps society, helps the economy, helps the labor market, and what would you do to protect against the harms of AI? - So I do wanna say it was a useful reminder to hear Daron talk about like 80 years as like kind of a transition.
+So something may eventually get better, but that might be a very long time for a human life.
+And the second example I always think about is like the printing press.
+Like who's against books, right? Like I love books personally, but the sort of long story changes that were unleashed by the printing press caused hundreds of years of destabilization, the religious wars killed more people in the first couple hundred years than all wars and pandemics since.
+So a technology can be perfectly good in some sense, but because it takes things that used to work a certain way, even if those things weren't great, but when you pull that rug under society and you don't have something, it can be very destabilizing.
+So I think that's a good reminder.
+So in terms of, I'm genuinely worried about the companies turning to the engagement model because they're spending this much money.
+In coding, it works, in verified domains, it works, but as people have discussed and because of the way LLMs work, it doesn't really work.
+And so they need to make money.
+Why are the chatbots allowed, made especially to act like humans? Why do they use human first person pronouns? Why do they say I? If you talk with them, they're always like, "Oh, I'm so curious what you're doing.
+I'm here for you, I like this," and none of this is happening.
+These are extremely powerful technologies, but they're not human beings.
+They do not have subjectivities, they are not curious about you.
+All of it's just word.
+I mean, again, it's language.
+I'm not saying it's hype.
+It's incredibly impressive.
+So we've already seen the social media engagement model and all the downsides.
+We are about to unleash the most human possible thing speaking that is posing as a human.
+And it's so hard to not think of something that speaks as a human, let alone when it speaks with you.
+I mean, let it be a very useful toaster, you know? This is for coders where this is an amazing technology, agentic AI, it's not telling them how great their if then else statement is, right? It's just doing the work and getting paid.
+But for us it's like the, I think that's the..
+AI safety people talk about misalignment, AI like getting ideas and doing stuff.
+I'm kind of like, this is fantastic stuff.
+The real misalignment is that we have a thing that we are thinking of as a person, friend, companion, that is misaligned with us.
+It's not our friend.
+It's controlled by these few companies.
+And I mean, how do you sort of, what's the policy? What do you ban? But like give me the magic wand, they are not speaking in first person plural anymore or in the first person singular anymore.
+They're also not allowed to act like a human being.
+There are so many tragic stories of children, also very young people getting, you know, dragged into all sorts of delusional states.
+There have been some tragic suicides.
+There are tech people, billionaires losing their minds, very clear delusional disorders because they have convinced themselves that they have invented quantum cryptography because ChatGPT told them over six months and four to 10 hours a day, like this is a big deal and nobody's asking me.
+But I think we should sort of try to not let the engagement model relive in those technology if we can help it. - Thank you.
+One final question for everyone.
+Make believe you're the philosopher king or queen, what advice would you give our president and Congress on how to regulate. (audience laughing) Any president to regulate AI. - Listening to Zeynep along, I'm actually getting quite scared.
+And it seems to me that the kind of moral that would be emerging from all of this would be to be a lot more like the Europeans who do a lot more restrictions on social media, a lot more restrictions on the web, although I'd say not nearly enough given the kinds of things we're talking about.
+But you know, we ridicule the Europeans a lot for all the impediments they put on the use of technology.
+But maybe they had the right idea and if I was the philosopher king, I might say, "Okay, this is dangerous technology, not in the ways that we usually think of it, but it's actually dangerous psychologically.
+It's dangerous socially." And you know, we're trained to think that innovation, you know, F around and find out, and we should move fast and break things.
+But if the things are actually people, maybe we do need a lot more restrictions on this. - I think the way that we approach regulation is very reactive.
+We see the technology and we react to it.
+But what I've tried to argue briefly here is that, you know, the issue is about the direction of technology, and for that, you need a prospective way of thinking about policy, which is where do we want this technology to go and how can we ensure it? And that's about, you have to fix the business models.
+So I think one thing I've advocated is a substantial digital ads tax.
+Digital ads are clearly creating a lot of negative effects.
+We've seen that in social media, then they're killing all sorts of alternative models.
+You have to encourage companies to move away from automation.
+What are the artificial reasons why they do that? Well our tax code massively subsidizes capital and taxes labor.
+So we have to sort of fix that tax code's problem.
+You have to sort of make sure that the inputs into creating a more pro worker direction is there, Danielle already mentioned that, so let me amplify that.
+We have no data market.
+So if you want models to become better, you need high quality data.
+But right now the system is we steal data, we extract data from people without payments.
+So we need data property rights and also incentives for people to create high quality data like the electricians that I was talking about and then also the tech companies, I think you need to sort of start sort of creating more competition.
+It's become a very non-competitive field.
+So there are a bunch of things that we really have to do, but they're all forward looking, not about fixing the past problems really.
+Can we steer this technology in a more socially beneficial direction? - Zeynep, Danielle, do you want to answer that or should I go to? - So one thing that's really important is to do proper regulation.
+The AI companies are very good at directing administrations for regulation that just happens to help them.
+With the Biden administration, they talked a lot about AGI and existential risk and got a bunch of rules that were essentially kneecapping their competitors, how convenient.
+And then the Trump administration came and they sort of dropped that and they moved to, we were in a race with China for AGI and tried to get stuff to kneecap their competitors.
+How convenient.
+Sam Altman is a world historic figure in this.
+It's incredible that they shifted from one type of regulation that just happened to kneecap their competitors to another one seamlessly.
+And Europe has issues because it doesn't have the industry.
+So you need to really look at what is this technology? Stop listening to their fantasies, their AGI stories, their existential, I mean, there's some stuff there, but a lot of it is science fiction.
+And look at this very powerful technology in front of us and think what is in the public interest.
+And that requires like understanding technology and being sort of in the public interest.
+And we haven't done it with the internet.
+We have not done it with like, it's a wonderful technology, and we haven't done it, and we're kind of paying for it, because all the negative externalities.
+So the first thing I would say is like have the right mindset, and you know, this president or not, I think this applies for Europe as well, is the thing that's holding us back. - All right, let me jump in quickly.
+I think that there's a lot of use cases of AI where there's lots of winners and losers and debates.
+And I guess the piece of advice I would give is we should go for the lowest hanging AI fruit, which is, we should think about socially valuable problems that humans have sucked at.
+Which in my argument, in my opinion should be, we should be putting a lot of effort into AI for better science.
+Thinking about ways to speed up innovation, drug discovery, thinking about ways to like have better energy technologies.
+That's a world in which this is not a zero sum race.
+China does it, great, Germany does it, great.
+And I think we should be building infrastructure to think about how we can do better science and do better innovation with AI. - Okay, thank you.
+So thank you, Paul.
+Thank you, Zeynep.
+Thank you, Daron.
+Thank you, Danielle.
+And thanks very much to CUNY for sponsoring this. (audience applauding)

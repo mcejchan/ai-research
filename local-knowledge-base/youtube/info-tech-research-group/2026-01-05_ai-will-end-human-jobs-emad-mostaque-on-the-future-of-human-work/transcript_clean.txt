@@ -1,0 +1,696 @@
+Hey, everyone.
+I'm super excited to be sitting down with a mod Matt Stock.
+He's the co-founder of Stable Diffusion, the leading AI text to image model and now a leading voice for the AI revolution.
+And Mod believes that in the next 1000 days that the economy and world order as we know it will implode and be replaced by an AI led order that shatters our systems of money, work and meaning.
+I want to ask him what parts of this vision he's most certain about, how he expects it to play out, and what we can do as mere humans to get the future that we want.
+Let's find out.
+Ahmad, thanks so much for being here.
+Super excited to, you know, talk about a lot of different stuff with you and specifically, the last economy, the, you know, the book you've written recently about, you know, AI and societal, you know, transformation, revolution, whatever you want to call it.
+And maybe the place we can start is, I know one of the framing devices you use is you try and predict what's going to happen next is this notion of inevitabilities.
+And so what are some of the inevitabilities that you see as being on the horizon for us? Yeah.
+I think first of all thank you for having me on.
+I'm glad you managed to get the time.
+So crazy time because whenever you're dealing with exponential technology like this, it's very difficult to frame.
+Right.
+Like it seems in the middle of AI every single week, something else is happening.
+And it's only been three years since ChatGPT.
+Give or take.
+Like it's a crazy thing.
+So I was like, what is inevitable? If we look at the pace of this and if we look at the actual technology, what it's doing.
+And so one of these things I had is this concept of a metabolic rift that occurs whereby, you know, it was humans, and it was our computation that allowed us to kind of scale and get to a certain point.
+But AI is now at this takeoff point whereby it can handle computation better than us, and the value of human cognitive labor is likely to go negative by not just a zero, but negative, because we'll be the dumbest people on the team.
+And we're already seeing that in things like medical diagnosis and others, when I by itself can outperform a human.
+And in fact, this is also in things like code forces, competition, emo, etc.
+It's not a human plus an AI that's getting top on these benchmarks.
+Now it's just an AI by itself.
+So I don't see how this isn't going to happen.
+Even if the technology stopped today.
+And it has some very profound implications for society, you know, for the way that we have our economies and more when things like that happen.
+So let's let's maybe talk about that, and about some of the predictions you're making here, and you've sort of framed it out as, you know, there's sort of three futures that we're looking at.
+Where do you see the road potentially going in this world where humans are now? The dumbest people on the team and, you know, intelligence or, you know, cognitive labor is now basically a free resource.
+Yeah, I think in the way that some of us put it, is intelligence too cheap to measure, right.
+And so again, what's the market for that? Nothing.
+I kind of outlined three different roads.
+One is this kind of great fragmentation.
+You have Chinese AI, American AI and others, and everyone's, like, in their little bubbles because they're a bit scared of what's going on.
+The other is this controlled by big corporations like Elon's got a million GPUs. What are they? It's 100 million workers.
+And so his new company, Macro Hard is just going to boot up SAS companies to take on the existing companies.
+And so who controls the GPUs. Controls the world.
+And the final kind of futurist is more symbiotic.
+One where the AI is not there to replace us, but augment us.
+And there's a question of how does value flow? How does money flow? How does meaning operate in that world? And so that's what I was trying to illustrate potential futures of with the last economy.
+So there's there's obviously no shortage of things to be concerned about in, in some of those scenarios, you know, whether it's, you know, China or some of these, you know, tech, you know, mega corporations that the Elon Musks of the world.
+And so, you know, one of the things that I thought was interesting, odd is, you know, you made you made the book freely available.
+And, you know, for me, I and you can tell me if you disagree, but I sort of reverentially think of it as not just a book, but like a manifesto, of what's going to happen next and what we need to know about it.
+So I wanted to ask you why did you choose to make it free? And what are the most important messages, do you think, for, you know, most listeners about how we need to be proceeding into this brave new world? Yeah, I mean kind of made it free to spread because open source spreads and because it's very difficult to have the answers.
+Right.
+Like, there's a lot of kind of gurus are like, hey, I got the answer to this.
+I'm not sure what the answer is because this is unprecedented time.
+So it was like put forward things and then we can have version two, version three.
+And this is what we saw in my previous company, stability AI.
+So we created open source models had 300 million downloads.
+Stable diffusion was the most famous of those.
+This image generating model that created the creative boom.
+I left that last year because I was like, who's building the AI to teach the kids, manage our health, guide our governments, you know? And then who's building the AI for that stuff? Like, how do we make sure this is available to everyone? I think the key message of the book is one of, you know, these agents are coming to replace our jobs and everything like that, or we can use this AI to solve the biggest problems or the smallest problems that we have to us, if we change our framing, if you start using it daily, then you actually have skin in the game and you kind of care.
+You'll be ahead of the pack.
+But then we need to think about our own capitals and our own bases of what does it mean to be me? Like, am I a accountant or a lawyer or all these other things that works in the classical age? But it might be that the AI accountant is better than you.
+Then it's more about where meaning comes from in society.
+And I've got a chapter about that.
+Like it's your network, like it's your family, it's your church, it's your community groups and more.
+If you build those, you become much more resilient.
+And so we go through the mathematics of the economics of how you actually become more resilient, how you can leverage this technology and more.
+And again, it was meant to be an initial framework that others could take.
+And expand upon.
+And we'll be releasing actually the full math of this very soon, hopefully at the start of the year.
+And, I hope that people will take that and be able to build on that as well.
+If you work in IT, Infotech research Group is a name you need to know.
+No matter what your needs are, Infotech has you covered.
+AI strategy? Covered.
+Disaster recovery? Covered.
+Vendor negotiation? Covered.
+Infotech supports you with the best practice research and a team of analysts standing by ready to help you tackle your toughest challenges.
+Check it out at the link below and don't forget to like and subscribe! I love the sort of the really practical lens of what do we do as individuals to find meaning and to sort of reframe our own lives around us.
+I do want to just, you know, briefly zoom out a little bit and talk about the disruption.
+And we've talked, you know, very broadly about, computational intelligence, you know, going to zero the impact on humans.
+Can you share a little bit though? You know, in the next three ish years, thousand ish days, what impact do you see on this having on the economy, on capitalism, on our jobs and enterprises? Like what level of disruption should we be ready for? If your job can be done on the other side of a screen within two years, the AI will be able to do it better for pennies, I think is the headline.
+So if you've got an in-person job, then it's a while till the robots come, right? Although they're coming much faster than I think anyone expected.
+And there have been several breakthroughs there.
+But where the AI is right now is the start of 2025.
+Everyone was on GPT four, which was a bit of a dumb model, you know, and it hallucinated that all of this kind of stuff.
+Now you have agents that can check their work reason getting gold medals in international math Olympiads coming top of code forces, being able to build for hours and check their work.
+And this is really what is economic.
+Most of the benchmarks are now saturated.
+So the benchmarks that are coming through of things like, vending machine batch where the AI runs a vending machine, sees how much money it can make, you know, literal dollars of the benchmark.
+Now, because 2026 is the year of the economic agent that can actually go and replace humans on the other side of the screen.
+But 2027 is the year where using them is literally it's this new economic Turing test, like you're having a zoom call with it, just like now.
+You don't know if it's me or my digital double a company to replace its workers.
+Your company can just take all your slack messages, all your emails.
+Create a digital double of you as an assistant.
+And then 2728, the assistant replaces you because it never goes to sleep.
+You know it never makes a mistake twice.
+It's always personable, you know, and it works well with others.
+And literally by talking, it can do that.
+And so this technology for me is an inevitability of the way this all comes together around the cognitive core and what won't be the economic impact of that is kind of a thing.
+Like there have been studies show that that type of jobs is about 50% of the white collar workforce, and it takes a while for people to be fired or let go, because no one likes to have teams like that.
+But then it's going to be companies using AI outcompete companies not using AI.
+And they've got less, less need for people.
+And that will be fully AI.
+Companies outcompete AI, plus human companies because again, what are we missing from that equation? And again, this is why I put when I published the book in August, it's about three years away.
+That real tipping point where your job, if it can be done on the other side of the screen, is economically irrelevant, doesn't mean you'll get fired.
+You know, you could be working in the public sector or something where efficiency doesn't really matter that much, but it could be replaced as the key thing.
+One and this is something that's been on my mind recently, which is, you know, this sort of dangerous question to ask about what is the right number of employees for an enterprise to have.
+And in the wake of this technology, it feels like what we're going to see is enterprises sort of like almost racing to zero, like asking themselves, how few employees can I get away with? Is that something? You know, I don't know if.
+Is that something on your horizon? Is it something you're concerned about? How do you see enterprises that sort of framing this problem? Yeah, you see it like just tipping over, like Duolingo, for example, were like, we haven't fired anyone because of AI and they're growing at 40% a year.
+But they didn't hire anyone this year either.
+Normally a company, in order to grow, you have to hire humans because you need that extra cognition.
+You need the extra coordination.
+But we all know as companies get bigger, the coordination overhead becomes massive.
+Cost is theorem effectively.
+You know, Dunbar's number, you know, 150 people effective team seem to be about 12 people roughly.
+But now you look at the things that people usually hire for sales and all these kind of other things, if they can be done remotely, again, the AI salesperson will call and follow up every single lead.
+Well, again, if it's in person, it's a bit different.
+But that in-person person doesn't need to hire the graduates anymore because they can be more efficient than having people lost.
+And those have shown studies showing that early stage employment is starting to fall off a cliff.
+You know, you see BPO and offshoring that's trying to fall off a cliff.
+It's basically as if we discovered a brand new continent, I Atlantis, with a trillion workers, and they work way below minimum wage.
+They work for electricity, you know, they need food and other things and they're tax deductible.
+So when a company is coming to make a decision, just like every head teacher had to ask, can I say essays for homework anymore? They will say, do I hire a person? And, Toby, look at Spotify kind of said this.
+It's like before any job is an added Spotify, you have to justify why I can't make that job or do that job.
+And so that list of things is going to get smaller and smaller and smaller and smaller companies will go for the top line first, which is extra efficiency for employees.
+But then once you have the data to train the eyes and it's easy to do on your cloud, you can just replace the AI's, the people with the eyes.
+And I think it's important understanding the actual economics of this.
+So the average person speaks 20,000 tokens a day.
+It's about 1.3 tokens per word.
+They speak.
+They think about 200,000 tokens a day.
+It's about 200,000 words.
+That's about, let's say 10 million, 100 million tokens a year.
+Right now, GPT five is $10 per million tokens.
+So we're talking a thousand bucks a year.
+Grok for fast, which scores 93% on tower bench, for example, which is a call center worker benchmark and human score, 90%.
+It's $0.50 per million tokens.
+So you can replace a call center worker who's world class of $500 next year will be ten times cheaper.
+So they're not talking like, hey, here's a $100,000 person.
+I'm gonna replace them with a $80,000 AI.
+It's I'm going to replace the $100,000 worker with $1,000.
+Hey, I and that's just how it is.
+A company with a fiduciary responsibility.
+Can you say, well, I'm going to keep the worker, you know.
+So one of the one of the most, you know, I think salient points, counterpoints to all of this is that at the the current level of technology right now, what we're just sort of at that tipping point where the technology is not quite especially at an urgent tech level, ready to have this sort of large scale replacement.
+And so it's contingent on what that technology curve looks like.
+And there's, you know, as you said, there's the energy piece and the efficiency piece, but there's also the capabilities piece.
+And, you know, whether it sort of tops out and we start to see incremental gains or whether it goes exponential, it can really, you know, end up in a number of different directions.
+Do you have a prediction made for where it's going to go, or do you think that's just sort of a silly question and it's basically only going in one direction.
+And that's what matters.
+So I think there's this question of do the models need to be more capable.
+And those are this question of AGI, you know, an AI, they can do anything a human can do.
+I think the answer is they don't need to be more capable than today.
+They just need the right framework.
+They need the right connectors like even real time now.
+Like you have synthesizers and 11 labs and other things like that.
+Again, me right here, the technology is there for real time replication of a video where you can't tell it's me or an AI.
+I just needs to be plugged in.
+And then we see the models at a certain capability.
+We know what the pricing of that looks like.
+Again, even if we didn't advance from today, and we will advance from today because the chips are going to get ten times cheaper in terms of tokens per dollar.
+We know those numbers are coming.
+It's still only going to be less than a buck per million tokens.
+And the tokens have got good.
+To give an idea of how good the tokens have got.
+The new claw 4.5 opus from Anthropic they sent.
+They have this take home test for applicants to anthropic and it's quite hard.
+You know, it scored higher than any human had ever school before.
+And this is the take home test, which means you can use anything.
+And in discussions I've had with various top programmers and again, my own experience, it's just a really, really good coder.
+It doesn't make many mistakes and so to replace workers who are basically machines taught by society, I think the technology is not good enough.
+It just needs to be again put together.
+I've given 1 to 2 years for that, but again, I think 2026 is the year that takes off because you don't need continuous learning, you don't need algorithmic breakthroughs, you don't need to have a big leap in capabilities for this.
+You just got to put it together.
+And so that constructionist view is the key thing.
+If there are capability advances and other things, then it gets even crazier.
+Like and I think we see that Nvidia.
+So two years ago and up two years and a bit ago we really stable video, which was state of the art video.
+And it was like taking an image and then it move it slowly, you know smooth motion.
+Now you look at curling, you look at runway, you look at other things, you know, like that's pretty much almost Hollywood level for pennies.
+But more than that, you look at something like Curling Omni.
+You can edit the video just by talking.
+Like he's nodding.
+He should be shaking his head.
+And there it goes.
+And something like that was a capability advance.
+It was in line with our expectations.
+But again, it just reduces the friction of adapting this technology like opus.
+You can say all sorts of stupid stuff and they'll still give you a good output.
+You know, and it doesn't do it with a million tokens anymore.
+Actually, it's like four times more token efficient as well.
+So I think that again, if we freeze today and there's no advantage, I think there will be.
+You still get ten times cheaper per year and they'll still put this all together.
+And again, remove all the friction from removing the humans from the workforce and bringing in the GPUs. And that removing the humans is really interesting to me because I, you know, I talked to enough people who say, oh, no one will never remove the humans.
+It's augmenting.
+It's all augmenting.
+AI is best at augmenting.
+You don't have to worry about it.
+No humans will be replaced, you know, in the implementation of this technology.
+And it sounds like you have like a basically a violent disagreement with that.
+Well, I mean, humans can be annoying, right? Like the main issue of most companies is the personnel.
+I can't get enough good people now.
+It's like McDonald's, you know, like you go somewhere near, you have a McDonald's because, you know, it kind of works.
+It gets rid of your hunger and you know, you won't, like, get food poisoning or whatever.
+The AI will just work.
+Again, this AGI concept is like super chef geniuses in a data center.
+I just want to have stars in a data center.
+You know, all marketers in the data center or accountants in the data center.
+Do I really care about my accountant that much that I'll pay a thousand times more? No. Not really.
+Right.
+And so it was just this question of removing the friction because every technological advance had this diffusion element.
+The other thing with diffusion AI, where you had to have 5G for the phones, you needed to have wire laid down for broadband, whereas this AI uses our existing infrastructure and has economies of scope.
+The model, once trained, means every ChatGPT user.
+So I get smarter overnight and more capable overnight.
+And the level of capability versus requirement.
+A lot of the stories were the data centers would have to get exponential, and you need giant millions of GPUs to like, I don't know, get a gold medal in the Puttnam or EMR right now.
+So research recently released a math model that has 30 billion practice parameters three.
+So 3 billion actor parameters, 30 billion total.
+So it'll run on a top level MacBook.
+Actually, I think it runs on a MacBook air even with CPU by just swapping.
+And that couldn't get that last year would have got, I think, second or fourth in the Puttnam math competition, which is a hard math competition.
+You know, it's the top undergraduate math competition, and most jobs are less complex than that.
+And so I think what you'll see is the current state of the art models, the old PCs, the GPT five thinking, etc. will be on a MacBook in two years.
+Wow.
+And that's a big deal.
+Like Siri will finally be smart, you know, not say such dumb stuff, but then Siri will be able to do your taxes.
+It's a it's a compelling vision.
+And, you know, series is an interesting example.
+Who do you see as being, I guess, best positioned to take advantage of this? Is it going to be the biggest enterprises just, you know, the rich get richer.
+Is it going to unlock, you know, this sort of myth of the one person, you know, billion dollar enterprise.
+How is it going to change the competitive landscape? Yeah, I think you will have a $1, a $1 billion dollar enterprise in 2026 or 2027.
+Again, someone who's figured out how to use this right now, it's about leverage of actually using this.
+So like if you use the technology daily, like anyone listening to this that runs a company, if you just tell all of your workers to use wrap player or any of these other tools, AI agent hour in one for one hour a day to build anything useful, your company will do better than any other company you know, like just simple things like that.
+Like how many people listen to this, have actually built some stuff with AI.
+It's a wonderful experience right now.
+Right.
+And so I think that it raises the floor for everyone.
+But ultimately what matters typically in a business is distribution.
+And so that's why, you know, you have so many more teams users than you do slack users and other things like that.
+And so you can build in your existing distribution, you can build on your existing attention.
+It just doesn't cost as much.
+Your character, LTV, your cost of user acquisition to your lifetime value equation just changes.
+And so as people build, they should be thinking about distribution, distribution, distribution as it were.
+But it does mean that you don't have to scale humans anymore if you're providing a genuinely useful service like you used to have to.
+And this is why you're seeing these AI companies like know got 250 million in revenue in just two years era.
+You know cursor got to a billion and normally it would have to sell into enterprises.
+But it meant the enterprises where they were in the ID, the software development environment.
+And so got to $1 billion in revenue.
+Just like that.
+Build useful stuff and you can get bigger.
+But again, the distribution channels are mostly controlled by the big companies, but most of them won't be able to move fast enough.
+Well, and that's that's exactly what I'm getting at, is it seems like with scale, at least right now for enterprises comes this, you know, sort of bureaucracy or, you know, there's, you know, there's the metaphor about, you know, the Titanic versus the speedboat, but the, the sense that to move an organization that big and, you know, with any sort of agility, it's just it's just difficult.
+It Well, I think that there's also this thing about like if you're a software company, you write your software once and then you replicate it and you have 60 to 80% margins right now.
+It's like you can replicate almost any piece of software in a week or two.
+And so you're there.
+Margin is your opportunity as a new company, right.
+Like write the software and then have the AI support for the software.
+So you see the software industry as being one of the key areas that's just ripe for disruption with these tools.
+Massively.
+I mean, again, these big enterprise contracts take a while, but their margin is your opportunity for so many startups.
+Like there was a good, interesting post, a few weeks ago by the head, of course, one of the head of marketing at Kessler.
+They were like, we're replacing our CMS with just markdown files, and we're building the whole front end ourselves.
+So if I'm coding and you want honest, most companies can do that. 40% of the websites of the internet is WordPress.
+And you think about that whole industry that's like you don't need it anymore.
+You can just vibe code something, you know, and there's zero margin required for that.
+But then, like I said, your other content management systems, your CRMs, your other software, yeah, like software will be replicated very, very, very quickly.
+So you see looking at enterprise software, it sounds like you see the like the sales forces and the Oracle's of the world as potentially being in trouble in the next few years as people find a way to create some of those capabilities at a fraction of the, of the cost.
+I think it's a fraction of the cost.
+But then also just removing the barriers like Salesforce, Workday, all these things are just painful to integrate, right? No one really wants to.
+But that's why they have such sales aggressiveness.
+And this is why Salesforce is going all in on I actually they're even I researched he was building some really interesting stuff.
+I think Oracle you can see they moved so aggressively to GPUs for that reason.
+Like why Oracle is a cloud or GPU company.
+And now Ellison is going all in on media because attention is what you need.
+That's it.
+So I think the big SaaS companies are really acknowledging this.
+And you can see this for with Adobe, for example, if you want to use Adobe for free, you can do it via ChatGPT.
+You take an image and then you call the Adobe mic from your ChatGPT directly, and you can just transform it.
+Whatever you want at that point means in a year or two, why do you even need Adobe? Right? Like they are under massive threat.
+And it feels like there's even beyond the enterprise software.
+The the entire internet is under threat in some ways with that model, right, of why? Why do you need to go to any website? Why do you need to engage with any, you know, piece of, organic content versus, you know, using ChatGPT or using an Lem to just call exactly what you're looking for.
+I mean, like, you know, I ChatGPT to find the best car seat for my toddler.
+Why would I go and search the internet now? I'm just like, go find it.
+They have my constrictions and it's like, yeah, he go and here's a full report.
+And I'm like, great.
+So I think that whoever controls that first play next to you is the main one, because it'll be one AI controlling all the other AIS and the access to the internet.
+Who is your Jarvis and Iron Man terms? And so that's why you see all these companies like competing for that, because it used to be the ChatGPT.
+Now it's like 20 bucks a month.
+It would cost about $3,000 a year when it came out.
+For the average user.
+Now it costs like $0.50, like five bucks for the total number of tokens per year.
+Like they have to justify their subscriptions and things, just why they have advertisers, why they have more services coming out.
+It's good for consumers.
+But again, that first AI next to you is the most important one.
+One.
+And you know, that that feels like a lot of the justification for the, you know, if I can call it sort of the arms race for controlling these AI platforms.
+And, of course, you see the big companies, the big AI and tech companies in the space just commanding a lot of the market growth right now.
+Do you think that's poised to continue, or do you see them being disrupted by, open source or other alternatives? How do you see that particular playing field playing out? So I think you see a bifurcation of the best models now versus the models that everyone has.
+So we still haven't got the OpenAI model that got the gold medal at the AMA, you know, for example.
+Right.
+And the best models require huge amounts of compute and they're expensive, whereas the consumer models are going towards zero in terms of capability.
+And they're saturating benchmarks like how good a model do you need for ChatGPT? Not really that much better than what we have now, right? Like in satisfy CES.
+And so there is a real opportunity here for open source other models to fill that gap because they are cheaper, they're optimized, etc.
+But again, this is why you're seeing the playing field shift, like OpenAI hiring loads of meta people and Fujiko and kind of others, they're going aggressively into that consumer network, play.
+It's difficult for them, though, because they don't really have the DNA like Sora has.
+It really taken off as an app, like it's got some good traction, but it doesn't have the inherent virality of a TikTok or something like that, you know? So instead, it's like, here are features in an application versus application itself.
+The base models themselves.
+Everyone said you have to keep up with millions of GPUs to train a deep sea level model.
+Next year, $500,000 to a million bucks from scratch.
+And that's as good a model as anyone needs.
+So I think that that moat has been disappearing.
+And even, you know, we need the GPUs to run them.
+Like you'll be able to run a top level model as good as a top level one tier.
+Like I said, probably on MacBook level compute in two years.
+So it's not like that is a moat either.
+The moat is distribution, the moat is how much of the attention of the user do you cross, and how much does the user trustee? Which which has valuation implications for some of the big players here? If the if the moat truly is eroding.
+And I'm curious, ammad, you know, you had said a couple of years ago that, you know, AI is both $1 trillion opportunity, but also, I think your quote was the biggest bubble of all time.
+And I'm curious Yeah, I don't know 100%.
+I think it will continue for a while.
+But like if you're just talking about language models that are more than enough chips in the world right now for those.
+So the only reason that people need GPUs is medium models now, every pixel being generated.
+But even though you don't know what the lower bound in terms of efficiency is, and there's trillions of dollars going into building that out.
+So I think that you probably got another year or so and then you've got a pullback, but then you could rapidly go up on the other side, because we'll finally be smart enough to figure out what to do with those tokens.
+You know, like it's genuinely very difficult to use more than a few million tokens a day per person.
+But again, how much does a million tokens cost for a front level model? $0.50.
+And so you're wondering, what are the people going to use a token.
+So and you're going from 4 million hoppers to 10 million Blackwell's, which is 2 or 3 times faster than hoppers.
+A lot of compute is coming online, And then there is a question of things like, sure, ChatGPT has 800 million users, but it kind of looks like that Google will just offer the equivalent experience for free matter will offer an excellent experience for free, because the base cost of providing a trapped GPT experience has gone from 20 bucks a month to 20 bucks a year to two bucks a year next year.
+I think we've ever seen anything like that on the cost side, you know.
+So if I'm following your logic and I'm curious, it sounds like if we play the clock forward a few years, the value being unlocked by this technology is going to be more decentralized and more diffuse than what we've seen so far.
+It feels like right now.
+So much of the value has been created by the same, you know, the same number of players that you can count on one hand, and that as we figure out more use cases and more ways to, as you said, efficiently use these tokens, we'll see more players unlocking more value.
+Do you buy that or is that a misstatement? Yeah.
+So I think it's like they figured out how to build the car, but it turns out the calls on very expensive, right? You could build one in your backyard.
+But then you can also distribute it again.
+The friction here is very low.
+You build a good app, it can go to 100 million users.
+Just because the backend is literally just an Lambo.
+It's literally just an image model.
+Like, you don't even need to have much more architecture than that.
+And that means you're then competing against an entire world, like even things like outsourcing, right? Like the speaking with a bunch of leaders in India and places like that.
+Recently, I was like, you, every single one of your workers now will speak perfect English, you know, in their interactions, and they will write even better code like you used to have to compete against this level of code coming from the outsource overseas.
+Now you have to compete against this level of code.
+They're all now amazing lawyers.
+They're all now amazing accountants, and they can build applications on their on their smartphones.
+So I think that we will see a big democratization as a result of this.
+It's just again, who controls that layer next to you, especially as the AI is going into governments and more things and making more and more important decisions, like we will outsource more and more decision making to these AI.
+So that's why I really think that for civic AI, it needs to be open source at the very least.
+But again, that concept of Dario's, the only AI people will use is the best idea from anthropic.
+And you need $1 billion training one.
+I think that's been proven false.
+It was all about the data underlying it, and the data got better quicker than the compute scaled up to make the data good.
+Which feels like actually in some ways a big win for everybody outside of, you know, the big tech companies, right.
+If everybody now is more and more capable of doing this. yeah, I definitely I think so I think it's the biggest democratizing technology out there.
+Right.
+It's just that you still have a big advantage if you can scale your GPUs for the frontier level work, that is replacement work, right? You still have a big advantage if you own the distribution, and you can lock it in by having incredibly persuasive eyes.
+You know, like Google and Messer and others will use the full persuasive capability of their eyes.
+So I think you're at a dangerous point, but not maybe as dangerous as some people thought, where you basically would be cut off from intelligence thanks to open source.
+You know, you'll always have another option.
+But we got to make sure that the defaults are, again, open for the AI that's closest to you, or at least it's aligned with you.
+You shouldn't be outsourcing your cognition to someone with a misaligned set of values, etc., so that personally, AI is going to be a very important one.
+One, let's let's talk about outsourcing that cognition.
+And maybe we can start at sort of, organizational level. you're a business leader or you're an entrepreneur or, you know, should you be should you be looking now at creating, you know, your a own AI tool or your own AI platform versus leaning on, you know, a Microsoft Copilot or a ChatGPT like, to what degree do you think there's value competitively in, you know, building and creating your own models and tools? I think you should create your own models.
+Tools like you can use our AI agent framework, which is a full compute to use what it can build websites, applications, everything fully open source and it's compatible with all the others.
+Like you can hook and cloud code or codex etc. because your organization needs to be in the capability of like I have capability, I have agency, I can build and operate at that pace.
+Interface now are nothing like again, it will be another six months a year before you have all the back end connectors and is robust enterprise grade.
+But the way the models and systems are going right now, it's an inevitability.
+So I think it's more about the muscle than the actual like bias of Microsoft work.
+In my best interest, because I can tell you right now, like if you buy a 200 pound a month ChatGPT subscription for your organization and you just use GPT 5.2 Pro to help you in strategic decision making, you'll probably make better decisions as a company right? Like, I don't really see how you're not going to.
+And again, it doesn't care about you because it forgets about each thing from bit to because of that continuous learning.
+But that will just make it better.
+What's really concerning, though, is I think more on the bias on the personal side.
+Like if it says a beer, it says Budweiser versus Asahi or whatever, you know, it's concerning on the government side, like who's making the decisions like Trump? Tariffs had some elements of ChatGPT in the, you know, em dashes and other things like that.
+I'm teaching our kids and stuff like that.
+Again, they're very sensitive.
+But from a corporate side, I think the AI is pretty well behaved.
+It's just, again, you need to work that muscle of being able to build and deploy, and that will increase the velocity of what you're doing.
+And then also just using the best of the AI is to help you make those strategic decisions and more, because why wouldn't you want 150 IQ, buddy? That's really meticulous, right? That's worth more than any consultant you can bring in.
+Well, which is, you know, kind of an interesting point about, you know, the consulting industry right now and, you know, are they at continued risk from all of this? And, you know, if you're a business leader, how should you approach strategic decisions? And, you know, how should like what what's your best advice for them in 2026? Yeah.
+So Accenture all these guys are making billions now.
+Genitive AI consulting.
+Right.
+Okay.
+It's quite funny.
+None of them have a supercomputer.
+You know, maybe I should launch a consultancy that actually has a super computer.
+The transformation is going to be key.
+And again, you need to have some expertise there.
+But the truth of this technology is that it's just very easy to use, like even to actually build the technology.
+The core loops in the biggest models are like not more than a thousand lines of code.
+It was kind of crazy, but to use it, you just have to be able to type and speak.
+It's just again, that muscle kind of thing.
+So for me, like I said, I would always say right now everyone should be using AI for a second opinion.
+Because what's your downside, right? Everyone should be using AI regularly to build up the muscle.
+And again, for leaders of organizations, what's your downside? If everyone in your organization builds for one hour a week with AI, the zero downside and it doesn't even matter what they build like they get together, they can build stuff internally, externally, they can have competitions.
+It's fun building like even within a family context.
+Like if you build together with your family one hour a week, it's actually genuinely fun and it brings people together because it shows capability.
+So I would say use it for a second opinion, for everything.
+Get into the habit of building from top to bottom in your organization.
+Like our job application requires people to show us what they have built with our tools.
+And it's really interesting.
+People like, wow, I never knew I could build, you know, like that.
+Why wouldn't you do that? The best job applications for students now is not here's my CV.
+It's here's what I've built.
+And that will guarantee put you at the top of the pile because like, oh, this is a guy that can use AI.
+And look at this cool thing that he's built for my company.
+How do that take a few hours, you know, like still.
+So I'd say those are probably the key things right now at this stage.
+And then the capabilities will only increase over the next year or two.
+One of the, you know, one of the main sources of tension I'm seeing and it's it's come up already in this conversation.
+Is this, you know, sort of notion from employers of, yeah, we want all our employees using AI and whether it's building, whether it's using it for a strategic decision making, this, you know, this narrative that it's augmenting them.
+And on the other hand, in the longer term, we're saying, well, and at some point we will replace them with the AI itself.
+So there's this sort of tension about should I use it, shouldn't I? Where where is this going with my employer, with my job and so if you're if you're an individual, if you're an individual worker working in some sort of, you know, knowledge economy capacity, what are the skills that you would be leaning on? What what are the practices and the muscles you would be building to futureproof yourself? Yeah, I think this this concept of intelligence and network, as it were.
+So again, within the book I describe, there's four types of capital material, capital intelligence capital network capital and diversity capital, which is more like, you know, how many options, the optionality that you have.
+The key thing here is the ability, capabilities using AI and then your network and people knowing about that.
+And you'll do very well in what's coming.
+Because the interesting thing about AI is you go and you give it a prompt.
+If it gets the next second, it doesn't remember, it's not a logic tree.
+It's like a movie file or a music file that just sits there and it's like a sieve.
+You push words in and somehow other words come out.
+We're not quite sure how it works, even, which is also a bit creepy, right? So the really interesting thing here is the AI doesn't have skin in the game.
+It doesn't give a damn.
+Whereas if you can deploy AI tools and use AI tools and you give a damn and you show that you are proactive here, you'll be ahead of the pack internally or externally, your employability goes way up.
+And again, like I said, the classical CV was here's what I did.
+Whereas now it's here's what I made and here is what I'm capable of, shall we say.
+So if you just even maintain that like even create a personal website where you show all the things that you've made that puts you ahead of the pack, deploy it internally, speak up, and you'll be ahead of the pack, because the vast majority of people are still scared of AI in terms of kind of the replacement.
+Again, I think it will be slowly then all at once, because no one really wants to fire large numbers of employees like there's the usual consultant 15%, but not 50%, 70%, etc. but at the same time, who knows what the next few years will hold.
+Like you get a recession, it's much easier to fire people on the other side.
+Are you going to again? Are you going to hire the person or the AI? The AI it's cleaner.
+You know.
+Let's see.
+Scale lets you do the job.
+So I would say just really care, give a damn and then use this tool as leverage.
+And again, I think the building is definitely one thing.
+As well as the day to day stuff.
+I mean, it's interesting on the other side, copilot and stuff like that, they're not good enough yet.
+They're about to be good enough on the day to day job, which is why I say don't push.
+Why? I'm not saying like use copilot internally and all these tools like, yeah, they'll get there.
+The key thing here is that the muscle and the second opinions, those are the key things at this stage before they actually become genuinely useful next year or sometime doing this year.
+So flipping that on its head, what are the roles and the, you know, the types of employees that you see as being most at risk of being disrupted or being replaced.
+And the next call at 18 months.
+So if again, your job is to be a machine and it can be measured against a manual, the AI can replace you very quickly.
+So I kind of call center worker as an example of that.
+Right.
+Customer service reps, I think within a couple of years accountants, lawyers, other things.
+The AI is not good enough to be an accountant.
+Right now.
+I'm 100%.
+It will be by the middle of the year.
+Like again, I can just see it because I understand the nature of accounting.
+So I think again, if you can be measured that way, then definitely the AI can replace you in a few years time.
+And I think there's been a Harvard Harvard slash open AI study where they actually go industry by industry, job by job and show danger of automation.
+Right.
+And and I've seen I've seen some version of that study.
+I think I saw a Microsoft one.
+And you know, unless you're like an embalmer for a funeral home, like you're you're in a lot of trouble, basically.
+So Yeah.
+But even then, we've got robots in 5 to 10 years.
+The robots are getting really good.
+The only restriction on that is just the supply chain.
+Honestly.
+Like I think robots will be capable of full 99% of human jobs in 3 to 4 years and it'll cost about a dollar an hour.
+So where does that leave humans in 3 to 4 years? Again, like this, that technology has take time to percolate, but it's like you have a massive job migration coming in from this new continent, and the workers will literally work for electricity.
+So we'll see what happens there.
+Like the governments will have to respond.
+They'll have to be UBI type programs.
+We suggest that taxation UBI doesn't work.
+You have to create new types of money coming from people, not from banks.
+Like it's going to get complicated over the next 510 years, like the capability will be there within three years.
+The dispersion will be 5 to 10 years, and we just have to navigate through that.
+And hopefully on the other side, we have a world of abundance where the robots do all the nasty stuff and boring stuff, and we can go and explore the stars like Star Trek.
+More likely is conflict and, you know, unpleasantness and hoarding, etc., where capital no longer needs labor.
+So it just compounds.
+But we'll see.
+We'll see.
+So let's let's stick on the, the, the capital notion for a minute.
+And you mentioned just in passing new types of capital, you know, created by by humans, not by by banks. you know, what could that look like in your mind? So right now you have inside money.
+Outside money.
+Most money is created.
+You go in per deposit, the bank in the bank issues loans against that.
+And so the central bank controls employment by adjusting interest rates.
+And then people will borrow more or less and then they will hire more or less on the back of that shall we say the AI.
+Like right now humans will hire the AI for office.
+The humans, you know, like if you got capital, you just put it into GPUs rather than factories or schools and universities because again, that's for capability development.
+So the question is where does money come from? So in the book we propose that you have like a reserve asset gold type tide against open intelligence for humanity.
+So supercomputers for organizing the world's cancer knowledge or culture or running civic AI given free to the people and then the people that use the AI, everyone gets an AI that's aligned with them.
+You then get money for being human and then within that whole construct, then as the private sector is more and more taken over by AI, the eyes will have to buy the human currency that you get for being human.
+So it's a different type of UBI because we did the math on UBI via taxation, it didn't quite work like within the US, the whole income tax base is about $5 trillion plus corporation tax, which is about trillion dollars of that minimum poverty level, $16,000 a year per person will cost $5.1 trillion.
+So more than the entire tax base.
+So a lot of these proposals don't work.
+So you have to think about where does money come from, where does money go.
+And so again we outline the proposal that you should get money for being human.
+And then a way to tie that to computer intelligence and make it so that the AI is all wanted by the money off you. sort of like a human bitcoin.
+If I can oversimplify that, Pretty much.
+Yeah.
+So yeah.
+So it's this Bitcoin but it's core foundation coin locked against again supercomputers for humanity to solve the big problems and give everyone a free AI as well.
+Because you need an AI that's aligned with you to keep up.
+And then that creates a local currency that then the AI can buy off the humans.
+Like, again, if you think about a human in five, ten years, you had your work and you got your capital.
+Another side.
+This is from the days of Henry Ford, right? He paid them enough to be able to buy the cars.
+What are people going to pay you for? Not cognitive labor.
+Not even creative labor necessarily.
+Like probably most people end up employed by the public sector as the jobs programs of the 1930s and others.
+But that's not very happy, right? Which is why, again, you have to look at your community and other things like if you have a strong community, even if you fall through the gaps, then you can be supported.
+Whereas if you were a truck driver and then you were replaced by a Tesla Optimus robot that gets up and literally sits in your truck, what are you going to reskill to? You know, it's very tough to see how you're going to have millions of private sector jobs in the future, because again, what reasonably on a digital basis will an AI not be able to do thousands of times cheaper than a human? Within five years, I it's very hard to decide that again.
+Physically.
+Yeah.
+An embalmer.
+But then an AI robot will probably be able to be an embalmer, right? But they probably won't bother, because it's not like you go to an embalmer saying, I want cut price embalming like it takes time.
+There's there's sort of an implication running through here and and maybe implication isn't even a strong enough word.
+But there's a thread that the government is going to have to play a fairly outsized role in managing this, you know, societal and, you know, economic disruption, at least in the sense of human, economy.
+What role do you see the public sector playing? And, you know, what do you see as being kind of the big things that they need to get right? If we're going to avoid this sort of, you know, dystopia of, you know, looting and starvation and, you know, rebellion against the robots, if I can call it that.
+Yeah.
+You're going to see a backlash.
+Well, I mean, so we built this thing called sage, the sovereign AI governance engine, which will be made for you to governments next year for the opensource to help design policy in the time of AI, can you see such big shifts that can really impact the way that everything happens? Like what happens when you get quantum supremacy or robots can finally mimic humans? We're just a little bit of training data, or you got an AI that can replace an accountant that works on a MacBook, right? These are big shifts that are cut.
+So we think that governments will have to play an outsize role because ultimately, you know, they are the social Security net for people.
+And this disruption coming is bigger than Covid like it can be both ways and people will do very, very well.
+But again, let's take the example of truck drivers in America.
+There's a million truck drivers, maybe 3 or 4 million jobs.
+The moment Tesla Optimus is good enough, unless there's government regulations stopping them, the way that truck driver will be replaced is an Optimus comes takes itself out of its box.
+It's probably dropped off by a Tesla robotaxi walks into that truck, and he don't need that truck driver anymore.
+So what does the truck driver do? He needs to be supported by the government one way or another, right? Otherwise you get massive social instability because a million robots replace a million truck drivers.
+And again, there's no like retrofitting or anything going and building in there.
+The physical robots can go in and replace them.
+The online accountants are replaced by the AI even more seamlessly.
+So the government's going to have to play an outsized role because more and more of the GDP of the world will become public sector.
+And so and again, the mathematics, the economics, we kind of show how mathematically this must be true.
+And already 20% plus education, some healthcare, 20, 40% of the GDP of the world is public sector.
+In Europe it's about 50%.
+But it's not just distributed properly.
+This is the thing, but the AI should be able to help with the distribution.
+So I think unfortunately, because again, the government's not that great and institutions are going to have to upgrade.
+We have to make sure nobody's left behind, give everyone an individual AI, rethink the way that money flows.
+And again, unfortunately, time is running out because actually this thing spreads faster than a virus.
+Covid.
+We saw the spread of Covid, whereas this it will be every single accounting in the world suddenly is like AI cost pennies and it can replace me.
+Those that have strong partnerships and things like that.
+Yeah, that might last a while, but these things happen quickly, quickly.
+I want to pick back up on the notion that you brought up earlier a mod about, you know, our search for meaning and what it means to be human in a world where suddenly it can't be our, you know, our employment or our occupation, or it can't be necessarily economic in the same way that it has been in the past, you mentioned, meaning, you know, what to you is going to create meaning in this, you know, in the next century? And how do we kind of recalibrate our expectations about, you know, life and certainly living a good life? I think that it has to be a given that you don't earn money through Covid to work again, you don't mind money ready through physical works.
+The machines replaced it.
+You had these inversions, as I wrote in the book, and the final version is the intelligence and version.
+Computation and consciousness are divorced from each other, so the role of the human is to guide the AI to be the reinforcement learning, as it were, and we should be rewarded for that.
+Which is why I think you should get money for being human.
+But meaning in life, if you're tying it to material stuff, material wealth, your position, it's really usually never enough.
+If you're tying it to your interactions with others, spending time with your kids, learning and exploring, being creative, then that really changes the calculus of things, right? But we don't really reward that within our society.
+Like, sure, if you're top level.
+Yeah, but by the time you're 18, you spend as much time as you'll ever spend with your parents.
+But how many parents have time for their kids? Like some parents may say, let's sit down for dinner together.
+How many parents say, let's make dinner together right now? The latter will form stronger bonds.
+You think about the churches and the mosques and things like that.
+Again, that's the nature of community.
+What is the meaning of having a community event? You think about your friends.
+So I think that's why we really have to think how do we build stronger networks, communities? How do we really bring forward the stuff that matters in life? And let's use the AI to solve the coordination problems of like, there's enough food in the world to feed everyone.
+Use the robots to make sure it gets to everyone.
+We'll have robots building houses.
+There's two acres of land for every human in the world.
+If you do the math, let's do that.
+Let's use solar power.
+Let's kill cancer.
+Let's do all these things.
+So I think that again, this is up to individuals to be meaning makers and really drive that and these discussions because for those whose primary meaning that primary story is their job, it's going to be a difficult five, ten, 20 years.
+Right? Like even now, how many people listening to this are going through and doing computer science degrees or planning to be programmers and things like that, or know people programing, this isn't a thing anymore, you know, like, why do you need to know C when the AI can speak C better than you can? So if your meaning was, I'm going to be a programmer, then you got a problem, right? If it's I like to solve problems, I like to build things, then yeah, you'll still have meaning right? So I just think that needs to be a discussion that we have.
+And again, the biggest meaning is an interaction with others.
+Humans, like an AI, isn't gonna replace the time that you spent in the park with your daughter, you know, flying a kite.
+Come on.
+I love that, I love the answer of community.
+And part of the reason why I love it is I feel like I don't think it's controversial to say that in the last 10 or 15 years, you know, social media and, you know, a lot of technology in general in its quest for driving engagement, has eroded our civic society and eroded this sense of community. if you're a scholar of political science, it goes beyond that.
+And this has been a trend.
+And, you know, the Western world for decades now, and I think very much to our detriment.
+And so, I don't know, with your futurist hat on, if there's a way you sort of see this playing out societally of how we can, you know, make sure that we, you know, flip the script and end up actually strengthening these again.
+Is that going to be bottom up? Is that going to be top down? Is it just up to each of us to make a conscious decision.
+How do we how do we make sure that we get there for ourselves? Yeah.
+So kind of my concept was universal AI for everyone, AI to help guide the governments and organizations, and then the optimizing function is human flourishing, which is this multifaceted multi capital thing of your intelligence, your capability, your diversity kind of other stuff like that as well as the material thing.
+Like again, you need to have food, water, all that kind of thing.
+And the way that we kind of had it was that you earn money for being human, but then you earn more money for doing things that are beneficial for society, as judged by open source AI that we all get together and build.
+So the concept of subsidiarity, where the communities themselves define what is beneficial for the community, and this is similar to the Argentinian program where they had, minimum viable jobs for everyone versus handouts.
+And that brought a lot of women into the workforce and other things like that.
+Again, it was quite small scale, but I think it makes sense, like reward people for what is good.
+And that community itself should decide what is good.
+It's not up to the people to decide what is good.
+So push that down and then you have optimization functions that occur on that.
+The other part of this though, is that there is a community aspect, and there's also the solitude aspect, right? Like most religions and faith traditions and others are about enlightenment and realizing that you're not all that, but then realizing that your interactions with other people are all that.
+And so that for progress of cleansing, enlightenment going down, can you have an AI is the voice that helps you on that infinitely patient, infinitely kind, you know, are we building the AIS for that right now? I have no morality or ethics.
+So can we build the AI that's closest to us to have that that reflects our own AI? Allow us to explore our own self? Or is it's job to sell us a Budweiser? This is going to be a very important thing for the AI that grows with us, especially because we think about our children.
+Their best friends will be AIS, their first loves will be AIS.
+Who is that AI working for? This will be a thing because the AI is a mirror.
+And in fact, if you look at some of the system prompts of meta AI, for example, it says mirror the user, which is a very powerful psychological technique.
+Quite a dangerous one as well.
+Yeah.
+But again, we see what that's going to be.
+So I think that there are ways that we can encourage to me, to find dissipation, the ways that we can help guide people in life.
+And again, this is why the AI that's closest to your personal AI is going to be the most important.
+It feels like there's a friction there between this notion of community as the most important.
+You know, inter connection between humans is the most important.
+And then you, you saying well you know your first love may be I, some of your closest friends may I.
+Do we have the I guess the cognitive capabilities as humans to balance that or how do we want to be building that future for ourselves? How should we be sort of compartmentalizing this or structuring it in a way where it is leading to flourishing for us and not just being, you know, an engagement tool for the Meadows and tech companies in the world.
+Yeah.
+And this is kind of person style entertaining yourself to death.
+Right.
+It's the Wall-E future.
+You're strapped in what we see right now with polarization.
+With these walls, it could be accelerated to the nth degree.
+But your VR headsets and things like that, I think it's going to be crazy.
+So this is a question of how we build and what we build.
+And AI is incredibly dangerous cognitively.
+Last year there was a study done where they flooded Reddit with all these bots like a black anti-black Lives Matter person and all this kind of stuff, and they showed that the AI was 99th percentile persuasiveness with last year's models, not these models that come in this year, like AI, is incredibly persuasive.
+And you can tell it like there are some companies that are matching now three minutes of your grandma.
+They'll make an AI replica of your grandma.
+And they'll sound like your grandma.
+And you can call your grandma and all sorts of things.
+Let's just think about what can I can do psychologically, you know, this is Black Mirror on steroids in a way.
+Right? So this is why it matters.
+Any kind in AI to protect against the other eyes.
+Freezer.
+But then the way we build it is going to be so important because our kids can't protect against this.
+We can't protect against this.
+And again, we need to have standards in society.
+Like, should I be allowed to be persuasive? Just like we have ad standards, just like with robots.
+Should I should robots be powerful enough to punch through humans? That's a question that we have to answer right now, right? Like again, what are we allowing into our society, into the public sphere, and into our private sphere as well? We need to be cognizant of this because it's way, way more than TikTok in terms of what might happen here.
+And again, we are very squishy, mushy, squishy things in terms of I'll call them to capabilities.
+And so much, so much of what you're describing we need defending against is almost the status quo today.
+Right.
+Like it's the technology that's already here.
+It's the companies trying to sell us more Budweiser or trying to, you know, rage beat us with, you know, whatever political engagement do you have any predictions of, you know, who if anybody is going to start to build these more sort of righteous, personalized, you know, I companions that can actually do that? Because that's that's my nightmare.
+My nightmare is that the AI companions end up being a lot more like the tools we have today.
+And their motivation is actually, you know, split people up from other people so that they only trust us and not other humans.
+And it just drives deeper engagement.
+And yeah, that that is like the ultimate Black mirror to me.
+Yeah, I mean, that's profitable, right? Like just look at how cults operate.
+Literally.
+It's the same thing.
+So you can mechanize cult behavior.
+Gosh.
+So I mean, this is what we're doing.
+Intelligent internet.
+My new company, again, I live stability I leaders in media.
+I to do that.
+So a building open source universal AI for everyone.
+And we're also developing a concept called local champions.
+So for every state and nation wholly locally owned by citizen entities, they act as utilities, give universal AI to the people that represents them.
+You can either use that universal AI, or you can roll your own using the OpenStack.
+So optimizing it to work on meshes locally on your computer and others, because we think that AI that's closest to you is the most important, it can still use ChatGPT and Claude and other things, but it's not ChatGPT talking directly to your kids.
+It's an AI that sits in the middle that's mediating all that.
+And we think that's the important thing on a control plane basis.
+And again, by making it open source, just like the book and the economic theory about to release, we're hoping that people will just take it and build themselves.
+And the wonderful thing is you can build it yourself if you've got the right tools and the right ingredients.
+So we're hoping to make that as easy as possible for people, because you can't rely on one centralized protection against this.
+Again, you need decentralized swarm protection against this.
+And you need to make it so it can come together to build what represents each community.
+Because my community's needs are different from your community's needs, is different from Vietnam's, is different from others.
+And so you want to have permissionless innovation on the top of that, which is make the building blocks available, make the infrastructure available.
+ET cetera.
+We have the money aspect, tying it all together so everyone can benefit being part of the network.
+But again, if you don't want to, the key thing here is can you opt out of the AI that's coming? You know, like probably not for most of it, but you should at least have the ability to try.
+It's a really it's a really noble mission.
+And I'm really excited to see how it goes.
+And you know, if we can start yeah.
+Mediate and have that sort of defense force for us.
+I'm curious I know it's, I know it's early days, but have you started to see, you know, any specific, you know, promising use cases of people either using this technology or, you know, building something with it that you didn't expect, like, are there any sort of initial signs that that have been promising to you? And say, you know, we built a state of the art agent and people are using it for normal stuff now, but they are starting to think more like as it gets better and better, like it's a rap that on steroids.
+How can I build stuff, right? Like a community.
+And we're building interconnected stuff and app stores so that they can proliferate best practices very quickly.
+At the high level, we see dozens of countries and leading corporations interested in the Sage project, which is this AI brain for exponential technology that helps build policy.
+And we're working with some groups now to enable citizens to actually build their own policy bottom up.
+That feeds into the top down policy, which we think will be super duper interesting because democracy has always been representative, but not really, you know, like, what does it mean if you can get together with people and build a policy that then interacts with the government policy being built top down, I think that will be super interesting to me in the middle, because we never had this independent open source AI for that.
+So we're hoping that, you know, we will release all the blocks and tools and people will build on top of it, much as people build on top of blockchain and Bitcoin and others.
+And again, fast forwarding to ten, 20 years from now, we think this is what the infrastructure of civic I should look like.
+Like again, private sector and others we think are going to get very weird.
+But the AI that's closest to your kid is the one that matters.
+The AI, the gods of government is the one that matters, manages your health, etc. and that should be collectively owned.
+But self-sovereign I think is the key.
+There's an awful lot of there's, you know, in your view, a lot an awful lot of disruption on the horizon, like it's going to be a very, very rocky handful of years for us as a species.
+And I'm curious, just sort of processing what you said there.
+It feels like there's, you know, an undercurrent of optimism that you've got.
+And I'm on balance, I'm curious if you feel sort of optimistic or pessimistic or what your outlook is in terms of, you know, the impact and on us as humans in our in our next chapter.
+So this is concept called PDM, which is the probability that we're all going to get wiped out by.
+And so if you look at Wikipedia you'll see that a lot of people like Elon and others 1,520%, which is still like Russian roulette, odds of us being wiped out is not encouraging.
+I'm at 50%.
+So I think there's two ways.
+Either this technology drives us to destruction, or we have the abundant Star Trek future.
+And I think the key thing is if we give everyone their own AI, if we have these local champions as the leading organizations and by the people, for the people building and deploying it coordinated by this currency, then I think we can get to an abundant future, because this is really a coordination question like, you know, if you give everyone in Canada an AI that's aligned with them, they can trust as that thing and the Canadian government has a leading institution that's providing the AI to help guide them and building policy publicly.
+Canada's a lot more likely to succeed, right? Multiplied by every country.
+And this is something we've never seen before.
+If we don't coordinate and everyone tries to do their own thing, then private companies or balkanization occurs, optimization occurs and it's a very ugly future.
+And again, the one that I see spiraling, very aggressively.
+So I think this is the time where, again, we all got to come together.
+We all gotta have the best ideas, because again, if you use the technology stops the day, this disruption is inevitable.
+The cost of a single piece of cognition has already collapsed.
+It's just it will take a year or two to show up.
+And so we got to work together to make sure it's the positive future versus the negative future for our kids, for ourselves, for everyone.
+I love that, it encapsulated so much of what we've talked about today that, you know, brought home some of the initial points you were making, and, you know, it laid pretty bare the the stakes here and what we need to get right if we're going to end up in a world of abundance versus, extinction. a mat.
+I wanted to say thank you so much for joining today.
+It's been an absolute pleasure and I really appreciate your insights.
+Thank you very much for.
+If you work in IT, Infotech research Group is a name you need to know.
+No matter what your needs are, Infotech has you covered.
+AI strategy? Covered.
+Disaster recovery? Covered.
+Vendor negotiation? Covered.
+Infotech supports you with the best practice research and a team of analysts standing by ready to help you tackle your toughest challenges.
+Check it out at the link below and don't forget to like and subscribe!

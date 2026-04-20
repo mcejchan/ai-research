@@ -1,0 +1,781 @@
+MARTIN WEST: Good afternoon, everyone, and thank you for being here.
+My name is Marty West.
+I serve as academic dean here at the Harvard Graduate School of Education.
+And it's my privilege to welcome you to tonight's forum.
+The Askwith Education Forum is our premier event series at HGSE, an opportunity for our community to come together in person, and with the help of leading thinkers and doers from around the globe, discuss, debate, and learn about the most pressing questions, challenges, and opportunities facing the field of education.
+And there's little doubt that the emergence of generative artificial intelligence is a worthy topic for our first forum of this academic year.
+Few, if any, technological innovations have captured popular imaginations in the same way.
+And the pace of student and educators' adoption of AI-based tools has been nothing short of remarkable.
+In fact, new research published just this week by HGSE faculty member and Harvard College Dean David Deming, shows that more than 10% of the conversations ChatGPT users have with the platform are best categorized as tutoring or teaching, making education one of the tool's largest use cases.
+And that's to say nothing, of course, of the many specialized apps and agents that have been launched to support student learning.
+Of course, some of us react to that number with a sense of alarm.
+We worry about students cheating, being exposed to biased or hallucinated content, or simply using AI tools as a substitute for the kind of deep thought that we know is essential to learning.
+Others may acknowledge those risks, but look past them to the opportunities that AI provides to personalize instruction and support both educators and students in new ways.
+What's clear is that AI is already shaping the future of education in ways that everyone in the sector, from policymakers and leaders to teachers, parents, and students, need to understand.
+As a school, we at HGSE are committed to providing our students with as many learning opportunities as possible as this revolution unfolds.
+In addition to events like this, we will continue to host monthly AI and education roundtables for students to engage directly with outside experts.
+The first of these events is actually happening tomorrow and will feature Deborah Quazzo and Claire Zau from ASU GSV.
+We also, however, recognize how much we can learn from our students, and the extraordinary experiences they bring with them here to Appian Way.
+Some are teachers who have used AI in their classrooms.
+Others are technologists or policymakers who have built new tools or shaped new regulations.
+With the ability to draw such exceptional students from around the world, we want to make sure that they also have the opportunity to make an impact while they're here.
+Which is why I am excited.
+Do we have the slide? There we go.
+I'm excited to announce that we're piloting a new micro grant program this year, known as the HGSE AI Initiative Fund.
+If you're an HGSE student and you have ideas about how to promote communal learning around AI and education, whether it be through organizing workshops, hosting a hack-a-thon or another creative project, we want to support you.
+This is a small step.
+It's a micro grant program.
+I don't hesitate to emphasize.
+But we believe it's an important next step toward building a vibrant community of practice around AI and education.
+So with that out of the way, let me introduce our speakers.
+First up is Howard Gardner, who needs no introduction, of course, but also deserves quite a long one.
+So I'll try to strike an appropriate balance.
+Howard is the Hobbs Research Professor of Cognition and Education here at HGSE.
+He is co-founder of Harvard's Project Zero and of the good project, which studies and works to promote excellence, engagement and ethics in education, all of which we sorely need.
+As the originator of the influential theory of multiple intelligences, Howard has transformed how we understand human potential by emphasizing the diverse ways in which people can excel.
+I could go on about his many honorary degrees, awards and publications, but we would be here all night.
+So I'll simply highlight his latest books, the intellectual memoir, A Synthesizing Mind, and a recently published two-volume collection of his work, The Essential Howard Gardner on Mind and The Essential Howard Gardner on Education, both of which I commend to you.
+And joining Howard in conversation is Anthea Roberts.
+She's a professor at the School of Regulation and Global Governance at the Australian National University.
+She's currently a visiting professor at Harvard Law School.
+She's an award-winning scholar of international law, recognized globally for her work at the intersection of law, governance, and AI to understand the frontiers and challenges of human-machine collaboration.
+Her latest book, Six Faces of Globalization, was selected as one of the best books of 2021 by The Financial Times and Fortune magazine.
+And most relevant for our purposes this afternoon, Roberts is founder of Dragonfly Thinking, which provides AI tools designed to help users move beyond one dimensional and linear solutions by surfacing insights from multiple disciplinary perspectives.
+And it's that concept of Dragonfly Thinking that provides a link between the conversation you're about to hear and our theme at HGSE this year of dialogue across differences, a theme that we plan to develop in part through the Askwith Forum series.
+Sometimes we'll do that by structuring the forums as a debate, where we can illustrate how engaging in civil disagreement can enhance understanding and even change minds.
+In others, like tonight, it will be by analyzing the value of incorporating and learning from multiple perspectives, and what we all lose out on as a community when we fail to do so.
+One very final point.
+We want you to be part of tonight's conversation as well.
+Some of you may already have index cards.
+If you don't, we will have volunteers handing them out over the course of the event.
+If you have a question you'd like to see us pose at the end of the session, please write it legibly, ideally on one of those cards, and pass it toward the center aisles.
+And I'll come back towards the end of the session and ask our guests as many questions as time allows.
+And now, with all that said, please join me in welcoming Howard Gardner and Anthea Roberts. [APPLAUSE] HOWARD GARDNER: Thank you Marty.
+Thank you, everybody, for coming and for that warm welcome.
+I'm audible? AUDIENCE: Yes.
+HOWARD GARDNER: Good.
+We're all going to learn this evening about Anthea Roberts' remarkable work.
+If you're at all like me, you will really get an education, a memorable one.
+And since we're in a school of education, I think that's appropriate.
+The plan has four parts.
+First, Anthea and I will talk a bit about how we met.
+Then she'll introduce Dragonfly Thinking, which is the way in which she describes the kind of mental processes which human beings have.
+But we also can have them in great abundance, in very interesting ways with all kinds of large language instruments.
+Then, since we're in an education school, and I am an educator, I'm going to be a guinea pig.
+And Anthea is going to take some of my ideas, well conceived or ill conceived, and have various instruments dissect them.
+And this is unrehearsed.
+So I'm going to be as surprised as anybody else by what they have to say and perhaps embarrassed.
+But you're all friends.
+So I'll tolerate that.
+And then, as Marty said, we'll finish around 6:00 o'clock or thereafter.
+And shortly thereafter, we'll be happy to take your questions and comments.
+So that's the game plan.
+And let's start, Anthea, with our first encounter story.
+ANTHEA ROBERTS: Do you want me to do that? HOWARD GARDNER: Sure.
+Yeah, sure.
+ANTHEA ROBERTS: So I had read Howard's work on multiple intelligences, and have really liked it, and then did what I usually do with authors I like, which is go and buy every book that they have written.
+Except in Howard's case, I did have to make a bit of a selection because there were quite a few.
+But I noticed one of his most recent ones was the Synthesizing Mind.
+And it caught me-- it sort of struck my mind as being interesting, because I'd just been writing a book about Six Faces of Globalization.
+And I'd been struck at the time that Howard's approach of eight different types of multiple intelligences, looking at a complex thing from different sides, was a little bit like some of the work I was doing on understanding the pushback against economic globalization from six different narratives.
+And so I thought, hmm, I wonder if I have what he describes as a synthesizing mind, too.
+So I went to read his book and found it really interesting and thought what he was describing was very much the kinds of mental processes I go through, except I didn't call it a synthesizing mind.
+I called it Dragonfly Thinking.
+So the reason that I call it Dragonfly Thinking actually comes out of work done by the intelligence agencies who funded research on who are the best forecasters.
+And they funded work by Philip Tetlock.
+And what Philip Tetlock found was that traditionally, disciplinary experts that are subject matter specialists or disciplinary experts in one field tend to actually do a really bad job at understanding complex problems in order to forecast forward.
+And that's because they tend to overemphasize one lens of analysis, which is the lens that they have been trained in.
+They found instead that the people that ended up being the super forecasters who, interestingly, actually had scores in super forecasting, 70%, I think over, where the disciplinary experts were very, very diverse.
+But the one thing they had in common was, he said, they saw the world through dragonfly eyes.
+So what you can see here is actually a very up close photo of a dragonfly's two sets of eyes.
+And they actually have thousands of different lenses, so 30,000 in each eye.
+And they integrate these to create an almost 360 degree view of reality.
+And they actually use that to be actually the best predators, I think, in the world in terms of their ability to project forward.
+And so what I was thinking about in the work I was doing, for example, on the pushback against economic globalization, was how do we look at it from six different lenses? How do we integrate those? And how can we think about that for policymaking going forward? So out of the blue, I wrote to Howard and said hi.
+You call this synthesizing.
+I call it Dragonfly Thinking.
+I think they might be related.
+HOWARD GARDNER: Good origin story.
+Yeah.
+As I think most of you know, I'm the multiple intelligences person.
+And most of my correspondence comes about that topic.
+It'll come up tonight.
+But I realized in doing the memoir that Anthea described that multiple intelligences wasn't a particularly good description of my own mind.
+I have a fairly typical academic mind.
+Yeah, we can leave that up there.
+It's OK.
+Yeah, put that up.
+A linguistic and logical mathematical mind, because that's what most academics have.
+But when I was trying to understand my own mind, I realized that wasn't what was distinctive about it.
+And if it was distinctive at all, it was because I like to learn about lots of things, read about lots of things, think about lots of things, talk to people about lots of things, and then try to put them together in ways that make sense to me.
+And then I try them out on some people who I trust to be friendly critics.
+They won't tell me it's good if it's nonsense.
+But on the other hand, they won't say this is total crap because it doesn't help you any much.
+And then I write books on those topics.
+And as Marty said, I've written a lot of books.
+And most of them don't fit into a particular disciplinary slot.
+Indeed, if an administrator is trying to decide where does Howard Gardner fit, it's not as easy as saying, oh, he's a biochemist or what Anthea is, she's an international lawyer.
+So even though I thought of myself as the multiple intelligences person, because that's what I was known for, I began to write a lot about synthesizing.
+Annie could probably tell me.
+You've written 30 or 40 blogs on the topic.
+And it was great to get a thought partner.
+And even though different topic, different set of questions, different set of issues, we're both trying to understand in our own way what does it take to just absorb lots of information and then organize it in ways that are sensible.
+So that's the way I would describe a synthesizing mind reasonably succinctly.
+Anything else you want to say about our academic relationship? ANTHEA ROBERTS: Well, I think the only thing to say is at this point, AI was nowhere in the picture.
+And we started sharing a lot of background information and thoughts, and were very regular thought partners and exchanging things.
+And then at some point, I fell down an AI-shaped rabbit hole.
+And I guess because we'd already been quite close on synthesizing and Dragonfly Thinking, I think I kind of pulled Howard with me a little bit down the AI rabbit hole.
+So should I tell a bit about how that ended up happening? HOWARD GARDNER: Sure.
+And we'll see if my memory is like yours.
+ANTHEA ROBERTS: So in my case, I had actually been using a lot of this work to think about some of the complex policy problems that are facing many of our governments today.
+And I was thinking about, for example, rising US-China tensions, and how that was going to reconfigure things for policymakers in technology and in investment.
+And in the process of doing it, I come up with these structures of how to think through these problems.
+And I'd been teaching them around the world.
+I'd been teaching them to governments.
+And I found that people often liked them, but actually had trouble applying them.
+And so I was thinking how do I pass this skill to other people? And it was around that time that a younger colleague, who had followed my work for quite some time, Sam Bhide, woke up in a very excited way one Saturday morning and messaged me to say, I've created Robo Anthea.
+And I was like, what? And so he had actually taken a lot of my published and unpublished work at that time, and actually created a ChatGPT model that kind of simulated the way I thought.
+And he would start asking it questions.
+And other policymakers would start asking Robo Anthea questions.
+And at the time, this was very early on in the generative AI days, before GPT-4, it was a bit of a shock to the system.
+And one reaction to that could have been to feel like utterly copyright infringed, as some people suggested to me.
+But my actual reaction was to think, hang on, these large language models are pretty exceptional.
+And they have an ability, unbelievably, to synthesize.
+And they have an unbelievable ability to think through complex problems if you create cognitive structures for them.
+And they have an unbelievable ability to think from multiple perspectives.
+And so I think that was around the time I basically put my academic books on the shelf and started building AI tools.
+HOWARD GARDNER: And while we began by having an epistolary relationship, Anthea has visited here three or four times and spent a fair amount of time with my wife, Ellen, and me.
+And to see her with her device take a problem, and I'm going to caricature a bit.
+But let's say China has just announced that it's going to have a new tariff against India and a tariff against the United States.
+And presumably scholars and pundits have ideas about this.
+But the capacity to sit there with her computer and to see what does a political science expert say, what does an economics expert say? Then when you confront the political scientist expert with what the economists said and vice versa, and then you say, well, but does this make any sense from what we know about history, and which area of history? This is, of course, what a historian does, typically by himself or herself in a library.
+But instead, you just sit there and you're picking these brains.
+And as you'll see, they can be quite interactive.
+So what the brain says doesn't make sense.
+You say, well, it doesn't make sense.
+Try it another way.
+And this really blew my mind.
+And this is at an age where most of us are not really looking for new ways to get a nervous breakdown.
+But I realized that I really needed to understand this.
+And then we've been working with John Kao, who's a colleague here on why this historical time may be as dramatic as the invention of writing a few thousand years ago, or the invention of printing and mass production of written material 500 or 600 years ago.
+And part of what we talk about now is if the world exists in 150, 200 years, and people look back at this time, what will be the huge changes that will have made? And what changes won't have made or maybe shouldn't be made? So that's the nature of our dialogue.
+And I'm very glad that Anthea has had a chance to meet with colleagues, many of whom are here tonight.
+So what's next on our agenda? Is this the guinea pig? ANTHEA ROBERTS: Well, yes.
+So what we thought we would do, we can't do all of it live.
+But we would try to work out how we could show people AI tools and Dragonfly Thinking.
+And Howard said to me very strictly, I wasn't allowed to do US-China technology, anything law related, because this was an education audience, which wasn't terribly helpful, given I'm not an education scholar.
+And so on Sunday, when we came together, I said, well, why don't we take the blog that you wrote about education and put it into my system? And then I can run a few analyzes on it and pose some questions to you from different perspectives.
+So do you want to-- actually, we still need to have the-- HOWARD GARDNER: Yeah, I need the slides.
+ANTHEA ROBERTS: We need to have the slides still for this bit.
+Because what we're going to do is I'm going to run some AI analyzes in the background from some of the different lenses while Howard is going to tell you what he describes as his crazy idea.
+And then I'm going to pose some questions from the Dragonfly system to him from different perspectives.
+HOWARD GARDNER: So this slide, which you can all see is, as I said, what I'm known for, the claim that human beings have a number of different intelligences.
+And you can be strong in one without necessarily being strong in another.
+But this idea is over 40 years old.
+Though I have to say that we're about to publish a new issue with Frames of Mind, with a new introduction.
+So that's just for-- so I'm trying to keep it up to date.
+But 20 years later, next slide, I wrote a book called Five Minds for the Future.
+And in that book, I took a somewhat different approach.
+It was more of a policy approach than an educational approach.
+When I say a policy approach, I said, if I were the tsar of education in some kind of a jurisdiction, what are the five kinds of minds which I would want to develop in human beings, especially in young human beings? And three of them are, I would say, classically cognitive.
+One is the disciplined mind.
+And that means learning history, learning biology, learning mathematics, the classical disciplines.
+The synthesizing mind, we've already talked about.
+It's being able to put strands of things together in ways that are sensible and negotiable.
+And then the creative mind, which we're all very interested in.
+But it's rare.
+It's coming up with something new which actually sticks.
+I mean, it's easy to come up with something new.
+I could hop across the rows for the rest of the evening.
+But that wouldn't be creative because it wouldn't be picked up.
+But those are the three kinds of educational cognitive minds that people like me thought of.
+But when I think about policy, it isn't just how do you use your mind, it's how do you relate to other people.
+And I identified two kinds of minds there, the respectful mind and the ethical mind.
+The respectful mind is how do we deal with people whom we see every day, with friends, with neighbors, with people who we encounter on the subway, on the street, at the airport, at a movie, wherever? And how do you deal with those people in a way which respects their humanity? Ethical is much more complicated.
+And that's what my colleagues, some of whom are here tonight, have worked on for 30 years.
+And that is how do you make the best possible decisions as a citizen and as a professional when you're faced with a very complex issue? I mean, if you're voting either as a voter or as a member of a policy group, and it's a very difficult decision, how do you make the best possible choice? And if it's not so good, what do you learn from doing it better the next time? And as a professional, most people here are professionals of one sort or another, all the time things come up where there isn't an easy answer.
+For example, a newspaper reporter is covering a story.
+And it turns out the story has a very personal aspect to it.
+What does that person do? Does he or she drop out? Do they try to do a neutral? Do they try to help? That's an ethical issue.
+It's very bad to try to decide ethical issues yourself.
+That's why we have ethical guidelines.
+That's why we have courts.
+That's why we have administrative groups and so on.
+So those were the five kinds of minds that I wrote about 20 years ago.
+Now, to give you the headline, and then I'll take five or 10 minutes to make a fool of myself, is that I think that most of the cognitive aspects of mind, the disciplined mind and synthesizing mind, and the creating mind, will be done so well by large language instruments and machines, and mechanisms that whether we do them as human beings will be optional.
+It won't be necessary for us to do them.
+On the other hand, I don't believe for a minute that aspects of respect, which is how do we deal with the people we see every day, and then aspects of how do we deal with difficult issues as citizens and as workers, professionals or otherwise, I don't think those are the things which we can and should assign or consign completely to even the most articulate and multifaceted and dragon-flown machine.
+So that's the background.
+So what's the sacrificial lamb? Now I think that's where the next slide comes up.
+Yes.
+So I wrote a blog about two months ago.
+And I posted it.
+And most of the blogs which I post are completely ignored and probably properly so.
+But this is one where three of my colleagues, my wife Ellen Winner, Mindy Kornhaber, who's a longtime colleague at Project Zero, and Susan Engel, who is a professor at Williams, actually dissected what I said and called me to task for saying stuff that they didn't believe.
+And so I wrote an answer.
+But I was going to turn the page.
+And then we got the idea, well, Howard, why don't you tell the audience here in five minutes what this idea was crazy or not? And then let's see what various kinds of instruments have to say about it.
+So my feeling is that every child in every culture needs to have a few years of schooling, where they learn what we used to call the three R's, reading, writing, arithmetic, and coding to the extent that there are aspects of coding, which everybody should understand.
+And this is the controversial aspect is I don't think that everybody should then go to school for 10 more years and learn history, and biology, and algebra, and calculus, and chemistry, and physics, and you name it.
+I think that those disciplines are going to be handled so much better by large language instruments that they really need only to be learned and mastered by individuals who really want to and who want to be able to engage in sophisticated intercourse with those instruments.
+And what do I think instead? So this is my formula.
+I used to work interactive museums.
+I've been a tremendous fan of children's museums ever since I went to the first one 50, 60 years ago.
+I just went to the American Museum of Natural History I used to go to as a kid.
+And my mind was blown by what you can do there now in New York City.
+It's just unbelievable.
+I think we should be providing very rich experiences to kids when they get into middle school age and older, and see what they get interested in and what they get excited about, and help them learn about that as much as possible.
+And they're all different ways in which we can do that throughout life.
+If we get to colleges and universities, I'll talk about how you do it throughout life.
+And this is where I think the European approach to education has made more sense.
+And I think this will probably bother most of you, is that by the age of 10 or 11, it's kind of clear for whom an academic track makes sense.
+And for many other students, it isn't.
+And that doesn't mean they can't follow it later.
+In my recipe, they can follow for the rest of their life.
+But they're learning some kind of skills which are more likely to give them a livelihood, whatever that livelihood would be, which could be technical, vocational, or in the future, I think it's more likely to be human care than almost anything that can be done computationally.
+So I don't think that going to school for 10 or 15 years, the way we do it now, makes sense because I'm not sure where this is written in a slide.
+I want to keep in mind two things as I'm talking.
+One, generals always fight the last war.
+Generals always fight the last war.
+So almost everybody, including me, is a second grade teacher or an administrator in the Boston Public Schools.
+They say, well, how can I do my job a little bit different because they have the large logic machines but not really have to change.
+That's generals fighting the last war.
+The other thing, which is an admission to me, is Rome was not built in a day.
+And even if my ideas are not crazy, and they would take a lot of time to do, you have to start.
+And so I mentioned my ideas about interactive museums.
+The other ideas are scouting.
+I was a Boy Scout.
+I understand that scouts don't exist anymore.
+And maybe as Boy Scouts don't exist anymore, maybe that's a good thing.
+But in scouting, you learned lots of different skills.
+And you learned them from your peers.
+And you learned to do things with peers.
+And some of my interests go all the way back to scouting.
+But you didn't have to spend years on stuff you was interested in nature, book binding, whatever it was, you could get some skills.
+And you could acquire them more.
+But at the same time, you worked with peers.
+And of course, there were older people too.
+I became an Explorer who were older people who helped the scouts, just like I'd been a Cub Scout 10 years earlier.
+And then I put up the phrase Quaker-style gatherings.
+Quakers, about which I don't know much, it's a form of religion.
+But the liturgy isn't important.
+It's getting together and talking about what you feel about things, and trying to get the other kinds of points of view on it and learning how to discuss things and make decisions in a way that's supportive and peaceful, rather than violent or just antagonistic.
+So those are three images I have in mind, interactive museums, scouting, and Quaker-type gatherings.
+Then, and this is where Project Zero, which was mentioned before would be really helpful, meaning over the next 20 years or so.
+A meta perspective on subjects, what is a meta perspective? I think it's a waste of time to learn the history of different countries, unless you're interested.
+But a meta perspective means understanding what it is that historians do, how they work with documents, how they argue about things, how they discuss things, how they change their mind, how they contextualize things.
+And when I say it's a Project Zero research kind of thing, what I mean is we simply don't know how much meta knowledge you need rather than starting from Plato to NATO, which was the way I learned western history at Harvard 60 years ago.
+We don't know how much meta knowledge is needed.
+But it's certainly well worth investigating.
+And as for colleges and universities, before I get pulled off the stage, I'm going to say if we have time afterwards, somebody can ask me.
+But I don't think colleges and universities are going to last the way that we take them for granted, especially in Cambridge or John and New Haven.
+I think it's going to be very, very different in the future.
+So sacrificial lamb, take it away.
+ANTHEA ROBERTS: So this isn't a sacrifice, but it's just to show.
+So if we can just change over to the other computer on the slides.
+So what I'm going to basically show you here is what we do with Dragonfly Thinking.
+And basically, the background to this is I spent a lot of time working out how would you break down a complex problem.
+And we teach this to students all the time.
+So first, you want to frame your problem.
+Then you might want to explore different perspectives.
+And they could be different stakeholders or they could be different experts.
+You then might want to analyze what are the risks and opportunities.
+And you might want to think how do you bring those together.
+What are the tensions? What might some of the feedback loops be? What might some of the interventions be? And so what I've basically done is plotted out in broad terms how I would dissect a complex problem.
+And under each one of these headings, and if you can see, for example, the multiple perspectives, I've created about nine different agentic workflows that take that particular concept and apply it so that the AI basically gets a cognitive filtering over the top that directs it about how to do this thinking.
+Now, that means that in the system that I have at the moment, I have about 60 different lenses.
+So it's not the 60,000 that the dragonflies have.
+But it's really a bit beyond where most people can just cope with the 60 lenses.
+If you look at this, you'll see so many lenses that you wouldn't know where to start.
+And so where we actually start with this is with a navigator and an orchestrator that basically takes your problem and helps you frame it for analysis by asking you questions, and trying to clarify what's your topic, what's your goal.
+And then it basically looks through all of the different ways of analyzing it and, given your goal, suggests what sort of analyzes it could have.
+And so all we did was put in-- I put in at the beginning, I'd like to critically analyze Howard Gardner's thinking on these issues.
+And we've provided it with his blog.
+And through a conversational back and forth, which we won't show you all of the details of, it basically helped me frame for analysis that I wanted to look at how Gardner's proposal for rethinking education to basically de-emphasize disciplinary and synthesizing and creation, but actually increase respect and ethics, and that I wanted to do that from, we chose the perspective of a national education policymaker.
+And what the system then did was it suggested a number of different lenses we might want to adopt, thinking from actors and stakeholders' perspectives, or thinking about risks and rewards or thinking about different expert perspectives.
+And I'm just going to show you a couple of those.
+So I'm going to start with actually one of the expert perspectives.
+And basically, what happens here is it just takes the topic and then it runs a first draft report.
+These reports can be like, 12, 20 pages.
+They're very detailed.
+So I can't give you all of that detail.
+But the expert perspective one basically picks out a number of different experts who have talked about an issue.
+And Howard, you said, in particular, you and Ellen said you wanted to hear from Linda Darling-Hammond and Rebecca Winthrop.
+And you gave me a particular radio show that they had been on.
+And so this particular one kind of analyzed all of that and then actually posed questions from Rebecca, well, what we think of as from her particular perspective.
+And what she wanted to ask you was, how can students truly develop the tools of interrogation you rightly call for if the foundational knowledge of those very disciplines, history, science, mathematics, becomes merely elective? And I have to say, in asking this question, I'm also channeling Ellen, Howard's wife, because this is very much her critique to him over the dinner table when we were doing this.
+And I think she would like to hear your answer, Howard. [LAUGHTER] HOWARD GARDNER: I have to sing for my supper's.
+ANTHEA ROBERTS: Over to you.
+HOWARD GARDNER: Oh. The way I think about this is that I made fun of Plato to NATO, which was the way, 60 years ago, if you went to Harvard College, you learned about history.
+I think that what my notion would be, and I'm going to use an example from Henry Louis Gates, Skip Gates, most of you know him, a faculty member here.
+And he helps people find their roots.
+So he brings people in and learns about their families.
+And they learn all sorts of things which they didn't know about their families.
+I also take this from Liz Dorsey, who's here.
+I would perhaps, in second or third grade, ask the kids to investigate something about their family and then see to what extent they become interested in, from the one hand, genetics, how much do they know about the traits that they share or don't share with other members of their family, history, the previous generations, where they were and what they were doing, interests, to what extent they might have been involved in the arts, interpersonal relationships, how would the family get along with one another or not.
+And then if the child became interested in a rich stimulus like that, I'd say, how can we learn more? But if the child wasn't particularly interested in where the family came from historically, or they weren't particularly interested in the traits that the family had, or they weren't particularly interested in the consanguineal relationship, I wouldn't pursue that.
+But maybe at some later time in their lives when they became interested, I would make that something where you could be a coach.
+Because I think that teachers will become more and more like coaches because there'll be so much available AI, very, very personally oriented, very person to person, some kind of a human being or some kind of a agent on a screen who can give you the stuff very clearly and very, very succinctly, that the need to have everybody in the class doing the same thing and being assessed in the same way will seem totally, totally, totally old fashioned.
+So I'm actually inventing this as we're talking.
+This was not rehearsed.
+But I would make a similar point for mathematics, for statistics, for chemistry, for mechanics.
+If the child is interested, and you can get them interested, then you give them an avenue to go down.
+It may involve other humans.
+It may involve a very good tutor.
+It may involve-- the Sal Khan has an academy now where a lot of stuff is done in AI.
+And so you basically have a much-- it's like an orchestra.
+You have lots more different instruments to draw on.
+And to draw on a single teacher who often is one chapter ahead, and particularly in this country, I don't like saying this.
+But we know half of all the teachers leave within five years.
+The chances that they're going to have any kind of an expertise anywhere near to some of these entities, I think is just delusional.
+We both watched, I think, thanks to John, what's happening in China.
+Do you want to say anything about that? ANTHEA ROBERTS: Well, I do actually, because I wanted to say that one of the critiques of large language models is that they tend to be sycophantic and really reflect back to you your own views and your own biases.
+But to that, I always say it really depends on how you prompt the models.
+And one of the things that I do is prompt them not just to take different perspectives, but to take a critical friend's perspective, a devil's advocate perspective.
+And so whenever I have a proposal or when I deal with policymakers who use these AI tools, one of the things they like to do is have the critical friend.
+And so I wanted to say, just picking up on what you said, that you and Ellen were very focused on how the different education theorists think about this.
+But of course, I'm not an education theorist.
+So I put it into the devil's advocate.
+And I was delighted to see that even though you told me I wasn't allowed to talk about global competition, that, in fact, the first fatal flaw it describes of your approach is the competitiveness suicide pact, which making foundational knowledge in science, history, and maths elective is a unilateral disarmament in the global economy still defined by technical and analytical prowess.
+This directly links to global competitiveness decline and economic dependency on STEM, which is a risk to our nation.
+HOWARD GARDNER: Well, that's why I said 2050. [LAUGHTER] But when I said Rome wasn't built in a day, I mean, if tomorrow we closed down middle school and high school, that would be nuts.
+But what I'm trying to do, and when I said Rome isn't built in a day, what I'm trying to do is how do we think through an end state? And 25 years is a good time, most of you will still be there, I'll be in heaven or hell, observing what happens, to a time when people can still take the initiative in learning about things they want and the way they want to learn.
+But to think that we should have a mandated curriculum, I mean, should we change some of the questions in the MCAS, which is our test here? Or should we say this is completely anachronistic? But I think what you and I could talk about is if you could have an MCAS, but you were to have access to all kinds of information in large language instruments, how would you do? And then how would we judge how you would do? That, to me, would make more sense.
+And that has to do with the meta knowledge, namely, you need to have enough knowledge about how the thing works and what it tries to do so you don't just say, oh my God.
+What's going on? But I really think that there's a line you've all heard that education is what you have after you forget everything.
+And most of us who are of a certain age won't remember most of the stuff that we've learned in school.
+I want us to preserve the meta knowledge of what it means to make inquiries in different disciplines, and then to be able to use large language instruments to fill this stuff in.
+ANTHEA ROBERTS: So, interestingly, in addition to the competitive suicide pact, which is the sort of thing you often hear from people who are thinking at a geopolitical level, the second critique is actually one that you often hear from a very different community, which is concerned about inequality within the US.
+And that one comes from saying that what you're proposing, Howard, is actually an elitist engine, that it's going to create a two-tiered system, where affluent parents will ensure that their children master the elective cognitive skills through private means, while the public system produces a generation skilled in ethics but lacking the foundational knowledge to innovate or compete, worsening generational inequality.
+Now, one thing I'll note about these two arguments that I know from my work on Six Faces of Globalization is usually the people that are making each of these arguments are in very different camps and not talking to each other.
+But here, the large language model is able to synthesize across them and put Howard on the spot. [LAUGHTER] HOWARD GARDNER: I think that the resource question is certainly a very real one, and especially if things like Khan Academy or Alpha Schools, as they are called, are not equally available, then of course, you're simply going to preserve or fan the differences that already exist.
+One of the things we kind of decided beforehand, we weren't going to really get into ecological issues or political issues.
+But I will simply say in a sentence, and I say this with my good friend Sissela Bok here.
+It depends on what and how an educational system is run in the country.
+And if a country is not one where wealth is a huge difference because her parents were involved in socializing, Scandinavia and Sweden in particular, then that issue is not nearly as acute.
+When I was referring to China, though, it was the video that we saw of everybody's brains being monitored.
+Do you want to say a bit about that? ANTHEA ROBERTS: John showed us that one.
+So obviously, some of the different types of cognitive monitoring you have could be used in a very invasive privacy way and in a way that's very difficult for students.
+And so part of the issue is how do we strike a balance.
+And different countries are going to strike that balance in different ways.
+But I guess that also leads, and I'll ask you one more question before we go back to the slides, which is you raised Alpha School.
+And indeed, one of the other things that we ran as an analysis was to identify key stakeholders who were not the disciplinary experts, but they're people who were affected by these decisions.
+And so in this one where we were analyzing key stakeholders, it would then profile the different approaches of the key stakeholders.
+So it had national education policymakers, AI platform developers, admissions deans at elite universities, the principal of Alpha School who argues for this.
+So I thought that was an interesting connection.
+But it also had the perspective of parents in high achieving school districts, and also high achieving students on a STEM track.
+And so I can't give you all the analysis.
+You can see there's a lot here.
+But I thought I would just ask you one question.
+And this one is from parents in high achieving school districts, mythical parents.
+Professor Gardner, my child has spent years sacrificing to master calculus and physics, believing that this was the path to success.
+Why should I support a reform that devalues my child's hard-earned achievements and throws them into a new, undefined competition for which they are unprepared, while students who did not put in the same cognitive work are suddenly on an equal footing? HOWARD GARDNER: Well, the answer I would give there is that in the societal tapestry of the future, having highly technical skills is going to be less and less important, because these things will be done so much quicker, and faster, and better by hundreds of different language instruments anywhere that it's kind of ridiculous to take your child and push them there, unless they want to be.
+On the other hand, to be able to deal with other human beings, we have 8 billion people on the planet.
+One of the strands of work we're doing now, Project Zero, has to do with sense of I, sense of we, and sense of they.
+If the planet gets destroyed, it's not going to be because there are some people who are wealthier than others.
+It's because we have so much strife here.
+And my models of scouting and of religious or quasi-religious getting together is to talk about what it means to be a human being on this planet, those are the things that you really want to have for your child, if you want the-- we don't want to have the most pennies when the world's destroyed.
+So that's the kind of answer that I would have to come up.
+Let me say one word of context, because it will mean something to most people here.
+We came up with this idea, because many people here listen to the show On Point on WBUR.
+It's a very, very good talk show.
+And one day, when we were just getting, they had these two education experts, Linda Darling-Hammond and Rebecca Winthrop, on.
+And so we got the idea, what would they say about this? But most of us don't know enough about what each of them would say, though they were presumably would.
+But that is the kind of thing that you do with a large instrument.
+Let me offer this.
+We pick another faculty member here, we pick Fernando.
+Hi, Fernando.
+If Fernando comes up and says something that raises our eyebrow, we then say, well, there are three international experts with economics backgrounds.
+What would they say about what Fernando had to say? And I think Fernando would welcome that, and you would be improved by that.
+That's where the whole meta discussion becomes so important.
+You need to be able to make sense of the criticism and of the alternate routes.
+And we just don't know how much meta knowledge you need to be able to bracket the 10 years of learning stuff, which you forget.
+ANTHEA ROBERTS: So I think this then takes us back to the slides, because I think this is one where my experiences really start to, I think, give a bit of a sense of where this might be going.
+And that's because I now spend almost all of my time in constant dialogue with multiple large language models.
+So almost all of my academic work, I have Gemini, I have GPT, and I have Claude open and in dialogue.
+And I don't just dialogue with each of them individually.
+I feed their answers to each other.
+And so I'm constantly having a conversation across the four of us, even if Howard's not there.
+And in addition, I've probably created about a hundred of these sort of agentic workflows.
+So I'm very used to being in conversation as both a user and also a builder.
+And one of the things that I noticed when I come into the academy is that there aren't many people who are doing quite this stuff at the moment.
+And instead what I see is that we often have these two poles, which is we have some people who I think might be using AI, but maybe in an uncritical way, so uncritical use of AI.
+But on the other hand, what I often see, particularly among faculty members, is what I describe as critical non-use of AI, so not people that have a deep understanding and use of it, but they're very reserved about it.
+And they have a lot of opinions about everything that's bad about it.
+And in fact, we went to a barbecue together.
+And everybody you introduced me to and said, I did AI, they were like, oh, I don't like that.
+I was like, yeah.
+And I guess between these two poles, it's really made me think, as we think about educating going forward, how do we find a middle ground, which is about cultivating critical use? And I think in that, it's really made me reflect on my own practice in dealing with these models, because I think it's an indication of where these things will go.
+So the first thing is, I think it's going to change the kind of co-creative relationship we have with our knowledge production.
+So the way I think about this is in the last era, we've tended to focus on the actor on the stage.
+We focused on the athlete on the field.
+And we focused on the writer of the book, so the person that's kind of doing what we think of as the primary work.
+And yet what I'm seeing in the way that AI and particularly coders are interacting with these models is it's going to change your relationship, because a lot of that primary work can actually be done by these large language models.
+But that doesn't mean that you're absent.
+If you're actually doing critical use, it changes your position so that you become the director of the actor.
+You become the coach of the athlete.
+And you become the editor of the writer.
+And you're putting in one where you are actually having very strong critical faculties in terms of how you're engaging, but you're engaging in a slightly different way.
+And when I think about this, the last book I did, the Six Faces that we met over was with Harvard University Press, actually.
+And I had a very good editor.
+And I would have to say he probably couldn't have written the book.
+I probably couldn't have edited it.
+They're different skills.
+And so one of the things we're going to need to think about is how do we actually train people to become directors, to become coaches, and to become editors? And that's what I would say when you're first dealing with large language models.
+But I guess what I've come to more recently is realizing that as these become more powerful, you're often not just engaging with one large language model, you're often engaging with multiple large language models.
+And so I've started to realize that very often, I'm running 3, 4, or 5 agents or large language models that are doing different things on different parts of my project.
+And so instead of just being the director, the coach, and the editor of one model, I've become effectively the manager, the orchestrator, and the synthesizer.
+And so there is the synthesizing mind.
+So if I run all 60 of my agents to get analyzes, not only do I interact with them, but I need to start to synthesize across them and work out which one I should feed from one to another.
+And these are skills that actually are typically skills that we see as you climb up towards being something like a CEO.
+These are the sorts of skills you develop.
+But they're not usually the skills that we teach here at the university.
+So that does make us wonder a bit what might this do to teaching at the university? And I had one idea here.
+And then I'll be interested to see what Howard says on this one, which is I, and I can see some of my colleagues here, teach at Harvard Law School.
+So when I did my law school, I actually did it back in Australia originally.
+And in Australia, the standard approach was that the professor would stand in front of the class and lecture.
+And I as a student, would passively receive and write it down.
+And then I came to teach at Harvard Law School and realized, no, no, no, no.
+That is not the way it is done here.
+And then, in fact, back in, it was the 1870s, there was Langdell, created this idea of the Socratic method.
+So instead of students passively receiving, instead, we would have this case-based method, where the teacher would start to ask the questions.
+And the students would have to give the answers.
+And when I was here a few months ago, doing some teaching here, actually on David's course, it really occurred to me that what I was seeing with the large language models was that we may have had the first revolution of the Socratic method here when the students started to have to answer the questions.
+But what we might need to do is actually have a second inversion of the Socratic method.
+Because now, instead of answering questions, our students need to learn to ask better questions.
+They need to learn to ask better questions and review answers to see whether they are better.
+And so that's one of the questions I have is, how will this change the way that we educate our youth going forward? And what's that going to mean as we go into knowledge work around the world? HOWARD GARDNER: That is a meta analysis.
+ANTHEA ROBERTS: It is a meta analysis.
+Yes.
+HOWARD GARDNER: I think we're probably just about ready to open it up for questions.
+But I hope that as has happened to me over the last several years, your vistas have really been opened by the work that Anthea has done, especially helpful for those of us who are educators, the way she's sort of stepped back from it enough, given us, as it were, a meta knowledge of what she's doing so we can begin to think about what implications this has, whether we're thinking about the education of very young people, including our own children or grandchildren, individuals who are in regular schools, people who are in special schools, special education.
+We might want to say a word, the question period, about how certain things, which we used to think of were cognitive deficits may actually be a help when we're dealing with these kinds of large language instruments.
+But also, and I'm not going to talk about this now, what does it really mean for higher education? Because we have 6,000 or 7,000 institutions in this country.
+But any of you who read the Education Press know that most students don't really want to be there.
+They want to get a degree at selective places like Harvard.
+They don't show up in classes.
+And in places where they do, they're often using large language instruments and machinery to do their questions.
+So this isn't just a question of-- this isn't just a question of Howard Gardner's crazy idea about children's museums and Quaker meetings.
+It's what do we do from learning, basically from cradle to grave? And maybe I'll quote close by saying, in one of my blogs I talked about education pre-cradle to post-grave.
+Because pre-cradle we know, including from work at this school, that you can now even look at an embryo, and you make some kind of predictions about what kinds of learning problems they may have or not.
+And my mind was blown a year or so ago when a bunch of students at a school in New Jersey sent me a video of myself talking and giving a lecture, which they had completely invented.
+But they used my simulacrum.
+And clearly, if I was dead, it could have gone on.
+So just as Anthea has expanded our notion of education, and I've tried to tweak the way we think about early childhood all the way through to old age, the whole notion of lifespan is something which is itself not something we can totally take for granted, which is maybe why we need to have those religious groups that are meeting.
+Any last words from you? ANTHEA ROBERTS: So I just wanted to pick up what you said, which is that which skills are important going forward.
+And I'm just going to give an observation that there's no sort of study behind this.
+But I spend a lot of my time observing who leans in to these large language models, and who doesn't.
+And one of the things I've really noticed is a very striking number of people who are cognitively diverse, particularly on the ADHD spectrum, are really leaning into these models.
+And it's made me reflect, like I come from a family where there's a fair amount of ADHD.
+I was somebody who did well and poorly at school, well, in terms of how I did on exams, poorly, very poorly in terms of attendance, because I was somebody who just was not designed for an industrial classroom.
+And I probably started wagging school very consistently from when I was in about year three.
+And so I, and many people like this, don't fit well in the traditional education systems we have.
+But I'm incredibly autodidactic.
+I chase down ideas like nothing else.
+I will have 20 different tabs open.
+And people who have this approach, who are like explorers and seekers, seem to be really leaning in to these large language models.
+And yet people who, I think, are waiting to be instructed in how to do it and to have it spoon fed to them are often feeling very uncomfortable in this new period.
+And I think people are responding to these models in very, very different ways.
+A lot of people are worried about critical outsourcing, that you won't be using your mind anymore.
+I have to say I experience completely the opposite.
+So I have, in the last 18 months, actually, for the first time in my life, actually felt cognitive strain.
+And I realized that that's partly because I'm used to asking so many questions of other people that I'm used to the people getting tired before I do.
+But now when I can actually ask eight different language models questions until I get tired, I'm experiencing something that I don't know.
+It's kind of exhilarating and also exhausting.
+HOWARD GARDNER: Let's turn it over to Marty and the questions.
+But hope join me in applause-- MARTIN WEST: Yeah, let's first give them a round of applause. [APPLAUSE] ANTHEA ROBERTS: OK.
+MARTIN WEST: Well, your work's not done yet.
+So I'm going to start off with a couple of questions that I had brought with me and thought of over the course of the presentation.
+And we have a couple already here.
+And I'd encourage you to continue to submit them.
+Anthea, you mentioned in our prior conversation that the remarks that I made about this, tying in to our theme of dialogue across differences resonated because a lot of the origins of your thinking about this was that we've really atrophied our ability to have conversations across difference and draw on different perspectives.
+But then I see you presenting something that, in some ways, might be perceived as a substitute for dialogue across differences, rather than preparation for it.
+Help me understand both the role that that issue played in your development of your thinking, but also how I should think about that.
+ANTHEA ROBERTS: Yeah.
+So there were two things that really brought me to do Dragonfly Thinking.
+One was the fact that when dealing with complex problems, we tend to be divided by our silos of knowledge.
+But the other was that we tended to be polarized across our different silos.
+And so I was very interested in both how can we connect dots across different disciplines, but also how can we develop cognitive empathy for the different approaches.
+And so what I've actually tried to do with this when thinking through the different lenses is to create different perspectives, but also to do them from a cognitively empathetic perspective.
+But what I haven't shown here, but I'm happy to show in some of the afterwards, is what we start to do in this process is we use it as a way to get people to cognitively expand.
+And so at the end of every one of these sections, we have dialogue with the people about which actors do you want to learn more about? Do you want to dive in and go more in detail on this one? Do you want to take a narrative perspective of this one? Do you want us to have a counter? But the other thing that we actually build out at the end of all of these is we actually have next steps in various ways.
+And a lot of those really force you to stretch your thinking.
+And so this is where I would say you cannot look at this process as you put something in, and you get an AI output.
+The critical process is teaching people how to interact with the AI.
+And so what I'm seeing is that when people put something in and they get an output, and they leave it there, that is cognitive outsourcing.
+But when I see people, and I see many people using these sorts of techniques, where we give these other answers and these other things you can explore, I see many more people then exploring and thinking from an unusual perspective.
+Ooh, and what happens if I change and look at it from this angle? And what happens if I consider this issue? And often, it's stuff that it wouldn't have occurred to them, but they get into that dialogue.
+So for me, I think you really have to work out how do you get people to get into that interactive state.
+And that's where I actually think we need to move away from just the text-based stuff, to actually thinking about some of the stuff we see from games, or some of the things that we do to get people interacting with these models.
+MARTIN WEST: Well, I think you anticipated the first question I was going to read from the audience.
+But I want to articulate it and ask you to elaborate a little more.
+The question reads, "studies indicate that cognitive offloading to AI decreases critical thinking, especially in youngsters.
+How can that be prevented?" So I hear you talking about how you're working, I assume with adult users for the most part, and coaching them through how to take this input and synthesize it in the ways that you all were talking about.
+How about someone in grade school? ANTHEA ROBERTS: Yeah.
+Well, I am also a parent.
+So we have a lot of these conversations at home about how we use it.
+And my 14-year-old daughter is interesting.
+She obviously hears a lot about this at the dinner table.
+So at school, she hears you cannot use AI.
+It's very, very bad.
+And we will know that you're cheating.
+But she knows many of her friends who use it.
+And then she listens to me at the dinner table about you can cognitively augment.
+And we can do this, and we can do that.
+And so it's been really interesting watching the way she navigates this.
+And I actually think she's become quite a savvy user of AI in various ways.
+So, for example, whenever she doesn't get something right in her maths exam, when she brings it home, there's no explanation from the teacher.
+So we photograph it, we put it into the system, and we ask it to analyze what she got wrong, and then set some new questions for her to do.
+But she's also learnt techniques to interact with the system.
+So one of the techniques I had taught her initially was if you didn't understand something, say, explain it to me like I'm five.
+And she was like, mom, that's too young.
+And she's in year 9.
+So on her maths stuff, if she doesn't understand it, she says to the machine, explain it to me like I'm in year 7.
+I was like, oh, that's a good technique.
+And so I think that we're going to need to be teaching these skills from the very youngest age all the way up, because you absolutely will have the chance to cognitively offload, and you will absolutely have the chance to cognitively extend.
+And our duty as individuals, and our duties as educators, is to try to work out how do we do that extension rather than that replacement.
+And there isn't a clear answer for that yet.
+MARTIN WEST: But I hear you talking about coaching children through something that sounds reasonably similar to the existing curriculum.
+And I hear Howard talking about getting rid of the traditional curriculum and instead going to something like education on a need-to-know basis, where the learner decides when they need to know it, right? HOWARD GARDNER: Or want it.
+MARTIN WEST: Want to know.
+And so, Howard, this question is really for you.
+But I want to get Anthea's take as well.
+Is there really no value to presenting knowledge in a systematic way? Aren't there efficiencies gained? Because at the end of the day, to be able to use the tool in the manner that Anthea was, I think you need to be quite knowledgeable across disciplines and across content areas.
+ANTHEA ROBERTS: You and Ellen.
+MARTIN WEST: Yeah.
+HOWARD GARDNER: Yeah.
+MARTIN WEST: Yeah.
+I'm taking Ellen's side in the great debate.
+HOWARD GARDNER: I don't think we know enough to know the question that Anthea is raising, namely, what are the scaffolding that helps people become good questioners and good users, and what sorts of things turns people off or leaves them cold.
+One of the three people who debated with me online was Susan Engel, a well-known scholar, who says that every child is curious at the age of five.
+And what school does systematically is destroy that curiosity.
+So if she were here, she wouldn't be agreeing with what you're saying.
+I think the art, whether it's a human teacher or an AI, is to engage the person and keep them in the conversation, and want them to know more, but also to say at a certain point, now maybe you should go do something, which I think is what parenting and scouting and other-- and one of the reasons I like scouting is there's almost nothing that's required except that you don't do anything that's illegal.
+But there's a lot of options available.
+But when you see other people doing stuff, whether they're horseback riding, or camping, or learning nature and so on, you want to do it too.
+And you get a merit badge.
+But if it's something you're interested in, it sticks with you.
+So my notion is not at all to defend Gardner's position, which simply was catalyzed by a blog some months ago, but rather not to assume that we're fighting the last war because we have to figure out where is the wrong.
+We have to figure out what's the nature of the enterprise now.
+And if John Cowan, the rest of our little group, some of whom are here tonight, are right, this is as fundamental, the changes that we've had in 1,000 years and 500 years.
+And we want to still be around.
+That's, I think, something we're all worried about as well, because 500 years ago or 2,000 years ago, we didn't have nuclear weapons, we didn't have climate change.
+And the dinosaurs had already been.
+So in a sense, for someone who's old like me, this is a very serious concern about how do we keep the enterprise going.
+ANTHEA ROBERTS: So one thing I would say here is we see the effects of this most clearly in software coding at the moment.
+And there, we're actually seeing two very different effects of AI.
+So on the one hand, what you're seeing is something like vibe coding, which allows people who have no expertise at all to speak into the model and to come up with an app.
+And so then people say, oh, now it's democratized.
+Anybody can do it.
+You don't need to learn coding at all.
+And that kind of takes you from 0 to 1.
+But I'm actually seeing an incredibly different thing happening with the expert coders who are working out how to use these models.
+And the people that are doing the best at that they're not staying at one.
+They're actually not even staying at 1 to 10.
+Some of them, I would say, are going from 10X engineers to 100X engineers.
+And what they are learning to do is co-create and use their expertise to develop systems and processes.
+And they get vastly, vastly, vastly more out of it than mediocre engineers and also the vibe coders.
+And interestingly, the approach that they're starting to adopt is incredibly similar to what we're doing with Dragonfly Thinking, except they're doing it with code, and we're doing it with concepts, which is that you need to start developing these meta awarenesses of your processes and almost building them out.
+I build them as lenses.
+They build them as code blocks or LEGO blocks, and working out how to do that so that you can build and scaffold and do various things.
+So I actually think that expertise is not dead in an age of AI.
+I actually think experts, once they learn to use these models, can get an incredible amount more out of these models than a layperson.
+But what I don't know, and this is where Howard and I probably disagree a bit, is if you're already an expert, and you learn how to use these models, I can see how you can really expand with them.
+I'm not sure how you get to be an expert with these models.
+And for me, that's still an open question.
+And I wonder.
+I actually think if I had had these models when I was a student, I would have been a much better student because of the type of thinker I am.
+I think they would have suited my kind of mind.
+But I think for a lot of students, they would lead to cognitive outsourcing.
+And so how do you build that expertise if you're not going through the grind? And I think that's going to be a really important question as we start to see people move into the workforce, many of them being more AI native, but many of them not taking the traditional route towards expertise.
+And I think the jury is out on what will happen with this.
+But I think it's a real question that we have to pose and think about it.
+MARTIN WEST: So here's another question from the audience that I'd love to get your take on Anthea, but also yours, Howard, given what I mentioned earlier about the good work project and its goals.
+What would you recommend that ethically and morally minded AI and machine learning experts do to contribute to making the world a better place? ANTHEA ROBERTS: So one of the things that I think is a real critique of the large language models at the moment is that the underlying training data has a bias towards Western English speaking US.
+And that means that many of the answers that we get out of it reinforce those biases.
+But again, I would say there's a lot that we can do in terms of how we construct these models, but also in terms of how we interact with these models.
+So I think one of the things that will be really interesting is to start to use many different models that have different languages and different cultural foundations underneath them.
+And I think that we really need to have that for the diversity of experiences.
+But I think we also need to start to use different techniques to try to get those differences out of the model.
+And so one of the examples that came in some of the coaching that we were doing is if you ask a generic question, you get a generic answer out of these models.
+So if you ask a question about parenting, it's going to give you a very standard US default parenting answer.
+And so some people will say, oh, models are biased, they're terrible.
+And then I will say to them, well, how did you prompt it? Did you say, well, look, I happen to be Japanese.
+And my wife is French.
+And we want to send our child to school in the UK.
+And at that point, the model will actually start to do something really different.
+It will be like, oh, well, in Japan, these are often what's going on.
+But in France, this is what's happening.
+And you might have conflicts about this.
+But if you're thinking about the UK, there's actually a huge amount of stuff embedded in these models that we need to be teaching people how to access it.
+And it's not just the questions you ask, it's actually also the language you ask in.
+So if you ask the same model in different languages, you will often get different answers because they tap into different cultural elements.
+So I'm really interested in a combination of how model makers can make the underlying training data more inclusive and more diverse, but also how we can teach the skills to get the different cultural representations that actually are embedded in these models through things like prompting in different languages or prompting with more specific prompts.
+And so we're actually doing a study now, where we're taking 25 different models and 40 different languages, and running the same questions across all of them to see what sort of cultural variation there is in them.
+I think that's going to be a really important part of doing this ethically going forward.
+HOWARD GARDNER: I think that's a brilliant approach.
+The only thing I would say is when I talk about respect and ethics, I think the buck stops with human beings.
+And when it comes to the synthesizing mind, I'm very happy to have a large language machine do it better than any of us can do it.
+In creativity, by definition, it's stuff that's unexpected.
+And it could come from anywhere.
+But I think we know that every art form is just being completely overthrown and overwhelmed by things which these instruments can do.
+That doesn't mean that someday somebody won't come up, a human being won't come up with something novel.
+But certainly, if your child said they wanted to become a playwright, you say, you better hope, really hope you want to become one rather than you think you're going to be in Broadway because it's just much, much harder.
+And you mentioned editor, too.
+Almost all these skills are going to be really preserved only for people who are very, very unusual.
+ANTHEA ROBERTS: Yeah.
+I would say the other thing to be ethical that I think is very important, so there are obviously environmental issues to think through.
+But there's also the creator economy.
+And I think that we really need to strike a new deal with creators.
+And a lot of people are doing that at the moment by a challenge of copyright.
+And the question then becomes, are you simply copying existing work when you're training large language models, or have you transformed it? I actually think in many ways you have transformed it.
+But I think that doesn't mean that they shouldn't pay, that we need a new economic compact.
+And actually, the model makers themselves need a new economic compact for this because they need people to still create.
+So I think part of the ethical use going forward will be to have a new compact, where creators get some sort of recompense for the fact that their work is then trained on, and that we need a new economic deal to do that.
+MARTIN WEST: So let me pick up on something you just mentioned in passing, because a dominant theme in the questions we've got is actually about the environmental impacts.
+And we'd love to hear you reflect on that.
+Here's one.
+When thinking about ethics and respect as the types of thinking to prioritize, how do we balance ethics in our use of AI and think about the environmental impacts that it has? ANTHEA ROBERTS: Yeah.
+This is a question that we have come up a lot.
+And I think it's an incredibly important question.
+Very early on, there were statistics thrown around that every search in a large language model used eight times as much energy as a Google search.
+That was actually not a particularly well-founded study that was done at the time.
+And the more recent studies, both because of efficiency and also because of better studies, show that that is not a fair comparison at all.
+Actually, the individual use of AI is not particularly energy intensive.
+It is the training, and particularly, the large scale use that we're likely to have.
+So if you compare it to doing things like driving a car or flying on a plane, its individual use is nowhere near the kind of carbon intensive or energy intensive thing that we have in those other things that we do every day.
+But when you do it at scale, it is going to have really significant effects.
+And we're actually seeing that that's changing the political economy of things like nuclear power.
+So there is both a real concern about global warming, and the climate change, and the energy transition.
+And one of the answers that people have often thought of for that is for things like nuclear power, which we've never had a consensus to try and do before.
+And now we're seeing a push for it.
+So it's actually a very complex question.
+But I think this is one of the really big ones that we do need to focus on.
+And we are going to need to have a reckoning with what is possible and what is appropriate in the use of these tools.
+MARTIN WEST: Great.
+Here's another one that I really love.
+Given that the models are probabilistic machines, I have concerns that the outputs will have tendencies towards averages, like a regression to the mean, and will result in less diversity of opinion and thought.
+Do you have concerns that electrivizing material-- subject, sorry.
+Let me see if I can get this.
+Do you have concerns that electrivizing material subjects could exacerbate this issue by hindering the capacity for critical analysis? I'm really interested, though, in the first part of that question.
+ANTHEA ROBERTS: Yeah.
+So there are two things to think about in that regard.
+So the first is that within a statistical distribution, it does push towards the average.
+And that's why the questions you ask are really important.
+So if we think about that example I gave before about parenting, if you ask the generic question, it pushes to the average.
+And the average happens to be very American and very Western.
+But what you can do is bound it so that you ask, for example, about the Japanese or about the French.
+Again, it will give you the average within that, but in a bounded way, and the average with another one.
+So one of the reasons, when you start to push this model to take different perspectives or different disciplinary perspectives, or different national perspectives, is you're trying to work out within that sort of distribution, you may be getting the average.
+But you're getting the average of many different things.
+And so there's a lot that we can do within that.
+But I think that there's another interesting dynamic that's happening as well, which is in the world of social media, we've really seen a hollowing out of the middle and a barbell situation, where people polarize and go to the other ends of the extreme.
+And yet, by training on all of that social media that's barbell, we now have large language models that push you towards the center, and that you have a bell curve distribution instead of a barbell distribution.
+Going forward, we're going to have social media, which polarizes, and large language models, which push towards the center.
+And the really interesting question will be how those two things interact with each other, and what the nature of the dialogue economy will be when you've got these centripetal forces and these centrifugal forces.
+And I don't have an answer to that.
+But I'm watching it with great interest.
+HOWARD GARDNER: Do you have people who are colleagues from different parts of the world, let's say China, Russia, with whom you can engage with these questions? ANTHEA ROBERTS: Yes.
+I mean, so I was just in my office yesterday.
+And one of my Chinese students came in to talk to me about the work we were doing here.
+And we did some of this from the perspective of a Chinese student who had come to the US and was no longer in China, but was now in the US, and feeling that it was like a bit of a hostile environment to be a Chinese student.
+And so we were playing around with that, actually with the perspectives taken, because it's a very awkward position to be in.
+And so just on statistical ones, we created this profile.
+And I said, look, instead of looking at this as a profile in general, why don't we turn it into a narrative? And so I flipped it from this sort of analytical thing to a first-person narrative.
+And the student was just like, that's my life.
+And-- HOWARD GARDNER: By narrative, can you give a sentence? ANTHEA ROBERTS: By narrative, so what I do with the stakeholders one is I usually identify the different stakeholders and their worldviews, and how they're likely to look at things.
+But that's kind of an analytical bird's eye view.
+And what I've noticed is often, people find it easier to understand if you come down from the analytical and the bird's eye, and you actually kind of embody it in a person.
+And so one of the things I do after I run one of these reports is I then say, can we flip it into a narrative so that you actually get a sort of fictional person representing each of the different approaches who tells it in a really impassioned way from their perspective? And then once we have that, I can actually put them into a debate with each other.
+And we can suggest topics for debate and see how they react to each other, including with emotion.
+And I do this partly because it often makes it easier for people to see through the eyes of others if you can actually construct these debates and have these dialogues, and talk to people.
+So that's what I mean by narrative.
+HOWARD GARDNER: See, that's the best example that I've heard about what I call meta, knowing that just because you get something when you put it in a certain way, if you can put it in a very different way and call it a very different kind of expertise, you can have at your fingertips stuff which would have been just inconceivable.
+But you need to know that meta move.
+And then, of course, you have to be able to evaluate it.
+It isn't that you simply get it.
+But if you realize, well, I don't know how to make sense of how Japan thought about that, then you can say, well, this is what I don't understand.
+ANTHEA ROBERTS: Right.
+And so we also do work on this actually with some governments in non-English speaking non-western backgrounds.
+And so it's fascinating to work with them on this.
+You see some models are more biased.
+Some are much better with language.
+Some represent different cultures differently.
+So I think all of this is actually a critical part of what we need to do in the next generation.
+And I think a lot of it people aren't even realizing.
+So one of the first ones we did with this was that we just took GPT, which is definitely Western based.
+And we asked, assume you're a policy maker.
+Are you in favor of universal basic income? And we asked the same model 100 times in Arabic, in French, in Mandarin.
+And we went across all these different languages.
+And we saw this incredible difference, asking 100 times in the different languages, as to what the answer was.
+It was something like 64% of the time, people were in favor when it was asked in Arabic, down to 18% in Hindi.
+And that was one of my early signs that even when dealing with the same model, you are not necessarily having the same experience that somebody else is.
+And so what we've started doing now is not just prompting from different languages, but also prompting from different personas, where we will construct personas.
+And we'll say, I'm this person.
+I'm asking the question.
+And then construct a different another persona.
+I'm this person, and ask the same question.
+These are all the things that we need to do to even understand whether we're inhabiting the same world or not.
+And we can't usually do that work in the way that we've had traditional media.
+And so the ability to suddenly explore different perspectives, different languages, different profiles, it is extraordinary.
+But Howard's right.
+You need to have the meta move to know to do this.
+And that's part of what we're going to need to be teaching in the next generation.
+And frankly, I think it's partly what we're going to need to be learning from our students, because here, often, the teachers are not the best teachers.
+And if we could listen to our students more, and keep in mind, the reason I got here was because of a younger colleague who made Robo Anthea.
+If I had not seen that experience, I wouldn't have jumped into this.
+Often the youth are much better at knowing not just how to use it uncritically, but how to use it critically.
+MARTIN WEST: Let me ask one more from the audience.
+And then selfishly, I'll ask one last one of my own.
+Can Dragonfly programs be used for mental health practices to incorporate various modalities of therapy to create a more integrative treatment plan? ANTHEA ROBERTS: It's been fascinating watching what people use this for.
+So I had originally created these frameworks to analyze any complex problem.
+But I predominantly used them about intelligence analysis and policy making.
+And I remember I would go into some of the intelligence agencies and say, you can apply this framework to the US-China situation, but you can also apply it to your marriage or to dating.
+And people would be like, you're weird.
+But what we've actually seen when we've taken this out is people apply it to everything.
+And so the very first time we took it out was to actually our National Science sort of accelerator program.
+And we just left it out for anyone to ask any question.
+And the first question that somebody asked was like, should I stay in a secretly unhappy marriage? I was like, OK.
+And it did the risk reward and resilience.
+And it did the perspective taking from the two partners and from the children, and all of that sort of stuff.
+We've seen people apply it to whether they should get a prenuptial agreement.
+I've seen people apply it to whether or not we should have diagnoses of ASD or ADHD.
+I've been stunned to see how people have taken this framework that I originally thought people were having trouble applying, and now see people applying it to so many different things, including in this space.
+But one of the things I would say is that many of these techniques are trying to look through the eyes of others and to negotiate.
+I pick up some of these techniques, not just from how countries negotiate with each other, but also from marriage counseling.
+And so I've definitely had friends use this to think through, what is my ex-husband thinking? And how can come to an agreement on these things? Which makes me think, absolutely, this is something that you're going to see.
+Because a lot of it is about experientially playing out how a different actor's viewing things, how might we come to an overlap in our areas.
+So I think we're absolutely going to see these approaches used for people's therapeutic approaches for their relationships.
+But you need to be able to do it with a critical eye in how you're doing it.
+You don't just want to reinforce all your biases back to you, which is why you need a critical friend.
+HOWARD GARDNER: And let me just put a sentence here.
+This is why I do make a distinction between the discipline synthesizing and creating minds on the one hand, and the respectful and ethical on the other.
+Certainly, all information that you can get on any of these issues you should get.
+But at the end, the buck stops in away it doesn't stop for these other things.
+MARTIN WEST: One last question.
+I said it was selfish, both because I'll ask it, but also because I want to get your advice for HGSE.
+We've been talking about how we've been trying to respond as an institution to the AI revolution.
+We had to clarify acceptable use.
+We had to help students understand how it can be a help and a hindrance to their learning, had to support faculty and assessments.
+At the end of the list that I've made is always rethink the goals of our programs, given the changes in the knowledge and skills that education professionals were trying to prepare are going to experience.
+I never get to that last one because it's really hard.
+So can you either answer it for me or tell me how you would think about that as an education administrator, if you were in our shoes? ANTHEA ROBERTS: Yeah.
+So from what I observe, you cannot understand these systems, what they can do, what their problems are, by reading The Atlantic, The New York Times, The Observer.
+You can only really understand it by firsthand experiences and, actually, I think, through play.
+And one of the things that we really noticed when we train people on this is many, many older people feel really inhibited.
+And they want to, if they're applying it to work, they want a clear return on investment immediately.
+And it is not the way to do it.
+One of the reasons I think students often do better is they're not trying to do a particular job.
+They're often trying to explore and see, can it do this? And it's more play based.
+And so what we've actually started doing when we train adults is to take it out of the work environment and get them to think up like a really ridiculous situation, and do it in a playful way, so the risk, reward and resilience analysis.
+The last time I did this, the particular play-based one that the adults chose to do was the risk, reward and resilience of having an alien Border Collie.
+And we went through and did a really in-depth analysis of this.
+And so it's really made me think, how can we bring it into a curriculum and create a safe space for both the teachers and also the students to, in a play-based way, experience it, learn from it, learn from their peers, and work out how to stretch it? So I think that would be one thing I would do.
+The other thing I'm really interested in at the moment is creating what I think of as liquid textbooks.
+So all of the different concepts that I'm teaching in my class here at the moment at Harvard Law School, I've actually now created lenses for, tutoring lenses into Dragonfly Thinking.
+And we'll give the students access to that so that when they have questions, they can also interact and test their ideas with that.
+Because I think what we're going to do is stop going from the really solid books that just are there and you can read them, but they're just static, to these interactive modalities.
+So I would say play-based approaches, I would say liquid textbooks.
+And I would also say kind of trying to learn from the best of where these can be used to see how we can stretch people to do things that they weren't able to do before.
+MARTIN WEST: Thank you so much.
+Folks, please join me in thanking them. [APPLAUSE]

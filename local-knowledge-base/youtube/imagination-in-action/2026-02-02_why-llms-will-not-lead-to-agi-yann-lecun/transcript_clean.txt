@@ -1,0 +1,203 @@
+My first question is where are we on the path to AGI? We are on the path to human level intelligence or to super intelligence.
+I famously don't like the phrase AGI.
+And it's not because I don't think we're going to get machines that are smarter than humans.
+It's because I don't think human intelligence is general.
+So calling human level AI AGI is a misnomer.
+Uh unfortunately that ship has sailed but yeah we're going to get machines that would be smarter than humans at some point.
+It's not going to happen next year.
+It's not going to happen in two years because we need a few conceptual breakthroughs for that and those are things I've been working on and I'm still working on.
+So what do most leaders misunderstand about today's AI capabilities and why does that misunderstanding matter for policy regulation and uh capital allocation decisions being made right now? Okay, we're not going to get to human intelligence, human level intelligence or super intelligence by scanning ups or by even refining the paradigm.
+There is a need for a change of paradigm.
+Uh, and I've been seeing this, you know, for a number of years now.
+And I think we see >> we're starting to see the limits of the LLM paradigm.
+A lot of people this year have been talking about agentic systems and basing agentic systems on LLMs is a recipe for disaster because how can a system possibly plan a sequence of actions if it can't predict the consequences of its actions.
+Right? So if you want intelligent behavior, you need a system to be able to anticipate and what's going to happen in the world and and also predict the consequences of its actions.
+If you can do this and it can plan a sequence of actions to arrive at a particular objective and that's what's missing.
+That's the concept of world models.
+You don't have that in LMS.
+You're not going to get intelligent behavior without that.
+You're not going to get efficient learning without that.
+You're not going to get zero shot uh you know task solving.
+So the first time you ask a 10-year-old to solve a simple task, they will do it without necessarily being trained, you know, the first 10 hours that a 17year-old drives a car, within 10 hours the 17-year-old can drive the car.
+Uh we had millions of hours of training data to train autonomous autonomous cars and we still don't have level five autonomous driving.
+So it tells you the the basic architecture is not is not there.
+Okay.
+Embedded assumptions about intelligence.
+Much of the global AI debate seems to rest on implicit assumptions about how intelligence actually works.
+You've long argued that intelligence is not primarily about language, but about understanding the physical and social world.
+What is missing in today's dominant AI models? And what kinds of architectures or learning paradigms are actually required to move closer to real intelligence? If there is one idea about intelligence, human or machine, that you wish every world leader at Davos truly understood, what would it be? Okay, the real world is way more complicated than the world of language.
+Okay, this is paradoxical because as humans, we think language is sort of the epitome of human intelligence.
+But it turns out predicting the next word in the text is not that complicated.
+And you can accumulate a lot of knowledge in an LED which is why they need to be so big and why you need to train them on so much data. >> But real intelligence comes from an an understanding of the real world.
+Unfortunately the real world is messy.
+Sensory data is high dimensional continuous noisy and generative architectures do not work with this kind of data.
+So the type of architecture that we use for LLM generative AI does not apply to the real world.
+The next revolutionary AI which is coming fast is going to be AI systems that understand the real world.
+Systems that understand high continuous noisy data like video, like sensor data. systems that can build predictive models of how the their environment and is is going to evolve and what their effect on the environment is.
+Systems that can plan, they can reason at the core level, systems that are controllable and safe so that you give them a task and they accomplish it.
+Okay.
+So, we're going to we're going to see as another AI revolution.
+We've seen the deep learning revolution, the L&M revolution.
+Now it's going to be the physical AI revolution if you want. >> All right.
+My next question is about your time at Meta.
+You spent 12 years leading AI research at Meta during a period of extraordinary acceleration.
+What do you see as the most important breakthrough that enabled AI's rapid progress over the last decade? And looking ahead, what critical scientific or research breakthroughs still need to happen for AI to live up to its long-term promise rather than plateau or go into an AI winter? Well, there's been an astonishing number of uh innovations that or or inventions that have kind of propelled the field forward, but I'll tell you the biggest factor in progress was not any particular contribution.
+We could site of course a bunch of them like transformers and stuff like that, but but it's not any particular contribution.
+It's the fact that AI research was open, right? people would do a piece of research, write a paper, post it on archive, eventually submit it to conference or a journal or something, uh, open source their code.
+And that made the field progress extremely fast because the more people can contribute to something, the faster progress takes place.
+And what to my you know despair what's been happening the last uh few years is that increasingly more industry research labs have been climbing up open you can close AI anthropic was never open in fact very closed Google became slightly open and now more closed fair was very open but now there is kind of a change of mist parity at meta which you know may change how this how it operates and I think it's disastrous because it's going to slow down progress particularly in the west particularly in the US and simultaneously the more open research labs industry research lab are in China the best open source models at the moment come from China they're really good and so everybody is in in the research community is using Chinese models uh okay my colleagues are my former colleagues at Meta working on kind of a new version of the successor to Lana if you want but uh which which may turn out to be good uh is it going to be open not entirely clear so I think that's a huge mistake we're slowing down progress because because of that okay your new venture advanced machine intelligence this is a perfect transition to your next chapter uh you've recently launched this company advanced machine intelligence um uh publicly it's reporting you suggest AMI is focusing on building a fundamentally new generation of AI systems based on world models.
+Systems that learn from video, physical interaction and spatial data rather than language alone.
+Can you share more about the problem AMI is trying to solve that today's leading systems cannot and realistically how long do you think it'll take to develop the architectures uh required for robust world models? >> Right.
+So advanced machine intelligence we actually pronounce it ABI.
+Okay, that means friends of French.
+This is actually the the name of the the research project that uh I I was kind of driving at at Meta.
+I was actually an individual contributor at fair.
+I was the manager of nobody.
+People worked on that project because they wanted to to work on it and wanted to work with me, not because I was their boss, which is the best situation in a research environment.
+So, u not top down, not top down. bottom up.
+That's the way research should should uh should take place.
+A lot of people don't understand this, but that's really the way it should it should work.
+So, uh we we've had this project for quite a long time at uh at fair uh advanced machine intelligence, which is the name we gave to this idea of building an AI system that can learn from sensory data, from video, learn world models, state of the world at time t action that the system imagine taking.
+Can you predict the state of the world at time t plus one that will result from this action if you have such a world model? You can plan a sequence of actions to accomplish a task.
+Okay, this is the blueprint.
+I wrote a big vision paper 60 pages.
+You can read just the beginning. you get an idea of it or you can listen to a talk I've I've given on this um which I I I put online in 2022 where I explained where AI research should go in my opinion and then we've been sort of building it since then and making a lot of progress.
+So we have systems now that we can train completely self-supervised on unlabeled videos and those systems understand video represent it really well can predict missing parts in a video and they also have acquired a certain sense of common sense.
+If you show them a video where something impossible happens they tell you this is impossible. like you throw a ball in the air and the the ball stops or it disappears, prediction error goes to the roof because the system says like no this is completely incompatible with what what I've observed during my training.
+So um so we have the elements of that um and it's based on a non-generative architecture called Japa joint evading predictive architecture that makes predictions in a representation space and there's a trick it's complicated to train a system that is not generative to basically tell it to extract as much information as possible about the input and represent as much of the input as possible but also predict in that face.
+It's crucial.
+I'm not going to go into why, but I think it's a really crucial aspect and it's complete departure from what, you know, most of the industry certainly is is working on.
+Um, so that's the plan for for AM you know uh develop this architecture.
+We already have prototypes that work, but we want to generalize the methodology so that it applies to any modality, any data, any sensor data.
+So then we can build from data phenomen phenomenological models of complex systems that perhaps we control optimally be it industrial process of any kind, manufacturing process, chemical plant, a turbo jet engine, a whole airplane perhaps you know chemical reactions you know a cell a living cell.
+So everything in the world is complicated because it's an emerging collective phenomenon of really complex systems and we can only build phenological models of those things. >> Yes sir. >> This is idea of digital twin that I'm sure you have heard of.
+Right.
+So people sort of trying to kind of accurately model a physical system so you can simulate it.
+The problem is that if you simulate a system too accurately you can't predict anything.
+I could make I could explain everything that takes place in this room at the moment right now in terms of quantum field theory or something like that, right? But that would be completely impractical.
+It would explain everything that takes place in this in this room, including all of our thought process and everything, right? We can simulate everyone's brain.
+But of course, that's completely impractical.
+The way we can understand what's taking place right now in this room is by is through psychology, maybe a little bit of science, you know, things like that. economics maybe even uh but not at the level of quantum field theory or particle physics or atomic physics or molecules or proteins or organels or cells or organisms.
+Right? This is much higher level.
+So the idea that you have to develop a an abstract representation of a phenomenon to allow you to make these predictions is absolutely crucial and generative models don't do that.
+Open versus closed AI.
+You've been one of the strongest advocates for open research and open models.
+Even as AI power becomes increasingly concentrated among a smaller number of companies and governments, what risk do you see if Frontier AI becomes primarily closed, proprietary, and geopolitically siloed? Is openness ultimately a competitive advantage or a public good that must be actively protected? And where, if anywhere, should openness stop? I think AI is fast becoming a platform and historically platforms have always become open source.
+Um this reminds me of the debates people were having in the 90s about internet right the the infrastructure of the internet was you know distributed open but you had to buy a server from Sun Micros or HP and then run a propri proprietary operating system on it with proprietary web servers and etc.
+All of this was completely wiped out.
+The entire internet runs on Linux and the entire software stack of the internet is open source from you know low-level protocols to operating systems to web servers to applications on top of it.
+If it's not open source, it will just not be adopted.
+I think is a similar phenomenon that is bound to occur for AI and I think should be promoted particularly for by uh countries that are neither China nor the US because we want AI systems to particularly L&M if we kind of stick with the current paradigm we want them to become the repository of all human knowledge and we're not going to be no private company as big as it can uh can do this by itself.
+You need access to multilingual data to cultural data that is local.
+You need contributions from governments from you know local people to fine-tune the system and you're not going to get that with uh with proprietary systems.
+So what I've been advocating for a few years is the idea of uh a consortium where various regions in the world will contribute to training a global open-source N&M that could constitute the repository of all human knowledge and this is absolutely crucial because the biggest risk of AI people are talking about you know AI taking over the world and killing us all and we had a debate on this two years ago.
+That's BS if you pardon my French.
+Uh the most important risk of AI is that in the near future where our entire digital diet will be mediated by AI systems if those AI systems come from a handful of proprietary uh companies on the west coast of the US or China, we're in big trouble for the health of democracy, cultural diversity, linguistic diversity, value systems.
+So we need a highly diverse population of AI assistance for the same reason we need diversity in the press and that can only happen with open source.
+Yeah.
+Next version.
+Safety control and AI risks. >> Yeah.
+All right.
+If you want to Yeah.
+Yeah.
+Here I I'll do you one of these.
+Yeah.
+Okay.
+You you heard it here.
+All right.
+You you've pushed back on apocalyptic AI narratives arguing that they can distract from the more immediate concerns for leaders in this room.
+What are the real AI risks in the next 5 to 10 years that deserve serious attention? Which of these do you see as most pressing and which are overrated? Concentration of power among the companies or governments, human misuse of AI systems, economic displacement in terms of jobs or other systematic risks we're underestimating.
+Yeah, I think capture and uh you know centralized control of AI is the biggest danger because it will mediate all of our information diet as I just said. uh and so you don't want that and I think people around the world would just refuse that and so we need to build an open infrastructure that would give an alternative and that has to be you know high quality uh you know top performing AI AI systems LLM at first maybe other types of AI systems going forward so the other risks um right you had uh you know human misuse yeah that's a problem But, you know, it's like everything in the world.
+It could be misused.
+And, you know, there's there's going to be sort of countermeasures for this.
+I'm not like overly worried about it.
+Some people some of my friends are, but you know, I think it's just yet another risk.
+Not not a particularly existential one.
+Um, economic displacement.
+So, I'm not an economist.
+I'm actually having dinner with two very prominent economists tonight, and I'm just going to parrot them.
+This is Philip Aong, Nobel Prize winner and Eric Benson from Stanford.
+Um, and there's a lot of people in the economics.
+What they're predicting is that AI over time is going to improve productivity by something like 6% per year.
+Okay, this is not going to be like a hot takeoff or anything like that. 6% per year is actually big.
+It's nothing to sneeze at.
+Um, but it's not yet measurable, but it that's that's what they're predicting. um it's not going to create major unemployment like mass unemployment and the reason is because the this the what limits the speed at which the technology disseminates in the economy is how fast people can learn to use it.
+So it's sort of a built-in regulatory mechanism Eric.
+Okay, you're kind of stupid.
+Am I saying something stupid here? >> No, you're okay.
+I'm I'm just paring you.
+You got 10 minutes.
+Is alignment the right frame? Many policy makers are focused on AI alignment, but alignment to whose values uh and enforcement by whom? Is alignment ultimately a technical challenge or a political and institutional one? And are we asking too too much of engineers to solve what fundamentally um be governance questions? Okay, so the polymer alignment is a very interesting one because a lot of people think of it in terms of LLM like how do I align my LLM to you know not produce ridiculously insulting uh answers or or or you know things that are you know tasteless and it's the wrong way to think about it you know because AI architectures are going to change a lot.
+They're going to be different.
+The type of blueprint that I I described earlier, which I call objectived driven AI, are systems that are given an objective and they can the only thing they can do is fulfill this objective and you can make that subject to guard rails which are which have to be satisfied at at inference time.
+Okay, so this is very different from the way we coersse or train LLMs [clears throat] to behave properly.
+We can never be sure that an LLM would behave properly because the the data that we train it on is a very small subset of all the pumps that that people can can fit it.
+So we can never guarantee the the safety or the the behavior of an LLM.
+So if you try to project if you imagine that future AI systems that have humanlike intelligence will be LLMs, which of course is not going to happen, you say, "Oh my god, that's going to be dangerous." It's the wrong approach.
+So, is it me? I have a lightning round at the very end.
+I want to get to that.
+AI laborer and human agency.
+A AI is already reshaping work, but not always in the ways people expect.
+Where do you see AI augmenting human intelligence rather than replacing it? And um where do you think society is underestimating the transitional costs, the transition costs? Are we asking the wrong questions about job loss in your opinion? And what is what is your advice to all the young pe young people educators and workforce leaders in our audience about how best to prepare for an AI rich future? Okay.
+So I'm going to answer the second the second question first.
+I think clearly technology progress is accelerating and what that means is that you know everyone who is studying right now is going to have to change job because technology evolves so quickly.
+So what what students need to learn are fundamentals. things that have a long shelf life will not be uh you know out of fashion in five years or 10 years. very fundamental thing I tell students if you you know if you if you study if you have the choice between taking a course in I don't know mobile app programming or quantum mechanics take quantum mechanics even if you're a computer scientist because the methods that you will learn doing this will allow you to learn to learn and also you'll have basic techniques you can reuse in all kinds of different uh contexts like how would you know in advance that all the underlying mathematics of machine learning basically comes from statistical physics right which is why there are so many physicists who do AI these days so learn fundamentals um learn to learn and then be ready to change expertise to change job so that was the second you question and I forgot the first one >> yeah you know for time we're going to move on so my last question is going to be what does 2035 look like um what what is uh the success and failure of of I have what would you say it looks like in 2035? But before I do that, I have uh five lightning questions I want you to just answer real quick.
+What is the most overrated idea in AI right now? >> What's the most underrated research direction models? One book or thinker outside AI that most shaped how you think about intelligence.
+Okay, Frank Deval unfortunately died recently.
+He wrote a book.
+Are we intelligent enough to understand how intelligent animals are? We think of intelligence as related to language.
+It's not.
+Animals are really intelligent and that's the kind of intelligence that we currently cannot reproduce with Rasheeds.
+Read that book.
+He's busy.
+Okay.
+Which leaders scientific corporate like David Rubenstein um he's right over there. uh or political do you think will most shape AI's trajectory over the next decade? >> I'm not sure how to answer this.
+Okay, here is an answer.
+It will be on.
+Okay.
+All right.
+All right.
+What do you think is most missing in how Davos covers AI? And I don't mean I mean everything in Davos.
+I mean, given how intense Davos is already, like if you add something, you know, we're all going to die during the week or something, like, you know, it's fine.
+Okay.
+All right.
+So, last question.
+Who's who's enjoyed Yan so far? Who Who's glad he didn't retire to an island after he he left the last job and that he's on on the case? >> All right.
+All right.
+You should have talked to my wife.
+Yeah.
+Yeah.
+Okay.
+All right.
+Last question.
+The long view.
+You have a rare depth of perspective on how AI evolves over decades.
+If we look ahead 10 to 15 years to roughly 2035, how may might our economies, institutions, and even forums like Davos look meaningfully different from today because of AI? What would success look like and what would failure look like? So success would look would involve AI systems that understand the physical world but also perhaps reach something like humanlike intelligence and of course in certain domains is going to be more intelligent than humans because we know computers can do a lot of things better than humans.
+So that would be success.
+I imagine that will occur with some non-negligible likelihood within the next 10 years.
+It's not going to happen next year.
+It's not going to take two years.
+Unlike some of my more optimistic colleagues, there's still a lot of work to do.
+It's not going to be an event like it's so a lot of people are in their mind that you know there's gonna be one secret to AGI whatever they call it and the next day computers are going to take over the world.
+This is ridiculous.
+It never happens this way.
+There's going to be a bunch of conceptual breakthroughs which are going to be in obscure research papers that nobody is going to pay attention to until five years later when someone demonstrates how powerful they are.
+Okay, that's what happened with deep learning to some extent.
+That's what happened with transformers uh and also with LLN.
+So we're going to we're going to see this.
+So, you know, read the papers that the scientific community pays attention to or or does not yet pay attention to because they're going to cause a revolution over the next 5 years.
+And so, what is AI going to to look like, you know, what is it going to look look like 5 10 years from now? We'll have those assistants work, you know, assisting us at all times. perhaps in our smart glasses at least that's the vision at meta or other wearable devices those systems are going to be assisting us a amplifying our intelligence um perhaps allowing us to make more rational decisions and intelligence is the commodity that is the most required in the world right so the purpose of increasing the total amount of intelligence on the planet I think is A very good one.
+That's intrinsically good.
+That's going to be under our control.
+Our relationship with super intelligence systems is going to be the same relationship as a business, academic or uh political leader with their staff.
+Politicians certainly are surrounded by staff of people who are smarter than them, right? Certainly true for professors too actually.
+Right.
+Our purpose is to yeah make our students smarter than us.
+And in business it's the same thing too.
+In research certainly um you know the best that can happen to you is work with uh with people who are smarter than you.
+So in the last minute let me ask you this five years ago and on this stage we had Mera Wilche um hold up a book that was written by Chat GPT2 and I think it was one of the few times chat GPT2 was even mentioned in Davos that that year.
+Five years ago.
+A lot of pe a lot of things that people were talking about in AI, they predicted what's happening now was 90 years away.
+The last 5 years has moved really fast.
+Maybe not for you.
+What are the next five years going to look like? Is it going to feel even faster? And how can we all prepare um to thrive as a species and a society over this great change? So it looks very different depending on whether you are you know in the trenches trying to kind of make uh science and technology progress whether it's conceptual breakthroughs that you realize not right away that they really are breakthroughs until you kind of start to make them work and and things like that. uh but from the outside from the public what they see are discontinuous change right so the public saw chad GPT which was you know GPT3 whatever as a discontinuous change it wasn't the technology was developed over years before that a lot of labs had similar systems internally it's just that it became visible uh at that time before that uh the brand the DARPA grand challenge right uh that opened the eyes of the public to the possibility of self-driving cars Ladies and gentlemen, Yan Lun.

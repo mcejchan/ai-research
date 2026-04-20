@@ -1,0 +1,670 @@
+In this video, I'll show you how I use OpenClaw in my business to not only make me more productive, but also everyone on my team.
+Now, perhaps the most important decision you'll make when running OpenClaw is where will the Open Claw even run? And there are two main options, right? People are spending thousands of dollars on multiple Mac minis.
+Some people are buying Mac Studios for 20K plus, which I think is absolutely crazy when you can get a VPS, your own virtual private server for a couple of bucks that takes a couple of minutes to configure and you can access it from any location and you can deploy multiple of these VPSs across your business.
+So, personally, all of my Open Claws are running on VPSs and this is also what I'm going to show you in this video.
+Now, the issue with OpenClaw is that most of the VPS options out there, they don't really help you with the setup.
+So, if you're a complete beginner, it can be intimidating.
+Fortunately, Hostinger released their one-click openclaw deployment, which makes this the easiest way to run OpenClaw.
+You know what? Let me just show you.
+So, when you get to the Hostinger landing page, by the way, I'm going to link this below.
+Click on deploy.
+This will redirect you to the Hostinger card here.
+Select the time period.
+I recommend going for 24 months because you get an insane discount.
+Then, scroll down.
+Make sure you see OpenClow right here.
+Oh, and if you want to save even more money here, click on have a coupon code and type in the code David and click apply for another 10% off.
+Here you can select if you want to use Nexus AI for API credits.
+I'm actually going to uncheck that because we will be using Enthropic.
+And then make sure to select a server location that's close to you.
+I'm going to go with Lithuania.
+Perfect.
+So then click on continue.
+And the next step is to register a Hostinger account.
+Now we can use Google or GitHub for super quick login.
+Now after you pay, this is what you're going to see.
+And it's going to redirect you to your Hostinger panel.
+Now, as you can see, there is no terminal in this OpenClaw configuration.
+This really is the simplest and the fastest way to set up OpenClaw.
+Now, first thing we need to do here is copy our open claw gateway token.
+All right.
+So, once you copied your gateway token, we need to decide what we're going to use as our model.
+Enforopic, OpenAI, Gemini or XAI.
+Now, this is a pretty easy choice since literally yesterday Enforopic released Clot Sonet 4.6.
+And this model is not only extremely powerful, it's also very fast.
+And by the way, it is the state-of-the-art on the computer use benchmark, which means that if we want our open claw to be using the browser, this literally is the best AI model in the world for that.
+Plus, it's a lot faster than Opus 4.6 and also a lot cheaper, making it the ideal model for OpenClaw, and this is what I use in my OpenClaw as well.
+So, in order to get the Enthropic API key, you can see that Hostinger gives us the URL right here.
+So, just copy that, paste it into a new browser tab, and here we have to login with the account we use in cloth or clot code.
+Great.
+So, after you log in to your Enthropic console, all you need to do is click on get API key and then in the top right, click on create key, select the workspace.
+I'm going to go with vectal.
+And then give your key a name.
+I'm going to name it subscribe.
+If you're watching this and if you want to see more videos on OpenClaw, please subscribe.
+It takes two seconds and it helps out a lot.
+And then click add.
+Boom.
+Copy key.
+Now again, do not share your API keys with anybody.
+I'm going to revoke this key before uploading this video.
+Let's go back to Hostinger panel and paste it into enthropic API key and then click deploy.
+And that's it.
+Literally couldn't be simpler.
+We didn't touch the terminal at all.
+We didn't have to do any crazy configuration.
+Hostinger just made this so damn easy.
+So again, if you don't have a VPS and you want to get one, click the link below and follow this Hostinger setup because it really is the easiest way to set up OpenClaw right now.
+Now, Hostinger has made it so simple that literally all you have to do is click on this button.
+This will take you to the login page and the only thing is pasting in your GM token.
+Now, it's as easy as going back to your hostinger panel, clicking copy, and then pasting it in here.
+Boom.
+Click login.
+And just like that, we are inside of OpenClaw.
+Oh, let's send a message like, "Hey, who are you? Let's see if we can get a successful response." Amazing.
+So, this is the onboarding.
+It's actually in plain English.
+It talks to you and it kind of onboards itself, right? So, hey, I just came online.
+I'm brand new.
+No name, no memories, no personality yet.
+Just a blank slate running on a Hostinger VPS waiting to figure out who I am.
+So, who are you? By the way, this is a built-in prompt into the bootstrap.md file.
+So on the left, click on agents, click on main, and then files.
+You can see all of the files right here.
+And this is the bootstrap.md, which has the instructions for how to bootstrap, right? You just woke up, time to figure out, you're hosting a VPS, running it docker container, all the information that it needs to know about itself and how it should kind of onboard itself.
+So I'm just going to respond to these three questions.
+What should I call you, David? Question number two, what should you call me? I'm going to name it OC1.
+Because if you're building a company in the future, it'll be mix of humans and AI agents and it will be a lot more than just one.
+I want something that very clearly screams like, "Hey, this is AI agent." Question number three, what vibe works for you? Casual, sharp, warm, chaotic, practical, yet energetic.
+All right, I think that's good.
+Send.
+Now, as you can see, it's asking me, how do you want to reach me? WhatsApp, Telegram signal.
+It can connect to all of these, but we're going to be using Slack because that's what companies use.
+Now one thing I want to ask it which AI model are you using currently check your config answer in short.
+So the beauty of open claw is that it can update itself and it can restart itself.
+It can improve itself.
+So I want to see whether we're actually using okay so it's using opus 4.6 which is the biggest model from enthropic right you can see that it's beat sonet but it's also a lot more expensive and slower.
+I'm going to say update yourself to use cloth sonet 4 5 as the default model.
+Then restart gateway.
+Awesome.
+So it updated to cloet 4.6.
+So we're using the latest solid model which is not only faster than Opus, it's also cheaper and nearly as powerful.
+Like look at these benchmarks on most of these.
+It's nearly identical and that's why I'm using it as the main model inside my open claw.
+Now one more thing I want to do is I want to give it an open router API key.
+So just type in open router into Google.
+Then go to top right and create an account.
+Once you do, go to settings and then on the left click on API keys and click on create API key.
+I'm going to name it subscribe again and give it like a limit of $20 or something.
+We will use this just for the web search, right? So again do not share your API keys with anybody.
+I'm going to revoke mine before uploading.
+I'm going to say here is open router API key.
+Store it securely somewhere on the VPS.
+Then save the location in memory.mmd.
+This is another essential macro file you should know.
+So you know that this is the place to save future secrets and then do a test API call to open router with this model.
+And I'm going to give it the perplexity pro perplexity sonar pro search.
+So not sonar not sonar pro the sonar pro search.
+I think this is the best agentic quick search tool.
+They also have the deep research right.
+So if you go deep research, they have the deep research, but this one takes like one or two minutes every time.
+This one takes a couple seconds and it's really really good.
+So this is what I use as my main web search tool inside of OpenClaw.
+I'm going to give it this.
+Actually, I'm going to say with the prompt, find how to swap the default open claw web search tool perplexity soner pro search via open router and output concise tlddr of the results of that API call in here.
+Now, your problem doesn't have to be this detailed.
+You can just speak to it in plain English and we'll figure it out.
+But I know exactly what I want and I would highly recommend you copy the same.
+I've been using OpenClaw basically every single day for the last month and I've taught hundreds of people how to use it and I'm showing you this is the most powerful setup especially if you want to deploy it into a business so that it starts saving your entire team's time because a lot of people set up Open Claw and they don't make it powerful right it's cool to play around with the default setup but until you give it these API keys these tools these skills these integrations it's not as useful as it could be so I'm showing you how to actually make it super useful and super powerful okay So TLDDR of the API call to perplexity Sonar Pro.
+Yes, apply this change.
+So again, I'm going to ask Open Claw to improve itself so that it's using the best search model from Perplexity as the default web search.
+I think uh the built-in one is Brave API, which is solid.
+It's not bad, but I think the one from Perplexity is stronger.
+Yeah, open instead of Brave.
+Again, Cylinder Pro.
+Yeah, it this is the issue.
+You have to pay attention when you're mentioning specifics because now it wanted to use sonar pro but I want sonar pro search.
+Use this specific model for web search and not sonar pro.
+Apply this restart again.
+Now browse the web and tell me about why US planes are flying to middle east and mass.
+So this is a recent development but I just want to see whether we can start getting API calls here for the model Sonar Pro search.
+Okay, there it is.
+Here we have an answer.
+Let's reload the logs in open router.
+There we go.
+Soner pro search instead of open claw cost us 1 cent and we get amazing detailed web search.
+So we just upgraded openclaw to use the best sonnet model from entropic and the best search model from perplexity.
+And we're just getting started guys.
+This video is going to go deep.
+If you want to set up your open claw in a way that gets you ahead of 99% of people, make sure to watch until the end.
+And by the way, a pro tip, typing / new starts a new session.
+This is one of the essential commands inside of OpenClaw you should remember.
+The next thing I'm going to explain is heartbeat.md, which runs every 30 minutes by default.
+And this is what makes open claw proactive.
+So check your config for the heartbeat.
+Tell me how often it runs and look into the heartbeat.md file to see if anything is in there or not.
+And we're going to give you a really good prompt to put in there that is um useful always and that's going to make sure that open claw self updates to the latest update because a lot of people are scared about security and you know prompt injections and vulnerabilities.
+Well, guess what? One of the best ways to protect yourself in any software is to have the latest update which has patches on a lot of these security issues.
+So let's see.
+Here's the situation.
+Harvard frequency no hard is configured.
+Okay.
+So I'm going to say browse the web and learn how to configure the heartbeat inside of open claw and then set it up and then I'm going to give you the prompt and this is this now update heartbeat.md to have this prompt inside prompt xml tags just to separate it check for official openlow updates if there is a new one that supports sonet 4.6 okay this one I did general this is for I did for this update by the way so yesterday when I saw sonet 4.6 being released.
+I wanted my open claw to update it, but the update wasn't out yet.
+Now, usually it released within a couple hours, you know, like 8 10 hours, but you know, I went to sleep and I wanted to be I wanted my open claw to update itself as soon as set 4.6 was available.
+So, that's where I wrote this into my heartbe, which I configured to run every 10 minutes, not every 30 minutes.
+And this made me realize I can just do it in general.
+So instead of saying for the model and if there's a new official open claw update update yourself I'll say and send me a concise TLDDR of what's new on slack and restart giveaway.
+Now update harbd to have this problem inside.
+Boom.
+Okay sent.
+Let's see what happening here.
+Okay.
+So it said it wasn't configured.
+So I told it use web search and again this is the benefit of setting this up properly in the right order.
+Not we started by setting up solid 4.6 which I would say is the most powerful fast model in the world, right? Opus 4.6 is more powerful, but it's a lot slower and a lot more expensive.
+Sonet 4.6 hits the sweet spot for me.
+So that's the first step we did, configured Sonet 4.6.
+Next, we added Sonar Pro search, which is the most powerful agentic web search tool.
+And now building everything else is so much easier because I can just say like, okay, check the heartbeat.
+And there's like no heartbeat is configured.
+No worries.
+Just browse the web and figure it out.
+And of course it browses the web with the with the perplexity pro search tool gets the latest data on how to figure it out implements it itself restarts the gateway and boom heartbeat is configured.
+I say make it run every 15 minutes instead.
+By default it's every 30 minutes but you can just check it every 15 minutes.
+And I would give you another pro tip.
+Choose a cheaper model for the heartbeat.
+Something like Gemini free flash which is very fast and you can see like disgustingly cheap.
+So or like you can use like Miniax.
+Miniax is very powerful.
+Not this one.
+Miniax M2.5.
+There it is.
+You can see this is super powerful.
+It's not as fast as the Gemini.
+It's a big model.
+It's like one trillion, I think.
+But this is a great model to use for the heartbeat because you don't need Sonet or Opus, right? So I say change the AI model for all heartbeats to be and then you put open router/ minimax.
+This is a pro tip.
+Again, if you're using open router, make sure to add it in front so that openclaw knows what is the provider.
+And boom, there it is.
+Done.
+All heartbeat runs will run minimax M2.5.
+All right, so now let's get into the fun part.
+In a previous video, I explained a vision of what a futuristic company looks like, right? But let's be honest, most people are not going to take the time to set this up.
+It's not that straightforward.
+However, this is a lot more straightforward setup, right? You have the founder, the CEO, or it could be the technical person, could be you, right? Inside of a bigger company, someone who sets up Open Claw first and then gets everybody on board.
+But I want to make this even more accessible because I've been spending a lot of time thinking about how businesses will be using these AI agents whether it's agent zero whether it's open claw whether it's cloth code and how to get started you know how to reduce the friction for people and make it easy to get started and I think this is the architecture having a single open claw as I'm showing you in this video a central one and then each person on the team can access this open claw now what's important is not the agent itself but all the things the agent has access to the goals of the business, the spreadsheets, the Google Docs, the current roadblocks, the financial data, anything that would be useful in the business that people might need to do their work, this agent has access to, right? And there's two levels.
+One, people can just speak in plain English.
+This is literally tokens.
+This is literally prompts.
+Talk to the agent and he can get anything you need.
+So, let's say you join a new company.
+This would be super OP for getting up to speed, right? Or maybe you need to work for somebody from a different department.
+Well, guess what? You could get that data.
+And again, there's going to be in the bigger companies, there's going to be concerns how to set permissions and all that stuff.
+And all of this is still going to be figured out and I'm going to mention that in the coming videos as I figure that out.
+But I'm talking about small companies, mediumsized companies where you can put like the leadership team, people with the same permissions and again you can separate that by Slack channel which again we're going to set up in this video how to set up openclaw on Slack.
+But I want to show you the main idea.
+The first thing is that people can get information super quickly and it reduces confusion, right? So let's say when John is working on some spreadsheet and then Tommy is on the same team but he was on a workation you know work vacation whatever he needs the same data instead of uh you know asking Tommy which instead of asking John and maybe John even gives him an answer but he doesn't give him everything he can just talk to agent and get a quick tlddr right so this is very powerful but the level two is that the agent can actually do a lot of these tasks the simpler task like daily tracking or weekly reports or updating calendar and stuff this agent can do.
+And as the models get better, as we've seen right now, Sonet 4.6 is a big improvement over Sonet 4.5 at the same price, the models are quickly getting better and better.
+What that means is that more of these tasks in more of these like repetitive admin tasks inside of a business will be done by OpenClaw.
+And then the skill set is how well these people can actually verbalize their taste, their decision-m, their judgment.
+This is going to be the most valuable skill in the next year, two years.
+How well can you verbalize yourself? How good are you at writing, at speaking, at how good is is your vocabulary? How well can you turn the ideas into your head into clear markdown files that power this beast, this AI agent, right? And it's all about markdown files.
+This is my living files theory.
+I posted a article on that on Twitter.
+Here it is.
+If you want to read that, link to my Twitter will be below the video.
+I'm not going to go into it again, but basically the idea is that anything that isn't accessible by an AI agent is a dead file. it's just sitting on your computer or sitting on a Google Drive and nothing is happening with that file.
+It's a dead file.
+However, when you give these AI agents onto a VPS where there is open claw deployed like we're doing right now, we can set up a heartbeat that runs every 10 minutes and the AI agent can do work while you sleep.
+It can do work while people are out of office.
+It can browse the web every 15 minutes for news in your industry.
+It can spy on your competitors.
+Whatever you want it to do, it can do it with highly relevant data inside of your company.
+And I'm going to take it a step further. and I'm going to show you what that actually looks like.
+So, this might be the most valuable part of the video.
+So, if you haven't subscribed yet, now is the time to subscribe.
+But I'm going to break down how I structure the folder inside of my VPS.
+So, remember in the open claw, we can actually see the agent on the left agent and we can see the files.
+Now, this is not the, you know, cleanest UI.
+So, what I prefer doing is just like show me all files and folders on this VPS only related to open claw because there's obviously some other config.
+This is a whole server, right? So we don't want to see that.
+I just want to see the inside workspace of open claw and show you how limited the default one, right? So main canvas blah blah blah.
+We have the workspace.
+So that's the workspace folder.
+So you can see this is very empty, right? We have a memory and these are the default files that come built in.
+Guess what? I'm going to show you how to actually structure your folder.
+So this is how I have my business folder and you can see that u it is pretty extensive and I did that because I realized that companies that don't make all of their knowledge into living files will simp simply get out competed by companies who have structures like this one or this one or this one doesn't really matter like if you're aggressively adopting agents like open claw agent zero clot code into your company you're probably going to be fine but most people simply do not translate the knowledge from their head into markdown files and that's the thing I want to stress about it guys you really to be spending one to three hours every single day turning your knowledge into markdown files that live privately inside of your VPS such as the one we have here from Hostinger.
+So you can give them to AI agents to work in your company because you cannot have an AI agent do the work for you if it doesn't have the same taste, same information, same context, same decision-m, same judgment, right? And you might say, "Okay, David, AI models aren't quite there yet at the same level, but they're going to be there very soon." So you need to start preparing these mark files.
+Even right now, I'm telling you guys, I'm feeling incredible productivity gains from these AI agents.
+If you're okay, just pay attention and do this.
+Please implement this in your company.
+You're going to thank me in six months and 12 months, guaranteed.
+So, business folder, right? All of this is just business folder.
+This is I'm not even diving into personal topics.
+There's I have many amazing use cases there.
+But listen, let's focus on business.
+So, boom, agent zero, right? This is one of my main projects.
+I have basic info about it, what it does, strategy for it, stuff like that.
+Then I have assets, any business assets, logos, images, branding, stuff like that.
+Then I have books, books relevant to business, you know, free hormony books, you can include other books obviously.
+Coding, anything related to coding, dev nodes, could be scripts, could be Python files, could be SOPs, anything related to coding.
+Then coms, communications, how to, you know, internal team communication logs, what someone sent me on some, you know, other platform, stuff that is important for the agent to know.
+Then copyrightiting folder, anything about writing copy frameworks, CTAs, VSSL checklists, stuff like that.
+Then emails, anything about email marketing, headlines, subjects, strategy, sequences, software, all that stuff, right? Then we have high ticket.
+This is our accelerator.
+Anything about that and uh what the offer is, how we're trying to improve the product, onboarding people, stuff like that.
+Then journal.
+This is important.
+Having a journal for your business.
+So you can just daily say like what are the problems, what are the developments, what are you thinking about, what are you considering stuff like that essential absolutely essential journal folder then metrics anything about you know CTR landing page visits traffic YouTube views conversion rate close rate churn any essential metric depends on your business another folder that every business should have new society obviously that's our community and actually speaking of which new society received a massive update recently and it's all about setting up open claw for businesses.
+So if you have a business and if you want to set up open claw as across your company, make sure to join the new society.
+Inside you get copypaste openclaw setup so that within 60 minutes you have it running in your company.
+You also get unlimited technical support available 24/7.
+You get pre-built openclaw agents for marketing, development, sales, content, operations.
+You get a weekly support call with a human so you never get stuck.
+We also give you all of the open claw integrations you need.
+Slack, Gmail, GitHub, Google calendar, notion, WhatsApp.
+You even get my personal open claw config with the markdown files, promps, and sub aents.
+And since this is for businesses, we give you a security harness to protect yourself and your company against prompt rejection and data leaks.
+Most people don't set up their open claw securely.
+And this offer is made for businesses that actually want to implement open claw, not just for one person, but for every single team member using it.
+So if you're ready to move fast and if you want to deploy open claw into your business, make sure to check out new society.
+I'm going to link that below as well.
+Anyways, back to the folder structure.
+Then we have one for paid ads, personal explanatory, anything related to paid advertising, hooks, scripting, YouTube retargeting.
+Then playbooks.
+This one is super important, right? In your business, you have many different playbooks, also known as SOPs, standard operating procedures, how to onboard new people, how to train people, how to do, you know, YouTube thumbnails, how to do video editing, how to do this and that.
+Again, depends on your business, on your industry.
+But if you have a team and if you want to scale your team, you need to be creating everything into playbooks, right? And basically half of these is like playbooks.
+The other half is just supportive content because if you want the AI agent to do something, it is a series.
+It's like a workflow, right? It's a series of task.
+And that's essentially what a playbook is.
+You just need to be translating those from being into your head or into the heads of other people in your team into markdown files.
+And that's the main thing I want to tell you guys.
+Living file theory is real.
+If your knowledge and if your files are sitting on a computer on a Google Drive or whatever, they're dead files.
+They need to be accessible to an AI agent to be living files and ideally markdown because markdown is very effective.
+You know, all the AI agents understand markdown and it's very efficient in terms of tokens much better than HTML or like other unstructured data.
+Then reminders, this is basically anything that like I realized that I want to be reminded of right miss mistakes, hard one business lessons and these are txt files could be marked down as well.
+Doesn't matter.
+It's just very very simple short files.
+So I made them txt also bit to differentiate for everything else.
+In terms of the file types, most of it's markdown but I'm also incorporating CSV files for tracking and JSON files for like temporary like if you put like a structure output from your task manager and you want open cloud to analyze all of them.
+JSON would be good.
+So you know markdown files, txt files, JSON, CSV, then you have like Python files and you know shell script files.
+Those are going to be the most common ones with majority being markdown of course.
+Then research and this is super huge right? Anytime you do some research say like research how Paul Graham recommends new startup talk to customers and save it into a new folder in our workspace business as a new MD file.
+And this is how you need to operate guys.
+Instead of doing these one-off searches, right? A lot of you are using CH GPT perplexity cloth and you just do a search and it's dead, right? Even if you use CHBD Pro with extended thinking, if you're paying 200 bucks a month like I am, it doesn't matter if you do nothing with the result, it's still a dead file.
+Even if it's sitting inside of your AI, right? To make it a living file, you need to save it as a markdown file to your VPS, which is exactly what I told it to do right here. you know, it will do the research with, we go back to our logs, the Sylon Pro search, it will do a web search and then instead of just giving me the answer, it will save it as a markdown file so that we can reference it at any time.
+If we're talking about the same thing in the future, you don't have to remember like, oh, a couple months ago I did this DB research for a topic.
+It's on your VPS and Open Claw since it has a built-in vector embeddings, it will find it and it will reference it, right? This is essential.
+Any research you do, save it as a markdown file.
+Do not just have it laying around chair GPT or perplexity or cloth or Gemini.
+Save it as markdown files.
+Use open claw for this and then tell it to give you a consistr.
+But that's not the main thing.
+The main thing is that it is saved in our workspace inside of the business/ress research folder for us to reference and for the AI agents to reference in the future.
+That's the main thing.
+Even if you the human never use it ever again, you have to realize the future of companies is not humans only.
+And I know this is hard to understand like especially for those of you who have like 20 30 years of business experience but the future is here.
+It is going to be a mix of humans and AI agents and even as you a human like why David why would I save this as a markdown file it could be useful context for agents right don't save useless obviously only if it's relevant to your business operations to how you do stuff relevant to the software you use then save it and but save everything you can always delete it later but you never know when the AI agent needs it as piece of context right so this is absolutely essential folder slash research then sales you know obviously sales function of the team then team this is names of people and anything related to your team, you know, personalities, roles, stuff like that.
+Then Twitter, obviously, uh I'm I do Twitter, so how to do Twitter marketing, my writing style.
+In YouTube, you can see that I have a lot about YouTube formats, specific videos, stuff like that.
+Then these are like super important files, right? These are on the root level.
+You can see that like these are in folders, but when something is on the root level, you know that this matters a lot.
+So we have business priority list.
+This is the main tasks in the business, the main problems and priorities.
+And we have business ideas.
+This is just any ideas related to business that I want might want to execute later.
+Then I have deep work options.
+This is re relevant to different things that would take me at least 60 minutes to like multiple hours to execute on.
+And this is different than your task list.
+Your task list might have all kinds of stuff inside of it.
+You know, it's like do the laundry, take out the trash, blah blah blah.
+Plenty of tasks.
+And even in the business, like message this person, you know, follow up with that email.
+These are like one, two, five, 10 minute tasks.
+These are not deep work.
+This is deep work strategic.
+It has like eight different options.
+And again, I'm not going to show you everything for my business.
+I'm showing you the outline so you can copy this and implement it into your own company.
+But for me, it has like seven to nine options of actual needle moving tasks.
+The stuff that is super important but never urgent, right? Most of us spend our days in busy work doing the small stuff, doing like, you know, someone messages you some email blah blah blah.
+This is urgent stuff.
+This file has no urgent stuff.
+This is only the highly important tasks that will actually move the business forward that require deep work.
+Then mistakes.md any mistakes that you make in your business goes into this file.
+Names and lingos is also important.
+You know, stuff like NS means new society for my business.
+Anything that's like language shortcuts, any terminology that the AI models might not use goes into this file.
+And then I have the free highest leverage moves.
+Uh this is probably similar to business priority list.
+So I can probably merge that.
+But again, I'm optimizing this every single day.
+And this is what my business folder folder looks like right now.
+And again, feel free to take this, copy it, adopt it into your business, and start making your open claw full of living files because most people have a completely dead open claw with no custom markdown files.
+And that's why they don't see the advantage of it.
+But hopefully, even if you were blind, it's the saying, I was blind, but now I see.
+Hopefully now you can see the potential of living files theory.
+And by the way, this is the beauty of the VPS deployment.
+Having everything on a VPS, the one we have with Hostinger, allows us to share all our business knowledge, all the knowhow, all the playbook with everyone on the team.
+If you had a Mac Mini or a Mac Studio, it's in a physical location.
+The issue with that is travel, other people cannot maintain it, all that stuff.
+I think VPS is a much better option and this would be the decentralized method.
+It's like I see this network of VI agents as like a mini Bitcoin blockchain where it's the power of it is is decentralized.
+I want to have a VPS on every single continent.
+Antarctica might be a bit difficult but listen if we can get a VPS behind the ice wall that would be amazing because then your company will be much more secure and even if one agent drops out or you know one data center gets bombed or something your company can remain running and you will still have access to intelligence because again people need to look at their future.
+If one open claw is not available, you'll probably be fine.
+You know, if open claw got deleted tomorrow, well, I I probably would lose momentum.
+People who have already set it up would definitely lose momentum.
+But we would survive.
+You know, our businesses would survive.
+But that not might not be the case in 6 months, in 12 months where AI models are much better.
+The AI agents are much better.
+The tools and connectivity and APIs and protocols and standards are much better.
+Again, in the future, agents will be essential.
+And having a distributed network of VPS servers across the globe is definitely the right move.
+Now let's go back to open claw and let's set up slack.
+So I'm going to do slash new again and we'll say browse the web and tell me how to set up slack with my open claw.
+I want to create a dedicated slack channel just for openclaw and then give my whole team access.
+First we need to set up the slack app though inside of my open claw gateway. browse the web and give me step by step.
+Be concise.
+Again, you can just have OpenClaw tell you what to do.
+Right now, I already did this with my main Open Claw, so I know how to do the setup, but I want to show you guys how to solve problems.
+If you get stuck on anything, just tell OpenClaw to give you instructions.
+Have the AI prompt you.
+And again, it knows what to do.
+And if it doesn't, it can browse the web.
+So, here we have the response on what to do.
+First, we need to create the Slack app.
+So, it gives me the link api.slack.com/apps.
+Let's go there.
+So, here you can see your different Slack apps.
+What we need to do is click on create new app.
+Now, obviously, you need to make sure logged into your Slack um account.
+And then we're going to do from scratch.
+App from scratch.
+Name it OC1.
+Let's name it that app name.
+And let's pick the workspace.
+Boom.
+Vectoral.
+Create app.
+Okay.
+Next, we need to enable socket mode.
+So, left sidebar, socket mode.
+Enable socket mode.
+Left sidebar.
+Where is socket mode? Oh, right here.
+Socket mode on the left. and enable socket mode.
+Token name generate app level token to enable socket mode.
+OC1 token I guess and the scopes.
+What scopes we should give it? Um it has connections, right? That's it.
+I have a lot of connections, right? All right.
+So, I'm going to create this off screen because I don't want to leak the token.
+Click on generate and then this is going to give you a token.
+So, click on copy.
+And again, do not share this with anybody otherwise people can uh probably access your Slack.
+And then what we need to do is go back to openclaw and he wants the token.
+So I'm going to say here is the app level token and the next thing we need is a b token.
+So left sidebar o of permissions and b token and we need a bunch of scopes.
+Okay.
+So where is of permissions here? Where's the token? Okay.
+B token scopes here.
+We need to add right chat right channels read.
+Okay.
+Let's do it one at a time.
+And obviously this depends on how much power you want to give to your open claw.
+But um if something isn't working you you can always update it later and add more scopes.
+Just copy these over one by one and add them in here.
+If you're wondering what I'm doing, I just did a replexity search on even more scopes to make this open claw as powerful as possible.
+So I'm just adding all the scopes that I might possibly need.
+But again if you care about security deeply be very selective with what scopes you give to your open claw.
+This is very important the files read and files write otherwise it will not be able to understand images and attach files.
+So this one is definitely important.
+Make sure to enable these scopes files read files right.
+All right once you do that scroll back to the top and click on install to vector or whatever your company is named.
+As you can see it will want to install the OC1 agent in here.
+So just click on allow.
+Now, since we changed the permission scopes, we need to reinstall the app.
+So, let's click that and let's allow again.
+All right.
+What else? Install to workspace.
+Subscribe to events.
+Left sidebar, event subscriptions.
+We need to toggle that on.
+So, left sidebar on the left.
+Click on event subscriptions.
+And we need to toggle this on.
+Subscribe to board events.
+And here we need to do app mention.
+There we go.
+What else? Message channels, message groups, message groups, message channels, message IM and PM MP.
+IM message.
+Okay.
+And then we need to save changes.
+Make sure to click that in the bottom right.
+Success.
+So this step level five configure open cloud gateway.
+It can do it itself.
+Actually, I didn't copy the I didn't copy the bot token.
+Execute the step above yourself.
+Then restart the gateway.
+Okay.
+Okay, so basically what I did is just I gave these two tokens um the app level token and the B token.
+I just gave it to open claw in the chat and I told it to do the step five here configure the gateway.
+I'm not going to configure that myself.
+I'm just going to tell it to configure itself.
+What we need to do is create a slack channel, right? So this is what we need to do and then the lock it down.
+So I'm going to copy this.
+We're going to tell it to do that and to lock it down.
+So I'm going to send this I'm going to send it that tell it to configure itself and then and then inside of Slack we need to do this, right? create the dedicated channel.
+So, let me pull up Slack.
+Okay.
+So, inside of Slack, I need to go to channels and click on plus.
+Create a new channel.
+I'm going to name it team open claw.
+I'm going to make it private because uh we care about security.
+So, then you can select which people can access this.
+But obviously, you can add your whole team or exclude some interns or whatever.
+Create.
+Okay.
+So, invite and we need to invite the bot slash invite your app name will be OC1 slash invite OC.
+Yeah. add apps to this channel.
+There we go.
+OC1, there he is.
+And is that it? Let's see if open claw lifts.
+Close this.
+We're not getting responses yet.
+Go back here.
+I get Okay, all list is ready.
+Config OC1 channel.
+The channel is Okay, the channel is actually team open claw.
+Okay, so we need to have it lock it down, right? This is good for security.
+So, I'm going to screenshot this again so that it's restricted just to this channel.
+So again, if you're setting this up for a lot of people complain about security open law, right? Like, oh, it's not secure, blah, blah, blah.
+If you if you don't if you're a dumbass, yeah, it's not secure.
+If you're a dumbass, if you know what you're doing and if you care about security and if you follow the suggestions, it's telling you it's not.
+Change the allow list to only this channel.
+So, it ignores this channel because it wasn't in the channel group policy allow list.
+So, it's going to change itself and hopefully restart itself and then it should start responding.
+Write down updated conflict.
+Invite the bot.
+All right.
+So, I'm going to tag it again.
+I'm going to say, "Who are you?" Let's see if it responds or not.
+Interesting.
+It's not responding.
+So, I'm going to take a screenshot of my entire desktop and let's debug this.
+Paste it in.
+Oh, wait.
+This is restarted.
+I think the gateway was restarting here.
+My bad.
+Let's reload.
+Oh, we got disconnected.
+Yeah, this is a security u precaution from Oinger.
+If you're connected for like too long, multiple hours, they disconnect you.
+So, just go back to your hostinger panel, copy the gateway token again, and log in.
+Okay, guys.
+So, actually the allow list was a waste of time.
+I'm going to show you.
+I'm going to save you some pain so you don't have to do this.
+I tried to do the allow list to the specific channel.
+Right over here, we have the channel team open claw, but it still wasn't responding.
+So, I told open claw to fix it.
+The issue is that uh Slack expects an object, not an array, and that crashed the VPS.
+So I have to do some changes.
+So just make sure you don't put this in a team where you don't tr trust the people, right? And if you follow the other steps, it will only be available in your team.
+This was honestly an overkill.
+And then for the group policy, it needs to be open and not allow list.
+So just skip this.
+It's causing a bunch of issues.
+But now I restarted the gateway.
+Let's see if we're good.
+Hey OC1, can you see? Can you respond? Oh, there we go.
+OC1 analyzing, organizing.
+That's the first time I've seen it.
+Is it going to respond in a thread or in here? Please respond here.
+OC1.
+Okay, it's it's active, but it's not responding.
+Check the logs.
+Do you see my Slack messages? All right, let's see.
+Slack stream failed to show up API missing recipient and team ID.
+Your messages land.
+I process them, but Slack replies missing recipient and team IDs. Usually means the channel config is missing a team ID.
+Uh, yes, check it, but do not make any changes yet.
+Just describe the issue to me.
+Okay, let's see the situation.
+Channel is empty.
+Browse the web and figure out the proper way to fix it.
+Then save that into business/ress research as a new markdown file.
+And then give me a super concise TLDDR in here.
+Do not make any changes yet.
+Do not attempt to do any fixes yet.
+All right.
+So I'm again going to use the web search capability to tell it to try fix itself.
+We can actually say yes. look up the team ID and apply the fix cuz um that seems to be the issue.
+I'm going to cue this message.
+Done.
+Here's what happened.
+Okay, so I'm going to try again.
+Can you see this tagging OC1? Check the logs again.
+I still don't see your responses in Slack.
+So the beauty of the architecture of OpenClaw is that it can see its logs, it internal logs.
+So it can debug what's happening, right? I already checked that before, but now I need to highlight that because this is really, really OP, the self-fixing ability.
+So again, even if it doesn't go well on the first try, it doesn't matter.
+Just describe the problem in playing English.
+Give it screenshots and have it fix itself.
+Still failing.
+Channel config didn't fix it.
+What's actually happening? Error.
+Stop stream.
+Two options.
+Fast fix.
+Okay.
+Disable streaming.
+Okay.
+We need to enable agents.
+Proper fix.
+Go to Slack app settings.
+Enable agents and AI apps at assistant right scope.
+All right, let's do that.
+Okay, let's do the fast fix.
+Change the config to disable streaming.
+This is a new in the latest update.
+That's why it's buggy.
+Literally, I think this came out like two or three days ago.
+The open claw update um introduced streaming of messages into Slack.
+So, you can see as the tokens are being generated, it's not needed at all.
+It's a nice thing to happen because you can you can see the first token faster, but it's causing issues now.
+We don't need it to be honest.
+Okay, let's see.
+Will it respond? Oh, there we go.
+One reply.
+Hello.
+What's on your mind? There we go.
+Who are you? I'm OC1, your AI agent running on the VPS.
+There we go.
+What AI model is powering you? Cloudsonet 4.6.
+Nice.
+So, the next step I want to show you is that other people can interact with this.
+So, I'm going to message someone on my team and let's see if it responds to other people as well because that is the remaining step.
+The entire team being able to use OpenClaw inside of a single Slack channel.
+And again, this is only the beginning, guys.
+We're going to see these architectures that are way more advanced than this.
+This is just a V1.
+This is the simplest one.
+There's no excuse.
+Everyone should deploy this.
+This one was more advanced.
+This one is even more advanced, but it's coming and it's only getting easier.
+As you can see, it took a couple of tries, but hey, we debugged this with open claw.
+So, just don't give up on the first try.
+Describe the issue.
+Tell it to use web search.
+And this is why it's so essential to set up a super powerful model like cloudet 4.6 and a very powerful web search tool like the perplexity sonar pro search because then you can debug any issue basically.
+All right, there we go.
+Mash is messaging.
+Let's see if OC1 started responding to him as well.
+And by the way, you can also disable these um threats if you want.
+If you don't want it to respond in threats, you can just tell it not to do that.
+I think for team channels, it's good, but for your personal open claw, it can be annoying if it creates a threat for every single message.
+I want to see this the moment of truth because again, we can build up this knowledge base, right? My personal open claw looks like this.
+Just one folder, the business folder in there.
+And uh every business is going to have these living files full of VPS full of folders that are full of markdown files that contain important business knowledge, SOPs, strategies, vision, problems, descriptions, playbooks, and everybody on the team can use them and have a super powerful AI model with full knowledge of the business help them solve anything and progress way faster.
+Really, I I'm certain companies that implement this will move five to 10 times faster and it's only a matter of time.
+We're going to integrate Agent Zero into this channel as well.
+It's coming soon.
+Agent Zero plugins and uh we're going to make a Slack plugin for sure, WhatsApp plugin, Discord plugin, Telegram plugin.
+We're going to have multiple agents working in your company alongside humans.
+And this is literally one or two months away, guys.
+This is not years into the future.
+It's here.
+Pay attention and set this up.
+Do not delay this.
+This is one of the most important things you can do for productivity.
+I don't care if it takes you hour, two hours to set up.
+Every single day, you'll get dividends from setting up these AI agents.
+There we go.
+Create a MD file named YouTube Secrets and inside I don't know to make sure to subscribe to David Andre to stay on the cutting edge of AI.
+Created YouTube Secrets MD with the note.
+By the way, a pro tip for naming, try to avoid spaces in names.
+So say rename it to YouTube/secs.mmd and then browse the web about the David Andre YouTube channel and add a super brief TLDDR into this MD file about the type of content David makes.
+Okay.
+And now I'm going to say do a new thread here.
+I'll say showcase all the files and folders inside of our workspace.
+There it is.
+YouTube secrets.mmd is here.
+We can see that there's the folders with the search.
+We can see that we have the pol web search saved.
+It's the memory with the daily log and the default files, the core config files.
+And done renamed it AI focus channel tutorials on building AI agents.
+Yeah, that is my channel.
+That's what it's about.
+And now we have a open claw deploy that multiple people on my team can use.
+So, you know, it took a few debugging, but it's here.
+And most of it was just chat chatting back and forth with OpenClaw telling it what the error is and telling it to fix itself.
+So anybody can do it.
+You don't have to be technical.
+You just need to block out one or two hours and be determined like I'm going to set this up.
+Hopefully you found this valuable.
+If you did, make sure to actually set this up for yourself.
+Go below the video, click on the Hostinger link, and set this up.
+I'm not kidding.
+This is by far the easiest way to set up OpenClaw.
+We didn't have to do any crazy terminal setup.
+No, no SSH, nothing like that.
+Hostinger just makes it super easy with their integration with Docker.
+And uh by the way, it's only getting easier like the login to Open Claw.
+They simplified that recently and they keep adding it.
+So there's a reason I'm running all of my agents on Hostinger VPS because it's the setup is super simple and it's one of the most affordable options out there.
+So again, go below the video, click the first link, set this up for yourself because if you want to get these productivity enhancements, you cannot just be a watcher.
+You have to be someone who actually takes action and implements this into your life or business.
+With that being said, thank you guys for watching and I wish you a wonderful, productive week.

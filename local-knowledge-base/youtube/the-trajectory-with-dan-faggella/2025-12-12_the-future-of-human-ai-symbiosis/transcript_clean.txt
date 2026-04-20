@@ -1,0 +1,593 @@
+We know in the next century that human numbers are not continuing to increase exponentially and that's a lucky thing.
+This new symbiosis with technology is going to look quite different from the industrial revolutions one which is all about just you know harnessing industrial energy and getting us out of a Malthusian state.
+We're already not in a Malthusian state anymore.
+Uh the overwhelming majority of humans uh today in not very long there are going to be many many more AIs than people.
+That's kind of just around the corner.
+So we're we're looking at you know if you think about all of you know people and AIS you know both as nodes in a graph with all kinds of relations between them the people are the rarer uh you know objects in the in that graph in the near future.
+I don't think a lot of people have really thought about that and its implications because we're still we're still imagining that you know one AI per person is kind of the limit in the same sense that people were imagining that one computer per person had to be the limit you know in 1980. >> [music] >> This is Dan Felli.
+You're tuned in to the trajectory and in this episode is our 14th of the worthy successor series.
+Our guest this week is Bla1 Aggera Yarcus who is a vice president, a Google fellow and also the CTO of technology and society at Google which is a pretty cool title for someone working in this field.
+Uh Blaze has a lot of very strong ideas around symbiosis and the future of intelligence.
+We talk sometimes of the blaze of life or the great process of life of which we are part.
+I don't know if I've ever heard it clicked together in terms of Lego pieces, in terms of where this bubbling up of life comes from and where it goes to quite as well as I did in this episode.
+And there's a lot to reflect on on Blaz's particular vision around where symbiosis takes us, including some areas of agreement and disagreement.
+But overall, um, there's hardly an episode I've had more fun recording.
+So, I hope you enjoy this one.
+Without further ado, I'll save my comments for the end of the episode.
+As usual, this is Bla1 Agetta Yarkcus here on the trajectory.
+Bla1, welcome to the trajectory. >> Thanks so much, Dan.
+It's really good to be here. >> Yeah, I I uh I have been looking forward to this conversation since our first little chat there and many people recommending that I dig into your work and I'm I'm glad that I did.
+We're going to open with the first big question.
+I think this is going to be kind of a water slide into the greater pool of Blaze related concepts uh that I think will be fun.
+The way I normally ask it is, you know, if you could look down as a transparent eyeball, you know, in a million years or however many years, and maybe there's no distinguishably human, you know, it's not like nobody's walking their dog, nobody's going fishing.
+Uh there's not that kind of life, but whatever you see is like um rich, complex, and and you would say, "Wow, this this feels like a win." Like this process that we were a part of, like it actually feels like it kind of won.
+Like this is good.
+What would have to be happening for you to say that? It's a great question and honestly if I were only able to see that end point if you like or that or that moment in time you know without anything in between then my only uh sort of indicator of you know is stuff going well is is it rich is it complex uh is it interesting is it varied um you know does it look like a thriving ecology uh you know the the the question of like uh how much continuity does that have with us with what we are today is a question that you could only answer by looking at all of the intermediate times too and u and seeing whether you know whether there was any tragedy along the way. >> Yeah.
+Um so I guess the complexity you used a good analogy here of sort of like does it look like a thriving ecology? Um I have a mental image of what that means and I think many people tuned in can think of the economy.
+They can think of uh the marsh land behind their house somewhere and they sort of have a notion of what ecology means in a kind of grander cosmic scale beyond you know the the the domain you and I inhabit.
+Um you know sparkle our minds a bit with what that could look like or or maybe you would hope it could bubble into. >> Yeah.
+Well you know in in a way maybe maybe I'll try and approach this from a from a slightly different perspective which is that of happiness. uh you know what when when people ask each other like you know what what is what is a good life you know what does that what does that mean what are the requirements um I think a lot of people you know who think about this agree that you basically need three things to be happy you need to have your um your physical kind of organic needs met you know you need to have enough food and you know shelter and stuff like this uh and you need to have uh connections with other people uh in other words you need to be important important to other people and other people need to be important to you.
+Um and you need to have some sense of ethicacy in what you do.
+Uh in other words, you know, uh not not feel like uh you know, you could you could disappear tomorrow.
+Actually, that one really applies to number two and three, right? That you know. >> Yeah.
+Yeah. >> If I disappear tomorrow, nothing would be any different.
+Is not a good feeling. >> Yeah. >> Um and and an ecology is really just a uh a complex network of entities for which those things are all true. uh and and I see it as a really deep concept that transcends economy because uh you know economy imagines that everything can be boiled down to a single number you know that that everything is reducible to a price >> uh and in a real ecology that's not true uh you know there are a lot of things that are not commensurate with each other you know if you uh don't have oxygen to breathe it's not like you know money is going to buy you that uh you know you you you know people have and entities of all kinds have a lot of needs uh and a lot of wants and a lot of things that they have to offer to other stuff.
+And a system that is thriving and is one in which you know everything is rich in stuff that is offered by other stuff and and is in turn generating wealth in this kind of very multi-dimensional sense uh you know for others as well. >> Yeah.
+So this is this is going to start us down I think the right path because when you said like okay you know you have physical needs met you have connections with others you have efficacy I started thinking like well I I don't know if every series of sea snail feeding off of event somewhere is like man you know unless I feel the sense of competence right some of these strike me as remarkably homminidish but I think what you're talking about is in a conceptual sense there is a relationship with the sea snail and a lot of other life and and there are relationships that make more sea snails uh you know of of a probably not a romantic kind, but uh you know they have needs too, I presume.
+I don't know what it's like to be a seiz now.
+Um but but yeah, I think what you're saying is these we feel in this sort of emotional sense because we've had all this cortex bubble up, but all the way down there's a level of this in all these interactions.
+Am I following you? >> 100%.
+I mean, of course, sea snails aren't aren't uh self-conscious in all the ways that we are.
+They're not able to introspect, you know, about about their their needs and their sense of efficacy and stuff.
+Of course not.
+But what is true is that sea snails are providing if you like ecosystem services for other uh you know for other kinds of life and vice versa. >> And and the reason that life holds together the reason that it persists and that it becomes more complex over time is because of all of those um networks of mutual aid. >> Yeah. >> And and so you know so that our feelings about this kind of stuff don't come out of nowhere.
+They they come out of the fact that that you know that those high order models are are models of of reality of how stuff actually is. >> Yeah.
+I I think I think you know um there is a there's something to be said of well you know these grooves and circuits in the mind that make a sunset appear beautiful and whatnot.
+Some of that is like okay for your ancestors when there was running water and there was birds chirping and things were green it was like you're probably not going to die tomorrow. like it was like there was a sense of that and so like so that so there's an arbitrariness but there's also like a you have drives and kind of meta things that are important.
+You have curiosity.
+Humans want to climb mountains, invent things, whatever.
+This is a this is a shooting forth of the same impeti that are spinning forth everything else except you feel it.
+The sea snail doesn't feel it.
+It doesn't doesn't write a damn poem about it, but you can.
+And so I I think to your point >> or at least or at least you have you have a model of yourself feeling it.
+I mean I I I think the Cale probably does feel those things but it doesn't reflect on those feelings that you like. >> There we go.
+No, actually it completely completely concur with your correction there.
+Let me ask how do you frame this process of which we are part I mean there was a time where the sea snail was probably as high as it goes.
+I mean that was like you know a couple billion years everything was one cell and then we started having some more complexity you know and then there was some pre-cambrian stuff and whatever.
+Um, and it's sort of bubbling up and there's this uh things are meeting needs, things are interacting with other things, things are bouncing off of other things.
+Somehow it's more complicated.
+And then I hear sometimes the argument, hey, we shouldn't presume that continues.
+You let something evolve off and it'll just get stupider.
+Everything's random.
+It's going in random directions.
+It doesn't feel as though that's been true.
+Now, I'm not saying there's an inevitability that all of nature's ficcundity leads to a jackpot.
+It's quite obvious it doesn't actually.
+It's quite obvious most of anious ficundity does the opposite.
+However, net net the network seems to be doing something here.
+How do you conceptualize this? You you're familiar with the Gaia literature.
+You think a lot about symbiosis.
+What should we understand about this process? >> Yeah, you're you're asking a really deep question and it really is is about evolution's arrow of time is one way of thinking about it.
+So uh if you go back to uh you know kind of classic neodyarwinian uh thinking about evolution in the mid 20th century the idea was that um everything is equally evolved.
+You know bacteria and humans you know all all life has been has been around for you know like it's been evolving for just as just as long as as as we have.
+There's no sense in which uh you know any life is more advanced than any other life. uh to the extent that we see things that are more advanced now, it's an it's kind of a an observer bias or you know or or the fact that that um you know that there's drift and maybe we're looking only at the tail of a distribution.
+I I don't buy that at all.
+Um and and the reason I don't buy it is because um that classic view of of uh Darwinian evolution misses uh something really important which is um symbioenesis. the idea that sometimes uh simple things come together to make more complex things and um and those complex things can't arise without the simple things having been there first.
+Uh so you know the the evolutionary biologists uh John Maynard Smith and yours wrote about this in uh in a a pretty famous nature paper in 1995.
+Uh they called it major evolutionary transitions.
+Um they listed I think eight of them in their original paper.
+They've since expanded their list to 12.
+Um I actually would take their hypothesis further.
+But even if we just look at their 12 or so to begin, those transitions are things like um individual humans becoming societies.
+Um bees uh and other social insects becoming social uh from solitary uh individual cells becoming multisellular organisms.
+Um archa and bacteria becoming becoming ukarotes.
+And what's what's cool about those about those transitions is that they result in something that is like discontinuous with what was there before and more complex than what was there before.
+Like the earlier things are still there, but what they've come together to make is a new kind of entity that is that is um richer.
+Uh and and um you know in that sense uh evolution absolutely has an arrow of time because you know again like the simpler things have to be there before the more complex thing comes.
+It's the same with inventions by the I mean when when uh the light bulb is invented it's if you like a symbioenesis between the ability to blow glass to make an electric current to draw a filament um to make a vacuum you know the moment the moment those precursors were there they were going to be combined you know in somebody's mind to make a light bulb and you know lo and behold they were combined in the minds of at least a dozen people who all invented a light bulb around the same time.
+There could have been no light bulb without those precursors.
+Um and this this view of of invention by the way is one that that W.
+Brian Arthur wrote a really nice book about uh you know back back in 2010 or so.
+But um but yeah so so this this this means that there's an arrow uh of evolution.
+You know things do get more complex and and they get more complex through cooperation. uh you know when when cooperation becomes close enough that that uh that that those things cooperating become uh you know really tightly interlin then you need to kind of zoom out and look at them as a as a joint entity as well as as individuals. >> Yeah, we're going to 100% hit this arrow of time that you're talking about.
+I've never heard that phrasiology here.
+I'm following you, but we're definitely going to go down that rabbit hole.
+There's a Stuart Kaufman sort of has a bunch of thinking about this stuff around like the the the degree of sort of unbounded complexity that comes from some things combining and then they change the whole ecology and then everything has to >> very closely related idea.
+Yeah.
+He calls them contient holes.
+Uh I agree with his his take on that. >> Yeah.
+Yeah.
+That this kind of some people say whole on where like everything is sort of a part but it's part of a whole but it's also you know unto itself.
+I mean, you know, you and I obviously are made of individual cells that presumably know not of the conversation you and I are having now.
+Um, and and you know, uh, so the the this arrow of time, it goes up, it goes up, it goes up.
+It seems to be doing this.
+And your supposition here is that, um, things come together and it is often through cooperation.
+We'll explore that as well.
+Uh, that that form something more complex which allows for all kinds of other holes and parts to come into existence. it can combine in a whole bunch of new other ways and and and so on and so on.
+What is the tendency that drives this combination? But why does it h Some people would say okay well okay it happens every now and again sure but why is it why is the arrow of evolution in your words why is it doing this over and over and over again like what is what is the attractor here in your opinion >> well I mean initially uh it it is a random event uh you know something something random happens that brings two things together um but you know that may or may not stick when it sticks is when one of them provides something that the other really wants and vice versa.
+In other words, there's mutual benefit and that mutual benefit leads to greater collective thriving than the two would have on their own.
+Um you know and there are many ways for that to come about.
+Uh but well I mean let's take let's take mitochondria and archa when they came together to make to make ukarotes.
+So um you know mitochondria are bacteria and they're bacteria that are living you know inside our cells. um and archa were were also you know very very simple single cellular organisms um you know proarotes as well and somehow you know the mitochondrian ended up inside the the archon and the whole thing is now this is now supercharged it's supercharged because the mitochondrian is able to generate energy uh extremely efficiently inside the environment of the of the um of the archae there's a there's a it's kind of you know one of these things has found a new environment inside the other one that allows it to thrive in a way that is much, you know, in in a much more powerful way than it could on its own.
+There are still bacteria around that look very much like mitochondria.
+So, it's not like the solitaries are gone.
+But, you know, most of the bacteria of that shape are now living inside archa because that's an incredibly rich environment for them.
+And the benefit that they give to the archa is that now the archa has so much energy that uh that it can that it can reproduce enough uh DNA for instance to develop much greater complexity and that's why we've got multisellular life and all that kind of stuff.
+So it allowed many new niches to open up for um for those ukarots too.
+So, so the arrow is indicative of many, you know, uh things come into being partially through kind of dumb ficcundity and accident um maybe through some other impetuses.
+Um and then uh different things can sort of behoove one another in different ways.
+And when they do and then they form together, that might be something that's more net capable.
+And then that opens up new combination surfaces for new things and changes the environment and so on.
+And that >> when Yeah.
+Okay.
+So, >> or or take or take human take human societies, you know, like um we we uh we were I mean we've been around for a couple of hundred thousand years, right? So, so our sense of our history is so is just the most recent little tiny bit, you know, the the holene, right, of the time that human beings have been around.
+But for the huge majority of that time, as far as we know, we were living in huntergatherer type societies, um which, you know, where everybody did more or less the same tasks.
+There wasn't too much division of labor. there wasn't much hierarchy.
+There wasn't um you know and life was hard uh you know and and I I don't I mean it's it's difficult to get into you know arguments about whose life is better.
+I mean there there are definitely ways in which hunter gatherer life was was better than say you know the the life of a of a of a groundown factory worker in in the year 1800. >> I'm with you.
+Yeah.
+So, [laughter] you know, it's it's a complicated story, but but but the point is that once we figured out how to start to do division of labor and concentrate in cities, the things that we became capable of as humans just exploded.
+And uh you know, the kind of life of plenty that you and I have now and not just life of plenty, but a life of plenty such that we can survive in in environments that would have been completely inhospitable to our huntergatherer forebears.
+Um right, thanks to our division of labor and our technologies and so on. like it just it just opens the possibilities up for us as well as making these larger units uh larger social units that didn't exist before. >> Yeah.
+So, so I I like where you're headed for a bunch of reasons.
+What you're saying is, you know, there is a combination, coordination, cooperation, whatever words we want to use, is sort of the driver here.
+And but but I I often sincerely dislike the idea that like well things just love each other and come together.
+What you're saying is like look it's in the interest of A and B and when that happens things I I'm very much a believer that sort of like when you look out at nature at everything warm and fuzzy like almost like it seems ubiquitous that it has like a very functional purpose like like I believe that so I'm going to I'm going to do a tiny amount of philosophical concept putting on the table and then just see how you play with those Lego pieces.
+So Spinosa, who I probably reference too often, but is just in intimidatingly important and uh super smart.
+Uh Spinoza is this idea of of of the canatis uh kind of the core impetus to persist in all organisms, organizations, whatever.
+And that, you know, he he didn't know what what like an atom was or the details of a cell, of course.
+Um but but he so he doesn't really know what what part of the building block it comes up in.
+And and I don't know either.
+It might be in guanine itself is self-interested in some strange way that you and I can't understand.
+People say it starts with the gene, but it's like I don't know, man.
+Something had to close around a cell like like it seems like that impetus is actually deep.
+So something about the world like wants to persist and and it doesn't seem like granite does that, but it does seem like some stuff does.
+And it seems like we call it life.
+Anyway, around the time that Newton said, "Here's what dead matter does." Spinosa said here's what living matter does.
+He wrote the ethics.
+And people don't think about it like that, but I I I often do.
+He has this idea that potentia is the total set of powers that permit a thing not to die.
+The total set of powers, flight, sight, verbal communication, the ability to burrow in the dirt, uh the ability to have feathers, uh you know, um uh uh the development of culture where we can teach each other things.
+Um uh uh you know, tech technological innovations, you know, this nice microphone, you know, a shovel, whatever the case may be, all is potential.
+Anything that is a power that permits a thing to persist uh uh is is sort of potential.
+And his idea is that in order for the canatus to persist, it's not like okay just play defense.
+The world is too changing.
+You have to constantly if you want to persist nature at some really early stage decided expanding potential is the way the flame doesn't go out.
+The flame being non-dead stuff.
+And it seems as though the grand expanse of said potential over the last four billion years, three and a half, whatever it is here on Earth, seems to maybe in in your in your mind, these bump ups of potential over and over.
+These the the more the more stratospheric jumps rather than just iterative tinkerings have been through this mutually self-interested co coordination.
+Let me know if you would uh push back on some of the my interpretation of Spinos and ideas.
+If you want to build on parts of that because the audience has heard some of those ideas.
+You're you're making things click in ways that I'm like, "Oh, I think that's how that fits in my head." How do you think about it? >> Yeah, I I agree with everything you've said.
+Uh and I I do think Spinoza was really on to something with, you know, his his idea of of of konatus and and potentia. um you know so so I I tend to I tend to look at these things through a slightly different um uh more physical lens but uh but arrive in the same spot.
+So um the idea of dynamic stability is uh something that was introduced by uh origins of life chemists uh a couple of decades ago and um his idea is that uh you know thermodynamics tells us that things that are that are stable persist. you know, if something is unstable, it will it will it will not persist in the future.
+Uh the idea of dynamic stability is a kind of stability that involves a process.
+In other words, it's not just like granite, you know, that that is, you know, hard and therefore endures, but something that has some kind of a cycle or some kind of a loop that >> [laughter] >> um that is, you know, that that has its own kind of stability or amplification.
+This is where that old joke about DNA being the most stable molecule in the world comes from.
+You know, obviously as a as a thermodynamic molecule, it's very fragile and yet if it can make more copies of itself, then it's in some sense even more durable than granite, >> right? >> Because it will persist.
+It has more conus if you like. >> Yeah.
+Oh, it it's it certainly seems to.
+And >> yeah, >> when you think about that what you just said, this this cycle, I was kind of smiling because it's like, oh god, it always ends up being kind of poetic because we it's like we get to a level of abstraction where it's like, what is this thing like? And and I think what you're touching on seems to be kind of what it is, but it's sort of like where do those cycles start? Like from whence is it is there something in the quarks that sort of want to eventually move and do and cycle as we you know we all use our language whatever.
+Um where do you think it comes from? You said you have a physical angle.
+Let's unpack your physical angle here and really talk about the origin of this impetus. >> Sure.
+I mean so we don't we don't really understand of course what's happening you know on the ground floor of the universe you know we we don't you know there there limits to our our understanding of of of fundamental physics but um as far as we think uh there are field theories and maybe something below those field theories maybe it's simpial complexes or strings or who knows what but um but there are there are perturbations in those fields uh that persist through time uh and there are ones that Right.
+So if if you're a virtual particle that you know pops in and out you know then you don't persist.
+If you're an electron you do persist.
+Does that mean that an electron wants to persist? I think that would be that would be a stretch to say but there certainly is a selection process there in the sense that you know if you if you go a little way after the big bang you know there's some stuff that is still around and some stuff that isn't.
+And the stuff that is still around is of course the stuff that has persisted right.
+Uh so something like an an electron or or a quark is a perturbation that you know regenerates itself you know it kind of oscillates or something right it regenerates itself through time in some very very minimal way.
+It's not life yet um because it doesn't um uh it doesn't compute uh it doesn't have it doesn't have any [clears throat] uh decisions to make if you like you know it's it's its rules are are a little too uh too simple and they're not tour incomplete.
+I'm now relying on my own definition of life.
+But uh you know you can't get uh something out of an electron like heritable uh um reproduction for instance.
+You can't you know make a change to an electron has baby electrons that have that same property.
+But but it it does have persistence in a way that other kinds of perturbations in the quantum field don't.
+So there is a selection happening right from the beginning.
+Now electrons and protons get together.
+Uh you know is that a kind of symbioenesis in a way? Yeah. you know there are certain configurations of electrons and protons that that form a stable hydrogen atom and that hydrogen atom has a has a kind of persistence uh through time.
+So you know in that sense I think that this idea of of symbioenesis absolutely goes all the way back you know to to the pre-life times.
+Um the special thing that happens at the moment of the emergence of life is that you start to have a system that has instructions inside itself for how to make itself. and it can follow those instructions to make to heal or to uh or to reproduce or to grow.
+Uh and that's a really cool step because that means that if those instructions get modified in some way then all of the successor generations are changed in that way as well.
+So you get heritability.
+Um yeah there the there's a really cool idea um that uh that life is basically you know the emergence of life in the first place is is about an original symbioenesis between things that have cycles that that you know that already have those kinds of primitive you know molecule A catalyzes B which catalyzes C which catalyzes A you know and and [clears throat] so you already have that going but then when a few of these things come together in the right way you get the you know this this this indirect encoding where you have the instructions to build yourself and that's the moment when you get life. >> Yeah.
+Well, but it's fascinating to think that that the unraveling process starts before that.
+In other words, persistence is being filtered for and symbiogenesis in some level happens before that.
+The these are like physics is in some way.
+And of course, Spinosa's whole like uh you know uh you know, Spinosa's God and the everything sort of being uh this this sort of singular substance and whatnot.
+Um there's analogies there, too.
+But yeah, so that that that's that's fascinating.
+But but then of course you get to life and now a new what I would think of as magazines of possibility open up when you cross that threshold.
+But then of course like your your uh uh group of folks you mentioned to talk about these major evolutionary I think Maynard Smith there um these these ideas of you know there's these other leaps and presumably at those leaps entirely new things uh emerge that that completely inconceivable what this beckons is the fact that most of those unravelings haven't happened yet most potential so all the potential you and I observe bubbled up from Jack diddly presumably and and we should presume that 0.00 continuing 1% of all potential hath thus forth bubbled up and it beckons how grand the future waves could be because I would imagine that jump from hydrogen and these combination of of uh uh chemical reactions into you know a prozzoa of some kind.
+Um we may have a bunch of those latter steps still popping. who knows when and how they end.
+Um, >> how do you like to walk people through? Clearly, there's an elomerative kind of coordinative sort of and it's not all happyggo friendly.
+I mean, a lot of things kind of get chewed up in the process.
+You know, we had horses as part of our cycles for a while and we turned them into glue because we found other ways to fill that void.
+I I think there's sort of like it's it's based on the self-interest you talked about, not loveydvey, which is which is why I can respect the opinion that you said.
+Um, what do you like people to understand about where this goes? You've talked about the paradigm shifts.
+This physics perspective is mind-blowing.
+I've got to do a lot of journaling on that.
+How do you like to explain where this heads off? >> Well, I mean, I don't know where it heads off.
+Uh, I know that I know that the best way to predict in the near future is to think about how all of the things that we've got today can combine and recombine to make, you know, some of the obvious, you know, light bulb like stuff, right? That hasn't happened yet.
+So, you know, that's a good way to be a futurist in the near term. >> But, um, but the problem with long-term futurism is that you're now talking about combinations of combinations of combinations of stuff. >> Who knows, right? It it'll be it'll be complex.
+It'll be wonderful.
+Um, but, you know, things become very very hard to predict.
+Um, you know, you're you're right that uh that all of this uh can work in a way that is driven by selfish goals, if you like.
+And uh that's actually one of the one of the most exciting uh pieces of research that we're doing now in in in my research team, paradigms of intelligence.
+Um we're we're actually about to publish a a giant paper about this uh called u Mupi.
+Um, so this is this is a um, you know, it started off as a as a a project in multi-agent reinforcement learning where when you have a bunch of AI agents that um that you want to train to solve a a problem collectively, this is this is the multi- aent reinforcement learning problem.
+Traditionally that's been a very very difficult challenge.
+Um because basically you know when you do normal reinforcement learning with an agent in an environment it's like it's playing a video game and uh you know it can see what the score is and it's trying to maximize its score but um but now suddenly there are other agents playing the same video game like you you see them as you know uh as other characters right it's now it's now a multiplayer video you know whatever you call it like a you know it's a multiplayer video game. >> Yes.
+Yes. and uh and they're all learning which means that that you as an agent need to not only learn from what you have experienced so far but also um predict what the other a how the other agents will learn and will change their behaviors in response to your behaviors.
+That's what makes it really gnarly.
+So we've figured out a way to solve this uh this this challenge and um and in the process we've we've figured out an extension to classic game theory that uh that I think is is really important.
+So, in normal game theory, when you have uh a couple of players uh that are self-interested and you have this payoff matrix, uh you have Nash equilibria, which is to say, you know, winning winning combinations and they're pretty grim.
+Like Nash equilibrium in something like the prisoners dilemma where, you know, one of us can screw the other one, you know, like >> Nash equilibrium is not is not a nice solution.
+You know, it's basically defect.
+Um but what what our what our uh work shows is that in this world where you actually you know have other agents like you uh you know playing the same game uh if you are smart enough to be able to recognize that they are like you then this new set of equilibria uh come in uh which are a lot friendlier and and they involve uh defaulting to cooperation instead even though the even though the the goal is is is still purely uh you know about self-interest. >> Well, I think I think that that seems to be the story of civilization.
+I mean, you know, of course, we had World War I and two and all that stuff and, you know, but like writ large seems like we're in kind of more of a, you know, if I if if >> uh my tribe ran into another tribe, you know, 12,000 years ago, it' probably be a rough time to be honest.
+But um these days, you know, the little town of Western Massachusetts here is uh you know, not not a not a whole lot of, you know, theft and you know, uh defecting, I guess, as you would say.
+And so that's right.
+Um people >> exactly it's exactly that process. >> Yeah.
+People have talked about even the early game theory experiments where they they you know, tit fortat was invented or whatever, right? Those early iterations.
+I forget who ran all those.
+Um there was sort of a there was something in there about like okay an iterative ongoing game coordination is much more highly uh in in incentivized because if you know you're going to play again with this person or someone this person knows then you're more incentivized to and it seems like >> um humans had to really figure out how to get that done or humans had to bumble into each other enough times for enough of them to have the idea and maybe for enough IQ to bubble up to be like, wait, wait, in a week we're going to see these people at the watering hole again.
+Like, what are we what are we thinking here? Like, somebody had to there was presumably there were there was something >> there was something that wasn't walking upright yet that didn't know wasn't thinking about that in a week that was going to happen.
+And so, >> um, coordination seems to sort of make sense on some level >> in that regard. >> Exactly.
+And it's and it's favorable.
+And and and the interesting thing is that when you start to coordinate like that, once the coordination becomes becomes tight enough, now there are now now a new set of interests arise which is if you like the interests of the group. >> So it's like there's now a new score in that video game.
+You know, it's not it's not the old video game anymore. >> Yeah.
+Well, and that presumably keeps going on and on.
+So I I want I'm going to boil down a little bit simply to check the box because in the series we always cover it.
+And I do think it's actually really interesting to kind of compare where people think we're going to have an event in New York and we're going to put up all the ideas from, you know, Ed Bdon and uh Peter Singer and Bossh about like what are your worthy successor criteria and you've given me some hints.
+I'm going to start kind of like lining up things I think you're saying and just see if we can kind of polish and clarify.
+Um, one thing I want to ask about because we haven't gotten there quite yet is consciousness.
+A common answer and by the way, if you have a different answer, I'm delighted.
+Uh but but what I would love to know whatever your genuine answer is um a lot of people have brought up probably the biggest commonality is okay yeah yeah it'll be complicated maybe we can't foresee all of it but like gez if at least what we know to be consciousness is not a part at all of that picture it that feels probably like if I was looking down and I knew none of this was sentient in any remote way that something has been lost.
+Do you concur there? I I do but um but but there's something implicit in that in that framing that I disagree with. >> Please. >> So a lot of a lot of people believe that uh that consciousness is some ineffable, you know, either it's something we don't understand uh or it's some kind of ineffable janiqua that is independent of of of the functioning of of of a system, >> some spiritual thing or something, >> right? uh you know and therefore that that you could uh have a philosophical zombie for instance you know something that that you know behaves just like you or me but is dead inside and doesn't have any consciousness.
+Um and I actually think that's not the case.
+Uh and this is connected with this Mupai work that I just talked about as well.
+Basically in order to solve this multi- aent problem uh you need to actually inject yourself into the into the video game.
+You need to think about your own brain and your your own your own body and your own brain as being part of the world that you're modeling.
+Uh and that's how you you you recognize that you know the others are like you and I look at in your eyes and I'm like you know Dan is Dan is like me when he smiles or makes that puzzled face like I know what that feels like on the inside when I make a puzzled face or when I smile.
+So you know there are things that I know about your hidden state that I wouldn't otherwise if I didn't recognize that you and I are the same. >> Yeah.
+Yeah.
+And I think that that's that is literally what consciousness is.
+It's that model of yourself which is an inherent part of how you get to uh multi-agent uh coordination.
+Now I'm I'm not saying you know every that bacteria are conscious or something.
+Uh you know I don't think that they have the um cognitive capacity if you like to to build you know a self model of the sort that we do.
+Um but I also think that you know I I mean what I I wouldn't feel comfortable saying for instance that bees are definitely not conscious.
+Um you know they have tons of rich social behaviors and they may very well be at least at some basic level. >> I mean kealized things >> I mean you got to wonder right I mean you start kealizing you know you get a little you know but you start pulling the you know you boil a muscle.
+Yeah. tough to say, you know, but um you know, you you pull the legs off a cricket, like you're probably a sicko uh on some it's got two eyes, you know, it's it's fighting you, you know, it's like uh >> Yeah.
+And if you and if you look at if you look at say the behaviors of a Porsche spider of a jumping spider, which are little spiders like one centimeter long, you know, they they are um needing to like think about their prey and psych it out and you know, make fake signals for it and like keep track of what it knows and doesn't know.
+You know, all of that theory of mind to me, you know, is the stuff that consciousness is made out of. >> Yeah.
+Well, fortunately, most of the people that have been on this show don't have a spiritual explanation of it.
+I have had some folks say things like this.
+Well, if it was built with the architecture that I know, because I kind of know what would build general intelligence, then surely it would be conscious automatically.
+I've heard that a number of times.
+And I I I personally believe that any certainty around exactly how consciousness would arise is is pretty flatly disingenuous.
+And and I know people are proud of their ideas and they're in they're these are people with like 180 IQ.
+They're smarter than me, but like I don't agree with that.
+Um but but also, you know, some mo most folks I think suspect um some have said, you know, like Benio is like, I I I don't know, but we should probably figure it out.
+From what I gather from reading your work, you're kind of like, hey, we we should explore and figure this out. it likely is figure outable.
+In other words, there isn't something ineffable here.
+There is something to be figured out.
+I guess so what what I'm getting at is I I don't think the positing that if there was no sentience um uh it would have to be something ineffable.
+It strikes me that well I guess what you're getting at is tell me if I'm wrong if there was that grand super ecology as you would say thriving ecology in strata of nature and in means and modes and at scales that we can never have any conception of if that was all doing that genuinely in in a thriving way it it would sort of imply that at some point consciousness bubbled up.
+So you suspect that so if it demonstrate that and you look down you would say these things have an inner field of experience just like other things do.
+Am I following you? >> Yeah.
+I I think that I think that if you if you are able to um to plan for yourself in the future in a in a detailed way, you know, to imagine what it's like to be you uh you know, in the future, uh to you know, interact in a rich way with others who are complex the way you are and to think, you know, like what what's Dan really getting at here? What does he what does he, you know, want me to talk about? Right? This requires that I have a a theory of your mind and a theory of my own mind and a theory of of your theory of my theory of your theory of mind and so on and and for me that's what consciousness is.
+That's that's the functional role of consciousness. >> Just for the sake of devil's advocate, I I think I think it that's a a good jumping off point.
+And again to your point um you know we shouldn't think of this as as ineffable. you've kind of anchored to the outward science of consciousness are these things according to blaze it seems rather plausible I can imagine someone saying >> I may I may I may obviously be wrong right so there there may be something that we we learn about consciousness that that complicates or upends my picture so I'm very I'm very open to that possibility but um but what I what I what I feel I guess the most confident about is that uh you know I I would be very surprised if consciousness is some kind of weird epipenomenon that is unrelated to our behavior uh and to what we've evolved to do if that makes sense. >> So I see consciousness as a as a one of the many things that bubbles out of potential. >> It just it it is conjured force to behoove the thing that wants to persist.
+It doesn't it's almost it's a you know the appendix uh did something once right consciousness is certainly doing something now.
+Um so I'm with you there.
+I think I wonder if you know a submarine doesn't swim but it kind of gets the job done.
+If there's if there's a million ways to get the job done that don't involve consciousness or or similarly like you know we talk about okay well you know DNA man the most replicative molecule or whatever I could imagine the potential unraveling in substrates and mediums that have nothing to do with guanine at all like like where guanine has never even emerged like guanine has never been bumped into and yet uh s such things so so it strikes me that maybe complexity could be exerted through some other arbitrary means that that sort of and and and it would feel spooky.
+Would you Well, I guess like what I'll say is this.
+Your your theory seems very plausible.
+You're obviously, you know, open to learning and seeing where things go and kind of testing things. >> Would it be correct to presume that if for some tragic Well, maybe I I'm I'm pre-biasing here.
+Let me not be biasing.
+Uh you look down, all the complexity is happening.
+Somehow you have a consciousness detector and you can stick it into you can touch things and you can be like, "Oh, are they conscious?" Uh, and nothing nothing is, you know, it's it's it's it appears to be thriving in ecological things even have mouths and eyes and other organs you've never seen.
+And some things are operating at the FTO scale or the galaxy scale.
+Um, but God would >> if I knew if I knew something if I knew something about consciousness that would allow me to have high confidence that I could make a consciousness detector and I didn't see consciousness, of course, I would be sad. >> Got it.
+Got it.
+Okay.
+So, you'd wish for it to be sentient.
+Um the other so so so you'd want it to be conscious but you have a supposition around how consciousness arises and you have that that would you have a theory that I would think would not give you total confidence but would give you reasonable confidence that if such an ecology emerged we are likely to have one of these morally relevant things that we value which is consciousness continuing to persist with it.
+That's a good caveat.
+I appreciate you. >> I would I would also I would also say that I you know when I my caveat about about the detector comes from the following place.
+Um, you know, if if consciousness is really modeling your own mind, you know, and modeling the minds of others and so on, then there's also something inherently relational about it and what that means is that, you know, the idea of a view from above of a consciousness detector that, you know, in the same sense that you can make like a counter may actually not work. [laughter] >> Totally.
+Totally.
+Yeah.
+This is going to be >> I I'm being playful, silly, and fully admitting that I have no faith, only curiosity about a thousand theories of consciousness, and I am a little bit woefully disappointed in how abysmally slow progress on that has been as compared to building things stronger than humans uh or more capable than than humans.
+It feels like damn, it'd be cool if both >> I would have thought that we' I thought that we'd understand more neuroscience before we started to get AI right.
+Yeah, the the the incentives to uh combine forces uh uh have not been as strong for consciousness, right? it it a AI has been the locust of the highest um uh uh market cap corporations in the history of humanity and consciousness seems like there hasn't been a reason to coordinate like that the the interest hasn't been there to see the same kind of financial singularity we're seeing now to build capability for example but either way um let's talk about other traits you'd want to see you'd said kind of rich it is like an ecology in other words there are things that relate who combine into other things that relate and that continues and that continues and that continues.
+Um like what about that? I I'll I'm going to try to save any of my thoughts about this until after.
+I want to just sprinkle it on on you here.
+What about that is valuable? So rich ecology.
+Uh you you know you'd want to see it.
+Why? Well, part of it is is um is aesthetic.
+You know, I think I I think that um beauty is real.
+Um you know, we we talked a little a little while earlier about, you know, like is it just some weird, you know, particular like uh aesthetic kink of ours that we find the sunset beautiful or whatever.
+Um I I I actually don't think so.
+I mean, I I think that I think that um you know, when you look at at at a peacock's tail and you're like, "Damn, that's really beautiful." >> [laughter] >> uh then you realize oh peacocks have actually you know peacocks and p or p hens more specifically have selected for that thing you know it's like well they they obviously have aesthetics as well you know or or insects and flowers and vice versa you know and and so um I I think that um you know there uh that that complexity and um and [clears throat] these kind of multiscale sophistication and uh you know intricacy I mean all these kinds of things you know have I I think that I I don't I wouldn't go so far as to say like let's define that mathematically but um but I do think that there is something um you know you you know that goes beyond our peculiar human tastes about this and um and I and I identify it as good.
+I identify you know that kind of complexity and richness as good uh in in a way that transcends my my you know my own uh you know proximal needs.
+Um, but I I'd also say, you know, we you you mentioned um or we talked a little bit about continuity before as well.
+You know, I would definitely feel very very different about a future in which you know, we all um died uh you know, of a giant plague or a you know, a runaway nuclear uh confrontation next week.
+And you know, the future we're looking at is you know, uh 70 million years in the future.
+Um and there's great complexity.
+It's wonderful.
+But all of that, you know, emerged uh, you know, from scratch or or from Porsche spiders or or some other or some other organism and didn't have anything to do with our lineage.
+Uh, that that would be disappointing, too.
+Um, because I feel like we've come a long way.
+And you know, yes, nature always has, you know, the snakes and ladders, but you know, you're always rooting for like, you know, uh not only for for uh for the collapses not to happen, but also for something about the things that you have been a part of and built to to be uh to be a part of what of what persists. >> You would hope that um as the great flame blazes on, some part of its frontier was connected to the torch you once held.
+Um and absolutely. >> And uh torches are temporary.
+So torches are individuals, species, and substrates.
+They're all right. >> Persistence is a matter of degrees across the board.
+Uh and so um and so >> it's cycles cycles within cycles.
+Everything dies and everything that dies is part of a bigger thing that lives. >> Totally.
+Totally.
+And so, but the continuity thing like I would imagine if I because there there are there are many people in fact I part of me really hopes it's not most of the people listening to this but but it's because my audience says oh gez that that's a that's a pretty narrow band of humans that think about this kind of thing but um but the bulk of living hominids would essentially see most unless maybe they thought about it for a long time or something would see everything as a bad future that wasn't an eternal homminid kingdom.
+That is to say, the locust of valition and moral value until the heat death of the universe has opposable thumbs and talks like you and me and whatever.
+Maybe it's not English anymore and you know, maybe they're they're on Mars and they have, you know, uh have sports, new sports or something, but um but like that would be it until until the the heat death there.
+Uh I I would guess big picture you know the the continuing blaze is very very high because it seems to me you can push back on this if you'd like.
+It seems to me as if the continued unraveling ensures the persistence of the process of which we are part.
+And it would strike me that marriage to anyone torch at the which marriage to anyone torch in a deep eternal lock in way is scorn for the flame actually um as it turns out.
+And I think that's really uncouthed to say um but I'm willing to say uncouthed things I believe to be true.
+And and so >> I I don't I don't disagree.
+I don't disagree with what you're saying, but I I also think I also think that it's reasonable for um people to have uh you know commit I mean it's it's built into us by evolution, right? To have some commitments to our our own propagation for whatever value of our right it could be a genetic lineage, it could be a religion, it could be a state, it could be, you know, a commitment to humanity as a whole, to our planet, um you know, what have you. uh and um you know and that's part of the force that that that that produces that that very flame.
+So you know it's not something that is easy to just you know say it's wrong.
+Um you know you you mentioned that everybody's got their their limit right their sort of radius of what would be all right.
+You know most people I think if we uh I mean I'm I'm unconvinced that we'll ever you know like do large scale colonization of other planets but let's pretend for a second that we do.
+Suppose that suppose that we did do it on Mars and that we had some cool adaptations uh that we managed to genetically engineer for being able to you know survive at lower pressure right so people are still people but you know they've they've got they've got uh you know slightly modified lungs in order to be able to survive at at 0.1 atmosphere you know without any problems >> like would anybody say no that's that's not yeah there are some people who would probably say that's not human anymore that's that's anathema but I think most would be like that's cool you know if if that's my great great grandchildren like I'm okay with it.
+Um and then the thing to understand is just like well if you add up you know a million changes of that sort you now have something profoundly alien and and um you know but at the same time you know our our great great grandchildren with the 110th atmosphere lungs you know their threshold is you know is is advanced a little further because they're in a different spot.
+So you know there is a rate of change kind of argument there uh that I think is reasonable >> and and I I think I think there is a rational fear to gigantic disjointed changes because we all understand and everywhere else in life you're going to pay the cost of change and you don't know if you're going to get the benefit.
+So yes the river of Heracitis is moving faster than ever.
+Changes are going to be woo we're going to be Sonic the Hedgehog over here.
+However, we don't want them to be so zippity zappity disjointed that somebody drops the torch and the whole flame is like is is put is put at risk.
+So to that point, >> I I completely agree then I am not into revolutions you know uh like revolutions uh you know tend to hurt a lot of people and destroy a lot of things that needn't have been destroyed which you know which more incremental change could have resulted in you know like right all of the upsides without all of the tears.
+So uh I I totally agree. >> Yeah.
+Um, take that ropes beer.
+You heard it on this podcast.
+Um, so, uh, with with with that state, >> great example.
+Great example.
+Yeah.
+Not not his biggest fan here.
+Um, so, uh, with, um, uh, you brought up beauty.
+Uh, it's interesting because there's a lot of really smart people who I think are great who bring up beauty a lot in this conversation. and um you know Whitehead the pro process philosophy uh Alfred North Whitehead or what have you I think talks about sort of everything kind of a grand culmination to beauty.
+My my initial response to that is that it is possible that that which is shining forth is indicative of some deeper kind of value that correlates to some qualia type of joy that's hyper ubiquitous to uh uh um the hens of the peacock as well as to you know a polar bear as well as to you know whatever.
+It it also strikes me that like you know to a fly certain kinds of rotting things may be particularly beautiful and to a certain kind of bat certain kinds of rock crevices that have all kinds of bacteria that would kill you uh are are particularly be and so >> yes >> I I >> I think all those things are beautiful too [laughter] >> yeah I'm using a pretty I'm using a pretty broad a pretty broad >> I get it that makes sense I I I um I I like that you're light with your you're you're you're um you're you're touching the implied thing.
+You're you're touching the implied becoming when you touch a thing.
+Most people touch the thing.
+They don't they don't touch.
+So this one fact, the world hates that the soul becomes, says Emerson, right? And uh people hate it, Bla1.
+People hate it.
+I mean like they hate it, brother. like uh the whole like even the Mars lung thing like a lot like there's people who [ __ ] have guns in the street around that.
+So people even and that's incremental never mind the alien inevitability you spoke of. >> Well I mean you're talking about about a certain you know sort of uh you know purity values I mean you know Jonathan hate has done a lot of work on these kind of moral foundations. >> Yes. >> You know and and what I really like about his work is that he also points out the value of of some of those conservative values.
+Right.
+They're they're there for a reason.
+Uh so I I I I I acknowledge right their their value and their importance uh even if I don't always share them and I think the diversity right of of perspectives on this is actually really important.
+The fact that the the bat you know finds that crevice beautiful and doesn't find the flower beautiful.
+I don't fault the bat for this you know or or think like the bat has a moral deficiency in that regard. >> Um you know and and and the same goes for for people who disagree with me about some of this kind of stuff. >> Yeah.
+No. Well I I I completely do too.
+I've never said well everyone should surely I I do think that with enough reflection understanding that in the long term so what I what I what I end up not kind of respecting is like no things have to stop changing that's like now you want impossible stuff that I think we just should really get up to snuff about reality but I think the notion of this ought not change within my lifetime or my great-g grandandchildren but like but still understanding that the world is flux and maybe knowing that we do have to surf it that's at least admission that's at least admission that we are living in the world when you pretend to freeze uh the state of things when you pretend to freeze the Heracitian river uh I I I you know I that that that I you know I there's a place for values but I don't think there's a place for denying reality with with that said maybe there is I don't know your ecological view would probably have a better take there let me just put this on the table about beauty um when I look at the purpose of the ecological blossoming.
+I'll posit a couple things and see if you like or dislike these.
+Um, I'm glad to have your idea of it.
+Now, I know what to write down for worthy successor criteria for you.
+Um, two things strike me when this elomerative force and I think you've really articulated a cool way to understand the arrow of evolution.
+Again, I'm probably going to quote the heck out of that to be honest.
+Um, the the uh two things strike me as what happens when that occurs.
+Number one, it seems to me that the flame itself is less likely to go out.
+In other words, the project of non-dead stuff existing is more likely to persist if the unfurling of the magazines of potential keep going.
+So, so this if you if you so if you're like, oh, it's beauty, it's this, it's that.
+Well, there's none of that if nothing experiences it.
+So, for me, the mandate towards persistence is not about brutalism and being tough and being fighting and killing and tooth and claw.
+It's like no no no persistence should be the first goal because whatever you value is only valuable if something can persist to enjoy it or experience it or create it or what have you.
+So that's one that I would say >> I agree.
+I mean the very the very existence of values comes from the the the persistence principle if you like. >> 100% and um now I have to Google if there is something called the persistence principle.
+I just keep referencing Spinosa all the time but but I I do think that that's um yes I'm with you there.
+So for me that would that would undergard any value of beauty.
+It's like well Jeeper some something's got to exist.
+Secondly I think that the things we value bubbled up from nothing.
+So think about this.
+There was a time where there was no consciousness and then >> things were conscious.
+That's wild.
+And and of course it I think independently potentially bubbled up in different places.
+Of course we don't know what's conscious but we can presume different species are conscious.
+Say wow it bubbled up in this line.
+It bubbled up in this line.
+It bubbled up in this line.
+Um, I would bet that there are things beyond consciousness as we know it.
+Not just new, deeper flavors of consciousness.
+Not just a level 100 instead of a level 10, but something categorically different that is as if not more valuable than consciousness.
+And then if we keep going, another thing opens up.
+And then if we keep going, another thing opens up.
+Things for which we you and I have no words.
+The neatode will never conceive of this conversation you and I are having.
+The Nema Toad will never know whether it's riding in an airplane or it's a million feet underground or whatever.
+Um, uh, I would guess you and I have no access to the magazines of value.
+So, we say beauty and I say, you know, I I think I think it's an okay one.
+I would like the unfurling of all the magazines of value for which I have no words.
+And so for me, persistence of the stuff and the unfolding of all categories of value is the mandate for why I would want the thriving ecology.
+Um, I'd love to know what parts of that you want to push against if if beauty is a different thing than what I've articulated or if you have a different way of conceptualizing it. >> No. Uh, I I think you're right.
+Um, you know, if if um I had a I had a really interesting conversation with David Deutsch a few weeks ago. >> Oh man.
+Oh, I would have loved to be a fly in the wall there.
+It was fun.
+We recorded part of it, so it will it will eventually come out.
+Um but um uh uh but yeah, it was for for the Futurology uh uh podcast, I think, is is where where it'll eventually uh get get published.
+But um he believes that that um and this is a point that he made in his book uh you know, the beginning of infinity that once you have rationality or general intelligence of the kind that you know, you and I have got that's a step function and that's it.
+It's like touring completeness, you know.
+It's sort of the um everything else is is is uh just more of that.
+Um I I am more where you are than where he is. >> Oh, I I want I want to I want to puke everything I've eaten in the last two weeks out when I hear that.
+I I I I can't I can't I can't even deal with that presumption of understanding of grass, but the totality of nature.
+Um >> I mean, he's a he's a very he's a very smart guy.
+Of course he is. >> His perspective is not is not one that I'm comfortable to >> uh you know to to just sort of like uh >> certainly I can respect the man but be like that idea feels just off you know. >> Well yeah I mean when we look when we look at what has become possible uh you know just in the last couple of centuries uh you know what kinds of things were unimaginable uh you know that that we take to be common place now that that just didn't exist a couple of hundred years ago. you know, it's it's um it's humbling, right? And and and yes, I mean, I I I think one of the one of the things that that gives you your your um your sense of uh both optimism and of of how big the possibilities are uh going forward is taking a little bit of a wider view of of just how much things have have already changed in our past.
+Um, you know, there there have been some economists I'm thinking of of uh um uh slouching toward uh utopia.
+What's what's his name? Um, a couple of others.
+Um, [ __ ] I'm I'm I I need to I need to I need to have another [clears throat] coffee.
+But but there there there there's more than one economist who has made the argument that basically the amount the amount that things changed from 1870 to 1970 just absolutely you know dwarfs what happened between 1970 and 2020.
+You know the last 50 years have been quite static relative to what happened in the previous century.
+Um I think it's a good argument.
+I mean when you really look at at you know how unfamiliar the world would have been if you went to sleep you know like Rip Van Winkle or something in 1870 and woke up in 1920.
+I mean >> incredible.
+It would be insane, right? Like like everything would be completely unfamiliar.
+If you went to sleep in 1970 and you woke up today, you know, it'd be cool that there that we have computers and phones, but you know, not anything like the same kind of of of radical change. >> It's a really good point.
+But um and and so I think in a way we've gotten used to uh you know stasis again in a way that you know if you were JRR Tolken you know who uh when he was a kid like the cavalry charge was still a thing and by the time he died we had the hydrogen bomb you know [laughter] like you can understand why why he invented Middle Earth you know >> and uh [laughter] and I think we're I think we're we're we're kind of speeding up again.
+Uh, you know, my sense is that starting in 2020, like, you know, things are kind of back in turbo and uh and and that's uncomfortable for a lot of people who are um you know, who have have have lost their their their sense of how fast things can change. >> Yeah.
+This one fact the world hates.
+Uh so, but we're we're riding it, brother.
+And and I think yeah, uh I I certainly have that same sentiment here and I I think that a AI GI are certainly a big part of that.
+I want to touch on one more thing before we get into how we might measure some of these valuable traits or at least hypothesize how we might know if we're getting closer to them.
+Symbiosis clearly involves us and of course your hope and I would say probably everybody tuned in more or less.
+I I I suspect I'd be in this camp would like you know some degree of continuity.
+Could part of our flame fe or part of our torch feed into the grander flame? Uh that would be pretty cool. um you know we might not be humans as they are but you know our components you know but partially kind of merger um >> for some value of we or us.
+Yeah. >> Yeah.
+When you um uh and I think it depends on what you identify with.
+I think that it will be very it will be increasingly challenging to identify with only 20 you know uh 23 chromosome pairs or whatever.
+I think it's going to be very hard to identify with just opposable thumbs.
+I think identifying with biol life will be more common and then maybe identifying with the process of life will be more common because I think it'll just it'll be untenable.
+It's like the people who identified with making horse carriages is like I don't know man.
+I just don't I don't know how long you can do that.
+Um but like um the uh >> the horses that are still around are probably quite a lot happier nowadays. >> They're doing [laughter] a a pretty good chunk of them got uh got a pretty specific treatment.
+But yes, the ones that are here now, hey, what the heck? Um, with that said, >> it's a good life if you're like, you know, Sunday, you know.
+Yeah, >> absolutely.
+You get like uh you know, people pay good money to have the kids come out and feed you and you know, you're not you're not carrying heavy stuff anymore.
+Like, that's awesome.
+Um, when you look at the next couple clicks up in complexity, and neither you nor I have any idea what the grand expanse is.
+And I like your frankness about that.
+Some people like to think that they know what that picture turns into.
+It's it's pretty clear we don't.
+Um, but you look up a couple clicks at where a symbiosis with this intelligence would come in.
+I suspect not all of it will be warm and fuzzy and friendly forever.
+It certainly won't always be continuity with what we know now, but maybe the next couple clicks will involve kinds of symbiosis most people haven't thought about and maybe you have.
+What's some pictures you can put in our heads about what some of those clicks and symbioses could look like as AGI comes onto the scene? >> Well, um, I guess a couple of observations.
+Um one is that um our last big um technological symbiosis I think was um the development of steam engines and the industrial revolution.
+Uh you know that's so you know we we first started by making these machines by hand making them originally and then you know having machines make machines etc.
+And uh so obviously the machines don't exist without people but what I think a lot of people forget is that there would be a lot fewer people also without those machines. uh you know what we essentially did is we started to metabolize externally uh on a massive scale.
+In that sense it's it's not so unlike the mitochondrian you know the the steam engine was our new mitochondrian and you know the population going up from 1 billion to 10 billion you know is 100% a function of of um you know of the industrial revolution.
+Uh so you know that that that energy production pulled us out of these of this Malthusian cycle where we were you know limited by by um by mortality and by calories and rocketed us into a different spot.
+Um so so that last that last symbiotic change you know um sort of finished the job of increasing human numbers.
+We know in the next century that human numbers are not continuing to increase exponentially and that's a lucky thing because uh you know if you don't believe that we're going to have massive numbers of people off planet there obviously it's >> going to be tough to hold them all.
+Yeah. >> Right.
+And and luckily you know all of those anxieties about the population bomb you know of Paul Erlick and so on are absolutely not you know that's not the future that we're looking at over the next century.
+We are you know leveling off and our numbers will probably you know settle at at something uh more modest.
+Uh so the symbi this this new symbiosis with technology is going to look quite different from the industrial revolutions one which is all about just you know harnessing industrial energy and getting us out of a Malthusian state.
+We're already not in a Malthusian state anymore.
+Uh the overwhelming majority of humans uh today >> um there are few there are few left.
+I don't I don't want to minimize you know the the suffering of those who are still under those conditions but but you know we're well on our way to to getting getting past that stage.
+Um and uh and you know I think one of the one of the consequences of that is that in not very long there are going to be many many more AIs than [clears throat] people.
+Um you know if you right I mean we're that's kind of just around the corner. >> Y >> um so so we're we're looking at you know if you think about all of you know people and AIS you know both as nodes in a graph with all kinds of relations between them the people are the rarer uh you know objects in the in that graph in the near future.
+I don't think a lot of people have really thought about that and its implications because we're still we're still imagining that, you know, one AI per person is kind of the limit in the same sense that people were imagining that one computer per person had to be the limit, you know, in 1980, right? And and the reality now, of course, is that the moment you get in your car, >> Yeah.
+And your car has like 200 cores in it, you know, [laughter] and and even even the even the m the the microcontroller that is just for the power window uh you know has more processing power than all computers on earth did in 1950.
+So uh >> insane. >> Yeah. [laughter] >> Uh in insane.
+So wow.
+I um Okay.
+So, uh, well, when we think about that expansion of the node and the graph and all the acting agents and whatnot, it strikes me that clearly right now we're pretty darn relevant to the AI because we interact with the world in ways that they don't.
+Although soon I think the we'll be able to replicate biped robots and other mean kinds of robots in various forms faster than >> there's a lot there's a lot of really good work on robotics that suggest kicking kicking in.
+It strikes me that we probably contribute for a certain amount of time.
+Uh so you know uh like I I I I um uh I was thinking of all the analogies horses is like a it's played out.
+I don't want to just use horses, but like whatever, just to throw it on the table, at some point, you know, horses were a big part of the mix and and and they they became a part of the mix in the new world and then they became a part of the mix, you know, all over the place and and um uh and and they were doing work, they were doing war, they were doing other things, they were doing recreation um and and uh you know, now they're still like the hobby community or whatever, but um they're they're just not they're not contributing to they're not contributing to the stream of life.
+So there was a time where they were giving into the great system you're talking about with those cycles.
+They were giving something.
+You talked about the the mutual combination.
+I think that's the only honest way to talk about it.
+It's in the mutual self-interest to do that.
+Now, you know, we do things like donate to keep the piping clover alive on the beaches of Rhode Island and Massachusetts somewhere.
+Uh just because like, oh yeah, you know, let's pay for that species.
+It's actually quite questionable if that's a grift because there's somebody who gets paid like a bunch of money to like carve out that land and if like if it's feigned as like ah you're saving this one species is super crucial or if it's like a dude figured out that like if you own this kind of beach land like you'll get a ton of government money like I'm not really sure to be honest but what I will say is >> maybe maybe another maybe another argument in in the direction you're you're you're pointing is that >> um you know Trout Unlimited and uh ducks you know the there's sort of these associations for preserving um wetlands for duck hunting, >> which have been much much more successful than things like the the clover effort.
+You know, the the fact that that um uh you know, aven water fowler are the are the only aven population that's not in decline in North America is actually true because we hunt them. >> Um and it's the hunters. >> A poor tent for man, ladies and gentlemen.
+A poor tent for man.
+No, I'm joking. >> To be clear, I'm I'm I'm absolutely not saying, you know, people are going to survive because it because robots will hunt them.
+Uh what I'm saying is that is that the the the animals that we have real real working relationships with right are are are the ones where you know where there's where there is that sense of mutualism like you know it's the hunters that are that are doing the most to protect the wetlands of the of the >> very curious that is a fascinating element of the symbiosis you're talking about and I guess what I think about is okay people say well we take care of cats don't we you mentioned horses here's what I Okay, take the net potential of all the humans that exist on earth and just double it.
+So double the number of physical senses, double the amount of memory, double uh the cognitive capability, double double everything.
+Double the how high we can jump.
+Just double it all.
+Just take take all measurable potential about humans and double it.
+And then ask are they still interested in scooping the litter box or riding the horse or whatever.
+And you might and maybe the answer is yes.
+Double it again.
+Double it again.
+Double it again.
+Double it again.
+How many doublings do you have until it's not remotely interesting? I don't want to shoot water fowl anymore, damn it.
+I have other things to do.
+Cosmic things that actually matter, that are in the grander stream.
+They matter.
+They're useful.
+And how how many doublings and how how quick are the doublings going to happen with AI? Now, I'm not saying like this is immediate terrible portent for man by any means.
+I'm simply saying I see persistence is a matter of degrees as being visibly observable in the near term.
+I see it as being visible.
+And so what what be your thoughts there regarding symbiosis? Well, um, look, I I think that, um, our our, um, reverence for, um, for wild places on Earth has only grown, uh, with with our with our increase in sophistication and in particular with our our ability to, um, uh, for for instance, generate energy in more efficient ways. uh you know than burning wood for instance.
+Um you know or or uh um you know our ability to to uh you know the the whole the whole um parklands uh movement you know national forests and and and protected zones and so on like all of that um you know is is is actually a function of our wealth and our development uh intellectually. uh you know there was there was no such no such uh movement you know uh when when uh um the Europeans first came to the new world certainly >> absolutely not >> um now there there were there were of course a lot of indigenous traditions in which uh in which nature was um was respected for exactly the same reasons that that you know duck hunters uh you know respect the wetlands uh Robin Robin Wall Kimmer has written a lot about those and I I think I think she's a you know she's a really good thinker about these kind of questions of symbiosis But, you know, national parks and stuff aren't they're not just an instrumental uh uh good. [clears throat] Uh they they are uh they they're really, you know, us coming to understand that it's not zero sum between all of the things that uh you know that that we're going for, right, with all our incredible intellectual sophistication.
+Like the idea that, you know, oh, people who are off solving theorems are not interested in forests anymore.
+Not actually the case, right? I suspect that that you know if you if you were to poll all of the theorem solvers in the world you know about their uh you know how how much they care about nature versus all of the um you know the the remaining people who who are um say you know among the urban poor um you know you're not going to find uh you know this this correlation where you know people just give less and less of a [ __ ] about nature as they as they pursue more and more intellectual activities. >> Yeah.
+Yeah.
+So, so I I um you know I don't want to draw too direct an analogy because you know as you say we don't know right what's coming in the future but but when I think about about what the diteratada might be of extremely sophisticated hybrid andor machine intelligences you know there is a there is an entire solar system out there worth of incredible amounts of energy and resources that are absolutely nonzero sum with all of the beautiful things that exist on Earth. >> Um, and you know when when you when you try and think about zero some sorts of pictures like in the matrix, right? You end up with some pretty absurd like oh you know like our spinal fluid really matters to the computers or something. >> Yeah, I don't believe that.
+But I I I don't I don't believe that seems implausible to me. >> I'm simply just not convinced that when you keep doubling potential consideration will occur or even should occur.
+That's uncou you can't say it.
+You have an employer.
+I I I'm allowed to say what because who's going to fire? Nobody can fire me.
+So, um but but yeah, but I see where you're headed and I I hope maybe in a hundred or thousand years to roam like caribou in some protected land uh in some way.
+And and to your point, there is evidence of those things potentially being more valued with time and and we know not, but that is a potential. when you think about I want to get into our last two questions because you've unpacked so much now of kind of your thought about this transition and the process of life with a lot of new ideas on the table that I really like as you you see us developing AI at kind of break neck speed when I look out I wonder is it you know I don't think anybody in this you know talk about game theory I don't think there's any affordances for whether this stuff will be sentient or whether this stuff will have the kind of autoois to generate and regenerate um uh the thriving ecology that expands potential that you value.
+I don't know if we're like is it going to do that if we just go forward this way? Is it going to do that if we just go forward this way? Like what would you hope happened to like maybe hope that when we roll stuff into the world that's more capable than us? It's not just some local maxima optimizer or something that actually doesn't continue the blossoming that you value and the sentience that you would hope to see.
+What what what would we do to sus out these traits and make sure that hopefully we land upon them? I >> I think that there's a there's a misconception on the part of a lot of people who think about this kind of stuff that intelligence is optimization.
+Um you know it it is true that we use gradient descent to train models.
+Um, but it's also true that, you know, the moment when we started to get, you know, real working AI was when we started to train them to reproduce their inputs, you know, not not to not to maximize the score of some game.
+Um, you know, or, you know, paperclip maximizers or something of that sort, right? That wasn't that wasn't the root. >> And, um, >> so, you know, when when I when I think about uh the fact that humanity is already um collectively superhuman, you know, it's the entire system, right? And you know I mentioned earlier like there wouldn't be more than a billion people without all of those machines right there.
+You know the machines are making us as much as we are making them in a sense.
+Uh right it's the autopoesis that we're talking about is really of the entire system which which includes humans.
+You know uh my my phone doesn't heal itself when uh you know it screen cracks but you know it screen does get fixed.
+So like what's going on you know and there are other machines involved in doing that.
+It's the whole system.
+So we are a part of that system.
+Uh I don't see us being sidelined from that soon.
+And I and that may be a point of difference between you and me.
+But you know I I I see I see this this kind of co-evolution going for quite a ways >> uh before before we're talking about like stuff falling off the wagon in one way or another. >> Yeah.
+Or just sort of being dissipated out of not being able to contribute in any meaningful way to the grand process, not feeding the stream in any appreciable sense.
+Um but but to your point Yeah.
+What you're saying is that contribution may last longer than than uh than maybe some people suspect.
+Maybe maybe even even I suspect.
+Your your idea of the phone is great.
+It's like the phone does get fixed that the network is sort of doing autopoesis even if the individual nodes aren't actually doing it which is a cool way to think about it actually is that the the not living stuff changes and levels up and is maintained and increases its capability with new apps with no valition whatsoever uh because it's part of the system >> or well I mean another way of looking at it is that is that the whole system is alive >> um and we we are a part of it and so are the phones and stuff.
+Um, you know, and that's >> the flame that the flame I would I would label humanity that whole that whole thing uh you know in you know precisely because again like we would not even have the the numbers as homo sapiens that we do if it weren't for that that whole system. >> Absolutely.
+And again I think it's going to be increasingly hard to identify with individual torches as the flame starts jumping leaping and blazing in directions that are actually like you know you had mentioned you know 1870 to 1920 or whatever like you know as that gets crunched crunched crunched I think I think people should really consider what you're saying there.
+So, you know, when you look at the process that's unraveling here and you think about all the innovators and all the regulators that are presumably pretty across the board well intended and hoping this goes well in whatever way for our torch, for the flame itself, and you say, man, you know, I I hope the innovators and regulators kind of take this to heart and consider this as sort of a guiding principle.
+Any sort of advice that you hope settles into that world? Because that's definitely part of the audience here. >> Yeah.
+Um, it's a it's a great question.
+Um I I am not anti-regulation uh in the sense that I I think you know a lot of the a lot of the operating systems that we've built that have resulted in great stuff you know over the last 100 years that have resulted in like huge increases in in um say labor safety uh auto safety uh you know the aviation safety the list could go on and on right are very strong functions of regulation or or that we don't have lead in our gasoline anymore. goodness. >> Right.
+So, so these are these are uh this is a powerful and important tool. >> Yeah. >> Um but uh I I guess the the um the precautionary principle that I would advocate against the precautionary principle is that it is really difficult to regulate a thing that you don't yet understand.
+And uh attempts to do that often have all kinds of negative [clears throat] externalities and backfire in ways that um that were really that were really hard for anybody to see. not just the regulators but even the people who are doing all of the inventing.
+Um, there was a bunch of regulation of the internet in the 1990s, for instance, that had all kinds of consequences, good, bad, and ugly, that were completely unanticipated by the by the the drafters of that regulation.
+And a lot of the real uh risks and downsides of the internet, uh, you know, have come from directions that were completely unanticipated by uh by them, right? So it didn't it neither protected us from the things that that that we might actually have needed you know protection from nor did we um uh did it have the the intended effects.
+So, you know, I I would be more of an advocate for um having a a more democratic and responsive uh and experimental approach to uh to to regulation that, you know, that doesn't that that sort of takes some of the weight off and allows it to be experimented with.
+Uh uh but that is also more reactive uh as opposed to attempting to be uh proactive in in situations that that you know where where a lot of things about about what we're what we're making we actually cannot see. you know both the pos you know the full scope of all the positives and negatives that will unfold or what would change if we were to constrain something. >> Yeah.
+Well, this is very in line with your dislike of revolution and I think preemptive revolution as if we know exactly what trajectories are dangerous or good would be bad but but sort of >> adaptive let's see where it goes.
+Let's kind of be ready to leverage those tools but in the ways that make sense as as sort of they come about.
+This is uh very in line with your symbiosis approach and very in line with our our shared dislike of robes.
+Pierre uh so one of one of the many the many fun things of this interview.
+Blaze, I know that's all we have for time, but it has been a real blast unpacking these ideas with you.
+I have so much to journal about now and I hope the audience learned a lot too.
+Thank you so much for being here. >> Thank you so much, Dan.
+Your your your questions are really smart. your your takes on this stuff are really are really uh spicy and bold and um in the best possible way and and this has been a really fun conversation. >> Awesome.
+So, that's all for this episode of The Trajectory.
+Thank you for tuning in all the way through to the end of this episode and a big thank you to Bla1 for being able to join us as episode 14 in this worthy successor series.
+I think Blaz's admission of sort of being skeptical even about his own theories uh I think is extremely honest.
+What I liked most about this episode was his idea of sort of where this canatis impetus comes from and sort of the force that pulls it together.
+The idea that sort of the self-interest of individual moving parts to sort of do more of what it is that they want to do forming more complex things which create more surface area for additional complex things and for powers to emerge that are biological and cultural and technological out of that process I thought was a piercingly accurate way to describe what we have seen and what we are quite likely to see going forward.
+Um, uh, Bla1 also sort of had some notions around symbiosis.
+I will say between my conversations with Bla1 and there's a futurist called John Smart, I'm starting to kind of tilt in the direction of thinking that actually there there could be a maybe a relatively extended period of symbiosis.
+I don't exactly see three or four generations of humans in this sort of being very useful to machines as horses were useful to humans for many centuries.
+I I don't I don't see that. uh at all.
+But I also don't see a kind of blowing through humanity in an immediate sense quite as much as I think I did before sinking my teeth into how these precedents for emergent complexity sort of evolve.
+It does strike me that some degree of of complexity is is pretty likely.
+Um so I I like that.
+I think that's neat that sort of I can see my own ideas shifting.
+I'd love to know your thoughts on Blaz's ideas.
+Do you think there's credence to the idea of symbiosis? Does the bubbling up of potential come forth from a different process that uh you you suspect maybe he's getting something right about something wrong about? Put it down in the comments.
+We'll be getting more and more folks on the worthy successor to chip in ideas and those have been feeding my brain for who to have on as our next guest.
+So, I appreciate you guys for commenting.
+I mentioned to Blaze at the end of this episode that I I really consider myself an advocate for his ideas.
+There's few people where I was like, "Wow, this is piercingly accurate, intellectually modest, and a really important way of framing these things." I loved this episode.
+I'm like understating my enthusiasm.
+But I I hope you enjoyed it, too.
+So, thanks for tuning in all the way to the end of this one.
+I look forward to catching you the next time here on the trajectory.

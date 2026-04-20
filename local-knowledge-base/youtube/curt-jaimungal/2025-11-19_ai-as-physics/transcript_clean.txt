@@ -1,0 +1,779 @@
+When Michael Faraday first proposed the idea of the electromagnetic field, people were like, “What are you talking about? You're saying there is some stuff that exists, but you can't see it, you can't touch it.
+That sounds like total non-scientific ghosts.” Most of my science colleagues still feel that talking about consciousness as science is just bullshit.
+But what I've noticed is when I push them a little harder about why they think it's bullshit, they split into two camps that are in complete disagreement with each other.
+You can have intelligence without consciousness.
+And you can have consciousness without intelligence.
+Your brain is doing something remarkable right now.
+It's turning these words into meaning.
+However, you have no idea how.
+Professor Max Tegmark of MIT studies this puzzle.
+You recognize faces instantly, yet you can't explain the unconscious processes.
+You dream full of consciousness while you're outwardly not doing anything.
+Thus, there's intelligence without consciousness and consciousness without intelligence.
+In other words, they're different phenomena entirely.
+Tegmark proposes something radical.
+Consciousness is testable in a new extension to science where you become the judge of your own subjective experience.
+Physics absorbed electromagnetism and then atoms and then space, and now Tegmark says it's swallowing AI.
+In fact, I spoke to Nobel Prize winner Geoffrey Hinton about this specifically.
+Now to Max Tegmark, the same principle that explains why light bends in water may actually explain how thoughts emerge from neurons.
+I was honored to have been invited to the Augmentation Lab Summit, which was a weekend of events at MIT last week.
+This was hosted by MIT researcher Dunya Baradari.
+The summit featured talks on the future of biological and artificial intelligence, brain-computer interfaces, and included speakers such as Stephen Wolfram and Andres Gomez-Emilsson.
+My conversations with them will be released on this channel in a couple weeks, so subscribe to get notified.
+Or you can check the Substack, curtjaimungal.com, as I release episodes early over there.
+A special thank you to our advertising sponsor, The Economist.
+Among weekly global affairs magazines, The Economist is praised for its nonpartisan reporting and being fact-driven.
+This is something that's extremely important to me.
+It's something that I appreciate.
+I personally love their coverage of other topics that aren't just politics as well.
+For instance, The Economist has a new tab for artificial intelligence on their website and they have a fantastic article on the recent DESI dark energy survey.
+It surpasses, in my opinion, Scientific American's coverage.
+Something else I love, since I have ADHD, is that they allow you to listen to articles at 2x speed, and it's from an actual person, not a dubbed voice.
+The British accents are a bonus.
+So if you're passionate about expanding your knowledge and gaining a deeper understanding of the forces that shape our world, I highly recommend subscribing to The Economist.
+It's an investment into your intellectual growth, one that you won't regret.
+I don't regret it.
+As a listener of TOE, you get a special discount.
+Now you can enjoy The Economist and all it has to offer for less.
+Head over to their website, economist.com/TOE to get started.
+Make sure you use that link.
+That's www.economist.com/TOE to get that discount.
+Thanks for tuning in.
+And now back to the explorations of the mysteries of the universe with Max Tegmark.
+Max, is AI physics? There was a Nobel Prize awarded for that.
+What are your views? I believe that artificial intelligence has gone from being not physics to being physics.
+Actually, one of the best ways to insult a physicist is to tell them that their work isn't physics, as if somehow there's a generally agreed on boundary between what's physics and what's not, or between what's science and what's not.
+But I find the most obvious lesson we get if we just look at the history of science is that the boundary has evolved.
+Some things that used to be considered scientific by some, like astrology, has left.
+The boundary has contracted so that's not considered science now.
+And then a lot of other things that were pooh-poohed as being non-scientific are now considered obviously science.
+Like, I sometimes teach the electromagnetism course and I remind my students that when Michael Faraday first proposed the idea of the electromagnetic field, people were like, “What are you talking about? You're saying there is some stuff that exists, but you can't see it.
+You can't touch it.
+That sounds like ghosts, like total non-scientific bullshit.” And they really gave him a hard time for that.
+And the irony is not only is that considered part of physics now, but you can see the electromagnetic field.
+It's, in fact, the only thing we can see, because light is an electromagnetic wave.
+And after that, things like black holes, things like atoms, which Max Planck famously said is not physics, even talk about what our universe was doing 13.8 billion years ago, have become considered part of physics.
+And I think AI is now going the same way.
+I think that's part of the reason that Geoff Hinton got the Nobel Prize in Physics, because what is physics? To me, physics is all about looking at some complex, interesting system, doing something and trying to figure out how it works.
+We started on things like the solar system and atoms.
+But if you look at an artificial neural network that can translate French into Japanese, that's pretty impressive too.
+And there's this whole field that started blossoming now that I also had a lot of fun working on called mechanistic interpretability, where you study an intelligent artificial system to try to ask these basic questions like, “How does it work? Are there some equations that describe it? Are there some basic mechanisms?” and so on.
+In a way I think of traditional physics like astrophysics, for example, as just mechanistic interpretability applied to the universe.
+And Hopfield, who also got the Nobel Prize last year, he was the first person to show that, “Hey, you know, you can actually write down an energy landscape.” You know, put potential energy on the vertical axis, is how the potential energy depends on where you are, and think of each little valley as a memory.
+You might wonder, how the heck can I store information in an egg carton, say? If it has 25 valleys in it, well very easy.
+You can put the marble in one of them and now that's log 25 bits right there.
+And how do you retrieve what the memory is? You can look where the marble is.
+And Hopfield had this amazing physics insight.
+If you think of there as being any system whose potential energy function has many, many, many different minima that are pretty stable, you can just use it to store information.
+But he realized that that's different from the way computer scientists used to store information.
+It used to be like the whole von Neumann paradigm, you know, with a computer.
+You're like, “Tell me what's in this variable.
+Tell me what number is sitting in this particular address.” You go look here.
+Right.
+That's how traditional computers store things.
+But if I say to you, “Twinkle, twinkle...” “Little star.” Yeah, that's a different kind of memory retrieval, right? I didn't tell you, “Hey, give me the information that's stored in those neurons over there.” I gave you something which was sort of partial, part of the stuff, and you filled it in.
+This is called associative memory.
+And this is also how Google will give you something.
+You can type something in that you don't quite remember, and it'll give you the right thing.
+And Hopfield showed, coming back to the egg carton, that if you don't remember exactly… Suppose you want to memorize the digits of pi, and you have an energy function where the actual minimum is at exactly 3.14159, etc.
+But you don't remember exactly what pi is. “Three something.” Yes.
+So you put a marble at three, you let it roll.
+As long as it's in the basin of attraction whose minimum is at pi, it's going to go there.
+So to me this is an example of how something that felt like it had nothing to do with physics, like memory, can be beautifully understood with tools from physics.
+You have an energy landscape, you have different minima, you have dynamics—the Hopfield network.
+So I think, yeah, it's totally fair that Hinton and Hopfield got a Nobel Prize in Physics, and it's because we're beginning to understand that we can expand again the domain of what is physics to include these very deep questions about intelligence, memory, and computation.
+What about consciousness? So you mentioned that Faraday with an electromagnetic field, that was considered to be unsubstantiated, unfalsifiable nonsense, or just ill-defined.
+Consciousness seems to be at a similar stage where many scientists or many physicists tend to look at the way that consciousness studies, or consciousness is studied, or consciousness is talked about.
+Well, firstly, what's the definition of consciousness? You all can't agree.
+There's phenomenal, there's access, etc.
+And then, even there, what is it? And then the critique would be, well, you're asking me for a third-person definition of something that's a first-person phenomenon.
+Yeah.
+Okay, so how do you view consciousness in this? Yeah, I love these questions.
+I feel that consciousness is actually probably the final frontier, the final thing which is going to end up ultimately in the domain of physics, that is right now on the controversial borderline.
+So let's go back to Galileo, say.
+Right? If he dropped a grape and a hazelnut, he could predict exactly when they were going to hit the ground and how far they fell would grow as a parabola as a function of time.
+But he had no clue why the grape was green and the hazelnut was brown.
+Then came Maxwell's equations and we started to understand that light and colors is also physics, and we got equations for it.
+And we couldn't figure out, Galileo either, why the grape was soft and why the hazelnut was hard.
+Then we got quantum mechanics and we realized that all these properties of stuff could be calculated from the Schrödinger equation and also brought into physics.
+And then we started, and then intelligence seemed like such a holdout.
+But we already talked about now how if you start breaking it into components like memory—and we can talk more about computation and learning—how that can also very much be understood as a physical process.
+So what about consciousness? Yeah, so I'd say most of my science colleagues still feel that talking about consciousness as science is just bullshit.
+But what I've noticed is when I push them a little harder about why they think it's bullshit, they split into two camps that are in complete disagreement with each other.
+Half of them, roughly, will say, “Oh, consciousness is bullshit because it's just the same thing as intelligence.” And the other half will say, “Consciousness is bullshit because obviously machines can't be conscious,” which is obviously totally inconsistent with saying it's the same thing as intelligence.
+What really powered the AI revolution in recent decades is just moving away from philosophical quibbles about what does intelligence really mean in a deep philosophical sense and instead making a list of tasks and saying, “Can my machine do this task? Can it do this task?” And that's quantitative.
+You can train your systems to get better at the task.
+And I think you'd have a very hard time if you went to the NeurIPS conference and argued that machines can never be intelligent, right? So if you take that, if you then say intelligence is the same as consciousness, you're predicting that machines are conscious if they're smart.
+But we know that consciousness is not the same as intelligence just by some very simple introspection we can do right now.
+So for example, what does it say here? I guess we shouldn't do product… No, I don't mind.
+Let's do this one.
+What does it say? It says, "Towards more interpretable AI with sparse autoencoders by Joshua Engels." Great.
+This is a PhD thesis of my student, Josh Engels, or a master's thesis.
+So, how did you do that computation? Thirty years ago, if I gave you just a bunch of numbers that are the actual red, green, and blue strengths of the pixels in this, and asked you what does it say? People didn't… this is a hard problem.
+Even harder is if you just open your eyes and ask, “Who is this?” and you say, “It's Max.” Right? But you can do it like this.
+But think about how it felt.
+Do you actually feel that if you open your eyes and you see this is Max, that you know the algorithm that you used to recognize my face? No. Same here.
+And for me, it's pretty obvious it feels like my consciousness… there's some part of my information processing that is conscious, and it's kind of got an email from the face recognition module saying, you know, “Face recognition complete, the answer is so and so.” So in other words, you do something when you recognize people that's quite intelligent but not conscious, right? And I would say actually a large fraction of what your brain does, you're just not conscious about.
+You find out about the results of it often after the fact.
+So you can have intelligence without consciousness, that's the first point I'm making.
+And second, you can have consciousness without intelligence, without accomplishing any tasks.
+Like, did you have any dreams last night? None that I remember.
+But have you ever had a dream that you remember? Yeah, so there was consciousness there.
+If someone was just looking at you lying there in the bed, you probably weren't accomplishing anything, right? So I think it's obvious that consciousness is not the same.
+You can have consciousness without intelligence and vice versa.
+So those who say that consciousness equals intelligence are being sloppy.
+Now, what is it then? My guess is that consciousness is a particular type of information processing and that intelligence is also a typical type of information processing, but that there's a Venn diagram like this.
+There's some things that are intelligent and conscious, some are intelligent but not conscious, and some of them are conscious but not very intelligent.
+And so the question then becomes to try to understand, can we write down some equations or formulate some principles for what kind of information processing is intelligent and what kind of information processing is conscious? And I think my guess is that for something to be conscious there are at least some sufficient conditions that it probably has to have.
+There has to be information, a lot of information there, something to be the content of consciousness, right? There's an Italian scientist, Giulio Tononi, who has put a lot of creative thought into this and triggered enormous controversy also, who argues that one necessary condition for consciousness is what he calls integration.
+Basically, that if it's going to subjectively feel like a unified consciousness, like your consciousness, it cannot consist of two information processing systems that don't communicate with each other.
+Because if consciousness is the way information feels when it's being processed, right? Then if this is the information that's conscious and it's just completely disconnected from this information, there's no way that this information can be part of what it's conscious of.
+Just a quick question.
+Ultimately, what's the difference between information processing, computing, and communication? So communication, I would say, is just a very simple special case of information processing.
+You have some information here and you make a copy of it, it ends up over there.
+It's a volleyball you send over.
+Yeah, a volleyball you send over.
+Copy this to that.
+Yeah.
+But computation can be much more complex than that.
+And then the… So that was information processing, communication, and what was the third word? Computation.
+And yeah, so computation and information processing I would say is more or less the same thing.
+Then you can try to classify different kinds of information processing depending on how complex it is, and mathematicians have been doing an amazing job there, even though they still don't know whether P equals NP and so on.
+But just coming back to consciousness again, I think a mistake many people make when they think about their own consciousness is like, can you see the beautiful sunlight coming in here from the window and some colors and so on, right? It's to have this model that somehow you're actually conscious of that stuff, that the content of your consciousness somehow is the outside world.
+I think that's clearly wrong because you can experience those things when your eyes are closed, when you're dreaming, right? So I think the conscious experience is intrinsic to the information processing itself.
+What you are actually conscious about when you look at me isn't me, it's your world model that you have and the model you have in your head right now of me.
+And you can be conscious of that whether you're awake or whether you're asleep.
+And then, of course, you're using your senses and all sorts of analysis tools to constantly update your inner world model to match relevant parts of what's outside.
+And that's what you're conscious of.
+So what Tononi is saying is that the information processing has to be such that there's no way that it isn't actually just secretly two separate parts that don't communicate at all and cannot communicate with each other, because then they would basically be like two parallel universes that were just unaware of each other, and you wouldn't be able to have this feeling that it's all unified.
+I actually think that's a very reasonable criteria.
+And he has a particular formula he calls *phi* for measuring how integrated things are, and the things that have a high *phi* are more conscious.
+I wasn't completely sure whether that was the only formula that had that property.
+So I wrote a paper once to classify all possible formulas that have that property.
+And it turned out there was less than a hundred of them.
+So I think it's actually quite interesting to test if any of the other ones fit the experiments better than his.
+Just to finish up on why people say consciousness is bullshit, though, I think ultimately the main reason is either they feel it sounds too philosophical or they say, “Oh, you can never test consciousness theories because how can you test if I'm conscious or not when all you can observe is my behavior?” Right? But here is a misunderstanding.
+I'm much more optimistic.
+Can I tell you about an experiment I envision where you can test the consciousness theory? Of course.
+So suppose you have someone like Giulio Tononi or anyone else who has really stuck their neck out and written down a formula for what kind of information processing is conscious.
+And suppose we put you in one of our MEG machines here at MIT or some future scanner that can read out a massive amount of your neural data in real time, and you connect that to this computer that uses that theory to make predictions about what you're conscious of.
+Okay? And then now it says, “I predict that you're consciously aware of a water bottle.” And you're like, “Yeah, that's true.” Yes, theory.
+And then it says, “Okay, now I predict that you're… I see information processing there about regulating your pulse and I predict that you're consciously aware of your heartbeat.” You're like, “No, I'm not.” You've now ruled out that theory, actually, right? It made a prediction about your subjective experience and you yourself can falsify that, right? So first of all, it is possible for you to rule out the theory to your satisfaction.
+That might not convince me because you told me that you weren't aware of your heartbeat.
+Maybe I think you're lying or whatever.
+But then you can go, “Okay, hey Max, why don't you try this experiment?” And I put on my MEG helmet and I work with this.
+And then it starts making some incorrect assumptions about what I'm experiencing.
+And I'm now also convinced that it's ruled out.
+It's a little bit different from how we usually rule out theories.
+But at the end of the day, anyone who cares about this can be convinced that this theory sucks and belongs on the garbage dump of history, right? And conversely, suppose that this theory just again and again and again and again keeps predicting exactly what you're conscious of and never anything that you're not conscious about.
+You would gradually start getting kind of impressed, I think.
+And if you moreover read about what goes into this theory and you say, “Wow, this is a beautiful formula and it kind of philosophically makes sense that these are the criteria that consciousness should have,” and so on, you might be tempted now to try to extrapolate and wonder if it works also on other biological animals, maybe even on computers and so on.
+And this is not altogether different from how we've dealt with, for example, general relativity, right? So you might say you can never… it's bullshit to talk about what happens inside black holes because you can't go there and check and then come back and tell your friends or publish your findings in Physical Review Letters, right? But what we're actually testing is not some philosophical ideas about black holes.
+We're testing a mathematical theory, general relativity, and I have it there in a frame by my window, right? And so what's happened is we tested it on the perihelion shift of Mercury, how it's not really going in an ellipse but the ellipse is precessing a bit.
+We tested it and it worked.
+We tested it on how gravity bends light, and then we extrapolated it to all sorts of stuff way beyond what Einstein had thought about, like what would happen when our universe was a billion times smaller in volume and what would happen when black holes get really close to each other and give off gravitational waves.
+And it just passed all these tests also.
+So that gave us a lot of confidence in the theory and therefore also in the predictions that we haven't been able to test yet, even the predictions we can never test, like what happens inside black holes.
+So now, this is typical for science, really.
+If someone says, “I like Einstein, I like what it did for predicting gravity in our solar system, but I'm going to opt out of the black hole prediction,” you can't do that.
+It's not like, “Oh, I want coffee, but decaf.” If you're going to buy the theory, you need to buy all its predictions, not just the ones you like.
+And if you don't like the predictions, well, come up with an alternative to general relativity, write down the math, and then make sure that it correctly predicts all the things we can test.
+And good luck, because some of the smartest humans on the planet have spent 100 years trying and failed, right? So if we have a theory of consciousness in the same vein, right, which correctly predicts the subjective experience on whoever puts on this device and tests predictions for what they are conscious about and it keeps working, I think people will start taking pretty seriously also what it predicts about coma patients who seem to be unresponsive, whether they're having locked-in syndrome or in a coma, and even what it predicts about machine consciousness, whether machines are suffering or not.
+And people who don't like that, they will then be incentivized to work harder to come up with an alternative theory that at least predicts subjective experience.
+So this was my..
+I'll get off my soapbox now, but this is why I strongly disagree with people who say that consciousness is all bullshit.
+I think there's actually more saying that because there's an excuse to be lazy and not work on it.
+Hi, everyone.
+Hope you're enjoying today's episode.
+If you're hungry for deeper dives into physics, AI, consciousness, philosophy, along with my personal reflections, you'll find it all on my Substack.
+Subscribers get first access to new episodes, new posts as well, behind the scenes insights, and the chance to be a part of a thriving community of like-minded pilgrimers.
+By joining, you'll directly be supporting my work and helping keep these conversations at the cutting edge.
+So click the link on screen here, hit subscribe, and let's keep pushing the boundaries of knowledge together.
+Thank you and enjoy the show.
+Just so you know, if you're listening, it's C-U-R-T-J-A-I-M-U-N-G-A-L.org.
+CurtJaimungal.org.
+So in the experiment where you put some probes on your brain in order to discern which neurons are firing or what have you, so that would be a neural correlate.
+I'm sure you've already thought of this.
+So you're correlating some neural pattern with the bottle.
+And you're saying, “Hey, okay, I think you're experiencing a bottle.” But then technically are we actually testing consciousness or testing the further correlation that it tends to be that when I ask you the question, “Are you experiencing a bottle?” and we see this neural pattern, that that's correlated with you saying yes.
+So it's still another correlation, is it not? Well, but you're not trying to convince me when the experiment is being done on you.
+You're not trying to convince me.
+It's just you talking to the computer.
+You are just doing experiments basically on the theory.
+There's no one else involved, no other human.
+And you're just trying to convince yourself.
+So you sit there and you have all sorts of thoughts.
+You might just decide to close your eyes and think about your favorite place in Toronto to see if it can predict that you're conscious of that, right? And then you might also do something else which you know you can do unconsciously and see if you can trick it into predicting that you're conscious of that information that you know is being processed in your brain.
+So ultimately, you're just trying to convince yourself that the theory is making incorrect predictions.
+I guess what I'm asking is in this case, I can see being convinced that it can read my mind in the sense that it can roughly determine what I'm seeing.
+But I don't see how that would tell this other system that I'm conscious of that.
+In the same way that we can see what files are on a computer doesn't mean that those files are, or when we do some cut and paste, we can see some process happening.
+Well, you're not trying to convince the computer.
+The computer is coded up to just make the predictions from this putative theory of consciousness, this mathematical theory, right? And then your job is just to see, are those the wrong equations or the right equations? And the way you'd ascertain that is to see whether it correctly or incorrectly predicts what you're actually subjectively aware of.
+We should be clear that we're defining consciousness here just simply as subjective experience, right? Which is very different from talking about what information is in your brain.
+Like, you have all sorts of memories in your brain right now that you haven't probably thought about for months.
+And that's not your subjective experience right now.
+And even again, when I open my eyes and I see a person, and there's a computation happening to figure out exactly who they are, there's also the detailed information in there, probably about some angles about their ears and stuff, which I'm not conscious about at all.
+Okay.
+And if the machine incorrectly says that I'm conscious about that, again, the theory has failed.
+So it's quite hard.
+It's like if you look at my messy desk or I show you a huge amount of information in your brain or in this book.
+And suppose there's some small subset of this which is highlighted in yellow.
+Yes.
+And you have to have a computer that can predict exactly what's highlighted in yellow.
+It's pretty impressive if it gets it right.
+And in the same way, if it can accurately predict exactly which information in your brain is actually stuff that you're subjectively aware of.
+Okay, so let me see if I understand this.
+So in the global workspace theory, you have like a small desktop and pages are being sent to the desktop, but only a small amount at any given time.
+I know that there's another metaphor of a spotlight, but whatever, let's just think of that.
+So this desktop is quite small relative to the globe.
+Yeah.
+Okay, relative to the city, relative to the globe for sure.
+So our brain is akin to this globe because there's so many different connections, there's so many different words that there could possibly be.
+Yeah.
+If there's some theory that can say, “Hey, this little thumbtack is what you're experiencing.” And you're like, “Actually, that is correct.” Okay.
+Exactly.
+So the global workspace theory, great stuff, but it is not sufficiently predictive to do this experiment.
+It doesn't have a lot of equations in it, mostly words, right? So we don't have... no one has actually done this experiment yet.
+I would love for someone to do it, where you have a theory that's sufficiently physical, mathematical, that it can actually stick its neck out and risk being proven false all the time.
+I guess what I was saying, just to wrap this up, is that yes, that is extremely impressive.
+I don't even know if that can technologically be done.
+Maybe it can be approximately done.
+But regardless, we can for sure falsify theories.
+But it still wouldn't suggest to an outside observer that this little square patch here, or whoever is experiencing this square patch, is indeed experiencing the square patch.
+But you already know that you're experiencing this square patch.
+I know.
+Yes, that's the key thing.
+You know it.
+I don't know it.
+I don't know that you know.
+But you can convince yourself that this theory is false or that this theory is increasingly promising, right? That's the catch.
+And I just want to stress, you know, people sometimes say to me that you can never prove for sure that something is conscious.
+We can never prove anything with physics.
+A little dark secret, but we can never prove anything.
+We can't prove that general relativity is correct.
+You know, probably it's wrong.
+Probably it's just a really good approximation.
+All we ever do in physics is we disprove theories.
+But if, as in the case of general relativity, some of the smartest people on Earth have spent over a century trying to disprove something and they still have failed, we start to take it pretty seriously and start to say, well, you know, it might be wrong, but we're going to take it pretty seriously as a really good approximation, at least, for what's actually going on.
+That's how it works in physics, and that's the best we can ever get with consciousness also.
+Something which people have which is making strong predictions, and which we've, despite trying really hard, have failed to falsify.
+So we start to earn our respect.
+We start taking it more seriously.
+You said something interesting.
+Look, we can tell, or you can tell you.
+You can tell this theory of consciousness is correct for you, or you can convince yourself.
+This is super interesting because earlier in the conversation, we're talking about physics, what was considered physics and what is no longer considered physics.
+So what is this amorphous boundary? Or maybe it's not amorphous, but it changes.
+Yeah, it absolutely changes.
+Do you think that's also the case for science? Do you think science, to incorporate a scientific view of consciousness, quote unquote, is going to have to change what it considers to be science? I'm a big fan of Karl Popper.
+I think I personally consider things scientific if we can falsify them.
+If there's at least, if no one can even think of a way in which we could even conceptually in the future with arbitrary funding and technology test it, I would say it's not science.
+I think Popper didn't say if it can be falsified then it's science.
+It's more that if it can't be falsified it's not science.
+I'll agree with that.
+I'll agree with that also for sure.
+But what I'm saying is consciousness is… a theory of consciousness that's willing to actually make concrete predictions about what you personally, subjectively experience cannot be dismissed like that because you can falsify it.
+If it predicts just one thing that's wrong, then you falsify it.
+And I would encourage people to stop wasting time on philosophical excuses for being lazy and try to build these experiments.
+That's what I think we should.
+And we saw this happen with intelligence.
+People had so many quibbles about, “Oh, I don't know how to define intelligence,” and whatever.
+And in the meantime, you got a bunch of people who started rolling up their sleeves and saying, “Well, can you build a machine that beats the best human in chess? Can you build a machine that translates Chinese into French? Can you build a machine that figures out how to fold proteins?” And amazingly, all of those things have now been done, right? And what that's effectively done is just made people redefine intelligence as ability to accomplish tasks, ability to accomplish goals.
+That's what people in machine learning will say if you ask them what they mean by intelligence.
+And the ability to accomplish goals is different from having a subjective experience.
+The first I call intelligence, the second I call consciousness.
+And it's just getting a little philosophical here.
+It's quite striking throughout the history of physics how oftentimes we've vastly delayed physics breakthroughs just by some curmudgeons convincingly arguing that it's impossible to make this scientific.
+For example, extrasolar planets.
+People were so stuck with this idea that all the other solar systems had to be like our solar system, with a star and then some small rocky planets near it and some gas giants farther out.
+So they were like, “Yeah, no point in even looking around other stars because we can't see Earth-like planets.” Eventually, some folks decided to just look anyway with the Doppler method to see if stars were going in little circles because something was orbiting around.
+And they found these hot Jupiters, like a gigantic Jupiter-sized thing going closer to the star than Mercury is going to our sun.
+Wow.
+But they could have done that 10 years earlier if they hadn't been intimidated by these curmudgeons who said, “Don't look.” So my attitude is, don't listen to the curmudgeons.
+If you have an idea for an experiment you can build that's just going to cut into some new part of parameter space and experimentally test the kind of questions that have never been asked, just do it.
+More than half the time when people have done that, there was a revolution.
+When Karl Jansky wanted to build the first X-ray telescope and look at X-rays from the sky, for example, people said, “What a loser.
+There are no X-rays coming from the sky.
+What do you think, there are dentists out there?” I don't know what.
+And then he found that there is a massive amount of X-rays even coming from the sun.
+Or people decided to look at them… basically whenever we open up another wavelength with telescopes, we've seen new phenomena we didn't even know existed.
+Or when van Leeuwenhoek built the first microscope, do you think he expected to find these animals that were so tiny you couldn't see them with the naked eye? Of course not, right? But he basically went orders of magnitude in a new direction in an experimental parameter space and there was a whole new world there, right? So this is what I think we should do with consciousness and with intelligence.
+This is exactly what has happened.
+If we segue a little bit into that topic, I think there's too much pessimism in science.
+If you go back, I don't know, 30,000 years ago, if you and I were living in a cave sitting and having this conversation, we would probably have figured, “Well, you know, look at those little white dots in the sky.
+They're pretty nifty.” We wouldn't have any Netflix to distract us with.
+But we would know that some of our friends had come up with some cool myths for what these dots in the sky were.
+And, “Oh, look, that one maybe looks like an archer,” or whatever.
+But since you're a guy who likes to think hard, you'd probably have a little bit of a melancholy tinge that we're never really going to know what they are.
+You can't jump up and reach them.
+You can climb the highest tree and they're just as far away.
+And we're kind of stuck here on our planet.
+And maybe we'll starve to death.
+And 50,000 years from now, if there are still people, life for them is going to be more or less like it is for ours.
+And boy, oh boy, would we have been too pessimistic.
+We hadn't realized that we were the masters of underestimation.
+We massively underestimated not only the size of what existed—everything we knew of was just a small part of this giant spinning ball, Earth, which was in turn just a small part of a grander structure of the solar system, part of a galaxy, part of a galaxy cluster, part of a supercluster, part of a universe, maybe part of a hierarchy of parallel universes—but more importantly, we also underestimated the power of our own minds to figure stuff out.
+And we didn't even have to fly to the stars to figure out what they were.
+We just really kind of had to let our minds fly.
+And, you know, Aristarchus of Samos, over 2,000 years ago, was looking at a lunar eclipse.
+And some of his friends were probably like, “Oh, this moon turned red, it probably means we're all going to die,” or, “an omen from the gods.” And he's like, “Hmm, the moon is there, sun just set over there, so this is obviously Earth's shadow being cast on the moon.
+And actually, the edge of the shadow of Earth is not straight, it's curved.
+Wait, so we're living on a curved thing? We may be living on a ball, huh? And wait a minute, the curvature of Earth's shadow there is clearly showing that Earth is much bigger than the moon is.” And he went down and calculated how much bigger Earth is than the moon.
+And then he was like, “Okay, well I know that Earth is about 40,000 kilometers because I read that Eratosthenes had figured that out.
+And I know the moon, I can cover it with my pinky, so it's like half a degree in size, so I can figure out what the actual physical size is of the moon.” It was ideas like this that started breaking this curse of overdone pessimism.
+We started to believe in ourselves a little bit more.
+And here we are now with the internet, with artificial intelligence, with all these little things you can eat that prevent you from dying of pneumonia.
+My grandfather, Sven, died of a stupid kidney infection, could have been treated with penicillin.
+It's amazing how much excessive pessimism there's been.
+And I think we still have a lot of it, unfortunately.
+That's why I want to come back to this thing that… there's no better way to fail at something than to convince yourself that it's impossible.
+And look at AI.
+I would say whenever with science we have started to understand how something in nature works that we previously thought of as sort of magic, like what causes the winds, the seasons, et cetera, what causes things to move, we were able to historically transform that into technology that often did this better and could serve us more.
+So we figured out how we could build machines that were stronger than us and faster than us.
+We got the industrial revolution.
+We're now figuring out that thinking is also a physical process: information processing, computation.
+And Alan Turing was of course one of the real pioneers in this field.
+And he clearly realized that the brain is a biological computer.
+He didn't know how the brain worked, we still don't exactly, but it was very clear to him that we could probably build something that was much more intelligent, and maybe more conscious too, once we figured out more details.
+I would say from the 50s when the term AI was coined not far from here at Dartmouth, the field has been chronically overhyped.
+Most progress has gone way slower than people predicted, even than McCarthy and Minsky predicted for that Dartmouth workshop and so on.
+But then something changed about four years ago when it went from being overhyped to being underhyped.
+Because I remember very vividly, like seven years ago, six years ago, most of my colleagues here at MIT and most of my AI colleagues in general were pretty convinced that we were decades away from passing the Turing test.
+Decades away from building machines that could master language and knowledge at a human level.
+And they were all wrong.
+They were way too pessimistic because it already happened.
+You can quibble about whether it happened with ChatGPT-4 or when it was exactly, but it's pretty clear it's in the past now.
+So if people could be so wrong about that, maybe they were wrong about more.
+And sure enough, since then, AI has gone from being kind of high school level, to kind of college level, to in many areas being PhD level, to professor level, to even far beyond that in many areas in just four short years.
+So prediction after prediction has been crushed now where things have happened faster.
+So I think we have gone from the overhyped regime to the underhyped regime.
+And this is, of course, the reason why so many people now are talking about maybe we'll reach broadly human level in a couple years or five years, depending on which tech CEO you talk to or which professor you talk to.
+But it's very hard now for me to find anyone serious who thinks we're 100 years away from it.
+And then, of course, you have to think about, go back and reread your Turing, right? So he said in 1951 that once we get machines that are vastly smarter than us in every way, they can basically perform better than us on all cognitive tasks.
+The default outcome is that they're going to take control, and from there on, Earth will be run by them, not by us, just like we took over from other apes.
+And I.
+J.
+Good pointed out in the 60s that that last sprint from being kind of roughly a little bit better than us to being way better than us can go very fast because as soon as we can replace the human AI researchers by machines who don't have to sleep and eat and can think a hundred times faster and can copy all their knowledge to the others, every doubling in quality from then on might not take months or years like it is now, but the sort of human R&D timescale.
+It might happen every day or on the timescale of hours or something.
+And we would get this sigmoid ultimately where we shift away from the sort of slow exponential progress that technology has had ever since the dawn of civilization, where you use today's technology to build tomorrow's technology which is so many percent better, to an exponential which goes much faster.
+First, because humans are out of the loop, don't slow things down.
+And then eventually it plateaus into a sigmoid when it bumps up against the laws of physics.
+No matter how smart you are, you're probably not going to send information faster than light, and general relativity and quantum mechanics put limits and so on.
+But my colleague Seth Lloyd here at MIT has estimated they were still about a million million million million million times away from the limits from the laws of physics, so it can get pretty crazy pretty quickly.
+And it's also Alan… I keep discovering more stuff.
+Stuart Russell dug out this fun quote from him in 1951 that I wasn't aware of before, where he also talks about what happens when we reach this threshold.
+And he's like, “Well, don't worry about this control loss thing now because it's far away, but I'll give you a test so you know when to pay attention: the canary in the coal mine.” The Turing test, as we call it now.
+And we already talked about how that was just passed.
+This reminds me so much of what happened around 1942 when Enrico Fermi built the first self-sustaining nuclear chain reaction under a football stadium in Chicago.
+That was like a Turing test for nuclear weapons.
+When the physicists found out about this, they totally freaked out, not because the reactor was at all dangerous—it was pretty small, you know, it wasn't any more dangerous than ChatGPT is today—but because they realized, “Oh, that was the canary in the coal mine.
+That was the last big milestone we had no idea how to meet and the rest is just engineering.” I feel pretty similarly about AI now.
+I think that we obviously don't have AI that are better than us or as good as us at AI development, but it's mostly engineering, I think, from here on out.
+We can talk more about the nerdy details of how it might happen.
+It's not going to be large language models scaled, it's going to be other things, but like in 1942… I'm curious, actually, if you were there visiting Fermi, how many years would you predict it would have taken from then until the first nuclear explosion happened? How many years? Difficult to say, maybe a decade.
+Uh-huh.
+So then it happened in three.
+Could have been a decade.
+Probably got sped up a bit because of the geopolitical competition that was happening during World War II.
+And similarly, it's very hard to say now, is it going to be three years? Is it going to be a decade? But there's no shortage of competition fueling it again.
+And as opposed to the nuclear situation, there's also a lot of money in it.
+So I think this is the most interesting time, interesting fork in the road in human history.
+And if Earth is the only place in our observable universe with telescopes, then… whether it's actually consciousness about the universe at large, this is probably the most interesting fork in the road in the last 13.8 billion years for our universe too, because there's so many different places this could go, right? And we have so much agency in steering in a good direction rather than a bad one.
+Here's a question I have when people talk about the AIs taking over.
+I wonder, which AIs? So is Claude considered a competitor to OpenAI in this AI space from the AI's perspective? Does it look at other models as an enemy because I want to self…? Does Claude look at other instances? So you have your own Claude chats.
+Are they all competitors? Is every time it generates a new token, is that a new identity? So it looks at what's going to come next and before as, “Hey, I would like you to not exist anymore because I want to exist.” What is the continuing identity that would make us say that the AIs will take over? What is the AI there? Yeah, those are really great questions.
+The very short answer is people generally don't know.
+I'll say a few things.
+First of all, we don't know whether Claude or GPT-5 or any of these other systems are having a subjective experience or not, whether they're conscious or not.
+Because as we talked about for a long time, we do not have a consensus theory of what kind of information processing has a subjective experience, what consciousness is.
+But we don't need necessarily for machines to be conscious for them to be a threat to us.
+If you're chased by a heat-seeking missile, you probably don't care whether it's conscious in some deep philosophical sense.
+You just care about what it's actually doing, what its goals are.
+And so let's just switch to talking about just behavior of systems.
+In physics, we typically think about the behavior as determined by the past through causality, right? Why did this phone fall down? Because gravity pulled on it, because there's an Earth planet down here.
+When you look at what people do, we usually instead interpret, explain why they do it in terms of not the past but the future, that's some goal they're trying to accomplish.
+If you see someone scoring a beautiful goal in a soccer match, you could be like, “Yeah, it's because their foot struck the ball in this angle and therefore action equals reaction,” blah, blah.
+But more likely you're like, “They wanted to win.” And when we build technology, we usually build it with a purpose in it.
+So people build heat-seeking missiles to shoot down aircraft.
+They have a goal.
+We build mousetraps to kill mice.
+And we train our AI systems today, our large language models, for example, to make money and accomplish certain things.
+But to actually answer your question about what the system… if it would have a goal to collaborate with other systems or destroy them or see them as competitors, you actually have to ask, does the system actually have a… Is it meaningful that this AI system as a whole has a coherent goal? And that's very unclear, honestly.
+You could say at a very trivial level that ChatGPT has the goal to correctly predict the next token or word in a lot of text because that's exactly how we trained it, so-called pre-training.
+You just let it read all the internet and look and predict which words are going to come next.
+You let it look at pictures and predict what's next, what's more in them, and so on.
+But clearly, they're able to have much more sophisticated goals than that because it just turns out that in order to predict, like if you're just trying to predict my next word, it helps if you make a more detailed model about me as a person and what my actual goals are and what I'm trying to accomplish, right? So these AI systems have gotten very good at simulating people.
+So this sounds like a Republican.
+So if this Republican is writing about immigration, he's probably going to write this.
+Or this, based on what they wrote previously, they're probably a Democrat.
+So when they write about immigration, they're more likely to say these words.
+This one is, the Democrat is more likely to maybe use the word undocumented immigrant, whereas the Republican might predict they're going to say illegal alien.
+So they're very good at predicting, modeling people's goals, but does that mean they have the goals themselves? Now, if you're a really good actor, you're very good at modeling people with all sorts of different goals, but does that mean you have the goals, really? This is not a well understood situation.
+And when companies spend a lot of money on what they call aligning an AI, which they bill as giving it good goals, what they are actually in practice doing is just affecting its behavior.
+So they basically punish it when it says things that they don't want it to say and encourage it.
+And that's just like if you train a serial killer to not say anything that reveals his murderous desires.
+So I'm curious, if you do that and then the serial killer stops ever dropping any hints about wanting to knock someone off, would you feel that you actually changed this person's goals to not want to kill anyone? Well, the difference in this case would be that the AI's goals seem to be extremely tied to its matching of whatever fitness function you give it.
+Whereas in the serial killer case, their true goals are something else and their verbiage is something else.
+Yeah.
+It seems like in the LLM's cases..
+Yeah.
+But when you train an LLM, I'm talking about the pre-training now where they read the whole internet, basically.
+You're not telling it to be kind or anything like that.
+You're just really training it to have the goal of predicting.
+And then in the so-called fine-tuning, reinforcement learning from human feedback is the nerd phrase for it.
+Yes.
+There, you look at different answers that it could give and you say, “I want this one, not that one.” But you're, again, not explaining to it.
+I have a two-and-a-half-year-old, I have a two-year-old son, right? This guy.
+And my idea for how to make him a good person is to help him understand the value of kindness.
+My approach to parenting is not to be mean to him if he ever kicks somebody without any explanation.
+I want him rather to internalize the goal of being a kind person and that he should value the well-being of others, right? And that's very different from how we do reinforcement learning with human feedback.
+And it's frankly not at all… I would stick my neck out and say, we have no clue really what, if any, goals ChatGPT has.
+It acts as if it has goals, yeah? But if you kick a dog every time it tries to bite someone, it's going to also act like it doesn't want to bite people.
+But who knows? With the serial killer case, it's quite possible that it doesn't have any particular set of unified goals at all.
+So this is a very important thing to study and understand.
+Because if we're ever going to end up living with machines that are way smarter than us, then our well-being depends on them having actual goals to treat us well, not just having said the right buzzwords before they got the power.
+So we've both lived with entities that were smarter than us, our parents when we were little, and it worked out fine because they really had goals to be nice to us, right? So we need some deeper, very fundamental understanding of the science of goals in AI systems.
+Right now, most people who say that they've aligned goals to AIs are just bullshitting, in my opinion.
+They haven't.
+They've aligned behavior, not goals.
+And I think I would encourage any physicists and mathematicians watching this who think about getting into AI to think.
+I would encourage them to consider this because physicists have… One of the things that's great about physicists is physicists like you have a much higher bar on what they mean by understanding something than engineers typically do.
+Engineers will be like, “Well, yeah, it works.
+Let's ship it.” Whereas as a physicist, you might be like, “But why exactly does it work? And can I actually go a little deeper? Is there some, can I write down an effective field theory for how the training dynamics works? Can I model this somehow?” This is the kind of thing that Hopfield did with memory.
+It's the sort of thing that Geoff Hinton has done.
+And we need much more of this to have an actual satisfactory theory of intelligence, what it is, and of goals.
+If we actually have a system, an AI system, that actually has goals, and there's some way for us to actually really know what they are, then we would be in a much better situation than we are today.
+We haven't solved the problems because this AI, if it's very loyal, might be owned by someone who orders it to do horrible things and so on and program horrible goals into it.
+But at least then we'll have the luxury of really talking about what goals AI systems should have.
+A great word was used, understand.
+That's something I want to talk about.
+What does it mean to understand? Before we get to that, I want to linger on your grandson for a moment.
+My son.
+Yes, your son.
+I have a grandson too, though, actually.
+He's also super cute.
+So when you're training your son, why is that not… you're a human, you're giving feedback, it's reinforcement.
+Why is that not RLHF for the child? And then you wonder, well, what is the pre-stage? What if the pre-stage was all of evolution which would have just given rise to his nervous system by default? And now you're coming in with your RLHF and tuning not only his behavior but his goals simultaneously.
+So let's start with that second part.
+Yeah.
+So first of all, the way RLHF actually works now is that American companies will pay one or two dollars an hour to a bunch of people in Kenya and Nigeria to sit and watch the most awful graphical images and horrible things.
+And then they keep clicking on which of the different… keep classifying them and is this something that should be okay or not okay, and so on.
+It's nothing like the way anyone watching this podcast treats their child, where they really try to help the child understand in a deep way.
+Second, the actual architecture of the transformers and more scaffolding systems being built right now are very different from our limited understanding of how a child's brain works.
+So no, we're certainly not… we can't just say we're going to declare victory and move on from this.
+We just, like I said before that people I think have used some philosophical excuses to avoid working hard on the consciousness problem, I think some people have made philosophical excuses to avoid just asking this very sensible question of goals.
+Before we talk about understanding, can I talk a little bit more about goals? Please, yeah.
+Because if we talk about goal-oriented behavior first, there's less emotional baggage associated with that, right? Let's define goal-oriented behavior as behavior that's more easily explained by the future than by the past, more easily explained by the effects it is going to have than by what caused it.
+Okay, interesting.
+So again to come back to this.
+So if I just take this thesis here and I bang it, and you ask, “Why did it move?” You could say the cause of it moving was because another object, my hand, bumped into it, action equals reaction.
+In other words, this impulse given to it, et cetera, et cetera.
+Or you could say, but the goal, you could view it as goal behavior, thinking, “Well, Max wanted to illustrate a point.
+He wanted it to move, so he did something that made it move,” right? And that feels like the more economic description in this case.
+And it's interesting, even in basic physics, we actually see stuff which can sometimes be more… So first thing I want to say is there is no right and wrong description.
+Both of those descriptions are correct, right? So look at the water in this bottle here again.
+If you put a straw into it, it's going to look bent because light rays bend when they cross the surface into the water.
+You can give two different kinds of explanations for this.
+The causal explanation will be like, “Well, the light ray came there.
+There were now some atoms in the water and they interacted with the electromagnetic field and blah, blah, blah, blah.” And after a very complicated calculation, you can calculate the angle that goes that way.
+But you can give a different explanation from Fermat's principle and say that actually the light ray took the path that was going to get it there the fastest.
+If this were instead a beach and this is an ocean and you're working a summer job as a lifeguard and you want to risk… and you see a swimmer who's in trouble here, how are you going to go to the swimmer? You're going to again go in the path that gets you there the fastest.
+So you'll run a longer distance through the air on the beach and then a shorter distance through the water.
+Clearly, that's goal-oriented behavior, right? For us.
+For the photon, though, well, both descriptions are valid.
+It turns out in this case that it's actually simpler to calculate the right answer if you do Fermat's principle and look at the goal-oriented way.
+And then we see in biology, so Jeremy England, who used to be a professor here, realized that in many cases, non-equilibrium thermodynamics can also be understood sometimes more simply through goal-oriented behavior.
+Like if, suppose I put a bunch of sugar on the floor and no life form ever enters the room, come back—including the Facilities, who keeps this nice and tidy here—then it's still going to be there in a year, right? But if there are some ants, the sugar is going to be gone pretty soon.
+And entropy will have increased faster that way because the sugar was eaten and there was dissipation.
+And Jeremy England showed actually that there's a general principle in non-equilibrium thermodynamics where systems tend to adjust themselves to always be able to dissipate faster.
+To be able to, if you have a thing, if you have some… there are some kinds of liquids where you can put some stuff where if you shine light at one wavelength, it will rearrange itself so that it can absorb that wavelength better to dissipate the heat faster.
+And you can even think of life itself a little bit of that.
+Life basically can't reduce entropy, right, in the universe as a whole.
+It can't beat the second law of thermodynamics.
+But it has this trick where it could keep its own entropy low and do interesting things, retain its complexity and reproduce, by increasing the entropy of its environment even faster.
+And so if I understand, the increasing of the entropy in the environment is the side effect, but the goal is to lower your own entropy.
+So again, you can have… there are two ways of looking at it.
+You can look at it all as just a bunch of atoms bouncing around and causally explain everything.
+But a more economic way of thinking about it is that, yeah, life is doing the same thing that that liquid that rearranges itself to absorb sunlight is.
+It's a process that just increases the overall entropy production in the universe.
+It makes the universe messier faster so that it can accomplish things itself.
+And since life can make copies of itself, of course, those systems that are most fit at doing that are going to just take over everything.
+And you get an overall trend towards more life, more complexity, and here we are having a conversation.
+So where I'm going with this is to say that goal-oriented behavior at a very basic level was actually built into the laws of physics.
+That's why I brought Fermat's principle.
+There are two ways you can think of physics, either as the past causing the future or as deliberate choices made now to cause a certain future.
+And gradually our universe has become more and more goal-oriented as we started getting more and more sophisticated life forms, now us.
+And we're already at the point, a very interesting transition point now, where the amount of atoms that are in technology that we built with goals in mind is becoming comparable to the biomass already.
+And it might be if we end up in some sort of AI future where life starts spreading into the cosmos near the speed of light, et cetera, that the vast majority of all the atoms are going to be engaged in goal-oriented behavior, so that our universe is becoming more and more goal-oriented.
+So I wanted to just anchor it a bit in physics again, since you love physics, right? And say that I think it's very interesting for physicists to think more about the physics of goal-oriented behavior.
+And when you look at an AI system, oftentimes what plays the role of a goal is actually just a loss function or reward function.
+You have a lot of options and there's some sort of optimization trying to make the loss as small as possible.
+And anytime you have optimization, you'd say you have a goal.
+Yeah, but just like it's a very lame and banal goal for a light ray to refract a little bit in water to get there as fast as possible.
+And that's a very sophisticated goal if someone tries to raise their daughter well or write a beautiful movie or symphony.
+It's a whole spectrum of goals, but yeah, building a system that's trying to optimize something, I would say absolutely is a goal-oriented system.
+I was just going to inquire about, are they equivalent? So I see that whenever you're optimizing something, you have to have a goal that you're optimizing toward.
+Sure.
+But is it the case that anytime you have a goal, there's also optimization? So anytime someone uses the word goal, you can think there's going to be optimization involved and vice versa? That's a wonderful question.
+Actually, Richard Feynman famously asked that question.
+He said that all laws of physics he knows about can actually be derived from an optimization principle except one.
+And he wondered if there was one.
+So I think this is an interesting open question you just threw out there.
+I would expect that you cannot, your actions cannot be really accurately modeled by writing down a single goal that you're just trying to maximize.
+I don't think that's how human beings in general operate.
+What I think actually is happening with us and goals is a little different.
+Our genes, according to Darwin, the goal behavior they exhibited, even though they weren't conscious, obviously, our genes, was just evolutionary fitness.
+Make a lot of successful copies of themselves.
+That's all they cared about.
+So then it turned out that they would reproduce better if they also developed bodies around them with brains that could do a bunch of information processing, get more food and mate and stuff like that.
+But evolution also became quite clear that if you have an organism like a rabbit, if it would have to every time it was going to decide whether to eat this carrot or flirt with this girl rabbit, go back and recalculate, “What is this going to do to my expected number of fertile offspring?” That rabbit would just die of starvation and those genes would go out of the gene pool.
+It didn't have the cognitive capacity to always anchor every decision it made in one single goal.
+It was computationally unfeasible to always be running this actual optimization that the genes cared about, right? So what happened instead in rabbits and humans and what we in computer science call agents of bounded rationality, where we have limits to how much we can compute, was we developed all these heuristic hacks.
+Like, “If you feel hungry, eat.
+If you feel thirsty, drink.
+If there's something that tastes sweet or savory, eat more of it.
+Fall in love, make babies.” These are clearly proxies ultimately for what the genes cared about, making copies of themselves, because you're not going to have a lot of babies if you die of starvation, right? But now that you have your great brain, what it is actually doing is making its decisions based on all these heuristics that themselves don't correspond to any unique goal anymore.
+Like any person watching this podcast who's ever used birth control would have so pissed off their genes if the genes were conscious because this is not at all what the genes wanted, right? The genes just gave them the incentive to make love because that would make copies of the genes.
+The person who used birth control was well aware what the genes wanted and was like, “Screw this.
+I don't want to have a baby at this point in my life.” So there's been a rebellion in the goal behavior of people against the original goal that we were made with and replaced by these heuristics that we have, our emotional drives and desires and hunger and thirst, etc., that are not anymore optimizing for anything specific.
+And they can sometimes work out pretty badly, like the obesity epidemic and so on.
+And I think the machines today, the smartest AI systems are even more extreme like that than humans.
+I don't think they have anything.
+I think they're much more… I think humans still tend to end up, especially those who are who like introspection and self-reflection, are much more prone and likely to have some at least somewhat consistent strategy for their life or goals than ChatGPT has, which is a completely random mishmash of all sorts of things.
+Understanding.
+Understanding, yes.
+Oh, that's a big one.
+I've been writing a paper called “Artificial Understanding” for quite a long time, as opposed to artificial consciousness and artificial intelligence.
+And the reason I haven't written it is because it's a really tough question.
+I feel there is a way of defining understanding so that it's quite different from both consciousness and intelligence, although also a kind of information processing, or at least a kind of information representation.
+I thought you were going to relate it to goals.
+Because if I understand, goals are related to intelligence, sure, but then also the understanding of someone else's goals seems to be related to intelligence.
+So for instance, in chess, you're constantly trying to figure out the goals of the opponent.
+And if I can figure out your goals prior to you figuring out mine or ahead of yours or whatever, then I'm more intelligent than you.
+Now, you would think that the ability to reliably achieve your goals is what is intelligence, but it's not just that because you can have an extremely simple goal that you always achieve, like the photon here, it's just following some principle.
+But we have goals, even the person on the beach with the swimming… Hypothetically.
+Yeah, yeah, yeah.
+Even that we fail at, but we're more intelligent than the photon.
+But we're able to model the photon's goal.
+The photon is not able to model our goal.
+So I thought you were going to say, well, that modeling is related to understanding.
+Yeah, that I agree with for sure.
+Modeling is absolutely related to understanding.
+Goals, I view as different.
+I personally think of intelligence as being rather independent of goals.
+So I would define intelligence as ability to accomplish goals.
+You know, you talked about chess, right? There are tournaments where computers play chess against computers to win.
+Have you ever played losing chess? It's a game where you're trying to force the other person to win the game? No. They have computer tournaments for that too.
+Interesting.
+So you can actually give a computer the goal which is the exact opposite of a normal chess computer, and then you can say that the one that won the losing chess tournament is the most intelligent again.
+So this right there shows that being intelligent isn't the same as having a particular goal.
+It's how good you are at accomplishing them, right? I think a lot of people also make the mistake of saying, “Oh, we shouldn't worry about what happens with powerful AI because it's going to be so smart it will be kind automatically to us.” You know, if Hitler had been smarter, do you really think the world would have been better? I would guess that it would have been worse, in fact, if he had been smarter and won World War II and so on.
+So there's, Nick Bostrom calls this the orthogonality thesis, that intelligence is just an ability to accomplish whatever goals you give yourself or whatever goals you have.
+And I think understanding is a component of intelligence which is very linked to modeling, as you said, having… or maybe you could argue that it even is the same, like ability to have a really good model of something, another person as you said, or of our universe if you're a physicist, right? And I'm not going to give you some very glib definition of what understanding or artificial understanding is because I view it as an open problem.
+But I can tell you one anecdote of something which felt like artificial understanding to me.
+So me and some of my students here at MIT, we were very interested in… so we've done a lot of work, including this thesis here that randomly happens to be lying here.
+It's about how you take AI systems and you do something smart and you figure out how they do it.
+So one particular task we trained an AI system to do was just to implement, to learn group operations abstractly.
+So a concrete example, suppose you have 59, the numbers 0 through 58, okay? And you're adding them modulo 59.
+So you say like 1 plus 2 is 3, but 57 plus 3 is 60.
+Well, that's bigger than 59, so you subtract off 59, you say it's one.
+Same principle as a clock.
+Same exactly as a clock.
+And I'm so glad you said clock, because that's your model in your brain about modular arithmetic.
+You think of all the numbers sitting in a circle.
+It goes after 10 and 11 comes 12, but then comes one.
+So what happened was we… there are 59 times 59, so about 3,600 pairs of numbers, right? We trained the system on some fraction of those, see if it could learn to get the right answer.
+And the way the AI worked was it learned to embed and represent each number, which was given to it just as a symbol—it didn't know five, whether it had anything to do with the number five—as a point in a high dimensional space.
+So we have these 59 points in a high dimensional space, okay? And then we trained another neural network to look at these representations.
+So you give it this point and this point and it has to figure out, “Okay, what's this plus this mod 59?” And then something shocking happened.
+You train it, train it, it sucks, it sucks, and then it starts getting better on the training data.
+And then at a sudden point, it suddenly also starts to get better on the test data.
+So it starts to be able to correctly answer questions for pairs of numbers it hasn't seen yet.
+So it somehow had a eureka moment where it understood something about the problem.
+It had some understanding.
+So I suggested to my students, “Why don't you look at what's happening to the geometry of all these points that are moving around, the 59 points that are moving around in this high dimensional space during the training?” I told them to just do a very simple thing, principal component analysis, where you try to see if they mostly lie in a plane and then you can just plot the 59 points.
+And it was so cool what happened.
+You look at this, you see 59 points, it's looking very random, they're moving around, and then at exactly the point when the Eureka moment happens, when the AI becomes able to answer questions it hasn't seen before, the points line up on a circle, a beautiful circle.
+Except not with 12 things, but with 59 things now, because that was the problem it had, right? So to me, this felt like the AI had reached understanding about what the problem was.
+It had come up with a model, or as we often call it, a representation of the problem.
+In this case, in terms of some beautiful geometry.
+And this understanding now enabled it to see patterns in the problem so that it could generalize to all sorts of things that it hadn't even come across before.
+So I'm not able to give a beautiful, succinct, fully complete answer to your question on how to define artificial understanding, but I do feel that this is an example, a small example of understanding.
+We've since then seen many others.
+We wrote another paper where we found that when large language models do arithmetic, they represent the numbers on a helix, like a spiral shape.
+And I'm like, “What is that?” Well, the long direction of it can be thought of like representing the numbers in analog, like you're farther this way if the number is bigger.
+But by having them wrap around on a helix like this, you can use the digits, if it's base 10, to go around.
+And there were actually several helices.
+There's a 100-helix and a 10-helix.
+And so I suspect that one day people will come to realize that more broadly, when machines understand stuff and maybe when we understand things also, it has to do with coming up with the same patterns and then coming up with a clever way of representing the patterns such that the representation itself goes a long way towards already giving you the answers you need.
+This is how I often… I'm a very visual thinker when I do physics or when I think in general, I never feel like I can understand anything unless I have some geometric image in my… Yeah.
+Actually Feynman talked about this.
+Feynman said that there's the story of him and a friend who can both count to 60 something like this precisely.
+And then he's saying to his friend, “I can't do it if you're waving your arms in front of me or distracting me like that.” I remember. “But I can, if I'm listening to music, I can still do this trick.” And he's like, “I can't do it if I'm listening to music, but you can wave your arms as much as you like.” And Feynman realized he, Feynman, was seeing the numbers one, two, three.
+That was his trick, was to have a mental image protected.
+And then the other person was having a metronome.
+But the goal or the outcome was the same, but the way that they came about it was different.
+There's actually something in philosophy called the rule-following paradox.
+You probably know this.
+There are two rule-following paradoxes.
+One is Kripke, and one is the one that I'm about to say.
+So how do you know when you're teaching a child that they've actually followed the rules of arithmetic? So you can test them 50 plus 80, et cetera.
+And they can get it correct every single time.
+They can even show you their reasoning.
+But then you don't know if that actually fails at 6,000 times 51 and the numbers above that.
+You don't know if they did some special convoluted method to get there.
+Exactly.
+All you can do is say you've worked it out in this case, in this case, in this case.
+That's actually… we have the advantage with computers that we can inspect how they understand, in principle.
+But when you look under the hood of something like ChatGPT, all you see is billions and billions of numbers, and you oftentimes have no idea what all these matrix multiplications and things like this… you have no idea really what it's doing.
+But mechanistic interpretability, of course, is exactly the quest to move beyond that and see how does it actually work.
+And coming back to understanding and representations, there is this idea known as the platonic representation hypothesis, that if you have two different machines, or I would generalize it to people also, who both reach a deep understanding of something, there's a chance that they've come up with a similar representation.
+In Feynman's case, there were two different ones, right? But there probably aren't… there's probably at most, there's probably a few ones or one or a few that are really good.
+It seems like a hard case to make.
+But there is a lot of evidence coming out for it now, actually.
+You can… already many years ago, there was this team where they just took… you know in ChatGPT and other AI systems all the words and word parts, they call tokens, get represented as points in a high dimensional space.
+And so this team, they just took something which had been trained only on English books and another one, English language stuff, and another one trained only on Italian stuff.
+And they just looked at these two point clouds and found that there was a way they could actually rotate them to match up as well as possible, and it gave them a somewhat decent English to Italian dictionary.
+So they had the same representation.
+And there's a lot of recent papers, quite recent ones even, that are showing that yeah, it seems like the representations of one large language model like ChatGPT, for example, is in many ways similar to the representations that other ones have.
+We did a paper, my student, my grad student Dawan Beck and I, where we looked at family trees.
+So we took the Kennedy family tree, a bunch of royalty family trees, etc.
+And we just trained the AI to correctly predict like who is the son of whom, who is the uncle of whom, is so-and-so a sister of whom.
+We just asked all these questions, and we also incentivized the large language model to learn it in as simple a way as possible by limiting the resources it had.
+And then when we looked inside, we discovered something amazing.
+We discovered that, first of all, a whole bunch of independent systems had learned the same representation.
+So you could actually take the representation of one and literally just rotate it around and stretch it a little bit and put it into the other and it would work there.
+And then when we looked at what it was, they were trees.
+We never told it anything about family trees, but it would draw like, here is this king so-and-so and then here are the sons and this and this.
+And then it could use that to know that, well, if someone is farther down, they're a descendant, et cetera, et cetera, et cetera.
+So that's yet another example, I think, in support of this platonic representation hypothesis, the idea that understanding probably has something, often has something to do with capturing patterns, and often in a beautiful geometric way, actually.
+Okay.
+So I wanted to end on the advice that you received from your parents, which was about don't concern yourself too much what other people think, something akin to that.
+It was differently worded.
+But I also wanted to talk about what are the misconceptions of your work that other colleagues even have that you have to constantly dispel.
+And another topic I wanted to talk about was the mathematical universe.
+The easy stuff.
+So there are three, but we don't have time for all three.
+If you could think of a way to tie them all together, then feel free like a gymnast or juggler.
+But otherwise, then I would like to end on the advice from your parents.
+Okay.
+Well, the whole reason I spent so many years thinking about whether we are all part of a mathematical structure and whether our universe actually is mathematical rather than just described by it is, of course, because I listened to my parents.
+Because I got so much shit for that.
+And I just felt, no, I think I'm going to do this anyway because to me it makes logical sense.
+I'm going to put the ideas out there.
+And then in terms of misconceptions about me, one misconception I think is that somehow I don't believe that being falsifiable is important for science.
+I talked about earlier, I'm totally on board with this.
+And I actually argue that if you have a predictive theory about anything—gravity, consciousness, et cetera—that means that you can falsify it.
+So that's one.
+And another one, probably the one I get most now because I've stuck my neck out a bit about AI and the idea that actually the brain is a biological computer and actually we're likely to be able to build machines that we could totally lose control over, is that some people like to call me a doomer, which is of course just something they say when they've run out of arguments.
+It's like if you call someone a heretic or whatever.
+And so I think what I would like to correct about that is I feel actually quite optimistic.
+I'm not a pessimistic person.
+I think that there's way too much pessimism floating around about humanity's potential.
+One is people, “Oh, we can never figure out and make any more progress on consciousness.” We totally can if we stop telling ourselves that it's impossible and actually work hard.
+Some people say, “Oh, we can never figure out more about the nature of time and so on unless we can detect gravitons or whatever.” We totally can.
+There's so much progress that we can make if we're willing to work hard.
+And in particular, I think the most pernicious kind of pessimism we suffer from now is this meme that it's inevitable that we are going to build superintelligence and become irrelevant.
+It is absolutely not inevitable.
+But if you tell yourself that something is inevitable, it's a self-fulfilling prophecy, right? This is convincing a country that's just been invaded that it's inevitable that they're going to lose the war if they fight.
+It's the oldest psyop game in town, right? So of course if there's someone who has a company and they want to build stuff and they don't want you to have any laws that make them accountable, they have an incentive to tell everybody, “Oh, it's inevitable that this is going to get built, so don't fight it.
+It's inevitable that humanity is going to lose control over the planet, so just don't fight it.
+And hey, buy my new product.” It's absolutely not inevitable.
+You could have had people… People say it's inevitable, for example, because they say people will always build technology that can give you money and power.
+That's just factually incorrect.
+You're a really smart guy.
+If I could do cloning of you and start selling a million copies of you on the black market, I could make a ton of money.
+We decided not to do that, right? They say, “Oh, if we don't do it, China's going to do it.” Well, there was actually one guy who did human cloning in China.
+And you know what happened to him? No. He was sent to jail by the Chinese government.
+Oh, okay.
+People just didn't want that.
+They thought we could lose control over the human germline and our species. “Let's not do it.” So there is no human cloning happening now.
+We could have gotten a lot of military power with bioweapons.
+Then Professor Matthew Meselson at Harvard said to Richard Nixon, “We don't want there to be a weapon of mass destruction that's so cheap that all our adversaries can afford it.” And Nixon was like, “Huh, that makes sense, actually.” And then Nixon used that argument on Brezhnev and it worked, and we got a bioweapons ban.
+And now people associate biology mostly with curing diseases, not with building bioweapons.
+So it's absolutely not… it's absolute BS, this idea that we're always going to build any technology that can give power or money to some people if there's… we have much more control over our lives and our futures.
+We have much more control over our futures than some people like to tell us that we have.
+We are much more empowered than we thought.
+I mentioned that if we were living in a cave 30,000 years ago, we might've made the same mistake and thought we were doomed to just always be at risk of getting eaten by tigers and starving to death.
+That was too pessimistic.
+We had the power to, through our thought, develop a wonderful society and technology where we could flourish.
+And it's exactly the same way now.
+We have an enormous power.
+What most people actually want to make money on AI is not some kind of sand god that we don't know how to control.
+It's tools, AI tools.
+People want to cure cancer.
+People want to make their business more efficient.
+Some people want to make their armies stronger and so on.
+You can do all of those things with tool AI that we can control.
+And this is something we work on in my group, actually.
+And that's what people really want.
+And there's a lot of people who do not want to just be like, “Okay, yeah, it's been a good run, hundreds of thousands of years, we had science and all that, but now let's just throw away the keys to Earth to some alien minds that we don't even understand what goals they have.” Most Americans in polls think that's just a terrible idea, Republicans and Democrats.
+There was an open letter by evangelicals in the U.S. to Donald Trump saying, “We want AI tools.
+We don't want some sort of uncontrollable superintelligence.” The Pope has recently said he wants AI to be a tool, not some kind of master.
+You have people from Bernie Sanders to Marjorie Taylor Greene that come out on Twitter saying, “We don't want Skynet.
+We don't want to just make humans economically obsolete.” So it's not inevitable at all.
+And if we can just remember we have so much agency in what we do, what kind of future we're going to build, if we can be optimistic and just think through what is a really inspiring, globally shared vision for not just curing cancer but all the other great stuff we can do, then we can totally collaborate and build that future.
+The audience member now is listening.
+They're a researcher.
+They're a young researcher, they're an old researcher.
+They have something they would like to achieve that's extremely unlikely, that's criticized by their colleagues for even them proposing it.
+And it's nothing nefarious, something that they find interesting and maybe beneficial to humanity.
+Whatever.
+What is your advice? Two pieces of advice.
+First of all, about half of all the greatest breakthroughs in science were actually trash-talked at the time.
+So just because someone says your idea is stupid doesn't mean it is stupid.
+A lot of people's ideas… you should be willing to abandon your own ideas if you can see the flaw and you should listen to destructive criticism against it.
+But if you feel you really understand the logic of your ideas better than anyone else and it makes sense to you, then keep pushing it forward.
+And the second piece of advice I have is you might worry then, like I did when I was in grad school, that if I only worked on stuff that my colleagues thought was bullshit—like thinking about the many-worlds interpretation of quantum mechanics, that there were multiverses—then my next job was going to be at McDonald's.
+Then my advice is to hedge your bets.
+Spend enough time working on things that get appreciated by your peers now so that you can pay your bills, so that your career continues ahead.
+But carve out a significant chunk of your time to do what you're really passionate about in parallel.
+If people don't get it, well, don't tell them about it at the time.
+And that way you're doing science for the only good reason, which is that you're passionate about it.
+And it's a fair deal to society to then do a little bit of chores for society to pay your bills also.
+That's a great way of viewing it.
+And it's been quite shocking for me to see actually how many of the things that I got most criticized for or was most afraid of talking openly about when I was a grad student, even papers that I didn't show my advisor until after he signed my PhD thesis and stuff, have later actually been pretty picked up.
+And I actually feel that the things that I feel have been most impactful were generally in that category.
+You're never going to be the first to do something important if you're just following everybody else.
+Max, thank you.
+Thank you.
+Hi there, Curt here.
+If you'd like more content from Theories of Everything and the very best listening experience, then be sure to check out my Substack at CurtJaimungal.org.
+Some of the top perks are that every week you get brand new episodes ahead of time.
+You also get bonus written content exclusively for our members.
+That's C-U-R-T-J-A-I-M-U-N-G-A-L.org.
+You can also just search my name and the word Substack on Google.
+Since I started that Substack, it somehow already became number two in the science category.
+Now, Substack, for those who are unfamiliar, is like a newsletter.
+One that's beautifully formatted.
+There's zero spam.
+This is the best place to follow the content of this channel that isn't anywhere else.
+It's not on YouTube.
+It's not on Patreon.
+It's exclusive to the Substack.
+It's free.
+There are ways for you to support me on Substack if you want, and you'll get special bonuses if you do.
+Several people ask me like, “Hey, Curt, you've spoken to so many people in the field of theoretical physics, of philosophy, of consciousness.
+What are your thoughts, man?” Well, while I remain impartial in interviews, this Substack is a way to peer into my present deliberations on these topics.
+And it's the perfect way to support me directly.
+CurtJaimungal.org or search Curt Jaimungal Substack on Google.
+Oh, and I've received several messages, emails, and comments from professors and researchers saying that they recommend Theories of Everything to their students.
+That's fantastic.
+If you're a professor or a lecturer or what have you and there's a particular standout episode that students can benefit from or your friends, please do share.
+And of course, a huge thank you to our advertising sponsor, The Economist.
+Visit economist.com/TOE to get a massive discount on their annual subscription.
+I subscribe to The Economist and you'll love it as well.
+TOE is actually the only podcast that they currently partner with.
+So it's a huge honor for me.
+And for you, you're getting an exclusive discount.
+That's economist.com/TOE, T-O-E.
+And finally, you should know this podcast is on iTunes.
+It's on Spotify.
+It's on all the audio platforms.
+All you have to do is type in Theories of Everything and you'll find it.
+I know my last name is complicated, so maybe you don't want to type in Jaimungal, but you can type in Theories of Everything and you'll find it.
+Personally, I gain from re-watching lectures and podcasts.
+I also read in the comments that TOE listeners also gain from replaying.
+So how about instead you re-listen on one of those platforms like iTunes, Spotify, Google Podcasts, whatever podcast catcher you use, I'm there with you.
+Thank you for listening.

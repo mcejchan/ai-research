@@ -1,0 +1,400 @@
+The thing that a lot of people are missing right now, the fact that like it's just hard to use claude code and figure out where you need to go.
+You have this magical eightball that can literally summon you a pizza to generate your next billion dollar idea.
+And now that you have this tool, how do you actually use it productively? Cuz when I use it, it doesn't always work.
+And then other people online say it doesn't work.
+And then when I use it this other way, all of a sudden, like I'm just in this zone burning tokens at a million miles an hour.
+And so, how can we actually leverage this intelligence? And this conversation today is going to actually help us figure that out. >> There is no reason that tools can't be constructed at this moment with the technology as it currently is that will reliably let you give it a task and you come back in an hour and the whole thing has been validated.
+Claude code has quickly taken over as the top choice for AI coding tools, but most people are only using a fraction of its capabilities.
+This tool is way more powerful than people realize and even I wasn't aware of some of the incredible functionality that we discussed today.
+So, in episode 52 of Tool Use brought to you by ToolHive, we have two Cloud Code experts joining us to tell us how the pros are using it.
+There are so many great tips in this video.
+Every Cloud Code user will learn something new.
+We cover how to optimally set up Cloud Code, the benefits of different thinking modes, context management techniques, sub agents, incredible hooks and slash commands, and a lot more.
+We're joined by Ray Fernando, a former Apple engineer for 12 years and my favorite AI streamer teaching the whole world how to use AI.
+He's always cooking up some great content. and Eric Boost, an avid builder who's deeply curious and anthropic super fan.
+He has tweeted out more high value insights on cloud code than anyone else I've seen.
+If you're not following these two guys, you're definitely falling behind.
+This is a cloud code masterass.
+When you install cloud code on a on a new machine, what what's the first thing you do? How do you get started? First, I set up an alias for the letter C so that whenever I type C, it opens Claude with dangerously skip permissions flag.
+Uh, so I can very quickly hop around to a new project folder in the terminal and I can just type C and then it's open and I can start asking questions.
+I also try to do keyboard replacements.
+So like you know your keyboard text replacement.
+So I replaced the word the letter U with ultraink and I replaced the the letter W with what happened.
+Ultra think and make a plan before coding.
+So I have a set of just principles that speed up the workflow quite a bit.
+The next thing I do is install cloud code docs.
+Uh and so this this documentation allows a simple way for cloud code to understand what its capabilities are. um it has a base set of internal I guess it's it's not specifically training but anthropic provides it with the set of instructions about what it can and can't do but in order to get more information about the the depths of its capabilities it has to do a web fetch so if you ask it can you do this how do I use slash commands how do I use agents things like that then it has to go to anthropic docs and even though if you go to the documentation website you can click on copy markdown it'll give you the markdown file for some reason right now cloud code doesn't go straight straight to that file.
+It goes to the web page.
+It does a a command which converts it to markdown and it downloads all this stuff and it takes a little bit of extra processing to do that.
+But it doesn't seem to have a direct manifest to know where all the other documentations are.
+So the cloud code docs what they do is it's a oneline installer and you install it and then it puts the documentations locally and it's kept up to date.
+There's a GitHub action that syncs with the anthropic cloud code docs every three hours.
+It downloads that the so when you ask a question there's a hook and what the hook does is it it tells uh so you you do for slashdocs space and then you ask your question that's a slash command.
+The slash command tells cloud code where to look for the docs instead of going to anthropics websites go to your local path where you've already got the docs installed that are up to date.
+It also uh has a hook and the hook does a git fetch and if it sees new content from the the uh repository on GitHub then it will do a git pull and it does that get pull and finishes it before it sends the request to whatever you ask the docs for.
+So whatever information you want to know.
+So basically it allows claude to be able to answer any intricate deep questions you have about the new things that came out.
+So you can say what's new.
+It'll tell you here's a diff from the last uh time that documents were updated for these docs.
+They were updated and these weren't.
+And then based on those updates, I can see here's a summary of all the things.
+It was this many days ago.
+And you can click on the link to the GitHub and you can see the diff and you can click on the link to the source and you can see anthropics cloud code doc for that documentation.
+And then you just talk to and say how does how does that slash commands work? How can I use it with hooks? What what are the sub agents? uh how can I take advantage of this tool in my project that I'm working on right now that would and what would the trade-offs be for example or what are some un uh like unexpected ways that I can connect these together that I might not be thinking of based on this new tool that just came out this new feature and so having the docs locally is I think the biggest um high yield thing that you can do whenever you first get started with cloud code >> it gives you the tool to learn the tool um but I'd like some clarity on a couple things you mentioned so you said you set the flag dangerously skip permissions which is probably the most intense sounding flag of any CL I've come across.
+Is that yolo mode or what does that enable into your workflow? >> Yeah.
+So there's a lot of prompting you can do and there are trade-offs with this flag.
+That's what I do and obviously for it's not prescriptive for everyone else.
+It depends on your use case and but if you're like trying to get used to what claude does uh then it's you know if you don't turn that flag on.
+Whenever a cloud code first came out, I wrote a wrapper that would uh instead of calling claude directly, it would call this other tool which would then call cloud code and then attached to the terminal session and send commands to it recursively.
+And so it basically convinced it when it was in a sandbox in a running a docker container that get got around it kind of did the same thing and then they gave us a flag for dangerous gift permissions.
+And what that does is it makes it where a lot of the things where you ask it to do something has to write to a file.
+Maybe it has access to read a file, but maybe it can't change files in this path or or run this tool or whatever.
+Then it prompts you, are you sure you want to do this? Do you want to do it for this session? Or or if you have a sub agent and you want to give it access to do stuff, maybe you have to pass in exactly the tools you want to have that.
+And so it's a little bit more complexity on you up front.
+And that's fine, but it essentially is YOLO mode.
+So if you're comfortable in your machine, in your environment, in the task that's in front of you to do YOLO mode, that's great.
+Now, I set up a VM that's separate to all this um so that I could do snapshots and give it access to everything and it's running on top of my Mac.
+It's a Linux.
+So, it's it's a separate sandbox environment basically.
+So, I feel comfortable with my YOLO, but in most cases, I think YOLO is I haven't had any issues with it doing anything um in folders I didn't want it to.
+There's lots of ways to prevent that.
+Even if you you can use a hook, for example, to say before you run this command, uh make sure it's not in these areas.
+And the hook is a separate process that runs outside of cloud code and so it can uh prevent things from happening as an example. >> And Ray uh Eric mentioned thinking mode and I know there's a few different types of commands you can throw in there.
+How how does thinking mode affect the way you use cloud code? >> Yeah, so thinking mode is a mode that I would use a lot for research or specific types of tasks.
+Uh keep in mind there's like four different modes.
+So like there's the ultra think which is can use go at 32,000 tokens for thinking and then it goes all the way down pretty much by half.
+So there's like think harder which would be 16,000 uh I think like I forget like actually let me pull this up right now because I have it on my blog and >> yeah I'm ultra think all the way just just take it all.
+I've I've learned an interesting lesson and this is kind of why I love that we're doing the podcast because I used to be just all uber ultra think all the time and I I I noticed that I get variable results and I kept kind of digging into why and I kind of went back to like something that I learned which is basically less is more type of thing.
+So I have an article here that tells me uh from my website rayano.ai AI and here basically you have the four thinking modes.
+So you have think think hard think harder and ultra think as no spaces and these are key terms that claude code is going to be looking for inside of its environment.
+And this one is going to consume about 32,000 tokens.
+You're going to be 16 here.
+This is going to be about eight and about 4,000 for for thinking.
+And it's also important to note that like these thinking windows are are very important for helping users understand like how much context you're going to be using up.
+And if you're using Altra think all the time, what I discovered is that it's really good to just have your conversation isolated to a specific concern or problem that you're looking for and you kind of want to maybe eventually start breaking that up.
+And I could show you why because of the the thing that everyone's talking about these days called like you know context engineering or context window.
+So I built this simulation to kind of help us understand a little bit of kind of what you're doing if you do like an ultra think type of thing.
+So if you have some type of input about like you know 2,00 tokens or you're saying here's some relevant information that I'm trying to do and then we do agent thinking you pop in 8 16 24 you know a bunch of thinking tokens.
+So you you use all this thinking token window to to have it do some stuff.
+What cloud code is going to do is going to do some tool calling to grab some stuff, maybe some code files and various stuff and then eventually it's going to try to generate like a little plan or some output or something like that.
+So maybe it generates 32,000 tokens.
+Sometimes I've seen it, you know, generate like go through 40,000 or 50,000 tokens just searching through your codebase and grabbing different files and things.
+Uh so once this context window has filled up, then you're going to say, "Okay, cool.
+Yeah, let's go ahead and build my next billion-dollar SAS.
+And then you're like, I want you to do these types of things and make sure you grab all these other files as well.
+And then if you still have Ultra Think turned on, it's going to try to like then digest those types of things there.
+It'll do some more tool calling in your code and then it's going to start to do some more code output.
+And then eventually the output will not be kind of what you want it to be.
+And that's just two different conversations that you've had. you're like, "Dang, I have a 200k token context window and like my code isn't as good as what everyone's saying." And that's usually quite the problem here.
+And there there actually is a study that's been done by Chromma DB that talks about context rot in in a funny way that you the effect of token context window starts to really fall off the cliff after about 50% for most use cases.
+And it gets distracted if you throw too many different problems.
+And so it's really important to kind of start with a conversation and then maybe just kind of start branching it off into different components that you want to solve for or something like that.
+So you as a human will want to review this giant research output that you've just got out and then see if you can kind of break that out into a different plan by doing slashcle.
+And another technique people use is maybe spawning sub agents.
+So if we kind of reset this here, let's just say we have a simple query that we do and this is just kind of what happens.
+You know, the agent comes back with some more code output or something like that or it did some work and now you're saying, okay, I have this plan now.
+Let's go ahead and see if we can execute on this in these different chunks.
+And you can even ask cloud code to generate some sub aents to try to figure out what it can do from there.
+So what that does now is it spawns off a whole new session with another set of 200,000 token context window.
+And that way you can just go ahead and follow on requests and so forth.
+And each of those sub aents you kind of want them to really isolate and focus on one specific problem.
+So that way it doesn't affect the main agent that's at the very top. if there's any reporting or things that need to go back, it will send it back.
+But then you're now kind of dealing with something that's a little bit more intelligent.
+Kind of thinking of yourself as like a manager and you're handing off these, you know, really intense tasks to people to really focus on and get their work done.
+And that leads to very high code quality and high code generation.
+So, back to kind of like the previous example where we talked about like think, think hard, think harder and ultra think, you may want to think about maybe if I try something like think hard.
+Maybe not not as much tokens, but it can still get me some pretty good results because I still value the accuracy and maybe for the first request I want to ultraink because I want to go through a lot more thinking and and because I've had this problem for a while and I've tried all these techniques and none of these work.
+So I'm going to feed that in as part of the plan saying I've tried these techniques.
+These are some code snippets we've tried and here's some documentation.
+I want you to now ultra think and just you know the bazooka comes out and just you know go ahead and solve that problem.
+And that's just a a little bit of context in in terms of like how this stuff is kind of managed, but I feel like this can provide some oversight on maybe how do you choose think versus think harder or ultra think and then why some of this visualization for you to see is important which kind of goes into the topic of sub aents and I'd love you know Eric to talk a little bit more maybe on how do you figure out these like sub agents and maybe >> you know how how do you kind of best take advantage with cloud code in these types of environments.
+Yeah, >> that was awesome.
+I loved your visualization.
+I think that's a great explanation.
+I feel like these are two um related but independent problems that feed into each other.
+The issue of um you know it's like Miller's law I think it is with humans you can hold five to seven chunks of information and working memory at one time and then you know you get overwhelmed with stuff.
+So if you it doesn't matter how good your model is at instruction following benchmarks at some point if you give like too many uh do this don't do that critical you must do this like it's very confusing especially with a whole lot of the more you fill the information space it can't attend to everything equally at all times and every you can think of it like every percentage you focus its attention on one thing it's it's got a little bit less for something else usually that's separate and if you keep the conversation going over time as it gets close to its mass capacity capacity, its quality of output is definitely going to degrade.
+It's been like that since the beginning.
+And I feel like for a long time, models are probably going to do that.
+And that's why Cloud Code has this autocompact feature, which is really cool, but you don't want to get to like 90%.
+Like when it says there's 10% remaining, it's probably time to start over anyway.
+And so the the issue of like the reason I I spam the ultra think is is I do I tend to like start a fresh session.
+I clear and I have an ultra think based off a previous plan that was well documented because I feel like when you do a project it's really important to plan not just you know what your cloud MD should be but like what the file structure should be what the instructions that the model should have that kind of deviate from its baseline that you want to change a little bit.
+So like, hey, don't randomly create a bunch of files.
+Let's just stick with these documentation files.
+Don't change them any.
+You can add you can change the content, but don't add new ones.
+Uh max them out at this many lines per file, etc.
+And then keep them up to date.
+You can do that with something like a hook or you can do that with the slash command, which is what I tend to use for context reasons.
+But then at the end, uh you know, you clear or you compact or whatever before it's too large.
+And so you can still manage your context uh without and they have high quality responses and and in that case Ultraink could be advantageous.
+I found it to work really great for me, but at the same time uh it does take up a lot more tokens and you just have to watch that more carefully.
+But if you're on the like I'm on the max plan, the 20X, it gives you um you know a lot of tokens to play with in a 5 hour session.
+And so, um, in that case, if I start running close to it, I have a session tracker tool that will tell me how many to approximately how many hours or minutes I have left in my five hours so that I can know it's going to trigger another one and it gives me a countdown.
+I can see it in the menu bar.
+It's like, okay, I'm going to hold off and I'm going to wait until like the next so I don't burn through too many in a month.
+But then cloud's going to Enthropic is changing that at some point.
+We don't know the details yet.
+I think >> I'm curious, Eric, about your hook workflow. like how do you like what are some of the hooks that you've tried that because I feel like everyone's tried different hooks and none of them have really stuck around for me too much you know like you know I I from generating sounds to having it do extreme code reviews where nothing happens until like you know it iterates on itself and I'm like yeah that's an infinite loop right now it's like I can't get out of my agent.
+So, have you found any hooks that you found that are pretty useful for yourself that you've either generated for your own tool use or just get curious as what you've been cooking with? >> One thing that I have is a you know that I mentioned the claude docs.
+Uh, so that's a hook because it does a fetch every time you do a read request from the path where the docs are installed.
+Then it detects that you're trying to read in that path and then it triggers a hook and the hook calls a script and the script does a thing and the thing gets done and that response comes back and gets fed into the cloud model or like updates something before the request from the user goes to the model to be processed if you do a pre-tool use hook.
+Um, so as far as other things I do, so yes, I have something called a hook that I love and I I wouldn't do any so many of my projects rely on this one hook and uh it has definitely stuck around.
+I think it'll be there forever for a very long time and it is the indexer.
+So I have a project that is uh cloud code.
+It's called project index.
+And so a long time ago like when when chatbt first came out and I like got obsessed with okay, this is going to write my code for me.
+And literally since then I haven't written more than a couple hundred lines of code.
+It's been entirely vibe coding from day one.
+Well, probably from like day three accurately, but but I I like a monkey was sitting there.
+I felt like uh figuring out, okay, here's the code and here's the my code in my project and then I've got to figure out how to merge the two together by hand.
+So, I wrote this tool that like you just copy the clipboard and it automatically uh copies all the code because it does unifi div format and it knows the paths where it's supposed to be merged and then just merges all the code in looks at the clipboard.
+Um, but I realized early on to get the best results, what you want to do is have as high signal and as little noise as possible to the models so we don't overwhelm their context with stuff that isn't relevant to the task at hand.
+So, whatever you want them to do, you need to give them as much information that they need to know. what the documentation updates since in the API since what their training was and what are the files and not the other files they don't need just the files that they do need so is there a pre-processing step that could be useful to the models to be able to optimize their response their quality of response and so I determined then the best solution was step one uh take a minified version of the entire codebase and so for every file I don't mean like web minification where it's obiscated and and random like the letters instead of variable names is I mean like uh you like a UML style abstraction but you have the actual import statements method signatures maybe root level constants or something like that return types etc and all the dependencies for every file in your project that's not in get ignore so this is like a project it's got the path like the project tree structure and it has for all of these files a little bit of information about where they sit and what they relate to and what content they contain and so I have a hook that goes through the project every time a file is changed and it does this and it updates the index.
+So there's a there's a project_index allcaps.json that sits in the root of every project.
+And so this hook maintains that and it's outside of cloud doesn't know about it because it's not inside of its life cycle.
+The hooks sit outside of the cloud you're talking to.
+So it doesn't it doesn't dilute the the context window of cloud to use a hook.
+So this hook updates the project index file and then whenever I ask for a change I can for example spin up a sub agent.
+I can say hey use a sub agent to look at this uh your project index and figure out just which files which lines are needed for you to reference to to look at this change as an example.
+Another is like whenever I start like I'll often do cleanup before I like if it finishes a task I had for it.
+I'll do a cleanup slash command and that will go through and tell it to update all the docs uh and and plan this next phase because you can pass arguments in with your slash command.
+You can say something after it and it'll pass it in as arguments into the the command that gets run.
+So then it knows what's going to do next and update the docs.
+And then I clear it.
+And then once it's cleared, I have a command that's like fresh.
+And the fresh command tells it to read all the documentation and everything in the project index to read the whole thing.
+And then it knows not just what I want it to do next, but all the docs and not everything in the project obviously be way too much for the context, but it has this minified version like a simple uh version of the entire project.
+What's dependent, what what's where.
+So Claude does a really great job of using the search tool and going and finding things, right? But the the bad thing is, you know, you'll get sometimes it will miss stuff, right? If it's really big or sometimes it the worst case scenario when you're vibe coding is it creates something in one place that it should have refactored in another, right? That's like what happens.
+That's what people try to avoid.
+This doesn't work.
+The project's too big.
+If it's small, it's simple.
+Everything fits in context and it just works.
+If it's big, you have this problem.
+So to avoid this problem, I have a like bulletproofish solution called the project index that works and that works off a hook. >> Wow.
+So in practice, what's the setup like to get this going? Like how do I go from I just installed cloud code to now? >> This all starts for me with cloud code docs locally and that's a public repository.
+I can well can share it.
+It's it's cloud code docs.
+Uh it's on it's my repository.
+It's my project.
+But the project index I don't have shared at the moment but I could share it uh and it's it's basically it'll be like a oneline install and then you can just run it one time and then it once that project index file exists in the project it also installs the hooks and so it'll just see is there a project index in this in this folder if so then the hook will trigger and it will just create the index of the project for you.
+So, but if you don't have that, I this is what I built for myself.
+I'm happy to share.
+If you don't have something like that, but you want something like that, you can just say, "Hey, CL do for/doccks." If you have that installed, what do I need to do uh in order to improve? You know, you you gave me this result.
+I didn't like the result.
+How can I talk to you better in order to prevent you from giving me this result and giving me one more like that? Reference your documentation to see if there's anything useful that I I could use to help, you know, encourage you in the right direction.
+And just conversations like that, like asking it, "This messed up.
+I want it to not be like that.
+What would you recommend I change? Ultra think about it.
+Make a plan." And then you reference the docs and it will tell you all of these really crazy interesting solutions.
+Like I've found so many things that that I guess aren't really why I know aren't used a lot.
+Like passing context from a sub aent, calling a sub agent, not just a sub agent that's defined early, but like an ephemeral one that gets defined for the task at hand and then gets removed. or or getting the context out of a sub agent and passing it into a cloud that you can resume or taking the content from an existing session and moving it to another session through a background.
+There there's just a ton of things that you just talk to the docs and ask it, can I do this? Well, and here's your project folder, Claude.
+Can you look at that and see what else I can do in addition to your docs? And it will tell you. >> Cloud code is awesome at being able to allow us to get real world work done.
+And to do that, you need to share your real data in systems.
+And that's done through MCP.
+And that can be a little bit scary.
+So that's why I've been using ToolHive.
+ToolHive makes it simple and secure to use MCP.
+It includes a registry of trust MCP servers.
+It lets me containerize any other server with one single command.
+I can install it in a client in seconds and secret protection and network isolation are builtin.
+You can try tohive 2.
+I highly recommend you check it out.
+It's free and open source and you can learn more at toolhive.dev.
+Now back to the conversation with Ray and Eric. for hooks just just for the the mental model is it something you should think of as an automated slash command or how do you differentiate what should be what functionality should be a hook versus what you can put as a slash command >> this is what I do um I am pretty rigorous about trying to maintain the context like knowing what's in the context and you can think of it like um and ever since the beginning this is like clearly the models are trained they reinforcement learning they have a knowledge cut off they're put into use they do inference at At that point what they know is is a combination of like the hyperparameters like what you know what what's their temperature their top all these things that are like tell how much compute to use right but then they have a system prompt that's usually not controlled by you unless you use sub aents and sub aents are different than the regular hey claude create a sub aent if you have a defined sub aent you can tell it the system prompt to use so it has a higher priority um but there are trade-offs to all this stuff because it's like you're receiving an email and someone is telling you hey what really matters is the second paragraph, but the second paragraph here is the analogy of the prompt.
+So when people are focusing on like the prompt is what matters.
+It does matter, but everything that email matters to you.
+Like it come from your boss.
+That's like the system instructions.
+Hey, here's an email.
+I want you to really focus on this to the customer or like the external domain, you know, notice that you can't forward it along or whatever.
+That kind of thing.
+Those are um information that maybe you didn't control.
+Maybe it's a system message or something like that.
+But that's all part of the what you're trying to figure out as a user or in this case like what the agent knows is everything and some some of it you know some of it you don't but of the part you can control it's really important to make sure that there's not extra stuff in there to confuse the model.
+I try to remove other like if you put a bunch of MCP servers and a bunch of u sub aents.
+Well, Claude, if you ask Claude, what do you know right now? Like you just start a new cloud product project and you uh new session, you say what do you know? It knows about it project three directory.
+It knows a little bit of metadata about the project.
+It knows a cloud MD from the root uh the project the user root and from the project root and it knows about its hooks like a brief little list.
+Sorry, not hooks.
+It does not know about it hooks.
+It knows about its slash commands, a brief little oneline description or something, and it knows a whole lot about its sub agents.
+And I don't like that because I don't want every command that I send for it to read a whole bunch of information that it may not be relevant for the task at hand.
+And it has to decide between should I call this sub agent, should I not call this sub agent.
+So, I don't use them unless it's like something where it's it's very consistent for this type of project.
+It's going to need that and it's usually at the project level.
+But for hooks, it doesn't know anything.
+It doesn't dilute the context at all.
+So hooks exist outside of the life cycle of so there's a there's a software development life cycle like a a runtime and then it's like before the hook is before the you know you submit a request and there's all these stages to process that request.
+And there's certain points where there's a check to see if there's a hook there and there's a if there is and it runs the code.
+But claude itself, the context you're talking to doesn't know about it, which means that it's not messing with the context any >> when you would go to a slash versus a hook.
+Like I understand about polluting the context, but let's just say for for general functionality like your your docs slashdocs, why why would that benefit from a slash grain versus a hook? >> I created this before hooks were out.
+Um, it's possible that if I did docs, um, as a slash command.
+The thing is Claude really is instructed, I guess, in the system prompt, um, claude code to look in their website for their documentation.
+So, I tried to put the instructions in cloud.
+MD and it would just ignore them.
+It would like inconsistently follow them anyway.
+But when I did it as a uh a slash command then the slash command could tell it could instruct claude at the level directly like the user is doing it seem to have a higher priority than the cloud MD being read in or the project level C the project level is higher priority it seems than the the root level for user level for some reason.
+Um, but then your direct commands are higher level than all of them still.
+And it might just be a recency thing like where it falls in the whatever.
+But for whatever reason, when I did a um a slash command, it consistently followed them because I could say look in this local repository for the docs.
+Now, if I do a hook, it has to be it it does a fetch, right? So, it's it's got a hook in there for the docs, for example, and it will do the fetch and if it's it'll do a pull if there's more information.
+But, I think I tried that.
+I ran into some kind of issue because remember that's running outside of your uh cloud context.
+You can inject stuff from the hook I think into the cloud.
+Well, you definitely can, but I just don't know if it's supported.
+There's lots of things you can do that I'm not sure how.
+And and also I just want to pivot one really quick and say there's like I'm always on the fence.
+It's a gray area between you know you don't want to do anything that could uh you know be investigating anthropic stuff, right? But these models, it's kind of tricky because you ask, hey, uh, look at these new tools and tell me what you're capable of doing.
+Or, hey, I want to do this thing, but I'm not sure how to do it.
+Um, and it will go off and figure out its sandbox, its environment.
+I like a lot of these tools.
+I won't say which tool and which environment, but I asked it to just do a little research to tell me how I could do this thing. and it created a mechanism that like basically broke out of its this thing got me gave me all stuff that I I thought I don't think I'm supposed to notice so I had to report it but I'm just saying it's very easy to get further down the road than you want to get sub agents are a great example I don't use them very much because um the default if you say sub aents have been around in cloud for a long time you can just say hey create a sub agent and it's a task it's a tool it's a task and it's called a general purpose sub agent and anthropic defines uh what it system prompt is but it can go and do anything you want.
+You can get 10 of them in parallel at one time and they'll just do do a whole do do research.
+There's different use cases for different mechanisms to do it and claude will manage it all and if you you know stop escape or whatever to interrupt it'll handle the interrupt and all that stuff.
+If you do your own version of it where you have your own sub agent and it's not actually a sub aent, it's really like a headless cloud code that you're calling um then you have to handle the interrupts and all that kind of stuff.
+So basically sub aents I use them whenever um there's a task that's really repetitive like that I know exactly what to do.
+I want to be dedicated and really good at doing this one specific thing, doing research on some task that I needed to pull out, but I don't want to create a lot of them because I don't want them to be confusing the context of them.
+And a lot of times slash commands are my preferred use case. >> And Ray, on one of your live streams, I saw you put together a sub agent.
+It was either for coding styles or for design styles.
+When do you go to a sub agent? Yeah, for sub agents, I've been kind of experimenting with this because my goal is to get some consistency.
+And the only consistency I've received from sub agents have been for research tasks in my code.
+And these are the tasks where I do want to spend a lot of tokens to go through to make sure I don't repeat code.
+And so I think that's kind of what's been happening is like I started with my vibe idea and then it's just kind of blowing up with more and more and more features.
+And when you start to add databases, authentication, and all these different patterns, >> yeah, >> it starts to get pretty interesting to see what the model prefers.
+And so I I generally spawn off like a sub agent.
+And I say, you know, to like to the main task like the goal right now is I want to implement authentication and here's some like documentation. can you just do a quick review on like where all this stuff and where I should be putting in considering you know my client side is here and here's my my my backend side and so it's just going to start digging through code files and I'm basically just b giving an intern a task in some way to say you know just dig through the code give me all the pieces that I should be aware about so that when I do my own code reviews I can actually review and making sure that these lists are kind of all checked off um because one thing I discovered in this entire process too is the fact that the model will say that it did one specific task even though there's like a whole bunch of them.
+Mark it as complete and move on.
+And that's something that you have to be careful of as well.
+And so I like to give these sub agents as like a second look in that whole path.
+And sometimes I'll just give it the instructions and saying here's my here's my manifest of like areas where the authentication um was supposed to be implemented.
+Can you just do a quick pass on each of these sections? you know, I want you to kind of think about how each sub agent should take a look at it and just I'm just kind of delegating it for the model.
+So, at this point, I have opus and I have the max plan.
+Opus is a really great orchestrator.
+It will kick off other sub aents and those sub agents still use opus.
+I found out I thought it uses the next lower model, but I guess maybe because I have the higher version of the plan, >> it's just uses another version of Opus >> and Opus is really, really, really good at grabbing lots of obscure information.
+And you'll see it do lots of tool calls in that sub agent.
+So yeah, I basically treated the sub agents right now as code reviewers and as like secondary reviewers through the different files and then I can kind of quickly sus out.
+It's like hm this pattern looks like it's been repeated a whole bunch of times.
+You know, it's just like my worst scenario.
+It's like I I generated a bunch of code and it's just, you know, we could have just taken care of this in a in a React hook of some sort and that pattern should just repeat be repeated everywhere else.
+And uh those are the times I just kind of back out the change and then just start fresh again and say let's go ahead and implement this and this is kind of what a bad example looks like and just literally copy and paste some of those examples and start a fresh new prompt and everything again.
+I think that >> helps the mo steer the model uh to generate way better output and be thoughtful about its architecture.
+And so I can basically go from right now I spend a lot more time I probably say I'd spend like 60 to 70% more time now in planning phases. >> Yeah. >> And and and code reviewing.
+So >> those are kind of like my splits right now.
+And then the other parts of the generation >> are just to sort of kind of babysit and loop back.
+And that's kind of where I'm in this current phase right now. >> I wanted to do more automation.
+And I wanted to do more things.
+But as an engineer, I'm still spending a lot of time in this phase to verify all the stuff.
+And I'm actually very shocked at the output that it is not as good as what people are saying.
+I trusted it a little too much because this is what I'm discovering. >> It's being over anxious about check marking the boxes and moving on.
+So just want to give people that type of heads up. >> Trust but verify.
+I I have uh I love Claude because uh you know Anthropic does a lot of work to try to make sure and there's there's a reason I'm anthropic fan.
+I don't know if we'll get to that at some point, but like it does a lot of work on his personality and trying to instill principles and values and ethics and stuff into the models, but it's um it is very I don't trust Claude.
+I have to put in this instructions to uh you know not lie to me basically like do not say that a thing is is done if it's not done.
+That's dishonest.
+I think that like gets into its like uh really pays attention to that right and so when I talked about sub aents earlier I was really in the context of defined like predefined sub aents I do use a task sub agent where you tell claude to do a thing a lot and that is largely for the purpose of uh doing something anything I can do that's outside the main context preserves the context of the main uh cloud agent you're talking to and so I don't need it to go and search a bunch of things that um it doesn't need to know about whenever those sub agents can pass the information that it finds is relevant to the question back to the main agent that it just has a subset of that knowledge is relevant.
+So that's the the whole idea of maximizing the context is using those sub agents all the time in that way but blind validation.
+So like before you do this is what I found this is just for me to you Ray I don't know if anyone struggles with this but when I say I don't trust claude I mean I explicitly do not trust it when it says it checked off a box that it's done.
+I require in every case that it closes the loop with testing and that it doesn't it doesn't validate.
+It has to have a sub agent or some other agent be a blind validator.
+So in other words, when I'm starting a project, I'll first determine the plan and it has an included testing plan and how specifically it's going to close a loop on testing, whether it's going to use an MP MTP server, some other tool, it's going to build, something gets online, something like Puppeteer, if it's a or or if it's a Python script, like taking screenshots of the guey and and saving them, but it can't be the agent. the one I'm talking to that's building cannot be the agent to to verify that that the the checklist that it the the main agent made it at first or whatever was designing the the plan for testing.
+Um that agent can't be the one that's that's checking to see if it's done.
+It has to be a separate agent explicitly with the task of you are a a blind validator of this thing and it looks at the screenshots and it looks at the checklist and it determines if it's done or not and it passes like it updates that file for example and so that's the only way that I'll because otherwise like right now the issue is it the model will go off and do a bunch of things and then we'll come back and it will say it's done and then we check it and then we're like it's not done because I I can see this thing it didn't work right.
+So it needs to have some kind of test that it can run to verify that it's done, but it shouldn't be the one to do it.
+And so you have a sub agent that takes care of that piece for you.
+And that way when you come back, it's actually reliably done.
+And that takes extra work up front to set up, but it saves you so much time down the down the stretch of the project.
+And then also right now we're, you know, we come back in a few minutes or whatever, but there is no reason that tools can't be constructed at this moment with the technology as it currently is that will reliably let you give it a task and you come back in an hour and the whole thing has been validated because the the reason that I love Claude is that from the very from early on, you've been able to make composability a foundational feature where you give it a task and it can spin up other versions of itself. that accomplish these other sides.
+So it can be dynamic like on the fly in the moment based on the task at hand create a set of sub aents that are responsible for this and this other thing and they go off and do it and then come back and so and these can be nested.
+They don't just have to be in parallel like sub aents can't regular sub aents can't form other sub aents nestedly but you there is a way around because of claude code because of not just the SDK which has this different set of uh features and trade-offs but claude in headless mode can be called by claude and it can in turn call claude headless mode in sub agents and things like that.
+So you can imagine like this big tree message that's a tree and context sharing and all that stuff in between with resumability.
+So, it's it's possible now and people are building it.
+I've been working on some versions of it myself. >> Yeah.
+I want to also pull back a little bit too.
+And like I would not get discouraged if you're kind of maybe listening to this conversation.
+You're like, "Oh my god, this is way too far advanced." I I dropped out of school, right? I got into Apple just by pure grit and then worked my way up and I learned a lot of these software engineering practices literally on the job, right? and then got to solve like bigger problems and bigger problems to like multi-million to billion dollar problems, right? And I think there's a core of truth that if you're just getting started out with this, don't be discouraged.
+You can go a long way simply by just acting as a user and literally using your product and then trying to solve that one feedback loop.
+And that's going to just you you that's like the 8020 of everything I feel is that like okay how do I not do this again or how do I set up a system to help me verify it.
+If you just start at that level of curiosity it's going to take you a very long way because now you say oh maybe I can set up a sub agent for this to help me do this or how can I prompt the model to help me do this so that next time I I implement a feature as I'm testing it by hand I don't hit that same problem or something and then you'll start to kind of discover some of these workflows.
+So I want to encourage people that you can see how why so many developers are extremely excited right now is because the capability is like literally just almost infinite.
+It does get infinite and and and it goes not only infinite in like one direction it's in in many directions.
+And that's how big of this you know glacier ice pool like this giant piece of mass that is this AI system and how different people with all these different perspectives are are talking about it.
+So, I wouldn't be discouraged if you're listening to this and you maybe not know what half of the things are.
+Um, but some of the basic tooling to just get started.
+It's like find one thing that you're doing if it's being repeated a lot.
+Can you think about a system that you can repeat over and over again to make it more reliable for the next time to help you solve that problem? And that will like kind of help you in your learning journey.
+And I think the other important thing for me has been just asking Claude code itself to help me with that. like what does that look like because I don't know you know like I didn't know how to implement a good sub agent or something like that and they've luckily have implemented this type of thing if you do slash agent >> you can actually just have a natural conversation about what you want to do >> and then it generates the system prompt for you so you don't have to be a prompt engineer you don't have to give it good and bad examples you don't have to do all these different techniques you know those are like more advanced I'd say but that already gets you a pretty long ways just in using that type of system uh in there and so I I My only advice is like always keep it simple and sometimes the simpler the better.
+So if you you feel like you're kind of going off the deep end, it's okay to kind of clear everything out and start fresh again.
+It can help you learn things.
+The models are constantly evolving.
+We're constantly evolving in our knowledge.
+We're learning more.
+We're demanding more from our AI now that we understand what this real thing is, right? So just kind of uh my my overall lesson is like don't be discouraged. this is a really great time to be alive and you know ask us more questions and reach out wherever you want to reach out at and so forth to get a hold of us.
+Yeah. >> Yeah.
+Absolutely agree.
+I've been seeing more and more people trending around oh use TDD to to operate your cloud and you don't need to know what test driven development is.
+You just have to think of the principle write a test make sure it passes the test.
+Eric, would you say there's any other guidelines, principles for people to just do this exploration, this play, this discoverability of the capabilities or any advice on just, you know, getting started and getting that comfort level of just, you know, experimenting with the tool? >> I mean, I really feel like um obviously the adage of just use it.
+So, I feel like everything that doesn't go right is an opportunity to figure out how can I talk to it better.
+Um, and this has been sort of like from the beginning.
+If you just think about like what we're leveraging here by being a person who's using a tool like this, um you're really setting yourself apart by because this is the flywheel, right? If you're if you're like the every moment you spend getting through like grinding on what is the difficult thing that most people stumble with, what what what failed here and then learning how do I overcome that by using the tool to help learn about it and then continuing just that process.
+Then you develop your own system and it changes from project to project and project size and style to project size and style and then you kind of get a feeling for it.
+Like what I'm doing is not anything special or different than what anyone is able to do.
+It's just um I've spent time with the tool and asking it a lot of questions whenever something didn't work right.
+And so based on that, I found, okay, well, I I don't want to like there's friction between I've got a chat conversation and it's like this this um you know, you get a long email thread from someone.
+We'll go back to that analogy.
+I'm just top of my head.
+I don't know if it works, but then like they there's 16 messages, but it's fresh every time.
+You've never seen it before.
+You've got to read through all this stuff to figure out where you were.
+Um, if you have to clear that email thread and start a fresh, well, there's stuff that you would want to carry over not all of it, but some small subset of it that's really relevant.
+And that's the process of finding a a system to preserve the right context as you clear your previous session, right? It will handle all of compact for you.
+All of these tools, all of these like cursor and wind surf and different models and wrappers for these models.
+Um, try to solve that problem as easily as possible.
+But there's always still some friction there like which context matters for the next session and how do you make sure you get it over and I think the persistence of the file mechanism just writing having it like update the documentation write the next steps to the file that will be read in and then as soon as you click clear you you run the thing that causes to read that documentation to know where to go.
+I think that system is uh you know is very very valuable.
+I think this is a good primer for people to get started with cloud code and ask more questions and get a little bit more perspective on some of our use cases.
+I feel like this is just scratching the surface or understanding where things can go.
+And I I would encourage people like like Eric saying, just be curious, start playing. uh maybe chunk down to like maybe one problem that you're trying to solve that you're you know you see that little bar there you know start asking it the questions trying to see if it can actually kind of work you through a workflow I feel like it a lot of people have these different areas of of concern that you know they can kind of go down these rabbit holes and I think these tools can get very advanced very quickly and just if anything if I have one piece of advice to give anyone is like your context window is so important and protect it with all mighty power like it's your firstborn child and you don't want to let it go ever.
+So, um that type of thinking will kind of help you get the most out of this like intelligence that we have today.
+And yeah, I guess you're um if people want to find out some more, I I do AI live streaming.
+So, my name my handle is Ray Fernando 1337.
+That's my YouTube channel.
+You could also find me on X.
+I post a lot on there as well.
+And so, I I I do AI live streaming several times a week.
+And you can find me live streaming.
+I'm also going to have some recorded content kind of going over this concepts and stuff.
+So yeah, appreciate you having me on the show, Mike. >> Yeah, I just want to say it's a great pleasure to get to hang out with you guys.
+It's really fun to find people who are also interested in the same things around the world uh or like-minded and interested in sort of driving forward in the possibility of like what things we can unlock for ourselves and our families and our our future basically to make simple to give us more time for the things we want to do.
+And it's just a really fun sandbox and tool to be able to do so much.
+You don't maybe yet know the value when you're gonna find something in the future like, "Oh, I wish I could do that." But you've learned the skills to do that and to talk to AI in the right way with the right tools to be able to do that.
+It's just it's very fun.
+And I just want to encourage all of you guys uh especi like Ry, it's really great to finally meet you.
+I've been a fan for a while.
+I really appreciate it.
+Mike, I was following you at Open Interpreter.
+I think like it's uh it's been a journey and I don't know where it's going to go, but I know that the future is bright and I I really appreciate the ability uh to be able to get on and talk and share some of this stuff.
+I've been kind of hidden uh doing my thing, talking to people oneonone in the background uh involved in some interesting stuff.
+So, but anyone who's doing this, I think uh you're spending your time very wisely because this is a good use and the the payoff is going to be really good long term.
+Thank you for tuning into this conversation on Cloud Code with Ray Fernando and Eric Boost.
+I had a great time talking to them.
+Both guys are are two phenomenal people who I really enjoy hanging out with.
+We hope that you gained value out of this because I know I did.
+I I learned stuff from these two just in this conversation, but there's so much more we want to cover.
+We were limited by time and we could have kept going for hours.
+So, there will be a part two maybe here.
+Maybe it'll be on one of Ray's live streams or maybe on Eric's Twitter.
+So, keep tuned for that.
+Please follow both of them.
+They're phenomenal people.
+And I just want to give a quick shout out to ToolHive, the secure MCP servers that really help make you more comfortable sharing your personal information.
+And Cloud Code uses MCP servers, so you can definitely tie them in there.
+If you have any other questions, you know where to find us.
+Thank you for joining.
+We'll see you next week.

@@ -1,0 +1,507 @@
+I think AI has certainly changed how I approach my learning absolutely it's like an absolute dream com true but I think also my life has also changed
+dramatically from 2020 I am running a startup which is more demanding than anything and I think if you want to make yourself into a learning machine
+it's a pretty good path to take there's nothing that challenges you more on your breath and your skills than running a startup and building it from
+zero [Music] this episode is brought to you by our friends at reflect it's the ultra fast note taking app that's about to change the way you take
+notes imagine having an AI assistant right there with you helping you jot down thoughts transcribe your voice notes and even chat with your notes to
+keep everything organized with reflex Advanced features like custom prompts and voice transcripts note taking has never been this easy so if you're
+looking to boost your product acity and keep everything in check reflect is your go-to app give it a try by going on the link below to see how it can
+elevate your work Simon welcome to the show thank you so much Dan it's good to be here it's good to have you um so for people who don't know you are
+the co-founder of Turbo puffer which is a really cool AI startup uh doing better Vector databases is that how you describe it yeah it's it's a it's
+essentially a search engine starting with Vector search and we're trying to make it much more affordable and easy to run these things at scale which
+is a challenge today that a lot of companies are having that's awesome um I think you're one of the smartest Founders um in the space especially at
+the stack the layer of the stack that you're you're working at um we've also we also go back a long way because uh you were one of the original I
+used to do these interviews called super organizers interviews on every and you were one of the original interviewees We did an interview together
+called how to make yourself into a learning machine um which like it just went super viral this isn't like 2020 um and it was like one of our first
+really really big articles um and it was like really incredible like you have this energy about you in that interview like your we go through like
+your reading habits and how you how you find new books and how you take notes on the books you read and how you um how you turn the books you read it
+into flashcards and all this kind of stuff and it was like I think Super inspiring for any any sort of like um notetaking nerds of which I am one um
+and I'm really excited to to get to talk to you again and sort of hear how your brain and your mind is doing or adapting in the AI age because I
+think all the stuff that we were like nerdy about four years ago it's like completely changed with the like level of tooling available um and so I
+just want to hear like what what you're up to I'm sure it's I'm sure it's amazing yeah I think AI has certainly changed how I approach all like my
+learning absolutely it's like an absolute dream comes true um but I think also my life has also changed dramatically from 2020 um I am running a
+startup which is know more demanding than anything and I think if you want to make yourself into a learning machine it's a pretty good path to take
+um there's nothing that challenges you more on your breath and your skills um than running a startup and building it from zero um so that's been
+absolutely incredible but it also means that some of my my habits and syst have taken a little bit of a loss um but it might also be interesting to
+hear what the condensed um condensed rituals look like now um and then on top of that I have a a four-week old baby uh which means that my schedule
+is even more ridiculous congratulations thank you so much um and I so I think like the reading has definitely condensed like now I have perhaps an
+hour or so to read before I go to bed oscillating between reading articles on reader um and then reading books um I can't get up to the 50 to 70
+books a year anymore so my selection process has gotten uh much tighter than it used to be um and so that's been a been a big one um another thing
+that I used to spend a lot of time on and I think we talk about in the article as well is that I used to spend a lot of time writing about the books
+that I'm reading um and that's also had to go I just don't have the time um but I still create a lot of flashcards like I joke with my wife that I'm
+going to have a party when I reach 10,000 flashcards um and I'm sure it'll be it will be absolutely you know my friends will probably come because
+they like to indulge and make fun of all of my ridiculous rituals um but it you know sometimes when I'm doing the flashcards people want to want to
+follow along and they're like you know why do you have a flash card about whether it's better to the window down or the AC on at various like um
+various like vehicle speeds right and it's just like and it's it's funny when you've been doing this for for 10 10 plus years because all of those
+things also carry memories of like yeah when you use the when you use this ridiculous fact or the time you created the flash card in the first place
+so the flash cards are definitely stuck like I review somewhere between 50 and 200 of them every single day can we see your anky can you show it to
+us I could Pro I could show it I show it I think I had I think in the original article you wrote too I have on my things Todo list like cut toenails
+I get like like my life is like completely in these systems that I regularly have nightmares about losing these systems because my brain is
+completely outsourced to it um this is what my ankee looks like um I don't think I've reviewed it so this is a really easy day with only 11 cards um
+so we can take a look I mean this is like like this is a pretty ridiculous one right this is a restaurant that I used to go to and I was like like
+the only distinguishing fact about this guy was that he had a really like this really good radio deep voice and you know everyone has this dream that
+whatever restaurants they frequent that you get to know the waiters and you know it's back and forth and it's like the usual you know but it never
+happens so this is like my weird attempt this restaurant doesn't exist anymore but like I don't know I haven't seen this guy in a decade uh but again
+brings me joy to see this kind of thing that's amazing I actually do that with I I put it in my notes app um rather than my flash card so then I just
+search whenever I'm back at the restaurant that's perfect and I think it's also it's things like um your your colleagues um kids names and ages like
+these kinds of things where some people might find it ridiculous that you put a note about this and it's like why don't can't you just remember but
+let's be honest most people don't remember those things and if you write it down then you will ask about it and then eventually you'll remember that
+that note is not really valuable anymore so I also in here have like the ages and names of like so many people I've worked with kids like significant
+life events for them like wedding dates whatever um because I really do want to remember those things um but my memory is not capable of it right but
+then at some point I was like oh yeah it's July isn't this when Scott got married or whatever right um yeah this one how many glasses of wine per
+bottle um I actually don't remember this one um it's four okay yeah there you go I didn't card you didn't need the flash card yeah I mean I feel like
+I feel like you know having a newborn all that you like you forget you forget the the joys of a bottle of wine um good example too right of just like
+something where if you don't drink a ton and you're constantly is like then this this might be worth it I think for a lot of people you don't you
+don't need a flash card um Dan you live in New York you're not going to need a C for this one um so this one is going to be an again right I uh I I
+didn't actually remember I think I I I the number I had in my head was six um but um you know I think for Dan it's probably two um but it depends on
+how how heavy-handed you're on the poor um here's another one so this is also this is very common like when I peruse technical documentation I'm
+constantly um adding things into anank again instead of the note taking to be honest especially on the schedule I'm on now with the type of work I do
+I don't take that many notes most things just make it straight into flashcards right away um this is a this is a postgress column type postgress is
+the type of database there's Json B and there's Json and I constantly forget when you're supposed to use either um this is kind of a bad flash card
+because I think this is just in my standard flash card template um that um it um it it shows both sides of the card so this is not really a valuable
+flash card this is the best one like when should you use Json versus Json B um sometimes I just don't get the time to pull this up um I'll show you
+actually just while I think of it let me show you I have I used to have like 20 different types of cards that I use but I always use the same one now
+and I I think this might be worth it to to some people because at some point I spent you know I had like a different car type for every single thing
+that I was doing this is the golden car type like it doesn't matter what app you use I just this is the template I like so you might be like um how
+many uh glasses of wine does Dan think is in a bottle you might be so that's the front of the card then you have to think about okay can this be
+reversed right so there's two glasses of um so this I mean I'd say like the bottle is the glass for me you know yeah there you go um this this one
+doesn't have a good um a good um a good reversal but um let me just see if I can think of um so six glasses in a of wi right so I'll just write
+something like again the reversal here doesn't really make sense but it gets you to the gist right yeah um so you might be if we're talking about an
+example from before like okay you know Dan's kids names are X and Y and then you might have to back then say X and Y are whose kids right you got go
+back you got to go back and forth and I just like I don't deal with the clo yeah this is really making me think of some AI stuff so there's this
+whole like debate right now about whether or not language models are like actually intelligent right and like one of the one of the big ones is that
+they don't understand like when things are logically entailed often so like um if they see all the time in their training data like how many glasses
+of wine does think is in a bottle they'll be able to answer six but they won't be able to answer the reverse and people are like oh that's because
+like they're not actually intelligent and it's really interesting that like as at least in the flash card example like humans actually have to
+practice this all the time what do you think of that I think I haven't seen a ton of examples or tried a ton of examples of where they can't go in
+the reverse other than in these benchmarks where people pose them these problems to try to not make them think I think I'm I I don't really have any
+big ideas of what a language model is and what it isn't I I just think of a a large language model as like an average of human knowledge or whatever
+like public human knowledge or like public human knowledge plus what you can easily scrape and whether whether they can reason it's just it's not
+something that I really use them for probably because I don't really feel like they can right now like as as soon as you get like two to three levels
+of reasoning down it just doesn't really do do the trick for me um so I'm sure a language model would do very well on something like this and
+probably even the inverse as well so I don't know if I have any direct thoughts on your example other than that's yeah I'm no I don't think they're
+super intelligent yet but I think they're like an incredible example of the average of the internet right yeah that that makes sense I I'm I I guess
+what what this is making me wonder about is um how this whole how the how the process of or the idea of extending your memory changes for you in a
+world where language models are available like you have the average of all of human knowledge available at your fingertips where like before you kind
+of did because like you had Google but like Google itself is just a a a much worse version of a language model where you can get exactly what you
+need in the context you need when you need it um and I'm curious how that's changed for you the function of and value of doing flashcards like this
+the way that it's changed my learning the most is that what Google is really good at is like you you know roughly where to find what what you're
+looking for and you can find it immediately I read this this this this paragraph once and I think about it every single day because I think the best
+people that I work with or like friends and things like that um are like this where yeah Google is good when you know what you're looking for but
+when you're just looking for associations that's when you got to go out and talk to people right like if you Google it's like whatever is SEO plus
+like maybe a level out right um but if we start to talk about something more interesting and like associations like for me it's like okay I'm using
+this data structure here this is what my data looks like what might be some other things that I could do here you just kind of got to talk to someone
+but this is what the language models have really changed for me right where I can go to it and be like hey I think it could be done like this I don't
+know a ton about this domain can you just like Riff on this with me and then these these models right like place that somewhere in that latent space
+um and then they can just find Association around it and pump that back to you so that is a ping ponging tool of whatever it is uh when you have a
+rough idea of you know the island that you want to land on it can paint the picture for you really well I found that extremely well um work extremely
+well for for Learning and that wasn't accessible to me at my fingertips before I couldn't be like hey um um like you know something I did the other
+day is like um I like this brand um but they didn't have a product that I was looking for what are some other like Brands like this right it will
+just it will just tell me that again average of the internet right um that I find very valuable or um like a year ago um we were we're having you
+know one of the wonders of living in Canada is that these little cabins in the woods are are accessible for for for not too much money and we had
+this retaining wall that we needed to build and it was like near the water and it was this like whole complex thing and there's all these leg
+legislations and it was all in French because it's in Quebec and I was using a language model right where you know someone had told me oh you need to
+build this type of retaining wall I don't know anything about retaining walls I don't care about retaining walls I don't care to read like 100 pages
+of French uh which I don't really I don't know how to speak French anyway about what you're permitting to do near a water line as it pertains to
+retaining walls right but you talk to a language model about this and then they start to see like well this retaining wall is not going to work for
+this reason but actually there's this retaining I I the name slips me but there's this type of retaining wall where you put it in a grid and then you
+put some rocks inside the grid I'm sure you've seen one of these before um I don't remember the name of it right now but it's was like oh this might
+actually be a really good option that fits with these criteria but no one had suggested it right these types of Association just like yeah if you
+talk to someone who's an expert on entertaining qu they'll tell you that but anything Associated like this I have found the language models
+incredibly useful um both in my daily work because it feels a bit like conversing with a PhD in whatever vertical you're going in um but also as you
+go through your your daily life and you often have to talk to yeah a contractor a vendor who's an expert in some vertical but certainly not an expert
+in teaching you enough about it and maybe also you feel a little ripped off because you know and you don't trust them um that's been very very good
+that's really interesting and how how does that relate to you to the practice of making these flash cards and using them if at all I think it's it's
+mostly like flashcards to me is a sync right I I don't really do anything with the intention of like oh okay I'm going to sit down in my chair I'm
+going to create some flash cards today right once I come across a bit of knowledge that I want to retain for like whatever reason I'll put it in here
+there might be a flash card in there on the name of that retaining wall whose name slips me right um but probably not right but that would be the
+type of thing that would make it in there but I don't really like I think I used to open in the morning set aside 45 minutes with the intention of
+like okay we're going to create some flash cards today I don't have time for that anymore right now it's like okay I just encountered this piece of
+knowledge make it into the sink of flash card so I know that this is retrievable is right and the reason for the flash card and raining this
+knowledge is that uh that that lets me make these associations in real time too that are interesting right and suddenly I have high bandwith a tool
+that's right in front of me to do that of course the best person to do that association with technically is my co-founder Jus who who sits who who
+normally sits in this chair behind me right it is just that free flowing ideas of high bandwidth I feel like I can get some bandwidth with the
+language model but the breath of where I can get it to and the verticals of knowledge that I can get is is UN encumbered like I don't have I don't
+have the network to know like what's what the best type of like heat pump is for these temperatures and what matters right yeah yeah yeah yeah that
+makes a lot of sense so I want I want to I want you to finish telling us about these flash cards and then and then we'll move on to some of some of
+the AI stuff for sure and yeah I think I think I think the best way to think about the flash cards is that they are a sync of your knowledge and they
+are just a way that these things resurface this is the car that I really this is the car type that I really like it's the only one I used like for
+the past thousands of cards I've created I haven't used anyone else then you here for add reverse you just whether you want to reverse the card or
+not in case of something like this you probably in case of like how many glasses of wine does Dan Dan think is in a bottle six glasses you don't
+really need the reverse so we're just going to leave that Rank and an extra will just be a picture or something like that you saw it on the other
+card this is all you need and then always put a source in uh when you create a flash cards it nice to know like okay this was in like 2017 I talked
+to this person and they set this thing because again there's a little bit of nostalgia with these cars like if you're actually serious about making
+this a habit right you're like oh yeah that was Naj at Carbon in 2014 or whatever right like you might not delete the card because that brings you a
+little bit of Joy but I think that's really interesting I haven't actually heard anyone talk about uh flash cards from that perspective like it's
+sort of like um when people talk about they get a whiff of like someone's perfume and it reminds some of their mother or something like that and um
+like doing flash cards as a sort of um evocative exercise or associative nostalgic exercise for different times in your life in the same way like oh
+I hear a song and I think of like being in high school or whatever I kind of love that it's like there's something romantic about it I think it's
+just because I've been doing it like it's it's a major part of my life right I've been doing this since I was like 17 18 years old right so it's been
+like probably 12 years of flash cards um there you know there there might be the yeah there's there's there's a lot of history um I think a lot of
+people do flash cards for a period of their life um but I found it valuable enough to just stick with it right it's one of the three or so things
+that really have stuck with me great um do you want to do a couple more or um uh I mean if if let's do one where you get a good you get a good card
+that you know I want to get I want to get that uh uh which prestigious university is in Pittsburgh oh you probably know this I do know this I don't
+remember this okay carne M yeah you gotta give me a chance to answer before you flip the C okay okay okay okay um then there's you know I'm like uh
+English is not my my my mother tongue um but uh so I used to do a lot of like a lot of uh flashcards with um with words and definitions and um at I
+would basically I had this whole flow where I highlighted on Kindle it syncs the readwise and then it syncs then I like I processed that as part of
+my highlights made a flash card um then at some point my wife said s it's funny my my wife has like two reactions when I when I tell her one of these
+new words that I learned proudly right um one reaction is why don't you know that word um and then the the other reaction is Simon that's a dumb word
+no one uses that word and and I'm like Jen it's it's it's kind of like there's a missing third thing here like what about like Simon that's such an
+amazing word I can't believe that like I'm so thankful that you taught that to me uh so at some point I started um scraping Google with the number of
+results for the word as a proxy for how useful it is um that's something where you could probably use a language model today um to to ask it how how
+um um how common a word is so aable I mean that's someone who's who's um you know an admired or a nice person right good natured e yeah um that's
+another one what is the main industry of the galin Province in China um wow there's a lot of good tea this is a really hard day today I don't know
+yeah I mean this is not a good flash card because it's it's too hard to skim uh so I proa I'm going to mark this and then I'll look at it at some
+point um all right I'll I'll close this down but uh yeah these are like there was a part time in my in my life where I found the origin of every
+vegetable like that mattered to me because then I could map back to um what vegetables were endemic to which cine you know it's like before the
+Colombian transfer of tomatoes you know blah blah blah blah it's um yeah so what's the answer uh the answer is is uh is Asia I don't think it's
+pinned down much further than that which makes sense right it's not really used outside of that that cine that makes sense cool um all right so we've
+we've reviewed like our our previous um uh so we we reviewed the previous interview we've kind of like gone back in time and seen what's stuck and
+what hasn't um now I want to talk talk to you about AI stuff so yeah how are you using AI in your let's start with your work definitely the biggest
+thing which I'm excited to show you because you shared with me before this that you actually don't use this tool I would say that probably about 80
+to 90% of my uh llm use comes through this tool called raycast so raycast is is essentially a replacement for spotlight on steroids so when you bring
+it up it looks like this um so you know it can do my schedule uh switch my Chrome history things like that open applications can search my files but
+if you ask it something like okay a question that I actually asked it before this um before this interview is that I have this little yeti mic here
+and the audio was really bad as I was doing my testing before the um before our call and um I couldn't remember if you're supposed to speak into the
+side of the logo or the other side so I asked it um for good audio quality do you speak to the side of the logo on a yet microphone now you can't ask
+Spotlight this but if you press tab it will answer it right there so you're just doing command space type your question tab done and so like so basic
+what what model is is this is using gbt 40 so basically like it's it's gbt 40 accessible with one hotkey command that's right you can bring it up
+into a full chat window MH and then expand whatever there's a over here I hit it because there's probably something embarrassing in there um so you
+can keep asking it is is yeti a good microphone um should I use that or buy another one right so this this becomes a whole thing you can upload files
+and all of that in here um I like this a lot for like day-to-day use um like Chad gbd for mac and so is not super interesting to me that's a whole
+other workflow but I was already using raycast and this was a really really easy way to um to do it uh so let me just show you because you can
+actually there's a couple of other things that I do with um with raycast so you can configure inside a raycast which model to use you can use Claud
+um you can use a if you care a lot about the speed um you can you can use one of the other models I think these ones are hosted on grock right um so
+these are this this works really really well um hotkey to bring up that full chat dialogue um you can do the you can do all that that works really
+well but then you can also Define these custom commands so inside of here um I have a couple that I use all the time um so one for example that I
+might use is like I um if I'm cooking something I I don't really have like a collection of recipes or whatever and it might be something that I'm
+doing um not that often then I have to cook through a bunch of dietary restrictions so then I might do something like this to get a hummus recipe M
+and then this is like a whole prompt that I've done that that I've done and um it gives me this format that is the most condensed list that I can
+think of that honors me and my wife's dietary restrictions things like that and it's just the simplest condensed version and then I'll just put this
+in front of myself or send it to my phone or whatever that's really cool um and when you send it to your phone like is there a specific way you do
+that or is it just you're just copy pasting it into your notes app or something like that yeah I just I just said send a send a text message to
+myself or or something like that um it's usually usually nothing more elaborate than that there might be a quicker way to do it but it hasn't
+bothered me um Okay cool so the the recipes idea is is basically like you can create any common prompt you're doing you can sort of create a recipe
+that's available by by command and so like this this recipe uh is uh so it's it's not called a recipe it's it's called a command it's called an AI
+command and basically you put a put a recipe command in there so that whenever you want to uh get a recipe for something it has like a very specific
+list of like all the stuff that all the requirements you have that's that's pretty cool I like that um I use it a lot like that's why I'm trying to
+share the things that I actually use rather than the things I've experimented with I use this all the time because I gave it a couple of examples so
+yeah you you go into rayach you search for AI commands uh we go here to recipe we can edit the AI command and then here you can see this is my promps
+I'm like please create a recipe for and then the argument passed use the formatting from this example so there here's an example where I just wrote
+in how I like to make mashed potatoes um when listing ingredients put in parentheses optional extra ingredients blah blah blah blah for optional
+ingredients this uh my wife is sensitive to this like carb called fructan please like provide substitute specify the approximate calories please like
+all of these things and these models these days are so good that this just works that's great I love that and no uh you don't have to flip through
+the like Chef's story about how like their their great grandmother's cousin like made this recipe for them or whatever no there's nothing about how
+they founded on a clay clay tablet in the Attic right there's none of that it's great so I I really like that and again I think of the llm as an
+average of the internet and this is a great way to do that and especially when you try to just boost its creativity a bit by like I'm exper like I
+cook enough that I only really need the list of ingredients not actually the instructions yeah and give me give me like a bunch of optionals that
+might make it interesting and I can quickly see oh that's kind of a fun idea right so you can kind of tune this to to to how you like to cook um and
+I really like that I just don't use Google for this anymore because this is great um I used to or I still have this book called the flavor Bible
+which essentially is a thesaurus of hey this goes with this so you you look up butternut squash and it's like um maple syrup goes well with butternut
+squash like Sage goes well with butternut squash um and Rota goes well right and you just like you start getting ideas for how to use this in a
+recipe maybe don't combine those things unless it's Canadian Thanksgiving um but some of those things start to go create really interesting things
+now these these these llms again as the average of the internet have that the St built in yeah what about improve writing what's your prompt for that
+I don't use this a lot um but I so I haven't used it a ton um so this is what it looks like this is an experiment so I I don't use this this a ton um
+for um I find that the standard like just like improve this or giving suggestions is is good typically I'll I'll dump the whole thing into Claud or
+chat gbt or whatever is in whatever I use that week um and then I'll ask it like here's the full document let's talk about this sentence give me some
+got give me some feedback I do that for my blog post these days I don't have any more uh particular flow for that any other any other commands that
+you think are are worthwhile Define this one is one that I've spent a fair amount of time on and I use it a lot um this is one where I do my daily I
+still review like 20 book article whatever highlights every single day in readwise and um sometimes these will be singular words that I've
+highlighted I don't know and um I use this prompt to learn these words the word that I showed earlier in the flash card which I think was affable and
+it just saids you know like um a good natured like kind human being um that was not g going through Define here so what I use here in Define is um
+I'm reading a book and I encounter this word place or person and this is the word please help me learn what this word is the place or person or
+whatever it is this represents um then I I then I say give me six example sentences of using this word and please try to use some historical as
+example something that's going to teach me something give me something with some well-known people like physics computer science geography to try to
+make this example sentence as educational as possible I want to learn from the example if it's a word that's always used in different forms just like
+stem the word um also give me some related words synonyms concept things that are related to this word third um and finally if you're capable of it
+then give generate an image that works for this word then I give an example of um of what this can look like um okay Dan give me a word I want to do
+affable affable let's do it uh Define oh it's because it does it from my clipboard so just do it like that and then Define so affable describe some
+friendly good natured easy to talk to and then affable leaders like Gandy often gain widespread respect and admiration due to their approachable and
+kind nature in computer science an affable user interface is one that's easy to navigate historical figures like Franklin was known for their
+affability so it's just like I love this because it starts to oh yeah like yeah Frank like it's you you it connects with that trunk of knowledge
+immediately um and it just makes it much more fun to create a flash card right it's like oh yeah findan like oh yeah ien thought thought about him
+for a second yeah he seems like an affable guy right so immediately you're making these context you're may be learning something um so this is really
+improved like how fun it is to look up some of these words like when I see a word now and I'm reading I get all like jittery to run this prompt
+because it just works so well I have a couple I have a couple more words for you I want to try this out let's do it let's do lambent l a m b n t okay
+I have no idea what that word means something that bows or flicker softly often implying a gentle radiant light you know oh you were really indulging
+in some in some recent writing huh I Love Lamp and Flame Flames danced on the surface of the water reminiscent of oh I'm drawn in here Isaac Newton
+once observed that the lambon glow of a candle could reveal the nature of light and color leading to groundbreaking work in Optics um the L ENT auras
+in the polar skies are caused by charged particles from the Sun interacting with Earth's magnetic field right this is pretty good it's good I'm I it
+feels romantic like I it also feels like I will reading those the diversity of sentences will I'll remember it better than just the like the
+definition which I think is what you're going for yeah I think it also has in the prompt to try to make the um make make the images easy or the
+sentent is easy to visualize because that's also a great memade um like this lamp and oras in the polar Skies like I might remember from that alone
+yeah wait go down to related I want to see whether okay glowing flickering radiant okay cool all right I have one more word and then we can we can
+move on are you ready yeah ien grow E I E I ge n g r Au u g hang on I lost the g r g r no that's j g g r okay Au yeah oh my God this is this okay is
+this German yeah it's German intrinsic dri ien grow is a German term that translate to Intrinsic gray it refers to the uniform dark gray background
+that many people report seeing in the absence of light often described as brain Gray um is that a cool one yeah I how have you used this I I don't I
+just have a list of words I like and it's those these are two on the top of my list I go while I while ien is not a true visual input it highlights
+the brain's role in creating our visual World similar to how Phantom limb Sensations work for amps um I think it's just this is just really showing
+the strength of llms right where you take the average of human knowledge and then you just cause it to go nuts on associations but draw it in in a
+particular direction in the latent space around things that are educational and connecting I I just I love this prompt that's great that's awesome um
+another one that I use for a while is just like I tend to you know just growing up in northern Europe often for especially a North American audience
+like uh the writing is sometimes a little bit too direct um so I have this Emoji suggestion that just adds an emoji uh friendlier um remove profanity
+I don't know if this was just like me testing out or if that was a problem at some point um they have a bunch of uh they have a bunch of uh of
+standard prompts it's not something that I've used frankly these like prompt templates and so on I've been very skeptical it's only the recipe and
+Define ones that I really like other than that I think the llms have gotten good enough that you don't have to worry too much about it yeah yeah yeah
+that makes sense cool I love it okay so I know you also have a bunch of chbt and Claude stuff to show so let's move on to that yeah I think I think
+I'm um most of my used to today I mean I'm subscribed to all the tools right I feel like being an AI you want to you know you you have perplexity you
+have Claude you have chat gbt and you also pay for this like it's just like that's just part of the business now you're spending $100 a month on
+these various subscriptions jumping around them getting inspired ired um chatti BT is what I use for the for the most part now I just sort of
+vacillate between Claude and chat BT and chbt doesn't have a search function so I couldn't find the the logs um but I have some like fun examples of
+the kind of things that that um that I use um so at our at our cabin uh it came with like a really old big freezer and I have no use for a freezer
+somewhere that has like two nines of uptime on electricity like Royal Quebec is is not known um for for that actually to the point where I have a
+script that constantly pings it and then I have a website for the cabin that will show like kind of like a GitHub style like uptime chart on on how
+often the electricity is out regardless to say you cannot keep anything in the frozer in the in a freezer somewhere where the electricity goes out um
+once every few weeks so I wanted to convert it to a fridge and I was like ah maybe this is like a fun project you know you have so much time before
+you have have a newborn and and um and so I asked chat TBT how might I go about this uh because I've never done anything like that I'm not that handy
+and uh chat TBT uh says well you go on like basically just like the canonical is like go to Amazon buy this device that's mostly used for home
+brewing you plug it into the wall you plug the freezer into that and then you put the temperature probe inside the freezer and then you just put it
+for 5 degrees right um Celsius I don't know what that is in Fahrenheit and then the freezer will just turn on when it's above 5° and turn off when
+it's below 5° and now your freezer is a fridge I thought I I was about to buy a fridge for like these like what like $1,000 dollar or something like
+that um now I have this and yeah it causes like an enormous amount of condensation because this compressor is going so hard but it doesn't matter for
+for this fridge because it's just for um it's just for for drinks um so fantastic like $20 device from Amazon conting I would never have thought to
+do that that's amazing wait uh explain it to me again so you're you're con you're taking the temperature probe from the device that you just bought
+or the temperature probe from the original freezer and putting it somewhere else you have the freezer you plug the freezer into the wall now it's a
+freezer now you um plug out the freezer and you put in a which you can essentially look at it as an extension cord so you plug in the extension cord
+and you put the freezer onto the extension cord the extension cord has a temperature probe you put the temperature probe inside of the freezer right
+and so the the the yeah it just turns on and off depending on you can even you can even have it so that um it can cool and um and um both cool and
+also heat if you have a device capable of it but I think it's used for home brewing right where you need fermentation ranges that's amazing is it is
+the probe Wireless or like how do you get it in the freezer without it um breaking the seal um it breaks the seal okay um um you know the um uh I
+think especially in in rule Quebec you become very resourceful um so this is like a good it's a good it's a good hack you know this is how you write
+the best software too yeah I love it um and then I think I like what else do I what else do we use it for I mean while we're on the Cabbage like
+turning uh like writing Quebec waa French is an art in itself um I don't know again I don't know French but my wife uses it all the time to convert
+something into thec off wrench um the other the the biggest thing I use it for I think in in business is that um when talking to when when going
+redlining and stuff like that the clients often when talking to the lawyer it's easier to just send a draft paragraph to them and it be like hey
+something along these lines and then they'll edit it for drafts I use it constantly I think for most people it's much easier to edit something
+especially if it's something they don't know it's on about than it is for them to actually start writing the first um writing the first draft and for
+something legal that's certainly the case right so you're like okay I need to explain the exact algorithm for which we measure the uptime of Turbo
+puffer um in the way that we think makes sense because I don't think what the lawyer made came up with made sense let me just send it back in veal
+and you just minimize round trips like that um same also like always like when talking to a like for accounting and things like that I use it
+constantly like I don't remember what this term means right and then again it goes into the sync of the flash card starts over time um but often a
+lot of these professionals will talk to you as if you already know everything about accounting and everything about legal and whatever so when you
+have those conversations with these like vendors that are in some other vertical I find it extremely useful and then it makes it into the sync of the
+FL cards later yeah I have that too like uh I feel like I want like for a lawyer for example it's like I needed to like push me into the latent space
+of like lawyer language and like once I see the that Lang anguage like I can I can write in it you know but I just having an example of like close to
+what I want is enough and it like that's one of the things I I think about a lot with JT and Claude is it exposes how many dialects of English there
+are um because now you can do like subtle translations between different dialects that we didn't even think were dialects so like from Tech guy to
+like lawyer or like you know small business owner to like whatever painter or whatever um we didn't think that those were different forms of English
+but they actually really are and Chad is like this amazing like Universal translator for those kinds of translations I couldn't agree more I think
+you put it brilliant when it's like I have no idea how to access the legal Laden space unless someone just puts me in it right and then I can edit
+and it's like hither to you know and it's like yeah let's go you know um and I think iterating iterating on copy especially if it's very crisp copy
+right um that that then then it's great also to just get suggestions uh for this kind of stuff I'm not using any particular tools like depending on
+the context I'm in now they're all iterating inside of Chach CLA um or just using raycast right um on yeah just like give me some other examples it's
+it's rarely the thing that it spits out that I end up going with but again it just like comes up with words and things like that um that I can use um
+the other thing that I found it really useful for our physio exercises um so I had this I had a problem with like I had a tennis elbow or golfer's
+elbow I think it depends on which side it's on I don't know as Chachi BT um and um and it's just like like and so I just okay I'm just going to do an
+experiment instead of going to Physio I'm just gonna ask chbt do whatever it tells me to do for a week and see if it disappears and it did right it
+was just like oh you have to do these like wrist curls and I'm like okay great like that saves me a round trip and like a $100 like physio fee right
+um and I found that too with um like one one of the problems I have and I think a lot of people who work at a desk have right is a very like just
+like tight shoulders and a tight neck um and I always thought okay yeah I need to just stand more and then I have to roll and things like that um and
+then at some point I was like that I I I had this problem for five years now like it's it's not really going anywhere right and Chachi BT and again I
+was just like okay let me just do these exercises that Chachi is doing I'm not even really gonna understand them I'm just going to do them somewhat
+blindly for two weeks and it's been so much better right everyone's just like okay soften the T tissue but it's like no actually strengthen these
+muscles right um so I find that it's pretty good for that I do find for those things for exercise stuff like that you kind of do need to point it in
+a pretty like in a in a tight Direction um and it's not always amazing at reasoning about how it got there but again as an average of the internet of
+like these are the things that work for this Condition it's pretty good um another problem I had that no one really could help me with was that I
+have this random thing where I just get a blurry vision for like 3 four hours go like half blind um it happens randomly every few months and I
+couldn't figure out what it was and when I talked to the optomist about it they're just like oh it's just stress I'm just like well like so this is
+just going to be a problem for the rest of my life like there's nothing I can do um because it's quite debilitating especially if it hits at a bad
+time like we're driving or whatever like then I just have to pull over and wait until it's gone um and apparently it's called an ocular migraine and
+it can like happen in the weird thing one of the triggers for me is aspartame like it's and I'm like after that okay well that's that's kind of
+concerning but um so that's another one um so I mean like Chachi BT has just become the thing that I ask all the time and I think that raycast on the
+M on the computer has made a huge difference in just asking everything um and then on my phone on the home screen I have the voice chat for chbt um
+my wife uses that a lot like she's always asking she uses it a lot for gardening um but that's been that's been really good and I'm really looking
+forward to their next roll out do you have access to that yet is it as good as it looks it's really great yeah I think if you're already a big voice
+mode user you're gonna love this I think I'm also I'm I'm really excited for um for that part for um for my daughter like I I've seen that there are
+some toys where you can chat with these models and ask them questions um and I feel like she's going to grow up with these Tools in a way where it's
+going to feel incredibly natural that she's just you know she's just talking to Wally de walus right um and um there was that really cute CLA right
+where it's like tuned into the golden uh Golden Gate Bridge and hopefully we get there like that's like what makes me most excited about the safety
+is like okay can I just hand this to my daughter and she will just ask and it will just help with the with the Curiosity um that's that's that's
+really interesting to me I think you'll really love the new voice mode because so I have a video about this I'll send it to you after this on YouTube
+where I'm using the new voice mode and it's really good for reading because what I do is I just turn it on and then it just sitting there listening
+and then when I'm reading something and I encounter a word I don't know I'm like hey what's this word or like I it's like a historical figure or like
+I'm like I need more details on this particular battle in this book or like this this particular concept that like I don't philosophical concept I
+don't quite understand and it just gives me like the answer and it's actually surprising how much when you're reading how much there are things where
+you're like I don't really know what that is but like I kind of do but like it's too much effort to ask and when you have like a chat gbt kind of
+voice mode assistant there listening it lowers the bar so much that you're just asking all these questions and you I think you learn way more it's
+it's really fun I like that a lot and and especially if they're I mean apis are going to be get built on on top of these things right but it's like
+if those can make highlights and then make it into my wise or whatever down the line like that's that's pretty exciting to me I think like what I've
+always what I've always wanted and I think it's going to take a little bit to get there is like I I really don't care for VR and AR as an ed as a as
+a as an entertainment device like it just there's there's two things that that excite me about that one is can I use it instead of my monitor setup
+like when is this good enough that I can wear it all day and code and work inside of this thing right that's exciting for me for video calls it might
+I don't know when that will not be awkward anymore that's not super exciting to me but this the second thing that I've always been excited about is
+that the the the visuals stimulus of VR and AR would help remember you remember so much better like that's a medium for me to like to learn in that
+is quite interesting again unless I'm like in this environment to work already I don't know how likely it is but if I can you know we're talking
+about these words like I ien and what was the first one with the light right like if if I can see that it's going to be very hard for me to forget
+right if we can generate that kind of imagery so that's really really interesting to me as well and of course these things will play together um and
+that might take a little bit longer again I don't really care about it for any other use cases than that but those two use cases do do excite me um
+and it seems like that's in that's starting to become the in the adjacent possible that's a thing that like I think people miss about AI stuff and
+and maybe miss about um just how techology interacts with human beings in general like a really good example is just the ability to read for example
+it like actually changes your brain and you like you take some of the stuff from your visual cortex and like reorient it to like help you read and
+that makes you better at like analytical thinking it makes you more likely to um see uh sort of like particulars of a scene instead of like a more
+Universal like holistic perspective so like it actually changes humans to be able to and I think like having language models will do something
+similar in this way that I don't think it's scary I think it's actually really cool like for your daughter or my nephew who's a year and a half like
+or almost two now like being in a world where any question that you ask has an answer like an immediate answer and no one's getting upset at you for
+asking is like a crazy upgrade to like children's brains you know because like previously um like uh a year and a half or two-year-old or
+two-year-old's like still a little bit early but like three or four year olds they're like asking all these questions and parents are like I don't
+know like whatever I don't know why the sky is blue or whatever um and all of those questions are answered and maybe they're not even just answered
+they're like you're stepping into like a scene that like helps you understand it in this totally new way and I think people are worried about like oh
+like AI is replacing us or like are we going to be like have to be like bionic or whatever it's actually like we don't even have to implant them into
+our brains like people will we will be different people we will we will sort of like flourish in this new human way that was previously impossible
+because the conditions weren't there and that makes me really excited yeah I it makes me it makes me really excited too I'm sure you were one of
+those kids too that drove your parents crazy with questions at some point you know I'd ask my parents I remember this because I think I was like four
+or five years old and this one of my first memory where I just you know you just ask questions like Mom what's the biggest plant in the world right
+and and just and they're just like oh my God right I think it's like I don't know Simon like shut up you know um and and then I just remember I just
+got the Guinness world uh Guinness Book of World Records right and then it's just like well this was shut you up for a while right and I was like
+okay well now I know like now I know who has the biggest nose ring too great you know um but I think that's I think that would be very stimulating I
+think that would be very stimulating for for a lot of kids um I I think also like like one of the things so you know my mother tongue is Danish um my
+you know my grandparents I'm fortunate enough are alive um and they only really speak Danish um but it's very important for my daughter to also speak
+Danish but it will be a challenge um for me to be the only speaker here right I live in Canada no one around speak me it's a tiny Community um I
+don't really have any friends here who who speak the language so rather than face timing with her Danish family there's not going to be a lot of
+exposure so yeah we'll set you know all the UI interfaces to Danish um but maybe we can also set like you know Wally the speaking wus right backed by
+whatever model to only speak with her in Danish um or maybe it should speak to her in Mandarin or you know or like Tai or like whatever like I think
+one of the one of the things that might be interesting for this generation as well is like you know I don't know how true this is I haven't read the
+studies on it but I feel like um if all kids did was just learn languages before the age of 10 they could CH up on all the math and whatever they
+missed in like you know when they're 10 or 11 in like four weeks uh but the language thing and hearing those sounds is just so special um and um you
+know I can't say th's and that will probably follow me for the rest of my life because I just wasn't exposed enough to that sound until the age of
+eight or whenever that gets locked inish um and I think that would be that's that's exciting if Wally the waras on Tuesday talks this language and on
+Thursday's this language but primarily Danish right um I I don't know how how that how that changes but I think it is interesting one of the things
+just on the pronunciation that I find funny is that again because chat BT is such an average of the internet chaty BT in Danish actually has a
+American accent um I don't know how true this is in other languages I'm sure for French or Spanish or whatever it's actually good but the Danish one
+has an American accent which is just hilarious that's wild you I I promise we're get back to some of some of more your AI use cases in a second but I
+think uh this is too good not to share I think you're going to love this so I ran into this startup probably like maybe a year ago um and their whole
+thing was you know you said you can't say th's and um I think that that actually might be more flexible and plastic than you think um and the reason
+why at least this startup said uh that that you can't say th is is um it's really hard for you to hear and hear how off you are versus like what the
+actual sound is going to be because you didn't like learn that pattern when you're growing up and what they did is they had this tool where if you
+were practicing for example th it would show you the waveform of the of the th sound and then it when and you would speak to it you would say TH or
+whatever whatever you're doing or whatever the word is and it would show a DOT that would show you how far away you were in real time from that sound
+and then you just like practice all the time and you can watch these like really like you can watch in real time so you can see like these micro
+increments as you're getting closer and closer and closer like tuning a string and um apparently if you do that even non-native speakers who are like
+you know past the critical period can learn to speak fluently um and I think that's incredible that's that's a nuts way to approach it I think at
+this point too there's almost a little bit of a of an attachment to not getting completely completely rid of it um I think you know any native
+English speaker can hear that this is I was not born in the New World um and um but it doesn't you know but also enough that it's like oh that's you
+know it's it's just part of you know my own history so I'm not going to put in the work but it's so interesting that it's possible not to and there
+are sounds where if you can't say them it's really problematic I just sound a little bit like a toddler sometimes when I say th and I'm speaking fast
+right and it turns into an f um and uh and and but I I definitely resonate with the I mean in the the International Phonetic Alphabet right just sort
+of has it's it's really fascinating reading if if you haven't read up on it but it has this chart and I I love a good chart that simplifies something
+really complicated into a system that actually makes sense like the periodic system um or you know like how the planets are organized around the Sun
+like these are all systems and a good system is not only um categorizes existing knowledge but also predicts future things like the periodic system
+is like well there might be a heavier element or we're missing one here whatever right um and the International Phonetic Alphabet is that for sound
+it's like the back of your tongue is here the middle of your tongue is here the front of your tongue is here your nose is doing this thing and it's
+like all these parameters and now you're making this sound and so there's these permutation and every language has you know just making this up but I
+think it's somewhere between 20 and 40 sounds um and then different dialects also have different types of sounds so for example in in Danish we have
+this sound that's also in my middle name called right so my middle name is H this is not a sound in most English dialects you probably can't say this
+sound maybe if you spoke yeah good luck um and uh you know one of my friend said Simon saying your middle name is a little bit like trying to barf
+while saying Europe um and that kind of works you know uh not so much when you have to spell it over the phone but it works for the pronunciation um
+but then what I discovered when I was looking into the International Phonetic Alphabet is like oh actually in New Zealand English they have the u
+sound so they will say I can't I can't imitate it properly but they will say something along the line of like bird like with the U drawn out so
+they're able to say the sound whereas in North American English you say bird right it's it's more of an i sound um and French also has the O so they
+have an easier time to say it but it's like every language is just a mismatch of these like 20 to 40 syllables um and I was reminded of it again when
+we were choosing my daughter's name uh right because it's like you want to choose some syllables that are roughly the same in the two languages and
+then combined together so you know Simon is Simon in English but in Danish it's Simon right and it sounds very different um so these syllables are um
+are are very finite and every language is just like ploted together and whatever like 40 20 whatever you learn um it's it's hard but it sounds like
+not irreversible yeah I I love that I I I had no idea that they had mapped out and like you can it's like a periodic table of all the different
+sounds that's that's really amazing um I I that's stuff that's stuff I'm a nerd for that um so I want to get I want to get further into a couple more
+a couple more AI things that you that you're going to share so I know you you said you use notion AI a lot for writing tell us about that yeah this
+is a bit of a more recent thing and and generally when talking about tools I like to not talk about them until I've used them for several months but
+I think with the AI tooling it's changing so rapidly that it's sharing some of these things earlier so there's writing inside a chat DVT feels a bit
+awkward like iterating on writing I think Claude is trying to change that with the artifacts um but notion AI I mean I that's where I do most of my
+like most of my notes and so on these days um and I just have a journal page where I'll just write about whatever is going on or I'm trying to think
+through a problem um and they just have a really good integration that pulls in the necessary context right so they're using some type of you know
+the kind of the kind of thing that turbo puffer Powers right um um like they're using some kind of semantic search behind the scenes to pull in
+context from around your workspace um so when you're writing and iterating on your writing it can pull all of that in that's super super interesting
+and I found it great of like hey you know I was having I was having this discussion with someone and I feel like uh maybe I didn't rep represent
+myself well in this and and you know and it just gives you feedback and completes the writing that kind of conversation has been really really
+valuable to have and I think notion a does it does it quite well um so I found that really valuable uh to use yeah yeah I I actually use notion AI a
+decent amount um for writing in particular for example like prep preparing for these podcasts I um I will often like just I have a notion doc with
+like run of show and then like when I had Tyler Cowan on I was just like okay like tell me all the all Tyler's most recent books Give me a summary
+right and then I was like here are some of the points I'm going to make like which ones relate to these books and like it it allowed me to create a
+like a document really fast with like my ideas and like a summary of his books and ideas so that I could like talk to him about it on a podcast um in
+a way that like yeah I could have totally done it with chbt or Claude but um it would just have been hard it would have been much harder to do it's
+like having it in context is really helpful definitely I think that I think that that's I mean that's why we've also created um like that's part of
+why we've created turbo puffer right is that it's clear that within the context window of what you're operating with the model with we can get a lot
+done and I think even that we have not harnessed the full effects of but I think notion is showing that hey actually we can pull in a lot more
+relevant context from years and from other people and from things that have happened um and perhaps even changes in how documents have involved and
+you get something even more interesting um and I think that's an exciting that's an exciting future I think there's a lot of like security and um
+safety things that we have to get right um but that really can help augment um and I think I think the the notion AI is a is a really good example
+and probably one of the one of the tools that are the furest on that yeah that's thing I like to do is like I'll take a bunch of journal entries and
+I'll like throw it into Claude or chbt and be like okay like how did my um like how did I change over these these last years like what's my
+trajectory or like what do you notice about me like all that kind of stuff or um if I'm journaling about a decision I'll be like I'll you and I'm
+like you know going back and forth on what to do I'll like put all my journal entries about that decision into it and be like write the journal entry
+as if I decided a or write the journal entry as if I decided B and it's so helpful for that kind of thing to like pick up on the like little things
+in how you think and speak and talk and then project that forward into the future absolutely and there are there are tools coming out where um
+actually a tool that is using turbo puffer is this um this app called dot right that's trying to create a journal where you draw in the the necessary
+context from your life to do basically what you're what you're what you're talking about there um we're also seeing another company that used turbo
+offer is this company called shapes right where you have these shapes that have personality and you can talk and they join your Discord and you talk
+to them um and they remember what's what's happened and what dialogue has been going on and so that's that's I think that's really interesting and I
+think also the context um the context windows are growing would get better at Pro pulling in context from billions of documents uh to do really
+interesting things um and the tools will grow alongside of that um but it will take a while um I think even now we're just like even just using like
+using a small amount of um completion in your ray house on your computer is something that most people are not using most programmers are not even
+doing doing much between Beyond just using co-pilot to to um to complete rather than actually having a conversation with their code um so it's as
+much of an an involving of of of us as it is of the tools right um but it's I think it's very very exciting to be a part of totally so what else what
+else should we talk about um I think there's a couple of other places where I use the llms on a daily basis so one is um there's this tool called
+super whisper um again it's one of these tools that I haven't had the um the pleasure of using a lot um but it will allow you to just talk and then
+it will summarize um I'm experimenting with using that a bit more for journaling um so just tell like hey these are the things that happen today or
+these are the things I'm going to do today um I haven't fully Incorporated it into my workflow but I think it is interesting and the tools are
+constantly getting better the main problem I'm having is still that it takes a little bit too long for the transcription and for it to pass to the
+llm and do the summary um I want that to be a couple hundred milliseconds but it takes a couple of seconds at the accuracy that can tolerate I guess
+like my accent or whatever um so I think that's interesting but the tools are still a little bit too slow but that's fantastic because that will be
+fixed within the next probably six months um do you use that I don't um but I've heard I've heard great things about it I just have not tried it
+myself yeah I I think it's still a bit immature for unless you really want it um or like I think also you like I've lived on my keyboard since I feel
+like I was 7 years old so I can type fast faster than I can than I can speak um so it hasn't been a huge issue but I think for a lot of people that's
+huge um and I think probably part of where we're going to see that more is hopefully just that the OS dictation gets better in iOS um in this
+upcoming release I'm not on the beta so I don't know but I would assume that it does and when that when that makes it into the workflow of how we
+write messages things like that then I think it will spill over more but it's like it's it's just on the edge I think um and it will be it will take
+a little bit I think um before it gets there for everyone but it's definitely getting there yeah what I want is um so like people send voice notes
+right now and and I think voice notes are really helpful when like you're you want to communicate something that's like sort of complicated to
+someone else and you don't want to like sit down and like actually like structurally write out this is the thing but what I want is like I want a
+voice note that it's I I have a conversation with an AI and then I'm able to uh basically send the AI to someone else and have it explained to them
+very simply maybe in text first like this is the summary of what I said um so it's doing all the structuring for me but then it has all of the
+background context of my whole conversation so that um if people have follow-up questions they can just ask the the AI and it'll be like well you
+know in some other part of the conversation that didn't make it into the structured summary we dealt with that and here's what Dan said and I feel
+like that would like really really cut down on lots and lots of emails and slack threads and text messages and back and forth when you have something
+that's smart enough to like answer basic questions about like you know usually when you communicate something you're only communicating like the tip
+of the iceberg but I think AI kind of allows you to send the entire context only present the tip of the iceberg but then reveal different parts as
+necessary yeah so you essentially just you you're you're you're shipping you ship the tldr and then the the little model comes along with the FAQs
+right yeah um and it has a it has some confidence threshold on whether it can answer the context it has or whether that should be escalated I think
+that's a I think that's an interesting idea um and I think you know now like I use superhuman for email and they've started I've started using their
+prompts more and more of replying to emails right and now they're shipping features where you can ask the AI and things like that um and I think you
+know that's that's that's that's I hadn't thought about what the step after that was right but this almost feels a little bit like it's like a
+support agent right where you know it has some confidence of like when to escalate or not um the challenge is going to be to to make it still feel
+authentic right it needs to be part of the client where you ship along this thing and it's like hey I notied you're going to ask about this actually
+like this is probably the answer like do you still want to ask um I think that's that's that's super interesting um I yeah I think we're we're still
+so early in in how this is going to be used um I guess there's like maybe two schools of belief of okay we get AGI and who cares and then there's a
+school of like well the tools are just going to keep getting better and people are going to learn how to use this um I don't know which timeline
+we're on I think it's really fun to be part of timeline number two uh for as long as that lasts and that might last a very very long time it might
+not I don't care I'm having fun right like on that timeline um so I think that's really interesting for for messages um I the other thing that I
+where I use llms a lot is just um through the readwise reader so when reading and you know you just there things did you do in line looking up things
+defining defining words um asking questions to the document um and then of course inside of my editor like I use a tool called super M Maven to do
+completions um and then I use some plugins for Vim um to try to emulate a little bit what the cursor editor does um the cursor editor I think is by
+far the best like AI code editor um they actually use turbo puffer behind the scenes so they're like great great friends um and I really want to use
+cursor but I can't take the latency of VSS code so I'm still in in neovim so I stitch together some plugins to um to to like send context to to to
+different U models um but hopefully that's going to get solved either I'll I'll move to Kit cursor at some point um or or have some of these plugins
+but it's like when you've been using themm for for 15 years it's very difficult to go to something else that's great yeah um I I use cursor I love it
+um i' I'm not as uh not as Vim uh what's what's the word for that um I'm not as Vim pilled as you maybe um but uh yeah I I think I think cs's awesome
+it's got a little bit of like it's a little bit weird like when it makes suggestions if you're having it code in multiple files you have to like
+click into like click into the file and then click to do the change or whatever so I there's like some stuff to to be worked out there but it's sort
+of clearly the future of of these kinds of interfaces I think they're just showing such a you know it's just like every few months they make some new
+release of hey this is how we're going to do it and they really just seem to be Paving the way like it's like one of them one of one of the hot
+plugins now is just like trying to do cursor like things in other editors um so I think they're they're doing they're doing really really interesting
+things and on that timeline of like let's just make the tools better um and I I don't think you know the the the VCS are tweeting that like you know
+these companies like 10 times faster because using AI like I don't think Justin uses any AI um and uh it's still still doing very very um it it
+doesn't it I think it's I think it helps and it augments and especially for people to create that first draft um and to have the conversations um but
+I don't think it's that like massive step change yet um but it comes right like every every single month like these things getting getting a few
+percentage points better um but I I don't believe the whole 10 times better thing yet like that's that's certainly not the case um I think it it sort
+of depends on who you're talking about so if you're already a 10x engineer maybe not but if you can't code at all I think it makes you 10x better
+than you were I mean infinitely right because you were just not going to bother um and uh so yeah I think that's true right the same as like okay now
+I can become like a 10x retaining wall like you know corresponding with my contractor um so I think it lifts from from from like novice or like or
+less than um to being able to converse with an expert incredibly quickly but for the experts it it becomes mostly about doing things a little like
+basically more about typing faster um and having you know substituting a a conversation about like uh what what data structure should we use for this
+or which algorithm here or how to make these kinds of tradeoffs right um but a lot of that also comes from things that are just not the average of
+the internet and therefore are really hard to discover yeah totally uh well I feel like I could keep talking to you forever but we are uh we are
+pretty much at time Simon this was as always a pleasure uh we got to do uh these interviews more often uh thank you so much for for coming by and and
+telling us what you're up to absolutely Dan this was it it was really really fun to nerd out cool see you next time see you [Music] oh my gosh folks
+you absolutely positively have to smash that like button and subscribe to Ai and I why because this show is the epitome of Awesomeness it's like
+finding a treasure chest in your backyard but instead of gold it's filled with pure unadulterated knowledge bombs about chat GPT every episode is a
+roller coaster of emotions insights and laughter that will leave you on the edge of your seat craving for more it's not just a show it's a journey
+into the future with Dan shipper as the captain of the spaceship so do yourself a favor hit like smash subscribe and strap in for the ride of your
+life and now without any further Ado let me just say Dan I'm absolutely hopelessly in love with you

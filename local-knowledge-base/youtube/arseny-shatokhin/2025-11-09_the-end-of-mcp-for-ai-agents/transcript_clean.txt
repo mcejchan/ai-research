@@ -1,0 +1,70 @@
+Entropic just dropped a blog post that changes how we think about building AI agents.
+In this latest update, they showed how MCPS might have been the wrong abstraction for AI agents after all.
+And what's funny is that I actually came to the same conclusion and implemented the alternative approach that they suggested a week before this blog post came out.
+And the difference in performance was striking. the agent not only produced significantly better results and worked more autonomously, but it also consumed 98% less tokens.
+And so in this video, I'm going to break down this blog post.
+I'm going to explain the core problems with MCPS and what you should do instead to build more effective AI agents.
+Let's dive right in.
+Okay, code execution with MCPS.
+So, let's start at the very beginning.
+The model context protocol is an open standard for connecting AI agents to external systems.
+So what exactly are MCPs? Well, under the hood, MCPs are just APIs. It's literally just that.
+The only difference is that a standard API is typically developed for a developer to use, while an MCP is developed for an AI agent to use.
+On a technical level, there are not that many differences.
+MCP provides a universal protocol.
+Developers implement MCP once in their agent and it unlocks an entire ecosystem of integrations.
+So the biggest breakthrough with MCPS isn't really the protocol itself.
+It's the fact that it became the standard across the entire industry.
+So because everyone is now using this protocol to build tools for their AI agents, it means that we developers can now easier collaborate and share our tools with others.
+However, as the number of connected tools grows, loading all tool definitions up front and passing intermediate results through the context window slows down the agents and increases the cost.
+So this is the first problem with MCPS, excessive token consumption.
+And typically this problem originates from two things.
+The first one is that tool definitions overload the context window.
+So if you connect your agent to an MCP, typically that MCP contains like 20 to 30 different tools and many people don't connect just one MCP.
+They typically connect like five or six different MCPS and so each and every tool that you connected to this MCP server contains a specific description and parameters in order to use that tool.
+And so even if the agent only is planning to use one tool, it still has all this context from all the other tools from all the MCP servers that you have connected in its context window.
+And this first of all increases the cost.
+Second increases the latency and third potentially increases the number of hallucinations.
+And the second reason MCPS increase the token consumption is because of the intermediate tool results.
+And so for example, if your agent is trying to retrieve a transcript from Google Drive, this tool might return like 50 thousands of tokens and larger documents may even exceed the context window limits.
+While the agent might not necessarily need all that data, it might only need like the first paragraph of the transcript instead.
+And so what they propose is essentially code execution that allows the agent to call MCP servers on the go.
+So the way they propose we structure this is by creating separate folders where inside each folder we have a subfolder for each MCP server and inside that subfolder we have the specific tools as simple TypeScript files.
+So then whenever the agent actually needs to use a tool it can simply import that tool from that folder and then simply call this tool in code.
+And so using this approach we don't pass all these tools into the agents context window. we only pass one tool that the agent actually needs to use.
+And secondly, now the agent no longer has to read the entire transcript.
+It can save that transcript as a variable or into the file system and then it can only fetch the necessary details.
+Like in this example, it doesn't even have to read the content of the transcript.
+It can simply take this transcript and without even reading it, send it to Salesforce MCP server.
+So this is just the first benefit of using code instead of MCP servers.
+The next one is that now you can also have progressive disclosure.
+So this means that you can now have as many MCP servers as you want.
+You're no longer limited by context of the MCP server at all.
+You can literally provide your agent with thousands of MCP servers and the agent can simply use another search tools tool to help itself to discover the MCP that it actually needs right now.
+Next, it also has some privacy benefits.
+So, this is extremely common with those larger enterprise clients who don't want to expose their sensitive data to thirdparty model providers like Anthropic or OpenAI.
+And if you connect their APIs to an agent using MCPS, obviously all this data will be automatically exposed.
+However, if the agent is using MCP servers in code, you can add a special harness to the agent and essentially automatically anonymize any data that the agent is trying to fetch.
+So like for example, you can modify this get sheet tool and ensure that it returns all the emails anonymized just like this.
+And last but not least, it also provides state persistence and skills.
+So this in my opinion is the most game-changing benefit of this approach.
+So essentially if the agent doesn't have a specific skill it can create a function for itself and then it can save it in one of the folders and after that it can use it later as needed.
+This way the agent can essentially evolve which is closely related to this new concept of skills that cloth has recently introduced.
+So that's it for the primary benefits.
+I think this blog post has done a really good job explaining the benefits of this approach but I didn't really explain all the limitations.
+So the first one is that it's simply less reliable.
+So if your agent has to generate code every single time it needs to call a tool, then there are more chances that it's going to make a mistake.
+And secondly, it also increases your infrastructure overhead.
+So if you want to use this approach, you first have to set up a sandbox, an independent secure environment for the agent where it can safely execute code and also interact with other APIs. So setting this up requires quite a bit of work but we have already done this if you want to use it on our platform.
+Okay.
+So in conclusion I want to just mention that everything that you see on the screen is just code and files.
+And so that's why I think that this approach makes so much more sense.
+Agents have become increasingly good at generating code in the last couple years.
+And so it only makes sense for us to stop really creating these abstractions on top of other abstractions for our agents because they can simply generate code on a go.
+You see, every single abstraction that you add to your agent significantly reduces the autonomy of that agent.
+And the primary reason of having an agent in the first place is so that it could autonomously execute your tasks for you.
+So does that mean that we will never use MCP servers again? Well, definitely no.
+Like for example, for customer support and where the API isn't that complex and you don't need to do any transformations, you just need to send a customer support ticket, it definitely still makes sense.
+But for other more complex use cases, this approach is certainly a lot more powerful and this is exactly what I'm going to be using primarily moving forward for all our agents.
+So, if you want to see how exactly we've already built one of the agents like this that can connect to any API without even using MCP servers, make sure you watch this video next.
+Thank you and see you next
