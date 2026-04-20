@@ -1,3 +1,11 @@
+---
+title: "Zero-dep Node.js file viewer pattern"
+date: 2026-04-20
+category: patterns
+component: tooling
+tags: [nodejs, zero-dep, file-viewer, spa]
+---
+
 # Zero-dep Node.js file viewer pattern
 
 When building a simple file browser/viewer with Node.js (zero dependencies):
