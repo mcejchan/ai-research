@@ -1,34 +1,67 @@
 # Anthropic, OpenAI, and Microsoft Just Agreed on One File Format. It Changes Everything.
 **Kanál:** AI News & Strategy Daily | Nate B Jones  
-**URL:** https://www.youtube.com/watch?v=0cVuMHaYEHE
+**URL:** https://www.youtube.com/watch?v=0cVuMHaYEHE  
+
+---
 
 ## Úvod
-V tomto rozhovoru se účastníci zaměřují na nedávné změny v oblasti dovedností (skills) v kontextu agentů a velkých jazykových modelů (LLMs). Diskutují o tom, jak se dovednosti vyvinuly od osobní konfigurace k organizační infrastruktuře a jaký vliv to má na podniky a jednotlivce.
+V tomto rozhovoru se Nate B Jones zaměřuje na koncept "skills" (dovedností) v oblasti AI, jejich vývoj od října a jejich rostoucí význam v agentickém prostředí. Diskutuje, jak se dovednosti staly klíčovou součástí infrastruktury, jak je využívají organizace a jak je možné je efektivně vytvářet a spravovat. Nate také představuje své vlastní zkušenosti a konkrétní příklady využití dovedností v praxi.
 
-## Hlavní téma: Evoluce dovedností
-Craig říká, že dovednosti se od října posunuly od osobního používání k organizačním strukturám. Dříve byly dovednosti něco, co si lidé vytvářeli pro sebe, ale nyní jsou nasazovány na úrovni týmů a podniků. Dovednosti jsou nyní verziovány a dostupné v různých aplikacích jako Excel, PowerPoint a další. Organizace přestávají uvažovat o dovednostech jako o individuálních znalostech a začínají je vnímat jako něco, co je čitelné pro agenty i lidi.
+---
 
-Dále se mění způsob, jakým jsou dovednosti volány. Zatímco dříve je volali převážně lidé, nyní je většina dovedností volána agenty, kteří mohou provádět stovky volání během jedné operace. Craig zdůrazňuje, že dovednosti nejsou určeny pouze pro vývojáře, ale mohou být užitečné pro každého v podnikání a osobním životě. Partnerství mezi Anthropic a Microsoftem ukazuje, že dovednosti se stávají otevřeným standardem.
+## Vývoj dovedností: Od osobní konfigurace k organizační infrastruktuře
+Na podzim minulého roku byly dovednosti vnímány jako nástroje pro individuální použití – uživatelé je vytvářeli pro své vlastní potřeby. Dnes se však staly součástí organizační infrastruktury. Firmy jako Anthropic a Microsoft integrují dovednosti do nástrojů, jako jsou Copilot, Excel nebo PowerPoint, a umožňují jejich široké nasazení v rámci týmů. Dovednosti jsou nyní verzovány, sdíleny a přístupné napříč různými platformami.
 
-## Dovednosti jako průmyslový standard
-Craig dále zmiňuje, že dovednosti se stávají standardem napříč průmyslem, což mění způsob, jakým přemýšlíme o hodnotě v oblasti AI. Otevřený přístup k dovednostem umožňuje lidem sdílet a obchodovat s nimi, podobně jako se obchoduje s baseballovými kartami. Společně se učíme, jak dovednosti fungují, a vytváříme komunitu, která se zaměřuje na sdílení znalostí.
+Nate zdůrazňuje, že dovednosti již nejsou pouze nástrojem pro vývojáře. Staly se univerzálním prostředkem pro zefektivnění práce v různých oblastech, od technologií po obchodní procesy. Díky tomu se dovednosti stávají standardem napříč odvětvími.
 
-Craig uvádí příklady, jak lidé dnes používají dovednosti. Například realitní podnikatel Texas Paintbrush vytvořil více než 50 000 řádků dovedností, které pokrývají různé aspekty jeho podnikání. Tyto dovednosti nejenže pomáhají agentům, ale také poskytují kontext pro nové zaměstnance, což usnadňuje jejich zaškolení.
+---
+
+## Agentické dovednosti: Nový přístup k jejich využití
+Jedním z klíčových posunů je, že dovednosti nyní častěji využívají agenti než lidé. Zatímco lidé dříve volali jednotlivé dovednosti manuálně, agenti dokážou během jednoho běhu spustit stovky dovedností. To vyžaduje nový přístup k jejich návrhu – dovednosti musí být optimalizovány pro agenty.
+
+Nate vysvětluje, že dovednosti nejsou jen o vykonávání kódu, ale o poskytování kontextu a instrukcí, které umožňují agentům efektivně pracovat. Například ve vývoji softwaru mohou dovednosti automatizovat procesy, jako je převod vágních instrukcí na detailní specifikace, rozdělení úkolů na GitHubu nebo psaní testů.
+
+---
+
+## Praktické příklady využití dovedností
+Nate uvádí příklad realitní společnosti Texas Paintbrush, která vytvořila více než 50 000 řádků dovedností pro správu svých operací. Tyto dovednosti pokrývají oblasti jako standardizace nájemních smluv, analýza trhu nebo řízení cash flow. Díky tomu mohou agenti automatizovat rutinní úkoly, zatímco lidé mají přístup k jasně strukturovaným informacím.
+
+Dalším příkladem jsou orchestrátorské dovednosti, které analyzují příchozí požadavky a delegují je na podřízené agenty. Tyto dovednosti umožňují efektivní rozdělení práce mezi agenty a zajišťují konzistentní výsledky.
+
+---
 
 ## Jak vytvořit efektivní dovednost
-Craig se zaměřuje na to, jak vytvořit dovednost, která funguje. Klíčovým prvkem je popis, který musí být konkrétní a jasný. Špatný popis může vést k neúspěchu dovednosti. Dobrý popis by měl obsahovat konkrétní fráze a očekávaný výstup. Dále je důležité mít jasnou metodologii a příklady, které agentovi pomohou pochopit, co se od něj očekává.
+Podle Natea je klíčem k úspěchu dobře napsaný popis dovednosti. Popis by měl být konkrétní, obsahovat klíčové fráze a jasně definovat výstup. Například místo vágního "pomáhá s analýzou konkurence" by měl popis obsahovat konkrétní fráze, jako "analyzuj naše konkurenty" a specifikovat, jak má výstup vypadat.
 
-Craig varuje před příliš dlouhými dovednostmi a doporučuje udržovat je stručné a efektivní. Důležité je také testovat dovednosti, zejména pokud jsou volány agenty, a zajistit, aby byly spolehlivé a efektivní.
+Metodologie dovednosti by měla zahrnovat:
+1. **Důvody a principy** – nejen kroky, ale i rámec rozhodování.
+2. **Formát výstupu** – jasně definovaný (např. Markdown, Excel, PDF).
+3. **Hraniční případy** – explicitně popsané situace, které by mohly způsobit problémy.
+4. **Příklady** – ukázky správného výstupu.
+5. **Stručnost** – dovednost by měla být co nejkratší a nejpřehlednější.
 
-## Dovednosti a agenti
-Craig zdůrazňuje, že dovednosti by měly být navrženy s ohledem na agenty jako primární volající. To mění strukturu dovedností, kde popis slouží jako signál pro směrování v pracovním postupu. Agenti potřebují mít jasně definované smlouvy, které jim umožní pochopit, co mohou od dovednosti očekávat.
+Nate také zdůrazňuje důležitost testování dovedností, zejména pokud je využívají agenti. Doporučuje vytvořit testovací sadu, která ověří, zda dovednost funguje správně, a pravidelně ji aktualizovat.
 
-Dále je důležité, aby dovednosti byly kompozitní, což znamená, že by měly produkovat výstupy, které mohou být předány dalším agentům v procesu. Craig varuje, že pokud se na dovednosti díváme pouze jako na jednorázové výstupy, můžeme narazit na problémy při předávání úkolů.
+---
 
-## Týmy a dovednosti
-Craig diskutuje o tom, jak dovednosti fungují v týmech, které kombinují lidi a agenty. Dovednosti mohou sloužit jako okamžitě použitelné kontexty pro úkoly. Navrhuje, aby týmy měly tři úrovně dovedností: standardní dovednosti, metodologické dovednosti a osobní pracovní dovednosti. Standardní dovednosti by měly být konzistentní napříč organizací, zatímco metodologické dovednosti by měly reflektovat specifické postupy a osvědčené postupy.
+## Dovednosti v týmech: Tři úrovně
+Nate rozděluje dovednosti do tří úrovní:
+1. **Standardní dovednosti** – konzistentní napříč organizací (např. pravidla pro formátování, šablony).
+2. **Metodologické dovednosti** – specifické pro tým nebo odborníky (např. postupy seniorních pracovníků).
+3. **Osobní dovednosti** – individuální nástroje pro zefektivnění práce.
 
-Craig varuje před tím, aby osobní dovednosti zůstávaly skryté, protože mohou být užitečné pro ostatní, když je potřeba. Důležité je, aby dovednosti byly přístupné a sdílené v rámci týmu.
+Důležité je, aby i osobní dovednosti byly sdílené, protože mohou být užitečné pro ostatní členy týmu v případě nepřítomnosti jejich autora.
+
+---
+
+## Budoucnost dovedností a komunitní spolupráce
+Nate věří, že budoucnost dovedností spočívá v komunitní spolupráci. Navrhuje vytvořit repozitář, kde by uživatelé mohli sdílet své dovednosti a učit se od ostatních. Tento přístup by umožnil rychlejší vývoj a šíření osvědčených postupů napříč různými obory.
+
+---
 
 ## Zmíněné odkazy a zdroje
-- [Seznam všech konkrétních odkazů, nástrojů, webů zmíněných v rozhovoru]
+- Anthropic
+- Microsoft Copilot
+- OpenAI
+- Claude
+- GitHub repozitáře pro dovednosti
