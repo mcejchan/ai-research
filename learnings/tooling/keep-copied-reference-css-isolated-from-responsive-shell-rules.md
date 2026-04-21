@@ -1,3 +1,11 @@
+---
+title: "Keep copied reference CSS isolated from responsive shell rules"
+date: 2026-04-21
+category: tooling
+component: frontend
+tags: [viewer, css, responsive, markdown, source-of-truth]
+---
+
 # Keep copied reference CSS isolated from responsive shell rules
 
 When a task says a viewer must match another viewer's markdown rendering exactly, the most reliable implementation is to copy the reference selectors verbatim and render markdown inside an inner wrapper that owns those classes.

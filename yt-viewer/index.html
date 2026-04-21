@@ -7,52 +7,328 @@
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #1a1a2e; color: #e0e0e0; display: flex; height: 100vh; }
+  html, body { height: 100%; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #1a1a2e; color: #e0e0e0; }
+  button { font: inherit; }
+  #mobile-topbar { display: none; align-items: center; gap: 12px; min-height: 64px; padding: 10px 12px; background: #16213e; border-bottom: 1px solid #0f3460; }
+  #mobile-topbar button { min-width: 44px; min-height: 44px; border: 1px solid #e94560; border-radius: 8px; background: #0f3460; color: #e0e0e0; padding: 0 12px; cursor: pointer; }
+  #mobile-title { flex: 1; min-width: 0; text-align: center; font-size: 14px; font-weight: 600; color: #f6f7fb; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  #app-shell { display: flex; height: 100vh; min-height: 100vh; overflow: hidden; }
   #sidebar { width: 280px; min-width: 280px; background: #16213e; overflow-y: auto; border-right: 1px solid #0f3460; }
   #sidebar h2 { padding: 16px; font-size: 14px; color: #e94560; text-transform: uppercase; letter-spacing: 1px; }
-  .channel { padding: 10px 16px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #0f3460; font-size: 13px; }
+  #channel-list { padding-bottom: 12px; }
+  .channel { min-height: 44px; padding: 10px 16px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 12px; border-bottom: 1px solid #0f3460; font-size: 13px; }
   .channel:hover, .channel.active { background: #0f3460; }
   .channel .count { background: #e94560; color: #fff; border-radius: 10px; padding: 2px 8px; font-size: 11px; }
-  #main { flex: 1; display: flex; flex-direction: column; overflow: hidden; }
-  #video-list { padding: 12px; display: flex; flex-wrap: wrap; gap: 8px; overflow-y: auto; max-height: 200px; min-height: 60px; border-bottom: 1px solid #0f3460; background: #16213e; }
-  .video-card { padding: 8px 12px; background: #1a1a2e; border: 1px solid #0f3460; border-radius: 6px; cursor: pointer; font-size: 12px; }
+  #main { flex: 1; min-width: 0; display: flex; flex-direction: column; overflow: hidden; position: relative; }
+  #video-list-panel { background: #16213e; border-bottom: 1px solid #0f3460; }
+  #video-list { padding: 12px; display: flex; flex-wrap: wrap; gap: 8px; overflow-y: auto; max-height: 200px; min-height: 60px; }
+  .video-card { min-height: 44px; padding: 10px 12px; background: #1a1a2e; border: 1px solid #0f3460; border-radius: 6px; cursor: pointer; font-size: 12px; display: flex; flex-direction: column; justify-content: center; gap: 4px; }
   .video-card:hover, .video-card.active { border-color: #e94560; }
   .video-card .date { color: #888; font-size: 10px; }
-  #content-area { flex: 1; overflow-y: auto; padding: 24px; }
-  #content-area h1, #content-area h2, #content-area h3 { color: #e94560; margin: 16px 0 8px; }
-  #content-area p { line-height: 1.7; margin-bottom: 12px; }
-  #content-area ul, #content-area ol { margin: 8px 0 8px 24px; }
-  #content-area li { margin-bottom: 4px; line-height: 1.6; }
-  #content-area code { background: #0f3460; padding: 2px 6px; border-radius: 3px; font-size: 13px; }
-  #content-area pre { background: #0f3460; padding: 16px; border-radius: 6px; overflow-x: auto; margin: 12px 0; }
-  #content-area blockquote { border-left: 3px solid #e94560; padding-left: 12px; color: #aaa; margin: 12px 0; }
+  #content-panel { flex: 1; min-height: 0; display: flex; flex-direction: column; overflow: hidden; }
   #toolbar { padding: 8px 16px; background: #16213e; border-bottom: 1px solid #0f3460; display: none; }
-  #toolbar button { background: #0f3460; color: #e0e0e0; border: 1px solid #e94560; padding: 6px 14px; border-radius: 4px; cursor: pointer; font-size: 12px; margin-right: 8px; }
+  #toolbar button { min-height: 44px; background: #0f3460; color: #e0e0e0; border: 1px solid #e94560; padding: 6px 14px; border-radius: 6px; cursor: pointer; font-size: 12px; margin-right: 8px; }
   #toolbar button.active { background: #e94560; color: #fff; }
-  .empty { color: #666; padding: 40px; text-align: center; }
-  a { color: #e94560; }
+  #content-area { flex: 1; overflow-y: auto; padding: 24px; background: #10192f; }
+  #content-area.analysis-content { background: #10192f; }
+  #content-area.transcript-content { color: #e0e0e0; background: #10192f; }
+  #content-area.transcript-content pre { margin: 0; white-space: pre-wrap; word-break: break-word; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Courier New', monospace; font-size: 14px; line-height: 1.6; background: #0f3460; color: #e0e0e0; padding: 16px; border-radius: 6px; overflow-x: auto; }
+  #content-area.empty-state { display: block; }
+  .empty { color: #7f8ba3; padding: 40px; text-align: center; border: 1px dashed #27456f; border-radius: 8px; background: rgba(15, 52, 96, 0.18); }
+  .hidden { display: none !important; }
+
+  .markdown-content {
+    color: #657b83;
+    background: #fdf6e3;
+    border: 1px solid #eee8d5;
+    border-radius: 6px;
+    padding: 1.2em 1.6em;
+    font-family: "Baskerville", "Apple Garamond", "EB Garamond", "Garamond", "Georgia", serif;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .markdown-content h1,
+  .markdown-content h2,
+  .markdown-content h3,
+  .markdown-content h4,
+  .markdown-content h5,
+  .markdown-content h6 {
+    color: #b5892a;
+    margin: 1.2em 0 0.5em;
+  }
+
+  .markdown-content h1,
+  .markdown-content h2 {
+    text-align: center;
+  }
+
+  .markdown-content h2::after {
+    content: "";
+    display: block;
+    width: 60%;
+    margin: 0.4em auto 0 auto;
+    border-bottom: 1px solid #eee8d5;
+  }
+
+  .markdown-content h1 {
+    font-size: 2em;
+  }
+
+  .markdown-content h2 {
+    font-size: 1.7em;
+  }
+
+  .markdown-content h3 {
+    font-size: 1.3em;
+  }
+
+  .markdown-content h4 {
+    font-size: 1.1em;
+  }
+
+  .markdown-content h5,
+  .markdown-content h6 {
+    font-size: 1em;
+  }
+
+  .markdown-content a {
+    color: #0088cc;
+  }
+
+  .markdown-content a:hover {
+    color: #00a3f5;
+  }
+
+  .markdown-content strong {
+    color: #1e2427;
+    font-weight: bold;
+  }
+
+  .markdown-content hr {
+    background: #f8de97;
+    border: none;
+    height: 4px;
+    margin: 1.5em 0;
+  }
+
+  .markdown-content code,
+  .markdown-content pre {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Courier New", monospace;
+    font-size: 0.85em;
+    line-height: 1.45;
+    background: #eee8d5;
+    color: #586e75;
+    border: none;
+  }
+
+  .markdown-content pre {
+    padding: 0.8em 1em;
+    border-radius: 3px;
+    overflow-x: auto;
+  }
+
+  .markdown-content :not(pre) > code {
+    padding: 0.1em 0.35em;
+    border-radius: 3px;
+  }
+
+  .markdown-content blockquote {
+    border-left: 4px solid #eee8d5;
+    background: #fbedc6;
+    color: #90a3a9;
+    margin: 1em 0;
+    padding: 0.5em 1em;
+    border-radius: 0 3px 3px 0;
+  }
+
+  .markdown-content table {
+    font-size: 0.9em;
+    border-collapse: collapse;
+    width: auto;
+    max-width: 100%;
+    background: #fdf6e3;
+  }
+
+  .markdown-content th {
+    background: #eee8d5;
+    color: #586e75;
+    font-weight: 600;
+  }
+
+  .markdown-content th,
+  .markdown-content td {
+    border: 1px solid #eee8d5;
+    padding: 5px 10px;
+    vertical-align: top;
+  }
+
+  .markdown-content ul,
+  .markdown-content ol {
+    padding-left: 2em;
+  }
+
+  .markdown-content p,
+  .markdown-content ul,
+  .markdown-content ol,
+  .markdown-content pre,
+  .markdown-content table,
+  .markdown-content blockquote {
+    margin: 0.8em 0;
+  }
+
+  @media (max-width: 767px) {
+    body { overflow: hidden; }
+    #mobile-topbar { display: flex; }
+    #app-shell { height: calc(100dvh - 64px); min-height: calc(100dvh - 64px); position: relative; }
+    #sidebar,
+    #video-list-panel,
+    #content-panel {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      min-width: 100%;
+      height: 100%;
+      transition: transform 220ms ease, opacity 220ms ease;
+      will-change: transform, opacity;
+    }
+    #sidebar {
+      border-right: none;
+      z-index: 3;
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    #video-list-panel {
+      z-index: 2;
+      border-bottom: none;
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    #video-list {
+      max-height: none;
+      height: 100%;
+      padding: 16px;
+      align-content: flex-start;
+    }
+    #content-panel {
+      z-index: 1;
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    body[data-mobile-view="channels"] #sidebar,
+    body[data-mobile-view="videos"] #video-list-panel,
+    body[data-mobile-view="content"] #content-panel {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    #toolbar { padding: 12px 16px; }
+    #content-area,
+    #content-area.analysis-content,
+    #content-area.transcript-content {
+      padding: 18px 16px 24px;
+    }
+    .empty {
+      padding: 24px;
+    }
+  }
 </style>
 </head>
-<body>
-<div id="sidebar">
-  <h2>📺 YT Knowledge Base</h2>
-  <div id="channel-list"></div>
+<body data-mobile-view="channels">
+<div id="mobile-topbar">
+  <button id="mobile-menu-btn" type="button" onclick="setMobileView('channels')" aria-label="Open channels">☰</button>
+  <button id="mobile-back-btn" type="button" onclick="handleMobileBack()">Back</button>
+  <div id="mobile-title">YT Knowledge Base</div>
 </div>
-<div id="main">
-  <div id="video-list"><div class="empty">Select a channel</div></div>
-  <div id="toolbar">
-    <button id="btn-analysis" class="active" onclick="showTab('analysis')">Analysis</button>
-    <button id="btn-transcript" onclick="showTab('transcript')">Transcript</button>
+<div id="app-shell">
+  <div id="sidebar">
+    <h2>📺 YT Knowledge Base</h2>
+    <div id="channel-list"></div>
   </div>
-  <div id="content-area"><div class="empty">Select a video to view its analysis</div></div>
+  <div id="main">
+    <div id="video-list-panel">
+      <div id="video-list"><div class="empty">Select a channel</div></div>
+    </div>
+    <div id="content-panel">
+      <div id="toolbar">
+        <button id="btn-analysis" class="active" onclick="showTab('analysis')">Analysis</button>
+        <button id="btn-transcript" onclick="showTab('transcript')">Transcript</button>
+      </div>
+      <div id="content-area" class="empty-state"><div class="empty">Select a video to view its analysis</div></div>
+    </div>
+  </div>
 </div>
 <script>
 const $ = (s) => document.querySelector(s);
 let current = { channel: null, folder: null, tab: 'analysis' };
 let cache = {};
+const mobileMedia = window.matchMedia('(max-width: 767px)');
+
+marked.setOptions({ gfm: true, breaks: false });
 
 function formatTitle(slug) {
   return slug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+}
+
+function escapeHtml(text) {
+  return text
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;');
+}
+
+function isMobileLayout() {
+  return mobileMedia.matches;
+}
+
+function inferMobileView() {
+  if (!current.channel) return 'channels';
+  if (!current.folder) return 'videos';
+  return 'content';
+}
+
+function setMobileView(view) {
+  document.body.dataset.mobileView = view;
+  updateMobileChrome();
+}
+
+function handleMobileBack() {
+  setMobileView(document.body.dataset.mobileView === 'content' ? 'videos' : 'channels');
+}
+
+function updateMobileChrome() {
+  const back = $('#mobile-back-btn');
+  const title = $('#mobile-title');
+  if (!isMobileLayout()) {
+    back.classList.add('hidden');
+    title.textContent = 'YT Knowledge Base';
+    return;
+  }
+  const view = document.body.dataset.mobileView || inferMobileView();
+  back.classList.toggle('hidden', view === 'channels');
+  back.textContent = view === 'content' ? 'Videos' : 'Channels';
+  if (view === 'content' && current.folder) {
+    title.textContent = formatTitle(current.folder);
+    return;
+  }
+  if ((view === 'videos' || view === 'content') && current.channel) {
+    title.textContent = formatTitle(current.channel);
+    return;
+  }
+  title.textContent = 'YT Knowledge Base';
+}
+
+function syncLayoutState() {
+  if (isMobileLayout()) {
+    setMobileView(inferMobileView());
+    return;
+  }
+  updateMobileChrome();
+}
+
+function setEmptyContent(message) {
+  $('#content-area').className = 'empty-state';
+  $('#content-area').innerHTML = `<div class="empty">${message}</div>`;
 }
 
 async function loadChannels() {
@@ -61,12 +337,14 @@ async function loadChannels() {
   $('#channel-list').innerHTML = channels.map(c =>
     `<div class="channel" onclick="selectChannel('${c.name}')" data-ch="${c.name}">
       <span>${formatTitle(c.name)}</span><span class="count">${c.videoCount}</span>
-    </div>`
+     </div>`
   ).join('');
+  syncLayoutState();
 }
 
 async function selectChannel(name) {
   current.channel = name;
+  current.folder = null;
   document.querySelectorAll('.channel').forEach(el => el.classList.toggle('active', el.dataset.ch === name));
   const res = await fetch(`/api/channel/${name}`);
   const videos = await res.json();
@@ -75,8 +353,9 @@ async function selectChannel(name) {
       <div>${formatTitle(v.title)}</div><div class="date">${v.date}</div>
     </div>`
   ).join('') : '<div class="empty">No videos</div>';
-  $('#content-area').innerHTML = '<div class="empty">Select a video</div>';
+  setEmptyContent('Select a video');
   $('#toolbar').style.display = 'none';
+  syncLayoutState();
 }
 
 async function selectVideo(ch, folder) {
@@ -86,6 +365,7 @@ async function selectVideo(ch, folder) {
   current.tab = 'analysis';
   updateTabButtons();
   await loadContent();
+  syncLayoutState();
 }
 
 async function loadContent() {
@@ -97,7 +377,13 @@ async function loadContent() {
     } catch { cache[key] = 'Failed to load.'; }
   }
   const text = cache[key];
-  $('#content-area').innerHTML = current.tab === 'analysis' ? marked.parse(text) : `<pre style="white-space:pre-wrap">${text.replace(/</g,'&lt;')}</pre>`;
+  if (current.tab === 'analysis') {
+    $('#content-area').className = 'analysis-content';
+    $('#content-area').innerHTML = `<div class="markdown-content">${marked.parse(text)}</div>`;
+    return;
+  }
+  $('#content-area').className = 'transcript-content';
+  $('#content-area').innerHTML = `<pre>${escapeHtml(text)}</pre>`;
 }
 
 function showTab(tab) { current.tab = tab; updateTabButtons(); loadContent(); }
@@ -106,7 +392,9 @@ function updateTabButtons() {
   $('#btn-transcript').classList.toggle('active', current.tab === 'transcript');
 }
 
+mobileMedia.addEventListener('change', syncLayoutState);
 loadChannels();
+updateMobileChrome();
 </script>
 </body>
 </html>
