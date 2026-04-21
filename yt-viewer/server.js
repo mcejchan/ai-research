@@ -19,6 +19,11 @@ const isDir = async (p) => {
   try { return (await fs.promises.stat(p)).isDirectory(); } catch { return false; }
 };
 
+const getDatePrefix = (name) => {
+  const match = name.match(/^(\d{4}-\d{2}-\d{2})_/);
+  return match ? match[1] : null;
+};
+
 http.createServer(async (req, res) => {
   try {
     const url = new URL(req.url, `http://${req.headers.host || "localhost"}`);
@@ -35,9 +40,24 @@ http.createServer(async (req, res) => {
       for (const e of entries) {
         if (!e.isDirectory()) continue;
         const subs = await fs.promises.readdir(path.join(ROOT, e.name), { withFileTypes: true });
-        channels.push({ name: e.name, videoCount: subs.filter(s => s.isDirectory()).length });
+        let latestDate = null;
+        let videoCount = 0;
+        for (const sub of subs) {
+          if (!sub.isDirectory()) continue;
+          videoCount += 1;
+          const date = getDatePrefix(sub.name);
+          if (date && (!latestDate || date > latestDate)) latestDate = date;
+        }
+        channels.push({ name: e.name, videoCount, latestDate });
       }
-      channels.sort((a, b) => a.name.localeCompare(b.name));
+      channels.sort((a, b) => {
+        if (a.latestDate && b.latestDate && a.latestDate !== b.latestDate) {
+          return b.latestDate.localeCompare(a.latestDate);
+        }
+        if (a.latestDate && !b.latestDate) return -1;
+        if (!a.latestDate && b.latestDate) return 1;
+        return a.name.localeCompare(b.name);
+      });
       return json(res, channels);
     }
 
