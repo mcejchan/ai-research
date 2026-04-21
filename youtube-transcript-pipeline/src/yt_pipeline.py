@@ -17,7 +17,7 @@ from src.drive_client import DriveClient
 # Transcript
 from youtube_transcript_api import YouTubeTranscriptApi, NoTranscriptFound
 
-LANG = os.getenv("LANG", "cs")
+LANG = os.getenv("LANG", "en")
 USE_WHISPER = os.getenv("USE_WHISPER_FALLBACK", "true").lower() == "true"
 MAKE_EMBED = os.getenv("MAKE_EMBEDDINGS", "false").lower() == "true"
 DRIVE_FOLDER_ID = os.environ["DRIVE_FOLDER_ID"]

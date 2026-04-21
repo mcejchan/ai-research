@@ -109,7 +109,7 @@ def analyze_text(transcript: str, intent: str, lang: str, extra_context: Dict) -
     )
     
     # Use English prompt for English content to avoid translation bias
-    prompt_lang = "en" if transcript.strip().startswith(('I', 'We', 'You', 'The', 'This', 'That')) else lang
+    prompt_lang = lang  # default EN; override with LANG=cs for Czech content
     
     system = BASE_SYSTEM.get(prompt_lang, BASE_SYSTEM["en"])
     template = TEMPLATE_GENERAL.get(prompt_lang, TEMPLATE_GENERAL["en"])
