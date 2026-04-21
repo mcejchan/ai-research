@@ -1,3 +1,11 @@
+---
+title: "Anchor small viewer feature plans in live routes, inline render points, and runtime checks"
+date: 2026-04-21
+category: tooling
+component: tooling
+tags: [planning, yt-viewer, zero-dep, runtime-verification]
+---
+
 # Anchor small viewer feature plans in live routes, inline render points, and runtime checks
 
 For `yt-viewer` tasks, the most reliable plan came from reading the exact live route and the exact inline rendering callsite instead of extrapolating from the wider repo. The app is a zero-dependency Node server plus one HTML file, so the actionable planning pattern was:
