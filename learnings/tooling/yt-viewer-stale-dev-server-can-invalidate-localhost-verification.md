@@ -1,3 +1,11 @@
+---
+title: "YT Viewer: stale dev server can invalidate localhost verification"
+date: 2026-04-21
+category: tooling
+component: tooling
+tags: [yt-viewer, node, verification, ports, dev-server]
+---
+
 # YT viewer verification should account for stale long-running dev servers
 
 For `yt-viewer`, a targeted `node:test` regression is the most reliable proof that endpoint behavior changed, because the app is often run as a long-lived local server on `localhost:4001`.
