@@ -104,7 +104,7 @@ INSTRUCTIONS:
 
 def analyze_text(transcript: str, intent: str, lang: str, extra_context: Dict) -> str:
     client = OpenAI(
-        base_url=os.getenv("OPENAI_BASE_URL", "http://127.0.0.1:18800/v1"),
+        base_url=os.getenv("OPENAI_BASE_URL", "http://127.0.0.1:18800/v1/copilot"),
         api_key=os.getenv("OPENAI_API_KEY", "copilot-bridge"),
     )
     
@@ -129,7 +129,7 @@ def analyze_text(transcript: str, intent: str, lang: str, extra_context: Dict) -
 
 def embed_text(text: str):
     client = OpenAI(
-        base_url=os.getenv("OPENAI_BASE_URL", "http://127.0.0.1:18800/v1"),
+        base_url=os.getenv("OPENAI_BASE_URL", "http://127.0.0.1:18800/v1/copilot"),
         api_key=os.getenv("OPENAI_API_KEY", "copilot-bridge"),
     )
     return client.embeddings.create(
