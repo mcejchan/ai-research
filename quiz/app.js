@@ -232,8 +232,14 @@ function initQuizPage() {
     .catch((error) => fail(`Nepodařilo se načíst level: ${error.message}`));
 }
 
-if (document.body.dataset.page === 'levels') {
-  initLevelsPage();
-} else if (document.body.dataset.page === 'quiz') {
-  initQuizPage();
+if (typeof document !== 'undefined') {
+  if (document.body.dataset.page === 'levels') {
+    initLevelsPage();
+  } else if (document.body.dataset.page === 'quiz') {
+    initQuizPage();
+  }
+}
+
+if (typeof module !== 'undefined') {
+  module.exports = { sameSelection };
 }
