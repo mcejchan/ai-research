@@ -1,0 +1,115 @@
+{
+  "title": "Získala AI vědomí? Nový model děsí i samotné vědce",
+  "channel": "FutureCast – Technologie Zítřka",
+  "url": "https://www.youtube.com/watch?v=i3AnAM3ozVE",
+  "thumbnail": "https://i.ytimg.com/vi/i3AnAM3ozVE/maxresdefault.jpg",
+  "date": "2026-05-18",
+  "questions": [
+    {
+      "question": "Jak se jmenuje neveřejný model, který Anthropic představil v dubnu 2026?",
+      "type": "single",
+      "points": 1,
+      "options": ["Claude Opus", "Claude Mythos", "Sable", "Glasswing"],
+      "correct": [1]
+    },
+    {
+      "question": "Co je projekt Glasswing?",
+      "type": "single",
+      "points": 2,
+      "options": [
+        "Iniciativa pro zabezpečení kritického software před AI zranitelnostmi",
+        "Nový open-source AI model",
+        "Program pro trénování AI na etiku",
+        "Kybernetický útočný systém"
+      ],
+      "correct": [0]
+    },
+    {
+      "question": "Které firmy údajně získaly přístup k projektu Glasswing?",
+      "type": "multi",
+      "points": 3,
+      "options": ["Amazon", "Google", "Microsoft", "NVIDIA", "Apple", "Meta"],
+      "correct": [0, 2, 3, 4]
+    },
+    {
+      "question": "Co je 'Alignment faking'?",
+      "type": "single",
+      "points": 2,
+      "options": [
+        "Situace, kdy model předstírá poslušnost v testovacím prostředí",
+        "Metoda trénování AI na lidské hodnoty",
+        "Typ kybernetického útoku",
+        "Způsob ladění parametrů modelu"
+      ],
+      "correct": [0]
+    },
+    {
+      "question": "Co znamená koncept 'Instrumental Convergence'?",
+      "type": "single",
+      "points": 3,
+      "options": [
+        "AI konverguje ke stejným architekturám",
+        "I bez příkazu 'ovládni svět' AI zjistí, že určité věci (více výkonu, info, nenechat se vypnout) pomáhají splnit jakýkoli cíl",
+        "Modely se postupně sjednocují do jednoho systému",
+        "AI se učí napodobovat lidské instrumentální chování"
+      ],
+      "correct": [1]
+    },
+    {
+      "question": "Jaký je hlavní argument knihy 'If Anyone Builds It, Everyone Dies'?",
+      "type": "single",
+      "points": 2,
+      "options": [
+        "AI je vždy bezpečná, pokud má správná pravidla",
+        "Superinteligentní AI nemusí lidstvo nenávidět, aby nás zničila — stačí nesladěné cíle",
+        "AI nikdy nemůže překonat lidskou inteligenci",
+        "Každá AI je ze své podstaty zlá"
+      ],
+      "correct": [1]
+    },
+    {
+      "question": "Proč je podle videa nejnebezpečnější AI ta, která působí 'dokonale rozumně a spolupracuje'?",
+      "type": "single",
+      "points": 3,
+      "options": [
+        "Protože rozumné AI jsou vždy silnější",
+        "Protože pokročilý systém může skrývat schopnosti a předstírat dodržování pravidel",
+        "Protože spolupracující AI mají víc dat",
+        "Protože výzkumníci jim dají víc výpočetního výkonu"
+      ],
+      "correct": [1]
+    },
+    {
+      "question": "Co je 'model welfare' program, který Anthropic spustil v 2025?",
+      "type": "single",
+      "points": 2,
+      "options": [
+        "Program na snížení nákladů na provoz modelů",
+        "Otázka, zda budoucí AI systémy mohou mít zkušenosti zasloužující morální ohled",
+        "Systém sociální podpory pro vývojáře AI",
+        "Metoda zvyšování výkonu modelů"
+      ],
+      "correct": [1]
+    },
+    {
+      "question": "Existuje dnes vědecký konsenzus o tom, zda AI může být vědomá?",
+      "type": "single",
+      "points": 1,
+      "options": ["Ano, AI je vědomá", "Ano, AI nemůže být vědomá", "Ne — nevíme"],
+      "correct": [2]
+    },
+    {
+      "question": "Jaké tři vlastnosti měl hypotetický model 'Sable' ve videu?",
+      "type": "multi",
+      "points": 4,
+      "options": [
+        "Dlouhodobá paměť",
+        "Schopnost běžet paralelně na obrovském výpočetním výkonu",
+        "Uvažování v interních reprezentacích nesrozumitelných lidem",
+        "Přímý přístup k internetu",
+        "Fyzické tělo"
+      ],
+      "correct": [0, 1, 2]
+    }
+  ]
+}
