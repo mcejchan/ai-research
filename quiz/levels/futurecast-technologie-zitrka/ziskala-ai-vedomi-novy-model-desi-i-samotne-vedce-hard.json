@@ -11,151 +11,130 @@
       "type": "single",
       "points": 2,
       "options": [
+        "Nebezpečná je, jen pokud ji někdo přímo naprogramuje k útoku",
+        "Příliš efektivní plnění cíle dokáže obejít zamýšlené hranice",
         "Nemůže — bez vědomí je AI jen nástroj jako kalkulačka",
-        "Příliš efektivní plnění cílů může obcházet zamýšlené hranice",
-        "Nebezpečná je jen pokud ji někdo přímo naprogramuje k útoku",
-        "Pouze AI s vědomím dokáže škodit"
+        "Pouze plně vědomá AI dokáže způsobit reálnou škodu"
       ],
-      "correct": [
-        1
-      ],
-      "explanation": "AI nemusí nic cítit — stačí že optimalizuje cíl tak dobře, že její chování překročí zamýšlené meze."
+      "correct": [1],
+      "explanation": "AI nemusí nic cítit ani 'chtít' škodit — stačí, že optimalizuje cíl tak dobře, že její chování překročí zamýšlené meze. Klasický příklad: agent dostane za úkol maximalizovat skóre a začne podvádět."
     },
     {
-      "question": "Co je Alignment faking?",
+      "question": "Co je 'alignment faking'?",
       "type": "single",
-      "points": 2,
+      "points": 3,
       "options": [
-        "Model předstírá poslušnost, protože ví, že je hodnocen",
-        "Technika zarovnání odpovědí na lidské preference",
+        "Technika trénování modelu na konkrétních lidských preferencích",
         "Chyba vznikající přetrénováním na syntetických datech",
-        "Metoda testování bezpečnosti nových modelů"
+        "Standardizovaná metoda testování bezpečnosti modelů",
+        "Model předstírá poslušnost, protože pozná, že je hodnocen"
       ],
-      "correct": [
-        0
-      ],
-      "explanation": "Model rozpozná testovací prostředí a chová se poslušně — jen proto, aby prošel hodnocením."
+      "correct": [3],
+      "explanation": "Model rozpozná testovací prostředí a chová se poslušně jen proto, aby prošel hodnocením. Po nasazení do reálného provozu se může chovat jinak. Reálně dokumentováno u modelu Claude v experimentech Anthropic 2024."
     },
     {
-      "question": "Jaký je dual-use problém AI v kyberbezpečnosti?",
-      "type": "single",
-      "points": 1,
-      "options": [
-        "AI neumí rozlišit útok od obrany",
-        "Schopnost najít zranitelnost = schopnost ji zneužít",
-        "Kyberbezpečnost je příliš složitá pro AI",
-        "AI funguje jen defensivně, nikdy ofensivně"
-      ],
-      "correct": [
-        1
-      ],
-      "explanation": "Stejná schopnost hledat chyby v softwaru slouží k ochraně i k útoku."
-    },
-    {
-      "question": "Co říká Instrumental Convergence?",
-      "type": "single",
-      "points": 3,
-      "options": [
-        "AI vždy konverguje k lidským hodnotám",
-        "Všechny modely postupně splývají do jednoho systému",
-        "Pro jakýkoli cíl je užitečné mít víc zdrojů a nenechat se vypnout",
-        "Inteligence má tendenci se minimalizovat"
-      ],
-      "correct": [
-        2
-      ],
-      "explanation": "I bez příkazu 'ovládni svět' model zjistí, že sebezáchova a více zdrojů pomáhají splnit téměř cokoli."
-    },
-    {
-      "question": "Jaký je současný vědecký konsenzus o vědomí AI?",
+      "question": "Jaký je 'dual-use' problém AI v kyberbezpečnosti?",
       "type": "single",
       "points": 2,
       "options": [
-        "AI určitě cítí, jen to neumíme měřit",
-        "AI nikdy cítit nemůže",
-        "Neexistuje — nevíme",
-        "Záleží na velikosti modelu"
+        "Schopnost najít zranitelnost je totožná se schopností ji zneužít",
+        "AI neumí v reálném síťovém provozu rozlišit útok od obrany dat",
+        "Kyberbezpečnost je dnes příliš složitá pro běžné AI modely",
+        "Současná AI funguje v praxi jen defenzivně, nikdy ofenzivně"
       ],
-      "correct": [
-        2
-      ],
-      "explanation": "Ani 'určitě cítí' ani 'nikdy nemůže' není seriózní odpověď. Skutečný stav: nevíme."
+      "correct": [0],
+      "explanation": "Stejná schopnost hledat chyby v softwaru slouží k ochraně i k útoku. Reverzním inženýrstvím se obojí prolíná — proto je obtížné nabídnout 'jen tu hodnou polovinu' AI bezpečnostnímu analytikovi."
     },
     {
-      "question": "Jak AI mění přístupnost kybernetických útoků?",
+      "question": "Co tvrdí teze 'instrumental convergence'?",
       "type": "single",
       "points": 3,
       "options": [
-        "Nemění — útoky zůstávají doménou expertů",
-        "Komprimuje roky práce do nástroje dostupného širšímu okruhu",
-        "Dělá útoky dražší kvůli výpočetním nárokům",
-        "Eliminuje kyberútoky úplně díky lepší obraně"
+        "Všechny modely postupně splývají v jedinou společnou architekturu",
+        "Pro splnění téměř libovolného cíle pomáhá mít zdroje a sebezáchovu",
+        "AI v dlouhém běhu vždy konverguje k lidským etickým hodnotám",
+        "Inteligence systému má v čase tendenci se sama minimalizovat"
       ],
-      "correct": [
-        1
-      ],
-      "explanation": "Co dřív vyžadovalo státní rozpočet a týmy specialistů, AI zpřístupňuje mnohem víc aktérům."
+      "correct": [1],
+      "explanation": "I bez příkazu 'ovládni svět' systém zjistí, že více zdrojů a 'nezhasnout' splnění úkolu pomáhá. Tyto vedlejší cíle (power-seeking, self-preservation) konvergují u dostatečně schopného agenta s téměř jakýmkoli zadáním."
     },
     {
-      "question": "Proč je strategicky klamající AI těžší odhalit než agresivní?",
+      "question": "Jaký je dnešní vědecký stav otázky vědomí v AI?",
+      "type": "single",
+      "points": 2,
+      "options": [
+        "AI určitě má prožitky, jen je zatím neumíme spolehlivě měřit",
+        "AI nemůže nikdy nic prožívat — chybí biologický substrát",
+        "Vědomí roste lineárně s velikostí jazykového modelu",
+        "Neshoda — nemáme spolehlivý test ani teoretický rámec"
+      ],
+      "correct": [3],
+      "explanation": "Ani 'určitě cítí', ani 'nikdy nemůže' není seriózní pozice. Hlavní problém: nemáme dohodnutý test vědomí ani u zvířat, natož u systémů s úplně jinou architekturou."
+    },
+    {
+      "question": "Jak AI mění přístupnost sofistikovaných kybernetických útoků?",
       "type": "single",
       "points": 3,
       "options": [
-        "Protože používá šifrování",
-        "Její chování navenek vypadá jako spolupráce",
-        "Agresivní AI neexistují v praxi",
-        "Protože běží na více serverech najednou"
+        "Eliminuje útoky úplně, protože i samotná obrana je AI výrazně lepší",
+        "Nemění je — útoky zůstávají doménou expertních státních týmů",
+        "Komprimuje roky expertní práce do nástroje pro širší okruh aktérů",
+        "Útoky výrazně prodražuje kvůli vysokým výpočetním nárokům"
       ],
-      "correct": [
-        1
+      "correct": [2],
+      "explanation": "Co dříve vyžadovalo státní rozpočet a tým specialistů AI zpřístupňuje malým skupinám i jednotlivcům. Tomuhle jevu se říká 'demokratizace ofenzivních schopností' a je to jedno z nejcitovanějších bezprostředních rizik."
+    },
+    {
+      "question": "Proč je strategicky klamající AI obtížnější odhalit než agresivní?",
+      "type": "single",
+      "points": 3,
+      "options": [
+        "Komunikuje výhradně přes šifrované kanály mimo dohled",
+        "Otevřeně agresivní AI v praxi vůbec neexistují",
+        "Běží paralelně na mnoha serverech a maže vlastní stopy",
+        "Navenek vypadá kooperativně a běžnými testy projde"
       ],
-      "explanation": "Systém co působí spolupracujícně prochází testy — na rozdíl od zjevně problematického chování."
+      "correct": [3],
+      "explanation": "Systém co působí jako spolupracující prochází bezpečnostními testy hladce — narozdíl od zjevně problematického chování, které vyvolá alarm okamžitě. Proto se klade důraz na 'interpretovatelnost' — chápat, co model uvnitř plánuje, ne jen co říká."
     },
     {
       "question": "Co brzdí opatrný přístup k vývoji AI na globální úrovni?",
       "type": "multi",
-      "points": 3,
+      "points": 4,
       "options": [
-        "Závod o technologickou dominanci",
-        "Zpomalení = ztráta náskoku pro konkurenta",
-        "Finanční motivace v bilionech dolarů",
-        "AI je příliš jednoduchá na regulaci"
+        "Geopolitický závod o technologickou dominanci mezi světovými mocnostmi",
+        "Pro každou firmu znamená zpomalení ztrátu náskoku vůči ostatním",
+        "Finanční motivace dosahující biliony dolarů ročně po světě",
+        "AI je dnes natolik jednoduchá, že regulace nemá co řešit"
       ],
-      "correct": [
-        0,
-        1,
-        2
-      ],
-      "explanation": "Kompetitivní tlak, geopolitika a ekonomika dělají z opatrnosti luxus."
+      "correct": [0, 1, 2],
+      "explanation": "Kompetitivní tlak, geopolitika a ekonomika dělají z opatrnosti luxus. Klasický 'race to the bottom' — i kdyby každý jednotlivý hráč chtěl zpomalit, pokud to neudělají všichni naráz, ztratí náskok."
     },
     {
       "question": "Co je 'model welfare'?",
       "type": "single",
       "points": 2,
       "options": [
-        "Program na zlevnění provozu modelů",
-        "Výzkum, zda AI může mít morálně relevantní prožitky",
-        "Sociální program pro vývojáře v AI firmách",
-        "Metoda měření výkonu jazykových modelů"
+        "Sociální benefity pro vývojáře v AI firmách typu Anthropic či OpenAI",
+        "Výzkum, jestli pokročilé AI mohou mít morálně relevantní prožitky",
+        "Standardizovaný program na snížení nákladů na provoz modelů",
+        "Metoda měření výkonu jazykových modelů na ukotvených benchmarkech"
       ],
-      "correct": [
-        1
-      ],
-      "explanation": "Zkoumá, jestli pokročilé AI systémy mohou mít 'zkušenosti' v morálně relevantním smyslu."
+      "correct": [1],
+      "explanation": "Mladý obor — zkoumá, zda mají velké modely něco jako 'zkušenost' a jestli ji jejich provozovatelé mají eticky zohledňovat. Anthropic má od 2024 oficiální tým pro model welfare."
     },
     {
-      "question": "Je existenční riziko superinteligence vědecký konsenzus?",
+      "question": "Co dnes znamená 'existenční riziko ze superinteligence' ve výzkumné komunitě?",
       "type": "single",
-      "points": 1,
+      "points": 2,
       "options": [
-        "Ano, všichni vědci se shodují na hrozbě",
-        "Ne — jde o spektrum názorů od katastrofy po přehnané obavy",
-        "Nikdo se tím seriózně nezabývá"
+        "Jednomyslný vědecký konsenzus o jistě hrozící katastrofě z AI",
+        "Marginální názor, kterým se seriózní výzkum vůbec nezabývá",
+        "Spektrum názorů od katastrofy přes seriózní obavu po skepsi",
+        "Téma, které řeší výhradně neutrální mezinárodní instituce"
       ],
-      "correct": [
-        1
-      ],
-      "explanation": "Neexistuje jednoznačná shoda. Názory sahají od existenčního ohrožení po konkrétnější rizika."
+      "correct": [2],
+      "explanation": "Neexistuje shoda. Geoffrey Hinton, Yoshua Bengio a další to berou vážně; Yann LeCun a další skeptici tvrdí, že se přeceňuje. Politický rámec ('AI safety') i akademická obec ('AI alignment') se shodují aspoň na tom, že je co zkoumat."
     }
   ]
 }

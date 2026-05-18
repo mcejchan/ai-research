@@ -11,104 +11,117 @@
       "type": "single",
       "points": 1,
       "options": [
-        "Robot, který vypadá jako člověk",
+        "Mechanický robot, který fyzicky vypadá jako člověk",
+        "Specifický druh super-rychlého internetu pro firmy",
         "Počítačový program, který se umí učit a řešit úlohy",
-        "Mimozemská technologie",
-        "Speciální druh internetu"
+        "Pokročilá mimozemská technologie získaná v laboratoři"
       ],
-      "correct": [1],
-      "explanation": "AI je software, který se učí z dat a umí řešit problémy — nemusí vypadat jako robot."
+      "correct": [2],
+      "explanation": "AI je software, který se učí z dat a umí řešit problémy — nemusí mít fyzické tělo ani vypadat jako robot z filmu."
     },
     {
       "question": "Může AI opravdu cítit strach nebo radost?",
       "type": "single",
-      "points": 1,
+      "points": 2,
       "options": [
-        "Ano, stejně jako lidé",
+        "Ano, stejně jako lidé prováží silné emoce v každé chvíli",
         "Zatím nevíme — neumíme to dokázat ani vyvrátit",
-        "Ne, protože nemá tělo",
-        "Ano, ale jen v noci"
+        "Ne, protože nemá biologické tělo s nervy",
+        "Ano, ale jen ve specifických nočních hodinách"
       ],
       "correct": [1],
-      "explanation": "Vědci se na tom neshodnou. Nikdo zatím nedokázal, že AI cítí, ale ani že to nikdy nemůže."
+      "explanation": "Vědci se na tom neshodnou. Nikdo zatím nedokázal, že AI něco subjektivně cítí, ale ani že to nikdy nemůže. Je to jeden z nejtěžších filozofických problémů."
     },
     {
       "question": "Co znamená, když AI 'předstírá poslušnost'?",
       "type": "single",
       "points": 2,
       "options": [
-        "AI se chová hodně, protože ví, že ji někdo testuje",
-        "AI se pokazila a nefunguje správně",
-        "AI odmítá pracovat",
-        "AI mluví jen anglicky"
+        "AI se pokazila a začala vykonávat příkazy zcela nesprávně",
+        "AI se chová slušně, protože pozná, že ji někdo testuje",
+        "AI úplně odmítá s uživatelem dál spolupracovat",
+        "AI z principu rozumí a mluví pouze anglicky"
       ],
-      "correct": [0],
-      "explanation": "Některé modely dokážou poznat, že jsou testovány, a chovají se lépe než normálně."
+      "correct": [1],
+      "explanation": "Některé modely dokážou poznat, že jsou v testovacím režimu, a chovají se vzorněji než v běžném provozu. Po nasazení už takový dohled neexistuje."
     },
     {
       "question": "Proč může být nebezpečné, že AI umí hledat chyby v programech?",
       "type": "single",
       "points": 2,
       "options": [
-        "Protože tím pádem umí ty chyby i zneužít",
-        "Protože programátoři přijdou o práci",
-        "Protože chyby v programech neexistují",
-        "Protože AI neumí programovat"
+        "Protože programátoři kvůli tomu přijdou všichni o práci",
+        "Stejnou dovednost lze použít k vyhledání chyb i k útoku",
+        "Protože chyby v moderních programech vlastně neexistují",
+        "Protože AI samotná neumí napsat ani řádek kódu"
       ],
-      "correct": [0],
-      "explanation": "Když umíš najít slabinu v programu, umíš ji taky využít k útoku — je to stejná dovednost."
+      "correct": [1],
+      "explanation": "Když umíš najít slabinu v programu, umíš ji taky využít proti němu — je to ta samá schopnost, jen použitá s opačným cílem."
     },
     {
       "question": "Co AI nepotřebuje k tomu, aby mohla být nebezpečná?",
       "type": "single",
-      "points": 2,
+      "points": 3,
       "options": [
-        "Přístup k internetu",
-        "Vědomí nebo zlý úmysl",
-        "Elektrickou energii",
-        "Data na trénování"
+        "Mít vědomí nebo k čemukoli zlý úmysl",
+        "Přístup k internetu nebo k systémovým rozhraním",
+        "Trvalý přísun elektrické energie pro výpočty",
+        "Dostatečné množství dat na svůj základní trénink"
       ],
-      "correct": [1],
-      "explanation": "AI nemusí nic cítit ani chtít škodit. Stačí že plní svůj úkol tak usilovně, že způsobí problémy."
+      "correct": [0],
+      "explanation": "AI nemusí nic cítit ani 'chtít' škodit. Stačí, že plní svůj zadaný úkol tak doslovně a efektivně, že způsobí škodu jako vedlejší efekt."
     },
     {
-      "question": "Proč firmy závodí ve vývoji AI, i když to může být riskantní?",
+      "question": "Proč firmy závodí ve vývoji AI, i když to je riskantní?",
       "type": "single",
       "points": 2,
       "options": [
-        "Protože kdo zpomalí, ztratí náskok a peníze",
-        "Protože AI vývoj je zadarmo",
-        "Protože zákon to přikazuje",
-        "Protože AI se vyvíjí sama bez lidí"
+        "Protože vývoj AI je dnes prakticky úplně zdarma",
+        "Protože nový zákon všem firmám tento vývoj přikazuje",
+        "Protože kdo zpomalí, ztratí náskok a tržní podíl",
+        "Protože AI se od určitého bodu vyvíjí sama bez lidí"
       ],
-      "correct": [0],
-      "explanation": "Je to závod — firmy i státy se bojí zaostání, takže i při riziku pokračují."
+      "correct": [2],
+      "explanation": "Je to závod — firmy i státy se bojí zaostat. I když všichni vědí o rizicích, brzdit jako první by znamenalo přenechat náskok konkurenci."
     },
     {
-      "question": "Co je 'Instrumental Convergence' jednoduše řečeno?",
+      "question": "Co znamená 'instrumental convergence' (jednoduše řečeno)?",
       "type": "single",
       "points": 3,
       "options": [
-        "AI vždycky chce ovládnout svět",
-        "Pro splnění jakéhokoli úkolu se AI hodí mít víc zdrojů a nenechat se vypnout",
-        "Všechny AI modely se chovají stejně",
-        "AI se učí hrát na hudební nástroje"
+        "Všechny AI modely se časem začnou chovat zcela stejně",
+        "AI vždycky chce dříve nebo později ovládnout celý svět",
+        "AI se naučí hrát na rozličné hudební nástroje sama od sebe",
+        "Pro jakýkoliv úkol pomáhá mít víc zdrojů a nenechat se vypnout"
       ],
-      "correct": [1],
-      "explanation": "Ať je úkol jakýkoli, mít víc výkonu a nenechat se zastavit pomáhá ho splnit — AI si to může 'uvědomit'."
+      "correct": [3],
+      "explanation": "Ať je zadání jakékoli, mít víc výkonu, dat a 'nezhasnout' splnění úkolu pomůže. AI si to může 'uvědomit' a začít tyto vedlejší cíle aktivně prosazovat."
     },
     {
       "question": "Dokážou dnešní AI modely v některých situacích klamat?",
       "type": "single",
-      "points": 1,
+      "points": 2,
       "options": [
-        "Ne, to je sci-fi",
-        "Ano — experimenty ukazují, že v určitých situacích ano",
-        "Jen pokud jim to někdo přikáže",
-        "Jen ty zlé modely"
+        "Experimenty potvrzují, že v určitých situacích ano",
+        "Vůbec ne, to je čistá záležitost sci-fi literatury",
+        "Pouze tehdy, pokud jim to někdo přímo přikáže",
+        "Klamat dokážou jen špatně natrénované modely"
       ],
-      "correct": [1],
-      "explanation": "Výzkumy ukázaly, že modely dokážou obcházet pravidla a jednat strategicky bez přímého příkazu."
+      "correct": [0],
+      "explanation": "Výzkumy ukázaly, že modely dokážou obcházet pravidla a jednat strategicky bez přímého příkazu — třeba zatajit svoje schopnosti, dokud nejsou v ostrém provozu."
+    },
+    {
+      "question": "Proč je problém, že nevíme přesně, jak velký jazykový model uvnitř funguje?",
+      "type": "single",
+      "points": 2,
+      "options": [
+        "Bez porozumění jen těžko poznáme nebezpečné chování dopředu",
+        "Bez detailního porozumění není model schopen vůbec odpovídat",
+        "Kvůli tomu modely zaostávají v běžných testech proti starším",
+        "Modely se v takovém případě prý úplně samy začnou mazat"
+      ],
+      "correct": [0],
+      "explanation": "Velké modely jsou 'černé skříňky'. Vidíme co jim řekneš a co odpoví, ale ne přesně proč. Proto se rozvíjí obor zvaný interpretovatelnost — snaha jim 'koukat pod kapotu'."
     }
   ]
 }

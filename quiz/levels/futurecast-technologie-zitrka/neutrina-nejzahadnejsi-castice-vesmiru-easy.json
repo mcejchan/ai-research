@@ -11,12 +11,12 @@
       "type": "single",
       "points": 1,
       "options": [
-        "Malá hvězda",
-        "Typ planety",
+        "Druh záření z mobilního telefonu",
         "Drobná částice, která skoro nereaguje s ničím",
-        "Druh záření z telefonu"
+        "Typ velmi vzdálené malé planety",
+        "Malá hvězda na okraji galaxie"
       ],
-      "correct": [2],
+      "correct": [1],
       "explanation": "Neutrino je malinká částice, která prolétne skrz cokoli — hvězdy, planety, i tvoje tělo — jako by tam nic nebylo."
     },
     {
@@ -25,90 +25,103 @@
       "points": 1,
       "options": [
         "Jsou neviditelná a téměř se nesráží s ničím",
-        "Jsou příliš velká",
-        "Létají jen v noci",
-        "Existují jen ve vesmíru"
+        "Jsou na zachycení detektorem příliš velká",
+        "Vyskytují se jen v hlubokém noční obloze",
+        "Existují pouze daleko mimo naši galaxii"
       ],
       "correct": [0],
-      "explanation": "Neutrina proletí skrz planetu, aniž by se čehokoli dotkla — proto potřebujeme obrovské detektory, aby se občas jedno chytilo."
+      "explanation": "Neutrina proletí skrz celou planetu, aniž by se čehokoli dotkla. Proto potřebujeme obrovské detektory, aby se aspoň občas jedno chytilo."
     },
     {
       "question": "Kde vědci stavějí detektory neutrin?",
       "type": "multi",
       "points": 2,
       "options": [
-        "Hluboko pod zemí v horách",
+        "Hluboko v dolech a pod horskými masivy",
         "Pod antarktickým ledem",
-        "Na střechách domů",
-        "Na Měsíci"
+        "Na střechách výškových budov",
+        "V trvalých základnách na odvrácené straně Měsíce"
       ],
       "correct": [0, 1],
-      "explanation": "Pod zemí a pod ledem — vrstva materiálu nad detektorem odstíní rušivé záření, ale neutrina projdou."
+      "explanation": "Pod zemí a pod ledem — silná vrstva materiálu nad detektorem odstíní rušivé záření, ale neutrina jí projdou bez problému."
     },
     {
-      "question": "Odkud k nám neutrina přilétají?",
+      "question": "Odkud k nám neutrina nejčastěji přilétají?",
       "type": "single",
       "points": 1,
       "options": [
+        "Z pozemských televizních a rádiových vysílačů",
+        "Z geotermálních procesů v jádře Země",
         "Z nitra hvězd a z explozí supernov",
-        "Z televizních vysílačů",
-        "Z jádra Země",
-        "Z oblak"
+        "Z bouřkových oblak při silných bleskách"
       ],
-      "correct": [0],
-      "explanation": "Vznikají při jaderných reakcích ve hvězdách (i v našem Slunci) a při výbuších supernov."
+      "correct": [2],
+      "explanation": "Vznikají při jaderných reakcích ve hvězdách (i v našem Slunci) a při výbuších supernov. Z Slunce jich každou sekundu prochází tvým palcem zhruba 60 miliard."
     },
     {
-      "question": "Co je zvláštního na tom, jak neutrina 'mění identitu' za letu?",
+      "question": "Co znamená, že neutrina 'mění identitu' za letu?",
       "type": "single",
       "points": 2,
       "options": [
         "Přecházejí mezi třemi typy — říká se tomu oscilace",
-        "Mění barvu podle rychlosti",
-        "Rozdělí se na dvě částice",
-        "Zmizí a znovu se objeví jinde"
+        "Postupně mění svou barvu podle rychlosti",
+        "Rozpadají se na dvě menší částice s polovinou energie",
+        "Periodicky mizí a znovu se objevují o kousek dál"
       ],
       "correct": [0],
-      "explanation": "Neutrino může během cesty přeskočit z jednoho typu na jiný — za objev tohoto jevu dostali vědci Nobelovu cenu."
+      "explanation": "Neutrino může během cesty přeskočit z jednoho typu na jiný — elektronové, mionové, tauonové. Za objev tohoto jevu padla Nobelova cena v roce 2015."
+    },
+    {
+      "question": "Co znamená, že hmotnost neutrina je 'nepatrná'?",
+      "type": "single",
+      "points": 2,
+      "options": [
+        "Že má hmotnost přesně nulovou, jako foton",
+        "Že je zhruba milionkrát lehčí než elektron",
+        "Že je srovnatelná s hmotností běžného atomu",
+        "Že je vyšší než hmotnost protonu v jádře"
+      ],
+      "correct": [1],
+      "explanation": "Hmotnost neutrina je tak malá, že fyzici si dlouho mysleli, že je úplně nulová. Oscilace ale dokazují, že hmotnost mít musí, byť mizivou."
     },
     {
       "question": "Jak velký je detektor IceCube v Antarktidě?",
       "type": "single",
       "points": 1,
       "options": [
-        "Jako krabička od bot",
-        "Kubický kilometr ledu",
-        "Velikost fotbalového hřiště",
-        "Vejde se do místnosti"
+        "Velikost klasického fotbalového hřiště",
+        "Jako několik krabic od bot postavených na sebe",
+        "Vejde se do běžné laboratorní místnosti",
+        "Kubický kilometr antarktického ledu"
       ],
-      "correct": [1],
-      "explanation": "Celý kubický kilometr antarktického ledu plný senzorů — největší neutrinový teleskop na světě."
+      "correct": [3],
+      "explanation": "Celý kubický kilometr ledu osázený tisíci optickými senzory — největší neutrinový teleskop na světě, postavený přímo na jižním pólu."
     },
     {
       "question": "K čemu by neutrina mohla jednou sloužit v komunikaci?",
       "type": "single",
       "points": 2,
       "options": [
-        "K posílání zpráv skrz celou Zemi bez kabelů nebo satelitů",
-        "K rychlejšímu internetu doma",
-        "K nabíjení baterií na dálku",
-        "Ke streamování filmů"
+        "K výraznému zrychlení domácího internetu",
+        "K bezdrátovému nabíjení baterií na velkou vzdálenost",
+        "K posílání signálu skrz Zemi bez kabelů či satelitů",
+        "K vylepšenému streamování filmů ve vysoké kvalitě"
       ],
-      "correct": [0],
-      "explanation": "Protože projdou čímkoli, mohly by teoreticky posílat signály přímo skrz planetu — třeba ponorkám pod vodou."
+      "correct": [2],
+      "explanation": "Protože projdou čímkoli, mohly by teoreticky posílat signál přímo skrz planetu — třeba ponorkám pod vodou, kam radiové vlny nedosáhnou."
     },
     {
-      "question": "Mají neutrina nějakou hmotnost?",
+      "question": "Proč fyzici tvrdí, že existují tři 'vůně' neutrin?",
       "type": "single",
       "points": 2,
       "options": [
-        "Vůbec žádnou",
-        "Ano, ale extrémně malou — dlouho se myslelo, že ne",
-        "Stejnou jako elektron",
-        "Víc než atom"
+        "Podle barvy jejich stopy v detektoru — modrá, zelená, červená",
+        "Podle toho, ke kterému typu nabité částice se vážou (elektron, mion, tau)",
+        "Podle směru, ze kterého do detektoru přilétají",
+        "Podle teploty prostředí, ve kterém se rozpadají"
       ],
       "correct": [1],
-      "explanation": "Fyzici si dlouho mysleli, že nemají žádnou hmotnost. Experimenty kolem roku 2000 ukázaly, že přece jen malinkou mají."
+      "explanation": "Každé neutrino patří k jednomu ze tří 'leptonů' — elektron, mion, tau. Mezi těmito třemi typy během letu osciluje, což byl velký objev posledních dvaceti let."
     }
   ]
 }

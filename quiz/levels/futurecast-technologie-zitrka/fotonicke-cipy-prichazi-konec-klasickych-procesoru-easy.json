@@ -16,9 +16,7 @@
         "Světlo",
         "Magnetismus"
       ],
-      "correct": [
-        2
-      ],
+      "correct": [2],
       "explanation": "Fotonické čipy pracují s fotony — částicemi světla — místo elektronů."
     },
     {
@@ -26,15 +24,13 @@
       "type": "single",
       "points": 1,
       "options": [
-        "Protože jsou vyrobené ze skla a sklo drží teplo i v některých případech",
+        "Protože je sklo uvnitř křemíku špatným vodičem",
         "Protože elektrony narážejí na odpor a tím vzniká teplo",
-        "Protože jsou na svou velikost příliš velké",
-        "Protože v sobě nemají vestavěný ventilátor"
+        "Protože pracují v tisících operací za sekundu, a to hřeje",
+        "Protože sálají vlastní zbytkové magnetické pole"
       ],
-      "correct": [
-        1
-      ],
-      "explanation": "Elektrický proud procházející materiálem naráží na odpor — a odpor vytváří teplo. Proto procesory potřebují chlazení."
+      "correct": [1],
+      "explanation": "Elektrický proud naráží v materiálu na odpor — a odpor vytváří teplo. Proto procesory potřebují chlazení a fotonika je v tomhle ve výhodě."
     },
     {
       "question": "K čemu dnes hlavně slouží optická vlákna?",
@@ -42,13 +38,11 @@
       "points": 1,
       "options": [
         "K přenosu internetových dat na velké vzdálenosti",
-        "K osvětlení městských ulic v noci",
-        "K výrobě svítivého oblečení pro běh v noci",
-        "K rychlému ohřevu vody v domaácních bojlerech už od svého počátku"
+        "K osvětlení vstupních hal velkých moderních budov",
+        "K výrobě svítivého oblečení a doplňků pro běh v noci",
+        "K rychlému ohřevu vody v domácích bojlerech"
       ],
-      "correct": [
-        0
-      ],
+      "correct": [0],
       "explanation": "Internet funguje díky optickým vláknům — data v nich cestují jako pulsy světla, takřka bez ztrát i přes oceány."
     },
     {
@@ -56,14 +50,12 @@
       "type": "single",
       "points": 2,
       "options": [
-        "Měď neumí přenášet žádný digitální signál",
+        "Měď neumí přenášet digitální signál na delší vzdálenost",
         "Světlo se v skle ztrácí mnohem pomaleji než proud v drátu",
-        "Měděné dráty fungují jen při velmi nízkých teplotách už od svého počátku",
-        "Světlo lze snadno přerušit, a tím lépe kontrolovat"
+        "Měděné dráty fungují spolehlivě jen při nízkých teplotách",
+        "Světlo je viditelné, takže výpadek se hned pozná pohledem"
       ],
-      "correct": [
-        1
-      ],
+      "correct": [1],
       "explanation": "V mědi se signál na velké vzdálenosti rychle utlumí; v optickém vlákně proletí stovky kilometrů s minimální ztrátou."
     },
     {
@@ -71,15 +63,13 @@
       "type": "single",
       "points": 2,
       "options": [
-        "Zákon zakazující výrobu příliš rychlých čipů",
-        "Fyzikální omezení maximální rychlosti světla",
-        "Bezpečnostní pravidlo pro vývoj umělé inteligence i v některých případech",
+        "Limit, kolik tranzistorů smí jeden výrobce ročně vyrobit",
+        "Fyzikální omezení maximální rychlosti elektrického signálu",
+        "Bezpečnostní pravidlo pro vývoj velmi výkonné umělé inteligence",
         "Počet tranzistorů v čipu se zhruba každé dva roky zdvojnásobí"
       ],
-      "correct": [
-        3
-      ],
-      "explanation": "Pozorování Gordona Moora z 60. let. Desítky let to fungovalo, dnes ale klasické tranzistory narážejí na fyzikální limity."
+      "correct": [3],
+      "explanation": "Pozorování Gordona Moora z 60. let. Desítky let to fungovalo, dnes ale klasické tranzistory narážejí na fyzikální limity miniaturizace."
     },
     {
       "question": "Proč moderní AI potřebuje rychlé propojení mezi tisíci čipy?",
@@ -87,13 +77,11 @@
       "points": 2,
       "options": [
         "Aby si čipy mezi sebou stíhaly sdílet data při výpočtu",
-        "Protože AI zatím funguje jen na jediném čipu i v některých případech",
-        "Aby si čipy mohly navzájem zhasínat a šetřit",
-        "Protože AI nepotřebuje výkon, jen paměť"
+        "Protože AI zatím funguje jen na jediném centrálním čipu",
+        "Aby si čipy mohly mezi sebou předávat napájení a šetřit",
+        "Protože AI nepotřebuje výpočetní výkon, jen velkou paměť"
       ],
-      "correct": [
-        0
-      ],
+      "correct": [0],
       "explanation": "Trénink modelu jako GPT zaměstnává tisíce GPU najednou. Celá síť je tak rychlá, jak rychle si umí vyměňovat data."
     },
     {
@@ -101,14 +89,12 @@
       "type": "single",
       "points": 2,
       "options": [
-        "Vlákno se uvnitř větví na víc tenčích",
+        "Vlákno se uvnitř větví na víc tenkých svazků",
         "Data se v něm pohybují různým směrem zároveň",
         "Každý tok jede na jiné barvě světla",
         "Vlákno přepíná mezi toky tisíckrát za sekundu"
       ],
-      "correct": [
-        2
-      ],
+      "correct": [2],
       "explanation": "Různé vlnové délky (barvy) světla se sečtou v jednom vlákně a na druhém konci se spektrálně rozdělí. Jako víc pruhů na dálnici v jednom tunelu."
     },
     {
@@ -116,14 +102,12 @@
       "type": "single",
       "points": 1,
       "options": [
-        "Ano, v každém běžném mobilním telefonu i v některých případech",
-        "Vůbec ne, zatím existují jen v teorii",
-        "Ne, jsou očekávané až za sto let",
+        "Ano, jsou ve většině moderních mobilních telefonů",
+        "Vůbec ne, zatím existují jen v teoretických článcích",
+        "Ne, jsou očekávané nejdříve za sto let provozního testování",
         "Ano, první generace běží v některých datacentrech"
       ],
-      "correct": [
-        3
-      ],
+      "correct": [3],
       "explanation": "Není to už jen laboratorní pokus — firmy jako LightMatter nebo Lightelligence testují fotonické čipy v reálném provozu u velkých AI poskytovatelů."
     },
     {
@@ -131,14 +115,12 @@
       "type": "single",
       "points": 2,
       "options": [
-        "Všechny tranzistory by se měly spojit do jednoho už od svého počátku",
+        "Všechny tranzistory by se musely sloučit do jednoho velkého",
         "Optické součástky jsou výrazně větší než tranzistory",
-        "Optické čipy nelze vůbec vyrobit v Evropě",
-        "Fotonika potřebuje desetinásobné napájení"
+        "Optické čipy nelze z licenčních důvodů vyrobit v Evropě",
+        "Fotonika potřebuje k provozu zhruba desetinásobné napájení"
       ],
-      "correct": [
-        1
-      ],
+      "correct": [1],
       "explanation": "Tranzistor má dnes pár nanometrů; optický prvek desítky mikrometrů — tisícinásobek. Proto fotonika zatím doplňuje elektroniku, ne ji nahrazuje."
     }
   ]
