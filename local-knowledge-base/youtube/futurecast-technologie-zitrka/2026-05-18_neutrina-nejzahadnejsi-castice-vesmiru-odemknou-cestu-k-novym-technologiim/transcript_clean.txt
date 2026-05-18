@@ -1,0 +1,73 @@
+Věděli jste, že vesmír je plný částic, které běžné teleskopy nikdy neuvidí? Tyto částice putují vesmírem téměř bez interakce [hudba] s okolím a dokážou proletět skrz hvězdy, planety nebo celé galaxie, jako by pro ně hmota téměř neexistovala. [hudba] Přesto nesou informace z některých z nejextrémnějších míst ve vesmíru.
+Znitra hvězd, [hudba] z explozí supernov nebo z energetických procesů, které bychom jinak nikdy nemohli [hudba] pozorovat.
+Tyhle téměř nepolapitelné částice se nazývají neutrina. [hudba] patří mezi nejzáhadnější objekty moderní fyziky a jejich studium otevírá úplně nový způsob pozorování vesmíru.
+Aby je vědci dokázali zachytit, staví obrovské detektory hluboko pod zemí v horách nebo dokonce pod Antarktickým ledem.
+Některé z nich patří mezi největší vědecké experimenty, jaké kdy lidstvo vytvořilo.
+Jak neutrina vznikají, k čemu by je lidstvo mohlo jednou využít a proč je tak těžké je detekovat.
+Neutrina jsou elementární částice patřící do rodiny leptonů, tedy stejné skupiny, do které patří například elektrony.
+Na rozdíl od elektronů ale nenesou elektrický náboj a jejich hmotnost je extrémně malá.
+A to dokonce natolik, že fyzici dlouhou dobu předpokládali, že žádnou hmotnost nemají.
+Teprve na přelomu tisíciletí experimenty ukázaly, že neutrina přece jen malou hmotnost mají. což znamenalo významnou revizi některých částí částicové fyziky.
+Zásadní vlastností neutrin je způsob, jakým interagují s hmotou.
+Neutrina reagují pouze prostřednictvím takzvané slabé jaderné interakce a gravitace.
+Na rozdíl od částic s elektrickým nábojem se tedy téměř nikdy nesrážejí s atomy běžné [hudba] hmoty.
+To je také důvod, proč mohou bez problémů procházet celou galaxií, planetami nebo i naším tělem.
+Existují tři základní typy neutrin. [hudba] Elektronové, mionové a taonové neutrino.
+Jedním z nejzajímavějších objevů posledních desetiletí [hudba] bylo zjištění, že neutrina mohou během letu mezi těmito typy přecházet.
+Tento jev se nazývá oscilace neutrin [hudba] a jeho potvrzení znamenalo průlom v našem chápání částicové fyziky.
+Objev byl natolik významný, že v roce 2015 přinesl jeho autorům Nobelovu cenu za [hudba] fyziku.
+Neutrina vznikají při extrémně silných energetických procesech probíhajících ve vesmíru, zejména uvnitř hvězd a to i v našem slunci.
+V jeho nitru probíhá jaderná fúze, při které se atomy vodíku slučují na hélium a uvolňuje se obrovské množství [hudba] energie.
+Právě tato energie je zdrojem slunečního světla, které dopadá na zemi.
+Současně při těchto reakcích vznikají i neutrina, která z nitra slunce unikají téměř okamžitě a vydávají se na cestu vesmírem.
+Jedním z nejvýznamnějších zdrojů jsou také [hudba] supernovy.
+Když masivní hvězda na konci svého života exploduje, uvolní během několika sekund obrovské množství těchto částic.
+Ve skutečnosti se při výbuchu supernovy většina uvolněné energie nešíří [hudba] ve formě světla, ale právě v podobě neutrin.
+Díky tomu mohou fungovat jako jedineční poslové [hudba] z extrémních kosmických událostí a přinášet informace z procesů, které bychom jinak jen velmi obtížně pozorovali.
+I kvůli tomu vznikl nový obor zvaný neutrinoastronomie.
+Zatímco klasické teleskopy pozorují světlo nebo jiné elektromagnetické záření, detektory neutrin mohou sledovat procesy, které jsou jinak skryté hluboko uvnitř hvězd nebo v extrémních kosmických objektech.
+Problém je v tom, že neutrina téměř nereagují s hmotou.
+Většina z nich proletí detektorem bez jakékoliv [hudba] interakce.
+Aby vědci zachytili alespoň malé množství těchto částic, musí používat obrovské objemy materiálu a extrémně citlivé [hudba] senzory.
+Princip detekce neutrin je založen na velmi vzácné interakci [hudba] s hmotou.
+Pokud neutrino narazí do atomového jádra nebo elektronu v detektoru, [hudba] může při této srážce vzniknout nabitá částice.
+Ta se následně začne pohybovat tak rychle, že překročí rychlost světla v daném prostředí, nikoli však ve vaku, kde je rychlost světla nepřekročitelná.
+Tím vzniká takzvané čerenkovovo záření, což je charakteristický modrý záblesk světla.
+Tento slabý záblesk zachytí jen extrémně citlivé světelné senzory nazývané fotonásobiče.
+Analýzou těchto signálů mohou vědci rekonstruovat směr i energii původního neutrina.
+Aby bylo možné takové události zachytit, [hudba] vznikly některé z největších vědeckých experimentů na světě.
+Jedním z nejznámějších je projekt Ice Cube Neutrino Observatory v Antarktidě. [hudba] Tento detektor je doslova vyvrtaný hluboko do antarktického ledu v hloubce až 2 km pod povrchem.
+V obrovském objemu ledu jsou rozmístěny tisíce citlivých optických senzorů, které sledují slabé záblesky světla vznikající při vzácných interakcích neutrin.
+Celý detektor zabírá objem přibližně 1 kubého kilometru ledu, což z něj dělá největší neutrinový teleskop na světě.
+V roce 2017 [hudba] zachytil detektor vysokoenergetické neutrino přicházející z hlubokého vesmíru.
+Analýza jeho směru umožnila [hudba] vědcům spojit tuto částici s konkrétním zdrojem a to vzdálenou aktivní galaxií typu Blazar. Šlo o první případ, kdy se podařilo vysledovat původ kosmického neutrina až ke konkrétnímu objektu ve vesmíru.
+Dalším významným experimentem je japonský detektor Super Camio Cande.
+Ten se nachází hluboko pod zemí a [hudba] tvoří ho obrovská nádrž obsahující přibližně 50 000 tun ultračisté vody.
+Stěny nádrže jsou pokryty tisíci citlivých fotonásobičů, které dokážou zaznamenat i velmi slabé světelné signály.
+Právě v tomto detektoru vědci poprvé experimentálně potvrdili oscilace neutrin, za což následně získali Nobelovu cenu za fyziku.
+V posledních letech prošel tento detektor významnou modernizací.
+Vědci začali do vody přidávat malé množství Gadolinia, vzácného kovu, který výrazně zvyšuje schopnost detektoru zachytit určité typy neutrin.
+Díky tomu může experiment mnohem citlivěji sledovat neutrina vznikající při explozích [hudba] supernov v jiných galaxiích.
+Jedním z hlavních cílů je zachytit takzvané reliktní neutrina ze starých supernov, tedy částice, které vznikly při hvězdných explozích v průběhu celé historie vesmíru.
+V současnosti se připravuje také projekt Deep Underground Neutrino Experiment, který bude zkoumat neutrina [hudba] vysílaná z urychlovače částic na vzdálenost více než 1000 km mezi dvěma americkými laboratořemi.
+Cílem je lépe pochopit vlastnosti neutrin a jejich roli ve vývoji vesmíru.
+Výzkum neutrin je dnes [hudba] především doménou velkých vědeckých institucí, jako je evropská laboratoř CERN nebo americká Fermila.
+Možná vás teď napadá jednoduchá otázka, proč vlastně vědci věnují tolik úsilí studiu částic, které je tak těžké zachytit? Odpověď je jednoduchá.
+Neutrina mohou odhalit některá z největších tajemství vesmíru a zároveň by jednou mohla najít i překvapivě praktická využití.
+Jednou z nejzajímavějších myšlenek je vytvoření zcela nové možnosti komunikace.
+Protože neutrina dokážou projít celou planetou [hudba] bez překážek, teoreticky by bylo možné posílat signály skrz zemi bez potřeby [hudba] satelitů nebo kabelů.
+Experimenty už ukázaly, že jednoduché zprávy lze pomocí neutrin skutečně [hudba] přenášet.
+Zatím je tato technologie velmi nepraktická, protože vyžaduje velké urychlovače částic [hudba] a obrovské detektory.
+Přesto ukazuje, že neutrina by jednou mohla sloužit například pro [hudba] komunikaci s ponorkami nebo s podzemními základnami.
+Velmi zajímavé je také využití neutrin [hudba] pro studium Nitra Země.
+Neutrina totiž mohou procházet celou planetou a nést informace o procesech probíhajících hluboko v zemském jádru.
+V budoucnu by tak mohly pomoci vytvořit detailnější model struktury naší planety.
+Studium této exotické částice může odhalit i zcela novou část fyziky.
+Pokud se podaří přesně změřit jejich vlastnosti, mohli bychom získat odpovědi na některé z největších otázek moderní vědy.
+Například proč ve vesmíru existuje více hmoty než antihmoty.
+Neutrina patří mezi nejzvláštnější částice, které ve vesmíru známe. jsou extrémně lehká, téměř nereagují s hmotou [hudba] a dokážou proletět skrz planety i hvězdy, aniž by se téměř s čímkoliv srazila.
+Přesto jich kolem nás neustále proudí [hudba] obrovské množství a díky masivním detektorům ukrytým hluboko pod zemí se je dnes vědcům [hudba] daří zachytit a studovat.
+Každé takové zachycení nám pomáhá lépe pochopit procesy probíhající ve hvězdách, galaxiích i v samotné struktuře vesmíru.
+Myslíte si, že neutrina najdou v budoucnu praktické využití, nebo zůstanou hlavně nástrojem pro výzkum vesmíru? Dejte nám vědět v komentářích a pokud se vám video líbilo, nezapomeňte kliknout na like a sledujte tento kanál pro další informace ze světa technologií budoucnosti.
+Mějte se skvěle a zase brzy u dalšího dílu.
+M.

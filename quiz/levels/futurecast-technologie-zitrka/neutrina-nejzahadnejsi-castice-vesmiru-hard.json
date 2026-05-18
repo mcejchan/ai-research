@@ -1,0 +1,160 @@
+{
+  "title": "Neutrina: Nejzáhadnější částice vesmíru (Hard)",
+  "channel": "FutureCast – Technologie Zítřka",
+  "url": "https://www.youtube.com/watch?v=gq8yqGube18",
+  "thumbnail": "https://i.ytimg.com/vi/gq8yqGube18/maxresdefault.jpg",
+  "date": "2026-05-18",
+  "difficulty": "hard",
+  "questions": [
+    {
+      "question": "Proč neutrina procházejí hmotou téměř bez interakce?",
+      "type": "single",
+      "points": 2,
+      "options": [
+        "Jsou příliš velká na srážku s atomy",
+        "Pohybují se rychlostí světla",
+        "Mají záporný náboj jako elektrony",
+        "Nemají elektrický náboj a reagují jen slabou jadernou silou"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Bez elektrického náboje nemohou interagovat elektromagneticky — zbývá jen slabá síla a gravitace, obojí extrémně slabé."
+    },
+    {
+      "question": "Co jsou oscilace neutrin?",
+      "type": "single",
+      "points": 2,
+      "options": [
+        "Neutrina kmitají jako zvukové vlny",
+        "Neutrina oscilují mezi hmotou a antihmotou",
+        "Neutrina mění svůj typ (elektronové, mionové, taonové) během letu",
+        "Neutrina se rozpadají na fotony"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Neutrino může při cestě přecházet mezi třemi typy — objev oceněný Nobelovou cenou 2015."
+    },
+    {
+      "question": "Jak funguje detekce neutrin pomocí Čerenkovova záření?",
+      "type": "single",
+      "points": 3,
+      "options": [
+        "Neutrino samo svítí modře při průletu detektorem",
+        "Detektor zahřeje neutrino, až začne zářit",
+        "Neutrino se odráží od stěn a vytváří interference",
+        "Neutrino při srážce vytvoří nabitou částici rychlejší než světlo v daném prostředí — ta vyzáří modrý záblesk"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Nabitá částice ze srážky překročí rychlost světla v médiu (ne ve vakuu!) a emituje charakteristické modré záření."
+    },
+    {
+      "question": "Proč se neutrinové detektory stavějí hluboko pod zemí?",
+      "type": "single",
+      "points": 1,
+      "options": [
+        "Protože neutrina létají jen pod zemí",
+        "Kvůli nižší teplotě pod povrchem",
+        "Aby je odstínily od kosmického záření, které by rušilo měření",
+        "Protože tam je silnější gravitace"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Vrstva horniny filtruje kosmické záření a jiné částice — neutrina projdou, ale šum ne."
+    },
+    {
+      "question": "Čím je unikátní detektor IceCube?",
+      "type": "single",
+      "points": 2,
+      "options": [
+        "Je umístěný na Měsíci",
+        "Funguje pouze v létě",
+        "Detekuje jen sluneční neutrina",
+        "Používá kubický kilometr antarktického ledu jako detekční médium"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Tisíce senzorů vyvrtaných do 2 km hloubky v antarktickém ledu — největší neutrinový teleskop na světě."
+    },
+    {
+      "question": "Proč je většina energie supernovy uvolněna jako neutrina, ne jako světlo?",
+      "type": "single",
+      "points": 3,
+      "options": [
+        "Supernovy nevyzařují žádné světlo",
+        "Neutrina jsou těžší, takže nesou víc energie",
+        "Světlo je při explozi zničeno",
+        "Neutrina uniknou z kolabujícího jádra okamžitě, zatímco světlo se v hustém materiálu zdržuje"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Neutrina téměř nereagují s hmotou, takže uniknou z nitra hvězdy okamžitě — fotony se prodírají ven mnohem déle."
+    },
+    {
+      "question": "K čemu přidali vědci gadolinium do detektoru Super-Kamiokande?",
+      "type": "single",
+      "points": 2,
+      "options": [
+        "Zpomaluje neutrina",
+        "Čistí vodu od nečistot",
+        "Zvyšuje citlivost detekce určitých typů neutrin",
+        "Chrání detektor před korozí"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Gadolinium výrazně zlepšuje schopnost zachytit neutrina ze supernov v jiných galaxiích."
+    },
+    {
+      "question": "Jaké praktické využití by neutrina mohla jednou mít v komunikaci?",
+      "type": "single",
+      "points": 2,
+      "options": [
+        "Rychlejší wi-fi v domácnostech",
+        "Šifrování e-mailů",
+        "Vysílání signálů skrz celou planetu bez satelitů nebo kabelů",
+        "Bezdrátové nabíjení telefonů"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Neutrina projdou planetou — teoreticky by umožnila komunikaci s ponorkami nebo podzemními základnami bez potřeby klasické infrastruktury."
+    },
+    {
+      "question": "Co dokázal IceCube v roce 2017 jako první v historii?",
+      "type": "single",
+      "points": 3,
+      "options": [
+        "Vysledoval kosmické neutrino zpět ke konkrétnímu zdroji — vzdálenému blazaru",
+        "Vytvořil umělé neutrino",
+        "Zachytil neutrino ze Slunce",
+        "Změřil hmotnost neutrina přesně"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Poprvé se podařilo spojit vysokoenergetické neutrino s konkrétním objektem ve vesmíru — aktivní galaxií."
+    },
+    {
+      "question": "Proč by studium neutrin mohlo vysvětlit, proč existuje více hmoty než antihmoty?",
+      "type": "single",
+      "points": 3,
+      "options": [
+        "Antihmota je tvořena výhradně z neutrin",
+        "Neutrina mění antihmotu na hmotu",
+        "Neutrina se mohou chovat jinak než antineutrina — tato asymetrie by mohla vysvětlit převahu hmoty",
+        "Neutrina ničí antihmotu při kontaktu"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Pokud se potvrdí rozdíly v chování neutrin a antineutrin, mohlo by to vysvětlit jednu z největších záhad fyziky."
+    }
+  ]
+}
