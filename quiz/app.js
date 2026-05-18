@@ -49,6 +49,11 @@ async function fetchJson(url) {
   return response.json();
 }
 
+function levelUrl(levelPath) {
+  const cleanPath = String(levelPath || '').replace(/^\/+/, '');
+  return `levels/${cleanPath.split('/').map(encodeURIComponent).join('/')}`;
+}
+
 function initLevelsPage() {
   const grid = document.getElementById('levels-grid');
   const empty = document.getElementById('empty-state');
@@ -101,7 +106,7 @@ function initLevelsPage() {
     });
   });
 
-  fetchJson('/api/levels')
+  fetchJson('levels/index.json')
     .then((levels) => {
       allLevels = levels;
       renderLevels();
@@ -249,7 +254,7 @@ function initQuizPage() {
   submitButton.addEventListener('click', submitAnswer);
   nextButton.addEventListener('click', nextQuestion);
 
-  fetchJson(`/api/level?path=${encodeURIComponent(levelPath)}`)
+  fetchJson(levelUrl(levelPath))
     .then((data) => {
       level = data;
       if (!Array.isArray(level.questions) || level.questions.length === 0) {
@@ -277,5 +282,5 @@ if (typeof document !== 'undefined') {
 }
 
 if (typeof module !== 'undefined') {
-  module.exports = { sameSelection };
+  module.exports = { sameSelection, levelUrl };
 }

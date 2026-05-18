@@ -128,7 +128,7 @@ function serveStatic(req, res, url) {
   const normalized = path.normalize(requestPath).replace(/^[/\\]+/, '');
   const filePath = path.join(ROOT, normalized);
 
-  if (!filePath.startsWith(ROOT) || normalized.startsWith('levels')) {
+  if (!filePath.startsWith(ROOT)) {
     res.writeHead(403, { 'Content-Type': 'text/plain; charset=utf-8' });
     res.end('Forbidden');
     return;

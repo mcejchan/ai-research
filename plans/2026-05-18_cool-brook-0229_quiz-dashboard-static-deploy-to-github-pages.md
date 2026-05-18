@@ -79,7 +79,7 @@ Prevest quiz dashboard na statickou vanilla app a publikovat ji pres GitHub Page
 2. Spust targeted test a over RED.
 3. Implementuj `quiz/build-index.js`.
 4. Spust targeted test a over GREEN.
-5. Spust verifikace v sekci Dependencies.
+5. Spust verifikace v sekci Regression.
 
 Implementace TDD cyklu dle skill:tdd. RED/GREEN evidence zapsat do `plans/checkpoints/cool-brook-0229.red-green-proof.md`.
 
@@ -137,14 +137,14 @@ test('buildLevelsIndex writes sorted static metadata and skips existing index', 
 - [ ] `node --check quiz/server.js`
 - [ ] `node quiz/build-index.js`
 - [ ] `node -e "const fs=require('fs'); const levels=JSON.parse(fs.readFileSync('quiz/levels/index.json','utf8')); if (levels.length !== 6) throw new Error('Expected 6 levels'); if (levels.some(l => l.path === 'index.json' || !l.path.endsWith('.json'))) throw new Error('Bad paths');"`
-- [ ] `! grep -R "/api/" quiz/app.js`
+- [ ] `! rg "/api/" quiz/app.js`
 - [ ] `cd quiz && node server.js`, potom otevrit `http://localhost:4002/` a overit Network bez `/api/` requestu.
 - [ ] Po pushi overit Pages URL `https://mcejchan.github.io/ai-research/`.
 
 ## Dependencies
 - GitHub repo setting musi byt `Pages -> Source: GitHub Actions`; branch source `/quiz` nepouzivat.
 - GitHub Pages URL pro artifact z `quiz/` bude root `https://mcejchan.github.io/ai-research/`; ne `/quiz/`, pokud artifact root je `quiz/`.
-- Nep ridavat npm dependencies ani package manager soubory do `quiz/`.
+- Nepridavat npm dependencies ani package manager soubory do `quiz/`.
 - Nemazat `quiz/server.js`, nemenit scoring, UI design ani format existujicich level JSON souboru.
 
 ---
