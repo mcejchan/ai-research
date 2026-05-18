@@ -7,134 +7,134 @@
   "difficulty": "hard",
   "questions": [
     {
-      "question": "Proč klasická křemíková elektronika naráží na limity další miniaturizace?",
+      "question": "Co se v křemíkovém tranzistoru začne dít pod hranicí přibližně 3 nm?",
       "type": "single",
-      "points": 1,
+      "points": 2,
       "options": [
-        "Tranzistory jsou tak malé, že jejich chování ovlivňují kvantové jevy",
-        "Křemík je příliš drahý materiál",
-        "Výrobci ztratili zájem o menší čipy",
-        "Software nedokáže využít menší tranzistory"
+        "Elektrony jím protunelují, i když má být uzavřený",
+        "Začne příliš rychle stárnout vlivem koroze materiálu",
+        "Vyžaduje desetinásobně vyšší napětí k sepnutí gate",
+        "Reaguje pomaleji než předchozí 7nm generace tranzistorů"
       ],
       "correct": [0],
-      "explanation": "Na úrovni jednotlivých elektronů začínají hrát roli kvantové a termodynamické efekty, které narušují spolehlivost."
+      "explanation": "Kvantové tunelování — elektron projde izolační bariérou, i když by k tomu klasicky neměl mít energii. Pod 3 nm to přestává být zanedbatelné."
     },
     {
-      "question": "Co je 'úzké hrdlo' v současných datových centrech?",
+      "question": "Co spotřebovává v dnešním datacentru víc energie než samotný optický přenos po vlákně?",
       "type": "single",
       "points": 2,
       "options": [
-        "Nedostatek optických vláken",
-        "Neustálá konverze mezi světlem a elektřinou u procesorů",
-        "Pomalé pevné disky",
-        "Nedostatek programátorů"
-      ],
-      "correct": [1],
-      "explanation": "Data cestují opticky, ale u čipu se musí převést na elektrický signál a zpět — tam se ztrácí rychlost i energie."
-    },
-    {
-      "question": "Jakou klíčovou výhodu má světlo oproti elektronům pro přenos dat?",
-      "type": "single",
-      "points": 2,
-      "options": [
-        "Fotony mají elektrický náboj",
-        "Světlo je levnější na výrobu",
-        "Různé vlnové délky nesou paralelně nezávislé datové toky",
-        "Fotony se pohybují pomaleji, ale spolehlivěji"
+        "Mechanika otáčejících se ventilátorů serverů",
+        "Optické kabely se rychle opotřebovávají a hřejí",
+        "Převody mezi elektrickým a optickým signálem na koncích",
+        "Magnetická pole rušící okolní elektroniku v rackách"
       ],
       "correct": [2],
-      "explanation": "Multiplexování vlnových délek umožňuje přenášet více datových toků jedním kanálem bez interference."
+      "explanation": "Samotný optický přenos je téměř bezztrátový, ale opto-elektronická konverze na obou koncích vlákna žere většinu rozpočtu. Proto se cílí integrace optiky přímo do čipu."
     },
     {
-      "question": "Proč fotonické čipy řeší problém přehřívání lépe než elektronika?",
-      "type": "single",
-      "points": 1,
-      "options": [
-        "Používají aktivní vodní chlazení",
-        "Fotony nemají náboj a téměř neprodukují teplo",
-        "Pracují jen při nízkých teplotách",
-        "Používají speciální chladicí kapalinu"
-      ],
-      "correct": [1],
-      "explanation": "Na rozdíl od elektronů, které narážejí na odpor materiálu a generují teplo, fotony procházejí optickými strukturami s minimálním zahříváním."
-    },
-    {
-      "question": "Proč je rychlá komunikace mezi čipy důležitější než samotný výkon jednotlivého čipu pro AI?",
+      "question": "Proč může jedno optické vlákno přenášet desítky paralelních datových toků naráz?",
       "type": "single",
       "points": 3,
       "options": [
-        "AI modely běží vždy jen na jednom čipu",
-        "Trénování AI vyžaduje tisíce spolupracujících čipů sdílejících data",
-        "Komunikace mezi čipy je vždy rychlejší než výpočet",
-        "AI nepotřebuje velký výkon, jen hodně paměti"
+        "Data se rychle střídají v jemném časovém multiplexu",
+        "Fotony letí různou rychlostí podle typu obsažených dat",
+        "Každý tok jede na jiné vlnové délce a navzájem se neruší",
+        "Vlákno se uvnitř větví do mnoha samostatných jader"
       ],
-      "correct": [1],
-      "explanation": "Moderní AI systémy propojují tisíce GPU do jednoho celku — výkon je omezen rychlostí výměny dat mezi nimi."
+      "correct": [2],
+      "explanation": "Wavelength-division multiplexing (WDM): různé barvy světla se sečtou v jednom vlákně a na druhém konci se rozdělí spektrálně. Stejný princip pohání moderní páteřní internet."
     },
     {
-      "question": "Jaký je rozdíl přístupu LightMatter oproti většině řešení optického propojení?",
-      "type": "single",
-      "points": 3,
-      "options": [
-        "Používají delší optická vlákna",
-        "Integrují optiku přímo pod výpočetní jednotky ve křemíkové vrstvě",
-        "Nahrazují GPU úplně optickými procesory",
-        "Používají pouze bezdrátový optický přenos"
-      ],
-      "correct": [1],
-      "explanation": "Místo externího připojení optiky umísťují fotonické obvody přímo do křemíkové struktury pod čip."
-    },
-    {
-      "question": "Co umožňuje přístup firmy Quant navíc oproti čistě přenosovým fotonickým řešením?",
-      "type": "single",
-      "points": 3,
-      "options": [
-        "Výpočty probíhají přímo v optické doméně bez převodu na elektřinu",
-        "Fungují pouze při absolutní nule",
-        "Používají klasické měděné spoje",
-        "Jejich čipy pracují jen s kvantovými počítači"
-      ],
-      "correct": [0],
-      "explanation": "Matematické operace (typicky pro ML) probíhají přímo se světlem — odpadá energeticky náročná konverze."
-    },
-    {
-      "question": "Jaké výzvy stojí před masovým nasazením fotonických čipů?",
-      "type": "multi",
-      "points": 3,
-      "options": [
-        "Fotonické komponenty jsou větší než tranzistory",
-        "Výroba je náročnější než u klasických čipů",
-        "Světlo je citlivé na teplotní změny",
-        "Fotonické čipy nefungují s existujícím softwarem"
-      ],
-      "correct": [0, 1, 2],
-      "explanation": "Velikost komponent, náročnost výroby a teplotní citlivost jsou hlavní praktické překážky."
-    },
-    {
-      "question": "Kolik procent světové elektřiny spotřebují datová centra?",
-      "type": "single",
-      "points": 1,
-      "options": [
-        "Méně než 0.1%",
-        "Přes 1% a rychle roste",
-        "Přes 25%",
-        "Přesně 10%"
-      ],
-      "correct": [1],
-      "explanation": "Přes 1% celosvětové spotřeby a trend je strmě rostoucí s rozvojem AI."
-    },
-    {
-      "question": "Jaký problém řeší firma Celestial AI?",
+      "question": "Proč fotonický spoj vyhrává nad měděným hlavně při delších vzdálenostech?",
       "type": "single",
       "points": 2,
       "options": [
-        "Pomalou komunikaci mezi procesorem a pamětí pomocí fotonických spojů",
-        "Vývoj nových programovacích jazyků pro optické čipy",
-        "Výrobu levnějších optických vláken pro domácnosti",
-        "Nahrazení GPU kvantovými procesory"
+        "Měď neumí přenášet vysokofrekvenční signály vůbec",
+        "Měď ztrácí signál exponenciálně, sklo téměř lineárně",
+        "Optické kabely jsou znatelně tenčí a flexibilnější",
+        "Měď přestává fungovat při běžných pokojových teplotách"
+      ],
+      "correct": [1],
+      "explanation": "V mědi rezistance a indukčnost rostou s délkou i frekvencí; signál se rychle utlumí a deformuje. V optickém vlákně se útlum pohybuje v desetinách dB na kilometr."
+    },
+    {
+      "question": "Jak provede fotonický čip násobení dvou matic v podstatě v jednom kroku?",
+      "type": "single",
+      "points": 3,
+      "options": [
+        "Sekvenčně sčítá bity ve speciální analogové paměti",
+        "Postupně měří fázové posuny jednoho jediného fotonu",
+        "Tabulkově vyhledává předem vypočtené dílčí součiny",
+        "Skládá světelné paprsky přes mřížku interferometrů"
+      ],
+      "correct": [3],
+      "explanation": "Mřížka Mach-Zehnderových interferometrů provede maticové násobení v jediném průchodu světla — paralelní analogový výpočet rychlostí světla."
+    },
+    {
+      "question": "Jaký typ úloh je pro analogové optické výpočty principiálně nejvhodnější?",
+      "type": "single",
+      "points": 3,
+      "options": [
+        "Šifrování bankovních a finančních transakcí",
+        "Souborový systém, alokace paměti, správa procesů",
+        "Operace, kde stačí přibližný výsledek a velký objem násobení",
+        "Databázové dotazy vyžadující přesnou shodu řetězců"
+      ],
+      "correct": [2],
+      "explanation": "Optika je analogová a má omezenou přesnost. Neuronovým sítím to nevadí — váhy mají vlastní šum. Pro účetnictví, šifry nebo databáze je to vyloučené."
+    },
+    {
+      "question": "Které z následujících jsou skutečné překážky komerčního nasazení fotonických čipů?",
+      "type": "multi",
+      "points": 4,
+      "options": [
+        "Optické komponenty zabírají na čipu výrazně větší plochu",
+        "Lasery degradují rychleji než tranzistory při běžných teplotách",
+        "Software pro neuronové sítě by se musel přepsat do nového jazyka",
+        "Citlivost na teplotní výkyvy mění index lomu a tím přesnost"
+      ],
+      "correct": [0, 1, 3],
+      "explanation": "Fyzická velikost, životnost laserů a teplotní stabilita jsou reálné problémy. Software se řeší vrstvou abstrakce — z PyTorch nebo TensorFlow se kompiluje stejně jako pro GPU/TPU."
+    },
+    {
+      "question": "Co znamená 'co-packaged optics' v kontextu nové generace AI hardware?",
+      "type": "single",
+      "points": 3,
+      "options": [
+        "Sériový optický kabel se zapojuje rovnou do USB-C portu",
+        "Procesor a chladič jsou integrovány do jednoho kompaktního modulu",
+        "Optika a procesor sdílejí společný napájecí a hodinový obvod",
+        "Optické transceivery sedí přímo vedle čipu na stejném substrátu"
+      ],
+      "correct": [3],
+      "explanation": "Místo optiky na okraji desky připojené k čipu měděnými stopami sedí transceivery milimetry od výpočetní die. Krátká elektrická dráha = drasticky méně ztrát."
+    },
+    {
+      "question": "Co je největší blízké riziko růstu spotřeby AI datacenter?",
+      "type": "single",
+      "points": 2,
+      "options": [
+        "Spotřeba překročí dostupné kapacity elektrické sítě v regionu",
+        "Výrobci přestanou stíhat dodávky GPU pro koncové zákazníky",
+        "Globální internet se kvůli zatížení znatelně zpomalí",
+        "Rozvoj AI se výrazně zpomalí kvůli nedostatku vývojářů"
       ],
       "correct": [0],
-      "explanation": "Propojuje výpočetní akcelerátory s pamětí opticky — snižuje latenci a spotřebu při práci s velkými AI modely."
+      "explanation": "Trénink GPT-4 se odhaduje na desítky MW; další generace narážejí na limity sítě. Microsoft i Google už uzavírají dlouhodobé kontrakty na jaderné zdroje energie."
+    },
+    {
+      "question": "Která z těchto tvrzení o fotonických procesorech jsou pravdivá?",
+      "type": "multi",
+      "points": 4,
+      "options": [
+        "Při násobení matic mohou být řádově energeticky efektivnější než GPU",
+        "Univerzálně nahradí CPU pro běžné aplikace v notebooku či mobilu",
+        "Vyžadují kompletně nový programovací model nepoužitelný s PyTorch",
+        "Mají smysl hlavně pro inference; pro tréning zatím méně"
+      ],
+      "correct": [0, 3],
+      "explanation": "Optika je výborná pro statické matematické operace s pevnými váhami (inference). Pro tréning vyhrává flexibilita digitálních GPU. CPU pro běžnou logiku s podmínkami a větvením potřebuje digitál — analogová optika to nezvládne."
     }
   ]
 }

@@ -50,8 +50,20 @@ async function fetchJson(url) {
 }
 
 function levelUrl(levelPath) {
-  const cleanPath = String(levelPath || '').replace(/^\/+/, '');
-  return `levels/${cleanPath.split('/').map(encodeURIComponent).join('/')}`;
+  const cleanPath = String(levelPath || '');
+  const segments = cleanPath.split('/');
+
+  if (
+    !cleanPath.endsWith('.json')
+    || cleanPath.startsWith('/')
+    || /^[a-z][a-z0-9+.-]*:/i.test(cleanPath)
+    || cleanPath.includes('\\')
+    || segments.includes('..')
+  ) {
+    throw new Error('Neplatná cesta k levelu.');
+  }
+
+  return `levels/${segments.map(encodeURIComponent).join('/')}`;
 }
 
 function initLevelsPage() {
@@ -254,7 +266,15 @@ function initQuizPage() {
   submitButton.addEventListener('click', submitAnswer);
   nextButton.addEventListener('click', nextQuestion);
 
-  fetchJson(levelUrl(levelPath))
+  let quizUrl;
+  try {
+    quizUrl = levelUrl(levelPath);
+  } catch (error) {
+    fail(error.message);
+    return;
+  }
+
+  fetchJson(quizUrl)
     .then((data) => {
       level = data;
       if (!Array.isArray(level.questions) || level.questions.length === 0) {
