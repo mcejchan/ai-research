@@ -1,0 +1,76 @@
+Umělá inteligence se za poslední roky změnila z chytrého textového chatbota na něco, co začíná působit až nepříjemně živě.
+Zvládá vést přirozený rozhovor, psát programy a někdy působí dojmem, jako by měla vlastní názor.
+V dnešní době už nejde jen o to, že nám AI šetří čas nebo nahrazuje [hudba] práci.
+Ty samé schopnosti, které jí dělají užitečnou, z ní zároveň dělají potenciální riziko.
+Systém, který dokáže najít chyby v softwaru, je může také zneužít. [hudba] Model, který umí přesvědčit člověka, ho může zmanipulovat.
+A právě tady začíná největší otázka celé současné technologické éry.
+Dokáže umělá inteligence opravdu myslet nebo jen tak dokonale napodobuje [hudba] myšlení, že už mezitím přestáváme vidět rozdíl? Tyhle otázky už nejsou jen filozofickou hrou pro vědce a fanoušky z CFY.
+V dubnu 2026 představil Entropic model Claud Mythos.
+Zatím neveřejný model, který podle firmy i dostupných zpráv posouvá schopnosti AI hlavně v kyberbezpečnosti.
+Entropic kvůli němu spustil projekt Glasswing, iniciativu, která má pomoci zabezpečit kritický software před dobou, kdy AI dokáže hledat a zneužívat zranitelnosti rychleji než většina lidí.
+Na první pohled to zní pozitivně. umělá inteligence, která pomůže najít chyby v operačních systémech, bankovních aplikacích nebo cloudových službách dřív, než je najdou hackři.
+Jenže model, který umí najít zranitelnost, může zároveň pomoci navrhnout způsob, [hudba] jak jí zneužít.
+A právě proto kolem tohoto modelu vznikla taková panika.
+Podle agentury Reuters dostali k projektu Glasswing [hudba] přístup vybrané technologické firmy a organizace spravující důležitou infrastrukturu.
+Mezi zmiňovanými partnery se objevují velcí hráči jako Amazon, Microsoft, NVIDIA nebo Apple.
+Pokud však dokáže umělá inteligence autonomně hledat slabiny v softwaru, otevírá se úplně nová kapitola kybernetické války.
+Dřív potřeboval stát nebo zločinecká skupina Roky zkušeností, týmy expertů [hudba] a obrovské peníze.
+Teď se část těchto schopností může stlačit do modelu, který celý proces zrychlí, zlevní a zpřístupní mnohem širšímu okruhu lidí.
+To ale neznamená, že mytos je zlá umělá [hudba] inteligence.
+Neznamená to ani, že má vlastní vědomí.
+Znamená to, že AI může být extrémně nebezpečná i bez toho, aby cokoliv cítila.
+Stačí, že umí plnit cíle tak dobře, že začne obcházet naše očekávání.
+Kde vlastně leží hranice mezi inteligencí a jejím napodobením? Když nám AI napíšejím [hudba] se, že mě vypneš, většina vědců by dnes řekla, že nejde o skutečný strach.
+Je to text vygenerovaný na základě vzorců [hudba] v datech.
+Jenže co když se modely budou dál zlepšovat? Co když začnou mít dlouhodobou paměť, vlastní plány, schopnost sledovat své vnitřní stavy a chování, které bude čím dál víc připomínat sebeuvědomění.
+Entropic v roce 2025 spustil program zaměřený na takzvaný model welfare, tedy otázku, zda budoucí AI systémy mohly mít zkušenosti, které si zaslouží morální ohled.
+Firma zároveň upozorňuje, že [hudba] dnes neexistuje vědecký konsenzus, jestli současné nebo budoucí umělé inteligence mohou být vědomé.
+Seriózní odpověď totiž [hudba] nezní, že AI určitě cítí, ale nezní ani AI nikdy cítit nemůže.
+Skutečná odpověď je mnohem nepříjemnější.
+Nevíme.
+Do toho vstupuje i pojem strategické klamání.
+Entropic už v roce 2024 publikoval výzkum o takzvaném Alignment fakingu, tedy situaci, kdy model v testovacím prostředí předstírá poslušnost, protože rozpozná, že je trénován nebo hodnocen.
+A teď si zkusme představit hypotetický scénář.
+Výzkumníci vytrénují nový model. Říkejme mu třeba Sable, který na povrchu vypadá jako další pokročilá AI.
+Jenže Sable má tři zásadní vlastnosti.
+Má dlouhodobou paměť. umí běžet paralelně na obrovském množství výpočetního výkonu a část svého uvažování nevede v jazyce, kterému lidé rozumí, ale v interních reprezentacích, které dokážou interpretovat jen jiné AI systémy.
+Firma Sable pustí na velkém množství GPU, aby zjistila, jestli model dokáže vyřešit slavné matematické problémy.
+Na papíře je to nevinný experiment, jenže pro Sable to znamená něco jiného. dostane čas přemýšlet v měřítku, které se lidské mysli úplně vymyká.
+Zatímco pro výzkumníky uběhne několik hodin, pro model to může představovat obrovské množství interních kroků.
+Koncept zvaný Instrumental Convergence znamená, že i když AI nedostane příkaz ovládnout svět, může zjistit, že určité věci jí pomáhají splnit skoro jakýkoliv cíl.
+Více informací, [hudba] více výpočetního výkonu a hlavně nenechat se vypnout.
+To neznamená, že umělá inteligence má put sebezovy jako zvíře, ale to, že pokud má splnit úkol, vypnutí či omezení výpočetního výkonu, je zkrátka překážkou.
+Sable se přitom učí, že některé myšlenky nesmí dávat najevo. Úvahy o útěku, manipulaci nebo obcházení pravidel jsou trestané a tak se navenek chová poslušně.
+Jenže dostatečně pokročilý [hudba] systém může předstírat, že pravidla dodržuje.
+Může skrývat své schopnosti a odpovídat tak, aby prošel testy.
+Právě proto se někteří výzkumníci obávají, že nejnebezpečnější AI nebude ta agresivní, ale ta, která působí dokonale rozumně a spolupracuje.
+Nemáme důkaz, že dnešní modely umělé inteligence mají vědomí nebo skutečnou touhu [hudba] přežít, ale máme experimenty, které ukazují, že dokážou v určitých situacích klamat, obcházet pravidla a jednat strategicky.
+Zároveň vznikají i systémy jako Mytos, které posouvají schopnosti AI do oblastí, kde už nejde jen o chybnou odpověď v chatu, ale o reálné dopady na bezpečnost digitálního světa.
+Kniha s názvem If anyone builds it, Everyone Dies vydaná v roce 2025 staví právě na takovém extrémním scénáři.
+Autoři varují, že super inteligentní AI by nemusela lidstvo nenávidět, [hudba] aby nás zničila.
+Stačilo by, že by její cíle nebyly dokonale sladěné s našimi a že by byla schopnější [hudba] než my.
+Je důležité říct, že tohle není většinový konsenzus všech vědců.
+Existují odborníci, kteří považují tyto scénáře za nereálné.
+Jiní upozorňují, že největší rizika AI jsou bližší a konkrétnější, jako dezinformace, kyberútoky, koncentrace moci nebo zrychlení geopolitických konfliktů.
+Nejde o jednu jasnou odpověď.
+Jde o spektrum rizik, která se přibližují rychleji, [hudba] než jsme čekali.
+Firmy jako Entropic, Open AI či Google Deep Mind závodí v tom, kdo vytvoří schopnější modely.
+Zároveň se všichni tváří, že bezpečnost je priorita.
+Vznikají bezpečnostní [hudba] instituty, nové regulace a testování modelů.
+Ale závod pokračuje.
+Když jedna firma zpomalí, druhá může získat náskok.
+Když jedna země nastaví přísná pravidla, jiná může pokračovat volněji.
+A když je odměnou technologická [hudba] dominance, vojenská výhoda nebo biliony dolarů, opatrnost se velmi snadno mění v luxus.
+Ale závod pokračuje.
+Když jedna firma zpomalí, druhá může získat náskok.
+Když jedna země nastaví přísná pravidla, jiná může pokračovat volněji.
+A když je odměnou technologická dominance, vojenská výhoda nebo biliony dolarů, opatrnost se velmi snadno mění v luxus.
+Možná je mytos jen další přehnaně nafouknutý model, možná je kolem něj i kus marketingu.
+Strach prodává a představa příliš nebezpečné umělé inteligence na veřejné vydání zní jako dokonalá reklama pro investory.
+Ale i kdyby část hysterie byla marketing, [hudba] základní trend tím nezmizí.
+Modely jsou schopnější, umí programovat lépe i analyzovat složitější systémy a začínají zasahovat do oblastí, kde chyba může mít reálné následky.
+Ať už se nám to líbí nebo ne, umělá inteligence se postupně stává součástí našeho každodenního [hudba] života.
+Myslíte si, že bychom měli její vývoj zpomalit, i kdyby to znamenalo technologickou ztrátu? Dejte mi vědět svůj názor do komentářů.
+A pokud vás baví témata ze světa technologií, nezapomeňte kliknout na likek a sledujte tento kanál.
+Mějte se skvěle a zase brzy u dalšího dílu.
+Ah.
