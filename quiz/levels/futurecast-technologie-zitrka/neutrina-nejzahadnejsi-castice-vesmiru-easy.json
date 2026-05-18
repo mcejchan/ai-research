@@ -1,0 +1,114 @@
+{
+  "title": "Neutrina: Nejzáhadnější částice vesmíru (Easy)",
+  "channel": "FutureCast – Technologie Zítřka",
+  "url": "https://www.youtube.com/watch?v=gq8yqGube18",
+  "thumbnail": "https://i.ytimg.com/vi/gq8yqGube18/maxresdefault.jpg",
+  "date": "2026-05-18",
+  "difficulty": "easy",
+  "questions": [
+    {
+      "question": "Co je neutrino?",
+      "type": "single",
+      "points": 1,
+      "options": [
+        "Malá hvězda",
+        "Typ planety",
+        "Drobná částice, která skoro nereaguje s ničím",
+        "Druh záření z telefonu"
+      ],
+      "correct": [2],
+      "explanation": "Neutrino je malinká částice, která prolétne skrz cokoli — hvězdy, planety, i tvoje tělo — jako by tam nic nebylo."
+    },
+    {
+      "question": "Proč je tak těžké neutrina zachytit?",
+      "type": "single",
+      "points": 1,
+      "options": [
+        "Jsou neviditelná a téměř se nesráží s ničím",
+        "Jsou příliš velká",
+        "Létají jen v noci",
+        "Existují jen ve vesmíru"
+      ],
+      "correct": [0],
+      "explanation": "Neutrina proletí skrz planetu, aniž by se čehokoli dotkla — proto potřebujeme obrovské detektory, aby se občas jedno chytilo."
+    },
+    {
+      "question": "Kde vědci stavějí detektory neutrin?",
+      "type": "multi",
+      "points": 2,
+      "options": [
+        "Hluboko pod zemí v horách",
+        "Pod antarktickým ledem",
+        "Na střechách domů",
+        "Na Měsíci"
+      ],
+      "correct": [0, 1],
+      "explanation": "Pod zemí a pod ledem — vrstva materiálu nad detektorem odstíní rušivé záření, ale neutrina projdou."
+    },
+    {
+      "question": "Odkud k nám neutrina přilétají?",
+      "type": "single",
+      "points": 1,
+      "options": [
+        "Z nitra hvězd a z explozí supernov",
+        "Z televizních vysílačů",
+        "Z jádra Země",
+        "Z oblak"
+      ],
+      "correct": [0],
+      "explanation": "Vznikají při jaderných reakcích ve hvězdách (i v našem Slunci) a při výbuších supernov."
+    },
+    {
+      "question": "Co je zvláštního na tom, jak neutrina 'mění identitu' za letu?",
+      "type": "single",
+      "points": 2,
+      "options": [
+        "Přecházejí mezi třemi typy — říká se tomu oscilace",
+        "Mění barvu podle rychlosti",
+        "Rozdělí se na dvě částice",
+        "Zmizí a znovu se objeví jinde"
+      ],
+      "correct": [0],
+      "explanation": "Neutrino může během cesty přeskočit z jednoho typu na jiný — za objev tohoto jevu dostali vědci Nobelovu cenu."
+    },
+    {
+      "question": "Jak velký je detektor IceCube v Antarktidě?",
+      "type": "single",
+      "points": 1,
+      "options": [
+        "Jako krabička od bot",
+        "Kubický kilometr ledu",
+        "Velikost fotbalového hřiště",
+        "Vejde se do místnosti"
+      ],
+      "correct": [1],
+      "explanation": "Celý kubický kilometr antarktického ledu plný senzorů — největší neutrinový teleskop na světě."
+    },
+    {
+      "question": "K čemu by neutrina mohla jednou sloužit v komunikaci?",
+      "type": "single",
+      "points": 2,
+      "options": [
+        "K posílání zpráv skrz celou Zemi bez kabelů nebo satelitů",
+        "K rychlejšímu internetu doma",
+        "K nabíjení baterií na dálku",
+        "Ke streamování filmů"
+      ],
+      "correct": [0],
+      "explanation": "Protože projdou čímkoli, mohly by teoreticky posílat signály přímo skrz planetu — třeba ponorkám pod vodou."
+    },
+    {
+      "question": "Mají neutrina nějakou hmotnost?",
+      "type": "single",
+      "points": 2,
+      "options": [
+        "Vůbec žádnou",
+        "Ano, ale extrémně malou — dlouho se myslelo, že ne",
+        "Stejnou jako elektron",
+        "Víc než atom"
+      ],
+      "correct": [1],
+      "explanation": "Fyzici si dlouho mysleli, že nemají žádnou hmotnost. Experimenty kolem roku 2000 ukázaly, že přece jen malinkou mají."
+    }
+  ]
+}

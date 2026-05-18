@@ -54,33 +54,57 @@ function initLevelsPage() {
   const empty = document.getElementById('empty-state');
   const count = document.getElementById('level-count');
   const scores = getScores();
+  const filters = Array.from(document.querySelectorAll('[data-difficulty-filter]'));
+  let allLevels = [];
+  let activeDifficulty = 'all';
+
+  function renderLevels() {
+    const levels = activeDifficulty === 'all'
+      ? allLevels
+      : allLevels.filter((level) => (level.difficulty === 'easy' ? 'easy' : 'hard') === activeDifficulty);
+
+    count.textContent = activeDifficulty === 'all'
+      ? `${allLevels.length} level${allLevels.length === 1 ? '' : 's'}`
+      : `${levels.length}/${allLevels.length} level${levels.length === 1 ? '' : 's'}`;
+    show(empty, levels.length === 0);
+
+    grid.innerHTML = levels.map((level) => {
+      const score = scores[level.path];
+      const played = score ? `<span class="played-badge">Best ${score.best}/${score.max}</span>` : '';
+      const thumb = level.thumbnail
+        ? `<img class="level-thumb" src="${escapeHtml(level.thumbnail)}" alt="${escapeHtml(level.title)} thumbnail" loading="lazy">`
+        : '';
+      const difficulty = level.difficulty === 'easy' ? 'easy' : 'hard';
+      const difficultyLabel = difficulty === 'easy' ? 'Easy' : 'Hard';
+
+      return `
+        <a class="level-card" href="quiz.html?level=${encodeURIComponent(level.path)}">
+          <div class="level-thumb-wrap">${thumb}${played}<span class="difficulty-badge difficulty-${difficulty}">${difficultyLabel}</span></div>
+          <div class="level-body">
+            <h2>${escapeHtml(level.title)}</h2>
+            <p class="label">${escapeHtml(level.channel)}</p>
+            <div class="level-meta">
+              <span class="chip">${level.questionCount} otázek</span>
+              <span class="score-chip">${level.maxPoints} bodů</span>
+              ${level.date ? `<span class="chip">${escapeHtml(level.date)}</span>` : ''}
+            </div>
+          </div>
+        </a>`;
+    }).join('');
+  }
+
+  filters.forEach((button) => {
+    button.addEventListener('click', () => {
+      activeDifficulty = button.dataset.difficultyFilter || 'all';
+      filters.forEach((filter) => filter.classList.toggle('active', filter === button));
+      renderLevels();
+    });
+  });
 
   fetchJson('/api/levels')
     .then((levels) => {
-      count.textContent = `${levels.length} level${levels.length === 1 ? '' : 's'}`;
-      show(empty, levels.length === 0);
-
-      grid.innerHTML = levels.map((level) => {
-        const score = scores[level.path];
-        const played = score ? `<span class="played-badge">Best ${score.best}/${score.max}</span>` : '';
-        const thumb = level.thumbnail
-          ? `<img class="level-thumb" src="${escapeHtml(level.thumbnail)}" alt="${escapeHtml(level.title)} thumbnail" loading="lazy">`
-          : '';
-
-        return `
-          <a class="level-card" href="quiz.html?level=${encodeURIComponent(level.path)}">
-            <div class="level-thumb-wrap">${thumb}${played}</div>
-            <div class="level-body">
-              <h2>${escapeHtml(level.title)}</h2>
-              <p class="label">${escapeHtml(level.channel)}</p>
-              <div class="level-meta">
-                <span class="chip">${level.questionCount} otázek</span>
-                <span class="score-chip">${level.maxPoints} bodů</span>
-                ${level.date ? `<span class="chip">${escapeHtml(level.date)}</span>` : ''}
-              </div>
-            </div>
-          </a>`;
-      }).join('');
+      allLevels = levels;
+      renderLevels();
     })
     .catch((error) => {
       count.textContent = 'Offline';

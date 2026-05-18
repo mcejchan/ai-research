@@ -121,6 +121,38 @@ a {
   font-size: 1.35rem;
 }
 
+.difficulty-filter {
+  display: inline-flex;
+  gap: 8px;
+  padding: 5px;
+  border: 1px solid rgba(0, 240, 255, 0.22);
+  border-radius: 999px;
+  background: rgba(0, 240, 255, 0.045);
+}
+
+.filter-button {
+  min-height: 34px;
+  padding: 7px 12px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  background: transparent;
+  cursor: pointer;
+}
+
+.filter-button.active,
+.filter-button:hover,
+.filter-button:focus-visible {
+  border-color: rgba(0, 240, 255, 0.42);
+  color: var(--text);
+  background: rgba(0, 240, 255, 0.12);
+  box-shadow: 0 0 18px rgba(0, 240, 255, 0.16);
+}
+
 .ghost-link,
 .primary-button,
 .secondary-button {
@@ -200,6 +232,32 @@ a {
   font-family: var(--mono);
   font-size: 0.72rem;
   background: rgba(5, 20, 18, 0.82);
+}
+
+.difficulty-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  padding: 7px 11px;
+  border-radius: 999px;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  background: rgba(5, 12, 20, 0.82);
+}
+
+.difficulty-easy {
+  border: 1px solid rgba(49, 255, 159, 0.55);
+  color: var(--green);
+  box-shadow: 0 0 18px rgba(49, 255, 159, 0.22);
+}
+
+.difficulty-hard {
+  border: 1px solid rgba(255, 191, 60, 0.6);
+  color: var(--amber);
+  box-shadow: 0 0 18px rgba(255, 191, 60, 0.24);
 }
 
 .level-body {
@@ -418,6 +476,10 @@ a {
   .actions {
     align-items: stretch;
     flex-direction: column;
+  }
+
+  .difficulty-filter {
+    justify-content: center;
   }
 
   .quiz-header {

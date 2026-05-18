@@ -71,6 +71,7 @@ async function getLevels() {
       const questions = Array.isArray(data.questions) ? data.questions : [];
       const maxPoints = questions.reduce((total, question) => total + Number(question.points || 0), 0);
       const relativePath = path.relative(LEVELS_DIR, file).split(path.sep).join('/');
+      const difficulty = data.difficulty === 'easy' ? 'easy' : 'hard';
 
       levels.push({
         path: relativePath,
@@ -78,6 +79,7 @@ async function getLevels() {
         channel: data.channel || 'Unknown Channel',
         thumbnail: data.thumbnail || '',
         date: data.date || '',
+        difficulty,
         questionCount: questions.length,
         maxPoints,
       });

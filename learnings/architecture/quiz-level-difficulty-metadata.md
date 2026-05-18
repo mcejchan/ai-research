@@ -1,3 +1,12 @@
+---
+title: "Quiz levels: difficulty as API metadata"
+date: 2026-05-18
+category: architecture
+component: frontend
+tags: [quiz, api, metadata, difficulty]
+file_type: checklist
+---
+
 # Quiz levels: difficulty as API metadata
 
 The quiz dashboard keeps level data in JSON files and renders the level select screen from `/api/levels`. If the UI needs a new card attribute such as difficulty, add it in two places: the level JSON schema and the metadata object returned by `getLevels()` in `quiz/server.js`.
