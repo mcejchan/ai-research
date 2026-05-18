@@ -36,6 +36,13 @@ function show(element, visible) {
   if (element) element.classList.toggle('hidden', !visible);
 }
 
+function formatPoints(points) {
+  const value = Number(points || 0);
+  if (value === 1) return '1 bod';
+  if (value >= 2 && value <= 4) return `${value} body`;
+  return `${value} bodů`;
+}
+
 async function fetchJson(url) {
   const response = await fetch(url);
   if (!response.ok) throw new Error(`Request failed: ${response.status}`);
@@ -124,6 +131,7 @@ function initQuizPage() {
   function renderQuestion() {
     const question = level.questions[currentIndex];
     answered = false;
+    feedback.innerHTML = '';
     show(feedback, false);
     show(submitButton, true);
     show(nextButton, false);
@@ -133,7 +141,7 @@ function initQuizPage() {
     setText('quiz-status', `${score}/${maxPoints()} pts`);
     setText('question-counter', `Otázka ${currentIndex + 1} z ${level.questions.length}`);
     setText('question-type', question.type === 'multi' ? 'multi-select' : 'single-select');
-    setText('question-points', `${Number(question.points || 0)} pts`);
+    setText('question-points', formatPoints(question.points));
     setText('question-text', question.question || 'Bez textu otázky');
 
     const inputType = question.type === 'multi' ? 'checkbox' : 'radio';
@@ -176,9 +184,13 @@ function initQuizPage() {
     });
 
     const correctText = correct.map((index) => question.options[index]).filter(Boolean).join(', ');
-    feedback.textContent = isCorrect
+    const feedbackText = isCorrect
       ? `Správně. +${points} bodů.`
       : `Špatně. Správná odpověď: ${correctText || 'není uvedena'}.`;
+    const explanation = question.explanation
+      ? `<div class="feedback-explanation">${escapeHtml(question.explanation)}</div>`
+      : '';
+    feedback.innerHTML = `${escapeHtml(feedbackText)}${explanation}`;
     feedback.className = `feedback ${isCorrect ? 'success' : 'fail'}`;
     show(feedback, true);
     show(submitButton, false);

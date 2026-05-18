@@ -1,0 +1,139 @@
+{
+  "title": "Fotonické čipy: Přichází konec klasických procesorů?",
+  "channel": "FutureCast – Technologie Zítřka",
+  "url": "https://www.youtube.com/watch?v=MEs_UEPfAOg",
+  "thumbnail": "https://i.ytimg.com/vi/MEs_UEPfAOg/maxresdefault.jpg",
+  "date": "2026-05-18",
+  "questions": [
+    {
+      "question": "Proč klasická křemíková elektronika naráží na limity další miniaturizace?",
+      "type": "single",
+      "points": 1,
+      "options": [
+        "Tranzistory jsou tak malé, že jejich chování ovlivňují kvantové jevy",
+        "Křemík je příliš drahý materiál",
+        "Výrobci ztratili zájem o menší čipy",
+        "Software nedokáže využít menší tranzistory"
+      ],
+      "correct": [0],
+      "explanation": "Na úrovni jednotlivých elektronů začínají hrát roli kvantové a termodynamické efekty, které narušují spolehlivost."
+    },
+    {
+      "question": "Co je 'úzké hrdlo' v současných datových centrech?",
+      "type": "single",
+      "points": 2,
+      "options": [
+        "Nedostatek optických vláken",
+        "Neustálá konverze mezi světlem a elektřinou u procesorů",
+        "Pomalé pevné disky",
+        "Nedostatek programátorů"
+      ],
+      "correct": [1],
+      "explanation": "Data cestují opticky, ale u čipu se musí převést na elektrický signál a zpět — tam se ztrácí rychlost i energie."
+    },
+    {
+      "question": "Jakou klíčovou výhodu má světlo oproti elektronům pro přenos dat?",
+      "type": "single",
+      "points": 2,
+      "options": [
+        "Fotony mají elektrický náboj",
+        "Světlo je levnější na výrobu",
+        "Různé vlnové délky nesou paralelně nezávislé datové toky",
+        "Fotony se pohybují pomaleji, ale spolehlivěji"
+      ],
+      "correct": [2],
+      "explanation": "Multiplexování vlnových délek umožňuje přenášet více datových toků jedním kanálem bez interference."
+    },
+    {
+      "question": "Proč fotonické čipy řeší problém přehřívání lépe než elektronika?",
+      "type": "single",
+      "points": 1,
+      "options": [
+        "Používají aktivní vodní chlazení",
+        "Fotony nemají náboj a téměř neprodukují teplo",
+        "Pracují jen při nízkých teplotách",
+        "Používají speciální chladicí kapalinu"
+      ],
+      "correct": [1],
+      "explanation": "Na rozdíl od elektronů, které narážejí na odpor materiálu a generují teplo, fotony procházejí optickými strukturami s minimálním zahříváním."
+    },
+    {
+      "question": "Proč je rychlá komunikace mezi čipy důležitější než samotný výkon jednotlivého čipu pro AI?",
+      "type": "single",
+      "points": 3,
+      "options": [
+        "AI modely běží vždy jen na jednom čipu",
+        "Trénování AI vyžaduje tisíce spolupracujících čipů sdílejících data",
+        "Komunikace mezi čipy je vždy rychlejší než výpočet",
+        "AI nepotřebuje velký výkon, jen hodně paměti"
+      ],
+      "correct": [1],
+      "explanation": "Moderní AI systémy propojují tisíce GPU do jednoho celku — výkon je omezen rychlostí výměny dat mezi nimi."
+    },
+    {
+      "question": "Jaký je rozdíl přístupu LightMatter oproti většině řešení optického propojení?",
+      "type": "single",
+      "points": 3,
+      "options": [
+        "Používají delší optická vlákna",
+        "Integrují optiku přímo pod výpočetní jednotky ve křemíkové vrstvě",
+        "Nahrazují GPU úplně optickými procesory",
+        "Používají pouze bezdrátový optický přenos"
+      ],
+      "correct": [1],
+      "explanation": "Místo externího připojení optiky umísťují fotonické obvody přímo do křemíkové struktury pod čip."
+    },
+    {
+      "question": "Co umožňuje přístup firmy Quant navíc oproti čistě přenosovým fotonickým řešením?",
+      "type": "single",
+      "points": 3,
+      "options": [
+        "Výpočty probíhají přímo v optické doméně bez převodu na elektřinu",
+        "Fungují pouze při absolutní nule",
+        "Používají klasické měděné spoje",
+        "Jejich čipy pracují jen s kvantovými počítači"
+      ],
+      "correct": [0],
+      "explanation": "Matematické operace (typicky pro ML) probíhají přímo se světlem — odpadá energeticky náročná konverze."
+    },
+    {
+      "question": "Jaké výzvy stojí před masovým nasazením fotonických čipů?",
+      "type": "multi",
+      "points": 3,
+      "options": [
+        "Fotonické komponenty jsou větší než tranzistory",
+        "Výroba je náročnější než u klasických čipů",
+        "Světlo je citlivé na teplotní změny",
+        "Fotonické čipy nefungují s existujícím softwarem"
+      ],
+      "correct": [0, 1, 2],
+      "explanation": "Velikost komponent, náročnost výroby a teplotní citlivost jsou hlavní praktické překážky."
+    },
+    {
+      "question": "Kolik procent světové elektřiny spotřebují datová centra?",
+      "type": "single",
+      "points": 1,
+      "options": [
+        "Méně než 0.1%",
+        "Přes 1% a rychle roste",
+        "Přes 25%",
+        "Přesně 10%"
+      ],
+      "correct": [1],
+      "explanation": "Přes 1% celosvětové spotřeby a trend je strmě rostoucí s rozvojem AI."
+    },
+    {
+      "question": "Jaký problém řeší firma Celestial AI?",
+      "type": "single",
+      "points": 2,
+      "options": [
+        "Pomalou komunikaci mezi procesorem a pamětí pomocí fotonických spojů",
+        "Vývoj nových programovacích jazyků pro optické čipy",
+        "Výrobu levnějších optických vláken pro domácnosti",
+        "Nahrazení GPU kvantovými procesory"
+      ],
+      "correct": [0],
+      "explanation": "Propojuje výpočetní akcelerátory s pamětí opticky — snižuje latenci a spotřebu při práci s velkými AI modely."
+    }
+  ]
+}
