@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>YT Knowledge Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="levels">
+  <main class="shell">
+    <section class="hero panel">
+      <p class="eyebrow">Knowledge extraction arena</p>
+      <h1>YT Knowledge Quiz</h1>
+      <p class="lede">Vyber level z YouTube znalostní báze a ověř, co ti zůstalo v hlavě.</p>
+    </section>
+
+    <section class="toolbar">
+      <div>
+        <span class="label">Level Database</span>
+        <strong id="level-count">Scanning...</strong>
+      </div>
+      <a class="ghost-link" href="quiz.html">Direct quiz console</a>
+    </section>
+
+    <section id="levels-grid" class="levels-grid" aria-live="polite"></section>
+    <p id="empty-state" class="empty-state hidden">Zatím nejsou dostupné žádné levely. Přidej JSON soubory do <code>quiz/levels/</code>.</p>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

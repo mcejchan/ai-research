@@ -1,3 +1,12 @@
+---
+title: "Self-contained quiz dashboard without dependencies"
+date: 2026-05-18
+category: architecture
+component: frontend
+tags: [vanilla-js, nodejs, static-server, localstorage]
+file_type: decisions
+---
+
 # Self-contained quiz dashboard without dependencies
 
 For small knowledge-base utilities in this repository, a complete browser app can stay dependency-free by pairing a tiny Node.js `http` server with vanilla DOM code.

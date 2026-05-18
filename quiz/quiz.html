@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quiz Console</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="quiz">
+  <main class="shell quiz-shell">
+    <nav class="top-nav">
+      <a class="ghost-link" href="index.html">Zpět na levely</a>
+      <span id="quiz-status" class="label">Initializing...</span>
+    </nav>
+
+    <section id="quiz-loading" class="panel state-panel">Načítám level...</section>
+    <section id="quiz-error" class="panel state-panel hidden"></section>
+
+    <section id="quiz-screen" class="panel quiz-panel hidden">
+      <div class="progress-wrap" aria-label="Postup kvízem">
+        <div id="progress-bar" class="progress-bar"></div>
+      </div>
+
+      <header class="quiz-header">
+        <img id="quiz-thumb" class="quiz-thumb" alt="Video thumbnail">
+        <div>
+          <p id="question-counter" class="eyebrow">Question</p>
+          <h1 id="quiz-title">Quiz</h1>
+          <p id="quiz-channel" class="lede"></p>
+        </div>
+      </header>
+
+      <article class="question-card">
+        <div class="question-meta">
+          <span id="question-type" class="chip">single</span>
+          <span id="question-points" class="score-chip">0 pts</span>
+        </div>
+        <h2 id="question-text"></h2>
+        <form id="answers-form" class="answers-form"></form>
+        <div id="feedback" class="feedback hidden"></div>
+        <div class="actions">
+          <button id="submit-answer" class="primary-button" type="button">Odpovědět</button>
+          <button id="next-question" class="secondary-button hidden" type="button">Další otázka</button>
+        </div>
+      </article>
+    </section>
+
+    <section id="results-screen" class="panel results-panel hidden">
+      <p class="eyebrow">Run complete</p>
+      <h1>Výsledek</h1>
+      <p id="final-score" class="final-score"></p>
+      <p id="best-score" class="lede"></p>
+      <div id="results-list" class="results-list"></div>
+      <a class="primary-button link-button" href="index.html">Zpět na levely</a>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
