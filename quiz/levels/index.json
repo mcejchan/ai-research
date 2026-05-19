@@ -1,13 +1,23 @@
 [
   {
+    "path": "futurecast-technologie-zitrka/artemis-ii-prvni-lide-miri-k-mesici-hard.json",
+    "title": "Artemis II – První lidé míří k Měsíci (Hard)",
+    "channel": "FutureCast – Technologie zítřka",
+    "thumbnail": "https://i.ytimg.com/vi/sPeT471KWp4/maxresdefault.jpg",
+    "date": "2026-05-19",
+    "difficulty": "hard",
+    "questionCount": 10,
+    "maxPoints": 21
+  },
+  {
     "path": "futurecast-technologie-zitrka/fotonicke-cipy-prichazi-konec-klasickych-procesoru-easy.json",
     "title": "Fotonické čipy (Easy)",
     "channel": "FutureCast – Technologie Zítřka",
     "thumbnail": "https://i.ytimg.com/vi/MEs_UEPfAOg/maxresdefault.jpg",
     "date": "2026-05-18",
     "difficulty": "easy",
-    "questionCount": 8,
-    "maxPoints": 12
+    "questionCount": 9,
+    "maxPoints": 14
   },
   {
     "path": "futurecast-technologie-zitrka/fotonicke-cipy-prichazi-konec-klasickych-procesoru-hard.json",
@@ -26,8 +36,8 @@
     "thumbnail": "https://i.ytimg.com/vi/gq8yqGube18/maxresdefault.jpg",
     "date": "2026-05-18",
     "difficulty": "easy",
-    "questionCount": 8,
-    "maxPoints": 12
+    "questionCount": 9,
+    "maxPoints": 14
   },
   {
     "path": "futurecast-technologie-zitrka/neutrina-nejzahadnejsi-castice-vesmiru-hard.json",
@@ -37,7 +47,7 @@
     "date": "2026-05-18",
     "difficulty": "hard",
     "questionCount": 10,
-    "maxPoints": 23
+    "maxPoints": 25
   },
   {
     "path": "futurecast-technologie-zitrka/ziskala-ai-vedomi-novy-model-desi-i-samotne-vedce-easy.json",
@@ -46,8 +56,8 @@
     "thumbnail": "https://i.ytimg.com/vi/i3AnAM3ozVE/maxresdefault.jpg",
     "date": "2026-05-18",
     "difficulty": "easy",
-    "questionCount": 8,
-    "maxPoints": 14
+    "questionCount": 9,
+    "maxPoints": 19
   },
   {
     "path": "futurecast-technologie-zitrka/ziskala-ai-vedomi-novy-model-desi-i-samotne-vedce-hard.json",
@@ -57,6 +67,6 @@
     "date": "2026-05-18",
     "difficulty": "hard",
     "questionCount": 10,
-    "maxPoints": 22
+    "maxPoints": 26
   }
 ]
