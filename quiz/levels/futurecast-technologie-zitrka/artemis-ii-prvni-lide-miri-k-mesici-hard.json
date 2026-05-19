@@ -1,0 +1,141 @@
+{
+  "title": "Artemis II – První lidé míří k Měsíci (Hard)",
+  "channel": "FutureCast – Technologie zítřka",
+  "url": "https://www.youtube.com/watch?v=sPeT471KWp4",
+  "thumbnail": "https://i.ytimg.com/vi/sPeT471KWp4/maxresdefault.jpg",
+  "date": "2026-05-19",
+  "questions": [
+    {
+      "question": "V čem se program Artemis zásadně liší od programu Apollo z hlediska dlouhodobého záměru?",
+      "type": "single",
+      "points": 2,
+      "options": [
+        "Artemis buduje infrastrukturu pro pravidelné mise a trvalou přítomnost",
+        "Apollo budovalo trvalou infrastrukturu pro pravidelné lunární mise",
+        "Artemis je jednorázový demonstrační let bez dalších plánů",
+        "Apollo bylo mezinárodní spolupráce, Artemis je výhradně americký"
+      ],
+      "correct": [0],
+      "explanation": "Na rozdíl od Apolla, které bylo jednorázovým závodem, má Artemis ambici vybudovat dlouhodobou infrastrukturu pro pravidelné mise a trvalou přítomnost lidí mimo Zemi."
+    },
+    {
+      "question": "Proč mise Artemis 2 využívá takzvanou free return trajektorii?",
+      "type": "single",
+      "points": 2,
+      "options": [
+        "Šetří palivo potřebné pro manévry na lunární oběžné dráze",
+        "Gravitace sama navede loď zpět k Zemi při problémech",
+        "Zkracuje celkovou dobu mise na přibližně polovinu oproti plánu",
+        "Umožňuje přistání na povrchu bez přistávacího modulu"
+      ],
+      "correct": [1],
+      "explanation": "Free return trajektorie zajišťuje, že v případě technických problémů není nutné provádět složité korekce — samotná fyzika pomůže zajistit návrat posádky."
+    },
+    {
+      "question": "Co je hlavní funkcí evropského servisního modulu na lodi Orion?",
+      "type": "multi",
+      "points": 2,
+      "options": [
+        "Dodávka energie ze solárních panelů",
+        "Zásoby vody a kyslíku pro posádku",
+        "Hlavní motor a manévrovací systémy",
+        "Radiační stínění obytného prostoru lodi",
+        "Komunikační systém pro spojení se Zemí"
+      ],
+      "correct": [0, 1, 2],
+      "explanation": "Evropský servisní modul zajišťuje energii (solární panely), zásoby vody a kyslíku a obsahuje hlavní motor i manévrovací systémy."
+    },
+    {
+      "question": "Proč je vodní led na jižním pólu Měsíce tak zásadní pro budoucí mise?",
+      "type": "single",
+      "points": 3,
+      "options": [
+        "Obsahuje vzácné izotopy potřebné pro fúzní pohon raket",
+        "Slouží jako chladicí médium pro jaderné reaktory základny",
+        "Umožňuje výrobu kyslíku i paliva přímo na místě",
+        "Je nezbytný pro výrobu stavebních materiálů z regolitu"
+      ],
+      "correct": [2],
+      "explanation": "Voda představuje klíčový zdroj nejen pro přežití, ale i pro výrobu kyslíku a paliva — budoucí mise by nemusely být plně závislé na zásobování ze Země."
+    },
+    {
+      "question": "K čemu dojde, když se Orion dostane za odvrácenou stranu Měsíce?",
+      "type": "single",
+      "points": 1,
+      "options": [
+        "K aktivaci radiačního štítu kvůli zvýšenému záření",
+        "K výpadku komunikace na ~45 minut — Měsíc blokuje signál",
+        "K přepnutí na záložní navigaci bez GPS pokrytí",
+        "K odpojení servisního modulu pro test autonomie"
+      ],
+      "correct": [1],
+      "explanation": "Měsíc samotný blokuje rádiový signál — jde o očekávaný jev známý už z programu Apollo, trvající přibližně 45 minut."
+    },
+    {
+      "question": "Jakou roli hraje česká technologie na palubě Orionu?",
+      "type": "single",
+      "points": 2,
+      "options": [
+        "Navigační systém z ČVUT řídí korekce při návratu",
+        "Komunikační modul z CEITEC zajišťuje laserový přenos",
+        "Čipy Advacam měří kosmické záření a ověřují stínění",
+        "Senzory Pragoboardu monitorují integritu tepelného štítu"
+      ],
+      "correct": [2],
+      "explanation": "Součástí systému Hera je šest čipů pro měření radiace dodaných pražskou firmou Advacam — monitorují složení kosmického záření a pomáhají ověřit radiační stínění."
+    },
+    {
+      "question": "Proč bylo přistání na Měsíci přesunuto z Artemis 3 na Artemis 4?",
+      "type": "single",
+      "points": 2,
+      "options": [
+        "Mise Artemis 1 selhala při testování tepelné ochrany lodi",
+        "Technické výzvy ve vývoji landerů a skafandrů nové generace",
+        "Rozpočtové škrty amerického Kongresu zpozdily celý program",
+        "Politické rozhodnutí přesměrovat veškeré zdroje na Mars"
+      ],
+      "correct": [1],
+      "explanation": "NASA musela program přepracovat kvůli technickým výzvám ve vývoji lunárních landerů i skafandrů nové generace."
+    },
+    {
+      "question": "Co je stanice Gateway a jakou má plnit funkci?",
+      "type": "single",
+      "points": 3,
+      "options": [
+        "Přestupní stanice na oběžné dráze pro flexibilnější mise",
+        "Autonomní laboratoř pro těžbu nerostů na povrchu Měsíce",
+        "Komunikační satelit na libračním bodě pro nepřetržitý signál",
+        "Pozemní řídicí středisko v Houstonu pro lunární koordinaci"
+      ],
+      "correct": [0],
+      "explanation": "Gateway má fungovat jako přestupní bod mezi Zemí a povrchem Měsíce — umožní flexibilnější plánování misí a delší pobyt astronautů."
+    },
+    {
+      "question": "Proč je Měsíc považován za ideální testovací prostředí pro technologie na Mars?",
+      "type": "multi",
+      "points": 3,
+      "options": [
+        "Testování výroby energie v extrémních podmínkách",
+        "Testování recyklace vody a ochrany před radiací",
+        "Identická atmosféra jako na Marsu",
+        "Blízkost Země pro řešení problémů při náročných podmínkách",
+        "Testování dlouhodobého pobytu v izolaci"
+      ],
+      "correct": [0, 1, 3, 4],
+      "explanation": "Měsíc je ideální pro testování výroby energie, recyklace vody, ochrany před radiací a pobytu v izolaci. Je blízko Země, ale podmínky jsou reálně náročné. Nemá však atmosféru podobnou Marsu."
+    },
+    {
+      "question": "Co testovala nepilotovaná mise Artemis 1 v roce 2022?",
+      "type": "single",
+      "points": 1,
+      "options": [
+        "Spojení s Gateway stanicí — s částečným úspěchem",
+        "Tepelnou ochranu, navigaci a raketu SLS — úspěšně",
+        "Přistávací modul na povrchu Měsíce — neúspěšně",
+        "Skafandry nové generace při výstupu — mise odložena"
+      ],
+      "correct": [1],
+      "explanation": "Artemis 1 testovala tepelnou ochranu při návratu do atmosféry, navigační systémy a raketu SLS. Mise byla úspěšná."
+    }
+  ]
+}
