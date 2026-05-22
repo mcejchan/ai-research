@@ -1,0 +1,1767 @@
+[
+  {
+    "text": "You've probably seen the thousands of",
+    "start": 0.0,
+    "duration": 4.08
+  },
+  {
+    "text": "LinkedIn CEO posts saying that code is",
+    "start": 1.52,
+    "duration": 4.68
+  },
+  {
+    "text": "cheap and they can move faster than ever",
+    "start": 4.08,
+    "duration": 4.88
+  },
+  {
+    "text": "before. But what's happening is that AI",
+    "start": 6.2,
+    "duration": 5.24
+  },
+  {
+    "text": "has simply accelerated software entropy.",
+    "start": 8.96,
+    "duration": 4.24
+  },
+  {
+    "text": "In other words, codebases are falling",
+    "start": 11.44,
+    "duration": 4.64
+  },
+  {
+    "text": "apart faster than they ever have before.",
+    "start": 13.2,
+    "duration": 3.92
+  },
+  {
+    "text": "Because every time that you make a",
+    "start": 16.08,
+    "duration": 2.8
+  },
+  {
+    "text": "change that doesn't take into account",
+    "start": 17.12,
+    "duration": 4.04
+  },
+  {
+    "text": "the entire codebase, you are likely to",
+    "start": 18.88,
+    "duration": 4.68
+  },
+  {
+    "text": "introduce little things, weird things",
+    "start": 21.16,
+    "duration": 4.16
+  },
+  {
+    "text": "that make the codebase harder to change.",
+    "start": 23.56,
+    "duration": 3.68
+  },
+  {
+    "text": "And over time, that just snowballs and",
+    "start": 25.32,
+    "duration": 3.8
+  },
+  {
+    "text": "snowballs until you end up with a huge",
+    "start": 27.24,
+    "duration": 5.039
+  },
+  {
+    "text": "ball of mud. Sloppy, sloppy mud that is",
+    "start": 29.12,
+    "duration": 5.96
+  },
+  {
+    "text": "incredibly hard to reverse if you don't",
+    "start": 32.279,
+    "duration": 4.121
+  },
+  {
+    "text": "know how to do it. I've made a video",
+    "start": 35.08,
+    "duration": 3.2
+  },
+  {
+    "text": "about this before introducing folks to",
+    "start": 36.4,
+    "duration": 4.28
+  },
+  {
+    "text": "the idea of deep modules. And that video",
+    "start": 38.28,
+    "duration": 4.68
+  },
+  {
+    "text": "focuses more on prevention, how you can",
+    "start": 40.68,
+    "duration": 4.6
+  },
+  {
+    "text": "prevent your setup from getting to that",
+    "start": 42.96,
+    "duration": 4.44
+  },
+  {
+    "text": "point. Let's now focus on the cure, how",
+    "start": 45.28,
+    "duration": 4.28
+  },
+  {
+    "text": "you can take a codebase that feels like",
+    "start": 47.4,
+    "duration": 4.24
+  },
+  {
+    "text": "it's beyond repair and rescue it. And",
+    "start": 49.56,
+    "duration": 3.6
+  },
+  {
+    "text": "you can do that with some good old",
+    "start": 51.64,
+    "duration": 3.84
+  },
+  {
+    "text": "software fundamentals, as well as my",
+    "start": 53.16,
+    "duration": 4.36
+  },
+  {
+    "text": "improved codebase architecture skill.",
+    "start": 55.48,
+    "duration": 3.16
+  },
+  {
+    "text": "We're going to be walking through what",
+    "start": 57.52,
+    "duration": 3.24
+  },
+  {
+    "text": "this skill does, revisiting some of the",
+    "start": 58.64,
+    "duration": 3.56
+  },
+  {
+    "text": "terms we looked at in the other video,",
+    "start": 60.76,
+    "duration": 2.88
+  },
+  {
+    "text": "then we're going to take that and apply",
+    "start": 62.2,
+    "duration": 3.4
+  },
+  {
+    "text": "it to a real codebase. And this, by the",
+    "start": 63.64,
+    "duration": 4.52
+  },
+  {
+    "text": "way, is part of my GitHub Skills Repo,",
+    "start": 65.6,
+    "duration": 4.96
+  },
+  {
+    "text": "which is currently sitting at 41.5k",
+    "start": 68.16,
+    "duration": 4.04
+  },
+  {
+    "text": "stars. Bonkers. Now, one of the things",
+    "start": 70.56,
+    "duration": 3.6
+  },
+  {
+    "text": "that I added to this improved codebase",
+    "start": 72.2,
+    "duration": 4.0
+  },
+  {
+    "text": "architecture skill recently was a",
+    "start": 74.16,
+    "duration": 4.36
+  },
+  {
+    "text": "glossary of terminology. Having a shared",
+    "start": 76.2,
+    "duration": 4.12
+  },
+  {
+    "text": "vocabulary with the AI is super",
+    "start": 78.52,
+    "duration": 3.68
+  },
+  {
+    "text": "important because it means that you can",
+    "start": 80.32,
+    "duration": 4.04
+  },
+  {
+    "text": "talk using the same language. You can",
+    "start": 82.2,
+    "duration": 4.2
+  },
+  {
+    "text": "understand what each other's language",
+    "start": 84.36,
+    "duration": 4.48
+  },
+  {
+    "text": "is, and you can be a lot more precise",
+    "start": 86.4,
+    "duration": 4.96
+  },
+  {
+    "text": "with what you're asking for. This here",
+    "start": 88.84,
+    "duration": 5.48
+  },
+  {
+    "text": "is super duper useful, and I'm going to",
+    "start": 91.36,
+    "duration": 4.28
+  },
+  {
+    "text": "spend a portion of this video going",
+    "start": 94.32,
+    "duration": 2.56
+  },
+  {
+    "text": "through what each of these terms",
+    "start": 95.64,
+    "duration": 2.52
+  },
+  {
+    "text": "actually mean. Honestly, just",
+    "start": 96.88,
+    "duration": 2.84
+  },
+  {
+    "text": "understanding this stuff at a deep level",
+    "start": 98.16,
+    "duration": 3.44
+  },
+  {
+    "text": "will make you a better software",
+    "start": 99.72,
+    "duration": 3.2
+  },
+  {
+    "text": "developer. So, let's get started by",
+    "start": 101.6,
+    "duration": 3.92
+  },
+  {
+    "text": "talking about modules. A module is a",
+    "start": 102.92,
+    "duration": 5.4
+  },
+  {
+    "text": "unit of something in your application.",
+    "start": 105.52,
+    "duration": 4.48
+  },
+  {
+    "text": "It could be a bunch of React components",
+    "start": 108.32,
+    "duration": 3.96
+  },
+  {
+    "text": "that all fit together to form a page. It",
+    "start": 110.0,
+    "duration": 4.2
+  },
+  {
+    "text": "could be a bunch of functions inside",
+    "start": 112.28,
+    "duration": 3.24
+  },
+  {
+    "text": "your application that are entirely",
+    "start": 114.2,
+    "duration": 3.32
+  },
+  {
+    "text": "responsible for authentication. Or it",
+    "start": 115.52,
+    "duration": 3.36
+  },
+  {
+    "text": "could simply be the logger that you've",
+    "start": 117.52,
+    "duration": 3.72
+  },
+  {
+    "text": "chosen, like a log into the console, log",
+    "start": 118.88,
+    "duration": 4.08
+  },
+  {
+    "text": "into a file, or log into a third-party",
+    "start": 121.24,
+    "duration": 3.12
+  },
+  {
+    "text": "service. In a good code base, these",
+    "start": 122.96,
+    "duration": 3.24
+  },
+  {
+    "text": "modules talk to each other, and they",
+    "start": 124.36,
+    "duration": 4.08
+  },
+  {
+    "text": "talk to each other via their interfaces.",
+    "start": 126.2,
+    "duration": 4.08
+  },
+  {
+    "text": "An interface is everything a caller must",
+    "start": 128.44,
+    "duration": 3.72
+  },
+  {
+    "text": "know to use the module correctly. For",
+    "start": 130.28,
+    "duration": 3.16
+  },
+  {
+    "text": "instance, if it's an authentication",
+    "start": 132.16,
+    "duration": 3.72
+  },
+  {
+    "text": "module, then it might have a sign-in",
+    "start": 133.44,
+    "duration": 4.24
+  },
+  {
+    "text": "method, it might have a sign-out method.",
+    "start": 135.88,
+    "duration": 3.8
+  },
+  {
+    "text": "And these methods are the interface to",
+    "start": 137.68,
+    "duration": 3.48
+  },
+  {
+    "text": "that module. The methods are not the",
+    "start": 139.68,
+    "duration": 2.84
+  },
+  {
+    "text": "only thing that's important, the",
+    "start": 141.16,
+    "duration": 3.44
+  },
+  {
+    "text": "interface also includes kind of nebulous",
+    "start": 142.52,
+    "duration": 4.2
+  },
+  {
+    "text": "information about how to call the",
+    "start": 144.6,
+    "duration": 3.96
+  },
+  {
+    "text": "module. So, perhaps it's documentation,",
+    "start": 146.72,
+    "duration": 3.64
+  },
+  {
+    "text": "too. The implementation is then what's",
+    "start": 148.56,
+    "duration": 3.92
+  },
+  {
+    "text": "inside the module, what it actually does",
+    "start": 150.36,
+    "duration": 4.16
+  },
+  {
+    "text": "when you call sign-in or sign-out. And",
+    "start": 152.48,
+    "duration": 3.24
+  },
+  {
+    "text": "so, this is the core primitive that",
+    "start": 154.52,
+    "duration": 2.8
+  },
+  {
+    "text": "we're talking about, the modules that",
+    "start": 155.72,
+    "duration": 3.44
+  },
+  {
+    "text": "have interfaces and implementations",
+    "start": 157.32,
+    "duration": 3.24
+  },
+  {
+    "text": "scattered throughout your application.",
+    "start": 159.16,
+    "duration": 3.4
+  },
+  {
+    "text": "These modules can either be deep",
+    "start": 160.56,
+    "duration": 4.64
+  },
+  {
+    "text": "modules, or they can be shallow modules.",
+    "start": 162.56,
+    "duration": 4.72
+  },
+  {
+    "text": "A deep module hides lots of",
+    "start": 165.2,
+    "duration": 4.16
+  },
+  {
+    "text": "implementation behind a relatively",
+    "start": 167.28,
+    "duration": 4.44
+  },
+  {
+    "text": "simple interface. A shallow module has a",
+    "start": 169.36,
+    "duration": 5.12
+  },
+  {
+    "text": "complex interface and kind of not much",
+    "start": 171.72,
+    "duration": 4.56
+  },
+  {
+    "text": "implementation actually behind it. These",
+    "start": 174.48,
+    "duration": 3.76
+  },
+  {
+    "text": "ideas are from John Osterhout's book A",
+    "start": 176.28,
+    "duration": 3.72
+  },
+  {
+    "text": "Philosophy of Software Design, which I",
+    "start": 178.24,
+    "duration": 3.12
+  },
+  {
+    "text": "recommend you pick up a copy of. Deep",
+    "start": 180.0,
+    "duration": 2.64
+  },
+  {
+    "text": "modules are considered better than",
+    "start": 181.36,
+    "duration": 3.24
+  },
+  {
+    "text": "shallow modules because it hides more",
+    "start": 182.64,
+    "duration": 3.48
+  },
+  {
+    "text": "information away from the caller. In",
+    "start": 184.6,
+    "duration": 3.28
+  },
+  {
+    "text": "other words, the person who's calling",
+    "start": 186.12,
+    "duration": 3.0
+  },
+  {
+    "text": "this, or the function that's calling",
+    "start": 187.88,
+    "duration": 2.88
+  },
+  {
+    "text": "this, only needs to know about this tiny",
+    "start": 189.12,
+    "duration": 3.24
+  },
+  {
+    "text": "little interface, and they'll get access",
+    "start": 190.76,
+    "duration": 3.68
+  },
+  {
+    "text": "to all of this implementation. Lovely.",
+    "start": 192.36,
+    "duration": 3.36
+  },
+  {
+    "text": "And so, that's what we describe as",
+    "start": 194.44,
+    "duration": 3.32
+  },
+  {
+    "text": "depth, the amount of behavior a caller",
+    "start": 195.72,
+    "duration": 4.36
+  },
+  {
+    "text": "can exercise per unit of interface that",
+    "start": 197.76,
+    "duration": 3.6
+  },
+  {
+    "text": "they have to learn. Really good",
+    "start": 200.08,
+    "duration": 3.2
+  },
+  {
+    "text": "open-source libraries, like TanStack",
+    "start": 201.36,
+    "duration": 4.72
+  },
+  {
+    "text": "Query or something, have really good",
+    "start": 203.28,
+    "duration": 4.12
+  },
+  {
+    "text": "deep modules. In other words, they're",
+    "start": 206.08,
+    "duration": 3.439
+  },
+  {
+    "text": "hiding a lot of complexity behind a",
+    "start": 207.4,
+    "duration": 3.96
+  },
+  {
+    "text": "super simple interface. These modules",
+    "start": 209.519,
+    "duration": 3.561
+  },
+  {
+    "text": "then interact with each other, and they",
+    "start": 211.36,
+    "duration": 3.28
+  },
+  {
+    "text": "have dependencies on each other. For",
+    "start": 213.08,
+    "duration": 3.439
+  },
+  {
+    "text": "instance, this module might interact",
+    "start": 214.64,
+    "duration": 3.92
+  },
+  {
+    "text": "with this module here, which then",
+    "start": 216.519,
+    "duration": 3.72
+  },
+  {
+    "text": "interacts with this module up here, and",
+    "start": 218.56,
+    "duration": 3.28
+  },
+  {
+    "text": "this module up here, and they have these",
+    "start": 220.239,
+    "duration": 3.241
+  },
+  {
+    "text": "dependency graphs between them. These",
+    "start": 221.84,
+    "duration": 3.8
+  },
+  {
+    "text": "gaps between these modules are called",
+    "start": 223.48,
+    "duration": 4.479
+  },
+  {
+    "text": "the seams. It's the location at which",
+    "start": 225.64,
+    "duration": 4.68
+  },
+  {
+    "text": "the modules interface lives inside the",
+    "start": 227.959,
+    "duration": 4.201
+  },
+  {
+    "text": "application. These seams are usually",
+    "start": 230.32,
+    "duration": 3.32
+  },
+  {
+    "text": "where you're going to do your unit",
+    "start": 232.16,
+    "duration": 3.28
+  },
+  {
+    "text": "testing or your integration testing. For",
+    "start": 233.64,
+    "duration": 3.6
+  },
+  {
+    "text": "instance, if we wanted to test this",
+    "start": 235.44,
+    "duration": 4.08
+  },
+  {
+    "text": "module in isolation down here, then we",
+    "start": 237.24,
+    "duration": 4.72
+  },
+  {
+    "text": "would add a mock or something just at",
+    "start": 239.52,
+    "duration": 4.44
+  },
+  {
+    "text": "this seam. So, figuring out where your",
+    "start": 241.96,
+    "duration": 3.16
+  },
+  {
+    "text": "seams are going to live in your",
+    "start": 243.96,
+    "duration": 3.04
+  },
+  {
+    "text": "application is crucial to getting a good",
+    "start": 245.12,
+    "duration": 3.28
+  },
+  {
+    "text": "architecture. When you find out where a",
+    "start": 247.0,
+    "duration": 3.24
+  },
+  {
+    "text": "seam is in your application, you need",
+    "start": 248.4,
+    "duration": 4.44
+  },
+  {
+    "text": "some concrete thing, a module, that",
+    "start": 250.24,
+    "duration": 4.56
+  },
+  {
+    "text": "satisfies that interface. This is what",
+    "start": 252.84,
+    "duration": 3.679
+  },
+  {
+    "text": "I'm going to call an adapter, which I'm",
+    "start": 254.8,
+    "duration": 3.6
+  },
+  {
+    "text": "taking from hexagonal architecture. For",
+    "start": 256.519,
+    "duration": 2.961
+  },
+  {
+    "text": "instance, if you have some kind of",
+    "start": 258.4,
+    "duration": 3.119
+  },
+  {
+    "text": "application that depends on a clock",
+    "start": 259.48,
+    "duration": 4.4
+  },
+  {
+    "text": "running, then you may want to have a",
+    "start": 261.519,
+    "duration": 4.521
+  },
+  {
+    "text": "clock, a normal clock inside here using",
+    "start": 263.88,
+    "duration": 4.68
+  },
+  {
+    "text": "the actual living clock, and then inside",
+    "start": 266.04,
+    "duration": 3.76
+  },
+  {
+    "text": "some tests, you may want to have an",
+    "start": 268.56,
+    "duration": 3.56
+  },
+  {
+    "text": "adapter that is a fake clock. These both",
+    "start": 269.8,
+    "duration": 4.6
+  },
+  {
+    "text": "satisfy the interface at that seam, and",
+    "start": 272.12,
+    "duration": 3.96
+  },
+  {
+    "text": "it means that you can use the fake clock",
+    "start": 274.4,
+    "duration": 3.64
+  },
+  {
+    "text": "in tests, so you don't have to literally",
+    "start": 276.08,
+    "duration": 3.96
+  },
+  {
+    "text": "wait 2 weeks for your test to finish.",
+    "start": 278.04,
+    "duration": 4.6
+  },
+  {
+    "text": "So, that's how seams and adapters play",
+    "start": 280.04,
+    "duration": 4.36
+  },
+  {
+    "text": "together. The benefit of all this is",
+    "start": 282.64,
+    "duration": 4.36
+  },
+  {
+    "text": "that these deep modules have two main",
+    "start": 284.4,
+    "duration": 4.08
+  },
+  {
+    "text": "properties or two main benefits that you",
+    "start": 287.0,
+    "duration": 2.8
+  },
+  {
+    "text": "get from them. For the maintainers, the",
+    "start": 288.48,
+    "duration": 3.439
+  },
+  {
+    "text": "people maintaining this module, they get",
+    "start": 289.8,
+    "duration": 4.64
+  },
+  {
+    "text": "locality. Changes to that module and",
+    "start": 291.919,
+    "duration": 4.561
+  },
+  {
+    "text": "bugs and all the fixes to do with them,",
+    "start": 294.44,
+    "duration": 4.28
+  },
+  {
+    "text": "they concentrate in one place, in that",
+    "start": 296.48,
+    "duration": 4.12
+  },
+  {
+    "text": "deep module. If it's scattered around",
+    "start": 298.72,
+    "duration": 3.72
+  },
+  {
+    "text": "over multiple different modules, then",
+    "start": 300.6,
+    "duration": 4.16
+  },
+  {
+    "text": "you have low locality. You want high",
+    "start": 302.44,
+    "duration": 4.84
+  },
+  {
+    "text": "locality, grouping and co-locating the",
+    "start": 304.76,
+    "duration": 4.44
+  },
+  {
+    "text": "things that matter and that often change",
+    "start": 307.28,
+    "duration": 3.8
+  },
+  {
+    "text": "together. The people using this module",
+    "start": 309.2,
+    "duration": 3.88
+  },
+  {
+    "text": "will get more leverage the deeper the",
+    "start": 311.08,
+    "duration": 3.44
+  },
+  {
+    "text": "module is. In other words, more",
+    "start": 313.08,
+    "duration": 3.24
+  },
+  {
+    "text": "capability per unit of interface they",
+    "start": 314.52,
+    "duration": 3.04
+  },
+  {
+    "text": "have to learn. And so, when we're",
+    "start": 316.32,
+    "duration": 3.72
+  },
+  {
+    "text": "talking about improving our code bases,",
+    "start": 317.56,
+    "duration": 3.96
+  },
+  {
+    "text": "these are the two attributes that we're",
+    "start": 320.04,
+    "duration": 2.64
+  },
+  {
+    "text": "aiming at. Right, that's enough",
+    "start": 321.52,
+    "duration": 2.84
+  },
+  {
+    "text": "knowledge, we know the basic terms of",
+    "start": 322.68,
+    "duration": 4.0
+  },
+  {
+    "text": "engagement. Now, let's go and improve a",
+    "start": 324.36,
+    "duration": 3.559
+  },
+  {
+    "text": "code base. The code base we're going to",
+    "start": 326.68,
+    "duration": 3.72
+  },
+  {
+    "text": "look at is my course video manager code",
+    "start": 327.919,
+    "duration": 5.281
+  },
+  {
+    "text": "base, which is the repo of software that",
+    "start": 330.4,
+    "duration": 4.48
+  },
+  {
+    "text": "I'm actually using to record this video.",
+    "start": 333.2,
+    "duration": 3.44
+  },
+  {
+    "text": "This code base has had, ooh, around",
+    "start": 334.88,
+    "duration": 4.72
+  },
+  {
+    "text": "1,500 commits here, and I wouldn't say",
+    "start": 336.64,
+    "duration": 4.68
+  },
+  {
+    "text": "it's a ball of mud, but I also wouldn't",
+    "start": 339.6,
+    "duration": 3.56
+  },
+  {
+    "text": "say it's perfect, either. It's a React",
+    "start": 341.32,
+    "duration": 4.0
+  },
+  {
+    "text": "Router application, it uses effect.ts",
+    "start": 343.16,
+    "duration": 3.96
+  },
+  {
+    "text": "under the hood. Uh, let's get into it.",
+    "start": 345.32,
+    "duration": 3.0
+  },
+  {
+    "text": "I'm going to open up a new Claude",
+    "start": 347.12,
+    "duration": 3.28
+  },
+  {
+    "text": "session inside here and I'm going to run",
+    "start": 348.32,
+    "duration": 5.04
+  },
+  {
+    "text": "my improved code base architecture skill",
+    "start": 350.4,
+    "duration": 4.68
+  },
+  {
+    "text": "and we'll turn off auto mode. Auto mode",
+    "start": 353.36,
+    "duration": 3.2
+  },
+  {
+    "text": "does some funny things with these human",
+    "start": 355.08,
+    "duration": 3.44
+  },
+  {
+    "text": "in the loop style flows and so I don't",
+    "start": 356.56,
+    "duration": 3.72
+  },
+  {
+    "text": "want it on here. We can see it's going",
+    "start": 358.52,
+    "duration": 4.0
+  },
+  {
+    "text": "and exploring and looking through the",
+    "start": 360.28,
+    "duration": 3.72
+  },
+  {
+    "text": "code. That's what it's instructed to do",
+    "start": 362.52,
+    "duration": 3.68
+  },
+  {
+    "text": "first. Here we go. Explore architecture",
+    "start": 364.0,
+    "duration": 4.32
+  },
+  {
+    "text": "for deepening opportunities. Usually a",
+    "start": 366.2,
+    "duration": 4.24
+  },
+  {
+    "text": "bad code base is one that has a ton of",
+    "start": 368.32,
+    "duration": 4.16
+  },
+  {
+    "text": "shallow modules in it or one that has",
+    "start": 370.44,
+    "duration": 4.28
+  },
+  {
+    "text": "very poor leverage for those modules or",
+    "start": 372.48,
+    "duration": 4.2
+  },
+  {
+    "text": "poor locality where lots of stuff is",
+    "start": 374.72,
+    "duration": 3.44
+  },
+  {
+    "text": "spread in lots of different places.",
+    "start": 376.68,
+    "duration": 2.92
+  },
+  {
+    "text": "Okay, it's come back with some",
+    "start": 378.16,
+    "duration": 3.0
+  },
+  {
+    "text": "candidates here. Let's bump up the",
+    "start": 379.6,
+    "duration": 4.08
+  },
+  {
+    "text": "screen size and hopefully Claude code",
+    "start": 381.16,
+    "duration": 4.68
+  },
+  {
+    "text": "won't just destroy itself. Okay, I guess",
+    "start": 383.68,
+    "duration": 3.4
+  },
+  {
+    "text": "maybe we're not bumping up the screen",
+    "start": 385.84,
+    "duration": 3.04
+  },
+  {
+    "text": "size. Thank you for that Claude code. We",
+    "start": 387.08,
+    "duration": 3.839
+  },
+  {
+    "text": "can see it's identified six deepening",
+    "start": 388.88,
+    "duration": 3.52
+  },
+  {
+    "text": "opportunities here. These candidates",
+    "start": 390.919,
+    "duration": 3.121
+  },
+  {
+    "text": "here are pretty hard to explain because",
+    "start": 392.4,
+    "duration": 3.28
+  },
+  {
+    "text": "they sort of require domain knowledge",
+    "start": 394.04,
+    "duration": 3.52
+  },
+  {
+    "text": "about my repo, but we can see here that",
+    "start": 395.68,
+    "duration": 3.76
+  },
+  {
+    "text": "it's saying that there's a concept that",
+    "start": 397.56,
+    "duration": 4.04
+  },
+  {
+    "text": "doesn't have a single seam. In other",
+    "start": 399.44,
+    "duration": 3.92
+  },
+  {
+    "text": "words, there are two implementations of",
+    "start": 401.6,
+    "duration": 3.44
+  },
+  {
+    "text": "this insertion point and they live in",
+    "start": 403.36,
+    "duration": 4.04
+  },
+  {
+    "text": "parallel and the seam where they must be",
+    "start": 405.04,
+    "duration": 4.16
+  },
+  {
+    "text": "is untested. This essentially means that",
+    "start": 407.4,
+    "duration": 4.56
+  },
+  {
+    "text": "the front end could make some changes um",
+    "start": 409.2,
+    "duration": 4.32
+  },
+  {
+    "text": "but the back end because it has a",
+    "start": 411.96,
+    "duration": 3.6
+  },
+  {
+    "text": "separate parallel implementation could",
+    "start": 413.52,
+    "duration": 3.84
+  },
+  {
+    "text": "be out of sync with it. So, this I think",
+    "start": 415.56,
+    "duration": 3.44
+  },
+  {
+    "text": "is actually a really good candidate for",
+    "start": 417.36,
+    "duration": 3.6
+  },
+  {
+    "text": "refactoring into a single module. We",
+    "start": 419.0,
+    "duration": 3.76
+  },
+  {
+    "text": "gain locality. And it says that here we",
+    "start": 420.96,
+    "duration": 3.32
+  },
+  {
+    "text": "would gain locality. The interleaved",
+    "start": 422.76,
+    "duration": 3.48
+  },
+  {
+    "text": "clip clip section ordering rule lives in",
+    "start": 424.28,
+    "duration": 4.639
+  },
+  {
+    "text": "one place. So, let's go and take a look",
+    "start": 426.24,
+    "duration": 4.72
+  },
+  {
+    "text": "at that. Let's actually say, yeah, I'd",
+    "start": 428.919,
+    "duration": 4.0
+  },
+  {
+    "text": "like to pick one here. That seems like a",
+    "start": 430.96,
+    "duration": 3.8
+  },
+  {
+    "text": "good candidate. So, let's fire that off",
+    "start": 432.919,
+    "duration": 4.241
+  },
+  {
+    "text": "and Okay, Claude is trolling me here. It",
+    "start": 434.76,
+    "duration": 4.92
+  },
+  {
+    "text": "says, I'd like to pick one. I meant I",
+    "start": 437.16,
+    "duration": 5.84
+  },
+  {
+    "text": "meant one. Great. Okay, so it now has",
+    "start": 439.68,
+    "duration": 4.8
+  },
+  {
+    "text": "come back with it's got concrete code on",
+    "start": 443.0,
+    "duration": 3.68
+  },
+  {
+    "text": "both sides to to ground this and it",
+    "start": 444.48,
+    "duration": 4.04
+  },
+  {
+    "text": "enters a grilling session. And in this",
+    "start": 446.68,
+    "duration": 4.6
+  },
+  {
+    "text": "grilling session we can take the ideas",
+    "start": 448.52,
+    "duration": 4.8
+  },
+  {
+    "text": "inside here and we can start kind of",
+    "start": 451.28,
+    "duration": 3.52
+  },
+  {
+    "text": "talking about what a better solution",
+    "start": 453.32,
+    "duration": 2.88
+  },
+  {
+    "text": "would be. This is a nice sentence here.",
+    "start": 454.8,
+    "duration": 4.119
+  },
+  {
+    "text": "The back end has no end. Let's not think",
+    "start": 456.2,
+    "duration": 4.4
+  },
+  {
+    "text": "about that too literally. What you end",
+    "start": 458.919,
+    "duration": 3.321
+  },
+  {
+    "text": "up doing with this skill is you end up",
+    "start": 460.6,
+    "duration": 3.68
+  },
+  {
+    "text": "talking about the potential proposed",
+    "start": 462.24,
+    "duration": 4.44
+  },
+  {
+    "text": "solution, and it will then propose a",
+    "start": 464.28,
+    "duration": 4.04
+  },
+  {
+    "text": "shape. And once that's all done, you can",
+    "start": 466.68,
+    "duration": 3.56
+  },
+  {
+    "text": "take that and you can put that in as a",
+    "start": 468.32,
+    "duration": 3.88
+  },
+  {
+    "text": "GitHub issue into your issue tracker,",
+    "start": 470.24,
+    "duration": 3.72
+  },
+  {
+    "text": "which can then be picked up by an AFK",
+    "start": 472.2,
+    "duration": 3.28
+  },
+  {
+    "text": "agent. You should check out my video on",
+    "start": 473.96,
+    "duration": 3.56
+  },
+  {
+    "text": "Sandcastle if you're interested in that.",
+    "start": 475.48,
+    "duration": 2.84
+  },
+  {
+    "text": "Now, in the course of normal",
+    "start": 477.52,
+    "duration": 2.04
+  },
+  {
+    "text": "development, what I would do is go",
+    "start": 478.32,
+    "duration": 3.6
+  },
+  {
+    "text": "through and thoughtfully answer each of",
+    "start": 479.56,
+    "duration": 4.16
+  },
+  {
+    "text": "these questions in turn. But since I'm",
+    "start": 481.92,
+    "duration": 3.24
+  },
+  {
+    "text": "doing a video and this is slightly",
+    "start": 483.72,
+    "duration": 3.4
+  },
+  {
+    "text": "artificial, I'm going to say, \"Could you",
+    "start": 485.16,
+    "duration": 4.32
+  },
+  {
+    "text": "just choose your recommended answers for",
+    "start": 487.12,
+    "duration": 3.64
+  },
+  {
+    "text": "each of these questions?\" And that",
+    "start": 489.48,
+    "duration": 2.8
+  },
+  {
+    "text": "should speed us through to actually",
+    "start": 490.76,
+    "duration": 3.2
+  },
+  {
+    "text": "making the change or potentially",
+    "start": 492.28,
+    "duration": 3.08
+  },
+  {
+    "text": "creating an issue out of this. So, it's",
+    "start": 493.96,
+    "duration": 3.0
+  },
+  {
+    "text": "now coming back with a proposed module",
+    "start": 495.36,
+    "duration": 4.32
+  },
+  {
+    "text": "shape, and it's also asking to verify a",
+    "start": 496.96,
+    "duration": 4.72
+  },
+  {
+    "text": "particular part of the implementation",
+    "start": 499.68,
+    "duration": 4.28
+  },
+  {
+    "text": "where end is collapsed and to sketch the",
+    "start": 501.68,
+    "duration": 3.84
+  },
+  {
+    "text": "actual TypeScript interface. Yeah, go",
+    "start": 503.96,
+    "duration": 2.959
+  },
+  {
+    "text": "ahead and do both. That sounds great.",
+    "start": 505.52,
+    "duration": 3.12
+  },
+  {
+    "text": "Let's ping that off and see what it",
+    "start": 506.919,
+    "duration": 3.801
+  },
+  {
+    "text": "says. Okay, it has figured out the",
+    "start": 508.64,
+    "duration": 3.8
+  },
+  {
+    "text": "implementation detail it needed, and",
+    "start": 510.72,
+    "duration": 3.84
+  },
+  {
+    "text": "it's come back and proposed a design",
+    "start": 512.44,
+    "duration": 3.76
+  },
+  {
+    "text": "here. So, which of these functions are",
+    "start": 514.56,
+    "duration": 3.919
+  },
+  {
+    "text": "going to be essentially the uh the",
+    "start": 516.2,
+    "duration": 4.12
+  },
+  {
+    "text": "interface for this module. And so, we",
+    "start": 518.479,
+    "duration": 3.601
+  },
+  {
+    "text": "can talk about this with the AI and",
+    "start": 520.32,
+    "duration": 3.56
+  },
+  {
+    "text": "figure it out. It's again come back with",
+    "start": 522.08,
+    "duration": 3.84
+  },
+  {
+    "text": "two design decisions that it wants my",
+    "start": 523.88,
+    "duration": 3.52
+  },
+  {
+    "text": "feedback on. And here, I think you've",
+    "start": 525.92,
+    "duration": 4.2
+  },
+  {
+    "text": "got the flavor of how this skill works",
+    "start": 527.4,
+    "duration": 4.12
+  },
+  {
+    "text": "and the kind of conversations that you",
+    "start": 530.12,
+    "duration": 3.2
+  },
+  {
+    "text": "end up having with the AI based on this.",
+    "start": 531.52,
+    "duration": 3.16
+  },
+  {
+    "text": "If I want to turn this into an issue",
+    "start": 533.32,
+    "duration": 3.48
+  },
+  {
+    "text": "that my AFK agent picks up, I can use",
+    "start": 534.68,
+    "duration": 5.64
+  },
+  {
+    "text": "two PRD or two issues here. And by the",
+    "start": 536.8,
+    "duration": 5.0
+  },
+  {
+    "text": "way, if you're interested in these",
+    "start": 540.32,
+    "duration": 2.8
+  },
+  {
+    "text": "skills that I'm talking about, then you",
+    "start": 541.8,
+    "duration": 3.36
+  },
+  {
+    "text": "should check out this site here, which",
+    "start": 543.12,
+    "duration": 3.08
+  },
+  {
+    "text": "is linked below. I'm going to be",
+    "start": 545.16,
+    "duration": 2.96
+  },
+  {
+    "text": "creating a real documentation site for",
+    "start": 546.2,
+    "duration": 3.76
+  },
+  {
+    "text": "these skills, and for now, I have a",
+    "start": 548.12,
+    "duration": 3.36
+  },
+  {
+    "text": "newsletter that you can sign up to for",
+    "start": 549.96,
+    "duration": 3.44
+  },
+  {
+    "text": "the latest updates, as well as tips and",
+    "start": 551.48,
+    "duration": 4.04
+  },
+  {
+    "text": "tricks and resources for getting the",
+    "start": 553.4,
+    "duration": 3.68
+  },
+  {
+    "text": "most out of agents. The thing that's",
+    "start": 555.52,
+    "duration": 3.319
+  },
+  {
+    "text": "important to notice here is just how",
+    "start": 557.08,
+    "duration": 4.2
+  },
+  {
+    "text": "much this skill demands of you, the",
+    "start": 558.839,
+    "duration": 4.321
+  },
+  {
+    "text": "user. This is not an AFK skill that you",
+    "start": 561.28,
+    "duration": 4.16
+  },
+  {
+    "text": "can just sort of run and kind of like uh",
+    "start": 563.16,
+    "duration": 4.72
+  },
+  {
+    "text": "just rely on to continually improve your",
+    "start": 565.44,
+    "duration": 4.399
+  },
+  {
+    "text": "code base. This requires a judgment call",
+    "start": 567.88,
+    "duration": 4.36
+  },
+  {
+    "text": "from you, the programmer sitting above",
+    "start": 569.839,
+    "duration": 5.0
+  },
+  {
+    "text": "the LLM. I think of agents as really,",
+    "start": 572.24,
+    "duration": 4.88
+  },
+  {
+    "text": "really good tactical programmers.",
+    "start": 574.839,
+    "duration": 4.241
+  },
+  {
+    "text": "They're able to get on the ground and",
+    "start": 577.12,
+    "duration": 3.64
+  },
+  {
+    "text": "make changes quickly. But they need",
+    "start": 579.08,
+    "duration": 3.76
+  },
+  {
+    "text": "someone on the level above them who is",
+    "start": 580.76,
+    "duration": 3.96
+  },
+  {
+    "text": "the strategic programmer. And that's",
+    "start": 582.84,
+    "duration": 3.8
+  },
+  {
+    "text": "what this skill does. It allows the",
+    "start": 584.72,
+    "duration": 3.52
+  },
+  {
+    "text": "sergeant to go and run around the code",
+    "start": 586.64,
+    "duration": 4.28
+  },
+  {
+    "text": "base and look for potential improvement",
+    "start": 588.24,
+    "duration": 4.68
+  },
+  {
+    "text": "opportunities. But then you, the",
+    "start": 590.92,
+    "duration": 3.88
+  },
+  {
+    "text": "general, have to go and actually make",
+    "start": 592.92,
+    "duration": 3.44
+  },
+  {
+    "text": "the change and decide what's good for",
+    "start": 594.8,
+    "duration": 3.12
+  },
+  {
+    "text": "the long-term health of the code base. I",
+    "start": 596.36,
+    "duration": 3.0
+  },
+  {
+    "text": "recommend that you run this skill, you",
+    "start": 597.92,
+    "duration": 3.72
+  },
+  {
+    "text": "know, every couple of days, really.",
+    "start": 599.36,
+    "duration": 3.4
+  },
+  {
+    "text": "Especially in a code base that's",
+    "start": 601.64,
+    "duration": 2.4
+  },
+  {
+    "text": "fast-moving, you're going to come up",
+    "start": 602.76,
+    "duration": 2.96
+  },
+  {
+    "text": "with tons",
+    "start": 604.04,
+    "duration": 3.08
+  },
+  {
+    "text": "for deepening the code base. And the",
+    "start": 605.72,
+    "duration": 3.28
+  },
+  {
+    "text": "deeper you get those modules, the higher",
+    "start": 607.12,
+    "duration": 3.68
+  },
+  {
+    "text": "leverage you're going to get out of",
+    "start": 609.0,
+    "duration": 3.48
+  },
+  {
+    "text": "them. And leverage as well means",
+    "start": 610.8,
+    "duration": 3.48
+  },
+  {
+    "text": "testing. If you have a set of really",
+    "start": 612.48,
+    "duration": 4.64
+  },
+  {
+    "text": "nice clear seams in your code base, then",
+    "start": 614.28,
+    "duration": 4.16
+  },
+  {
+    "text": "you're going to be able to write really",
+    "start": 617.12,
+    "duration": 3.32
+  },
+  {
+    "text": "nice tests around those nice deep",
+    "start": 618.44,
+    "duration": 3.88
+  },
+  {
+    "text": "modules. And the better your tests are,",
+    "start": 620.44,
+    "duration": 3.8
+  },
+  {
+    "text": "the better the output from the agent is",
+    "start": 622.32,
+    "duration": 3.4
+  },
+  {
+    "text": "going to be. One final thought here is",
+    "start": 624.24,
+    "duration": 3.8
+  },
+  {
+    "text": "that lots of folks ask me how you would",
+    "start": 625.72,
+    "duration": 5.0
+  },
+  {
+    "text": "get started by using AI in a legacy code",
+    "start": 628.04,
+    "duration": 4.36
+  },
+  {
+    "text": "base. And a legacy code base is probably",
+    "start": 630.72,
+    "duration": 3.96
+  },
+  {
+    "text": "going to have a lot of shallow modules.",
+    "start": 632.4,
+    "duration": 4.04
+  },
+  {
+    "text": "This I mean, we talk about legacy code",
+    "start": 634.68,
+    "duration": 3.64
+  },
+  {
+    "text": "bases, what we really mean are bad code",
+    "start": 636.44,
+    "duration": 4.32
+  },
+  {
+    "text": "bases. Code bases that are hard to make",
+    "start": 638.32,
+    "duration": 4.36
+  },
+  {
+    "text": "changes in. And what you really need",
+    "start": 640.76,
+    "duration": 3.44
+  },
+  {
+    "text": "before you start making changes in a",
+    "start": 642.68,
+    "duration": 4.04
+  },
+  {
+    "text": "legacy code base is a harness around the",
+    "start": 644.2,
+    "duration": 4.639
+  },
+  {
+    "text": "code base to make sure that your changes",
+    "start": 646.72,
+    "duration": 3.76
+  },
+  {
+    "text": "don't mess anything up. So for that, you",
+    "start": 648.839,
+    "duration": 4.681
+  },
+  {
+    "text": "need tests, test, testing really nice",
+    "start": 650.48,
+    "duration": 5.0
+  },
+  {
+    "text": "deep modules that have a lot of leverage",
+    "start": 653.52,
+    "duration": 3.68
+  },
+  {
+    "text": "and locality. So running improve code",
+    "start": 655.48,
+    "duration": 3.84
+  },
+  {
+    "text": "base architecture is a great place to",
+    "start": 657.2,
+    "duration": 3.36
+  },
+  {
+    "text": "start. Thanks for watching, folks, and I",
+    "start": 659.32,
+    "duration": 2.76
+  },
+  {
+    "text": "hope that answers some of your questions",
+    "start": 660.56,
+    "duration": 4.64
+  },
+  {
+    "text": "about how to solve this never-ending",
+    "start": 662.08,
+    "duration": 5.12
+  },
+  {
+    "text": "problem of AI just running away and",
+    "start": 665.2,
+    "duration": 3.72
+  },
+  {
+    "text": "creating terrible code bases. I hope you",
+    "start": 667.2,
+    "duration": 3.36
+  },
+  {
+    "text": "enjoy the skills. Do follow the link",
+    "start": 668.92,
+    "duration": 3.32
+  },
+  {
+    "text": "below if you want to find more of them.",
+    "start": 670.56,
+    "duration": 2.96
+  },
+  {
+    "text": "So thanks for watching and I'll see you",
+    "start": 672.24,
+    "duration": 2.44
+  },
+  {
+    "text": "in the next one. And what you really",
+    "start": 673.52,
+    "duration": 3.68
+  },
+  {
+    "text": "need before you start making changes in",
+    "start": 674.68,
+    "duration": 5.64
+  },
+  {
+    "text": "a legacy code bases",
+    "start": 677.2,
+    "duration": 3.12
+  }
+]
