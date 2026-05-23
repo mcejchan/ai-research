@@ -1,0 +1,139 @@
+{
+  "title": "Artemis II: první lidé míří k Měsíci (Easy)",
+  "channel": "FutureCast: technologie zítřka",
+  "url": "https://www.youtube.com/watch?v=sPeT471KWp4",
+  "thumbnail": "https://i.ytimg.com/vi/sPeT471KWp4/maxresdefault.jpg",
+  "date": "2026-05-19",
+  "questions": [
+    {
+      "question": "Co je hlavním cílem programu Artemis?",
+      "type": "single",
+      "points": 1,
+      "options": [
+        "Postavit vesmírnou stanici na oběžné dráze Země",
+        "Vyslat robota na povrch Marsu",
+        "Vrátit lidi na Měsíc a připravit cestu dál do vesmíru",
+        "Opravit Hubbleův teleskop"
+      ],
+      "correct": [2],
+      "explanation": "Program Artemis má za cíl vrátit člověka na Měsíc a položit základy pro budoucí výzkum hlubšího vesmíru, včetně cest na Mars."
+    },
+    {
+      "question": "Kolik astronautů letí na palubě mise Artemis 2?",
+      "type": "single",
+      "points": 1,
+      "options": [
+        "Tři",
+        "Dva",
+        "Šest",
+        "Čtyři"
+      ],
+      "correct": [3],
+      "explanation": "Posádku Artemis 2 tvoří čtyři astronauti — velitel, pilot, specialistka mise a astronaut z kanadské agentury."
+    },
+    {
+      "question": "Přistanou astronauti mise Artemis 2 na Měsíci?",
+      "type": "single",
+      "points": 1,
+      "options": [
+        "Ano, na jižním pólu",
+        "Ano, na přivrácené straně",
+        "Ne, zůstanou na oběžné dráze Země",
+        "Ne, pouze ho obletí"
+      ],
+      "correct": [3],
+      "explanation": "Artemis 2 je obletová mise — astronauti Měsíc obletí a vrátí se zpět na Zemi, bez přistání na povrchu."
+    },
+    {
+      "question": "Jak se jmenuje kosmická loď, ve které astronauti letí?",
+      "type": "single",
+      "points": 1,
+      "options": [
+        "Dragon",
+        "Starliner",
+        "Sojuz",
+        "Orion"
+      ],
+      "correct": [3],
+      "explanation": "Kosmická loď Orion je navržena pro mise do hlubokého vesmíru a nese posádku Artemis 2."
+    },
+    {
+      "question": "Proč je vodní led na jižním pólu Měsíce důležitý?",
+      "type": "single",
+      "points": 2,
+      "options": [
+        "Slouží k chlazení raketových motorů",
+        "Obsahuje vzácné minerály",
+        "Lze z něj získat kyslík a palivo",
+        "Dokazuje existenci života na Měsíci"
+      ],
+      "correct": [2],
+      "explanation": "Vodní led je klíčový zdroj — lze z něj vyrábět kyslík k dýchání i palivo pro rakety, což sníží závislost na zásobování ze Země."
+    },
+    {
+      "question": "Co je stanice Gateway?",
+      "type": "single",
+      "points": 2,
+      "options": [
+        "Přistávací modul na povrchu Měsíce",
+        "Nová verze Mezinárodní vesmírné stanice",
+        "Stanice na oběžné dráze Měsíce jako přestupní bod",
+        "Řídicí středisko na Zemi"
+      ],
+      "correct": [2],
+      "explanation": "Gateway má fungovat jako stanice na oběžné dráze Měsíce — přestupní bod mezi Zemí a lunárním povrchem."
+    },
+    {
+      "question": "Proč dojde během mise k výpadku komunikace?",
+      "type": "single",
+      "points": 2,
+      "options": [
+        "Solární panely se vypnou a loď ztratí energii",
+        "Astronauti musí ručně přepnout anténu",
+        "Zemská atmosféra pohlcuje signál na velkou vzdálenost",
+        "Měsíc zablokuje rádiový signál, když loď letí za ním"
+      ],
+      "correct": [3],
+      "explanation": "Když loď prolétá za odvrácenou stranou Měsíce, Měsíc fyzicky blokuje rádiový signál mezi lodí a Zemí — asi na 45 minut."
+    },
+    {
+      "question": "Co byla mise Artemis 1?",
+      "type": "single",
+      "points": 1,
+      "options": [
+        "První přistání lidí na Měsíci po 50 letech",
+        "Zkušební let na oběžnou dráhu Země",
+        "Nepilotovaný testovací let kolem Měsíce",
+        "Mise na Mars bez posádky"
+      ],
+      "correct": [2],
+      "explanation": "Artemis 1 v roce 2022 byla nepilotovaný let — loď Orion obletěla Měsíc bez posádky, aby se ověřily základní technologie."
+    },
+    {
+      "question": "Čím se program Artemis liší od původního programu Apollo?",
+      "type": "single",
+      "points": 2,
+      "options": [
+        "Apollo používalo lepší rakety než Artemis",
+        "Artemis buduje trvalou infrastrukturu, Apollo byl jednorázový závod",
+        "Artemis je jen robotický program bez lidí",
+        "Apollo letělo na Mars, Artemis jen na Měsíc"
+      ],
+      "correct": [1],
+      "explanation": "Apollo bylo do velké míry jednorázovým závodem, zatímco Artemis plánuje vybudovat trvalou infrastrukturu pro pravidelné mise a výzkum."
+    },
+    {
+      "question": "Co zajišťuje evropský servisní modul na lodi Orion?",
+      "type": "multi",
+      "points": 2,
+      "options": [
+        "Dodávku energie ze solárních panelů",
+        "Zásoby vody a kyslíku",
+        "Hlavní motor pro manévrování",
+        "Přistávací podvozek pro měsíční povrch"
+      ],
+      "correct": [0, 1, 2],
+      "explanation": "Evropský servisní modul zajišťuje energii (solární panely), zásoby (voda, kyslík) a pohon (hlavní motor + manévrovací systémy). Přistávací podvozek nemá."
+    }
+  ]
+}
