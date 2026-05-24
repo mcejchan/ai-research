@@ -58,7 +58,7 @@
       "options": [
         "Produkují více energie za jednotku hmotnosti",
         "Fungují nezávisle na slunci — i během dvoutýdenní noci",
-        "Jsou výrazně lehčí a snáze se transportují na povrch",
+        "Jsou výrazně lehčí a snáze se transportují na povrch Měsíce",
         "Mají prakticky neomezenou životnost bez údržby"
       ],
       "correct": [
@@ -105,13 +105,13 @@
       "type": "single",
       "points": 3,
       "options": [
-        "Na Měsíci se technologie otestují v reálu, kde záchrana je ještě možná",
-        "Mars a Měsíc mají identické podmínky, jen jinou vzdálenost",
         "Měsíční základna bude sloužit jako mezipřistání při cestě na Mars",
+        "Mars a Měsíc mají identické podmínky, jen jinou vzdálenost",
+        "Na Měsíci se technologie otestují v reálu, kde záchrana je ještě možná",
         "Na Měsíci jsou lepší podmínky pro život než na Marsu ve všech ohledech"
       ],
       "correct": [
-        0
+        2
       ],
       "explanation": "Měsíc je 3 dny od Země — pokud technologie selže, evakuace je reálná. Na Marsu (6+ měsíců) by stejná chyba byla fatální. Test blízko = de-risking daleko."
     },
@@ -120,13 +120,13 @@
       "type": "single",
       "points": 4,
       "options": [
-        "Bez cyklické regenerace zdrojů závisíte na dodávkách — a ty mohou selhat",
+        "Lineární systémy fungují jen v gravitaci Země, ne na jiných vesmírných tělesech",
         "Uzavřená smyčka je levnější než jakýkoliv jiný systém podpory života",
         "Otevřené systémy jsou zakázány mezinárodními vesmírnými smlouvami",
-        "Lineární systémy fungují jen v gravitaci Země, ne na jiných tělesech"
+        "Bez regenerace zdrojů závisíte na dodávkách — a ty mohou selhat"
       ],
       "correct": [
-        0
+        3
       ],
       "explanation": "Lineární systém (spotřebuj → doplň ze Země) má single point of failure v dodavatelském řetězci. Uzavřená smyčka = soběstačnost = odolnost vůči výpadkům."
     },
@@ -135,13 +135,13 @@
       "type": "single",
       "points": 3,
       "options": [
-        "Strach že někdo bude první motivuje k rychlejšímu financování a riziku",
-        "Konkurence vždy vede k lepším technologiím než spolupráce",
+        "Konkurence vždy vede k prokazatelně lepším technologiím než spolupráce",
+        "Strach z prohry motivuje k rychlejšímu financování a riziku",
         "Duplikace je ve skutečnosti efektivnější než jednotný program",
         "Mezinárodní právo vyžaduje nezávislé programy pro každý stát"
       ],
       "correct": [
-        0
+        1
       ],
       "explanation": "Konkurence zvyšuje ochotu investovat a přijímat riziko — politická motivace překonává byrokratickou opatrnost. Cena = duplikované úsilí, ale tempo roste."
     }

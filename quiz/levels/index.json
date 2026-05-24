@@ -27,7 +27,7 @@
     "date": "2026-05-24",
     "difficulty": "easy",
     "questionCount": 8,
-    "maxPoints": 12
+    "maxPoints": 13
   },
   {
     "path": "futurecast-technologie-zitrka/zakladna-na-mesici-do-10-let-jsme-pripraveni-tam-zit-hard.json",
@@ -37,7 +37,7 @@
     "date": "2026-05-24",
     "difficulty": "hard",
     "questionCount": 9,
-    "maxPoints": 24
+    "maxPoints": 27
   },
   {
     "path": "futurecast-technologie-zitrka/artemis-ii-prvni-lide-miri-k-mesici-easy.json",
