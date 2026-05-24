@@ -1,0 +1,54 @@
+Las Vegas každý rok hostí událost, kde se potkává realita z budoucnosti.
+Consumer Electronics Show není jen veletrh nových zařízení.
+Je to taková laboratoř, kde firmy testují, kam až může technologie zajít, než se dostane do našich kapez, domovů a práce.
+Právě tady se poprvé objevily chytré televize, autonomní auta i hlasoví asistenti.
+A to často roky předtím, než se staly běžnou součástí našeho života.
+Technologický veletrh 2026 nepřinesl jen nové verze známých zařízení, ale technologie, které nenápadně přepisují pravidla každodenního života.
+Od chytré zábavy přes práci až po samotné fungování domácností.
+Jaké konkrétní novinky veletrh odhalil a které z nich mají šanci skutečně změnit svět kolem nás? Velký úspěch na letošním ročníku zaznamenala chytrá kostka Lego, která je vybavená senzory, mikrofonem a vlastním čipem.
+Tyto kostky dokážou vnímat své okolí, reagují na pohyb, světlo i zvuk, poznají pád, náklon nebo když se k nim přiblíží jiná chytrá kostka.
+Na základě toho spouští vlastní zvukové či světelné reakce, čímž přidávají stavění další vrstvu interaktivity.
+Zásadní je, že smart bricks jsou plně kompatibilní s klasickým legem a rozšiřují herní zážitek.
+Součástí jsou i chytré minifigurky, které mezi sebou komunikují a při správném propojení odemykají speciální reakce nebo jednoduché minihry.
+První stavebnice mají být ze Star Wars a dorazit už 1. března.
+Podle reakcí z Las Vegas to vypadá, že LEGO udělalo jeden z největších kroků vpřed za poslední roky.
+Na konferenci zaujal i Asus herními brýlemi Rock X Real R1, které posouvají hranici mezi monitorem a nositelnou elektronikou.
+Brýle využívají Microlet displej s velmi vysokou obnovovací frekvencí a vytvářejí dojem obří virtuální obrazovky přímo před očima uživatele.
+Nejde o klasické VR, ale o průhledné řešení, které nahrazuje monitor při hraní her, práci i sledování obsahu.
+Brýle vznikly ve spolupráci s Xreel a jsou určené hlavně pro hráče.
+Obraz je extrémně plynulý.
+Zvuk prostorový a chytré čočky se samy přizpůsobují světlu kolem vás, aby vás nic nerušilo.
+Připojit je můžete k počítači, konzoli i herním handheldům a jedním kliknutím mezi nimi přepínat. nejsou jen futuristickou hračkou, ale praktickým zařízením, které ukazuje, jak by mohla vypadat osobní elektronika budoucnosti.
+Cena zatím není známá, ale Asus plánuje uvedení v první polovině tohoto roku.
+Společnost Roborok představila koncept, který se snaží vyřešit jeden z největších dlouhodobých problémů robotických vysavačů, schody a výškové rozdíly.
+Místo toho, aby se jim robot vyhýbal, je schopen je aktivně překonávat díky speciálnímu pohybovému mechanismu a pokročilému mapování prostoru.
+Vysavač je vhodný pro domácnosti s více patry, kde dnes musí člověk robota přenášet ručně.
+Pokud se tento koncept dostane do běžné výroby, můžeme se těšit na samostatné pomocníky, kteří se dokážou přizpůsobit jakémukoliv domu.
+Nvidia pak na veletrhu potvrdila svou roli jedné z nejvlivnějších technologických firem současnosti.
+Hlavním tématem nebyly jen výkonnější grafické čipy, ale celá infrastruktura pro umělou inteligenci.
+Od nových generací AI akcelerátorů až po platformy, které umožňují provozovat složité modely rychleji, úsporněji a čím dál častěji přímo na lokálních zařízeních.
+NVIDIA v Las Vegas ukázala, že umělá inteligence už není výhradně záležitostí datových center.
+Výkon se postupně přesouvá blíž ke koncovým uživatelům do pracovních stanic, notebooků, automobilů i domácí elektroniky.
+Prakticky to znamená rychlejší odezvu, větší soukromí a nové typy aplikací, které dříve nebyly možné.
+Pokud měla konference jedno společné poselství, pak to, že umělá inteligence se stává základní vrstvou technologií a Nvidia patří k firmám, které tenhle posun nejvíc urychlují, Boston Dynamics představil novější verzi humanoidního robota Atlas.
+Tentokrát už ne jako laboratorní experiment, ale jako stroj mířící do reálného nasazení.
+Nový Atlas je plně elektrický, výrazně těžší, obratnější a navržený přímo pro práci v průmyslovém prostředí.
+Dokáže zvedat těžké objekty, manipulovat s nářadím a pohybovat se v prostoru určeném pro lidi bez nutnosti speciálně upravených pracovišť.
+Zásadním krokem je propojení s umělou inteligencí od Google Deep Mind, která Atlasovi dodává pokročilé schopnosti učení, plánování pohybu a rozhodování v reálném čase.
+Robot by měl v blízké budoucnosti začít pracovat v provozech Hyundai.
+Konference ukázala, že humanoidní roboti přestávají být demonstrací technologie a pomalu se dostáváme k momentu, kdy najdou uplatnění v běžném pracovním provozu.
+Na konferenci se objevila i technologie, která působí jako vystřižená ze SFY filmu a to holografický AI assistent AVA.
+Nejde ohlas hlas v reproduktoru ani o Avatara na displeji, ale o prostorovou projekci postavy, která se objevuje přímo před uživatelem.
+Ava zvládá odpovídat na otázky, spravovat chytrou domácnost, plánovat den nebo zobrazit počasí či kalendář jako plovoucí prvky kolem sebe.
+Nejde zatím o masový produkt, spíš o technologickou ukázku toho, kam se mohou osobní asistenti posunout.
+Také o nové notebooky nebyla na veletrhu Nouze.
+Lenovo představilo herní stroj s roztažitelným displejem.
+Na první pohled jde o klasický výkonný notebook, ale během několika vteřin se obrazovka mechanicky vysune a nabídne výrazně větší pracovní i herní plochu.
+Užívatel tak může plynule přecházet mezi kompaktním režimem a rozšířeným displejem bez připojování externího monitoru.
+Velkou pozornost vzbudila i společnost Real Botics, která předvedla své realistické humanoidní roboty s propracovanou mimikou a lidským vzhledem.
+Roboti dokážou mluvit, reagovat na otázky, udržovat oční kontakt a vyjadřovat emoce pomocí obličejových svalů.
+Společnost cílí především na oblasti, jako je zákaznický servis, vzdělávání, zdravotní péče nebo sociální asistence.
+Humanoidi mají sloužit jako rozhraní mezi člověkem a umělou inteligencí.
+Veletrh spotřební technologie opět ukázal, že budoucnost už nepřichází ve formě jednoho velkého vynálezu, ale jako soubor chytrých nenápadných technologií, které se postupně stávají součástí každodenního života.
+Která technologie vás zaujala nejvíc? Napište do komentářů a pokud vás baví technologie budoucnosti, dejte like a sledujte tento kanál.
+Mějte se skvěle a zase brzy u dalšího videa.

@@ -1,0 +1,136 @@
+{
+  "title": "CES 2026: AI, roboti a chytré gadgety (Hard)",
+  "channel": "FutureCast: technologie zítřka",
+  "url": "https://www.youtube.com/watch?v=VY3IHnzBaaM",
+  "thumbnail": "https://i.ytimg.com/vi/VY3IHnzBaaM/maxresdefault.jpg",
+  "date": "2026-05-24",
+  "difficulty": "hard",
+  "questions": [
+    {
+      "question": "Proč jsou LEGO Smart Bricks zásadním krokem vpřed, ne jen novinkou?",
+      "type": "single",
+      "points": 2,
+      "options": [
+        "Vyžadují nový systém stavění nekompatibilní se starými díly",
+        "Jsou první hračkou s certifikací pro vzdělávací instituce",
+        "Nahrazují fyzické stavění digitálním zážitkem na tabletu",
+        "Kompatibilní s klasickým LEGO, přidává interaktivitu"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Klíčové je, že Smart Bricks jsou plně kompatibilní s klasickým LEGO — nenahrazují stávající systém, ale rozšiřují ho o senzory a interakci."
+    },
+    {
+      "question": "V čem spočívá technologický posun brýlí Asus oproti běžným AR/VR řešením?",
+      "type": "single",
+      "points": 3,
+      "options": [
+        "Microled displej s vysokou obnovovací frekvencí",
+        "Jsou napájené bezdrátově pomocí indukce z okolních zařízení",
+        "Skenují okolí a překrývají ho virtuálními objekty v reálném čase",
+        "Nevyžadují připojení k žádnému externímu výpočetnímu zařízení"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Brýle používají Microled displej s velmi vysokou obnovovací frekvencí — to zajišťuje plynulý obraz bez motion sickness typického pro starší technologie."
+    },
+    {
+      "question": "Co je strategický význam přesunu AI na lokální zařízení z pohledu Nvidie?",
+      "type": "multi",
+      "points": 3,
+      "options": [
+        "Nové typy aplikací, které vyžadují okamžitou odezvu",
+        "Větší soukromí dat — zpracování bez odesílání na servery",
+        "Snížení nákladů na cloudové služby pro koncové uživatele",
+        "Kompletní náhrada datových center do roku 2030",
+        "Rozšíření trhu pro Nvidia čipy do notebooků a aut"
+      ],
+      "correct": [
+        0,
+        1,
+        4
+      ],
+      "explanation": "Nvidia ukazuje, že lokální AI = rychlejší odezva + soukromí + nový trh pro jejich čipy v koncových zařízeních. Datová centra ale nezmizí."
+    },
+    {
+      "question": "Proč je nový Atlas od Boston Dynamics popisován jako stroj mířící do reálného nasazení?",
+      "type": "multi",
+      "points": 3,
+      "options": [
+        "Je plně elektrický místo hydraulického pohonu",
+        "Dokáže pracovat v prostorech určených pro lidi bez úprav",
+        "Má konkrétního odběratele — provozy Hyundai",
+        "Stojí méně než průměrný roční plat zaměstnance",
+        "Získal certifikaci pro práci v blízkosti lidí bez omezení"
+      ],
+      "correct": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Nový Atlas je elektrický, pracuje v lidských prostorech a má konkrétní plán nasazení u Hyundai — to z něj dělá produkt, ne jen demo."
+    },
+    {
+      "question": "Proč je AVA spíš technologická ukázka než masový produkt?",
+      "type": "single",
+      "points": 2,
+      "options": [
+        "Funguje pouze v angličtině bez možnosti lokalizace",
+        "Její AI nedokáže odpovídat na složitější konverzační dotazy",
+        "Holografická projekce vyžaduje speciální zobrazovací hardware",
+        "Vyžaduje stálé připojení k proprietárnímu cloudu bez offline režimu"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Prostorová projekce postavy je technicky náročná a vyžaduje speciální zobrazovací hardware — proto zatím nejde o produkt pro běžné domácnosti."
+    },
+    {
+      "question": "Jaký trend CES 2026 nejlépe vystihuje směr spotřební elektroniky?",
+      "type": "single",
+      "points": 3,
+      "options": [
+        "Jeden revoluční vynález, který kompletně změní celý trh naráz",
+        "Návrat k jednoduchosti a odpojení od technologií",
+        "Nenápadné chytré technologie prorůstající do běžného života",
+        "Plná náhrada fyzických zařízení čistě softwarovými cloudovými řešeními"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "CES ukázal, že budoucnost nepřichází jako jeden velký vynález, ale jako soubor chytrých nenápadných technologií postupně se stávajících součástí každodenního života."
+    },
+    {
+      "question": "Co mají společného roboti od Real Botics a holografická AVA z hlediska role AI?",
+      "type": "single",
+      "points": 3,
+      "options": [
+        "Oba jsou primárně určeni pro zábavní průmysl a herní segment",
+        "Oba jsou navrženi jako plná náhrada lidských zaměstnanců v kancelářích",
+        "Oba využívají stejnou AI platformu od Google DeepMind pro rozhodování",
+        "Oba zpřístupňují AI skrze přirozené rozhraní"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Oba přístupy řeší, jak zpřístupnit AI lidem přirozeněji — Real Botics skrze lidský vzhled a mimiku, AVA skrze prostorovou přítomnost."
+    },
+    {
+      "question": "Proč je koncept robotického vysavače překonávajícího schody tak obtížný?",
+      "type": "single",
+      "points": 2,
+      "options": [
+        "Vyžaduje pokročilé mapování i speciální pohybový mechanismus",
+        "Baterie nevydrží energeticky náročný výstup po schodech nahoru",
+        "Vysavač by při pádu ze schodů mohl poškodit podlahu či nábytek",
+        "Bezpečnostní normy zakazují autonomní pohyb mezi patry budov"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Překonávání schodů vyžaduje kombinaci pokročilého 3D mapování prostoru a speciálního pohybového mechanismu — dosud se roboty schodům prostě vyhýbaly."
+    }
+  ]
+}

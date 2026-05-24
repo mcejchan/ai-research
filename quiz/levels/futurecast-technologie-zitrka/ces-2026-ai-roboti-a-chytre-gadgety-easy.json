@@ -1,0 +1,114 @@
+{
+  "title": "CES 2026: AI, roboti a chytré gadgety (Easy)",
+  "channel": "FutureCast: technologie zítřka",
+  "url": "https://www.youtube.com/watch?v=VY3IHnzBaaM",
+  "thumbnail": "https://i.ytimg.com/vi/VY3IHnzBaaM/maxresdefault.jpg",
+  "date": "2026-05-24",
+  "difficulty": "easy",
+  "questions": [
+    {
+      "question": "Co umí chytré kostky LEGO Smart Bricks?",
+      "type": "single",
+      "points": 1,
+      "options": [
+        "Reagují na pohyb, světlo i zvuk pomocí senzorů",
+        "Automaticky se skládají do předem naprogramovaných tvarů",
+        "Připojují se k internetu a stahují nové instrukce",
+        "Obsahují malé displeje pro zobrazování animací"
+      ],
+      "correct": [0],
+      "explanation": "Smart Bricks mají senzory, mikrofon a vlastní čip — reagují na pohyb, světlo, zvuk, pád nebo přiblížení jiné chytré kostky."
+    },
+    {
+      "question": "Čím se liší herní brýle Asus od klasického VR headsetu?",
+      "type": "single",
+      "points": 1,
+      "options": [
+        "Jsou průhledné a nahrazují monitor, ne celý svět",
+        "Vyžadují speciální místnost s kamerami pro sledování",
+        "Fungují pouze s herními konzolemi značky Asus",
+        "Potřebují vždy připojení k internetu pro streamování"
+      ],
+      "correct": [0],
+      "explanation": "Brýle nejsou klasické VR — jsou průhledné a vytvářejí virtuální obrazovku před očima, takže nahrazují monitor, ne celé zorné pole."
+    },
+    {
+      "question": "Jaký problém řeší nový robotický vysavač Roborock?",
+      "type": "single",
+      "points": 1,
+      "options": [
+        "Hlučnost při nočním provozu v ložnici",
+        "Překonávání schodů a výškových rozdílů",
+        "Neschopnost vysávat koberce s dlouhým vlasem",
+        "Krátká výdrž baterie při velkých plochách"
+      ],
+      "correct": [1],
+      "explanation": "Roborock představil koncept robota, který dokáže aktivně překonávat schody — dosud museli uživatelé robota přenášet ručně."
+    },
+    {
+      "question": "Co znamená přesun AI výkonu z datových center blíž k uživatelům?",
+      "type": "single",
+      "points": 2,
+      "options": [
+        "AI bude fungovat pouze offline bez internetu",
+        "Datová centra přestanou být potřebná úplně",
+        "Rychlejší odezva, větší soukromí a nové aplikace",
+        "Uživatelé budou muset kupovat vlastní servery domů"
+      ],
+      "correct": [2],
+      "explanation": "Lokální AI zpracování znamená rychlejší reakce (žádné čekání na server), lepší soukromí (data neopouštějí zařízení) a nové typy aplikací."
+    },
+    {
+      "question": "Proč je propojení robota Atlas s Google DeepMind důležité?",
+      "type": "single",
+      "points": 2,
+      "options": [
+        "DeepMind ovládá robota na dálku z datového centra",
+        "Dodává mu učení, plánování pohybu a rozhodování",
+        "Umožňuje Atlasovi mluvit v přirozených jazycích",
+        "Propojuje ho s ostatními roboty v synchronizované síti"
+      ],
+      "correct": [1],
+      "explanation": "AI od DeepMind dává Atlasovi schopnost učit se, plánovat pohyb a rozhodovat se v reálném čase — klíč pro nasazení v průmyslu."
+    },
+    {
+      "question": "Co je holografický asistent AVA?",
+      "type": "single",
+      "points": 1,
+      "options": [
+        "Avatar na dotykovém displeji ovládaný hlasem",
+        "Chytrý reproduktor s pokročilým hlasovým rozhraním",
+        "Prostorová projekce postavy přímo před uživatelem",
+        "Aplikace v rozšířené realitě vyžadující brýle"
+      ],
+      "correct": [2],
+      "explanation": "AVA není displej ani hlas z reproduktoru — je to prostorová projekce, která se objevuje přímo v prostoru před uživatelem."
+    },
+    {
+      "question": "K čemu jsou určeni realisticky vypadající roboti od Real Botics?",
+      "type": "multi",
+      "points": 2,
+      "options": [
+        "Zákaznický servis a recepce",
+        "Vzdělávání a sociální asistence",
+        "Vojenské a bezpečnostní operace",
+        "Rozhraní mezi člověkem a AI"
+      ],
+      "correct": [0, 1, 3],
+      "explanation": "Real Botics cílí na servis, vzdělávání, zdravotní péči a sociální asistenci — humanoidi slouží jako přívětivé rozhraní k umělé inteligenci."
+    },
+    {
+      "question": "Co je hlavní výhoda roztažitelného displeje u notebooku Lenovo?",
+      "type": "single",
+      "points": 1,
+      "options": [
+        "Lépe se chladí díky větší ploše pro ventilaci",
+        "Zvětší pracovní plochu bez externího monitoru",
+        "Umožňuje dotykové ovládání na celé ploše",
+        "Šetří baterii díky menší aktivní ploše pixelů"
+      ],
+      "correct": [1],
+      "explanation": "Displej se mechanicky vysune a nabídne větší plochu — uživatel přepíná mezi kompaktním a rozšířeným režimem bez externího monitoru."
+    }
+  ]
+}
