@@ -1,0 +1,132 @@
+{
+  "title": "Humanoidní roboti ožívají: máme se bát nové éry strojů? (Hard)",
+  "channel": "FutureCast: technologie zítřka",
+  "url": "https://www.youtube.com/watch?v=rSWtOEAGsXw",
+  "thumbnail": "https://i.ytimg.com/vi/rSWtOEAGsXw/maxresdefault.jpg",
+  "date": "2026-05-24",
+  "difficulty": "hard",
+  "questions": [
+    {
+      "question": "Proč je trénink na 100 000 různých robotických tělech lepší strategie než dokonalé vyladění pro jedno tělo?",
+      "type": "single",
+      "points": 3,
+      "options": [
+        "Větší počet těl vždy znamená rychlejší trénink díky paralelizaci",
+        "Každé tělo přináší unikátní data, která zlepšují přesnost o fixní procento",
+        "Model se naučí abstraktní principy pohybu, ne specifika jednoho stroje",
+        "Regulace vyžadují testování na minimálně 50 000 různých platformách"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Diverzita těl nutí model pochopit principy (rovnováha, koordinace) místo memorování specifik. Výsledek: generalizace na jakéhokoliv robota, i dosud neviděného."
+    },
+    {
+      "question": "Co znamená, když se robot po ztrátě končetiny sám přizpůsobí a pokračuje v pohybu?",
+      "type": "single",
+      "points": 3,
+      "options": [
+        "Má předprogramovaný záložní plán pro každý typ poškození",
+        "Robot přepne do nouzového režimu s omezenými ale stabilními pohyby",
+        "Zbývající končetiny automaticky převezmou všechny funkce chybějících",
+        "AI přepočítává strategii pohybu v reálném čase na základě principů"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Nejde o záložní plán (ty by vyžadovaly předvídání všech situací). AI chápe princip pohybu a přepočítává řešení pro aktuální stav těla — emergentní adaptace, ne skript."
+    },
+    {
+      "question": "Jaký je zásadní rozdíl mezi robotem, který plní příkazy, a robotem, který plánuje a rozhoduje?",
+      "type": "single",
+      "points": 3,
+      "options": [
+        "Robot co plánuje potřebuje výrazně více energie na výpočetní operace",
+        "Zvládá nové situace bez instrukce — škáluje na neznámé",
+        "Robot co plánuje potřebuje výrazně více energie na výpočty",
+        "Rozhodující robot je vždy nebezpečnější a vyžaduje přísnější regulaci"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Robot plnící příkazy selže v nepředvídané situaci. Robot co plánuje rozloží cíl na kroky a adaptuje se — funguje i tam, kde návod neexistuje."
+    },
+    {
+      "question": "Proč 'digitální dvojče' prostředí (simulace se stejnou fyzikou) řeší problém přenosu dovedností do reality?",
+      "type": "single",
+      "points": 3,
+      "options": [
+        "Pokud simulace věrně kopíruje fyziku, dovednosti z ní fungují i v realitě",
+        "Digitální dvojče eliminuje veškeré rozdíly mezi simulací a skutečností",
+        "Simulace je vždy přesnější než reálný svět díky absenci šumu",
+        "Přenos funguje jen díky tomu, že robot nerozlišuje simulaci od reality"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Sim-to-real transfer závisí na věrnosti fyziky. Čím přesněji simulace modeluje gravitaci, tření, deformace, tím lépe naučené dovednosti fungují bez přeučování v realitě."
+    },
+    {
+      "question": "Proč je kombinace 'vidění + jazyk + akce' v jednom modelu silnější než tři oddělené systémy?",
+      "type": "multi",
+      "points": 3,
+      "options": [
+        "Tři oddělené systémy nelze technicky propojit bez ztráty dat",
+        "Sdílená reprezentace umožňuje propojovat vizuální kontext s jazykovými instrukcemi",
+        "Jeden model má nižší latenci než pipeline tří sekvenčních systémů",
+        "Integrovaný systém může plánovat akci s ohledem na to co vidí i co mu bylo řečeno"
+      ],
+      "correct": [
+        1,
+        2,
+        3
+      ],
+      "explanation": "Multimodální integrace = robot chápe instrukci v kontextu toho co vidí a plánuje akci odpovídající obojímu. Oddělené systémy ztrácejí kontext na rozhraních."
+    },
+    {
+      "question": "Proč samovýměna baterie představuje kvalitativní skok v autonomii, ne jen kvantitativní (delší provoz)?",
+      "type": "single",
+      "points": 3,
+      "options": [
+        "Odstraňuje poslední bod závislosti robota na lidském zásahu",
+        "Robot s výměnnou baterií má vždy plný výkon bez jakékoli degradace",
+        "Robot s výměnnou baterií má vždy plný výkon bez degradace kapacity",
+        "Samovýměna je levnější než nabíjení a šetří provozní náklady"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Kvantitativní = delší provoz (větší baterie). Kvalitativní = robot nepotřebuje člověka v provozním cyklu vůbec. Je to rozdíl mezi vylepšením a kategorickou změnou závislosti."
+    },
+    {
+      "question": "Proč filmové scénáře o robotech, kteří se 'vymknou kontrole', nereflektují současný stav technologie?",
+      "type": "single",
+      "points": 2,
+      "options": [
+        "Nemá vlastní cíle — optimalizuje funkci, kterou dostala",
+        "Filmové scénáře popisují situaci možnou až za stovky let vývoje",
+        "Všichni roboti mají hardware kill-switch, který vždy spolehlivě funguje",
+        "Roboti jsou fyzicky příliš slabí na to, aby představovali hrozbu"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Současná AI = optimalizátor bez vlastních záměrů. Nemá motivaci, sebezáchovu ani cíle mimo zadanou funkci. Sci-fi předpokládá AGI s vlastní vůlí — to aktuální stav není."
+    },
+    {
+      "question": "Proč je 'učení pozorováním' (imitation learning) škálovatelnější přístup než ruční programování pohybů?",
+      "type": "single",
+      "points": 3,
+      "options": [
+        "Robot při imitaci nepotřebuje žádnou vlastní inteligenci",
+        "Imitace vždy produkuje přesnější pohyby než explicitní kód",
+        "Stačí ukázat nový úkol — nemusíte rozumět robotice ani programování",
+        "Lidské demonstrace jsou neomezeně dostupný zdroj tréninkových dat"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Škálovatelnost: nový úkol = nová demonstrace, ne měsíce programování. Snižuje bariéru — naučit robota může kdokoliv kdo úkol zvládne sám, ne jen robotik."
+    }
+  ]
+}

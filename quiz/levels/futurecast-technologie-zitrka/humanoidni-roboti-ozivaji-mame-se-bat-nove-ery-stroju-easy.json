@@ -1,0 +1,132 @@
+{
+  "title": "Humanoidní roboti ožívají: máme se bát nové éry strojů? (Easy)",
+  "channel": "FutureCast: technologie zítřka",
+  "url": "https://www.youtube.com/watch?v=rSWtOEAGsXw",
+  "thumbnail": "https://i.ytimg.com/vi/rSWtOEAGsXw/maxresdefault.jpg",
+  "date": "2026-05-24",
+  "difficulty": "easy",
+  "questions": [
+    {
+      "question": "Proč je výhodnější učit robota obecný princip pohybu než konkrétní sekvenci kroků?",
+      "type": "single",
+      "points": 2,
+      "options": [
+        "Obecný princip funguje i v nové situaci — konkrétní sekvence ne",
+        "Obecný princip je vždy rychlejší na naučení než specifické pohyby",
+        "Sekvence kroků zabírá příliš mnoho paměti v procesoru",
+        "Konkrétní kroky jsou patentově chráněné a nelze je sdílet"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Kdo rozumí principu rovnováhy, zvládne i neznámý terén. Kdo zná jen naučenou sekvenci, selže při jakékoliv odchylce — generalizace > memorování."
+    },
+    {
+      "question": "Proč je důležité, aby AI robota běžela přímo na jeho hardwaru, ne v cloudu?",
+      "type": "single",
+      "points": 2,
+      "options": [
+        "Cloud neumí zpracovávat data z fyzických senzorů dostatečně rychle",
+        "Cloudové řešení je vždy dražší na provoz než lokální",
+        "Funguje i bez internetu — kritické v terénu nebo výpadku",
+        "Cloud neumí zpracovávat data z fyzických senzorů"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Závislost na připojení = single point of failure. Robot v továrně, terénu nebo vesmíru musí fungovat autonomně — lokální AI to umožňuje."
+    },
+    {
+      "question": "Proč roboti trénují v simulaci místo v reálném světě?",
+      "type": "multi",
+      "points": 2,
+      "options": [
+        "Chyby v simulaci nerozbijí hardware za miliony",
+        "Simulovaná fyzika je přesnější než skutečná",
+        "Testování v reálu je drahé, pomalé a riskantní",
+        "V simulaci lze projít tisíce scénářů rychle a bezpečně"
+      ],
+      "correct": [
+        0,
+        2,
+        3
+      ],
+      "explanation": "Simulace = rychlost + bezpečnost + úspora. Robot projde tisíce situací bez rizika poškození. Fyzika simulace ale není přesnější — jen bezpečnější."
+    },
+    {
+      "question": "Co se stane, když robot umí sám vyměnit baterii?",
+      "type": "single",
+      "points": 2,
+      "options": [
+        "Robot se stává plně inteligentní a autonomní bytostí",
+        "Robot už nikdy nepotřebuje údržbu ani servis",
+        "Odpadá závislost na člověku pro nepřetržitý provoz",
+        "Baterie vydrží mnohem déle díky automatické výměně"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Samovýměna baterie odstraňuje lidský zásah z provozního cyklu — robot může teoreticky fungovat 24/7 bez přestávky závislé na operátorovi."
+    },
+    {
+      "question": "Proč je schopnost robota učit se pozorováním lidí průlomová oproti klasickému programování?",
+      "type": "single",
+      "points": 2,
+      "options": [
+        "Pozorování je vždy rychlejší proces než jakékoliv ruční programování",
+        "Programování vyžaduje speciální jazyky, pozorování ne",
+        "Lidské pohyby jsou vždy optimální a robot je prostě kopíruje",
+        "Nemusíte explicitně definovat každý krok — robot si ho odvodí sám"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Klasické programování vyžaduje explicitní instrukce pro každou situaci. Učení pozorováním umožňuje robotovi generalizovat z příkladů — škáluje na nové úlohy bez přeprogramování."
+    },
+    {
+      "question": "Jaký je aktuální stav humanoidních robotů vs. filmové představy o nich?",
+      "type": "single",
+      "points": 1,
+      "options": [
+        "Jejich inteligence již překonala lidskou v běžných úkolech",
+        "Jsou nebezpeční a musí být drženi v přísně izolovaných laboratořích",
+        "Roboti jsou již plně autonomní, jen se to tají před veřejností",
+        "Zvládají pohyb a manipulaci, ale složité úkoly jen pod dohledem"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Současní roboti zvládají chůzi, manipulaci, rozpoznávání — ale stále pod lidským dohledem. Jsou to schopné stroje, ne autonomní bytosti."
+    },
+    {
+      "question": "Proč je 'univerzální mozek' (jeden systém pro různá těla) efektivnější než specifický software pro každého robota?",
+      "type": "single",
+      "points": 2,
+      "options": [
+        "Univerzální systémy jsou vždy spolehlivější než specializované",
+        "Jeden systém se škáluje na nová těla bez přepisování kódu od nuly",
+        "Univerzální systémy jsou vždy výrazně spolehlivější než specializované",
+        "Specifický software nelze aktualizovat po nasazení do provozu"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Univerzální model naučený na 100k různých těl chápe principy pohybu — při nasazení na nového robota se adaptuje, místo aby se vše programovalo znovu."
+    },
+    {
+      "question": "Proč kombinace autonomního těla + učící se AI vyvolává otázky, které čistě softwarová AI nevyvolává?",
+      "type": "single",
+      "points": 2,
+      "options": [
+        "Softwarová AI je vždy méně inteligentní než ta umístěná v robotovi",
+        "Softwarová AI je vždy méně inteligentní než ta v robotovi",
+        "Fyzické tělo automaticky dává AI vědomí a vlastní vůli",
+        "Software AI nemůže fyzicky ovlivnit svět kolem sebe — robot ano"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Klíčový rozdíl: robot jedná ve fyzickém světě. Software AI může vygenerovat špatný text — robot může něco rozbít, zranit, nebo se pohybovat bez kontroly."
+    }
+  ]
+}
