@@ -15,7 +15,9 @@
         "Artemis je jednorázový demonstrační let bez dalších plánů",
         "Apollo bylo mezinárodní spolupráce, Artemis je výhradně americký"
       ],
-      "correct": [0],
+      "correct": [
+        0
+      ],
       "explanation": "Na rozdíl od Apolla, které bylo jednorázovým závodem, má Artemis ambici vybudovat dlouhodobou infrastrukturu pro pravidelné mise a trvalou přítomnost lidí mimo Zemi."
     },
     {
@@ -28,7 +30,9 @@
         "Zkracuje celkovou dobu mise na přibližně polovinu oproti plánu",
         "Umožňuje přistání na povrchu bez přistávacího modulu"
       ],
-      "correct": [1],
+      "correct": [
+        1
+      ],
       "explanation": "Free return trajektorie zajišťuje, že v případě technických problémů není nutné provádět složité korekce — samotná fyzika pomůže zajistit návrat posádky."
     },
     {
@@ -42,7 +46,11 @@
         "Radiační stínění obytného prostoru lodi",
         "Komunikační systém pro spojení se Zemí"
       ],
-      "correct": [0, 1, 2],
+      "correct": [
+        0,
+        1,
+        2
+      ],
       "explanation": "Evropský servisní modul zajišťuje energii (solární panely), zásoby vody a kyslíku a obsahuje hlavní motor i manévrovací systémy."
     },
     {
@@ -55,7 +63,9 @@
         "Umožňuje výrobu kyslíku i paliva přímo na místě",
         "Je nezbytný pro výrobu stavebních materiálů z regolitu"
       ],
-      "correct": [2],
+      "correct": [
+        2
+      ],
       "explanation": "Voda představuje klíčový zdroj nejen pro přežití, ale i pro výrobu kyslíku a paliva — budoucí mise by nemusely být plně závislé na zásobování ze Země."
     },
     {
@@ -68,7 +78,9 @@
         "K přepnutí na záložní navigaci bez GPS pokrytí",
         "K odpojení servisního modulu pro test autonomie"
       ],
-      "correct": [1],
+      "correct": [
+        1
+      ],
       "explanation": "Měsíc samotný blokuje rádiový signál — jde o očekávaný jev známý už z programu Apollo, trvající přibližně 45 minut."
     },
     {
@@ -81,7 +93,9 @@
         "Čipy Advacam měří kosmické záření a ověřují stínění",
         "Senzory Pragoboardu monitorují integritu tepelného štítu"
       ],
-      "correct": [2],
+      "correct": [
+        2
+      ],
       "explanation": "Součástí systému Hera je šest čipů pro měření radiace dodaných pražskou firmou Advacam — monitorují složení kosmického záření a pomáhají ověřit radiační stínění."
     },
     {
@@ -94,7 +108,9 @@
         "Rozpočtové škrty amerického Kongresu zpozdily celý program",
         "Politické rozhodnutí přesměrovat veškeré zdroje na Mars"
       ],
-      "correct": [1],
+      "correct": [
+        1
+      ],
       "explanation": "NASA musela program přepracovat kvůli technickým výzvám ve vývoji lunárních landerů i skafandrů nové generace."
     },
     {
@@ -107,7 +123,9 @@
         "Komunikační satelit na libračním bodě pro nepřetržitý signál",
         "Pozemní řídicí středisko v Houstonu pro lunární koordinaci"
       ],
-      "correct": [0],
+      "correct": [
+        0
+      ],
       "explanation": "Gateway má fungovat jako přestupní bod mezi Zemí a povrchem Měsíce — umožní flexibilnější plánování misí a delší pobyt astronautů."
     },
     {
@@ -121,7 +139,12 @@
         "Blízkost Země pro řešení problémů při náročných podmínkách",
         "Testování dlouhodobého pobytu v izolaci"
       ],
-      "correct": [0, 1, 3, 4],
+      "correct": [
+        0,
+        1,
+        3,
+        4
+      ],
       "explanation": "Měsíc je ideální pro testování výroby energie, recyklace vody, ochrany před radiací a pobytu v izolaci. Je blízko Země, ale podmínky jsou reálně náročné. Nemá však atmosféru podobnou Marsu."
     },
     {
@@ -134,8 +157,11 @@
         "Přistávací modul na povrchu Měsíce — neúspěšně",
         "Skafandry nové generace při výstupu — mise odložena"
       ],
-      "correct": [1],
+      "correct": [
+        1
+      ],
       "explanation": "Artemis 1 testovala tepelnou ochranu při návratu do atmosféry, navigační systémy a raketu SLS. Mise byla úspěšná."
     }
-  ]
+  ],
+  "difficulty": "hard"
 }

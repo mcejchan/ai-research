@@ -78,7 +78,7 @@ function initLevelsPage() {
   function renderLevels() {
     const levels = activeDifficulty === 'all'
       ? allLevels
-      : allLevels.filter((level) => (level.difficulty === 'easy' ? 'easy' : 'hard') === activeDifficulty);
+      : allLevels.filter((level) => level.difficulty === activeDifficulty);
 
     count.textContent = activeDifficulty === 'all'
       ? `${allLevels.length} level${allLevels.length === 1 ? '' : 's'}`
@@ -91,12 +91,12 @@ function initLevelsPage() {
       const thumb = level.thumbnail
         ? `<img class="level-thumb" src="${escapeHtml(level.thumbnail)}" alt="${escapeHtml(level.title)} thumbnail" loading="lazy">`
         : '';
-      const difficulty = level.difficulty === 'easy' ? 'easy' : 'hard';
-      const difficultyLabel = difficulty === 'easy' ? 'Easy' : 'Hard';
+      const difficulty = level.difficulty || null;
+      const difficultyLabel = difficulty === 'easy' ? 'Easy' : difficulty === 'hard' ? 'Hard' : null;
 
       return `
         <a class="level-card" href="quiz.html?level=${encodeURIComponent(level.path)}">
-          <div class="level-thumb-wrap">${thumb}${played}<span class="difficulty-badge difficulty-${difficulty}">${difficultyLabel}</span></div>
+          <div class="level-thumb-wrap">${thumb}${played}${difficultyLabel ? `<span class="difficulty-badge difficulty-${difficulty}">${difficultyLabel}</span>` : ''}</div>
           <div class="level-body">
             <h2>${escapeHtml(level.title)}</h2>
             <p class="label">${escapeHtml(level.channel)}</p>
