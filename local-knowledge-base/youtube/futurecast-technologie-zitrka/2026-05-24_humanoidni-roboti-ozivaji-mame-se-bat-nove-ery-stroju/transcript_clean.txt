@@ -1,0 +1,68 @@
+Ještě před pár lety jsme se na humanoidní roboty dívali jako na neohrabané pokusy z laboratoří.
+Dnes už ale sledujeme stroje, které se začínají nápadně podobat lidem.
+Humanoidní robotika prochází nejrychlejším rozvojem v celé své historii, poháněná prudkým nástupem umělé inteligence.
+Každý měsíc se objevují nové modely, nové dovednosti a technologické průlomy, které posouvají hranici mezi člověkem a strojem.
+Moderní roboti už zvládají nejen lidský pohyb, ale i porozumění okolnímu světu a jejich schopnost fungovat nezávisle rychle roste.
+Kam tohle všechno povede? Jsme na prahu éry, kdy roboti konečně začnou sloužit lidem? Nebo jsme právě spustili proces, který už nepůjde zastavit? Nejodvážnější novinka posledních týdnů pochází od společnosti Skilled AI, která tvrdí, že vytvořila univerzální mozek schopný ovládat jakéhokoli robota a to bez ohledu na jeho tvar nebo konstrukci.
+Systém s názvem Omnibodied Brain dokáže převzít kontrolu nad jakýmkoli robotickým tělem a okamžitě se přizpůsobit jeho pohybu.
+Zatímco dřív musel mít každý robot svůj vlastní software a specifický způsob řízení, tenhle model zvládá všechno.
+Od dvouohých humanoidů až po robotické psy.
+Společnost o něm mluví jako o mozku, který nic nezastaví a jejich demonstrační video tomu odpovídá.
+Inženýři v něm odříznou robotovy končetiny a přesto se znovu začne pohybovat.
+Umělá inteligence se přepočítá, přizpůsobí nové situaci a najde způsob, jak se udržet v pohybu.
+V praxi to znamená, že systém dokáže reagovat i na poškození nebo ztrátu částí těla, něco, co dřív znamenalo konec funkčnosti.
+Skilled AI učila svůj model ve virtuálním světě, který obsahoval přes 100 000 různých těl robotů.
+Každý s jiným tvarem, váhou, klouby i pohybovým stylem.
+Model se tak nemohl naučit konkrétní pohyby, ale musel pochopit samotný princip rovnováhy a koordinace.
+Společnost mluví o prvních jiskrách inteligence.
+Tenhle systém už nereaguje podle pevně daných pravidel.
+Sám se rozhoduje, jak se přizpůsobit, aby mohl pokračovat.
+Je to malý, ale zásadní krok k době, kdy roboti nebudou jen plnit příkazy, ale budou se učit, adaptovat a možná i spolu sdílet zkušenosti.
+Na podobném principu teď pracuje i Google Deep Mind se svým projektem Gemini Robotics.
+Tato technologie kombinuje vidění, jazyk a pohyb do jednoho systému, který robotům umožňuje plánovat, rozhodovat a jednat sám o sobě.
+Google nedávno představil novinku s názvem Gemini on Device verzi svého jazykového modelu, která běží přímo na robotickém hardwaru bez nutnosti připojení k internetu.
+Mozek robota tak zpracovává informace lokálně v reálném čase a bez závislosti na clouu.
+Díky tomu může fungovat naprosto samostatně, ať už je v továrně, v terénu nebo třeba ve vesmíru.
+Je to první skutečný krok k plné autonomii, protože pokud má být robot nezávislý, musí být schopen přemýšlet sám a přímo tam, kde se nachází.
+Zatímco tyto projekty přinášejí novou úroveň inteligence, další vývoj směřuje k dokonalému tělu. Čínská firma UPtech představila humanoidního robota Walker S2, který si dokáže sám vyměnit baterii.
+Je vybaven systémem se 24 V bateriemi, které mu umožňují přibližně 2 hodiny chodit nebo stát 4 hodiny ve stavu pohotovosti, než bude nutné provést výměnu.
+Když mu dochází energie, prostě zajde ke stanici, vysune vybitou baterií a nahradí ji novou.
+Tento robot může teoreticky fungovat nepřetržitě 24 hodin denně. sedm dní v týdnu.
+Poprvé tu máme stroj, který nepotřebuje člověka, aby mohl fungovat.
+Je to fascinující, ale i trochu znepokojivé.
+Když spojíte samostatné tělo s inteligencí, která se učí a adaptuje, vzniká systém, který už není jenom nástroj.
+Je to entita, která by jednou mohla žít svým vlastním rytmem.
+Sponzorem tohoto kanálu je Buddy, váš mentor a AI přítel.
+Stačí zadat budy.fm a můžete si ho zdarma vyzkoušet.
+A pak je tu něco, co posouvá celou věc ještě dál.
+Lidskost.
+Společnost Headform ukázala robota s názvem Origin M1.
+Jde o robotickou hlavu s neuvěřitelně realistickou kůží a 25 mikromotory, které řídí každý pohyb obličeje.
+Díky kamerám v očích a mikrofonům v uších sleduje člověka, rozpoznává hlas i emoce.
+Aby se humanoidní roboti mohli vůbec naučit všechny tyto dovednosti, potřebují trénovat.
+Ale testovat pokročilé stroje v reálném světě je drahé, pomalé a často i nebezpečné.
+Právě proto přichází na scénu Nvidia, která spustila novou generaci simulačních nástrojů pro fyzickou umělou inteligenci.
+Dohromady tvoří platformu, která robotům umožňuje učit se v digitálním světě se stejnou fyzikou a gravitací, jaké platí v realitě.
+V simulaci mohou roboti chodit, zvedat předměty nebo trénovat jemné pohyby rukou.
+Nový Newton Physics Engine dokáže simulovat i extrémně složité situace.
+Například chůzi po sněhu nebo po kamenech, rovnováhu při manipulaci s předměty nebo uchopení křehkého ovoce.
+Robot se tak naučí zvládat tisíce scénářů ještě předtím, než vůbec vstoupí do skutečného světa.
+O mozek robotů se naopak stará nový model Isaac Grot N1, který propojuje vidění, jazyk a akci, tedy schopnost porozumět pokynům, rozložit je na jednotlivé kroky a provést je s pomocí předchozích zkušeností.
+Nvidia tím v podstatě vytváří digitální ekosystém pro vývoj nové generace robotů.
+Tuto technologii už využívají společnosti jako Boston Dynamics, Figure AI nebo Agility Robotics.
+A společnost Figure AI právě představila svého nového humanoidního robota, který má ambici překonat hranici mezi člověkem a strojem.
+Figure 3 má být prvním skutečně univerzálním robotem schopným zvládat práci v továrnách i domácnostech, odskládání prádla po plnění myčky.
+Robot využívá neuronovou síť zvanou Helix, jenž mu umožňuje učit se nové úkoly doslova pozorováním lidí.
+Jeho ruce mají dotykové senzory, kamera v dlani mu pomáhá s jemnými úkony a jeho tělo je lehčí, bezpečnější a 90krát levnější na výrobu než předchozí model.
+Cílem je, aby se roboti brzy dostali do každé domácnosti a převzali rutinní práci lidí.
+Figure AI věří, že do 10 let budou humanoidní roboti běžnou součástí života a že právě tato technologie přinese novou éru fyzické umělé inteligence, kdy stroje nebudou jen myslet, ale i jednat.
+S rostoucími schopnostmi a inteligencí humanoidních robotů se stále častěji ptáme, kam až tenhle vývoj může zajít.
+Filmy nám ukazují scénáře, kde se roboti vymknou kontrole a obrátí proti svým tvůrcům.
+Ve skutečnosti je ale současný stav mnohem umírnější.
+Dnešní humanoidní roboti sice zvládnou chůzi, manipulaci s předměty nebo rozpoznávání lidí, ale bez lidského dohledu nedokážou vykonávat složité úkoly.
+Jejich chování je pořád pod plnou kontrolou člověka.
+Jsou to skvěle naprogramované stroje, nikoliv samostatné bytosti.
+Jejich potenciál do budoucna je však obrovský.
+S rozvojem baterií, motoriky a umělé inteligence je pravděpodobné, že během několika let se stanou součástí našich každodenních životů.
+Není otázkou, jestli budou součástí naší budoucnosti, ale jakou roli v ní vlastně sejí.
+Budou našimi pomocníky, kolegy nebo jednou i partnery, kteří nám budou připomínat nás samotné? Jaký je váš názor na humanoidní roboty? Dejte nám vědět v komentářích a nezapomeňte kliknout na like a odběr, aby vám neunikly žádné novinky ze světa technologií budoucnosti.
