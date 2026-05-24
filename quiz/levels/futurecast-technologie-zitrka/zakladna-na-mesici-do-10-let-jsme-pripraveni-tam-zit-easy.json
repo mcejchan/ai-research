@@ -37,36 +37,6 @@
       "explanation": "Dvoutýdenní měsíční noc znamená, že solární panely polovinu času neprodukují elektřinu — proto se testují rádioizotopové zdroje."
     },
     {
-      "question": "K čemu slouží přetlakový rover vyvíjený s Japonskem?",
-      "type": "single",
-      "points": 1,
-      "options": [
-        "Automaticky těží vodu z kráterů v permanentním stínu",
-        "Přepravuje těžké náklady mezi moduly základny",
-        "Funguje jako nouzová záložní startovací platforma",
-        "Astronauti v něm žijí a pracují několik dní"
-      ],
-      "correct": [
-        3
-      ],
-      "explanation": "Přetlakový rover umožňuje astronautům pobývat uvnitř bez skafandru i několik dní, čímž rozšiřuje dosah průzkumu."
-    },
-    {
-      "question": "Co znamená program CLPS v kontextu měsíčního průzkumu?",
-      "type": "single",
-      "points": 2,
-      "options": [
-        "Zapojení komerčních firem do dopravy na Měsíc",
-        "Výcvikový program pro budoucí lunární posádky",
-        "Mezinárodní dohoda o spravedlivém sdílení zdrojů",
-        "Síť komunikačních satelitů na oběžné dráze"
-      ],
-      "correct": [
-        0
-      ],
-      "explanation": "CLPS (Commercial Lunar Payload Services) je program NASA, kde komerční společnosti dopravují vědecké přístroje a technologie na povrch Měsíce."
-    },
-    {
       "question": "Proč se lunární drony pohybují skoky místo klasickým letem?",
       "type": "single",
       "points": 2,
@@ -112,19 +82,49 @@
       "explanation": "Musk argumentoval, že Měsíc je přístupnější a umožňuje rychlejší testování a zdokonalování technologií než vzdálenější Mars."
     },
     {
-      "question": "Kde na Měsíci se nachází vodní led?",
+      "question": "Proč je lokální výroba zdrojů (např. paliva z vody) zásadnější než pravidelný dovoz ze Země?",
       "type": "single",
-      "points": 1,
+      "points": 2,
       "options": [
-        "V zastíněných kráterech jižního pólu",
-        "Rovnoměrně rozprostřený pod celým povrchem",
-        "V rovníkových oblastech pod lávovými tunely",
-        "Pouze na přivrácené straně směrem k Zemi"
+        "Každý kilogram ze Země stojí obrovské množství energie na vynesení z gravitace",
+        "Na Zemi už nejsou dostatečné zásoby raketového paliva pro častý transport",
+        "Doprava ze Země trvá příliš dlouho a materiál by se cestou znehodnotil",
+        "Mezinárodní smlouvy zakazují pravidelnou přepravu zdrojů na jiná tělesa"
       ],
       "correct": [
         0
       ],
-      "explanation": "Krátery u jižního pólu jsou trvale ve stínu, takže tam teploty nikdy nestoupnou natolik, aby led sublimoval."
+      "explanation": "Vynesení 1 kg na oběžnou dráhu stojí tisíce dolarů — lokální výroba z dostupných zdrojů dramaticky snižuje závislost na těchto nákladech."
+    },
+    {
+      "question": "Proč je postupný iterační přístup (mise → infrastruktura → pobyt) bezpečnější než jeden velký skok rovnou k základně?",
+      "type": "single",
+      "points": 2,
+      "options": [
+        "Každá fáze ověří předpoklady té další — chyby se odhalí dřív než jsou fatální",
+        "Postupný přístup je vždy levnější než jakákoliv alternativa",
+        "Velké skoky jsou zakázány bezpečnostními předpisy NASA",
+        "Iterační přístup nevyžaduje žádné předchozí testování technologií"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Iterace = rychlá zpětná vazba. Každá fáze odhalí problémy v malém měřítku, než se stanou katastrofou ve velkém — princip platný od software po kolonizaci."
+    },
+    {
+      "question": "Proč je důležité mít víc nezávislých zdrojů energie (solar + rádioizotopy) místo jednoho spolehlivého?",
+      "type": "single",
+      "points": 1,
+      "options": [
+        "Dva nezávislé zdroje jsou vždy levnější než jeden výkonný",
+        "Redundance snižuje riziko — když jeden selže, druhý funguje dál",
+        "NASA to vyžaduje jako podmínku pro schválení mise",
+        "Jeden zdroj by fyzicky nemohl vyprodukovat dostatek energie"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Redundance je základní inženýrský princip pro kritické systémy — v prostředí kde záchrana trvá dny, jediný bod selhání znamená katastrofu."
     }
   ]
 }

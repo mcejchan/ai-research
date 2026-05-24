@@ -37,24 +37,6 @@
       "explanation": "Měsíc slouží jako polygon pro ověřování technologií klíčových pro Mars — ISRU, životní podpora, dlouhodobá izolace — v prostředí, kde je záchrana stále možná."
     },
     {
-      "question": "Co odlišuje druhou fázi programu Artemis od první?",
-      "type": "multi",
-      "points": 3,
-      "options": [
-        "První přistání lidské posádky na povrch Měsíce",
-        "Budování energetické a komunikační sítě",
-        "Nasazení přetlakových roverů pro vícedenní mise",
-        "Robotická příprava terénu pro moduly",
-        "Testování rádioizotopových zdrojů nezávislé energie"
-      ],
-      "correct": [
-        1,
-        2,
-        3
-      ],
-      "explanation": "Druhá fáze je o infrastruktuře: energetika, komunikace, přetlakové rovery a terénní úpravy. První přistání a testy energetických zdrojů patří do fáze jedna."
-    },
-    {
       "question": "Proč je Muskův obrat od Marsu k Měsíci strategicky zajímavý, ale zároveň problematický?",
       "type": "single",
       "points": 3,
@@ -101,21 +83,6 @@
       "explanation": "Jižní pól nabízí unikátní kombinaci: vodu v zastíněných kráterech a nedaleko výšiny s téměř stálým slunečním svitem pro solární energii."
     },
     {
-      "question": "Jaký geopolitický motiv stojí za naléhavostí NASA ohledně lunární základny?",
-      "type": "single",
-      "points": 2,
-      "options": [
-        "Rusko vyhlásilo teritoriální nároky na jižní pól Měsíce",
-        "Čína plánuje vlastní stanici do 2035 a přistání do 2030",
-        "Mezinárodní smlouvy o vesmíru vyprší v roce 2030",
-        "SpaceX hrozí nezávislými operacemi bez dohledu NASA"
-      ],
-      "correct": [
-        1
-      ],
-      "explanation": "Čína otevřeně buduje konkurenční program — mezinárodní lunární výzkumnou stanici — což tlačí NASA k urychlení vlastních plánů."
-    },
-    {
       "question": "Co musí třetí fáze programu Artemis zvládnout, aby astronauti přestali být jen 'návštěvníci'?",
       "type": "multi",
       "points": 4,
@@ -134,19 +101,49 @@
       "explanation": "Třetí fáze staví na infrastruktuře z fáze 2 (energie, komunikace) a přidává habitaty se životní podporou a využívání místních zdrojů pro soběstačnost."
     },
     {
-      "question": "Co bylo z technického hlediska nejkritičtější ověřit při návratu mise Artemis 2?",
+      "question": "Proč kolonizace bližšího cíle (Měsíc) de-riskuje vzdálenější cíl (Mars)?",
       "type": "single",
-      "points": 2,
+      "points": 3,
       "options": [
-        "Přesnost navigačních systémů bez GPS signálu",
-        "Odolnost posádky vůči radiaci v hlubokém vesmíru",
-        "Tepelnou ochranu při vstupu rychlostí přes 40 000 km/h",
-        "Funkčnost komunikace za odvrácennou stranou Měsíce"
+        "Na Měsíci se technologie otestují v reálu, kde záchrana je ještě možná",
+        "Mars a Měsíc mají identické podmínky, jen jinou vzdálenost",
+        "Měsíční základna bude sloužit jako mezipřistání při cestě na Mars",
+        "Na Měsíci jsou lepší podmínky pro život než na Marsu ve všech ohledech"
       ],
       "correct": [
-        2
+        0
       ],
-      "explanation": "Při vstupu do atmosféry čelila loď extrémním teplotám z kinetické energie — ověření tepelného štítu bylo klíčové pro bezpečnost budoucích misí."
+      "explanation": "Měsíc je 3 dny od Země — pokud technologie selže, evakuace je reálná. Na Marsu (6+ měsíců) by stejná chyba byla fatální. Test blízko = de-risking daleko."
+    },
+    {
+      "question": "Proč „uzavřená smyčka\" zdrojů (voda → kyslík → palivo → zpět) je podmínkou trvalého osídlení mimo Zemi?",
+      "type": "single",
+      "points": 4,
+      "options": [
+        "Bez cyklické regenerace zdrojů závisíte na dodávkách — a ty mohou selhat",
+        "Uzavřená smyčka je levnější než jakýkoliv jiný systém podpory života",
+        "Otevřené systémy jsou zakázány mezinárodními vesmírnými smlouvami",
+        "Lineární systémy fungují jen v gravitaci Země, ne na jiných tělesech"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Lineární systém (spotřebuj → doplň ze Země) má single point of failure v dodavatelském řetězci. Uzavřená smyčka = soběstačnost = odolnost vůči výpadkům."
+    },
+    {
+      "question": "Proč geopolitická konkurence (space race) urychluje vývoj, i když přináší neefektivitu duplikace?",
+      "type": "single",
+      "points": 3,
+      "options": [
+        "Strach že někdo bude první motivuje k rychlejšímu financování a riziku",
+        "Konkurence vždy vede k lepším technologiím než spolupráce",
+        "Duplikace je ve skutečnosti efektivnější než jednotný program",
+        "Mezinárodní právo vyžaduje nezávislé programy pro každý stát"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Konkurence zvyšuje ochotu investovat a přijímat riziko — politická motivace překonává byrokratickou opatrnost. Cena = duplikované úsilí, ale tempo roste."
     }
   ]
 }

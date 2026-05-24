@@ -7,7 +7,7 @@
     "date": "2026-05-24",
     "difficulty": "easy",
     "questionCount": 8,
-    "maxPoints": 11
+    "maxPoints": 15
   },
   {
     "path": "futurecast-technologie-zitrka/ces-2026-ai-roboti-a-chytre-gadgety-hard.json",
@@ -17,7 +17,7 @@
     "date": "2026-05-24",
     "difficulty": "hard",
     "questionCount": 8,
-    "maxPoints": 21
+    "maxPoints": 22
   },
   {
     "path": "futurecast-technologie-zitrka/zakladna-na-mesici-do-10-let-jsme-pripraveni-tam-zit-easy.json",
