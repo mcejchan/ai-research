@@ -46,18 +46,18 @@
     "thumbnail": "https://i.ytimg.com/vi/sPeT471KWp4/maxresdefault.jpg",
     "date": "2026-05-19",
     "difficulty": "easy",
-    "questionCount": 10,
-    "maxPoints": 15
+    "questionCount": 8,
+    "maxPoints": 13
   },
   {
     "path": "futurecast-technologie-zitrka/artemis-ii-prvni-lide-miri-k-mesici-hard.json",
-    "title": "Artemis II – První lidé míří k Měsíci (Hard)",
-    "channel": "FutureCast – Technologie zítřka",
+    "title": "Artemis II: první lidé míří k Měsíci (Hard)",
+    "channel": "FutureCast: technologie zítřka",
     "thumbnail": "https://i.ytimg.com/vi/sPeT471KWp4/maxresdefault.jpg",
     "date": "2026-05-19",
     "difficulty": "hard",
-    "questionCount": 10,
-    "maxPoints": 21
+    "questionCount": 8,
+    "maxPoints": 22
   },
   {
     "path": "futurecast-technologie-zitrka/fotonicke-cipy-prichazi-konec-klasickych-procesoru-easy.json",
