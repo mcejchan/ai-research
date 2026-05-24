@@ -1,0 +1,152 @@
+{
+  "title": "Základna na Měsíci: do 10 let jsme připraveni tam žít (Hard)",
+  "channel": "FutureCast: technologie zítřka",
+  "url": "https://www.youtube.com/watch?v=S2ZOWRDkb-U",
+  "thumbnail": "https://i.ytimg.com/vi/S2ZOWRDkb-U/maxresdefault.jpg",
+  "date": "2026-05-24",
+  "difficulty": "hard",
+  "questions": [
+    {
+      "question": "Proč NASA přesunula důraz z orbitální stanice Gateway na lunární povrch?",
+      "type": "single",
+      "points": 2,
+      "options": [
+        "Gateway se ukázala jako technicky nerealizovatelná v daném rozpočtu",
+        "Čína už provozuje vlastní orbitální stanici u Měsíce",
+        "Chce budovat infrastrukturu přímo tam, kde má být základna",
+        "Kongresmani podmínili financování přistáním do roku 2028"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "NASA přehodnotila strategii — místo mezikroku na orbitě chce investovat přímo do povrchové infrastruktury, která umožní trvalejší přítomnost."
+    },
+    {
+      "question": "Jaká je strategická role Měsíce vzhledem k budoucím misím na Mars?",
+      "type": "single",
+      "points": 3,
+      "options": [
+        "Zdroj materiálů pro stavbu marsovských habitatů na oběžné dráze",
+        "Mezipřistávací bod pro doplnění paliva při meziplanetárním letu",
+        "Polygon pro testování výroby paliva, recyklace a izolace",
+        "Místo pro výcvik astronautů v podmínkách snížené gravitace"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Měsíc slouží jako polygon pro ověřování technologií klíčových pro Mars — ISRU, životní podpora, dlouhodobá izolace — v prostředí, kde je záchrana stále možná."
+    },
+    {
+      "question": "Co odlišuje druhou fázi programu Artemis od první?",
+      "type": "multi",
+      "points": 3,
+      "options": [
+        "První přistání lidské posádky na povrch Měsíce",
+        "Budování energetické a komunikační sítě",
+        "Nasazení přetlakových roverů pro vícedenní mise",
+        "Robotická příprava terénu pro moduly",
+        "Testování rádioizotopových zdrojů nezávislé energie"
+      ],
+      "correct": [
+        1,
+        2,
+        3
+      ],
+      "explanation": "Druhá fáze je o infrastruktuře: energetika, komunikace, přetlakové rovery a terénní úpravy. První přistání a testy energetických zdrojů patří do fáze jedna."
+    },
+    {
+      "question": "Proč je Muskův obrat od Marsu k Měsíci strategicky zajímavý, ale zároveň problematický?",
+      "type": "single",
+      "points": 3,
+      "options": [
+        "Měsíc má objektivně horší podmínky pro osídlení než Mars",
+        "NASA tento posun veřejně označila za nespolehlivý signál",
+        "SpaceX nemá licenci na samostatné lunární operace",
+        "Slibuje rychlejší iterace, ale chybí veřejná roadmapa"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Musk změnil rétoriku z 'Měsíc je rozptýlení' na 'self-growing city na Měsíci', ale SpaceX zatím nezveřejnila detailní harmonogram ani architekturu."
+    },
+    {
+      "question": "Co je hlavní výhoda rádioizotopových zdrojů oproti solárním panelům na Měsíci?",
+      "type": "single",
+      "points": 2,
+      "options": [
+        "Produkují více energie za jednotku hmotnosti",
+        "Fungují nezávisle na slunci — i během dvoutýdenní noci",
+        "Jsou výrazně lehčí a snáze se transportují na povrch",
+        "Mají prakticky neomezenou životnost bez údržby"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Během dvoutýdenní měsíční noci solární panely nefungují — rádioizotopové zdroje generují energii z radioaktivního rozpadu nezávisle na osvětlení."
+    },
+    {
+      "question": "Proč je oblast jižního pólu preferovanou lokalitou pro lunární základnu?",
+      "type": "multi",
+      "points": 3,
+      "options": [
+        "Trvale zastíněné krátery obsahují vodní led",
+        "Některé výšiny mají téměř nepřetržité sluneční záření",
+        "Je výrazně blíže k Zemi než ostatní oblasti na Měsíci",
+        "Gravitace tam působí silněji než na zbytku povrchu Měsíce"
+      ],
+      "correct": [
+        0,
+        1
+      ],
+      "explanation": "Jižní pól nabízí unikátní kombinaci: vodu v zastíněných kráterech a nedaleko výšiny s téměř stálým slunečním svitem pro solární energii."
+    },
+    {
+      "question": "Jaký geopolitický motiv stojí za naléhavostí NASA ohledně lunární základny?",
+      "type": "single",
+      "points": 2,
+      "options": [
+        "Rusko vyhlásilo teritoriální nároky na jižní pól Měsíce",
+        "Čína plánuje vlastní stanici do 2035 a přistání do 2030",
+        "Mezinárodní smlouvy o vesmíru vyprší v roce 2030",
+        "SpaceX hrozí nezávislými operacemi bez dohledu NASA"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Čína otevřeně buduje konkurenční program — mezinárodní lunární výzkumnou stanici — což tlačí NASA k urychlení vlastních plánů."
+    },
+    {
+      "question": "Co musí třetí fáze programu Artemis zvládnout, aby astronauti přestali být jen 'návštěvníci'?",
+      "type": "multi",
+      "points": 4,
+      "options": [
+        "Napojit habitaty na energetickou síť z fáze 2",
+        "Zajistit životní podporu — kyslík, vodu, teplotu",
+        "Umožnit těžbu a využití místních zdrojů",
+        "Vybudovat startovací rampu pro zpáteční lety",
+        "Vytvořit umělou gravitaci pro pohodlnější pobyt"
+      ],
+      "correct": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Třetí fáze staví na infrastruktuře z fáze 2 (energie, komunikace) a přidává habitaty se životní podporou a využívání místních zdrojů pro soběstačnost."
+    },
+    {
+      "question": "Co bylo z technického hlediska nejkritičtější ověřit při návratu mise Artemis 2?",
+      "type": "single",
+      "points": 2,
+      "options": [
+        "Přesnost navigačních systémů bez GPS signálu",
+        "Odolnost posádky vůči radiaci v hlubokém vesmíru",
+        "Tepelnou ochranu při vstupu rychlostí přes 40 000 km/h",
+        "Funkčnost komunikace za odvrácennou stranou Měsíce"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Při vstupu do atmosféry čelila loď extrémním teplotám z kinetické energie — ověření tepelného štítu bylo klíčové pro bezpečnost budoucích misí."
+    }
+  ]
+}

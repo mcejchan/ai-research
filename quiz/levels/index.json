@@ -1,5 +1,25 @@
 [
   {
+    "path": "futurecast-technologie-zitrka/zakladna-na-mesici-do-10-let-jsme-pripraveni-tam-zit-easy.json",
+    "title": "Základna na Měsíci: do 10 let jsme připraveni tam žít (Easy)",
+    "channel": "FutureCast: technologie zítřka",
+    "thumbnail": "https://i.ytimg.com/vi/S2ZOWRDkb-U/maxresdefault.jpg",
+    "date": "2026-05-24",
+    "difficulty": "easy",
+    "questionCount": 8,
+    "maxPoints": 12
+  },
+  {
+    "path": "futurecast-technologie-zitrka/zakladna-na-mesici-do-10-let-jsme-pripraveni-tam-zit-hard.json",
+    "title": "Základna na Měsíci: do 10 let jsme připraveni tam žít (Hard)",
+    "channel": "FutureCast: technologie zítřka",
+    "thumbnail": "https://i.ytimg.com/vi/S2ZOWRDkb-U/maxresdefault.jpg",
+    "date": "2026-05-24",
+    "difficulty": "hard",
+    "questionCount": 9,
+    "maxPoints": 24
+  },
+  {
     "path": "futurecast-technologie-zitrka/artemis-ii-prvni-lide-miri-k-mesici-easy.json",
     "title": "Artemis II: první lidé míří k Měsíci (Easy)",
     "channel": "FutureCast: technologie zítřka",

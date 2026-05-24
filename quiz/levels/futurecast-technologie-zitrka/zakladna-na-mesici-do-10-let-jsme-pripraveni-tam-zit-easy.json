@@ -1,0 +1,130 @@
+{
+  "title": "Základna na Měsíci: do 10 let jsme připraveni tam žít (Easy)",
+  "channel": "FutureCast: technologie zítřka",
+  "url": "https://www.youtube.com/watch?v=S2ZOWRDkb-U",
+  "thumbnail": "https://i.ytimg.com/vi/S2ZOWRDkb-U/maxresdefault.jpg",
+  "date": "2026-05-24",
+  "difficulty": "easy",
+  "questions": [
+    {
+      "question": "Proč je vodní led na Měsíci tak důležitý pro budoucí osídlení?",
+      "type": "single",
+      "points": 1,
+      "options": [
+        "Chrání habitaty před mikrometry a kosmickým zářením",
+        "Slouží jako izolační stavební materiál pro základnu",
+        "Dá se rozložit na kyslík a palivo",
+        "Udržuje stabilní vnitřní teplotu obytných modulů"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Voda se dá elektrolýzou rozložit na kyslík pro dýchání a vodík s kyslíkem jako raketové palivo — klíč k soběstačnosti."
+    },
+    {
+      "question": "Co je hlavní důvod, proč NASA potřebuje speciální zdroje energie na Měsíci?",
+      "type": "single",
+      "points": 1,
+      "options": [
+        "Baterie v bezatmosférickém prostředí rychle degradují",
+        "Měsíční noc trvá dva týdny bez slunce",
+        "Sluneční záření na Měsíci je příliš slabé celoročně",
+        "Energie se spotřebovává hlavně na komunikaci se Zemí"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Dvoutýdenní měsíční noc znamená, že solární panely polovinu času neprodukují elektřinu — proto se testují rádioizotopové zdroje."
+    },
+    {
+      "question": "K čemu slouží přetlakový rover vyvíjený s Japonskem?",
+      "type": "single",
+      "points": 1,
+      "options": [
+        "Automaticky těží vodu z kráterů v permanentním stínu",
+        "Přepravuje těžké náklady mezi moduly základny",
+        "Funguje jako nouzová záložní startovací platforma",
+        "Astronauti v něm žijí a pracují několik dní"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Přetlakový rover umožňuje astronautům pobývat uvnitř bez skafandru i několik dní, čímž rozšiřuje dosah průzkumu."
+    },
+    {
+      "question": "Co znamená program CLPS v kontextu měsíčního průzkumu?",
+      "type": "single",
+      "points": 2,
+      "options": [
+        "Zapojení komerčních firem do dopravy na Měsíc",
+        "Výcvikový program pro budoucí lunární posádky",
+        "Mezinárodní dohoda o spravedlivém sdílení zdrojů",
+        "Síť komunikačních satelitů na oběžné dráze"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "CLPS (Commercial Lunar Payload Services) je program NASA, kde komerční společnosti dopravují vědecké přístroje a technologie na povrch Měsíce."
+    },
+    {
+      "question": "Proč se lunární drony pohybují skoky místo klasickým letem?",
+      "type": "single",
+      "points": 2,
+      "options": [
+        "Skoky spotřebují méně paliva než souvislý let",
+        "Rotory by rozviřovaly nebezpečný měsíční prach",
+        "Na Měsíci chybí atmosféra pro let",
+        "Pohyb skoky umožňuje přesnější přistávání v kráterech"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Bez atmosféry nemohou fungovat vrtule ani křídla — lunární drony proto používají raketový pohon a pohybují se skoky."
+    },
+    {
+      "question": "Jaké tři fáze popisuje NASA pro budování měsíční přítomnosti?",
+      "type": "single",
+      "points": 2,
+      "options": [
+        "Časté mise → infrastruktura → trvalý pobyt",
+        "Robotický průzkum → vesmírná turistika → těžba",
+        "Stavba Gateway → přistání na povrchu → cesta na Mars",
+        "Testování raket → vojenská základna → komerční využití"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "NASA plánuje nejprve pravidelné lety, poté vybudovat energetickou a komunikační infrastrukturu a nakonec přejít k trvalé lidské přítomnosti."
+    },
+    {
+      "question": "Proč Elon Musk přesunul prioritu SpaceX z Marsu na Měsíc?",
+      "type": "single",
+      "points": 2,
+      "options": [
+        "NASA právně zakázala soukromé mise k Marsu",
+        "Měsíc je blíž a iterace jsou rychlejší",
+        "Mars se ukázal jako zcela neobyvatelná planeta",
+        "Čína oznámila výhradní nároky na Mars"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Musk argumentoval, že Měsíc je přístupnější a umožňuje rychlejší testování a zdokonalování technologií než vzdálenější Mars."
+    },
+    {
+      "question": "Kde na Měsíci se nachází vodní led?",
+      "type": "single",
+      "points": 1,
+      "options": [
+        "V zastíněných kráterech jižního pólu",
+        "Rovnoměrně rozprostřený pod celým povrchem",
+        "V rovníkových oblastech pod lávovými tunely",
+        "Pouze na přivrácené straně směrem k Zemi"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Krátery u jižního pólu jsou trvale ve stínu, takže tam teploty nikdy nestoupnou natolik, aby led sublimoval."
+    }
+  ]
+}
