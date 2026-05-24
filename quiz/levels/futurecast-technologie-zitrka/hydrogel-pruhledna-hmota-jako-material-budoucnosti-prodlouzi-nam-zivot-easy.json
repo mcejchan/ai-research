@@ -1,0 +1,130 @@
+{
+  "title": "Hydrogel: materiál budoucnosti, prodlouží nám život? (Easy)",
+  "channel": "FutureCast: technologie zítřka",
+  "url": "https://www.youtube.com/watch?v=FlKSJh_Tglw",
+  "thumbnail": "https://i.ytimg.com/vi/FlKSJh_Tglw/maxresdefault.jpg",
+  "date": "2026-05-24",
+  "difficulty": "easy",
+  "questions": [
+    {
+      "question": "Proč je materiál, který napodobuje vlastnosti živé tkáně, tak užitečný pro medicínu?",
+      "type": "single",
+      "points": 2,
+      "options": [
+        "Živá tkáň nemůže růst na žádném jiném podkladu než na hydrogelu",
+        "Měkké materiály jsou vždy výrazně levnější na výrobu než kovové implantáty",
+        "Biologicky podobný materiál nepotřebuje sterilizaci před použitím",
+        "Tělo ho lépe přijímá — nevyvolává odmítavou reakci jako tvrdé materiály"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Tvrdé implantáty (kov, keramika) vyvolávají tvorbu vaziva a záněty. Materiál podobný tkáni minimalizuje odmítavou reakci — klíč pro dlouhodobé implantáty."
+    },
+    {
+      "question": "Jaký princip stojí za řízeným uvolňováním léků z hydrogelu (drug delivery)?",
+      "type": "single",
+      "points": 2,
+      "options": [
+        "Hydrogel zrychluje chemické reakce léku v těle pacienta v jakémkoli",
+        "Léky v hydrogelu jsou silnější a stačí jich menší množství",
+        "Hydrogel lék fyzicky drží a uvolňuje ho postupně na cílovém místě",
+        "Řízené uvolňování funguje jen díky teplotě lidského těla"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Drug delivery = lék je zachycen v polymerní síti a uvolňuje se kontrolovaně — cíleně a postupně, místo jednorázového zaplavení celého těla."
+    },
+    {
+      "question": "Proč je schopnost získávat vodu ze vzduchu bez elektřiny tak zásadní pro suché oblasti?",
+      "type": "single",
+      "points": 1,
+      "options": [
+        "Elektřina by vodu ze vzduchu chemicky znečistila a udělala ji nepitnou",
+        "Elektrické systémy nefungují při vysokých teplotách pouště",
+        "Získávání vody s elektřinou je zakázáno v pouštních regionech",
+        "V suchých oblastech často chybí jak voda, tak elektrická infrastruktura"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Dvojitý problém: oblasti s nedostatkem vody často nemají ani elektrickou síť. Pasivní systém (noční absorpce, denní uvolnění sluncem) řeší oboje najednou."
+    },
+    {
+      "question": "Proč jsou měkcí roboti (soft robotics) bezpečnější při kontaktu s lidmi než kovové stroje?",
+      "type": "single",
+      "points": 1,
+      "options": [
+        "Měkcí roboti se pohybují vždy pomaleji a tedy bezpečněji",
+        "Měkký materiál při nárazu absorbuje energii místo toho, aby zranil",
+        "Soft roboti nemají dostatečnou sílu na to, aby cokoliv poškodili",
+        "Kovové roboty nelze naprogramovat tak, aby se spolehlivě vyhnuli lidem"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Poddajný materiál se při kontaktu deformuje a absorbuje sílu nárazu — na rozdíl od rigidního kovu, který přenese veškerou energii na člověka."
+    },
+    {
+      "question": "Proč je 3D biotisk z hydrogelů přelomový koncept pro transplantační medicínu?",
+      "type": "single",
+      "points": 2,
+      "options": [
+        "Vytištěná tkáň nikdy nepotřebuje cévní zásobení krví",
+        "Umožní vyrobit tkáň na míru pacientovi — odpadá čekání na dárce",
+        "Biotisk je tisíckrát rychlejší než jakákoliv chirurgická operace",
+        "Hydrogely nahrazují potřebu jakéhokoliv pooperačního léčení"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Nedostatek dárců je hlavní omezení transplantací. Biotisk z pacientových buněk = přesná tkáň bez rizika odmítnutí a bez čekací listiny."
+    },
+    {
+      "question": "Proč je hydrogel v půdě užitečný jako zásobník vody pro rostliny?",
+      "type": "single",
+      "points": 1,
+      "options": [
+        "Hydrogel v půdě zabraňuje odpařování vody úplně a navždy",
+        "Nahrazuje kořenový systém rostliny a dodává vodu přímo do listů",
+        "Zadrží vodu v době deště a postupně ji uvolňuje v suchém období",
+        "Funguje jako filtr, který propouští jen čistou vodu ke kořenům"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Princip zásobníku: absorbuje vodu když je dostupná, uvolňuje ji postupně když půda vysychá — vyrovnává výkyvy dostupnosti vody pro rostliny."
+    },
+    {
+      "question": "Co je největší překážka masového rozšíření hydrogelů do praxe?",
+      "type": "single",
+      "points": 2,
+      "options": [
+        "Hydrogely jsou toxické při dlouhodobém kontaktu s tělem",
+        "Materiál se rozpadne během několika hodin po výrobě",
+        "Patentová ochrana zabraňuje komukoliv hydrogely vyrábět",
+        "Chybí technologie pro levnou a masovou výrobu"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Princip funguje, aplikace existují — bottleneck je škálovatelnost výroby. Stejný vzor jako u mnoha materiálových inovací: lab → masová produkce je nejtěžší krok."
+    },
+    {
+      "question": "Proč jsou senzory integrované přímo v rostlinách užitečnější než pozorování pouhým okem?",
+      "type": "single",
+      "points": 2,
+      "options": [
+        "Vizuální příznaky se objeví pozdě — senzory detekují problém během minut",
+        "Rostlinné senzory nahrazují potřebu jakékoliv zálivky nebo hnojení",
+        "Senzory fungují pouze v noci, kdy farmář nemůže pozorovat pole",
+        "Lidské oko nedokáže rozlišit zdravou rostlinu od nemocné vůbec v jakémkoli"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Vadnoucí listy = pozdní signál, škoda už nastala. Senzory v reálném čase odhalí nedostatek vody nebo napadení škůdci dřív než je viditelné — prevence > reakce."
+    }
+  ]
+}

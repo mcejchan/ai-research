@@ -40,6 +40,26 @@
     "maxPoints": 23
   },
   {
+    "path": "futurecast-technologie-zitrka/hydrogel-pruhledna-hmota-jako-material-budoucnosti-prodlouzi-nam-zivot-easy.json",
+    "title": "Hydrogel: materiál budoucnosti, prodlouží nám život? (Easy)",
+    "channel": "FutureCast: technologie zítřka",
+    "thumbnail": "https://i.ytimg.com/vi/FlKSJh_Tglw/maxresdefault.jpg",
+    "date": "2026-05-24",
+    "difficulty": "easy",
+    "questionCount": 8,
+    "maxPoints": 13
+  },
+  {
+    "path": "futurecast-technologie-zitrka/hydrogel-pruhledna-hmota-jako-material-budoucnosti-prodlouzi-nam-zivot-hard.json",
+    "title": "Hydrogel: materiál budoucnosti, prodlouží nám život? (Hard)",
+    "channel": "FutureCast: technologie zítřka",
+    "thumbnail": "https://i.ytimg.com/vi/FlKSJh_Tglw/maxresdefault.jpg",
+    "date": "2026-05-24",
+    "difficulty": "hard",
+    "questionCount": 8,
+    "maxPoints": 21
+  },
+  {
     "path": "futurecast-technologie-zitrka/zakladna-na-mesici-do-10-let-jsme-pripraveni-tam-zit-easy.json",
     "title": "Základna na Měsíci: do 10 let jsme připraveni tam žít (Easy)",
     "channel": "FutureCast: technologie zítřka",

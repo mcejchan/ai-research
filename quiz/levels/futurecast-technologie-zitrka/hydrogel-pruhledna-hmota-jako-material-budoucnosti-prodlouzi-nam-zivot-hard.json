@@ -1,0 +1,134 @@
+{
+  "title": "Hydrogel: materiál budoucnosti, prodlouží nám život? (Hard)",
+  "channel": "FutureCast: technologie zítřka",
+  "url": "https://www.youtube.com/watch?v=FlKSJh_Tglw",
+  "thumbnail": "https://i.ytimg.com/vi/FlKSJh_Tglw/maxresdefault.jpg",
+  "date": "2026-05-24",
+  "difficulty": "hard",
+  "questions": [
+    {
+      "question": "Proč kovové a keramické implantáty selhávají tam, kde hydrogely uspívají?",
+      "type": "single",
+      "points": 3,
+      "options": [
+        "Tvrdé materiály vyvolávají tvorbu vaziva, které časem izoluje implantát od tkáně",
+        "Hydrogely jsou jediný materiál, který tělo nerozpozná jako cizí",
+        "Keramika se v těle rozpouští a uvolňuje nebezpečné částice v jakémkoliv kontextu",
+        "Kovy jsou toxické pro lidské tělo bez ohledu na jejich složení"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Mechanický nesoulad: tvrdý implantát → tělo reaguje tvorbou vazivové kapsuly → signál se zhoršuje. Hydrogel napodobuje měkkost tkáně → minimální fibrotická reakce."
+    },
+    {
+      "question": "Jaký princip umožňuje hydrogelům získávat pitnou vodu ze vzduchu v pouštních oblastech?",
+      "type": "single",
+      "points": 3,
+      "options": [
+        "Hydrogel sbírá ranní rosu na svém povrchu díky elektrostatické přitažlivosti",
+        "V noci absorbují vlhkost díky solím; ve dne ji slunce uvolní jako kondenzát",
+        "Hydrogel filtruje písek a extrahuje z něj zbytky podzemní vody",
+        "Chemická reakce hydrogelu se vzduchem vytváří vodní molekuly de novo"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Cyklický pasivní systém: soli v hydrogelu přitahují vodní páru ze vzduchu (i při nízké vlhkosti) v noci. Sluneční teplo pak způsobí desorpci — čistá voda bez elektřiny."
+    },
+    {
+      "question": "Proč je přechod 'z laboratoře do masové výroby' u materiálových inovací nejtěžší krok?",
+      "type": "multi",
+      "points": 3,
+      "options": [
+        "Náklady na jednotku musí klesnout o řády aby byl produkt ekonomický",
+        "Kvalita musí zůstat konzistentní při milionech kusů, ne jen u deseti",
+        "Lab podmínky neodpovídají průmyslovým — jiné teploty, tlaky, objemy",
+        "V laboratoři není potřeba řešit regulační schválení a bezpečnost"
+      ],
+      "correct": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Scale-up problém: co funguje v 10ml má jiné fyzikální chování v 10 000l. Plus unit economics a konzistence kvality — tři nezávislé výzvy škálování."
+    },
+    {
+      "question": "Proč je 'lešení pro buňky' (scaffold) klíčový koncept tkáňového inženýrství?",
+      "type": "single",
+      "points": 3,
+      "options": [
+        "Lešení nahrazuje DNA a řídí, jaký typ buněk ze zárodečných vznikne",
+        "Bez lešení by buňky okamžitě odumřely nedostatkem kyslíku",
+        "Buňky potřebují 3D strukturu na které rostou — bez ní se neorganizují do tkáně",
+        "Scaffold dodává buňkám energii potřebnou k dělení a růstu v jakémkoliv kontextu"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Buňky in vivo rostou v extracelulární matrix — 3D struktuře, která jim dává tvar a signály. Scaffold ji napodobuje: definuje architekturu budoucí tkáně."
+    },
+    {
+      "question": "Proč je hydrogel potenciálně 'šetrnější revoluce než plasty'?",
+      "type": "multi",
+      "points": 3,
+      "options": [
+        "Hydrogely jsou z velké části voda — nižší ekologická zátěž při rozkladu",
+        "Výroba hydrogelů neprodukuje žádné emise CO2 při žádném procesu",
+        "Mohou být biokompatibilní a biodegradabilní na rozdíl od většiny plastů",
+        "Funkčně nahrazují plasty v mnoha aplikacích s menším dopadem na prostředí"
+      ],
+      "correct": [
+        0,
+        2,
+        3
+      ],
+      "explanation": "Plasty = trvanlivé, akumulují se v prostředí. Hydrogely = převážně voda, potenciálně biodegradabilní, a přitom funkčně nahrazují plasty v řadě aplikací."
+    },
+    {
+      "question": "Proč je včasná detekce (senzory v rostlinách) ekonomicky hodnotnější než pozdní reakce na viditelné příznaky?",
+      "type": "single",
+      "points": 2,
+      "options": [
+        "Vizuální příznaky jsou vždy klamné a neodpovídají skutečnému stavu rostlin",
+        "Senzory jsou vždy levnější než oční kontrola farmářem na velkém poli",
+        "Pozdní reakce je v zemědělství zakázána ekologickými regulacemi EU v jakémkoliv ko",
+        "Když vidíte vadnoucí listy, škoda už nastala — prevence je levnější než záchrana"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Princip prevence vs. léčby: zásah při prvním signálu stresu = malá intervence. Zásah při vadnutí = velká ztráta + nákladná záchrana. Platí pro zemědělství, medicínu i IT."
+    },
+    {
+      "question": "Co umožňuje hydrogelovým aktuátorům fungovat jako umělé svaly?",
+      "type": "single",
+      "points": 2,
+      "options": [
+        "Hydrogel se při elektrickém impulsu zahřeje a expanduje jako plyn",
+        "Fungují jen ve vodním prostředí, kde vztlak pomáhá s pohybem v jakémkoliv kontext",
+        "Obsahují skutečná svalová vlákna integrovaná do polymerní matrice",
+        "Mění tvar v reakci na stimul a generují mechanickou sílu — jako biologický sval"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Aktuátor = převod energie na pohyb. Hydrogelové aktuátory reagují na stimuly (pH, teplota, el. pole) změnou objemu/tvaru — generují sílu analogicky ke svalu."
+    },
+    {
+      "question": "Proč je biokompatibilita podmínkou pro dlouhodobé fungování jakéhokoliv implantátu v těle?",
+      "type": "single",
+      "points": 2,
+      "options": [
+        "Kompatibilní materiály mají vždy delší životnost díky nižší mechanické zátěži",
+        "Bez biokompatibility nelze implantát chirurgicky vůbec zavést do těla v jakémkoliv konte",
+        "Nekompatibilní materiál vyvolá imunitní reakci, která ho postupně izoluje nebo poškodí",
+        "Biokompatibilita zaručuje, že implantát nikdy nebude potřebovat výměnu"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Imunitní systém = obranný mechanismus. Cizí materiál → zánět → fibrotická kapsule → ztráta funkce implantátu. Biokompatibilita = vyhnutí se této kaskádě."
+    }
+  ]
+}
