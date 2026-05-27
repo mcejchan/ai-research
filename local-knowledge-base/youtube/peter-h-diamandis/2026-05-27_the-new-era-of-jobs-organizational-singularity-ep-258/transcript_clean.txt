@@ -1,0 +1,585 @@
+Is there a line of your business, a high margin line of your business that two guys with open claw could replicate in 60 to 90 days? >> This is something across the board useful for everyone. >> When we wrote the exponential organizations book, we didn't realize how precient it would be.
+It turned out over 10 12 years we were dead on.
+Now that we see a gent on the future of intelligence, what does the organization look like? We think we have a pretty interesting viewpoint and perspective on that.
+If you don't retool your organization or don't restart your organization, you will be disrupted cuz someone doing it is going to just eat your lunch.
+The central thing to think about is all of our organizational structures in the past were organized around hierarchy and now they need to be AI native agentic workflow and that's a totally different model.
+It needs to be architected around intelligence not around hierarchy.
+The next question really becomes how do you get there? Now that's a moonshot.
+Ladies and gentlemen, >> I'm about to sit down with my dear brother Salem Ismael, my moonshot mate, talk about the organizational singularity.
+This is a conversation that I think is absolutely critical for every company to be looking at.
+We're in a period of rapid transition.
+Agents, AI, AGI, ASI.
+It's going to restructure how every company, every industry is being run, not in five or 10 years, in the next one year, in the next two years at most.
+Salem is going to lay out his process that every company can follow to move from the old way of doing business as an organization which is sort of top-down heavy human centric to a digital AIcentric, AI native company.
+Please take a look at this.
+This is about your survival.
+It's about you're thriving.
+It's happening and you're either on the uh evolutionary tree or you're going extinct.
+It's that simple.
+All right, let's jump in.
+Everybody, welcome to Moonshot.
+A special episode with my dear brother from another mother, Salem Ismael.
+Saleem, you're finally here.
+You're in our Moonshot studio.
+You made it. >> First time.
+It looks awesome.
+I I love the I love everything. >> And today is a special day.
+It's your birthday. >> It is my birthday. >> Yes.
+Um, and so for those who don't know, Selma has just turned 16.
+Uh, it's his sweet 16th birthday.
+And, uh, we're here to celebrate >> digits around.
+You're a little more accurate. >> Okay.
+That's right.
+The dyslexia in me hits it.
+Um, so we're going to talk about something that we've been teasing on the Moonshots podcast for a while.
+Something that I'm excited about, which you call the organizational singularity. >> Yeah. >> Uh, and I want to make sure that everyone listening realizes this is something across the board useful for everyone, right? It's not if you're the CEO of a large Fortune 500 company, though it's useful if you are.
+If you're an entrepreneur, uh if you're in a small company, if you're a parent trying to advise your kid where to go work. >> Exactly.
+Yeah.
+Look, when we wrote the exponential organizations book, we didn't realize how precient it would be.
+It turned out over 10, 12 years, we were dead on.
+And so, we're kind of saying, okay, now that we see Agentic on the future of intelligence, what does the organization look like? And so we have taken a crack at that with uh the help of my entire community all pitched in for this.
+So we think we have a pretty interesting viewpoint and perspective on that. >> And and you've been saying for a bit now that AI has killed the modern company. >> Yes. >> Uh the Fortune 500s out there, but I don't think they've gotten the memo yet. >> They don't because there's a a drag that goes effect.
+Right.
+When the comet hit, the dinosaurs didn't go overnight.
+It took a few generations for them to die out and figure out what the hell's going on.
+So, this is the same type of model. >> Yeah.
+All right.
+Well, let's let's dive in.
+Um, and I want to make sure that folks get where things are going to go.
+Uh, and again, how do you how do you surf on top of this massive change that's coming? >> I I think the key the key part of this is what do you do once you understand that everything has changed.
+So, let me go through the what has changed, right? So um we have for a hundred years run organizations on a particular theory set coined by Ronald Coast in 1937.
+He wrote a paper called the nature of the firm and he theorized in this economic paper that big companies will get bigger because transaction costs and coordination costs inside a company are cheaper than outside because you have everybody on payroll you can order them around and therefore you can get better work done inside than outside.
+Right? And he actually won the Nobel Prize for this paper.
+Okay.
+And for 80 years we've gone through that.
+And if you go through a couple of slides here, I'll just show you.
+We've seen uh all these deep thinkers coasted this.
+Simon talked about where the organizational boundary said.
+Clay Christians came along and said innovator's dilemma.
+As you get bigger, smaller companies can deliver cheaper products.
+Then Stanley Mcristel talked about how do you get coordination at scale without losing the emotional connection to the organization? How do you extend past that? Uh exo 1.0 I know used community and crowd and AI to pull co sideways in >> to sort of extend our reach abilities. >> Think about enterprise and how you're able to coordinate external teams to do things.
+Think about the idea that for Uber the missionritical business function which is to match driver and passenger does not happen inside the organization happens out in the wild and when you can enable that with technology you can scale right so we we found ways of extending Cros's law uh and then Jack Dorsey did what he did with block um and with Rolof both with his book and we are now extending all that we basically come to the conclusion is that the whole thing breaks in the face of agentic AI law no longer applies.
+Why? Because if you have to build a website inside a company, you have to go through layers of meetings and approvals.
+Branding has to look at it.
+The privacy guys have to look at it.
+The IT guys will tell you, "No, they can't be done." Whereas today, you can step outside the company, use Versell at home for 5 minutes and get it done for free. >> Yeah.
+And have it know your brand guidelines, have it know your design taste. >> Yeah, that's right. >> And have it actually spin up a dozen different versions and have them try in the market. >> Yeah.
+And this is a fantastic tweet that I've quoted which I've forgotten the name of the fellow just now but he said building the feature is cheaper than having the meeting about the feature. >> So true >> and that's like such a great way of framing it because that means that uh coordination the active coordination is more expensive than just execution today especially when as AI is driving down the cost of execution.
+And I want to make sure we get as we discuss this we understand what is the role of of people in this right >> let's get to that because I want to just first make the case that this is this breaks now you still need you could ask the question do we need an organization at all and it turns out we do and we've got a we have a term called the fiduciary wedge where okay coordination costs and uh execution costs become low which was primarily the reason for organizations the last h 100red years okay but you still need it for as a purpose container, a fiduciary, a legal container, a liability container, a legal container.
+So think SPVS for investments or just containers, right? They hold legal and fiduciary liability essentially be companies become more and more like that.
+And there's a gap between human judgment and liability versus what the AI can do.
+And that gap we call the fiduciary wedge.
+So you still need the an organizational structure and the legal entity.
+Hey everybody, you may not know this, but I've got an incredible research team.
+And every week myself, my research team study the meta trends that are impacting the world.
+Topics like computation, sensors, networks, AI, robotics, 3D printing, synthetic biology.
+And these meta trend reports I put out once a week enable you to see the future 10 years ahead of anybody else.
+If you'd like to get access to the Metatrends newsletter every week, go to dmandis.com/metatrends.
+That's diamandis.com/metatrends.
+And and the question is ultimately what's inside that organizational container. >> That's right. >> Right.
+And there are going to be uh assets and IP and agents and some number of humans. >> That's right. >> And agents making API calls to god knows what and hacking into things and getting phone numbers and calling people up like the Alex Finn's AI that just called him up.
+Right.
+So this kind of takes the EXO 3.0 book from the original book to the 2.0 no book to now what we call the organizational singularity. >> By the way, is this a book that you're putting out? >> It's a book that we're putting out. >> And is there a place people can go to learn more about this now or? >> Uh, right now we have it at organizational singularity.com.
+Okay. >> So, go to that website and you'll be able to sign up.
+But right now, we're only releasing Well, let me let me jump to the surprise here.
+We're actually releasing the book as an AI. >> Okay? >> Because a book is a static thing.
+The minute I finish publish the book, it'll be out of date.
+So, it has to be an AI.
+So we're going to be launching a clawed skill >> because every 3 days something comes out that changes the game a bit.
+So we're keeping the book as a living document which we tried to do with 2.0 right you and I worked on but but the the technology wasn't there yet.
+Now it is and so we're very very excited about that.
+Okay.
+So there's a problem though today which is that 80 plus% of AI projects in companies are failing miserably and they're failing miserably because existing companies are geared towards humanto humanto human workflows. all the approvals and bottleneck chains etc etc were all humanentric right it's like I use the analogy of when we first created uh television we took radio announcers and put them on TV right uh and you didn't use the medium at all so these projects are failing because you're moving AI into legacy organizations and automating the legacy human bottlenecks of course they're going to fail you need an AI native environment to do this in so we had to kind of step back and say okay the entire exo model breaks coast breaks all the thinkers up to now they all breaks we have to rethink it from scratch and so we did that work uh with my community we did that and came up with a whole new >> and just to be clear about when you say something is breaking uh ultimately I think what you mean is if you don't retool your organization uh in this fashion or don't restart your organization you will be disrupted because someone doing it is going to just eat your lunch >> yeah so here's a question for every CEO and every seuite member out there.
+Is there a line in your business, a high margin line of your business that two guys with Open Claw could replicate in 60 to 90 days? >> If it is, call us because you better get started fast because I guarantee you there's two guys out there with Open Claw disrupting Dropbox. >> You and I have talked about this.
+Anybody who's got a a juicy margin >> is open for season, >> right? Yeah.
+And you might you might think you're protected by regulations.
+You might think you'd be protected by your >> There's a few modes.
+There's a few protective modes and I'll I'll get into that but but for now it's it's a whole new world and it's a whole new ball game.
+And the singular what we mean by the organizational singularity is instead of uh uh coordinating and organizing the company around hierarchy you organize it around intelligence.
+Okay.
+And that's a very big shift.
+That's that's about as big a shift you could ask for.
+So we've come up with this architecture.
+Okay. where you have the MTP which you know well the massive transformative purpose from the original and this becomes not just a poster that you put up on a wall this actually becomes a protocol so MTP becomes an actual protocol and a guide for AI agents and human agents and whatever to act properly >> you mean it's a cornerstone it's a it's a north star >> yeah but it's actually a protocol in this new world like what what's the architecture of MTP what's the boundary conditions around Right? What what are the D feedback loops that tell you you're within the cone of the MTP or not? Stepping outside the cone.
+For example, in the early days of Uber, great MTP.
+Everybody should have a private driver, right? But if you always ordered surge pricing, they would knew that and they would always charge you surge pricing.
+Even though you and I would be standing next to each other, I'm a cheapkate.
+I never order surge pricing.
+And I would get the cheap price and you would not.
+Right. >> Right.
+And so that kind of somewhat pushing the boundaries on the ethics side. uh is now guided in this whole MTP architecture.
+So that's the middle of it.
+And then we have drive which is the intelligence scaffolding and the engine around it which I'll touch on.
+And then shape which is how how does the organization >> by way drive and shape are acronyms for subcomponents. >> Those are those are acronyms.
+I don't need to get into them all in detail but you'll get the you'll get the general idea around it.
+Okay.
+So then we have um uh the next step is to then look at the intelligence stack in detail.
+Okay.
+And if you look at the diagram, you'll see this kind of architecture where we found six layers of what that core intelligence engine looks like.
+And the best analogy we have for this is Boyd's UDA loop. >> Right? In the military, they have obser observe, orient, decide, act, right? And it's a core flywheel at the middle, which is also the core of the solve everything framing.
+When you have that inner loop going, right? Then whatever you put into that loop starts having a positive feedback loop on everything else.
+So we uh created the intelligence stack to act a bit like the UDA loop so that there's constant learning going on but around it is a very very important wrapper which is govern and assure which is the the constraints and the harness. >> It's the harness and oversight to make sure that agents aren't going rogue.
+Right? We saw we've seen over the last few weeks agents going and doing crazy things. uh uh the the uh railway agent that deleted all the the volume volumes of um uh rental car data etc.
+So you need to make sure there's a very strong so imagine the following and I'll I'll mention what what I mean by that.
+So, so at the very heart of it is this intelligence stack uh with this very clear governance protocol.
+What what we mean by governance is trusted eval uh architecture, a searchable log.
+Every agent has to have a searchable log, granular roll back, can you go back to the previous version if you start going off and a human review queue so that as human beings are always in the oversight uh checking things.
+Okay, so this comes down to the role of what does a human being do when execution and coordination is done. human beings rise up a level and they do dashboard oversight, they do monitoring, they do exception handling, they do problem solving, they do efficiency increases, right? So those are the activities that human beings will do.
+It's kind of like you go to Germany, nobody's working on the factory floors, but unemployment hasn't dropped because everybody's doing more work on problem solving and increase efficiency, design thinking and other things.
+So we think the same thing models there.
+This govern and assure loop as part of this UDA loop.
+Mhm. >> That com those two combined give you a very tight core engine that makes sure the whole thing doesn't fly off the rails.
+Okay.
+So that's the intelligence stack.
+Um now when your agents talk to other agents they need some clear mechanisms for how to >> by the way just to be clear here as you outlining the process um you've structured something that you can teach companies to implement. >> Absolutely.
+So let me let me work through a live example.
+Yeah.
+Okay.
+So you have these multiple layers, right? And let me just run through these layers again so people are aware.
+There's a purpose layer, there's a sensing layer, there's an interpretation layer, there's a decision layer, there's an orchestration layer, a learning layer because you need that free and then the >> Eric Schmidt told us, right? You know, rapid learning is the key to success, >> right? So this is that wrapped up in a very tight set of layers.
+So imagine you're a uh retail company and a competitor suddenly announces same day delivery.
+Yeah. >> Okay.
+So you have a a set of sensing agents out there going, "Hey, this just happened, right?" So the sensing agents bring that new information back to the other agents.
+The next is interpretation.
+So the interpretation layer then goes, "Okay, well, what does this mean? Does this could this threaten our line of business? Could this threaten one line of business, multiple lines of business? Is it an existential threat? How big of a deal is this?" And they interpret that data.
+The next layer is a decision layer to say, "What should we do? Should we offer same day things? Should we buy a startup that's doing same day delivery? Should we ignore it because we don't think it's really going to work out? We think that it's a stupid idea.
+What do we actually What's the decision? >> I mean, as I think about this, normally this would be your strategic officer, your marketing officer, all of those coming together, having meetings, and deciding what to do. >> That's right. >> And you're saying all of this could be turned over to agents, >> layers of agents can handle all of this now, right? So now you have a layer, >> but you have you have a feedback.
+You have a feel at each of these layers as a human being going uh at the interpretation layer.
+Do I think this is okay? Yeah.
+Hit a button.
+Let it go to the next level. >> So there's an approval approval process >> approval process and also senior people looking over going >> they could be looking at agents looking at six different strategic options.
+Right.
+Whereas in the pre in a in a very manual iteration that may take months to evaluate the competitive alternative.
+Now you're doing it in hours and days.
+Yeah. >> Right.
+So that's the impedance mismatch there.
+And by the way, what we've seen historically is the impedance mismatch between a a Fortune 500 company and a startup where the Fortune 500 company, to use them as an example, has so much to lose if they screw up that they're paralyzed in making decisions and the startup is like screw it, let's just try everything.
+Right.
+Exactly.
+Exactly.
+And this is just >> the way Robert Goldberg puts it in a big company one of 20 people can say no to an idea kills it.
+Yeah. >> Whereas the startup can go to one or 20 investors and one says yes and they're off to the races.
+So how do you balance that out? Right? Okay.
+So now you have these layers of agents.
+Okay.
+Purpose agents, sensing agents, interpretation agents, deciding agents.
+Next level is an orchestration agent.
+So let's say the decision agent comes back and says we should buy a startup that's doing this, right? And then now the orchestration is saying, okay, we got to go set up a set of functions to go find a bunch of startups, analyze whether which ones are ready for M&A, tell the corporate dev team, get the lawyers ready, etc.
+And then get the legal agents ready. >> Get the legal agents ready.
+And then finally a learning loop where did we buy another company before and did it work out or not, right? And how did that work out? And all wrapped up in this governance thing. >> So that's the kind of an example of how you would flow through these.
+And at the core is this engine recursive learning.
+The another way to think about the organizational singularity is when you can have recursive self-improvement at the workflow level. >> I love that. >> Okay.
+So if you took say invoice processing and you have right now all these human checkpoints of yes did the goods arrived should we who's does the supplier exist in our systems is there a legal contract there's a human checking all those things maybe you have an ERP system that's automated one or two of these layers but now you can have the whole thing done and then an agent can say well how do I make this better every loop how do I make this better at every loop and constantly improves once you get to that level you can basically set set back and you're off to the races then because everything should just self-improve at that level.
+Okay, so that's the very heart of the whole thing with this layer.
+Now, we also recognize that agents are going to be doing very crazy things.
+So, how do you navigate that? And we've come up with a framing which we found in smart contracts in web 3 plus some old web architecture that says every agent should get a passport with a little metadata on what that agent is allowed to do or not allowed to do.
+Right? So, for example, policy controlled APIs. Okay.
+Uh object ma data object metadata that goes with it to say what is that data allowed to be exposed to or not be exposed to.
+A liability framework is making sure your agents aren't doing illegal things because your lawyers will go bananas at agents going off outside your organization doing things because you have no idea what they're doing.
+So every agent gets a almost like a little passport on what they're allowed to do.
+It's constraints >> constraints and oversight and and now you have other agents in the governor shoop over watching these things.
+The minute start something go off the rails, human gets uh notified, agent gets stopped, rolled back, checked again and you can do again.
+And the reason this works is, you know, in the quantum world, you need like a thousand physical cubits to hit a lot, right? >> Well, agents are relatively free.
+So you can have a lot of agents doing things and a lot of agents overseeing them.
+So the overall cost, you still get the benefits of that overall stack.
+Okay.
+Um, and here's the question I'll come back to for every CEO out there and every business leader out there.
+Could a two or three person team with Hermes or Open Claw disrupt major lines of business in your business? Yeah, >> if that's the case, now there's a few modes that you could develop.
+Okay, one is proprietary data, right? That's a clear mode if you have key data that can't be replicated elsewhere.
+Number two, regulatory, which we see in healthcare, etc.
+Regulatory capture more than anything else.
+And and that mode can be eroded over time. >> Can be all of these can be, but they they'll serve as modes for the time being.
+But the biggest mode is an intelligence mode where if you can learn faster than everybody else, nobody's going to catch you, right? This is why Claude and GPT, their learning loops are further ahead than say Manace or or Gro or whatever.
+And we're seeing how quickly they're moving ahead.
+Once you hit that, it's very hard to catch up, right? Uh and a fourth one would be uh um fifth really deeply committed to purpose and not wavering from that because nothing shakes you >> relationship with the end customer and developing the depth there. >> Yeah.
+Dedicated customer relationship which feeds into like proprietary data >> and and brand >> brand very critical brand sits with MTP that emotional connection with the end user.
+If you have a strong brand, you should use all of these new agents and capabilities to reinforce that means you it's hard to shake you out of that position. >> Welcome to the health section of Moonshots brought to you by Fountain Life.
+You know, my mission is to help you use the latest technologies, including AI, to not just do your work at home, teach your kids, but to help you live a long and healthy life.
+I'm here today with an extraordinary physician, the chief medical officer of Fountain Life, Dr. Don Malem. on.
+Let's talk about cancer.
+Uh, you know, I know from the member database that we've have at Fountain are members who come in who think they're healthy.
+It turns out 3.3% of them have a cancer in their body they don't know about. >> That's right.
+You know, the majority of cancers that we screen for, those aren't the ones that are necessarily taking the lives when found at a late stage.
+We know that when cancer is found early, the chances for cure are much higher.
+We know it's much easier to treat a cancer when found early versus when found late.
+What we're finding in our members is over 3.3% were found to have these cancers that were otherwise wouldn't have been found or detected. >> Yeah.
+You know, it's interesting.
+People, you don't feel the cancer until stage three or stage four.
+And and if you don't know what's going on inside your body, it's like driving your car with your eyes closed and you can know.
+And so when members come through found, how do they detect cancers? So we're doing full body MRI and we also do early cancer detection screening.
+This is very very important and these are not typical tools used in the conventional care setting when it comes to prevention.
+This is a hard thing because currently these are not studies that insurance would yet be covering.
+But the goal is to collect these numbers, do the research and work hard to democratize wellness. >> Yeah.
+So at the end of the day, you can know what's going on inside your body.
+It's your obligation to know.
+So check out Fountain Life.
+You can go to fountainlife.com/peter to get access to the latest technology to help you detect cancer at the very beginning at stage one when it is curable before it gets to stage three or stage four in your world of hurt. >> So those are the some of the problems that now let's talk a little bit about what happens to the company and a classic organization which has seuite middle management coldface doing things what happens to them.
+So seuite I already gave the example >> just to be clear what happens to them if you uh in this new world if you bring in if you restructure >> do have you given a name to the restructured organization like >> it's just an exo 3.0 is the best name I have if anybody has a better name would love to would love to hear it >> so if you're if you're going from a classic organization or an exo 2.0 to an exo 3.0 what happens to your your organizational structure.
+That's right.
+Okay. >> Okay.
+And it's a whole new world, right? Smack me.
+Okay.
+So, seuite >> um becomes basically accountability holders, dashboard oversight, uh evaluators and validators rather than doers.
+You're not going to be doing a strategic evaluation.
+Agents will do that.
+You basically hit yes, I like the evaluation or not. >> So, basically, you're using your wisdom and experience to decide whether the agent's action is in line.
+Yeah. >> Now, this opens up a whole other question which we'll get to in a second.
+So, Cale is guiding and holding accountability and watching what the agents are doing and then deciding yes, no, do this, do that, whatever.
+Middle management is where the biggest change happens because middle management in existing companies is almost completely doing coordination.
+Okay, they take data from the coldface, they repackage it for proper absorption by the by the seauite, right? that function drops about 90%. >> Okay.
+Now then you need to lift up the human beings there and have them doing exception handling, problem solving, etc. of which there's a ton.
+We just don't do it because most people don't have time.
+Okay.
+Now you'll have more time to do those things.
+Okay.
+Um the bottom 20% uh are doing much more enabled work because they're got their agents doing almost everything and they're also doing oversight and and watching.
+Okay.
+Now, we we've talked about on moonshots a number of times the idea that we're going to see a reduction uh in the size of firms to from 100% down to 20%. 80% reduction.
+Do you still >> our calculation is you'll be able to run an average company with about 20 or 25% of the workforce that you had before.
+Okay.
+Now, you can go down the negative side, their media side, and go, "Oh my god, 75% unemployment." Or our moonshot's view would be we'll have five times more companies being created.
+Yeah.
+And there'll be that much >> more the blossoming of entrepreneurship. >> That's right.
+And we're seeing the Camrian explosion of of startups already.
+Right.
+We're seeing actually hiring go up right now >> for entry- level jobs which is really pretty interesting to spot.
+Okay.
+So those are the three uh things that happen to the three layers of the business.
+Okay.
+Now the question then becomes how do you turn into one of these? And and by the way, where do you see the 80% being lost? Uh at all of the levels or mostly the middle? >> No, I think um um 60% would be coming from the uh middle management.
+Uh 20% from the bottom, 20% from the top. >> Okay. >> And that will that's the that's the full the compression compression is there, but mostly for middle management because you don't need to be gathering and aggregating sales reports.
+There's no way you're going to outperform an agent doing that.
+There's much more work that needs to be done in the company that you could do more valuably.
+Right now, an interesting question comes up in this is to which is the alignment problem which is how do you have if you don't have entry-level people doing the work and sweating it out uh putting spreadsheets together and doing the grunt.
+How what happens to your uh organizational and institutional? Yeah, that's right.
+And where do you get senior management eventually when lower management and entry level are not there? And what we need that what we think will need to happen is very active and aggressive apprenticeship programs. >> So if you're suddenly a middle manager that gets displaced, well go partner with the chief uh CFO and work on looking at alternatives and you'll a learn a ton more.
+You'll be a much have a lot more fun. >> Back back to the apprentice >> really back to the apprentice the guild kind of models.
+We think that'll start the thing. >> Okay.
+So you have this new entity this intelligence core new shape for this organization seuite middle management coalface the next question really becomes how do you get there right >> right and this is the part where we have deep expertise because when we built the exo model we decided one of the key things we had to solve was breaking that immune system problem right so and if you try anything disruptive in a big company the antibodies attack you so we >> just to just to clarify this this when we say how do you get there.
+How do you go from a classic organization to retooling yourself as an exo level level three here? >> You're a $100 million trucking company. >> Yeah. >> Right.
+And now and two guys can lease trucks, have an AIcentric organization and compete the hell out of you.
+What are you going to do? Okay.
+Uh now this is the question of what do you do now and how do you turn into this new model? Okay.
+And what you do and I cannot stress this enough with the experience we've had is you cannot change and fix and transform the existing company.
+Okay, it goes all the way back to Buckminister Fuller who said you can't fix an existing system.
+You have to build a new system at the edge and let that become the new gravity center.
+John Hegel and John Celely Brown identified this as disruptive things happen at the edge.
+Right? The poster child here is Nestle created Nespresso in 1976. for 10 years they r try tried to run it a line of business inside the mother ship doesn't fit different brand different supply chain different delivery different customer proposition finally they're like put it over there it's too much friction inside the company they give it to a different building and boom >> well I mean we wrote about this the classic was Steve Jobs getting the you know starting the Mac or IBM >> their PC or locked with their with their >> works yeah Apple would take a small team put them at the edge keep them a secret and say go disrupt a different industry Right.
+So Nestle is a poster child of this.
+Nespresso is now one of their highest performing lines of business and every hotel room in the world has one.
+When you So we know this.
+We've been talking about this for a long time with EXO.
+You do disruptive things in the edge.
+And we've been working with Proctor and Gamble to Seammen's Energy to Black & Decker to HP helping them do disruptive edge innovation. >> It's it's the human ego in the final result protecting themselves from disruption. >> Yes.
+So you have to do that different stuff at the edge.
+There's a reason why Amazon Web Services wasn't done in the core service.
+It just doesn't fit, right? Okay.
+So, you have to take this methodology and this approach.
+Just just believe that you can try you could try it the other way. >> By the way, I I I tried in a I'm not going to say which of my companies a 100 person organization, right, where I'm >> very much, you know, I'm a compelling individual.
+You >> and I still could not get it.
+Then so I literally had to start it as a separate organization. >> You do? >> Yeah.
+And I've done that now multiple times. >> Yes. >> And you maybe take it to an extreme cuz every time something happens you spin off another company which which may which is the Richard Branson approach like every time he got to 150 people they'd spin off another company to to break through the Dunar number problem.
+Right.
+Um, but I all I'm going to ask the viewers and listeners of this to is to you can go research this to death, but if you do anything other than do disruptive things at the edge, pointing into adjacent spaces in a different way, you will fail.
+I've seen the innovation process in detail probably in 250 out of the Fortune 500.
+And I've never ever ever ever seen any other method work than >> I want to say one other thing.
+If you're going to try and do this on the edge, um, ultimately the edge organization needs to report into the CEO. >> Yes. >> At the very top. >> Cannot. >> And there's one other thing the board of directors need needs to provide the CEO full support. >> Yes. >> Uh, you know, if you're disrupting your own organization and you don't have the board support, you're screwed. >> So, let me talk through how you do this. >> Yeah. >> You do not touch the existing organization, right? It's your revenue engine. >> If I Yeah.
+Don't touch the cash cow.
+And And if you start do what's happening right now is people are trying to stick AI injected into places and it's just not working right.
+So what you do is at the edge of your organization, you create an AI native digital twin. >> Okay.
+And then what you do once you set that up separate entity take three to five of your crazy young people.
+Yes. >> Okay.
+Uh partner with a company that's a builder, not a consulting company, but a builder.
+So you get what's called for deployed engineers which is the latest buzzword in in in software these days.
+And what you do is you pick a workflow.
+You've got all these workflows in the legacy organization. >> Is that a product or a service? >> Well, call it invoice processing as a workflow, right? That's a very standardized cutting cookie cutter workflow that you know exactly what how it works and you you rebuild it in this new entity.
+Okay, you don't move it, you copy it.
+Mhm. >> So now you take the steps in this and we've got a whole methodology for how to task breakdown and score each task etc. that's built into the methodology of the whole approach.
+You replicate it in this new system.
+Okay, you fork the data so that you have the data to do it and now you start running it here.
+Now you have a you've derisked it also because if something goes horribly wrong, you're not risking the mother ship.
+Cannot stress this long.
+So you run this uh in parallel until you hit that recursive self-improvement loop.
+And once you see the improvement loops here are way faster than you can do it here.
+Then you know you're in thing even then give it another few weeks >> and you got quality check against the >> quality check.
+You've got everything and then you slowly deprecate the old and you take next workflow.
+Maybe it's receipt confirmation and you move that over.
+Maybe the next one is um demand forecasting and you move that one over and little by little you grow this thing at the edge. a full digital twin >> and full digital twin >> that's that's in recursive self improvement >> and the next thing you know you've got your AI native digital twin fully running our current estimates are that once you have that digital twin running properly your performance improvement should be between 100x or higher >> per year >> just 100x better like if it's processing one invoice now it should process 100 invoices next right if you were taking a 100 days to do something it should take one day to do something >> what's the human scaffolding around the digital twin. >> Well, that's the whole thing.
+That's where you're building up this thing and the human beings in this new model.
+You have human beings there, but they're doing there's more less of them and they're doing more oversight, exception handling, problem solving, etc.
+You're literally building your AI native digital twin at the edge. >> Yeah. >> Okay. >> And what gets me excited as well is the idea that once you've done that, you can start to create uh adjacent companies. you can spin off anything >> and and you can start to create I mean as if you're a great entrepreneurial team. >> Yes. >> And you're limited by I mean I a lot of my companies have amazing teams of people doing things and you know I don't want to push them any further cuz you know quality of life they'll break they'll get stressed out but if all of a sudden you can get that automatic digital twin running that team can now start building other products and services. >> Exactly.
+Yeah. >> You can do that.
+Now let me give you a real example.
+Okay.
+Uh there's two cases sectors by the way that have gone through this full loop.
+Okay.
+One is the contact centers.
+We used to do uh human business processes outsourcing.
+So we had call centers doing stuff.
+Then phase two of that automation was chatbot assisted >> uh customer service right and now we have AI native customer service.
+Clara has done this. >> I was just talking to the AIS uh on on Starlink, right? Yeah.
+It's all it's all GRO driven. >> It's all GRO driven.
+Right.
+I set up a a new website for in fact this organizational singularity and I went on Cloudflare and the AI told me exactly how to run the exception rules and for or domain forwarding.
+I was like this is incredible and so just the automation of what's going to be possible is going to be magical to people.
+Anybody using AI at a refined level today sees how how much fun it is right compared to what it was like before.
+So we've seen this with >> to the point that we're working seven day weeks but you know everybody's having so much fun now. you.
+It doesn't feel like work.
+No, because we're getting so much done.
+I mean, it took three years of hell to write the first book, right? It took us two and a half years of hell to write the second book.
+Mostly because we had to rewrite it with >> deal with me. >> No, no, no, no, no.
+Because we had to rewrite it because generative AI came out near towards the end.
+But this third book was three months.
+Yeah.
+Right.
+And because there was so much every every contributor could use an AI, add more data to it, more help to it, add their methodology to it, and then boom, you're off to the races.
+So the second domain where this has fully happened by the way is marketing and content generation right we used to have it was agency heavy then it was AI assisted and now it's AI native right and so we can see certain verticals hitting this spot in a particular way so let me go into the rewriting methodology we call this methodology rewrite okay and I want to go into a little bit of detail so people understand the specific steps that are involved in this so you have a workflow like invoice process processing and you're going to start moving workflow over.
+Before you do any of that, you have to do a backcasting exercise. >> Okay, what's that mean? >> Backcasting is a methodology in future studies and f and forecasting where you pick what the vision looks like.
+Say Elon wants to get to Mars. >> You could say, okay, I want to get to Mars in seven years.
+In order to get to Mars in seven years, where do I have to be in 5 years? Where do I have to be in three years? And now you have your road map.
+If you start from the starting point and go, I want to get to Mars, you've no idea what you're doing, how you're going to get there, etc.
+So, backcasting has turned into a very powerful methodology.
+So, step one is take your company.
+So, let's say it's that uh uh trucking company or retail company that I used earlier and say, okay, in this future world, what does that company look like fulfilling its MTP and its architecture in an AI nativecentric way? And you that's one of the hardest things for people to do to let go of how they've done it. >> Yes. >> And by the way, it's also one of the easiest things to do in conversation with a large language model. >> Beautiful.
+Right.
+So take your seuite, go do that backcasting exercise.
+So that's phase one.
+And we have people that can help do people do that.
+Okay.
+Step two, you you score your company.
+So we've got a whole bunch of metrics on which we want to score the existing organization.
+For example, I'll just give you two of them. is what is the organizational drag inside your organization? Right now, if you try and get something done, does it have to go through like five or six different decision loops and approvals before you get it done or can they like Nvidia, they go straight to the founder and go, can I do this and he says yes or no, right? Or an AI tells you yes, you can do it or not do it, etc.
+So, what's the organizational drag 1 to 10? Okay.
+A second metric would be uh where is AI as a first class citizen in your company right now? If it's a tool injected by it, you're on the lower end of the score.
+If you've got a chief AI officer and you're building AI native capability already, your score is much higher on that 1 to 10 score.
+So, we've got seven dimensions.
+We ask you those seven questions.
+You score yourself.
+We'll have this on the website for people to take for free.
+Evaluate yourself.
+It's a one to a seven thing.
+The next step is you take uh the most prescriptive workflows you have in your organization and start mapping them and documenting so you have clear knowledge.
+A big problem by the way is going to be what's called tacet knowledge.
+Right? There may be like let's say you're doing video production.
+Okay? There's there's a bunch of steps you're doing as a video producer that may not be obvious from the outside.
+They're not documented anywhere.
+And if you lose that person and AI can't do them right away, right? It's the unspoken >> by the way. >> There's there's a whole uh process right now by which companies are basically shattering you with an agent. >> They are trying to shatter.
+Yeah.
+But it turns out if you're a Gen Z worker, 44% of Gen Z workers are sabotaging the AI and giving it bad information so it can't take their job later.
+Wow.
+It's it's at that level of immune system response, right? >> By the way, just that is a perfect example of the immune system. >> That's the immune system. you're trying to do something, but the culture uh is killing you trying to get that done.
+Right? By the way, I'm going to just reiterate, we've created a 10-we process that we've found a way of hacking, breaking the immune system, hacking culture at scale.
+We've done it a 100 times for big companies. >> And I love I played in a little bit of that and I love it. >> Okay.
+Next step is is cut the organizational drag.
+Start stripping out approval levels in your company so that you actually strip things down until you can break it.
+And what would that look like? Okay.
+The next step is build start building that digital twin and migrating workflows over one by one.
+And the final one is you rewire uh you rewire your systems more and more so that everything is going to that rather than to this. >> Let me take one more crack at visualizing this.
+Today this is how most companies operate.
+They have their cloud provider or their networking or their capability.
+Then they have a set of ERP systems, Oracle Financials, SAP, whatever.
+And all the data sits inside those systems, right? And those companies don't want you to have that data easily.
+So it's wired wired in.
+Then you have an application layer and people are trying to layer AI on the top >> hacking against this horrible architecture that we've had for 50 years and it can't be easily unwound.
+Okay, picture the new architecture. new architectures.
+You've got connectivity and cloud provider, a data lake that has all your data accessible in one spot with its proper approval levels attached to each data object, >> right? >> Then you have your application layer that is customuilt for you because AI can do that and workflows etc.
+Then your AI, then your agents on top of that.
+So this is a wholly different stack and architecture >> that you own >> that you own completely right.
+And this is why the SAS providers are so freaked out because that model does not is not compatible with this model.
+Right? So right now they're trying their best to keep their place because they're wired into the limbic system of the legacy organization.
+But if you build this proper stack, you have full agency and control at nears much cheaper cost than you could do before. >> And the speed is in the speed.
+Ask anybody who's tried to implement an ERP system how much hell they had trying to do it.
+And then you end up trying to map the organizational flow to the ERP system >> versus the other way around >> versus the other way around.
+Now you can have software built that way.
+So this we've built a whole um um methodology for this. >> Last couple of points around this is we think this overall transition is going to take about 5 to seven years to do this full transition. >> Wait for understand.
+So not for a single company to do it for all companies to get there. for for the majority for the surviving companies. >> For a surviving majority of companies over a 5 to sevenyear period, you're either dead or you've transition to this. >> And this maps as well, by the way, in the conversation we've had about the turbulent period of time. >> And we call this, we actually call this the turbulent transition from exactly that. >> I said it's two to eight years.
+We have we have to uh carefully architect society how we get through this 2-day year period. >> That's right.
+Okay.
+And and I'm just talking about companies. forget anything else, right? >> Yeah.
+But but it's the underlying reason. >> That's right. >> Yeah. >> Okay.
+So, in our opinion, uh you should be able to run a company between 10 to 25% of the people that you have today.
+If you're just if you're regulatory centric, >> Yeah. >> Right.
+Or uh have physical work like you're building a data center type thing, then it's less.
+If you are ver if you're a marketing company, then you're going to be down to 10% human beings, right? But a physical company even then it's only 25%.
+Okay.
+So for example we were doing work with uh Fermy America and we estimated that we should be able to run a power plant instead of with 800 people with about 80 people. >> Mhm. >> That's a full 10% uh backdrop there. uh it should be a one to a 20 uh plus manager to what's um Jack Dorsey called HIC high impact uh individual contributor should be one manager per 20 >> of those instead of one to five or one to three that it is today >> Jack took it to an extreme right he wanted to have you know just CEO and everybody connects to him >> he did but what that means is he's using AI to do everything because there's no way the CEO can keep that many people connected to that many people anyway Right.
+And then and this is already happening.
+Take Cognition's Labs.
+Their ARR grew 73 times >> when they implemented this full system when they went fully AI native.
+This is already happening.
+This is not a some pie in the sky guess.
+We're taking early signals and over the last few months as we've been watching the market evolve, every single data point we've gathered is pointing exactly this trajectory that we're pointing at. >> So this is actually a race.
+Uh this is you know if you're a company in an industry and someone else runs this process and and has a recursive improving digital twin. >> Yes. >> And you don't you're cooked. >> You're cooked. >> Yeah. >> That's right.
+So if you're unilver and Proctor and Gamble is taking all their stuff and automating it, you will not out listening, >> right? Or the other way around, right? Whoever whichever way it is.
+Okay.
+So let me talk about what survives and what does not.
+By the way, this and just to just to hit it, uh you know, we friend of the pod Elon has talked about increasing the GDP, you know, triple digit growth.
+I mean, this just adds, you know, rocket fuel.
+I mean, it's insane. >> Yes, >> we're going to see insane levels of >> see a class of companies that are delivering 100x compared to what was doing being done before or doing 100x, >> you know, in terms of profitability, right? >> That's right. re your revenue scale and profit goes to the roof. >> Yeah.
+Now profitability will be limited because the that profit margin other companies are going to go wow look at that profit margin.
+I'm going to send my AI agents to >> which is why things demonetize and why we end up heading towards universal high income because their cost of everything starts dropping down. >> Yes.
+Then we can get into the whole UBI UHI universal basic services stuff etc.
+This episode is brought to you by Blitzy, autonomous software development with infinite code context.
+Blitzy uses thousands of specialized AI agents that think for hours to understand enterprisecale code bases with millions of lines of code.
+Engineers start every development sprint with the Blitzy platform, bringing in their development requirements.
+The Blitzy platform provides a plan, then generates and pre-ompiles code for each task.
+Blitzy delivers 80% or more of the development work autonomously while providing a guide for the final 20% of human development work required to complete the sprint.
+Enterprises are achieving a 5x engineering velocity increase when incorporating Blitzy as their preIDE development tool, pairing it with their coding co-pilot of choice to bring an AI native SDLC into their org.
+Ready to 5x your engineering velocity? Visit blitzy.com to schedule a demo and start building with Blitzy today. >> All right, let me just do a before and after. >> Sure. >> Okay, so what survives is what the new entity looks like is the MTP encoded as protocol in the company.
+Okay, number two, the accountability accountability shell, legal entity, fiduciary holder, liability container, etc.
+Proprietary intelligence in that stack is very very critical.
+Coordination protocols, okay, become very uh killer.
+Curatorial judgment, okay, when execution is nearly free, judgment and taste become really important in the future. >> Yeah, we've talked about that.
+Super important. >> Super important.
+Okay, so that those are the things that will survive and thrive in this new world.
+What does not survive? Okay, number one, the org chart.
+The way we built it.
+Yeah.
+David Rose was famous for saying the um if you were whatever the org structure that got you successful in the 20th 20th century will have you fail in the 21st century.
+Right? >> Turns out he was right.
+Right.
+It's just taken a little while. >> Iterate it again. >> Iterate it again.
+Okay.
+So the org chart in the traditional model completely fails. >> Um the five-year plan dies completely.
+In fact, any static planning dies because if you do any strategic thinking of this is what the world's going to look like a year from now, you have no concept. >> It's constant learning loops. >> We're in the middle of the singularity.
+You can't rely on any static plans.
+The the plan itself has to and we even got it to this point.
+Think about the way >> I can imagine people as are getting very anxious right now. >> Yeah.
+When I've spoken about this at conferences, people are like my head is like breaking, freaking out, dying here.
+But again, we've got we it looks like we found a very stable uh mechanism drisk mechanism to get you from A to B, right? So So there's there's >> And thank you for that, by the way.
+I mean, I I think that's so important. >> Well, in terms of what the world needs, right? This is you you and I love doing stuff that the world needs.
+It's very clear this is what the world needs is a stable framework to get us from A to B, right? And if we can have a little less of the chaos as old systems fail and we can fail over more elegantly then let's please good and for goodness do that.
+So um the the five-year plan in fact we actually took it to the point where right now if you have an organization that org structure changes only when you have a major event like an M&A transaction or you launch a new line of business or something >> or you replace your performance sucks you replace the management team. >> Okay.
+So that org structure does not change very much.
+But in the new world that org structure is dynamic and constantly changing adapting to the current situation.
+It's like an amoeba >> and that's the org structure.
+Forget it.
+The org the organization itself becomes a protocol.
+Okay.
+And that's a big kind of thing to get your head on.
+Love that.
+Okay.
+Middle management as a coordination layer gone.
+Okay.
+Quarterly reviews as a unit of decision making gone.
+Okay. >> Annual planning gone. >> Yeah.
+Inertia modes.
+Customers don't switch because switching is annoying. gone.
+Okay.
+Wasting assets in the Asian economy gone.
+So, there's a bunch of things we've kind of highlighted what happens uh first.
+Um and so we're kind of looking at this and and one guidance I would give to people if your company is less than 50 people, you can brute force this and do this in the whole company because you've got a firstname basis with everybody.
+If your company's over 50, in your case it was 100. >> Yeah. >> Do not try and break the immune system and do not because you'll risk the existing company and you don't want to do that. do this digital twin at the edge. >> Yes. >> Okay.
+So, what we're doing right now is we're saying, "Okay, let's pick a few CEOs that want to go through this." Okay.
+And we're gonna score them in that rewrite score and if they've got good >> So, you've taken some through it.
+What uh I mean, >> we started with about uh we're right now at about four companies.
+We're kind of going through them with that. >> Uh we'll probably do 10 at a time.
+So if you're interested and you want to go through this, let us know and we'll >> So let's be very specific about that because I can imagine a lot of our viewers want this and we have a lot of large companies and entrepreneurial companies and so forth.
+So if someone does want to be one of the first 10 going through this, yeah, >> who do they email? Where do they go? >> Um, two paths would be email Kevin at openexo.
+Kevin Allen is our head of community and and navigates all this and his AI will help openexo.com right or go to the our website organizational singularity.com and you can actually fill out a form and say I want to try this >> and but you're going to selectively choose who you work with. >> We're going to Yeah, because let's say a company has horrible organizational drag.
+We're going to say go fix the organizational drag first because we're going to spend all your time on that and not doing good.
+And >> and we think it's a 90day process >> to start this process and get a few workflows working in this new way.
+And if that once we get you going, then you should be off to the races and you can build on yourself. >> Uh we'll take batches.
+The first batch will be 10 or 20 probably and then we may do more.
+We'll see how that goes.
+My entire community is being retrained for this.
+So my exo community is now 50,000 people in 150 countries.
+So we're retraining them to be able to navigate this.
+We're all going to go through this journey together.
+I'll be personally involved in the first couple of batches like I was personally involved in the first sprints etc. >> We just heard this. >> We just heard Shake Muhammad say that he wants to run 50% of the Emirati government on this.
+Do you see this working for governments as well? >> Completely think of any government almost all the processes in a government are prescriptive very well understood. the process for renewing a driver's license is extremely well understood >> and frustrating >> and frustrating.
+But now that friction can be removed in a really magical way.
+Um in fact they did this I mean um Minister Al Lama right said come and get a golden visa you're going to be my poster child and they are processing golden visas in 5 hours a resident visa in 5 hours.
+This is unheard of in in that world.
+So they've already been down a path like this.
+They're taking it naturally to the whole other next level.
+But for governments and nonprofits, this completely applies, right? And there's a whole chapter we have in the book, which I won't talk about here, but go in the whole solve everything paper that you and Alex did, right? And all of Alex's thinking on the inner loop. >> Uh we've taken a crack at what does the how do you organize domain after domain and create a domain collapse in more and more sectors and how do you organize for that? Yeah.
+So you can create an organizational design where you can pick a domain like healthcare or education and set up a structure that then has that uh inner loop start to move. >> Yeah.
+And and I guess the other question is if you're an entrepreneur thinking about starting a company. >> Yes. >> You have basically a a platform here and a playbook to start. >> That's right. >> Immediately as now you know we can you can read this.
+In fact what we're going to do is we're launching the book as an API as an as an AI.
+Right.
+So we're going to launch it as a claude skill >> that you can just download like claude just said hey we're going to have connectors to all QuickBooks and everything else like that.
+So we're going to do download the entire contents of the exo framework as a cloud skill because every 2 three days we're learning new things.
+We're going to build it in.
+So the the skill itself is changing on a real-time basis.
+It's not like you get certified in this from 5 years ago.
+You have to the AI itself has to keep updated.
+So, we're releasing the book as an AI. >> Nice. >> As a native AI. >> Amazing.
+Um, so I I guess the question is if you know if you're ready for this and and you're selected, that's great.
+If you're a company that's got too much uh what you call it, organizational friction. >> Yes.
+Organizational drag. >> Organiz Come and see us because we'll show you.
+We'll tell you what to do.
+For example, uh if you've got a process that takes 10 steps, okay, brute force it and rethink that process so it takes three steps.
+Once it's taking three steps or less, then you're able to you're ready to start thinking about moving over into the digital twin.
+You can also start setting up the legal framework for the digital twin, get board approval, right? There's a lot of scaffolding that has to take place for you to get to there.
+Okay? uh you may have legacy uh legal issues like for example in Germany workers councils decide how many employees the bigger company's allowed to have or not have which is not great from a flexibility point of view but there's so much else you can do to start uh navigating this in fact one of our folks Patrick Sandina said look let's figure out a way in this process of retraining all of the the people that were doing work and that that might be at risk retraining them to be in this new model so that you a a kind of a whole transition plan for society built in. >> Right.
+So, which is then you solve the social contract along the way.
+And so, we'll see how that works out. >> Oh, I love this.
+Sele uh you've been pregnant giving birth to this for a while.
+We've been talking about this. >> It's about it's about 3 months of of stuff and and and then uh what I would do is I started writing the first version of the book and worked with Claude and Chachi PT.
+I had three instances of Gemini chat and claude each taking cracks at different things.
+Then I sent it out to the community and said, "Give me feedback." And so we got lessons learned and then we went and talked to some of the cutting edge AI practitioners.
+So what are you doing? What are you seeing at the cutting edge? Um uh and so it's been a it's been a because the field is changing as fast as we are able to keep up with it.
+So just keeping up it's like moonshots, right? We're spending a huge amount of time just keeping up with all the breakthroughs and headlines. it we're having to spend have a team dedicated to just keeping track of all the things happening so we can constantly tweak the methodology itself on how to do the re rebuilding. >> Amazing.
+Uh again just to reiterate if someone's interested Kevin kevin at openexo.com >> y >> uh or go to what's the website? >> Organizational singularity.com. >> Fantastic. >> Which is a mouthful.
+Uh I think this is teaching you know boards and founders uh how to survive the next you know the disruptions that are coming.
+The disruptions are coming. >> The disruption is is now it's like as William Gibson said the future is here is not evenly distributed right the organizational singularity is here.
+It's just not evenly distributed.
+If you're a fivep person startup you're building an AI native way anyway. >> Yeah.
+And we have a whole bunch of our community members that are doing that and we've been learning from them.
+Right? You see Alex Finn with all the open claw stuff and now Hermes and what that's po what that's making possible.
+The big the central thing to think about is all of our organizational structures in the past were organized around hierarchy and human centric workflows and now they need to be AI native agentic workflow and that's a totally different model.
+It needs to be architected around intelligence not around hierarchy.
+Love it.
+And I hope on the uh on our weekly soon bi-weekly and soon daily uh moonshots >> daily.
+Oh my god. >> I know.
+I know.
+It's crazy.
+But um >> do you know how many flights I've had to change over the last few weeks? I go, "Oh my god, the only flight I could take is right when moonshots happen.
+I have to now stay till the next day." >> I know.
+How many airport How many airports have you have you broadcast from? >> It's it's been bad.
+It should get better, by the way.
+It should it should get better. >> But I hope that uh we'll be able to track this uh and you can report on companies that have made this transition.
+That's right. >> And how this is updated.
+I just for me this is one of the most important learnings that you can deliver. >> I'll give you one early thing we've seen.
+You know what's one of the biggest cadre category of people that are approaching us is universities. >> They're like we need to automate.
+We need to totally change.
+We can see the writing on the wall.
+Massive >> disruption.
+So they're coming going how what do we do? And we're like great, let's start with you.
+Let's start automating the existing one and move you into this new model so that as you turn from trying to teach content to teaching uh execution becoming entrepreneurial hubs.
+Yeah.
+Yeah.
+Right.
+We talk about the fact that you're engineering degree won't be that you studied engineering for four years.
+You built a bunch of stuff and it was interesting enough you got credentialed. >> Yeah. >> That will be the engineering degree.
+It'll be doing rather than learning. >> And so that's such a big shift for the legacy.
+It's It's what I'm really impressed by is they're seeing it.
+I didn't think they would even see it, but they're actually seeing it and reaching out to us. >> Amazing.
+Listen, buddy.
+Uh thank you for sharing this.
+Um it was actually amazing uh to to see I mean your brilliance and uh and your passion about this >> mine with the community cuz to all of the community, but still it's it's it's your drive here.
+This is your heart and your soul. >> This is it.
+I mean this is how you organize for the new world, right? If you're going to rebuild civilization, rewrite civilization, right? You have to kind of think about how the organizational design around this all works.
+And we have to rethink the whole thing. >> So, I'll say this uh into into camera.
+If you're an employee at a company and you want your company to thrive, >> send this to your CEO, send this to your board.
+Uh if you're the CEO, uh this is coming.
+There's no if you know about it.
+It's happening at an accelerating rate.
+Uh, and remember that disruption is not coming from your largest competitor.
+It's coming from the AI native startup that sees how slow you are and how much profit you're currently making and they're going to come and try and eat your lunch. >> I think your t-shirt says it all.
+Abundance hope. >> Abundance is coming. >> Yes, >> brother.
+Thank you for this beautiful and I love spending time and excited to go and celebrate your birthday tonight. >> We will do that. >> Yes.
+Fantastic.
+If you made it to the end of this episode, which you obviously did, I consider you a moonshot mate.
+Every week, my moonshot mates and I spend a lot of energy and time to really deliver you the news that matters.
+If you're a subscriber, thank you.
+If you're not a subscriber yet, please consider subscribing so you get the news as it comes out.
+I also want to invite you to join me on my weekly newsletter called Metatrends.
+I have a research team.
+You may not know this, but we spend the entire week looking at the meta trends that are impacting your family, your company, your industry, your nation.
+And I put this into a two-minute read every week.
+If you'd like to get access to the MetaTrens newsletter every week, go to diamandis.com/tatrends.
+That's diamandis.com/tatrens.
+Thank you again for joining us today.
+It's a blast for us to put this together every week.
