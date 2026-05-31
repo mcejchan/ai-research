@@ -1,5 +1,15 @@
 [
   {
+    "path": "jirka-vysvetluje-veci/co-kdybychom-vleteli-do-cerne-diry-extra-easy.json",
+    "title": "Co kdybychom vlétli do černé díry? (Extra Easy)",
+    "channel": "Jirka Vysvětluje Věci",
+    "thumbnail": "https://i.ytimg.com/vi/oBJfyKR6_yE/maxresdefault.jpg",
+    "date": "2026-05-31",
+    "difficulty": "extra-easy",
+    "questionCount": 8,
+    "maxPoints": 12
+  },
+  {
     "path": "futurecast-technologie-zitrka/ces-2026-ai-roboti-a-chytre-gadgety-easy.json",
     "title": "CES 2026: AI, roboti a chytré gadgety (Easy)",
     "channel": "FutureCast: technologie zítřka",

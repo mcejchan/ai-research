@@ -1,0 +1,106 @@
+{
+  "title": "Co kdybychom vlétli do černé díry? (Extra Easy)",
+  "channel": "Jirka Vysvětluje Věci",
+  "url": "https://www.youtube.com/watch?v=oBJfyKR6_yE",
+  "thumbnail": "https://i.ytimg.com/vi/oBJfyKR6_yE/maxresdefault.jpg",
+  "date": "2026-05-31",
+  "difficulty": "extra-easy",
+  "questions": [
+    {
+      "question": "Co je černá díra?",
+      "type": "single",
+      "points": 1,
+      "options": [
+        "Díra ve vesmíru, do které spadnou jen kameny",
+        "Místo, kde je gravitace tak silná, že neutečte ani světlo",
+        "Obrovská planeta, která je úplně černá a studená"
+      ],
+      "correct": [1],
+      "explanation": "Černá díra má tak silnou gravitaci, že z ní nemůže uniknout vůbec nic — ani světlo. Proto ji nevidíme přímo."
+    },
+    {
+      "question": "Proč nemůžeme černou díru přímo vidět?",
+      "type": "single",
+      "points": 1,
+      "options": [
+        "Je příliš daleko a naše oči nestačí na tu vzdálenost",
+        "Schovává se za jinými planetami v naší soustavě",
+        "Světlo z ní neutečte — je tam úplná tma"
+      ],
+      "correct": [2],
+      "explanation": "Černá díra nepouští ven žádné světlo. Vidíme jen svítící plyn kolem ní a její stín."
+    },
+    {
+      "question": "Co je ten svítící prstenec kolem černé díry na fotkách?",
+      "type": "single",
+      "points": 1,
+      "options": [
+        "Horký plyn a prach, který kolem ní obíhá",
+        "Hvězdy, které se srazily a teď tam plavou",
+        "Odraz Slunce na povrchu černé díry jako na vodě"
+      ],
+      "correct": [0],
+      "explanation": "Kolem černé díry obíhá rozpálený plyn — říká se mu akreční disk. Svítí tak jasně, že ho vidíme i na fotce."
+    },
+    {
+      "question": "Co se stane s časem blízko černé díry?",
+      "type": "single",
+      "points": 2,
+      "options": [
+        "Čas se zastaví úplně a nic se nikdy nepohne",
+        "Čas běží úplně stejně jako na Zemi bez rozdílu",
+        "Čas plyne pomaleji než daleko od ní"
+      ],
+      "correct": [2],
+      "explanation": "Silná gravitace zpomaluje čas. Kdybys byl blízko černé díry, pro lidi daleko by ses pohyboval jako ve zpomaleném filmu."
+    },
+    {
+      "question": "Co je horizont událostí?",
+      "type": "single",
+      "points": 2,
+      "options": [
+        "Hranice, za kterou se už nic nemůže vrátit",
+        "Místo kde černá díra končí a začíná vesmír",
+        "Název pro okraj svítícího prstence na fotce"
+      ],
+      "correct": [0],
+      "explanation": "Horizont událostí je neviditelná hranice. Cokoliv ji překročí, už se nikdy nevrátí — ani světlo, ani raketa."
+    },
+    {
+      "question": "Co by se stalo s tvým tělem, kdybys padal do černé díry?",
+      "type": "single",
+      "points": 1,
+      "options": [
+        "Nic, protože uvnitř je úplně prázdno a klid",
+        "Gravitace by tě roztáhla jako špagetu",
+        "Okamžitě bys zamrzl na led jako v mrazáku"
+      ],
+      "correct": [1],
+      "explanation": "Gravitace je u nohou silnější než u hlavy — tělo by se roztahovalo do délky. Vědci tomu říkají špagetifikace."
+    },
+    {
+      "question": "Proč vědci říkají, že černé díry jsou záhadné?",
+      "type": "single",
+      "points": 2,
+      "options": [
+        "Protože je nikdo nikdy neviděl ani nepřímo",
+        "Naše fyzika neumí vysvětlit, co se děje uvnitř",
+        "Protože se objevují jen jednou za miliardu let"
+      ],
+      "correct": [1],
+      "explanation": "Současná fyzika popisuje, co se děje venku. Ale uvnitř — u singularity — naše rovnice přestávají fungovat. Proto jsou záhadné."
+    },
+    {
+      "question": "Může z černé díry někdy něco uniknout?",
+      "type": "single",
+      "points": 2,
+      "options": [
+        "Ne, nic nemůže uniknout za žádných okolností",
+        "Ano, cokoliv unikne pokud letí dostatečně rychle",
+        "Možná ano — díky Hawkingovu záření velmi pomalu"
+      ],
+      "correct": [2],
+      "explanation": "Stephen Hawking přišel s teorií, že černé díry mohou pomalu vyzařovat energii. Trvá to ale neuvěřitelně dlouho."
+    }
+  ]
+}
