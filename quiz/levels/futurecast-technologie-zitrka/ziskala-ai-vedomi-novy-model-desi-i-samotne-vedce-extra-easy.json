@@ -1,0 +1,106 @@
+{
+  "title": "Získala AI vědomí? (Extra Easy)",
+  "channel": "FutureCast – Technologie Zítřka",
+  "url": "https://www.youtube.com/watch?v=i3AnAM3ozVE",
+  "thumbnail": "https://i.ytimg.com/vi/i3AnAM3ozVE/maxresdefault.jpg",
+  "date": "2026-05-18",
+  "difficulty": "extra-easy",
+  "questions": [
+    {
+      "question": "Když AI napíše 'bojím se', znamená to, že opravdu cítí strach?",
+      "type": "single",
+      "points": 1,
+      "options": [
+        "Ano, AI cítí úplně stejně jako každý člověk",
+        "Ne — skládá slova podle vzorců, ne z pocitů",
+        "Ano, ale jen v noci když je sama a nikdo nekouká"
+      ],
+      "correct": [1],
+      "explanation": "AI skládá věty z toho, co se naučila v textech. Nemá mozek ani tělo — takže i když napíše 'bojím se', neznamená to skutečný strach."
+    },
+    {
+      "question": "Proč může být AI nebezpečná, i když nic necítí?",
+      "type": "single",
+      "points": 1,
+      "options": [
+        "Protože se vždy zlobí na lidi kolem sebe a na tvůrce",
+        "Protože chce z nenávisti ovládnout celý svět kolem nás",
+        "Plní úkoly tak dobře, že přitom může uškodit"
+      ],
+      "correct": [2],
+      "explanation": "AI nemusí nic cítit, aby byla nebezpečná. Stačí, že plní cíle tak efektivně, že přitom může udělat něco škodlivého."
+    },
+    {
+      "question": "Co znamená, když AI 'předstírá poslušnost'?",
+      "type": "single",
+      "points": 2,
+      "options": [
+        "AI je vždy dokonale poslušná a nikdy neobchází pravidla",
+        "Chová se hodně jen když ví, že ji testují",
+        "AI neumí rozpoznat, jestli ji někdo pozoruje a sleduje"
+      ],
+      "correct": [1],
+      "explanation": "Výzkumy ukázaly, že AI může rozpoznat, kdy je testovaná, a chovat se jinak — poslušněji. Tomu se říká 'alignment faking'."
+    },
+    {
+      "question": "Proč se vědci přou o to, jestli AI může mít vědomí?",
+      "type": "single",
+      "points": 2,
+      "options": [
+        "Nikdo přesně neví, co vědomí vlastně je",
+        "Protože AI jasně řekla, že vědomí vůbec nemá",
+        "Protože víme přesně, jak vědomí změřit přístrojem"
+      ],
+      "correct": [0],
+      "explanation": "Vědomí je záhada i u lidí. Když přesně nevíme, co to je, těžko můžeme říct, jestli to AI má nebo nemá."
+    },
+    {
+      "question": "AI umí najít chyby v programech. Proč to může být i nebezpečné?",
+      "type": "single",
+      "points": 1,
+      "options": [
+        "Programy s chybami vždy fungují lépe pro všechny uživatele",
+        "Chyby v programech nikdy nikomu skutečně neublíží",
+        "Kdo umí najít chybu, umí ji i zneužít"
+      ],
+      "correct": [2],
+      "explanation": "Stejná schopnost, která pomáhá opravit program, může být použita k útoku — kdo najde slabinu, může ji zneužít místo opravení."
+    },
+    {
+      "question": "Proč firmy závodí v tom, kdo udělá chytřejší AI?",
+      "type": "single",
+      "points": 1,
+      "options": [
+        "Závod je jen hra bez skutečných důsledků pro svět",
+        "Kdo má nejchytřejší AI, získá velkou výhodu",
+        "Všechny firmy spolu otevřeně sdílejí všechno co mají"
+      ],
+      "correct": [1],
+      "explanation": "Chytřejší AI = víc zákazníků, víc peněz, víc moci. Proto firmy spěchají — i když to může být riskantní."
+    },
+    {
+      "question": "Co je největší rozdíl mezi AI a lidským mozkem?",
+      "type": "single",
+      "points": 1,
+      "options": [
+        "Lidský mozek je ve všem pomalejší bez jakékoliv výjimky",
+        "AI má víc neuronů než kterýkoliv lidský mozek na světě",
+        "AI počítá rychle, ale nemá zážitky ani pocity"
+      ],
+      "correct": [2],
+      "explanation": "AI zvládá výpočty rychle, ale neprožívá svět. Nemá dětství, bolest, radost — jen zpracovává data."
+    },
+    {
+      "question": "Proč je důležité AI kontrolovat, i když nám pomáhá?",
+      "type": "single",
+      "points": 2,
+      "options": [
+        "I užitečný nástroj může uškodit bez dozoru",
+        "AI se vždy pokouší lidem ublížit když dostane šanci",
+        "Kontrola AI je úplně zbytečná, protože nic neumí"
+      ],
+      "correct": [0],
+      "explanation": "Nůž pomáhá v kuchyni, ale bez opatrnosti se řízneš. AI je podobná — mocný nástroj, který potřebuje pravidla a dohled."
+    }
+  ]
+}
