@@ -140,6 +140,16 @@
     "maxPoints": 14
   },
   {
+    "path": "futurecast-technologie-zitrka/neutrina-nejzahadnejsi-castice-vesmiru-extra-easy.json",
+    "title": "Neutrina: nejzáhadnější částice vesmíru (Extra Easy)",
+    "channel": "FutureCast: technologie zítřka",
+    "thumbnail": "https://i.ytimg.com/vi/gq8yqGube18/maxresdefault.jpg",
+    "date": "2026-05-18",
+    "difficulty": "extra-easy",
+    "questionCount": 8,
+    "maxPoints": 12
+  },
+  {
     "path": "futurecast-technologie-zitrka/neutrina-nejzahadnejsi-castice-vesmiru-hard.json",
     "title": "Neutrina: Nejzáhadnější částice vesmíru (Hard)",
     "channel": "FutureCast – Technologie Zítřka",

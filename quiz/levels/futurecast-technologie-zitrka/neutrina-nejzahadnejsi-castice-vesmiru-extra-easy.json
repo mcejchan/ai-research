@@ -1,0 +1,106 @@
+{
+  "title": "Neutrina: nejzáhadnější částice vesmíru (Extra Easy)",
+  "channel": "FutureCast: technologie zítřka",
+  "url": "https://www.youtube.com/watch?v=gq8yqGube18",
+  "thumbnail": "https://i.ytimg.com/vi/gq8yqGube18/maxresdefault.jpg",
+  "date": "2026-05-18",
+  "difficulty": "extra-easy",
+  "questions": [
+    {
+      "question": "Čím jsou neutrina zvláštní oproti většině věcí kolem nás?",
+      "type": "single",
+      "points": 1,
+      "options": [
+        "Jsou nejtěžší částice v celém vesmíru",
+        "Svítí jasněji než Slunce každou noc",
+        "Projdou skrz zdi, planety i lidi"
+      ],
+      "correct": [2],
+      "explanation": "Neutrina jsou tak malinká a tak málo reagují s okolím, že prolétnou skrz celou Zemi, aniž by se čehokoliv dotkla."
+    },
+    {
+      "question": "Proč je těžké neutrina chytit a zkoumat?",
+      "type": "single",
+      "points": 1,
+      "options": [
+        "Existují jen v noci, proto je těžké je najít",
+        "Skoro s ničím nereagují — prolétnou vším",
+        "Jsou příliš velká na dnešní vědecké přístroje"
+      ],
+      "correct": [1],
+      "explanation": "Neutrina prolétnou téměř vším bez zastavení. Proto potřebujeme obrovské detektory, aby se alespoň občas nějaké zachytilo."
+    },
+    {
+      "question": "Proč jsou detektory neutrin tak obrovské (třeba kilometr ledu)?",
+      "type": "single",
+      "points": 1,
+      "options": [
+        "Vědci potřebují hodně prostoru na svůj výzkum",
+        "Víc materiálu = větší šance nějaké chytit",
+        "Neutrina jsou sama o sobě velká jako auto"
+      ],
+      "correct": [1],
+      "explanation": "Neutrina prolétnou skoro vším. Čím víc ledu nebo vody máme, tím je pravděpodobnější, že se aspoň jedno zastaví a my ho uvidíme."
+    },
+    {
+      "question": "Odkud přilétají neutrina na Zemi?",
+      "type": "single",
+      "points": 1,
+      "options": [
+        "Z hvězd, explozí a ze Slunce",
+        "Pouze z továren na jadernou energii",
+        "Vznikají jen hluboko uvnitř naší planety"
+      ],
+      "correct": [0],
+      "explanation": "Neutrina vznikají v jádrech hvězd, při explozích supernov a dalších událostech ve vesmíru. Ze Slunce jich přilétá nejvíc."
+    },
+    {
+      "question": "Co znamená, že neutrino mění svůj typ za letu?",
+      "type": "single",
+      "points": 2,
+      "options": [
+        "Letí rychleji a rychleji, až nakonec úplně zmizí",
+        "Rozpadne se na dva kousky cestou přes vesmír",
+        "Přepíná se mezi druhy jako chameleon barvy"
+      ],
+      "correct": [2],
+      "explanation": "Neutrina se za letu přepínají mezi třemi druhy — říká se tomu oscilace. Je to jako by chameleon měnil barvu, zatímco běží."
+    },
+    {
+      "question": "Proč stavějí detektory hluboko pod zemí nebo pod ledem?",
+      "type": "single",
+      "points": 2,
+      "options": [
+        "Jiné částice tam nedolétnou a neruší",
+        "Pod zemí je tepleji a přístroje líp fungují",
+        "Neutrina existují pouze pod zemským povrchem"
+      ],
+      "correct": [0],
+      "explanation": "Pod zemí se zastaví ostatní částice, které by rušily. Neutrina projdou — takže co detektor zachytí, je opravdu neutrino."
+    },
+    {
+      "question": "Proč by neutrina mohla jednou sloužit ke komunikaci?",
+      "type": "single",
+      "points": 2,
+      "options": [
+        "Mluví lidskou řečí a rozumí jednoduchým slovům",
+        "Prolétnou planetou — nepotřebují satelit",
+        "Jsou levnější než všechny dnešní mobilní sítě"
+      ],
+      "correct": [1],
+      "explanation": "Neutrina projdou celou planetou. Kdyby se dal takhle poslat signál, nepotřebovali bychom satelity ani podmořské kabely."
+    },
+    {
+      "question": "Proč je objev hmotnosti neutrin tak důležitý?",
+      "type": "single",
+      "points": 2,
+      "options": [
+        "Hmotnost neutrin způsobuje zemětřesení a bouřky",
+        "Těžké částice jsou automaticky důležitější než lehké",
+        "Vědci si mysleli, že hmotnost nemají — museli přepsat fyziku"
+      ],
+      "correct": [2],
+      "explanation": "Desítky let si vědci mysleli, že neutrina neváží vůbec nic. Když se ukázalo, že mají hmotnost, museli přepsat část fyziky. Dostal se za to Nobelova cena."
+    }
+  ]
+}
