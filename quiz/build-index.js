@@ -28,7 +28,7 @@ function levelFromJson(file, data, levelsDir = LEVELS_DIR) {
   const questions = Array.isArray(data.questions) ? data.questions : [];
   const maxPoints = questions.reduce((total, question) => total + Number(question.points || 0), 0);
   const relativePath = path.relative(levelsDir, file).split(path.sep).join('/');
-  const difficulty = data.difficulty === 'easy' ? 'easy' : 'hard';
+  const difficulty = data.difficulty || 'hard';
 
   return {
     path: relativePath,

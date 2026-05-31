@@ -92,7 +92,7 @@ function initLevelsPage() {
         ? `<img class="level-thumb" src="${escapeHtml(level.thumbnail)}" alt="${escapeHtml(level.title)} thumbnail" loading="lazy">`
         : '';
       const difficulty = level.difficulty || null;
-      const difficultyLabel = difficulty === 'easy' ? 'Easy' : difficulty === 'hard' ? 'Hard' : null;
+      const difficultyLabel = difficulty === 'extra-easy' ? 'Extra Easy' : difficulty === 'easy' ? 'Easy' : difficulty === 'hard' ? 'Hard' : null;
 
       return `
         <a class="level-card" href="quiz.html?level=${encodeURIComponent(level.path)}">
