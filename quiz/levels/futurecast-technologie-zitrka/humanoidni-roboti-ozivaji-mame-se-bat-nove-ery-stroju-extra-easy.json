@@ -1,0 +1,106 @@
+{
+  "title": "Humanoidní roboti ožívají: máme se bát nové éry strojů? (Extra Easy)",
+  "channel": "FutureCast: technologie zítřka",
+  "url": "https://www.youtube.com/watch?v=rSWtOEAGsXw",
+  "thumbnail": "https://i.ytimg.com/vi/rSWtOEAGsXw/maxresdefault.jpg",
+  "date": "2026-05-24",
+  "difficulty": "extra-easy",
+  "questions": [
+    {
+      "question": "Proč je lepší, když robot umí chodit sám, než když mu člověk musí říkat každý krok?",
+      "type": "single",
+      "points": 1,
+      "options": [
+        "Protože je pak rychlejší než jakékoliv auto na silnici",
+        "Protože zvládne i nečekané překážky",
+        "Protože pak vůbec nepotřebuje nohy k pohybu"
+      ],
+      "correct": [1],
+      "explanation": "Když robot rozumí pohybu obecně, poradí si i s novými překážkami. Kdybychom mu říkali každý krok, zastavil by se hned, jak přijde něco nového."
+    },
+    {
+      "question": "Co se stane, když robot vypadne internet a jeho mozek je v cloudu?",
+      "type": "single",
+      "points": 1,
+      "options": [
+        "Robot přestane vědět, co má dělat",
+        "Nic, robot funguje dál naprosto normálně",
+        "Robot se automaticky sám opraví a restartuje"
+      ],
+      "correct": [0],
+      "explanation": "Pokud robot přemýšlí přes internet a ten vypadne, nemůže nic rozhodnout. Proto je lepší, když má mozek přímo v sobě."
+    },
+    {
+      "question": "Proč roboti trénují nejdřív ve hře na počítači a ne hned ve skutečném světě?",
+      "type": "single",
+      "points": 1,
+      "options": [
+        "Počítačové hry jsou pro roboty mnohem zábavnější",
+        "Ve hře se nemůže nic rozbít při chybě",
+        "Skutečný svět je pro robota až moc jednoduchý"
+      ],
+      "correct": [1],
+      "explanation": "V simulaci může robot udělat tisíc chyb a nic se nestane. Ve skutečnosti by se mohl rozbít nebo něco poškodit."
+    },
+    {
+      "question": "Robot si umí sám vyměnit baterii. Proč je to užitečné?",
+      "type": "single",
+      "points": 1,
+      "options": [
+        "Baterie pak vydrží navždy bez dobíjení",
+        "Robot se tím naučí mnohem víc nových věcí",
+        "Nemusí čekat na člověka, pracuje pořád"
+      ],
+      "correct": [2],
+      "explanation": "Když si robot sám vymění baterii, nemusí čekat, až přijde člověk. Může pracovat celý den i celou noc."
+    },
+    {
+      "question": "Jak se robot učí nový úkol pozorováním člověka?",
+      "type": "single",
+      "points": 1,
+      "options": [
+        "Člověk mu to musí napsat na papír s pokyny",
+        "Opisuje přesně každý pohyb jako zrcadlo",
+        "Pochopí princip a zkusí to po svém"
+      ],
+      "correct": [2],
+      "explanation": "Robot neopisuje pohyby 1:1, ale pochopí, co je cíl úkolu, a najde vlastní způsob, jak ho splnit."
+    },
+    {
+      "question": "Co mají humanoidní roboti společného s lidmi?",
+      "type": "single",
+      "points": 1,
+      "options": [
+        "Podobný tvar těla — nohy, ruce, hlava",
+        "Cítí bolest úplně stejně jako každý člověk",
+        "Umí snít a přemýšlet o své budoucnosti"
+      ],
+      "correct": [0],
+      "explanation": "Humanoidní znamená 'podobný člověku' — mají lidský tvar těla. Ale necítí, nemyslí a nesnají jako my."
+    },
+    {
+      "question": "Proč je dobré, když jeden chytrý systém umí ovládat různé roboty?",
+      "type": "single",
+      "points": 2,
+      "options": [
+        "Všichni roboti pak vypadají naprosto stejně",
+        "Nemusíme vymýšlet nový program od nuly",
+        "Jeden systém je automaticky vždy spolehlivější"
+      ],
+      "correct": [1],
+      "explanation": "Univerzální mozek se naučí princip pohybu jednou — a pak ho použije na jakéhokoliv robota. Šetří to spoustu práce."
+    },
+    {
+      "question": "Proč by mohlo být nebezpečné nechat roboty úplně bez dozoru?",
+      "type": "single",
+      "points": 2,
+      "options": [
+        "Roboti bez dozoru se vždycky úplně vypnou",
+        "Roboti by se mohli začít hrozně nudit",
+        "Při chybě by je nikdo nezastavil včas"
+      ],
+      "correct": [2],
+      "explanation": "Robot není dokonalý — může udělat chybu. Když u toho nikdo není, nemůže ho nikdo opravit nebo zastavit včas."
+    }
+  ]
+}
