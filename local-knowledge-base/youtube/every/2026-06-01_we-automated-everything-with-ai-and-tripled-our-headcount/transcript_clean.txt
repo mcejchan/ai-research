@@ -1,0 +1,347 @@
+You prompt AI to do something, it blows your mind, you feel inadequate, you feel like, "Oh my god, this thing is going to take my job." And then it stops working and it looks back at you and says, "What should I do next?" The further away an agent gets from a human, the less valuable it is.
+If you just ride the models, you're going to be fine.
+If you care about leading a really ambitious life, I truly think that this is going to make that more possible for more people. >> [music] >> Every is the only subscription you need to stay at the edge of AI.
+If you care about being on top of the latest models and using latest tools, you have to subscribe to Every to separate out the signal from the noise.
+Go to every.to/subscribe today.
+So, we are here uh because we're going to flip the script a little bit.
+I am going to be interviewing Dan Sick. uh about the piece that he published yesterday, May 21st.
+Uh and we're going to try to understand why he wrote it, what's underneath his reasoning for it.
+There's going to be some conflict.
+I'm going to I'm going to fight with him on it. >> Let's fight. >> and see, you know, bringing some of my opinions, which are more or less aligned, but uh trying to understand does this is this piece going to reflect the future in 10 years, in 5 years? >> And who are you again? Um I'm Brandon.
+I'm our COO.
+And that's it.
+So, the piece is called After Automation.
+And it it comes from this feeling that I have.
+And there's a video about this, and there's there's a piece, but just for people who who have not seen either of those things.
+It comes from this feeling that I have that at Every, we are as AI native, as agent native, as it as you as it gets, you know, if you swing a stick around in our Slack, you're you're as likely to hit a human as you are an agent. >> [snorts] >> Everyone's using cloud code and codex and all these tools to do their job every day.
+Um and yet it feels like there's more human work to do than ever.
+And in fact like since the GPT-3 days like we've grown from four people to like 30 people and we're hiring more now.
+And so it came from me looking at that and then looking at the environment and being like what's going on because the whole information environment if you look at Dario is out there saying like half of entry-level white-collar jobs may be wiped out.
+Even even people like um like Ken Griffin from Citadel is like you can tell he just had this moment where someone showed him an AI doing like an advanced data or finance question and he was like holy [ __ ] like that's what I would pay PhDs to do for me and it just did it.
+And I feel like I'm watching a lot of people who maybe don't have a ton of experience with agents and don't have a ton of experience with the curve of improvement that we've been riding for the last like three three and a half years hit it for the first time and then come to all these conclusions about oh my god like all work is going away we're not going to have jobs and I'm just like sitting here being like actually your intuitions when you first see a technology like this are usually very off.
+And we've seen a lot over and over again over the years that Every is a very good bellwether for where things are going because it's a it's a group of early adopters we have people in doing all sorts of work internally at Every and if something works here it there's a good bet that it's going to spread to other other places other other businesses that are that are adjacent to ours.
+And so when I look around at Every I I see so much automation and I also see way more human work.
+So I was really um the the whole piece is saying here's the current state of work with agents.
+And then pulling apart that paradox and sort of explaining why does why does more automation mean more work? Yeah, when I read the piece it was there wasn't like an explicit call to action in it, but I sort of felt this call to action of like there is actually a massive amount of hope right now in a world that is filled with a lot of doomers.
+And um and this is why.
+Um [snorts] but I am going to come out of the gate and ask you a devil's advocate question.
+Which is a couple hours before you publish this piece the CEO of ClickUp came out with this long tweet about why he fired 8,000 people and 3,000 people some >> What? I don't I don't think it was 8,000.
+I was 20,000 people.
+What I mean >> [laughter] >> I think it was like 3,000. >> an entire economy. >> like 22% of of his workforce.
+I don't think it was in the thousands, but yes, it was it was a it was a lot of his workforce.
+Yeah. >> Yeah.
+So my question to you is um in a business like every we're growing super fast.
+Um what you wrote makes a lot of sense to me.
+And what you wrote theoretically makes a ton of sense in that AI is not autonomous right now.
+It has to be told what to do and then has to be checked.
+We need to have that that sandwich that you described in in the piece.
+But in a business that is 8,000 people, 10,000 people that is mature and has built ways of managing like SOPs for managing their business does this manifesto and this thesis still hold true? It's a It's a really good question.
+Um Are there a couple There are a couple different questions here.
+The first thing I want to do is like lay out the argument.
+Why does Why does automation make more work? I'm sure many people listening to this also haven't read it.
+So take a second to explain that in detail.
+I will do that.
+So basically, the idea is the way that AI works and the way it functions in the workplace is AI makes yesterday's expert competence cheap.
+And by that I mean AI is trained on all of our outputs, all of the code and the writing and the design and and decision-making and everything that's ever been written.
+And it makes that available to everyone for very cheap.
+So uh you can So anyone now with a prompt can use yesterday's competence to solve a programming problem, build an app, or write a uh write a piece like I did, write a report, or uh or, you know, make a YouTube thumbnail.
+And the interesting thing is that when you do that when when expert competence is available for cheap, it gets really widely adopted.
+So everyone starts to do it.
+Everyone starts to like, you know, we see this internal Everyone's making pull requests >> [ __ ] this is crazy. >> Yeah.
+And and and like I'm making pull requests and ops people are making pull requests and you know, engineers are like writing essays and you know, there's all this line crossing basically for non-experts to do the thing that experts used to do.
+And that feels very threatening to experts.
+They're like, "Well, what's my job going to be now?" Mhm.
+And [snorts] what's interesting about that is because these tools are trained on outputs, are trained on yesterday's data the stuff that they do is uh with with default prompt with is it uh the stuff that they do with a default prompt all looks kind of similar and is all kind of right for the current situation, but it's like not actually totally right.
+And so what happens is you sort of like flood the zone with tons of stuff that's like close, but not quite right.
+And then you need to basically like and and well There's a There's a lot of that at every too. >> There's a lot of There's a lot of people doing what seems like great work and then you go under the hot under the hood and you're like, this isn't quite right.
+Maybe like the expert should do it. >> Yeah.
+Yeah.
+Yeah.
+Exactly.
+Uh me for example.
+I >> [laughter] >> No. I've never witnessed that.
+All of us.
+It's all of us.
+How many PRs have I pushed? >> from personal experience.
+I've pushed so many PRs where I'm like, Willie, I literally have no idea if this works, but here you go.
+And then he's like shut the [ __ ] up.
+Well, he's like >> [laughter] >> he's like, this is a good idea, but I just completely redid it. >> Yeah.
+Yeah.
+Yeah.
+Exactly.
+So so that's the kind of thing that's the kind of thing I'm talking about.
+It's like it's kind of right.
+It's close, but it's like it's actually not quite right and you need someone you need an expert to actually figure it out.
+But what's what's interesting is when you flood the zone with all that kind of stuff um it what used to be expensive because it's it's expert competence is now cheap and now it looks the same.
+So everything kind of sort of gets devalued.
+You get this like abundance of stuff that's like uh used to be very expensive and looks like expensive work like code and essays and whatever, but it's all kind of similar and all not quite right for the situation.
+So its value gets a lot lower.
+It's immediately lower.
+Um [snorts] and and then what happens is you actually get more demand for experts to come in and help take that stuff that is being produced by people and like you have good ideas for example, but uh but now there's a lot of demand for an expert to come in and help get that idea across the finish line.
+So that can that that looks usually like experts are in demand for building systems to get the kind of you know, you could say slop work that isn't can now be produced by everyone and uh shepherd that into something that's actually useful.
+Um so, an example would be you know, we have repo rules and and review guidelines and stuff like that so that before you see a PR, before Willie sees a PR, hopefully it's it's gone through a bunch of processes to make sure it's actually reasonably good.
+We have the same thing on the editorial side.
+So, building systems for that.
+And then there's also a lot of demand for experts to use these tools now that the floor is a lot higher, use these tools to make stuff that could never have been made before.
+And we do that all the time.
+Like we have Kieran who just built uh an entire inbox end to end in like a month or two.
+And that's like complete that's totally completely impossible.
+And so there so there's this really interesting thing that happens that even as you automate uh the automation produces a glut of work that's all okay, that's all like reasonably good. >> Mhm.
+That work is all very very similar and not quite a fit for the actual situation and that that increases the demand for experts who can like make it like make it actually good, make it actually different, make it actually appropriate for the for the the live situation as it is right now.
+And I think that's something that people don't quite understand especially when they first encounter uh a language model and they or or an agent that can do something and they see it and they're like, "Holy [ __ ] it's just it just does everything." And then and then and then the the reality is it's incredibly good.
+It's amazing.
+It totally changes how how we do work.
+And our experience so far at every is the further away an agent gets from a human the less valuable it is.
+And and the the human connection with an agent to actually do the work is uh is the most important thing for making it work well. >> [clears throat] >> Experts are more important than ever because they lay the groundwork for an agent to do amazing work. >> Yeah.
+And only then can you have the other humans actually take that agent and do work that levels them up. >> Yeah.
+So, you know, there was a there was a point where we were thinking about this piece, Dan was drafting this piece where uh the title was the tide is rising.
+And that was trying to emote this idea that like the tide is rising, we are all able to do more work, better work, but our eyes, whether you're an expert or not an expert in something, are always a little bit above where that water line is.
+And um I really liked the end of the piece where uh you describe um Oh, [ __ ] Achilles? Is it Achilles? Achilles Achilles sprinting ahead of the tortoise.
+Um which, you know, according to Zeno's paradox, like that shouldn't happen.
+Um but in this world, it actually does.
+You know, you you you prompt AI to do something, it blows your mind it does that, you feel inadequate, you feel like, "Oh my god, this thing is going to take my job." And then it stops working and it looks back at you and says, "What should I do next?" And I think that is um until we have figured out AGI, um and maybe even after that, probably after that for a very, very long time, um it will always be looking back at us and asking us for direction.
+That's that's basically the core of the argument cuz I think you can you can say, "Oh, yeah.
+Oh, yeah, Dan, like um it is it's maybe true now that it increases demand for experts, but like this stuff's going to get good enough that it won't.
+Let's just look at the benchmarks." And there's a whole like long section in the piece about, "Okay, if you actually do look at the benchmarks, they are improving exponentially, but also um when you look at them closely, once you saturate a benchmark, it's very easy to unsaturate it.
+It's very easy to find a new frame for for a model to do a particular type of problem that um is slightly larger, slightly slightly broader that zeros it out.
+So, while it is making exponential progress, there's it doesn't mean that it is equivalent to human capabilities.
+It's it's it's actually a very hard problem and one of the reasons it's so hard is anything that you say about what you can do differently than the model is going to be wrong.
+Cuz once it's articulated, once it's specified, a model can hill climb on it.
+A model's going to get better at it.
+And we make this like weird subtle mistake that we identify a set of tasks and we're like, this is all that humans can do.
+This is what humans can do that models can't do.
+And then models just do it better.
+And then you're like, oh my god, well, like what do I do? And the mistake is there's actually a lot of stuff that you do that can't be articulated that can't be articulated in a clean frame.
+And and so every time you try, you just sort of you get you get like panicked and confused.
+And if you sort of step back, the the fundamental thing that you know, keeps keeps the keeps the separation between humans and agents is we are building agents to do things that we want them to do.
+They're no matter how powerful they get, the all of the economic and psychological and and otherwise and technological forces are pushing the the progress of AI toward a place where no matter what it does, it's looking back at you to decide what is what you want to do, what is valuable.
+And um even even after we get to AGI, like theoretically AGI is going to do that, too.
+If If we thought it wasn't going to do that, we wouldn't build it. >> [gasps and sighs] >> And that um that keeps this sort of like gap between humans and and AI.
+And and I think a a good a good example of this is the difference between something that can do a task really well and something that just has its own self-motivated um stuff that it wants to do.
+Like, you have a you have a kid.
+Mhm.
+Like, you can like, Codex can I don't know.
+Codex can write a report much better than Isaiah can, but like Isaiah has very strong wants and needs.
+And you can try to get him to do what you want, and it is going to work sometimes, but also like he's just this self-generating process that like does stuff that he wants to do.
+And um if you've ever used any of these tools, like you know that there's a very um they're not built to work that way.
+Yeah.
+Um they they can push back a little bit, but they don't have this There's It's very far from the kind of like playful, experimenting, like I just want to do [ __ ] cuz I'm I'm into it that uh that humans have.
+And again, we're getting into territory of I'm saying things that humans are humans are different than models.
+Like, again, it's it's it These are things that once you clearly articulate them, models can do, but you have to um be comfortable with the fact that there are things that you can do and and things that you are that you can't fully articulate.
+Hey, Dan here.
+We can all agree that housing is expensive.
+Whether you're renting or paying a mortgage, it doesn't matter which one you're paying, it stings every month.
+But Bilt can make it feel a bit better.
+Let me explain.
+Bilt lets you earn rewards on your rent.
+And now, you can earn rewards on your mortgage, too. >> [music] >> Every housing payment earns you points you can use towards flights, towards Lyft rides.
+The flights you can redeem are with top airline and hotel partners like United and Hyatt.
+Personally, I'd be redeeming my points for business class travel, but you know, pick your poison.
+But, here's what I think is the most underrated part.
+Built members also get access to a neighborhood concierge.
+It can make restaurant reservations, book fitness classes, and find you local spots.
+And it comes [music] with rewards at over 45,000 retail merchant partners.
+It's sort of like having a personal assistant baked into where you live.
+It's simple.
+Being a renter and now owning a home is better with Bilt.
+Join the membership for you live at joinbilt.com/dan.
+That's j o i n b i l t dot com slash dan.
+Make sure to use that URL so they know that we sent you.
+And now, back to the episode.
+It is also inside of that play and that rejection >> Yeah. where you have autonomy.
+Yeah.
+And um it will be a very scary moment when these models can do that.
+And I think there's a question of can they even do that? Because they rely on training data and like that needs to be in the training data and um maybe there's a world in which they are um continually learning and we lose control of them and they start get access to training data that we don't want them to have access to.
+But, until that time um I think there's probably a good argument that they can't reject what we're saying and therefore can't be autonomous.
+Autonomy needs to be I've asked you to analyze this CSV and it says, "No, because this is a better idea than doing that." >> Yeah, and I would actually I would substitute I think a better word.
+I think agent is very confusing because it it it implies agency, but agent means something that acts on behalf of someone else.
+Um I think they have I think these are agents that are getting very good at being autonomous in the sense that if I send you out on a task, whatever that task is, that task could be disagree with every single thing I say.
+Um it could be I go off and find a new idea.
+Whatever that task is, they're get they're getting or will be very good at that.
+Um and but uh that is very different from having agency, Mhm. which is uh what I what what even the smallest child has.
+Yeah.
+And I Yeah, and and and I don't think that there's a lot of There's not a lot of incentive to build that because okay, you're sitting at your computer, you're like, "Hey, like let's get to work." And like the agent's like, "Nah, I'm like I'm playing." Yeah. [laughter] Like It needs to be able to do that in order to do things that are scary to us. >> yeah.
+That's That's what I That's what I think and there's this Obviously, there's a a gigantic literature on LessWrong and other places about like why it's impossible to prove that they're never going to do that or whatever, but my counter to that is the evidence, if you look at the development of these things, the evidence is that and the whole lineage is toward being more compliant and I think the entire industry is incentivized to do that and and I see no reason to doubt that that's going to continue to be the case.
+Yeah, I mean, we'd have to develop something that's like this.
+It's your definition of AGI, which like is a good question of whether that's actually possible, which maybe you should explain to everyone what what AGI [snorts] means. >> I think a good I think a good definition of AGI is a any agent that you never turn off.
+That it makes economic sense to keep it running all the time.
+And keep it running all the time in the sense of um uh not like, you know, open claws or Victor or whatever, like you can ping it and it will respond to you all the time.
+It's the server's on, but I mean, generating tokens, act actively doing tasks for you without you ever turning it off or having to re-prompt it.
+You can probably like you can guide it or whatever, but um the the idea is that it's it's it's valuable enough that it can just keep running all the time.
+Okay, if I want one-word answers for the next two questions >> [laughter] >> I ask.
+Um do you think that will happen? >> Yes.
+Do you think that is a good thing? >> Yes.
+Explain your reasoning for the second.
+Um >> answer.
+Be in in the here's here's the reason for my question.
+That to me seems to be where things start to get a little off the rails, where it makes economic sense for these things to run all the time because then I sort of start to think okay, it's actually valid that the ClickUp guy just fired 20% of his team. >> yeah.
+Okay, we should we should definitely go back to the ClickUp guy. >> Let's go back to ClickUp guy. [laughter] What's his name? I don't know.
+I think ClickUp guy is ClickUp guy.
+Um but before we get there, like the the the thing that is important to not fall into when you project out like this is everybody will have access to this.
+Mhm.
+For one.
+For another the rate of change even when like crazy new technology is available is actually a lot slower than you would expect.
+So, as part of this um as part of this piece, I didn't end up covering it because I think it requires a lot more space and I I was already 8,000 words and I was like not sleeping anyway, so I was like I'm going to cut this.
+Um but as part of this I wanted to say I wanted to see like how like how does this work? I know how it works in like you know, uh expert knowledge work like fast-moving stuff.
+I I know how it works.
+We have customer service, so I know how it works if you're like a customer service manager type person, but like how How AI actually affect your job if you're a customer service person in Omaha or whatever and you work in a call center? Because those are like the most like at risk employees.
+It's that would be the default example to to bring up.
+So I was like I'm going to just see what that's like.
+And so I just had Codex and Cloud Code scrape like all of Reddit and like like lots of places where uh customer service jobs post.
+And obviously a lot of them don't like AI which makes sense.
+Um but there's some really interesting stories there about companies that they're they jump they're jump on the AI bandwagon.
+They're like we're automating everything.
+They fire a bunch of their customer service people and then like 2 months later they're like oops, sorry.
+Like can can you come back? And one and one reason for that is um uh if you implement AI poorly, you're going to have poor results.
+And I think a lot of these companies like don't really understand what they're doing and they just like are paying lip service to like the new hype and they think the CEO thinks that they can like cut a cut a bunch of expenses and then it just doesn't really work very well. >> So all of those people haven't actually played with that. >> Yeah, exactly. [laughter] Yeah.
+Um but another reason which I think is really interesting and is very important is a lot of people who call in to customer service centers do not want to talk to a machine.
+Do not.
+And are very explicitly trying to figure out are you a machine or not and get to a [ __ ] human? And that is a real break on how fast these kinds of things can be adopted.
+And that's only one example.
+There's like the world is very complicated.
+There's like billions and billions of examples for any kind of job.
+And so I I think it's really important even if we're hypothesizing this like this uh thing that can that's always on that can do stuff.
+Um one, we have to hypothesize everyone has access to it cuz that is the direction that it's going.
+And two, we should we should recognize that it even if that happens the the it will take a long time for it to become something that everybody is comfortable with and everyone uses.
+And it will take probably a generation for it to like really turn into a thing.
+Definitely.
+There's also a good argument that like working at a call center is not a job that anybody wants.
+It's a job that you have to do cuz you need a job.
+And in a world where this technology exists, like yes, we'll have to figure out a way that like everybody can live a fulfilling life and and and and eat.
+Um but it might actually be nice to not have that job assuming you're taken care of in another way. >> I think that the obviously the transition is is a big deal and these are like real people with real lives and and some some actually do love it but also yes, like in general being in it being yelled at in a call center is like not not the best job.
+Um but I think that where I'm going is even if we hypothesize that um humans still have to decide what matters and what matters changes all the time and it changes all the time in particular because um AI is an input to that so it it is both um uh How do I even say this? It's very It's very recursive.
+AI uh is changing the world really fast which changes what's what matters which which puts more onus on us to like update and decide what matters because AI is going to wait for us to be like what what matters, you know? Totally.
+And and that is going to be part of every job because anything that you decide anything that you can frame and be like this is a repetitive thing that is like working you can just have your have your have your AI do it but the minute the situation changes and situations change all the time and they especially change all the time when it's not just humans changing it's AI.
+Um you you're going to need humans to to decide that.
+And um and I think that that's I think that's something that's very missing from from you know, what we talk about when we hypothesize these things.
+Back to the ClickUp guy.
+ClickUp guy, yeah. >> So, I don't know.
+He fired 30,000 people. >> [laughter] >> I think it was more.
+And I think it's really important whenever you're looking at some of the [ __ ] on Twitter.
+First of all, I [ __ ] I hate I hate when they're like, "Our business is better than it's ever been and we laid off 8,000 people." Yeah, it's pretty [ __ ] It's like, well, why? >> Like, yeah.
+You want to be more profitable. >> you say why would you brag about that? >> The other thing that I don't like is we're going to and we're going to pay people a million dollars if they do great work.
+It's sort of like, "Okay, but you still have all these people that no longer have jobs." I don't I just really don't think it's very tastefully done.
+And I think um Jensen he he said something that was like very self-serving, which was basically like, "If your answer to progress is firing people, you're not a very creative CEO." >> Yeah.
+Very self-serving because obviously he wants people to use more AI. >> Yeah.
+But I think it's true. >> It's poorly done.
+Yeah. >> Like, you should be doing more interesting things, not firing you know, people want to be profitable.
+Yes, but uh idiots. >> [laughter] >> Even I is like Even I is so overrated.
+Uh but yeah, just it's it's Anyway, that's an aside.
+This is not very tastefully done.
+Anyway, I I I so so a not tasteful, which should make you a little bit suspicious.
+And my my guess is and just seeing some like some of the random stuff is I don't think the company's doing that well.
+Um >> I mean, it's a generic SaaS company.
+Yeah, there's like there Yeah. >> Yes.
+And when companies don't do well, they lay people off.
+Um and I Meta Or when companies are managed poorly and have too much bloat anyway. >> Exactly, which is, you know, correlated with not doing well. >> That was Square.
+Like that Just Jack Dorsey just can't Exactly.
+He just does that. >> Like and I think Meta's the same.
+Like, they're making all these they're making gigantic investments in AI because that's like the new hot [ __ ] that they like kind of missed they kind of missed the boat on.
+And And no surprise metaverse didn't work, so now they have a lot of people to fire. >> Yes.
+So, I think yes, AI is involved in in in all of this stuff, but it is it's not like this clear thing of everyone's doing all the same jobs as before, but they're all just like they're all are all just agents.
+It's actually No, no, no, the company actually has to like totally change strategies and the the people it needs and the structure it needs is just totally different.
+And that's not the like clean narrative that I think people like to tell and it's much easier to talk about just AI takes jobs.
+And it seems it seems definitely true that using these tools changes your workflow a lot.
+And because it changes your workflow, it changes what's hard and what's easy.
+Um there uh especially if you're a big company and you've been structured in a certain way to work in a certain way, there's there's going to be like reorganizations of how work happens and how companies are structured.
+That seems like really clear and it's very important that we figure out a way to make that transition as good as possible for people and and uh tweeting about how well you're doing it while you're firing people is not that.
+Um I think there's a lot of really interesting like creative ways to, you know, Meta for example is now keylogging everyone's um everyone's uh all the stuff they enter into their computer because they're like, "Well, our people are the smartest people, so we'll just use their data to train our models and our models will be smarter." Which is an interesting take and maybe it'll work, but there's this I think there's this really interesting I wrote about I wrote about this like 2 years ago or something like that.
+There's this really interesting effect of that, which is when you sign an employment contract the way that we thought about employment for a very long time was I'm going to do this job and you're going to need me to keep doing it in order for it to keep getting done.
+But once you reach a point where um I do the job for you and then it just works.
+That sort of and then you can just you don't have to pay me anymore.
+That sort of changes the whole way that we think about employment and therefore I think it should for example change how we think about paying certain types of people.
+You should get a pension.
+You know? Pensions Maybe maybe pensions are back.
+Pensions are back, baby. >> [laughter] >> Well, what one thing that's really interesting is there's this thing that launched last week that we're part of I the name is escaping me, but it allows publishers to get paid based on um basically it measures a publisher's unique contribution to the training corpus and you get paid based on that.
+So, the more generic your [ __ ] is, the less the less it's you get paid and the then the more unique and and valuable it is, the more you get paid, which is really interesting.
+The the ironic thing about that is basically is like did you this will be the case.
+Did you use AI, which is trained off of all the [ __ ] that already exists? Can so it still can make some things that are new, but like it's basically you know, it it's it's How much how much just like generic default prompting did you do to make this versus just like actually >> Did a human actually think about this? Yeah, exactly.
+Yeah, generated the idea.
+But I think there's there could be something similar for I had this idea I wrote this post a couple years ago about um the last job you'll ever had you'll ever have where it's an agency you generate all the training data in the work that you do for the agency and then it tracks basically what is your contribution and then you just get paid out forever from how much revenue your data generates.
+Web3 is back now.
+It Web3 Web3 [laughter] is back.
+We're going to track it obviously.
+On the ledger.
+On the blockchain.
+Yeah, anyway, who knows? The the problem with that, again, and this is this is back to why humans are valuable, but they're not that's not the only reason why humans are valuable.
+We're valuable intrinsically, but um one of the reasons why they're valuable for work is I I would guess, looking back at that article and looking and thinking about a lot of this stuff is there's a really high uh drop-off rate.
+There's a really high What's the What's that word? There's really high depreciation of the value of data.
+Once it's Once it's out there, it's like very likely to go stale within like weeks.
+Um there's some things that maybe not, but [snorts] It's safe to say that all of these companies are at a place where they are just hunting for net new unique data.
+Yeah, I I think I think so, and um So So, anyway, broad We can we we should expect broad reorganizations of companies, and we should expect companies that are not doing well to lay people off or reorganize and then blame AI. >> [snorts] >> Um and I would I would I would really be skeptical of anyone who's saying that it's going to eliminate all jobs or all knowledge work, and um and I think it will certainly change change them, and I think it is uh certainly uh it's like a big It's a big thing that people have to take seriously, but my my big takeaway, and and this is not like fully in the piece, but it is what I really believe is if you just ride the models, if you just when new models come out, learn to use them for the stuff that you do, whatever that is, you're going to be fine.
+Um and and you may even, hopefully, find that you can do more and better work that's more fulfilling for you than you could before.
+Um I think that there's still a place in the world if you're if you don't want to if you don't want to use the models at all, I think that that's still going to be a thing.
+Uh Um plenty people don't, you know, I don't know.
+Plenty people don't eat fast food or whatever.
+I don't know I don't know what to compare it to.
+It's it's totally possible not to participate in this.
+However, if you care about like leading a really ambitious life and you know, building businesses or or whatever it is, I I truly think that this uh is going to make that more possible for more people.
+And as long as you ride the models, you're going to be good.
+I think that's a very good call to action.
+Um I want to end by asking you something about what it takes to write a piece like this.
+A lot of Celsius.
+A lot of Celsius.
+So, when we started, I don't know if it'll make this if this will make it into the podcast, but when we started, Dan was sort of like looking like this.
+He was hugging himself, protecting [laughter] himself, some would say.
+It has been a very stressful week.
+This is an 8,000-word piece. >> Yeah.
+Um most people are not writers.
+Can you share what it's like to not just write an 8,000-word piece, which is a very big piece, but um like what does it take to think through these arguments? It's so interesting because it's very natural to me because I wrote once a week I published something once a week for so long that >> [snorts] >> especially like a you know, 500-word or 1,000-word piece, like I can just bang that out in like an hour or two.
+Um these things are get these things get much harder the longer they go because there's all these interdependencies.
+So, if you change something here, it changes four other things over here and and whatever.
+So, 8,000 words becomes like it's like 10 times harder than 4,000 words, which is 10 times harder than 400.
+Um I found that and and I always have this feeling that there's this underlying thing that I can feel, but I can't quite say that I'm trying to say.
+Mhm.
+And it started actually, if you remember we did our I guess it was Q2 planning.
+And I was like, I think that we can I think I figured out why.
+This is after I did proof.
+I think I figured out why we're just going to always have jobs with AI.
+And like if you just ride the models, you're going to be fine.
+Like I think I I think I can feel that.
+And then it was just this process to be like, okay, how does that actually cash out? Like why do I think that? Cuz it's all kind of in there, but it's it's all tangled up.
+And I wrote like probably four or five versions where I would start it and I was like making the argument and I was like, that doesn't work.
+And then I would be like, oh, but how about this? And I would like throw it out and like start again.
+And it was it was actually very it was a very frustrating process because you're trying what what I'm trying to do is start with the ground truth of here's what we see every day.
+Here's what here's how work happens for us.
+And then move into this well, like philosophical thing that like it can't actually be articulated.
+I'm trying to articulate something that can't be articulated. >> Yeah.
+Um and Or [laughter] is constantly to moving target. >> Yeah.
+And so that's that's just like that's a very hard.
+I love that kind of [ __ ] but it's also very very hard and and can be very frustrating, but AI was like a huge part of this.
+Like I could not have written this without it.
+For example, one of the things I loved that I started to do is um you know, for a piece like this, you're trying to articulate it, you can't quite articulate it.
+And the only way to do that with the only way to do it is to articulate it over and over and over again until it works.
+And you've really got to keep it in your head, especially if you're doing lots of other stuff.
+So, what I would do in the morning is I would um like fresh, right when I wake up or you know, right when I get get to my desk, I would be like I would just monologue into my computer into a proof document.
+Here's what the piece is about, front to back.
+Here's the argument front to back.
+And then I would have a log of that.
+And every time I would do it, I'd be like, "Okay, Claude or Codex, like and I actually use Claude more for this.
+I think Claude is better for this kind of thinking.
+Um What am I really trying to say? Like help me figure out what I'm trying to say." And it would say things back and I'd be like, "No, no, oh, that's like that's what I'm trying to say." And then over time you kind of build up this record of here's what it was here here's what it was here and and you're you're just I'm just getting closer and closer and closer.
+And then what I would do is as I was getting deeper into it and I was like, you know, I 4,000 words and 5,000 words.
+Every morning I would have Codex take the latest draft and turn it into a podcast.
+Uh of just like someone reading reading it to me.
+And then on my way to work, I would um on my way to work, I would listen to the podcast.
+And as I'm listening, I'm like, "Okay, that there's something I need to change there.
+There's something I need to change there." Um oh, and then it would get to the end and I'd be like, "Okay, here's the thing that I need to do next." And that was a really good way to like kind of keep the continuity of um what am I what am I doing? What am I writing? What where are the problems? In a way where I'm not always reading.
+Like it's really nice to be able to like be on a walk and be listening to it and thinking about it, which was couple of would be completely impossible otherwise.
+Yeah.
+All right, one more challenge for you and we're going to have beers and and put together the backyard.
+Um Can you articulate to everybody in one sentence that starts with "If you ride the models, then what this piece is trying to say." If you ride the models, uh you're going to be okay.
+You're going to have a job.
+You're going to do great work.
+Um and you don't have to worry.
+Cheers. >> [snorts] >> Cheers.
+Okay.
+All right.
+Good stuff, man.
+Good stuff. >> fun.
+Oh my gosh, folks, you absolutely, positively have to smash that like button and subscribe to AI and I.
+Why? Because this show is the epitome of awesomeness.
+It's like finding a treasure chest in your backyard, but instead of gold, it's filled with pure, unadulterated knowledge bombs about chat GPT.
+Every episode is a roller coaster of emotions, insights, and laughter that will leave you on the edge of your seat craving for more.
+It's not just a show, it's a journey into the future with Dan Shipper as the captain of the spaceship.
+So, do yourself a favor.
+Hit like, smash subscribe, and strap in for the ride of your life.
+And now, without any further ado, let me just say, Dan, I'm absolutely, hopelessly in love with you.
