@@ -1,0 +1,36 @@
+{
+  "classification": "ACCEPT",
+  "findings": [],
+  "goals": [
+    {
+      "id": "goal-001",
+      "status": "MET",
+      "summary": "`quiz/server.js` is absent."
+    },
+    {
+      "id": "goal-002",
+      "status": "MET",
+      "summary": "Maintained code and documentation contain no active references to `/api/levels`, `/api/level`, or the removed server."
+    },
+    {
+      "id": "goal-003",
+      "status": "MET",
+      "summary": "`quiz/app.js` continues to load the static manifest and level JSON files."
+    },
+    {
+      "id": "goal-004",
+      "status": "MET",
+      "summary": "`quiz/build-index.test.js` and relevant existing quiz tests pass, except any already-observed unrelated baseline failure must be explicitly evidenced rather than hidden or weakened."
+    },
+    {
+      "id": "goal-005",
+      "status": "MET",
+      "summary": "Final diff contains no unrelated cleanup."
+    }
+  ],
+  "policyVersion": "acceptance-policy-v1",
+  "runId": "calm-wave-0187-acceptance-001",
+  "schemaVersion": "acceptance-run-v1",
+  "status": "finalized",
+  "taskId": "calm-wave-0187"
+}
