@@ -27,9 +27,9 @@ Concurrent or resumed sessions can duplicate `## GREEN Phase` sections if each s
 For dependency-free browser utilities, focused checks can cover most acceptance risk without a bundler:
 
 ```bash
-node --check server.js
-node --check app.js
-node -e "const { sameSelection } = require('./app.js'); /* assertions */"
+node --check quiz/build-index.js
+node --check quiz/app.js
+node --test quiz/build-index.test.js
 ```
 
-Pair that with a live server smoke test for static HTML, listing endpoints, selected JSON loading, and invalid path rejection. Broader repository tests should still be run, but unrelated failures should be recorded rather than fixed during a quiz-only acceptance patch.
+Pair that with exact equality between source level paths and generated manifest paths, plus browser assertions for manifest and selected JSON loading. Broader repository tests should still be run, but unrelated failures should be recorded rather than fixed during a quiz-only acceptance patch.

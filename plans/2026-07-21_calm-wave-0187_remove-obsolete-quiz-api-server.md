@@ -1,18 +1,8 @@
 # Plan 2026-07-21: Remove obsolete quiz API server
 
-*Status: WIP*
-*Created: 2026-07-21*
-
-## Progress
-
-- [x] Phase 0: Config + init
-- [x] Phase 1: Research
-- [x] Phase 2: Knowledge
-- [x] Phase 3: Synthesis
-
 ## Analysis
 
-### Codebase context [DONE]
+### Codebase context
 
 - `quiz/app.js:121` reads `levels/index.json`; `quiz/app.js:269-277` validates a manifest path and reads `levels/<encoded path>`.
 - `quiz/build-index.js` recursively projects source level JSON into `quiz/levels/index.json`, explicitly excluding the generated index.
@@ -21,13 +11,13 @@
 - `quiz/build-index.test.js` characterizes generated-path ordering and index exclusion, but does not prove the browser is API-independent or that `server.js` is absent.
 - Commit `8b90375` changed both browser API reads to static files while retaining `quiz/server.js`.
 
-### Relevant documentation [DONE]
+### Relevant documentation
 
 - `README.md` already documents GitHub Pages deployment and needs no server-related edit.
 - `docs/proposals/proposal-20260518-yt-knowledge-quiz.md:24-25,41,83` still specifies a standalone server, port, server file, and dynamic directory discovery; revise only those stale architecture statements to the generated-manifest path.
 - Historical files under `plans/`, `plans/tasks/`, and `tmp/` contain old API references but are records or separately scoped artifacts, not maintained runtime documentation; leave them unchanged.
 
-### Knowledge base [TODO]
+### Knowledge base
 
 - `learnings/tooling/cool-brook-0229-static-quiz-generated-manifest.md`: keep source JSON -> generated manifest -> static detail reads as the sole data path; exclude `index.json` from generation.
 - `learnings/tooling/quick-brook-2964-static-quiz-acceptance-fixes.md`: cover both generator output and browser path construction with dependency-free Node tests.
@@ -35,11 +25,15 @@
 - `learnings/tooling/wild-crag-7582-acceptance-fixes-keep-corrective-diffs-scoped.md`: leave unrelated dirty files, historical plans, and tracked `tmp/` findings untouched; do not fabricate RED evidence.
 - QMD collection `ai-research-learnings` is unavailable; fallback search identified several durable learnings that still actively prescribe the removed quiz server and must be corrected with the deletion.
 
-## Available Skills [DONE]
+## Available Skills
 
 - `tdd`: record RED/GREEN evidence for the focused static-runtime characterization before deleting the server.
 - `validate-implementation`: check scope, architecture, and acceptance criteria after edits.
 - `save-learning`: mandatory final action after implementation and verification.
+
+## Solution
+
+Delete the duplicate runtime, add one deletion-focused characterization, and update only maintained documents that still direct contributors to the obsolete path. Leave the manifest builder, browser behavior, level data, deployment workflow, historical records, and unrelated baseline failure unchanged.
 
 ## Implementation
 
@@ -102,7 +96,7 @@ The existing generator test remains unchanged. Its current unrelated baseline is
 - `node --test --test-name-pattern='quiz runtime is static and has no application server' quiz/build-index.test.js`
 - `node --test quiz/*.test.js` and explicitly capture the known `build-index.test.js:36` baseline if it remains the only failure.
 - `node --check quiz/app.js && node --check quiz/build-index.js`
-- `node quiz/build-index.js`, then compare the sorted recursive source JSON paths (excluding `levels/index.json`) with every `path` in `quiz/levels/index.json`; require exact equality and 20 entries without editing level content or schema.
+- Run `node quiz/build-index.js`, then require exact path equality and 20 entries with `node -e "const fs=require('fs'),path=require('path'),assert=require('assert');const root=path.join(process.cwd(),'quiz/levels');const walk=d=>fs.readdirSync(d,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(path.join(d,e.name)):e.isFile()&&e.name.endsWith('.json')&&e.name!=='index.json'?[path.relative(root,path.join(d,e.name)).split(path.sep).join('/')]:[]);const source=walk(root).sort(),manifest=JSON.parse(fs.readFileSync(path.join(root,'index.json'),'utf8')).map(x=>x.path).sort();assert.equal(source.length,20);assert.deepStrictEqual(manifest,source);"`.
 - `git grep -nE 'quiz/server\.js|/api/levels|/api/level|node( +quiz)?/server\.js|node +server\.js' -- quiz docs learnings README.md .github helper-scripts` must return no maintained matches.
 - `git diff --check` and `git diff -- quiz docs learnings .github README.md` must show only the deletion, characterization, and directly stale documentation edits; inspect any regenerated index diff rather than reverting unrelated source-level changes.
 

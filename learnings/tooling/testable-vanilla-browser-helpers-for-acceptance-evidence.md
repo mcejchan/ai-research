@@ -29,11 +29,11 @@ This makes all-or-nothing quiz scoring logic testable through `node -e` while pr
 
 ## Why it helped
 
-The acceptance fix required proof for both server endpoints and quiz scoring behavior, but the app intentionally has no dependencies, no bundler, and no formal test runner. Exporting a pure helper allowed a direct Node assertion for multi-select scoring without introducing framework code or changing the UI.
+The acceptance fix required proof for static manifest loading and quiz scoring behavior, but the app intentionally has no dependencies or bundler. Exporting pure helpers allows Node built-in tests for path construction and scoring without introducing framework code or changing the UI.
 
 ## Verification split
 
-- Use `node --check` for syntax validation of `server.js` and `app.js`.
-- Use `node -e` with `assert` for pure scoring helpers.
-- Start `server.js` in a short-lived process and use Node's built-in `http` module for endpoint smoke tests.
+- Use `node --check` for syntax validation of `build-index.js` and `app.js`.
+- Use `node:test` with `assert` for pure browser helpers and generated-manifest behavior.
+- Verify that `app.js` reads `levels/index.json` and builds selected-level URLs beneath `levels/`.
 - Document broader unrelated suite failures separately instead of fixing outside the task scope.

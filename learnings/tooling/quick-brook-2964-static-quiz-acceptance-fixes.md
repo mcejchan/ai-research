@@ -26,6 +26,5 @@ Useful focused commands for this repository:
 cd quiz && node --test build-index.test.js
 node --check quiz/build-index.js
 node --check quiz/app.js
-node --check quiz/server.js
 node quiz/build-index.js
 ```

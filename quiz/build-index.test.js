@@ -4,6 +4,7 @@ const os = require('node:os');
 const path = require('node:path');
 const test = require('node:test');
 
+const { levelUrl } = require('./app');
 const { buildLevelsIndex } = require('./build-index');
 
 test('buildLevelsIndex writes sorted static metadata and skips existing index', async () => {
@@ -38,4 +39,16 @@ test('buildLevelsIndex writes sorted static metadata and skips existing index', 
   assert.equal(levels[0].maxPoints, 4);
   assert.equal(levels[1].difficulty, 'easy');
   assert.equal(levels[1].maxPoints, 3);
+});
+
+test('quiz runtime is static and has no application server', async () => {
+  const appSource = await fs.readFile(path.join(__dirname, 'app.js'), 'utf8');
+
+  await assert.rejects(
+    fs.access(path.join(__dirname, 'server.js')),
+    { code: 'ENOENT' },
+  );
+  assert.match(appSource, /fetchJson\('levels\/index\.json'\)/);
+  assert.doesNotMatch(appSource, /\/api\/levels?\b/);
+  assert.equal(levelUrl('channel/level.json'), 'levels/channel/level.json');
 });

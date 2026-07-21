@@ -21,8 +21,8 @@ Obsah generován z existujících transkriptů v `local-knowledge-base/youtube/`
 | D2 | Persistence skóre | LocalStorage (žádný server) |
 | D3 | Generování otázek | Manuální — Jackie vygeneruje level na požádání z konkrétního videa |
 | D4 | Obrázky levelů | YT thumbnail |
-| D5 | Stack | Vanilla HTML + JS + CSS, standalone server |
-| D6 | Port | 4002 |
+| D5 | Stack | Vanilla HTML + JS + CSS, staticky web pro GitHub Pages |
+| D6 | Runtime | Staticke soubory bez aplikacniho serveru |
 | D7 | Formát otázek | Mix single-select (radio) a multi-select (checkbox) |
 | D8 | Počet odpovědí | Variabilní — od 2 (ano/ne) po N, podle kontextu |
 | D9 | Feedback | Ihned po každé otázce (správně/špatně + správná odpověď) |
@@ -38,12 +38,13 @@ Obsah generován z existujících transkriptů v `local-knowledge-base/youtube/`
 ```
 ~/Projects/ai-research/
 ├── quiz/
-│   ├── server.js          # Static file server, port 4002, serves levels from ./levels/
+│   ├── build-index.js     # Generuje metadata levelu pro staticky web
 │   ├── index.html         # Level select (grid s thumbnaily, chronologicky)
 │   ├── quiz.html          # Quiz screen
 │   ├── style.css          # Dark tech theme
-│   └── app.js             # Quiz logic, scoring, localStorage
+│   ├── app.js             # Quiz logic, staticke cteni JSON, scoring, localStorage
 │   └── levels/            # Quiz JSON soubory (per level)
+│       ├── index.json     # Generovany manifest pro level select
 │       └── <channel>/
 │           └── <video-slug>.json
 ```
@@ -80,7 +81,8 @@ Proces přidání nového levelu (manuální trigger):
 1. Video musí být zpracované přes yt-transcript pipeline (transcript + analysis existuje)
 2. Jackie na požádání vygeneruje quiz otázky z transkriptu/analýzy (LLM)
 3. Uloží JSON do `quiz/levels/<channel>/<slug>.json`
-4. Level se automaticky objeví v dashboardu (server čte složku dynamicky)
+4. Spustí `node quiz/build-index.js`, který přegeneruje `quiz/levels/index.json`
+5. Prohlížeč načte manifest a vybraný level přímo jako statické JSON soubory
 
 ## Quiz UI <!-- section:quiz-ui -->
 

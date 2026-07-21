@@ -6,6 +6,6 @@ component: frontend
 tags: [vanilla-js, nodejs, static-server, localstorage, prototype]
 ---
 
-A complete quiz dashboard was delivered under `quiz/` using only Node built-ins plus static HTML/CSS/JS, with `/api/levels` and `/api/level` served from the same minimal server. This made the feature self-contained, easy to verify with `curl`, and independent from the rest of the app stack.
+A dependency-free Node static server can be useful for isolated tools that genuinely require local dynamic behavior. Keep that generic pattern separate from fully static features, which should use static files and generated manifests rather than introducing an application server.
 
-Reuse this pattern for small standalone tools, demos, or dashboards that need to live inside a repo without adding package/dependency overhead. It works especially well when the UI only needs simple browser state such as `localStorage` and file-backed JSON endpoints. Verify the pattern with two checks: syntax validation via `node --check` and an end-to-end smoke test hitting both `/` and the JSON API.
+Reuse the server pattern only for small standalone tools, demos, or dashboards that need runtime request handling without package overhead. If a feature only needs browser state and file-backed JSON, prefer a generic static-file server for local development and verify the deployed static paths directly.
