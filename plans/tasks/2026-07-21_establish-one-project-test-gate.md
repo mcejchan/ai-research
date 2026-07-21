@@ -45,3 +45,8 @@ First encode/fix the two observed failing contracts: quiz difficulty handling an
 - Run each delegated suite independently to show the root gate is a faithful composition.
 - Validate the workflow syntax and inspect the registry command.
 - Run `git diff --check`.
+
+## Previous Plan (rejected - attempt 1)
+Plan file: /Users/michal/Projects/ai-research/plans/2026-07-21_bold-dune-3929_establish-one-project-level-test-gate.md
+Review feedback: The plan is only a WIP skeleton with TODO sections, so it silently omits how the root health command, suite composition, contract fixes, files, TDD, and verification will be handled.
+Read the previous plan, understand what was wrong, and produce a corrected plan.
