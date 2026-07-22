@@ -1,5 +1,7 @@
 """Mock classes for OpenAI API"""
 
+from unittest.mock import MagicMock
+
 class MockOpenAIMessage:
     def __init__(self, content):
         self.content = content
@@ -25,29 +27,19 @@ class MockOpenAI:
         self.api_key = api_key
         self.response_content = response_content
         self.embedding_data = embedding_data or [0.1, 0.2, 0.3]
-    
-    @property
-    def chat(self):
-        return MockOpenAIChatCompletions(self.response_content)
-    
-    @property
-    def embeddings(self):
-        return MockOpenAIEmbeddings(self.embedding_data)
+        self.chat = MockOpenAIChatCompletions(self.response_content)
+        self.embeddings = MockOpenAIEmbeddings(self.embedding_data)
 
 class MockOpenAIChatCompletions:
     def __init__(self, response_content):
         self.response_content = response_content
+        self.create = MagicMock(return_value=MockOpenAIResponse(response_content))
     
     @property  
     def completions(self):
         return self
         
-    def create(self, **kwargs):
-        return MockOpenAIResponse(self.response_content)
-
 class MockOpenAIEmbeddings:
     def __init__(self, embedding_data):
         self.embedding_data = embedding_data
-        
-    def create(self, **kwargs):
-        return MockEmbeddingResponse(self.embedding_data)
+        self.create = MagicMock(return_value=MockEmbeddingResponse(embedding_data))

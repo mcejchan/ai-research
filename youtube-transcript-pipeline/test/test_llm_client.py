@@ -57,7 +57,7 @@ class TestLLMClient(unittest.TestCase):
         self.assertIsInstance(result, str)
         self.assertEqual(result, "Mock analysis result")
         kwargs = mock_openai_class.call_args.kwargs
-        self.assertEqual(kwargs["base_url"], os.getenv("OPENAI_BASE_URL", "http://127.0.0.1:18800/v1"))
+        self.assertEqual(kwargs["base_url"], os.getenv("OPENAI_BASE_URL", "http://127.0.0.1:18800/v1/copilot"))
         self.assertEqual(kwargs["api_key"], os.getenv("OPENAI_API_KEY", "copilot-bridge"))
 
     @patch('src.llm_client.OpenAI')
@@ -168,7 +168,7 @@ class TestLLMClient(unittest.TestCase):
         # Assertions
         self.assertEqual(result, [0.1, 0.2, 0.3])
         kwargs = mock_openai_class.call_args.kwargs
-        self.assertEqual(kwargs["base_url"], os.getenv("OPENAI_BASE_URL", "http://127.0.0.1:18800/v1"))
+        self.assertEqual(kwargs["base_url"], os.getenv("OPENAI_BASE_URL", "http://127.0.0.1:18800/v1/copilot"))
         self.assertEqual(kwargs["api_key"], os.getenv("OPENAI_API_KEY", "copilot-bridge"))
         
     def test_intent_video_general(self):

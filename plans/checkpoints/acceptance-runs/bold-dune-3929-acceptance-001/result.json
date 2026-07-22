@@ -1,0 +1,72 @@
+{
+  "classification": "correctness_reject",
+  "findings": [
+    {
+      "claim": "The ai-research registry testCommand was not updated to invoke the new root repository-health gate.",
+      "crossCutting": false,
+      "effect": "blocking",
+      "findingType": "required_implementation_missing",
+      "goalIds": [
+        "goal-002"
+      ],
+      "id": "finding-001",
+      "kind": "correctness",
+      "observed": "The supplied task-scoped diff adds Makefile test orchestration and documents make test, but contains no change to /Users/michal/.openclaw/workspace/skills/opencode-dev/projects.yaml; the additional artifacts also provide no registry content showing the command was wired.",
+      "policyRule": "catalog:required_implementation_missing:blocking",
+      "rationale": "Goal goal-002 explicitly requires the registry to invoke the single root command rather than pipeline pytest, so the root gate is not authoritative for registered project testing without this wiring.",
+      "required": "Update the ai-research testCommand in skills/opencode-dev/projects.yaml to run the repository root gate, and supply that delivered change for review.",
+      "sources": [
+        {
+          "kind": "plan",
+          "reference": "/Users/michal/Projects/ai-research/plans/2026-07-22_bold-dune-3929_establish-one-project-level-test-gate.md:55"
+        },
+        {
+          "kind": "artifact",
+          "reference": "caller-supplied-task-scoped-diff"
+        }
+      ]
+    }
+  ],
+  "goals": [
+    {
+      "id": "goal-001",
+      "status": "MET",
+      "summary": "A single documented root command represents repository health and returns non-zero when any delegated suite fails."
+    },
+    {
+      "id": "goal-002",
+      "status": "UNMET",
+      "summary": "The registry invokes that command rather than only pipeline pytest."
+    },
+    {
+      "id": "goal-003",
+      "status": "MET",
+      "summary": "Quiz deployment cannot proceed when its maintained test fails."
+    },
+    {
+      "id": "goal-004",
+      "status": "MET",
+      "summary": "Quiz tests cover `extra-easy` and unknown difficulty consistently with the chosen contract."
+    },
+    {
+      "id": "goal-005",
+      "status": "MET",
+      "summary": "Python tests collect without a production `DRIVE_FOLDER_ID` dependency at module import."
+    },
+    {
+      "id": "goal-006",
+      "status": "MET",
+      "summary": "All delegated suites pass in their supported local/test environment."
+    },
+    {
+      "id": "goal-007",
+      "status": "MET",
+      "summary": "No duplicate test orchestration path is introduced beyond the root delegator and deployment's justified quiz preflight."
+    }
+  ],
+  "policyVersion": "acceptance-policy-v1",
+  "runId": "bold-dune-3929-acceptance-001",
+  "schemaVersion": "acceptance-run-v1",
+  "status": "finalized",
+  "taskId": "bold-dune-3929"
+}

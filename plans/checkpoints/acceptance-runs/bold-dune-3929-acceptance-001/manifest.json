@@ -1,0 +1,45 @@
+{
+  "concurrentContext": [],
+  "evaluationTarget": {
+    "acceptanceDispatchAt": "2026-07-22T20:44:17+00:00",
+    "implementingStartedAt": "2026-07-22T20:35:45+00:00",
+    "taskFile": "plans/tasks/2026-07-21_establish-one-project-test-gate.md",
+    "taskId": "bold-dune-3929",
+    "title": "Establish one project-level test gate"
+  },
+  "goals": [
+    {
+      "id": "goal-001",
+      "summary": "A single documented root command represents repository health and returns non-zero when any delegated suite fails."
+    },
+    {
+      "id": "goal-002",
+      "summary": "The registry invokes that command rather than only pipeline pytest."
+    },
+    {
+      "id": "goal-003",
+      "summary": "Quiz deployment cannot proceed when its maintained test fails."
+    },
+    {
+      "id": "goal-004",
+      "summary": "Quiz tests cover `extra-easy` and unknown difficulty consistently with the chosen contract."
+    },
+    {
+      "id": "goal-005",
+      "summary": "Python tests collect without a production `DRIVE_FOLDER_ID` dependency at module import."
+    },
+    {
+      "id": "goal-006",
+      "summary": "All delegated suites pass in their supported local/test environment."
+    },
+    {
+      "id": "goal-007",
+      "summary": "No duplicate test orchestration path is introduced beyond the root delegator and deployment's justified quiz preflight."
+    }
+  ],
+  "policyVersion": "acceptance-policy-v1",
+  "runId": "bold-dune-3929-acceptance-001",
+  "schemaVersion": "acceptance-run-v1",
+  "taskId": "bold-dune-3929",
+  "tddRequired": true
+}
