@@ -1,0 +1,16 @@
+{
+  "classification": "ACCEPT",
+  "findings": [],
+  "goals": [
+    {
+      "id": "goal-001",
+      "status": "MET",
+      "summary": "[acceptance-fix] Remove stale tracked tmp artifacts: goal-004: Any retained learning is unique, accurate, and located un"
+    }
+  ],
+  "policyVersion": "acceptance-policy-v1",
+  "runId": "warm-wave-9996-acceptance-001",
+  "schemaVersion": "acceptance-run-v1",
+  "status": "finalized",
+  "taskId": "warm-wave-9996"
+}

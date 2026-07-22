@@ -1,0 +1,21 @@
+{
+  "concurrentContext": [],
+  "evaluationTarget": {
+    "acceptanceDispatchAt": "2026-07-22T22:07:57+00:00",
+    "implementingStartedAt": "2026-07-22T22:02:17+00:00",
+    "taskFile": "plans/tasks/2026-07-22_followup-remove-stale-tracked-tmp-artifacts.md",
+    "taskId": "warm-wave-9996",
+    "title": "[acceptance-fix] Remove stale tracked tmp artifacts: goal-004: Any retained learning is unique, accurate, and located un"
+  },
+  "goals": [
+    {
+      "id": "goal-001",
+      "summary": "[acceptance-fix] Remove stale tracked tmp artifacts: goal-004: Any retained learning is unique, accurate, and located un"
+    }
+  ],
+  "policyVersion": "acceptance-policy-v1",
+  "runId": "warm-wave-9996-acceptance-001",
+  "schemaVersion": "acceptance-run-v1",
+  "taskId": "warm-wave-9996",
+  "tddRequired": false
+}
