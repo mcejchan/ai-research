@@ -20,7 +20,6 @@ from youtube_transcript_api import YouTubeTranscriptApi, NoTranscriptFound
 LANG = os.getenv("LANG", "en")
 USE_WHISPER = os.getenv("USE_WHISPER_FALLBACK", "true").lower() == "true"
 MAKE_EMBED = os.getenv("MAKE_EMBEDDINGS", "false").lower() == "true"
-DRIVE_FOLDER_ID = os.environ["DRIVE_FOLDER_ID"]
 
 @dataclass
 class VideoMeta:
@@ -184,6 +183,10 @@ def get_basic_meta(video_url: str) -> Dict:
 
 
 def run_for_url(url: str, drive: DriveClient):
+    drive_folder_id = os.getenv("DRIVE_FOLDER_ID")
+    if not drive_folder_id and not drive.mock_mode:
+        raise RuntimeError("DRIVE_FOLDER_ID is required when using Google Drive")
+
     vid = extract_video_id(url)
     meta = get_basic_meta(url)
     channel = slugify_path_segment(meta.get("channel", "unknown"), fallback="unknown-channel")
@@ -192,7 +195,7 @@ def run_for_url(url: str, drive: DriveClient):
     folder_name = f"{time.strftime('%Y-%m-%d')}_{folder_label}"
 
     # Create channel/vid folder on Drive
-    base_folder_id = drive.ensure_path(["youtube", channel, folder_name], root_id=DRIVE_FOLDER_ID)
+    base_folder_id = drive.ensure_path(["youtube", channel, folder_name], root_id=drive_folder_id)
 
     # 1) transcript
     try:
