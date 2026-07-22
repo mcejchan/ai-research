@@ -1,0 +1,21 @@
+{
+  "concurrentContext": [],
+  "evaluationTarget": {
+    "acceptanceDispatchAt": "2026-07-22T21:25:10+00:00",
+    "implementingStartedAt": "2026-07-22T21:19:40+00:00",
+    "taskFile": "plans/tasks/2026-07-22_followup-acceptance-fix-establish-one-project-level-test-gate-goal-00.md",
+    "taskId": "dark-reef-9030",
+    "title": "[acceptance-fix] [acceptance-fix] Establish one project-level test gate: goal-002: The registry invokes that command rat"
+  },
+  "goals": [
+    {
+      "id": "goal-001",
+      "summary": "[acceptance-fix] [acceptance-fix] Establish one project-level test gate: goal-002: The registry invokes that command rat"
+    }
+  ],
+  "policyVersion": "acceptance-policy-v1",
+  "runId": "dark-reef-9030-acceptance-001",
+  "schemaVersion": "acceptance-run-v1",
+  "taskId": "dark-reef-9030",
+  "tddRequired": false
+}

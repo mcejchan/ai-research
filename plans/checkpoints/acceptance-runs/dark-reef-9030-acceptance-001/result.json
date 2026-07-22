@@ -1,0 +1,16 @@
+{
+  "classification": "ACCEPT",
+  "findings": [],
+  "goals": [
+    {
+      "id": "goal-001",
+      "status": "MET",
+      "summary": "[acceptance-fix] [acceptance-fix] Establish one project-level test gate: goal-002: The registry invokes that command rat"
+    }
+  ],
+  "policyVersion": "acceptance-policy-v1",
+  "runId": "dark-reef-9030-acceptance-001",
+  "schemaVersion": "acceptance-run-v1",
+  "status": "finalized",
+  "taskId": "dark-reef-9030"
+}
