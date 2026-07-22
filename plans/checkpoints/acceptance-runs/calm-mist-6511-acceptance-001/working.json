@@ -1,0 +1,82 @@
+{
+  "findings": [
+    {
+      "claim": "The retained canonical learning must be reviewable as unique and accurate.",
+      "crossCutting": false,
+      "findingType": "verification_evidence_missing",
+      "goalIds": [
+        "goal-004"
+      ],
+      "id": "finding-001",
+      "kind": "evidence",
+      "observed": "The task-scoped diff names learnings/tooling/verify-deleted-tracked-files-with-worktree-state.md but supplies no content hunk or separate artifact containing its text; the checkpoint only asserts what the learning explains.",
+      "rationale": "Without the retained learning content, semantic review cannot verify the explicit uniqueness and accuracy requirement from caller-supplied material.",
+      "required": "Supply the content-bearing diff or artifact for the retained learning so its uniqueness, accuracy, and canonical placement can be evaluated.",
+      "sources": [
+        {
+          "kind": "artifact",
+          "reference": "task-scoped diff:learnings/tooling/verify-deleted-tracked-files-with-worktree-state.md"
+        },
+        {
+          "kind": "artifact",
+          "reference": "plans/checkpoints/calm-mist-6511.checkpoint.md"
+        }
+      ]
+    },
+    {
+      "claim": "The explicit acceptance requirement that existing relevant tests pass needs canonical Test Gate evidence.",
+      "crossCutting": false,
+      "findingType": "verification_evidence_missing",
+      "goalIds": [
+        "goal-005"
+      ],
+      "id": "finding-002",
+      "kind": "evidence",
+      "observed": "The caller-supplied canonical Test Gate status is not run and states that no Test Gate evidence exists; checkpoint prose claims verification but is not the canonical Test Gate reference.",
+      "rationale": "Acceptance cannot establish the test-pass portion of goal-005 from task-local prose when the caller-owned canonical Test Gate has supplied no result.",
+      "required": "Provide a completed canonical Test Gate reference establishing the relevant test outcome for this run.",
+      "sources": [
+        {
+          "kind": "test-gate",
+          "reference": "status:not run"
+        },
+        {
+          "kind": "artifact",
+          "reference": "plans/checkpoints/calm-mist-6511.checkpoint.md"
+        }
+      ]
+    }
+  ],
+  "goals": [
+    {
+      "id": "goal-001",
+      "status": "MET",
+      "summary": "No tracked files remain under `tmp/`."
+    },
+    {
+      "id": "goal-002",
+      "status": "MET",
+      "summary": "Disposable `tmp/` content is ignored according to existing repository conventions."
+    },
+    {
+      "id": "goal-003",
+      "status": "MET",
+      "summary": "Maintained code and documentation have no dependency on removed files."
+    },
+    {
+      "id": "goal-004",
+      "status": "UNMET",
+      "summary": "Any retained learning is unique, accurate, and located under the existing canonical `learnings/` hierarchy."
+    },
+    {
+      "id": "goal-005",
+      "status": "UNMET",
+      "summary": "Existing relevant tests pass and final diff contains no unrelated cleanup."
+    }
+  ],
+  "policyVersion": "acceptance-policy-v1",
+  "runId": "calm-mist-6511-acceptance-001",
+  "schemaVersion": "acceptance-run-v1",
+  "status": "working",
+  "taskId": "calm-mist-6511"
+}

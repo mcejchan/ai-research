@@ -1,0 +1,27 @@
+{
+  "actor": "km-monitor:task-evidence",
+  "artifactProvenance": [
+    {
+      "path": "plans/checkpoints/calm-mist-6511.evidence.md",
+      "provenance": "evidence_repair:calm-mist-6511-acceptance-001-evidence-repair-001",
+      "size": 333
+    }
+  ],
+  "artifacts": [
+    "plans/checkpoints/calm-mist-6511.evidence.md"
+  ],
+  "auditPath": "plans/checkpoints/acceptance-runs/calm-mist-6511-acceptance-001-evidence-repair-001/repair.json",
+  "commit": "05316ed2bbac149fc42f3907a37b291f7a154cc1",
+  "escalationReason": "exact_command_outcome_evidence_unavailable",
+  "finishedAt": "2026-07-22T21:55:49.030539+00:00",
+  "gaps": [],
+  "mutationCheck": {
+    "changedPaths": [],
+    "clean": true
+  },
+  "pairs": [],
+  "repairRunId": "calm-mist-6511-acceptance-001-evidence-repair-001",
+  "sourceRunId": "calm-mist-6511-acceptance-001",
+  "startedAt": "2026-07-22T21:55:48.328900+00:00",
+  "status": "escalated"
+}
