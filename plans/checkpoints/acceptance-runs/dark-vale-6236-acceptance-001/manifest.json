@@ -1,0 +1,21 @@
+{
+  "concurrentContext": [],
+  "evaluationTarget": {
+    "acceptanceDispatchAt": "2026-07-22T21:05:13+00:00",
+    "implementingStartedAt": "2026-07-22T21:00:05+00:00",
+    "taskFile": "plans/tasks/2026-07-22_followup-establish-one-project-level-test-gate.md",
+    "taskId": "dark-vale-6236",
+    "title": "[acceptance-fix] Establish one project-level test gate: goal-002: The registry invokes that command rather than only pip"
+  },
+  "goals": [
+    {
+      "id": "goal-001",
+      "summary": "[acceptance-fix] Establish one project-level test gate: goal-002: The registry invokes that command rather than only pip"
+    }
+  ],
+  "policyVersion": "acceptance-policy-v1",
+  "runId": "dark-vale-6236-acceptance-001",
+  "schemaVersion": "acceptance-run-v1",
+  "taskId": "dark-vale-6236",
+  "tddRequired": false
+}

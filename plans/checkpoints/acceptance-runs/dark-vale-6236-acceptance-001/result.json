@@ -1,0 +1,46 @@
+{
+  "classification": "correctness_reject",
+  "findings": [
+    {
+      "claim": "The caller-supplied material does not deliver the ai-research registry testCommand wiring for semantic review.",
+      "crossCutting": false,
+      "effect": "blocking",
+      "findingType": "required_implementation_missing",
+      "goalIds": [
+        "goal-001"
+      ],
+      "id": "finding-001",
+      "kind": "correctness",
+      "observed": "The task-scoped diff is empty. The only additional artifact is a checkpoint that asserts the registry goal was delivered in commit 169c092c98, but it does not include the projects.yaml content or the required external registry diff showing testCommand: cd ~/Projects/ai-research && make test.",
+      "policyRule": "catalog:required_implementation_missing:blocking",
+      "rationale": "Goal goal-001 requires the registry itself to invoke the root test gate, and the canonical task requires the delivered registry change to be supplied for review. An unsupported checkpoint assertion cannot establish that required configuration behavior from the caller-supplied material.",
+      "required": "Supply the delivered ai-research entry from skills/opencode-dev/projects.yaml, or its scoped external diff, showing testCommand set to cd ~/Projects/ai-research && make test.",
+      "sources": [
+        {
+          "kind": "artifact",
+          "reference": "caller-supplied-task-scoped-diff"
+        },
+        {
+          "kind": "artifact",
+          "reference": "/Users/michal/Projects/ai-research/plans/checkpoints/dark-vale-6236.checkpoint.md"
+        },
+        {
+          "kind": "plan",
+          "reference": "/Users/michal/Projects/ai-research/plans/2026-07-22_dark-vale-6236_establish-one-project-level-test-gate-goal-002-the-registry.md"
+        }
+      ]
+    }
+  ],
+  "goals": [
+    {
+      "id": "goal-001",
+      "status": "UNMET",
+      "summary": "[acceptance-fix] Establish one project-level test gate: goal-002: The registry invokes that command rather than only pip"
+    }
+  ],
+  "policyVersion": "acceptance-policy-v1",
+  "runId": "dark-vale-6236-acceptance-001",
+  "schemaVersion": "acceptance-run-v1",
+  "status": "finalized",
+  "taskId": "dark-vale-6236"
+}
