@@ -35,3 +35,6 @@ Thumbs.db
 
 # Node (if any tooling)
 node_modules/
+
+# Disposable staging
+tmp/
