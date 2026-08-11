@@ -1,0 +1,16 @@
+{
+  "classification": "ACCEPT",
+  "findings": [],
+  "goals": [
+    {
+      "id": "goal-001",
+      "status": "MET",
+      "summary": "[acceptance-fix] Make analysis_main.md a truthful success-only artifact: goal-008: Final note records changed files, exa"
+    }
+  ],
+  "policyVersion": "acceptance-policy-v1",
+  "runId": "warm-cove-6086-acceptance-001",
+  "schemaVersion": "acceptance-run-v1",
+  "status": "finalized",
+  "taskId": "warm-cove-6086"
+}
