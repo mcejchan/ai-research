@@ -1,0 +1,77 @@
+{
+  "classification": "correctness_reject",
+  "findings": [
+    {
+      "claim": "The required final note was not supplied.",
+      "crossCutting": false,
+      "effect": "blocking",
+      "findingType": "required_artifact_missing",
+      "goalIds": [
+        "goal-008"
+      ],
+      "id": "finding-001",
+      "kind": "correctness",
+      "observed": "The supplied materials include the task, plan, diff, TDD proof, and completion checkpoint, but no final note. The checkpoint only states broad component counts and completion status; it does not record the changed-file inventory, exact focused verification results, intentional behavior changes, or the requested follow-up concerning historical placeholders.",
+      "policyRule": "catalog:required_artifact_missing:blocking",
+      "rationale": "Goal goal-008 makes the final note itself a required deliverable. Other supplied artifacts do not contain all of its required fields and therefore cannot satisfy that goal.",
+      "required": "Provide a final note that records changed files, exact focused and broad verification commands and results, intentional behavior changes, and whether historical placeholder cleanup or migration remains a separate follow-up.",
+      "sources": [
+        {
+          "kind": "artifact",
+          "reference": "caller-supplied-material:final-note-absent"
+        },
+        {
+          "kind": "artifact",
+          "reference": "plans/checkpoints/bold-vale-3575.checkpoint.md"
+        }
+      ]
+    }
+  ],
+  "goals": [
+    {
+      "id": "goal-001",
+      "status": "MET",
+      "summary": "Successful analysis still produces/uploads the same `analysis_main.md` content and location."
+    },
+    {
+      "id": "goal-002",
+      "status": "MET",
+      "summary": "Failed analysis preserves the transcript but produces/uploads no `analysis_main.md`."
+    },
+    {
+      "id": "goal-003",
+      "status": "MET",
+      "summary": "Failure diagnostics remain observable through existing logs/error output."
+    },
+    {
+      "id": "goal-004",
+      "status": "MET",
+      "summary": "Viewer truthfully reports analysis unavailable and serves no placeholder as analysis."
+    },
+    {
+      "id": "goal-005",
+      "status": "MET",
+      "summary": "All named repository-owned consumers have contract tests for a missing analysis and behave explicitly without processing fallback prose as structured content."
+    },
+    {
+      "id": "goal-006",
+      "status": "MET",
+      "summary": "No new product-state manifest or lifecycle authority is introduced."
+    },
+    {
+      "id": "goal-007",
+      "status": "MET",
+      "summary": "Existing successful workflows and public command contracts remain compatible."
+    },
+    {
+      "id": "goal-008",
+      "status": "UNMET",
+      "summary": "Final note records changed files, exact focused and broad verification results, intentional behavior changes, and any follow-up concerning historical placeholders."
+    }
+  ],
+  "policyVersion": "acceptance-policy-v1",
+  "runId": "bold-vale-3575-acceptance-001",
+  "schemaVersion": "acceptance-run-v1",
+  "status": "finalized",
+  "taskId": "bold-vale-3575"
+}

@@ -1,0 +1,49 @@
+{
+  "concurrentContext": [],
+  "evaluationTarget": {
+    "acceptanceDispatchAt": "2026-08-11T09:19:21+00:00",
+    "implementingStartedAt": "2026-08-11T09:10:02+00:00",
+    "taskFile": "plans/tasks/2026-08-11_make-analysis-main-success-only.md",
+    "taskId": "bold-vale-3575",
+    "title": "Make analysis_main.md a truthful success-only artifact"
+  },
+  "goals": [
+    {
+      "id": "goal-001",
+      "summary": "Successful analysis still produces/uploads the same `analysis_main.md` content and location."
+    },
+    {
+      "id": "goal-002",
+      "summary": "Failed analysis preserves the transcript but produces/uploads no `analysis_main.md`."
+    },
+    {
+      "id": "goal-003",
+      "summary": "Failure diagnostics remain observable through existing logs/error output."
+    },
+    {
+      "id": "goal-004",
+      "summary": "Viewer truthfully reports analysis unavailable and serves no placeholder as analysis."
+    },
+    {
+      "id": "goal-005",
+      "summary": "All named repository-owned consumers have contract tests for a missing analysis and behave explicitly without processing fallback prose as structured content."
+    },
+    {
+      "id": "goal-006",
+      "summary": "No new product-state manifest or lifecycle authority is introduced."
+    },
+    {
+      "id": "goal-007",
+      "summary": "Existing successful workflows and public command contracts remain compatible."
+    },
+    {
+      "id": "goal-008",
+      "summary": "Final note records changed files, exact focused and broad verification results, intentional behavior changes, and any follow-up concerning historical placeholders."
+    }
+  ],
+  "policyVersion": "acceptance-policy-v1",
+  "runId": "bold-vale-3575-acceptance-001",
+  "schemaVersion": "acceptance-run-v1",
+  "taskId": "bold-vale-3575",
+  "tddRequired": true
+}
