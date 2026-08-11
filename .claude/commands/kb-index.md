@@ -11,7 +11,7 @@ Proskenovat celý `./local-knowledge-base/` adresář, extrahovat metadata ze v�
 
 <context>
 - Hlavní data jsou v `./local-knowledge-base/youtube/channel={CHANNEL}/{DATE}_{VIDEO_ID}/`
-- Každé video má `analysis_main.md` (první řádek = titul) a `transcript_clean.txt`
+- Každé video má `transcript_clean.txt`; `analysis_main.md` existuje jen po úspěšné LLM analýze
 - Další obsah: `filosofie/`, `theme/`, `mindmap/`, `flashcards/`
 - Index slouží jako rozcestník pro rychlou orientaci a jako podklad pro ostatní KB nástroje
 </context>
@@ -39,6 +39,12 @@ Pro každou YouTube video složku:
 2. Extrahuj datum z názvu složky (YYYY-MM-DD prefix)
 3. Přečti první řádek z `analysis_main.md` pro titul (odstraň `# ` prefix)
 4. Pokud `analysis_main.md` neexistuje, použij název složky jako fallback
+
+<missing_analysis>
+- Include transcript-only videos in the index using the folder-name title fallback.
+- Render `Analysis unavailable` without a link when `analysis_main.md` is absent; never manufacture a broken analysis link.
+- Report the transcript-only item count in the completion summary.
+</missing_analysis>
 
 Pro ostatní soubory:
 1. Přečti první heading jako titul
@@ -82,6 +88,7 @@ Vytvoř strukturovaný index s těmito sekcemi:
 | Datum | Titul | Link |
 |-------|-------|------|
 | {YYYY-MM-DD} | {Titul} | [Analýza]({relativní-cesta}) |
+| {YYYY-MM-DD} | {Fallback titul} | Analysis unavailable |
 
 ... (seřazeno abecedně podle kanálu, videa chronologicky sestupně)
 
@@ -92,6 +99,7 @@ Vytvoř strukturovaný index s těmito sekcemi:
 | Datum | Titul | Kanál | Link |
 |-------|-------|-------|------|
 | {YYYY-MM-DD} | {Titul} | {Kanál} | [Analýza]({cesta}) |
+| {YYYY-MM-DD} | {Fallback titul} | {Kanál} | Analysis unavailable |
 
 ---
 

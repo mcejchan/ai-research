@@ -87,7 +87,7 @@ Without Drive credentials, pipeline falls back to local storage in `local-knowle
 
 Each video: `local-knowledge-base/youtube/{channel}/{date}_{slug}/`
 - `transcript_clean.txt` - Cleaned transcript
-- `analysis_main.md` - LLM analysis
+- `analysis_main.md` - LLM analysis, present only after successful analysis; transcript capture can succeed without it
 
 ## Slash Commands
 

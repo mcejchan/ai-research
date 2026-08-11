@@ -15,7 +15,7 @@ Výstup uložit do `./local-knowledge-base/flashcards/YYYY-MM-DD-<slug>.md`.
 
 <context>
 - Data jsou v `./local-knowledge-base/youtube/channel={CHANNEL}/{DATE}_{VIDEO_ID}/`
-- Každé video má strukturovaný `analysis_main.md` se sekcemi:
+- Úspěšně analyzované video má strukturovaný `analysis_main.md` se sekcemi:
   - Key Takeaways (s "Why it matters")
   - Practical Tips & Procedures (s kroky)
   - Tools & Technologies Mentioned
@@ -50,10 +50,17 @@ Zpracuj $ARGUMENTS:
 2. Přečti celý `analysis_main.md`
 3. Extrahuj metadata (titul, kanál, URL) z hlavičky
 
+<missing_analysis>
+- Direct mode: if `analysis_main.md` is absent, report the missing analysis and stop without creating output.
+- Search mode: only existing `analysis_main.md` files are eligible; skip every transcript-only folder and report each skipped path.
+- If search leaves no eligible analysis, report `no eligible analysis` and stop without creating output.
+- Never use transcript text or fallback prose as structured analysis.
+</missing_analysis>
+
 **SEARCH mód:**
 1. Prohledej KB pomocí `rg`:
    ```bash
-   rg -i "<téma>" ./local-knowledge-base/youtube --glob '*.md' -l
+   rg -i "<téma>" ./local-knowledge-base/youtube --glob 'analysis_main.md' -l
    ```
 2. Hledej i anglický/český ekvivalent tématu
 3. Přečti relevantní `analysis_main.md` soubory (max 5-7 pro rozumnou velikost)

@@ -237,22 +237,6 @@ def run_for_url(url: str, drive: DriveClient):
         print("✅ LLM analýza úspěšně vytvořena")
     except Exception as e:
         print(f"⚠️ LLM analýza přeskočena ({str(e)})")
-        # Vytvoříme placeholder analýzu
-        placeholder_analysis = f"""# Analýza videa: {meta.get("title", "Neznámý název")}
-
-**Kanál:** {meta.get("channel", "Neznámý kanál")}
-**URL:** {url}
-
-## Přepis byl úspěšně stažen
-
-Přepis videa je k dispozici v souboru `transcript_clean.txt`.
-Pro automatickou analýzu obsahu je potřeba přidat kredity do LLM API.
-
-**Statistiky:**
-- Počet znaků: {len(clean_txt):,}
-- Odhadovaná délka: {len(clean_txt.split())} slov
-"""
-        drive.upload_string(placeholder_analysis, "analysis_main.md", base_folder_id)
 
     # 5) cleanup - smazat raw transcript (už je duplicitní)
     drive.delete_file("transcript_raw.json", base_folder_id)

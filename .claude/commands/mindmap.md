@@ -11,7 +11,7 @@ Prohledat knowledge base podle zadaného tématu, extrahovat klíčové koncepty
 
 <context>
 - Data jsou v `./local-knowledge-base/` (YouTube analýzy, filosofie, theme guides)
-- Každé video má `analysis_main.md` se strukturovanými sekcemi
+- Úspěšně analyzovaná videa mají `analysis_main.md` se strukturovanými sekcemi; složka může obsahovat pouze přepis
 - Markmap používá markdown headings pro hierarchii (# → ## → ### = strom)
 - Výstupy patří do `./local-knowledge-base/mindmap/`
 - Jazyk mapy = jazyk převažujících zdrojů
@@ -48,6 +48,12 @@ Prohledat knowledge base podle zadaného tématu, extrahovat klíčové koncepty
    - Practical Tips - aplikace
    - Tools & Technologies - konkrétní nástroje
    - Quotes - klíčové myšlenky
+
+<missing_analysis>
+- Only existing `analysis_main.md` files are eligible sources. Never use transcript-only fallback prose as structured analysis.
+- Skip every matching transcript-only folder and report its path as missing analysis.
+- If no eligible analysis remains, report `no eligible analysis` and stop without creating a mindmap output.
+</missing_analysis>
 
 5. Zaznamenej pro každý zdroj:
    - Koncepty a jejich definice

@@ -13,7 +13,11 @@ Please follow these steps:
     - **Use the argument FIRST**: Search for `{{video_query}}` in `local-knowledge-base/youtube/` - it could be a channel name, partial folder name, or keyword.
     - **Only if argument is literally empty or contains `{{`**: Fall back to checking `git status` for recently modified video folders.
     - **Search method**: Use Glob with pattern `*{{video_query}}*` or LS to find matching folders.
-    - **Verify**: Ensure the found folder contains `transcript_clean.txt`.
+    - **Verify**: Ensure the found folder contains both `transcript_clean.txt` and `analysis_main.md`.
+    <missing_analysis>
+    - If `analysis_main.md` is absent, report that no existing analysis draft is available and stop before confirm.
+    - Do not read or write either file, and do not manufacture a draft from the transcript.
+    </missing_analysis>
     - **Confirm**: **STOP** and present the identified video folder to me. Ask: "Is this the video you want to analyze?"
     - **Do not proceed** to reading or editing files until I confirm.
 

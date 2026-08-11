@@ -134,10 +134,12 @@ Pro každé video se vytvoří složka:
 youtube/
 └── {CHANNEL_NAME}/
     └── {YYYY-MM-DD}_{VIDEO_TITLE_SLUG}/
-        ├── transcript_clean.txt     # Vyčištěný text
-        ├── analysis_main.md         # LLM analýza
+        ├── transcript_clean.txt     # Vyčištěný text (vždy po úspěšném přepisu)
+        ├── analysis_main.md         # LLM analýza (jen po úspěšné analýze)
         └── vectors.json            # Embedding metadata (pokud enabled)
 ```
+
+Pokud volitelná LLM analýza selže, přepis zůstane uložený a chyba se vypíše do logu. `analysis_main.md` se v takovém případě nevytvoří.
 
 ## 🧪 Testování
 

@@ -243,6 +243,11 @@ class TestYTPipeline(unittest.TestCase):
             
             # Verify files were uploaded
             self.assertEqual(mock_drive.upload_string.call_count, 3)  # raw, clean, analysis
+            uploads = {
+                call.args[1]: call.args[0]
+                for call in mock_drive.upload_string.call_args_list
+            }
+            self.assertEqual(uploads["analysis_main.md"], self.sample_llm_response)
 
             # Ensure folder name uses slugified title
             expected_folder = "2024-01-01_advanced-claude-code-tips-and-tricks"
@@ -271,12 +276,47 @@ class TestYTPipeline(unittest.TestCase):
         mock_drive = MagicMock()
         mock_drive.upload_string.return_value = "mock_file_id"
         
-        # Test - should not raise exception
-        run_for_url("https://youtu.be/JU8BwMe_BWg", mock_drive)
+        # Test - should not raise exception and should retain diagnostics
+        with patch('builtins.print') as mock_print:
+            run_for_url("https://youtu.be/JU8BwMe_BWg", mock_drive)
         
-        # Verify transcript files were still uploaded (2 calls for raw+clean)
-        # Plus 1 call for placeholder analysis = 3 total
-        self.assertEqual(mock_drive.upload_string.call_count, 3)
+        uploaded_names = [call.args[1] for call in mock_drive.upload_string.call_args_list]
+        self.assertEqual(uploaded_names, ["transcript_raw.json", "transcript_clean.txt"])
+        self.assertNotIn("analysis_main.md", uploaded_names)
+        self.assertTrue(any(
+            "LLM analýza přeskočena (LLM API Error)" in str(call.args[0])
+            for call in mock_print.call_args_list
+        ))
+
+    @patch('src.yt_pipeline.analyze_text')
+    @patch('src.yt_pipeline.fetch_transcript')
+    @patch('src.yt_pipeline.get_basic_meta')
+    @patch('src.yt_pipeline.extract_video_id')
+    def test_run_for_url_llm_failure_local_storage(
+        self, mock_extract_id, mock_get_meta, mock_fetch_transcript, mock_analyze_text
+    ):
+        """A local transcript survives analysis failure without a success artifact."""
+        mock_extract_id.return_value = "JU8BwMe_BWg"
+        mock_get_meta.return_value = self.sample_metadata
+        mock_fetch_transcript.return_value = [
+            MockTranscriptSegment(**seg) for seg in self.sample_transcript
+        ]
+        mock_analyze_text.side_effect = Exception("LLM API Error")
+
+        with tempfile.TemporaryDirectory() as temp_dir:
+            with patch.dict(os.environ, {"LOCAL_KB_ROOT": temp_dir}), \
+                    patch('src.yt_pipeline.time.strftime', return_value="2024-01-01"):
+                drive = DriveClient()
+                run_for_url("https://youtu.be/JU8BwMe_BWg", drive)
+
+            video_dir = os.path.join(
+                temp_dir,
+                "youtube",
+                "tech-tutorial-channel",
+                "2024-01-01_advanced-claude-code-tips-and-tricks",
+            )
+            self.assertTrue(os.path.isfile(os.path.join(video_dir, "transcript_clean.txt")))
+            self.assertFalse(os.path.exists(os.path.join(video_dir, "analysis_main.md")))
         
     @patch('src.yt_pipeline.fetch_transcript')
     @patch('src.yt_pipeline.get_basic_meta')

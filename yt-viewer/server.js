@@ -3,7 +3,9 @@ const fs = require("fs");
 const path = require("path");
 
 const PORT = Number(process.env.PORT) || 4001;
-const ROOT = path.join(__dirname, "..", "local-knowledge-base", "youtube");
+const ROOT = process.env.YT_KB_ROOT
+  ? path.resolve(process.env.YT_KB_ROOT)
+  : path.join(__dirname, "..", "local-knowledge-base", "youtube");
 
 const send = (res, status, body, type = "text/plain; charset=utf-8") => {
   res.writeHead(status, { "Content-Type": type });
