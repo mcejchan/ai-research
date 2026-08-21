@@ -1,0 +1,37 @@
+{
+  "concurrentContext": [],
+  "evaluationTarget": {
+    "acceptanceDispatchAt": "2026-08-21T08:34:17+00:00",
+    "implementingStartedAt": "2026-08-21T08:26:33+00:00",
+    "taskFile": "plans/tasks/2026-08-21_architektonicke-review-ai-research-readme-youtube-pipeline-r.md",
+    "taskId": "warm-reef-4253",
+    "title": "Architektonick\u00e9 review \u2014 ai-research: README YouTube pipeline runtime contract"
+  },
+  "goals": [
+    {
+      "id": "goal-001",
+      "summary": "README/operator docs no longer require direct OpenAI as the default path when runtime defaults to Copilot Bridge."
+    },
+    {
+      "id": "goal-002",
+      "summary": "README/operator docs no longer claim stale GPT-4o-mini defaults or static \u201c100% / 37 tests\u201d style snapshots."
+    },
+    {
+      "id": "goal-003",
+      "summary": "Supported modes are clear: bridge default, direct OpenAI override if still supported."
+    },
+    {
+      "id": "goal-004",
+      "summary": "Any added test is narrow, stable, and justified in the final note; if no test is added, final note explains why documentation-only is safer."
+    },
+    {
+      "id": "goal-005",
+      "summary": "`make test` passes from `/Users/michal/Projects/ai-research`."
+    }
+  ],
+  "policyVersion": "acceptance-policy-v1",
+  "runId": "warm-reef-4253-acceptance-001",
+  "schemaVersion": "acceptance-run-v1",
+  "taskId": "warm-reef-4253",
+  "tddRequired": false
+}

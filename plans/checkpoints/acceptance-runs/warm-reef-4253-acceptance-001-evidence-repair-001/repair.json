@@ -1,0 +1,27 @@
+{
+  "actor": "km-monitor:task-evidence",
+  "artifactProvenance": [
+    {
+      "path": "plans/checkpoints/warm-reef-4253.evidence.md",
+      "provenance": "evidence_repair:warm-reef-4253-acceptance-001-evidence-repair-001",
+      "size": 331
+    }
+  ],
+  "artifacts": [
+    "plans/checkpoints/warm-reef-4253.evidence.md"
+  ],
+  "auditPath": "plans/checkpoints/acceptance-runs/warm-reef-4253-acceptance-001-evidence-repair-001/repair.json",
+  "commit": "dc2ef34d520b5009eed0ddbc8fcc9d9b62258c63",
+  "escalationReason": "exact_command_outcome_evidence_unavailable",
+  "finishedAt": "2026-08-21T08:36:19.014956+00:00",
+  "gaps": [],
+  "mutationCheck": {
+    "changedPaths": [],
+    "clean": true
+  },
+  "pairs": [],
+  "repairRunId": "warm-reef-4253-acceptance-001-evidence-repair-001",
+  "sourceRunId": "warm-reef-4253-acceptance-001",
+  "startedAt": "2026-08-21T08:36:18.597791+00:00",
+  "status": "escalated"
+}

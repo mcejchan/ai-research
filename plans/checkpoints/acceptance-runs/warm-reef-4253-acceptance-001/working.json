@@ -1,0 +1,59 @@
+{
+  "findings": [
+    {
+      "claim": "The required root make test gate has passing canonical evidence.",
+      "crossCutting": false,
+      "findingType": "verification_evidence_missing",
+      "goalIds": [
+        "goal-005"
+      ],
+      "id": "finding-001",
+      "kind": "evidence",
+      "observed": "The caller-supplied canonical Test Gate status is not run, and no Test Gate evidence exists; the checkpoint only asserts that make test passed without canonical gate provenance or output.",
+      "rationale": "Goal-005 explicitly requires make test to pass from the project root, so task-authored checkpoint prose cannot establish the required caller-owned verification result when the canonical Test Gate reference has no run.",
+      "required": "Provide a caller-owned canonical Test Gate result showing make test passed from /Users/michal/Projects/ai-research.",
+      "sources": [
+        {
+          "kind": "test-gate",
+          "reference": "caller-supplied canonical Test Gate status: not run"
+        },
+        {
+          "kind": "artifact",
+          "reference": "plans/checkpoints/warm-reef-4253.checkpoint.md:7"
+        }
+      ]
+    }
+  ],
+  "goals": [
+    {
+      "id": "goal-001",
+      "status": "MET",
+      "summary": "README/operator docs no longer require direct OpenAI as the default path when runtime defaults to Copilot Bridge."
+    },
+    {
+      "id": "goal-002",
+      "status": "MET",
+      "summary": "README/operator docs no longer claim stale GPT-4o-mini defaults or static \u201c100% / 37 tests\u201d style snapshots."
+    },
+    {
+      "id": "goal-003",
+      "status": "MET",
+      "summary": "Supported modes are clear: bridge default, direct OpenAI override if still supported."
+    },
+    {
+      "id": "goal-004",
+      "status": "MET",
+      "summary": "Any added test is narrow, stable, and justified in the final note; if no test is added, final note explains why documentation-only is safer."
+    },
+    {
+      "id": "goal-005",
+      "status": "UNMET",
+      "summary": "`make test` passes from `/Users/michal/Projects/ai-research`."
+    }
+  ],
+  "policyVersion": "acceptance-policy-v1",
+  "runId": "warm-reef-4253-acceptance-001",
+  "schemaVersion": "acceptance-run-v1",
+  "status": "working",
+  "taskId": "warm-reef-4253"
+}
