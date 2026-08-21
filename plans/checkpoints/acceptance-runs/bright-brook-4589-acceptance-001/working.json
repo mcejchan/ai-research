@@ -1,0 +1,43 @@
+{
+  "findings": [
+    {
+      "claim": "The evidence-only follow-up provides a caller-owned canonical Test Gate record showing the registered root make test command passed.",
+      "crossCutting": false,
+      "findingType": "verification_evidence_missing",
+      "goalIds": [
+        "goal-001"
+      ],
+      "id": "finding-001",
+      "kind": "evidence",
+      "observed": "The caller-supplied canonical Test Gate status is not run and states that no Test Gate evidence exists. The supplied checkpoint reports a successful local make test run, but it does not identify or link a caller-owned canonical gate record or run ID.",
+      "rationale": "Goal-001 exists specifically to repair missing canonical verification provenance. Task-authored checkpoint prose and a learning artifact cannot establish the required caller-owned Test Gate result when the canonical gate did not execute.",
+      "required": "Provide a caller-owned canonical Test Gate record for make test run from /Users/michal/Projects/ai-research, including the gate run ID or owner, exact command, working directory, successful exit status, and aggregate suite outcomes, then link it from the follow-up state.",
+      "sources": [
+        {
+          "kind": "test-gate",
+          "reference": "caller-supplied canonical Test Gate status: not run"
+        },
+        {
+          "kind": "artifact",
+          "reference": "plans/checkpoints/bright-brook-4589.checkpoint.md:1-9"
+        },
+        {
+          "kind": "plan",
+          "reference": "plans/2026-08-21_bright-brook-4589_acceptance-fix-architektonick-review-ai-research-readme.md:Acceptance"
+        }
+      ]
+    }
+  ],
+  "goals": [
+    {
+      "id": "goal-001",
+      "status": "UNMET",
+      "summary": "[acceptance-fix] [acceptance-fix] Architektonick\u00e9 review \u2014 ai-research: README YouTube pipeline runtime contract: goal-0"
+    }
+  ],
+  "policyVersion": "acceptance-policy-v1",
+  "runId": "bright-brook-4589-acceptance-001",
+  "schemaVersion": "acceptance-run-v1",
+  "status": "working",
+  "taskId": "bright-brook-4589"
+}

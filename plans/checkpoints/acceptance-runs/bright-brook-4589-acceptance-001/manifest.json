@@ -1,0 +1,21 @@
+{
+  "concurrentContext": [],
+  "evaluationTarget": {
+    "acceptanceDispatchAt": "2026-08-21T09:02:26+00:00",
+    "implementingStartedAt": "2026-08-21T08:56:56+00:00",
+    "taskFile": "plans/tasks/2026-08-21_followup-bright-brook-4589-acceptance-fix-architektonick-review-ai-research-readme-yout.md",
+    "taskId": "bright-brook-4589",
+    "title": "[acceptance-fix] [acceptance-fix] Architektonick\u00e9 review \u2014 ai-research: README YouTube pipeline runtime contract: goal-0"
+  },
+  "goals": [
+    {
+      "id": "goal-001",
+      "summary": "[acceptance-fix] [acceptance-fix] Architektonick\u00e9 review \u2014 ai-research: README YouTube pipeline runtime contract: goal-0"
+    }
+  ],
+  "policyVersion": "acceptance-policy-v1",
+  "runId": "bright-brook-4589-acceptance-001",
+  "schemaVersion": "acceptance-run-v1",
+  "taskId": "bright-brook-4589",
+  "tddRequired": false
+}
