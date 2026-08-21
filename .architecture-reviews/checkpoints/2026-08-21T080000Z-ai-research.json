@@ -1,0 +1,18 @@
+{
+  "run_id": "2026-08-21T080000Z-ai-research",
+  "run_time": "2026-08-21T08:00:00Z",
+  "project": "ai-research",
+  "question": "Do command, dependency, documentation, and deployment surfaces retain redundant authorities after prior cleanup?",
+  "verified_evidence": [
+    "Root Makefile is the documented repository gate and invokes all three Node suites plus pipeline pytest; nested Makefile is a legitimate pipeline-scoped operator entry point with download/help.",
+    "GitHub Pages workflow deliberately owns only the independently deployed quiz boundary.",
+    "Knowledge command tests read the executable .claude/commands specifications directly rather than duplicating their implementation.",
+    "youtube-transcript-pipeline/README.md presents direct OpenAI key/credit and GPT-4o-mini facts, while runtime defaults to the local copilot bridge, placeholder bridge key, and LLM_MODEL=gpt-4o.",
+    "The README claims 100% and 37/37 tests; the fresh authoritative run collected and passed 42 Python tests, in addition to all Node suites.",
+    "No suspicious tracked generated, database, backup, env, node_modules, pycache, or coverage artifacts were found.",
+    "The LOCAL_KB_ROOT/root_id cascade was already reported on 2026-07-31 and was not duplicated."
+  ],
+  "current_conclusion": "Complete: one verified finding. Pipeline documentation is a stale second authority for volatile provider/model/auth and test facts. Other examined boundaries are legitimate or previously reported.",
+  "next_trace": null,
+  "continuable": false
+}
