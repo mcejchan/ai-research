@@ -35,7 +35,7 @@ Downloads, transcribes, analyzes, and organizes YouTube video content.
 
 1. **Video Processing**: Extracts metadata via `yt-dlp`
 2. **Transcript Extraction**: YouTube Transcript API with Whisper fallback
-3. **Content Analysis**: OpenAI GPT-4o-mini for analysis
+3. **Content Analysis**: OpenAI-compatible LLM analysis
 4. **Storage**: Google Drive or local mock storage (`local-knowledge-base/youtube/`)
 
 ### Core Modules
@@ -70,11 +70,11 @@ pytest --cov=src --cov-report=html
 
 ## Environment Configuration
 
-Required in `.env` at workspace root:
+The default LLM provider path is the local Copilot Bridge, so a direct OpenAI key is not required. For direct OpenAI, override both `OPENAI_BASE_URL` and `OPENAI_API_KEY`. Optional model overrides are `LLM_MODEL` and `OPENAI_EMBEDDING_MODEL`; runtime fallbacks remain authoritative in `youtube-transcript-pipeline/src/llm_client.py`.
+
+Other pipeline settings can be supplied in `.env` at workspace root:
 
 ```bash
-OPENAI_API_KEY=your_openai_key
-OPENAI_EMBEDDING_MODEL=text-embedding-3-large
 DRIVE_FOLDER_ID=your_google_drive_folder_id
 LANG=cs
 USE_WHISPER_FALLBACK=true
@@ -104,7 +104,7 @@ All external APIs are mocked. Run `pytest` before every commit.
 ## Key Dependencies
 
 - `yt-dlp`, `youtube-transcript-api` - Video/transcript extraction
-- `openai` - GPT-4o-mini analysis, text-embedding-3-large embeddings
+- `openai` - OpenAI-compatible analysis and embedding client
 - `google-api-python-client` - Drive integration
 - `faster-whisper` - Whisper fallback
 - `pytest` - Testing

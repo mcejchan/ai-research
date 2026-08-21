@@ -1,13 +1,12 @@
 # YouTube Transcription & Analysis Pipeline
 
-Automatizovaný nástroj pro stahování, přepis a analýzu YouTube videí pomocí AI. Projekt extrahuje přepisy videí, analyzuje obsah pomocí OpenAI a ukládá výsledky do Google Drive s možností lokálního mock módu.
+Automatizovaný nástroj pro stahování, přepis a analýzu YouTube videí pomocí AI. Projekt extrahuje přepisy videí, analyzuje obsah přes OpenAI-kompatibilní LLM rozhraní a ukládá výsledky do Google Drive s možností lokálního mock módu.
 
 ## 🚀 Rychlý start
 
 ```bash
-# Klonování projektu
-git clone https://github.com/mcejchan/knowledge-base.git
-cd knowledge-base
+# Z rootu repozitáře
+cd youtube-transcript-pipeline
 
 # Instalace závislostí
 pip install -r requirements.txt
@@ -25,18 +24,18 @@ python -m src.yt_pipeline --from-sheet
 ## 📁 Struktura projektu
 
 ```
-knowledge-base/
+youtube-transcript-pipeline/
 ├── README.md                    # Tato dokumentace
 ├── CLAUDE.md                    # Instrukce pro Claude Code (AI asistent)
 ├── requirements.txt             # Produkční závislosti
 ├── requirements-dev.txt         # Vývojářské závislosti
 ├── pytest.ini                  # Konfigurace testů
-├── .env                        # Environment proměnné (vytvořte podle .env.example)
+├── .env                        # Volitelné lokální environment proměnné
 │
 ├── src/                        # 📦 Zdrojové kódy
 │   ├── __init__.py
 │   ├── yt_pipeline.py          # 🎯 Hlavní pipeline logika
-│   ├── llm_client.py           # 🤖 OpenAI API integrace
+│   ├── llm_client.py           # 🤖 OpenAI-kompatibilní LLM integrace
 │   └── drive_client.py         # ☁️ Google Drive/lokální storage
 │
 └── test/                       # 🧪 Test suite
@@ -78,18 +77,18 @@ knowledge-base/
 
 ### `src/llm_client.py` - LLM integrace
 
-**Co dělá:** Zpracovává přepisy pomocí OpenAI API
+**Co dělá:** Zpracovává přepisy pomocí OpenAI-kompatibilního API
 
 **Klíčové funkce:**
 - `analyze_text(transcript, intent, lang, extra_context)` - Hlavní analýza
 - `embed_text(text)` - Generování embeddings
-- `analyze_text()` - Analýza přepisu pomocí GPT-4o-mini
+- `analyze_text()` - Analýza přepisu pomocí zvoleného LLM modelu
 
 **Templaty:**
 - `TEMPLATE_GENERAL` - Obecná analýza videí
 - `TEMPLATE_CLAUDE_CODE_HACKS` - Specializovaná extrakce tipů pro Claude Code
 
-**Model:** GPT-4o-mini pro analýzu, text-embedding-3-large pro embeddings
+Konkrétní modely se vybírají pomocí `LLM_MODEL` a `OPENAI_EMBEDDING_MODEL`. Výchozí runtime hodnoty vlastní `src/llm_client.py`, aby se nekopírovaly do dokumentace.
 
 ### `src/drive_client.py` - Storage management
 
@@ -105,12 +104,19 @@ knowledge-base/
 
 ## 🔧 Konfigurace
 
-### Environment proměnné (.env)
+### LLM provider
+
+Pipeline podporuje dva provozní módy přes stejné OpenAI-kompatibilní rozhraní:
+
+- **Výchozí mód - lokální Copilot Bridge:** `OPENAI_BASE_URL` ani `OPENAI_API_KEY` není nutné nastavovat. Před spuštěním musí být lokální bridge dostupný; přesný výchozí endpoint a interní placeholder credential vlastní `src/llm_client.py`.
+- **Direct OpenAI override:** nastavte současně `OPENAI_BASE_URL=https://api.openai.com/v1` a skutečný `OPENAI_API_KEY`. Tím má přímé OpenAI připojení přednost před výchozí bridge cestou.
+
+`LLM_MODEL` a `OPENAI_EMBEDDING_MODEL` jsou volitelné override hodnoty. Aktuální fallbacky jsou definované v `src/llm_client.py`.
+
+### Ostatní environment proměnné (`.env`)
 
 ```bash
-# === POVINNÉ ===
 DRIVE_FOLDER_ID=your_google_drive_folder_id
-OPENAI_API_KEY=your_openai_key
 
 # === VOLITELNÉ ===
 LANG=cs                          # Jazyk analýzy (cs/en)
@@ -163,11 +169,9 @@ pytest test/test_yt_pipeline.py::TestYTPipeline::test_extract_video_id_youtube_c
 
 **Mock-based testing:** Všechny externí APIs jsou mockované
 - ✅ YouTube Transcript API
-- ✅ OpenAI API  
+- ✅ LLM API
 - ✅ Google Drive API
 - ✅ Subprocess calls (yt-dlp)
-
-**Test coverage:** 100% (37/37 tests pass)
 
 **Test kategorie:**
 - **Unit tests**: Jednotlivé funkce
@@ -193,9 +197,9 @@ yt-dlp --rm-cache-dir  # vyčistit cache
 - Smazat `token.json` a znovu autorizovat
 
 **3. LLM API chyby**
-- Zkontrolujte API klíče v `.env`
-- Verify API kredity/limity
-- Zkontrolujte OpenAI API klíč a kredity
+- Ve výchozím módu ověřte, že běží lokální Copilot Bridge
+- V direct OpenAI módu ověřte `OPENAI_BASE_URL`, API klíč a kredity/limity
+- Ověřte, že hodnoty `LLM_MODEL` a `OPENAI_EMBEDDING_MODEL` podporuje zvolený provider
 
 **4. Import chyby**
 ```bash
