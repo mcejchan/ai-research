@@ -1,0 +1,27 @@
+{
+  "actor": "km-monitor:task-evidence",
+  "artifactProvenance": [
+    {
+      "path": "plans/checkpoints/bold-reef-7057.evidence.md",
+      "provenance": "evidence_repair:bold-reef-7057-acceptance-001-evidence-repair-001",
+      "size": 569
+    }
+  ],
+  "artifacts": [
+    "plans/checkpoints/bold-reef-7057.evidence.md"
+  ],
+  "auditPath": "plans/checkpoints/acceptance-runs/bold-reef-7057-acceptance-001-evidence-repair-001/repair.json",
+  "commit": "9c0a55aadd2e16cf9918d846b198d1b3d7677e32",
+  "escalationReason": "exact_command_outcome_evidence_unavailable",
+  "finishedAt": "2026-08-21T08:50:20.402194+00:00",
+  "gaps": [],
+  "mutationCheck": {
+    "changedPaths": [],
+    "clean": true
+  },
+  "pairs": [],
+  "repairRunId": "bold-reef-7057-acceptance-001-evidence-repair-001",
+  "sourceRunId": "bold-reef-7057-acceptance-001",
+  "startedAt": "2026-08-21T08:50:19.746181+00:00",
+  "status": "escalated"
+}

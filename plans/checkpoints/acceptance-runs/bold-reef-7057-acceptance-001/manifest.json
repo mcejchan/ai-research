@@ -1,0 +1,21 @@
+{
+  "concurrentContext": [],
+  "evaluationTarget": {
+    "acceptanceDispatchAt": "2026-08-21T08:48:17+00:00",
+    "implementingStartedAt": "2026-08-21T08:42:49+00:00",
+    "taskFile": "plans/tasks/2026-08-21_followup-bold-reef-7057-architektonick-review-ai-research-readme-youtube-pipeline-ru.md",
+    "taskId": "bold-reef-7057",
+    "title": "[acceptance-fix] Architektonick\u00e9 review \u2014 ai-research: README YouTube pipeline runtime contract: goal-005: `make test` p"
+  },
+  "goals": [
+    {
+      "id": "goal-001",
+      "summary": "[acceptance-fix] Architektonick\u00e9 review \u2014 ai-research: README YouTube pipeline runtime contract: goal-005: `make test` p"
+    }
+  ],
+  "policyVersion": "acceptance-policy-v1",
+  "runId": "bold-reef-7057-acceptance-001",
+  "schemaVersion": "acceptance-run-v1",
+  "taskId": "bold-reef-7057",
+  "tddRequired": false
+}
