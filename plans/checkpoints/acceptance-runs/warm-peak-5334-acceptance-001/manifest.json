@@ -1,0 +1,49 @@
+{
+  "concurrentContext": [],
+  "evaluationTarget": {
+    "acceptanceDispatchAt": "2026-08-29T08:25:38+00:00",
+    "implementingStartedAt": "2026-08-29T08:17:38+00:00",
+    "taskFile": "plans/tasks/2026-08-29_unify-fail-closed-quiz-publication-gate.md",
+    "taskId": "warm-peak-5334",
+    "title": "Unify quiz publication behind one fail-closed gate"
+  },
+  "goals": [
+    {
+      "id": "goal-001",
+      "summary": "There is one named quiz publication gate used by both root `make test` and Pages."
+    },
+    {
+      "id": "goal-002",
+      "summary": "A malformed or schema-invalid tracked level makes that gate and the Pages build step fail non-zero."
+    },
+    {
+      "id": "goal-003",
+      "summary": "Index generation cannot report success after silently excluding an invalid source level."
+    },
+    {
+      "id": "goal-004",
+      "summary": "The existing static runtime/index behavior remains covered and passing for valid input."
+    },
+    {
+      "id": "goal-005",
+      "summary": "Structural failures and advisory quality warnings have an explicit, tested distinction."
+    },
+    {
+      "id": "goal-006",
+      "summary": "Duplicate validation logic and dead/uninvoked validator paths are removed or reduced to thin shared components; no parallel source of truth remains."
+    },
+    {
+      "id": "goal-007",
+      "summary": "Workflow and repository documentation name the shared command as the publication contract where appropriate."
+    },
+    {
+      "id": "goal-008",
+      "summary": "Changes remain repository-local to `/Users/michal/Projects/ai-research`; do not inspect or modify other repositories or external OpenClaw configuration. Record any genuinely external dependency as a follow-up instead of crossing this boundary."
+    }
+  ],
+  "policyVersion": "acceptance-policy-v1",
+  "runId": "warm-peak-5334-acceptance-001",
+  "schemaVersion": "acceptance-run-v1",
+  "taskId": "warm-peak-5334",
+  "tddRequired": true
+}
