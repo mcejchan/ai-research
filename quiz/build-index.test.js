@@ -7,6 +7,17 @@ const test = require('node:test');
 const { levelUrl } = require('./app');
 const { buildLevelsIndex } = require('./build-index');
 
+function question(points = 1) {
+  return {
+    question: 'Which answer is correct?',
+    type: 'single',
+    points,
+    options: ['Correct', 'Incorrect'],
+    correct: [0],
+    explanation: 'Fixture explanation',
+  };
+}
+
 test('buildLevelsIndex writes sorted static metadata and skips existing index', async () => {
   const root = await fs.mkdtemp(path.join(os.tmpdir(), 'quiz-levels-'));
   const channelDir = path.join(root, 'futurecast');
@@ -16,25 +27,25 @@ test('buildLevelsIndex writes sorted static metadata and skips existing index', 
     title: 'Hard',
     date: '2026-01-03',
     difficulty: 'hard',
-    questions: [],
+    questions: [question()],
   }));
   await fs.writeFile(path.join(channelDir, 'extra-easy.json'), JSON.stringify({
     title: 'Extra Easy',
     date: '2026-01-02',
     difficulty: 'extra-easy',
-    questions: [],
+    questions: [question()],
   }));
   await fs.writeFile(path.join(channelDir, 'easy.json'), JSON.stringify({
     title: 'Easy',
     date: '2026-01-01',
     difficulty: 'easy',
-    questions: [],
+    questions: [question()],
   }));
   await fs.writeFile(path.join(channelDir, 'unknown.json'), JSON.stringify({
     title: 'Unknown',
     date: '2025-01-01',
     difficulty: 'weird',
-    questions: [{ points: 4 }],
+    questions: [question(4)],
   }));
 
   const levels = await buildLevelsIndex(root, path.join(root, 'index.json'));

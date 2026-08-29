@@ -81,7 +81,7 @@ Proces přidání nového levelu (manuální trigger):
 1. Video musí být zpracované přes yt-transcript pipeline (transcript + analysis existuje)
 2. Jackie na požádání vygeneruje quiz otázky z transkriptu/analýzy (LLM)
 3. Uloží JSON do `quiz/levels/<channel>/<slug>.json`
-4. Spustí `node quiz/build-index.js`, který přegeneruje `quiz/levels/index.json`
+4. Spustí `make quiz-publication-check`, který ověří všechny levely a přegeneruje `quiz/levels/index.json`
 5. Prohlížeč načte manifest a vybraný level přímo jako statické JSON soubory
 
 ## Quiz UI <!-- section:quiz-ui -->

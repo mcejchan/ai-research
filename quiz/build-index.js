@@ -1,15 +1,13 @@
 const fs = require('fs');
 const path = require('path');
+const { validateLevelData } = require('./validate-quiz');
 
 const ROOT = __dirname;
 const LEVELS_DIR = path.join(ROOT, 'levels');
 const INDEX_PATH = path.join(LEVELS_DIR, 'index.json');
 
 async function walkJsonFiles(dir, indexPath = path.join(dir, 'index.json')) {
-  const entries = await fs.promises.readdir(dir, { withFileTypes: true }).catch((error) => {
-    if (error.code === 'ENOENT') return [];
-    throw error;
-  });
+  const entries = await fs.promises.readdir(dir, { withFileTypes: true });
   const files = [];
 
   for (const entry of entries) {
@@ -46,14 +44,31 @@ function levelFromJson(file, data, levelsDir = LEVELS_DIR) {
 async function buildLevelsIndex(levelsDir = LEVELS_DIR, indexPath = path.join(levelsDir, 'index.json')) {
   const files = await walkJsonFiles(levelsDir, indexPath);
   const levels = [];
+  const failures = [];
 
   for (const file of files) {
+    let data;
     try {
       const raw = await fs.promises.readFile(file, 'utf8');
-      levels.push(levelFromJson(file, JSON.parse(raw), levelsDir));
+      data = JSON.parse(raw);
     } catch (error) {
-      console.warn(`Skipping invalid level ${file}: ${error.message}`);
+      failures.push(`${file}: ${error.message}`);
+      continue;
     }
+
+    const result = validateLevelData(data, file);
+    if (!result.ok) {
+      failures.push(...result.structuralErrors.map((error) => `${file}: ${error}`));
+      continue;
+    }
+    for (const advisory of result.advisories) {
+      console.warn(`Advisory for ${file}: ${advisory}`);
+    }
+    levels.push(levelFromJson(file, data, levelsDir));
+  }
+
+  if (failures.length > 0) {
+    throw new Error(`Quiz publication validation failed:\n${failures.join('\n')}`);
   }
 
   levels.sort((a, b) => (b.date || '').localeCompare(a.date || '') || a.path.localeCompare(b.path));

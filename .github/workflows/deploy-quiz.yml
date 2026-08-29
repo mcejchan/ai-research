@@ -26,11 +26,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Test quiz
-        run: node --test quiz/build-index.test.js
-
-      - name: Build levels index
-        run: node quiz/build-index.js
+      - name: Check quiz publication
+        run: make quiz-publication-check
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
