@@ -1,0 +1,46 @@
+{
+  "classification": "evidence_reject",
+  "findings": [
+    {
+      "claim": "The caller-mandated TDD RED and GREEN proof phases for goal-001 are malformed and incomplete; a valid TDD proof must contain a timestamp, the command run, and the exit result for each phase.",
+      "crossCutting": false,
+      "effect": "blocking",
+      "findingType": "required_tdd_proof_missing",
+      "goalIds": [
+        "goal-001"
+      ],
+      "id": "finding-001",
+      "kind": "evidence",
+      "observed": "The supplied TDD proof/provenance projection reports the proof as incomplete, with both phases malformed: the RED Phase is missing timestamp, command, and exit, and the GREEN Phase is missing the same three. The manifest sets tddRequired true and the caller declares TDD required.",
+      "policyRule": "catalog:required_tdd_proof_missing:blocking",
+      "rationale": "A caller-declared mandatory TDD proof must be a complete, well-formed RED-GREEN record. The supplied canonical TDD proof/provenance explicitly marks both phases malformed (missing timestamp, command, exit), so the proof does not satisfy the TDD requirement even though a proof file exists on disk; file presence is not sufficient when the canonical projection is invalid. No test suite was executed by this review, so the verdict rests on the supplied TDD projection, not on any suite run.",
+      "required": "A complete, well-formed TDD proof with both RED and GREEN phases present, each containing a timestamp, the command run, and the exit result, consistent with tddRequired true.",
+      "sources": [
+        {
+          "kind": "file",
+          "reference": "plans/checkpoints/task-b521afdb-0ad4-41a6-bff2-7ad9dd9336df.red-green-proof.md"
+        },
+        {
+          "kind": "manifest",
+          "reference": "manifest.json:tddRequired:true"
+        },
+        {
+          "kind": "artifact",
+          "reference": "tdd-proof-provenance-projection"
+        }
+      ]
+    }
+  ],
+  "goals": [
+    {
+      "id": "goal-001",
+      "status": "UNMET",
+      "summary": "Fix ignored pytest.ini section in AI Research"
+    }
+  ],
+  "policyVersion": "acceptance-policy-v1",
+  "runId": "task-b521afdb-0ad4-41a6-bff2-7ad9dd9336df-acceptance-001",
+  "schemaVersion": "acceptance-run-v1",
+  "status": "finalized",
+  "taskId": "task-b521afdb-0ad4-41a6-bff2-7ad9dd9336df"
+}
