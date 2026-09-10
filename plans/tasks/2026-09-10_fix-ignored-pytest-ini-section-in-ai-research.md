@@ -18,3 +18,8 @@ Bounded single-owner config/test repair; no architecture search, external reposi
 
 ## Verification
 Host check now: `/opt/homebrew/bin/python3` is Python3.14 with pytest/pytest-cov but without pytest-env; requirements-dev already declares it. Prepare a repository-local ignored virtualenv from that interpreter using the documented requirements and requirements-dev (ordinary dependency installation only); no global installs. Put its bin directory first in PATH for BOTH focused checks and root `make test`, whose Python command is literal python3. Record interpreter/plugin versions. From pipeline directory run `python3 -m pytest test/test_config.py`; from root run `make test`. Record loaded testpaths/addopts/env, collection changes and actual exit codes; verify a controlled failing temporary test preserves nonzero exit. Keep temporary coverage outputs ignored/disposable. Final checkpoint: changed paths, fresh proof path, exact commands/results, and any unresolved blocker. Current tests and proof—not historical success—determine completion.
+
+## Previous Plan (rejected - attempt 1)
+Plan file: /Users/michal/Projects/ai-research/plans/2026-09-10_task-b521afdb-0ad4-41a6-bff2-7ad9dd9336df_fix-ignored-pytest-ini-section-in-ai-research.md
+Review feedback: The plan overengineers a one-line configuration fix, and its proposed RED test is invalid because creating a temporary INI during test execution cannot apply its `env` settings to the already-running pytest process.
+Read the previous plan, understand what was wrong, and produce a corrected plan.
