@@ -10,7 +10,7 @@
 - ✅ Step 7: Run full pipeline suite (44 passed = 42 baseline + 2 new; coverage emitted)
 - ✅ Step 8: Verify no new tracked artifacts (git status --porcelain)
 - ✅ Step 9: Verify proof file has both RED and GREEN sections
-- ⬜ Step 10: Run save-learning skill (mandatory final action)
+- ✅ Step 10: Run save-learning skill (mandatory final action)
 
 ## Last completed
 Full regression passed: `python3 -m pytest -q` => 44 passed + coverage table;
@@ -18,7 +18,12 @@ Full regression passed: `python3 -m pytest -q` => 44 passed + coverage table;
 8/6/4/2 Node suites passing. git status shows only pytest.ini + test_config.py
 as tracked modifications; htmlcov/.coverage/.pytest_cache stay ignored (untracked).
 
-## Status: COMPLETE (pending save-learning skill)
+## Status: COMPLETE
+
+All 10 steps done. save-learning produced:
+learnings/tooling/2026-09-10_pytest-config-from-path-missing-use-fromdictargs.md
+(distinct from the pre-existing 2026-09-10_pytest-section-tool-pytest-ignored.md,
+which was preserved, not overwritten).
 
 ## Context for resume
 - Defect: youtube-transcript-pipeline/pytest.ini line 1 = [tool:pytest] (setup.cfg form); pytest.ini needs [pytest].

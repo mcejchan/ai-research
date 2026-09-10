@@ -1,0 +1,21 @@
+{
+  "concurrentContext": [],
+  "evaluationTarget": {
+    "acceptanceDispatchAt": "2026-09-10T12:13:55+00:00",
+    "implementingStartedAt": "2026-09-10T11:58:49+00:00",
+    "taskFile": "plans/tasks/2026-09-10_fix-ignored-pytest-ini-section-in-ai-research.md",
+    "taskId": "task-b521afdb-0ad4-41a6-bff2-7ad9dd9336df",
+    "title": "Fix ignored pytest.ini section in AI Research"
+  },
+  "goals": [
+    {
+      "id": "goal-001",
+      "summary": "Fix ignored pytest.ini section in AI Research"
+    }
+  ],
+  "policyVersion": "acceptance-policy-v1",
+  "runId": "task-b521afdb-0ad4-41a6-bff2-7ad9dd9336df-acceptance-001",
+  "schemaVersion": "acceptance-run-v1",
+  "taskId": "task-b521afdb-0ad4-41a6-bff2-7ad9dd9336df",
+  "tddRequired": true
+}
