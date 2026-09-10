@@ -3,16 +3,18 @@ title: Fix ignored AI Research pytest configuration
 type: implementation
 ---
 
-# Fix ignored pytest.ini section in AI Research
+## Goal
+Complete and verify the existing pytest configuration repair. Preserve working changes; deliver reproducible current verification and valid chronological TDD evidence, not another account of the previous run.
 
-## Confirmed defect
-In /Users/michal/Projects/ai-research/youtube-transcript-pipeline/pytest.ini the section is [tool:pytest], which pytest expects in setup.cfg, not pytest.ini. Host tested pytest.Config.fromdictargs with this file: effective testpaths=[] and addopts=[]. Therefore declared testpaths, coverage and environment configuration are silently ignored. Root make test does run actual Python tests using default discovery and supplies several environment values explicitly, so do NOT describe this as zero tests or a passing no-op. Host Python suite on2026-09-10:42 passed,12 subtests passed,25.88s.
+## Exact files/functions
+Within this repository only: `youtube-transcript-pipeline/pytest.ini`, `youtube-transcript-pipeline/test/test_config.py` (`_load_pipeline_pytest_config` and its two regression tests). Read `requirements-dev.txt`, `requirements.txt`, pipeline README testing setup, and root Makefile as needed. Only extend setup documentation if needed; no dependency or application redesign.
 
-## Scope
-Only registered ai-research repository. Characterization-first fix of this pytest config and minimal regression/dependency documentation as necessary. Do not change pipeline behavior, provider credentials, environment values, report publishing or unrelated tests. No live APIs/providers/downloads; use synthetic tests. No external repo inspection, deployment.
+## Verified cause/intended change
+The previous attempt ALREADY changed `[tool:pytest]` to `[pytest]` and added two tests using `pytest.Config.fromdictargs` (valid API; `from_path` does not exist). Keep them. Historical RED/GREEN exists but its handwritten proof was rejected for missing structured timestamps/commands/exits. Do not backfill those fields or present old evidence as this run.
+Implement the TDD cycle using skill:tdd and its discovered proof-capture helper. Preserve the old proof as a clearly labelled previous-attempt artifact before creating fresh task-bound proof. Add a small regression using a temporary copied INI: real pytest loading must distinguish its invalid `[tool:pytest]` section from valid `[pytest]`, including testpaths/addopts/env. Obtain genuine chronological RED then GREEN while developing that regression; a broken API/import is not valid RED. Never revert the working repository configuration merely to manufacture a failure. If no legitimate missing regression remains, report that evidence limitation instead of inventing a cycle.
 
-## Acceptance
-Prove currently ignored config with local test before correction. Correct section to [pytest], verify that pytest/pytest-cov/pytest-env requirements are declared and available via documented existing setup rather than silent fallbacks. Verify actual loaded testpaths/addopts/env, expected42-test collection (explain any changes), offline suite success, and nonzero failures preserved. Ensure enabling previously ignored options does not unexpectedly create tracked artifacts; use disposable coverage outputs as necessary. Preserve make test mixed Node/Python coverage; do not weaken assertions. Record command/effective config evidence and scope.
+## Boundaries/non-goals
+Bounded single-owner config/test repair; no architecture search, external repositories, credentials, live providers, downloads of video, deployment or application behavior changes. Preserve unrelated files. Existing expected42/44 counts are historical baselines, not fixed assertions. Do not relax acceptance, skip required plugins, or replace the mixed Node/Python gate.
 
-## Authorization and scope refresh
-User authorized registration and repair on 2026-09-10. Recheck named local owners before changes; preserve any equivalent concurrent fix instead of overwriting it. Earlier test counts are audit baselines, not a requirement to freeze the suite. Explain genuine changes in collection. Only edit within the registered project and explicitly named ownership boundary. Record focused verification and remaining host-only checks.
+## Verification
+Host check now: `/opt/homebrew/bin/python3` is Python3.14 with pytest/pytest-cov but without pytest-env; requirements-dev already declares it. Prepare a repository-local ignored virtualenv from that interpreter using the documented requirements and requirements-dev (ordinary dependency installation only); no global installs. Put its bin directory first in PATH for BOTH focused checks and root `make test`, whose Python command is literal python3. Record interpreter/plugin versions. From pipeline directory run `python3 -m pytest test/test_config.py`; from root run `make test`. Record loaded testpaths/addopts/env, collection changes and actual exit codes; verify a controlled failing temporary test preserves nonzero exit. Keep temporary coverage outputs ignored/disposable. Final checkpoint: changed paths, fresh proof path, exact commands/results, and any unresolved blocker. Current tests and proof—not historical success—determine completion.
