@@ -36,3 +36,26 @@ def test_real_drive_requires_folder_id_at_execution(monkeypatch):
 
     with pytest.raises(RuntimeError, match="DRIVE_FOLDER_ID"):
         run_for_url("https://youtu.be/example", RealDrive())
+
+
+PIPELINE_ROOT = Path(__file__).resolve().parents[1]
+
+
+def _load_pipeline_pytest_config():
+    return pytest.Config.fromdictargs(
+        {},
+        ["-c", str(PIPELINE_ROOT / "pytest.ini")],
+    )
+
+
+def test_pytest_ini_section_is_read_by_pytest():
+    cfg = _load_pipeline_pytest_config()
+    addopts = cfg.getini("addopts")
+    assert "--cov=src" in addopts
+    assert cfg.getini("testpaths") == ["test"]
+
+
+def test_pytest_ini_env_block_present():
+    cfg = _load_pipeline_pytest_config()
+    env = cfg.getini("env")
+    assert "USE_WHISPER_FALLBACK = false" in env
