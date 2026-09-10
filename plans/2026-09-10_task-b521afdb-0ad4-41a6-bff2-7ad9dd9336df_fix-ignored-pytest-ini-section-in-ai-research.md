@@ -1,292 +1,209 @@
 # Plan 2026-09-10: Fix ignored AI Research pytest configuration
 
-Complete and verify the existing pytest-config repair. The working fix is already
-in place and committed; the deliverables are (1) a fresh, genuine RED→GREEN TDD
-cycle for a *new* regression test, and (2) current reproducible verification via a
-repo-local venv. We do NOT re-explain the previous run.
+Corrections to a rejected plan (attempt 1). The one-line config fix
+(`[tool:pytest]` → `[pytest]`) and the two existing characterization tests are
+already committed and **correct** — keep them. This run only (1) adds **one**
+small regression, and (2) produces a **fresh** task-bound TDD proof + current
+verification via a repo-local venv. We do NOT re-narrate the previous run.
 
 *Status: DRAFT*
 *Vytvořeno: 2026-09-10*
 *Task ID: task-b521afdb-0ad4-41a6-bff2-7ad9dd9336df*
 
----
+## Why attempt 1 was rejected (and the fix)
+- **Overengineered**: attempt 1 added *three* temp-INI tests. Reduced to **one**
+  new regression (below) that already covers the section distinction *and* the env
+  carrier.
+- **Invalid RED test**: attempt 1 asserted `os.environ.get("USE_WHISPER_FALLBACK")
+  == "false"` after writing a temp INI *during* test execution. A temp `-c` INI
+  **cannot** apply its `env` block to the already-running pytest process, so that
+  assertion is unsound. **Dropped.** The corrected env check reads the config via
+  `getini("env")` (pytest's own machinery + the `pytest-env` plugin registering
+  the `env` option) — a genuine, reproducible failure point.
 
-## Problem
+## Analysis (verified 2026-09-10)
+- `youtube-transcript-pipeline/pytest.ini` — already `[pytest]` (line 1);
+  `testpaths = test`, `addopts = --cov=src ... -v`, full `env` block. **Keep as-is;
+  never revert to manufacture a failure.**
+- `test/test_config.py` — `_load_pipeline_pytest_config()` + the 2 characterization
+  tests (`test_pytest_ini_section_is_read_by_pytest`,
+  `test_pytest_ini_env_block_present`) already use `pytest.Config.fromdictargs`
+  (valid API; `from_path` does not exist). **Keep as-is.**
+  - On host `/opt/homebrew/bin/python3` (Py 3.14.4, pytest 9.0.3, pytest-cov 7.0.0,
+    **no pytest-env**), the focused run currently shows **1 failed**
+    (`test_pytest_ini_env_block_present` → `ValueError: unknown config value: 'env'`).
+    That is the genuine behavioral RED (missing declared dev dep), not a broken
+    import/API.
+- `requirements-dev.txt` declares `pytest-env>=0.8.0`; `requirements.txt` is runtime
+  only. Root `Makefile` `test:` runs Node tests then `python3 -m pytest` with
+  literal `python3` and explicit env vars. `make test` is the canonical gate.
+- `plans/checkpoints/<task-id>.red-green-proof.md` exists (the **rejected handwritten
+  proof**); `proof-capture.py` **refuses to overwrite** an existing proof, so it must
+  be renamed to `.previous-attempt.md` first.
+- `.gitignore` already ignores `.venv/`, `htmlcov/`, `.coverage`, `.pytest_cache/`.
 
-`youtube-transcript-pipeline/pytest.ini` previously used the invalid
-`[tool:pytest]` section, so pytest silently ignored `testpaths`/`addopts`/`env`
-(coverage + env config never took effect). A prior attempt fixed the section to
-`[pytest]` and added two characterization tests using `pytest.Config.fromdictargs`
-(valid API; `from_path` does not exist). Those changes are correct and **already
-committed**. The prior handwritten proof was **rejected** for missing structured
-timestamps/commands/exit codes.
-
-This task: preserve the working fix, add one genuine new regression (temp-copied
-INI distinguishing invalid `[tool:pytest]` from valid `[pytest]`), and produce a
-**fresh** task-bound TDD proof via `skill:tdd` + its `proof-capture.py` helper, plus
-current verification through a repo-local venv.
-
-## Analysis
-
-### Kontext z codebase (verified 2026-09-10)
-
-- `youtube-transcript-pipeline/pytest.ini` — **already `[pytest]`** (line 1),
-  with `testpaths = test`, `addopts = --cov=src ... -v`, and an `env` block
-  (PYTHONPATH, OPENAI_API_KEY, LANG, USE_WHISPER_FALLBACK, MAKE_EMBEDDINGS,
-  DRIVE_FOLDER_ID). **Keep as-is; do not revert to manufacture a failure.**
-- `youtube-transcript-pipeline/test/test_config.py` — contains
-  `_load_pipeline_pytest_config()` + the two regression tests
-  `test_pytest_ini_section_is_read_by_pytest` and `test_pytest_ini_env_block_present`
-  using `pytest.Config.fromdictargs({}, ["-c", <pytest.ini>])`. **Keep as-is.**
-- `requirements-dev.txt` declares `pytest`, `pytest-mock`, `pytest-cov`, `coverage`,
-  `pytest-env>=0.8.0`.
-- `requirements.txt` declares the runtime deps (openai, python-dotenv, yt-dlp, …).
-- Root `Makefile` `test:` target (line 6) runs the focused pytest with literal
-  `python3` and explicit env vars matching the `env` block; also runs Node tests.
-- Old proof: `plans/checkpoints/task-b521afdb-...red-green-proof.md` (rejected).
-- Old checkpoint: `plans/checkpoints/task-b521afdb-...checkpoint.md` (deleted in
-  working tree — do not restore).
-
-### Relevantní dokumentace
-
-- Pipeline README `## 🧪 Testování` — documents `pytest` / `pip install -r
-  requirements-dev.txt`. If the venv/preparation step is needed, add one short
-  "Test preparation" note here (doc-only, optional).
-- Root `CLAUDE.md` — `make test` is the canonical gate.
-
-### Knowledge base
-
-- `skill:tdd` — governs the RED→GREEN cycle and the mandatory proof file at
-  `plans/checkpoints/<task-id>.red-green-proof.md`. Proof must be machine-captured
-  by `scripts/proof-capture.py` (structured timestamps/commands/exit codes), not
-  hand-written.
-- `skill:save-learning` — mandatory at task end.
-
-## Available Skills
-
-- **tdd** — run `proof-capture.py red/green` to record the cycle. Use for the
-  RED→GREEN cycle in the TDD section.
-- **save-learning** — final mandatory step, saves what was learned.
-
-## Solutions
-
-**Genuine (non-broken-import) RED → GREEN design.** The new regression test asserts
-that the `env` block of a `[pytest]` INI is actually **applied** to `os.environ`
-(e.g. `USE_WHISPER_FALLBACK == "false"`). Applying `env` requires the **pytest-env**
-plugin, which is **missing from the host `/opt/homebrew/bin/python3`** (Py 3.14,
-has pytest/pytest-cov but NOT pytest-env) and is declared only in
-`requirements-dev.txt`. Therefore:
-
-- **RED**: a repo-local venv created from `/opt/homebrew/bin/python3` with only
-  `requirements.txt` installed (no pytest-env) → the env-applied assertion fails.
-  Genuine behavior failure, not a broken import/API.
-- **GREEN**: after installing `requirements-dev.txt` (adds pytest-env) into the same
-  venv → the same assertion passes.
-
-Both RED and GREEN run the **identical** focused command
-`python3 -m pytest test/test_config.py -v`, so `proof-capture.py` accepts them as a
-valid chronological pair. The new test also asserts the `[tool:pytest]` (invalid) vs
-`[pytest]` (valid) distinction for `testpaths`/`addopts`/`env` via temp-copied INIs
-(this part is pytest-core behavior and passes in both phases; the env-applied
-assertion is what carries the genuine RED→GREEN).
-
-If, after the venv prep, no legitimate missing regression remains, the task permits
-reporting that **evidence limitation** instead of inventing a cycle — but the
-env-applied assertion above is a genuine, available RED, so a cycle is expected.
+## Solution (minimal)
+- Keep the working `pytest.ini` + the 2 existing tests untouched.
+- Add **one** new regression that (a) proves a temp `[tool:pytest]` INI is ignored
+  (testpaths/addopts come back empty — pure pytest-core behavior) and (b) proves a
+  temp `[pytest]` INI is read (testpaths/addopts), with the `env` block read via
+  `getini("env")`. Part (b)'s `env` assertion is the **genuine RED→GREEN carrier**:
+  it fails (`ValueError`) when the `pytest-env` plugin is absent and passes when
+  present — without ever applying env to a running process.
+- Drive a real RED→GREEN in an ignored repo-local venv: **RED** = venv with
+  `requirements.txt` only (no pytest-env) → the new test + the existing env test
+  fail; **GREEN** = add `requirements-dev.txt` (installs pytest-env) into the **same**
+  venv, re-run the **identical** command → all pass.
+- Then run current, reproducible verification (focused pytest + `make test`) in that
+  venv, record versions/exit codes, and confirm a controlled failing test yields a
+  nonzero exit.
 
 ## Implementation
 
 ### Pre-implementation checklist
-- [ ] Confirm `youtube-transcript-pipeline/pytest.ini` is `[pytest]` (do not change).
-- [ ] Confirm the two existing regression tests in `test_config.py` are intact (do not change).
-- [ ] Back up the rejected proof to a clearly-labelled previous-attempt artifact
-      (see step 1) BEFORE running `proof-capture.py`, so the helper can create a
-      fresh `...red-green-proof.md` at the canonical path.
+- [ ] Confirm `pytest.ini` is `[pytest]` and the 2 existing tests are intact — do NOT change them.
+- [ ] Rename the rejected proof to a labelled previous-attempt artifact (step 1) BEFORE running `proof-capture.py red`.
 
-### Kroky implementace
-
-1. **Preserve old proof as previous-attempt artifact.**
-   Rename the rejected file so `proof-capture.py` can create a fresh one:
+### Steps
+1. **Preserve the old proof as a previous-attempt artifact** (so the helper can create a fresh proof at the canonical path):
    ```
    mv plans/checkpoints/task-b521afdb-0ad4-41a6-bff2-7ad9dd9336df.red-green-proof.md \
       plans/checkpoints/task-b521afdb-0ad4-41a6-bff2-7ad9dd9336df.red-green-proof.previous-attempt.md
    ```
-   Optionally prepend a header line `# PREVIOUS ATTEMPT (rejected: missing structured timestamps/commands/exits)`.
+   Optionally prepend a header: `# PREVIOUS ATTEMPT (rejected: missing structured timestamps/commands/exits)`.
 
-2. **Prepare repo-local ignored venv** (no global installs). `.gitignore` already
-   ignores `.venv/`, `htmlcov/`, `.coverage/`, `.pytest_cache/`.
+2. **Create the repo-local ignored venv** (no global installs), starting at the RED state (runtime deps only, **no pytest-env**):
    ```
-   /opt/homebrew/bin/python3 -m venv /Users/michal/Projects/ai-research/.venv
-   # RED state: only runtime deps (no pytest-env)
-   /Users/michal/Projects/ai-research/.venv/bin/pip install -r youtube-transcript-pipeline/requirements.txt
+   /opt/homebrew/bin/python3 -m venv .venv
+   .venv/bin/pip install -r youtube-transcript-pipeline/requirements.txt
    ```
 
-3. **Add the new regression test** to
-   `youtube-transcript-pipeline/test/test_config.py` (append, do not touch the
-   existing tests). See the TDD skeleton below for exact code.
+3. **Add the one new regression** to `test/test_config.py` (append; do not touch the existing tests or `_load_pipeline_pytest_config`). See TDD skeleton. `tmp_path` is a built-in pytest fixture — no new import needed.
 
-4. **RED**: run the focused command through `skill:tdd` `proof-capture.py red --`
-   with the venv active but **pytest-env not yet installed** (from step 2).
-   Confirm the env-applied test fails. VERIFY the fresh
-   `plans/checkpoints/<task-id>.red-green-proof.md` was created with the RED section
-   before writing more.
-
-5. **GREEN**: install dev deps into the same venv, re-run the same command.
+4. **RED** — run the focused command via `skill:tdd` `proof-capture.py red --` with the venv active (pytest-env **not** yet installed):
    ```
-   /Users/michal/Projects/ai-research/.venv/bin/pip install -r youtube-transcript-pipeline/requirements-dev.txt
+   TASK_ID=task-b521afdb-0ad4-41a6-bff2-7ad9dd9336df python3 "$SKILL_DIR/scripts/proof-capture.py" red -- \
+     .venv/bin/python3 -m pytest test/test_config.py -v
    ```
-   Run through `proof-capture.py green --` with the **identical** command. Verify
-   the GREEN section was appended.
+   (run **from** `youtube-transcript-pipeline/`). Confirm the new regression **and**
+   `test_pytest_ini_env_block_present` **FAIL** for the `env`-option reason, then
+   **verify** a fresh `plans/checkpoints/<task-id>.red-green-proof.md` was created
+   with the RED section before any further work.
 
-6. **Current verification (reproducible).** With venv bin first on PATH
-   (`export PATH=/Users/michal/Projects/ai-research/.venv/bin:$PATH`):
-   - From pipeline dir: `python3 -m pytest test/test_config.py` → record loaded
+5. **GREEN** — install the declared dev deps into the **same** venv, then re-run the **identical** command via `proof-capture.py green --`:
+   ```
+   .venv/bin/pip install -r youtube-transcript-pipeline/requirements-dev.txt
+   TASK_ID=task-b521afdb-0ad4-41a6-bff2-7ad9dd9336df python3 "$SKILL_DIR/scripts/proof-capture.py" green -- \
+     .venv/bin/python3 -m pytest test/test_config.py -v
+   ```
+   Confirm **0 failures**, then verify the GREEN section was appended.
+
+6. **Current reproducible verification** — with the venv bin first on PATH
+   (`export PATH="$(pwd)/.venv/bin:$PATH"`, so the literal `python3` in `make test`
+   resolves to the venv):
+   - From pipeline dir: `python3 -m pytest test/test_config.py -v` → record loaded
      `testpaths`/`addopts`/`env`, collection result, exit code.
    - From repo root: `make test` → record result + exit code (mixed Node/Python
-     gate; do not replace it).
-   - Record interpreter + plugin versions: `python3 --version`,
-     `python3 -m pytest --version`, `python3 -c "import importlib.metadata as m;
-     print('pytest-env', m.version('pytest-env')); print('pytest-cov',
-     m.version('pytest-cov'))"`.
+     gate — do not replace it).
+   - Record versions: `python3 --version`, `python3 -m pytest --version`, and
+     `python3 -c "import importlib.metadata as m; print('pytest-cov', m.version('pytest-cov')); print('pytest-env', m.version('pytest-env'))"`.
 
-7. **Controlled failing test → nonzero exit.** Temporarily add a deliberately
-   failing test (e.g. `assert 1 == 0`) in a throwaway test file (or a temp test),
-   run `python3 -m pytest` on it, confirm **nonzero exit code**, then remove it.
-   Record the command + exit code. This proves the suite still fails loudly when a
-   test is broken (not a false-green).
+7. **Controlled failing test → nonzero exit** — add a throwaway test (e.g. a temp
+   file with `def test_x(): assert 1 == 0`), run `python3 -m pytest` on it, confirm
+   a **nonzero** exit code, then delete it. Record command + exit code (proves the
+   suite still fails loudly; no false-green).
 
-8. **Final checkpoint.** Write
-   `plans/checkpoints/<task-id>.checkpoint.md` with: changed paths (only
-   `test_config.py` appended + the new test), fresh proof path, exact commands +
-   results (RED/GREEN + focused + make test + controlled-fail), and any unresolved
-   blocker.
+8. **Final checkpoint** — write `plans/checkpoints/<task-id>.checkpoint.md` with:
+   changed paths (only `test_config.py` appended + the new test), the fresh proof
+   path, exact commands/results (RED, GREEN, focused, `make test`, controlled-fail),
+   and any unresolved blocker. **Current** tests + proof — not historical success —
+   determine completion.
 
-9. **Docs (optional, only if needed).** If the venv prep is non-obvious, add one
-   short "Test preparation" bullet to pipeline README `## 🧪 Testování` and/or
-   root CLAUDE.md. No dependency/app redesign.
+9. **Docs (optional, only if non-obvious)** — one short "Test preparation" bullet
+   (venv from `/opt/homebrew/bin/python3` + `requirements.txt` then
+   `requirements-dev.txt`) in pipeline README `## 🧪 Testování`. No dependency/app redesign.
 
-## Files to Modify
+10. **save-learning** (mandatory, last action).
 
-| Soubor | Změna |
-|--------|-------|
-| `youtube-transcript-pipeline/test/test_config.py` | **Append** new regression test(s) using temp-copied INIs; do NOT modify the 2 existing tests or `_load_pipeline_pytest_config`. |
-| `plans/checkpoints/<task-id>.red-green-proof.md` | **Fresh** TDD proof via `proof-capture.py` (old one renamed to `.previous-attempt.md`). |
-| `plans/checkpoints/<task-id>.checkpoint.md` | **New** final checkpoint (changed paths, commands/results, blockers). |
+## Files to modify
+
+| File | Change |
+|------|--------|
+| `youtube-transcript-pipeline/test/test_config.py` | **Append** one new regression (temp-copied INI, section distinction + `getini("env")`). Do NOT modify the 2 existing tests or `_load_pipeline_pytest_config`. |
+| `plans/checkpoints/<task-id>.red-green-proof.md` | **Fresh** proof via `proof-capture.py` (old one renamed to `.previous-attempt.md`). |
 | `plans/checkpoints/<task-id>.red-green-proof.previous-attempt.md` | **Renamed** from the rejected proof (preserved, labelled). |
-| `youtube-transcript-pipeline/pytest.ini` | **No change** — already `[pytest]`, keep it. |
-| `youtube-transcript-pipeline/README.md` / root `CLAUDE.md` | **Optional** — one-line venv/test-prep note only if needed. |
+| `plans/checkpoints/<task-id>.checkpoint.md` | **New** final checkpoint. |
+| `youtube-transcript-pipeline/pytest.ini` | **No change** — already `[pytest]`. |
+| `youtube-transcript-pipeline/README.md` | **Optional** — one-line venv/test-prep note only if needed. |
 
 ## TDD
 
-**Workflow pro implementujícího agenta (dle skill:tdd):**
-> Implementace TDD cyklu dle skill:tdd — RED/GREEN evidence se zapisuje do
+**Workflow for the implementing agent (per `skill:tdd`):**
+> Implement the TDD cycle per `skill:tdd` — RED/GREEN evidence is captured into
 > `plans/checkpoints/task-b521afdb-0ad4-41a6-bff2-7ad9dd9336df.red-green-proof.md`
-> pomocí `scripts/proof-capture.py`. Before running RED, rename the old rejected
-> proof to `...red-green-proof.previous-attempt.md` so the helper can create a
-> fresh file at the canonical path.
+> using `scripts/proof-capture.py`. Before RED, rename the old rejected proof to
+> `...red-green-proof.previous-attempt.md` so the helper can create a fresh file.
+> Derive `SKILL_DIR` from the loaded `skill:tdd` `SKILL.md`; never use
+> `~/.openclaw/workspace`.
 
-### Targeted Tests
+### Targeted tests
+- **Test file:** `youtube-transcript-pipeline/test/test_config.py` (append; existing 4 tests + 2 new characterization tests untouched).
+- **Framework:** pytest 9.x in an ignored `.venv/` (RED without pytest-env, GREEN with it).
+- **Run command (identical for RED and GREEN), from `youtube-transcript-pipeline/`:**
+  ```
+  .venv/bin/python3 -m pytest test/test_config.py -v
+  ```
+- **Edit hint:** APPEND a new `def test_...` after `test_pytest_ini_env_block_present`.
 
-**Test file:** `youtube-transcript-pipeline/test/test_config.py` (append new
-functions; existing 4 tests untouched)
-**Framework:** pytest 9.x (host) / venv pytest with pytest-env
-**Run command (identical for RED and GREEN):**
-```
-PATH=/Users/michal/Projects/ai-research/.venv/bin:$PATH python3 -m pytest test/test_config.py -v
-```
-(run **from** `youtube-transcript-pipeline/`)
-
-**Edit hint:** APPEND below the existing two regression tests (after
-`test_pytest_ini_env_block_present`). Do not edit them.
-
-### Runnable skeleton (appended to test_config.py)
-
+### Runnable skeleton (append to `test_config.py`)
 ```python
-import textwrap
+def test_temp_ini_distinguishes_invalid_tool_pytest_section(tmp_path):
+    bad = tmp_path / "bad.ini"
+    bad.write_text("[tool:pytest]\ntestpaths = test\naddopts = --cov=src -v\n")
+    cfg_bad = pytest.Config.fromdictargs({}, ["-c", str(bad)])
+    assert cfg_bad.getini("testpaths") == []
+    assert cfg_bad.getini("addopts") == []
 
-_TMP_INI = textwrap.dedent(
-    """
-    [{section}]
-    testpaths = test
-    addopts = --cov=src -v
-    env =
-        LANG = cs
-        USE_WHISPER_FALLBACK = false
-    """
-)
-
-
-def _write_temp_ini(tmp_path, section: str) -> Path:
-    p = tmp_path / "pytest.ini"
-    p.write_text(_TMP_INI.format(section=section))
-    return p
-
-
-def test_temp_tool_pytest_section_is_ignored(tmp_path):
-    """Invalid [tool:pytest] section must be ignored by pytest."""
-    p = _write_temp_ini(tmp_path, "tool:pytest")
-    cfg = pytest.Config.fromdictargs({}, ["-c", str(p)])
-    assert cfg.getini("addopts") == []
-    assert cfg.getini("testpaths") == []
-    assert "USE_WHISPER_FALLBACK = false" not in cfg.getini("env")
-
-
-def test_temp_pytest_section_is_read(tmp_path):
-    """Valid [pytest] section must be read (testpaths/addopts/env)."""
-    p = _write_temp_ini(tmp_path, "pytest")
-    cfg = pytest.Config.fromdictargs({}, ["-c", str(p)])
-    assert "--cov=src" in cfg.getini("addopts")
-    assert cfg.getini("testpaths") == ["test"]
-    assert "USE_WHISPER_FALLBACK = false" in cfg.getini("env")
-
-
-def test_env_block_is_applied_to_environment(tmp_path):
-    """Genuine RED carrier: env block is only applied to os.environ when
-    the pytest-env plugin is installed. Fails (RED) without pytest-env,
-    passes (GREEN) after requirements-dev is installed."""
-    _write_temp_ini(tmp_path, "pytest")
-    # -c temp.ini carries the env block; pytest-env must apply it.
-    assert os.environ.get("USE_WHISPER_FALLBACK") == "false"
+    good = tmp_path / "good.ini"
+    good.write_text(
+        "[pytest]\ntestpaths = test\naddopts = --cov=src -v\n"
+        "env =\n    USE_WHISPER_FALLBACK = false\n"
+    )
+    cfg_good = pytest.Config.fromdictargs({}, ["-c", str(good)])
+    assert cfg_good.getini("testpaths") == ["test"]
+    assert "--cov=src" in cfg_good.getini("addopts")
+    assert "USE_WHISPER_FALLBACK = false" in cfg_good.getini("env")
 ```
+`tmp_path` is a built-in pytest fixture; `pytest` is already imported. No new import.
 
-Note: `Path` is already imported at the top of `test_config.py` (`from pathlib
-import Path`). `os` is already imported. `pytest` is already imported. `textwrap`
-must be added to the top import block (the only new import).
+The last assertion (`getini("env")`) is the **genuine RED→GREEN carrier**: it raises
+`ValueError: unknown config value: 'env'` when the `pytest-env` plugin is absent and
+returns the list once `pytest-env` is installed. It checks the *config* (read via
+pytest's machinery) and never applies env to a running process — avoiding attempt 1's
+invalid `os.environ` approach.
 
 ### RED/GREEN table
+| Test | RED (venv, no pytest-env) | GREEN (venv, + requirements-dev) |
+|------|----------------------------|----------------------------------|
+| `test_temp_ini_distinguishes_invalid_tool_pytest_section` | **FAILED** — `getini("env")` → `ValueError: unknown config value: 'env'` | **PASSED** |
+| `test_pytest_ini_env_block_present` (existing) | **FAILED** — same `ValueError` on the real `pytest.ini` | **PASSED** |
+| `test_pytest_ini_section_is_read_by_pytest` (existing) | passed | passed |
 
-| Test | RED (venv w/o pytest-env) | GREEN (venv w/ pytest-env) |
-|------|---------------------------|----------------------------|
-| `test_temp_tool_pytest_section_is_ignored` | passes (core behavior) | passes |
-| `test_temp_pytest_section_is_read` | passes (core behavior) | passes |
-| `test_env_block_is_applied_to_environment` | **FAILED** — `USE_WHISPER_FALLBACK` not in `os.environ` (no plugin to apply `env`) | **PASSED** — plugin applies `env` block |
-
-The genuine RED is `test_env_block_is_applied_to_environment` failing for a
-behavioral reason (env not applied because `pytest-env` is absent), **not** a
-broken import/API. RED and GREEN run the **same** command; the only change between
-phases is installing `requirements-dev.txt` (adds pytest-env) into the venv.
+Note: the `[tool:pytest]` portion of the new test (testpaths/addopts) is core
+pytest behavior and passes in both phases; the `env` assertion is what carries the
+genuine RED. If, after venv prep, no legitimate missing regression remains, report
+that **evidence limitation** rather than inventing a cycle — but the `env`-option
+gap above is a genuine, available RED, so a cycle is expected.
 
 ### Regression
-- [ ] Focused `python3 -m pytest test/test_config.py -v` (RED then GREEN) — via `proof-capture.py`.
-- [ ] Full pipeline suite `python3 -m pytest -q` after GREEN — record count (the
-      prior run reported 44 = 42 baseline + 3… 42+2 existing characterization + the
-      3 new = expect ~47; counts are a **historical baseline, not a fixed
-      assertion** — record the actual number).
+- [ ] Focused `python3 -m pytest test/test_config.py -v` (RED then GREEN) via `proof-capture.py`.
+- [ ] Full pipeline suite `python3 -m pytest -q` after GREEN — record the **actual** count (42–44 are historical baselines, **not** a fixed assertion).
 - [ ] Root `make test` (mixed Node/Python gate) — record result + exit code.
 - [ ] Controlled failing temp test → confirm **nonzero** exit, then remove it.
 
 ## Dependencies
-
-- Host `/opt/homebrew/bin/python3` (Python 3.14.4) — has pytest/pytest-cov,
-  **missing pytest-env**.
-- `requirements-dev.txt` (already declares pytest-env>=0.8.0) + `requirements.txt`
-  — ordinary `pip` install only, inside the ignored `.venv/`; **no global installs**.
+- Host `/opt/homebrew/bin/python3` (Py 3.14.4): pytest 9.0.3, pytest-cov 7.0.0, **no pytest-env**.
+- `requirements.txt` (runtime) + `requirements-dev.txt` (declares `pytest-env>=0.8.0`) — ordinary `pip` install **inside the ignored `.venv/` only; no global installs**.
 - `skill:tdd` → `scripts/proof-capture.py` for structured proof capture.
-- `.gitignore` already ignores `.venv/`, `htmlcov/`, `.coverage/`,
-  `.pytest_cache/` — temporary coverage outputs stay untracked/disposable.
+- `.gitignore` already ignores `.venv/`, `htmlcov/`, `.coverage`, `.pytest_cache/` — temp coverage outputs stay untracked/disposable.
 - No new external deps, no network/credentials, no app behavior change.
-
-
-## Review Feedback
-
-The plan overengineers a one-line configuration fix, and its proposed RED test is invalid because creating a temporary INI during test execution cannot apply its `env` settings to the already-running pytest process.
