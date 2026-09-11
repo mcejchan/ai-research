@@ -20,3 +20,8 @@ Repository `/Users/michal/Projects/ai-research` only. Read the two files above, 
 - Fresh evidence distinguishes the bad versus good HEADER, with unchanged tests/environment, and records the copied scope transparently. Never claim it proves pre-implementation history.
 - Do not weaken/disable TDD or acceptance, invent a waiver, or treat proof formatting alone as semantic acceptance. If the existing evidence contract cannot accept this explicitly labelled reproduction, report that exact limitation and current verification results; do not manufacture another cycle or add tests to evade it.
 - Final note: changed paths (including none for production), commands/results, proof location and any blocker. Reuse required pipeline artifacts rather than inventing extra reports. Do not operate task/batch lifecycle yourself.
+
+## Previous Plan (rejected - attempt 1)
+Plan file: /Users/michal/Projects/ai-research/plans/2026-09-11_task-b521afdb-0ad4-41a6-bff2-7ad9dd9336df_fix-ignored-pytest-ini-section-in-ai-research.md
+Review feedback: The plan overengineers a one-line pytest configuration fix with venv recreation, proof-file relocation, a disposable repository copy, and synthetic RED/GREEN capture instead of directly verifying the already-fixed root cause and tests.
+Read the previous plan, understand what was wrong, and produce a corrected plan.
