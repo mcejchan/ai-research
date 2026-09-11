@@ -3,23 +3,20 @@ title: Fix ignored AI Research pytest configuration
 type: implementation
 ---
 
-## Goal
-Complete and verify the existing pytest configuration repair. Preserve working changes; deliver reproducible current verification and valid chronological TDD evidence, not another account of the previous run.
+## Goal and current state
+Finish verification of the EXISTING repair, not a second implementation. `youtube-transcript-pipeline/pytest.ini` already uses `[pytest]`; `test/test_config.py` already has two regression tests using `pytest.Config.fromdictargs`. Preserve both. The remaining obligation is trustworthy current verification and task-bound evidence. This brief replaces the previous rejected recovery instructions.
 
-## Exact files/functions
-Within this repository only: `youtube-transcript-pipeline/pytest.ini`, `youtube-transcript-pipeline/test/test_config.py` (`_load_pipeline_pytest_config` and its two regression tests). Read `requirements-dev.txt`, `requirements.txt`, pipeline README testing setup, and root Makefile as needed. Only extend setup documentation if needed; no dependency or application redesign.
+## Scope
+Repository `/Users/michal/Projects/ai-research` only. Read the two files above, pipeline requirements/requirements-dev and root Makefile. No new permanent regression test is required; no application changes, refactor, new dependencies, setup documentation project, or unrelated repair. A short verification plan is sufficient. Do not follow the previous plan's dependency-driven RED/GREEN approach.
 
-## Verified cause/intended change
-The previous attempt ALREADY changed `[tool:pytest]` to `[pytest]` and added two tests using `pytest.Config.fromdictargs` (valid API; `from_path` does not exist). Keep them. Historical RED/GREEN exists but its handwritten proof was rejected for missing structured timestamps/commands/exits. Do not backfill those fields or present old evidence as this run.
-Implement the TDD cycle using skill:tdd and its discovered proof-capture helper. Preserve the old proof as a clearly labelled previous-attempt artifact before creating fresh task-bound proof. Add a small regression using a temporary copied INI: real pytest loading must distinguish its invalid `[tool:pytest]` section from valid `[pytest]`, including testpaths/addopts/env. Obtain genuine chronological RED then GREEN while developing that regression; a broken API/import is not valid RED. Never revert the working repository configuration merely to manufacture a failure. If no legitimate missing regression remains, report that evidence limitation instead of inventing a cycle.
+## Minimal verification and evidence
+1. Use one repository-local ignored virtualenv with BOTH declared requirements files installed before measuring any test result. Use its absolute Python path, and prepend its absolute bin directory to PATH for root `make test`. Record interpreter/plugin versions once. Missing dependencies are setup blockers, NEVER the RED for this repair.
+2. Run existing `test/test_config.py` from the pipeline directory, then root `make test`. Record actual commands, working directories and exits. Do not assume historical test counts. Successful current verification does not establish historical TDD chronology.
+3. The task still requires structured RED/GREEN evidence. The authorized minimal approach is a CURRENT isolated reproduction of the original defect, using the existing tests, not an invented new regression: create a disposable copy of the pipeline inside an ignored repository-local directory (exclude environments, caches and generated artifacts). In that copy only, change `[pytest]` to `[tool:pytest]`. With the fully prepared environment, run the two existing pytest-config regression tests and verify assertion failures caused by ignored config. Change only the copied header back to `[pytest]`, rerun the identical command in the identical environment, and require success. Do not change plugins, assertions or dependencies between phases. Never revert the working repository configuration.
+4. Use the installed `tdd` skill's proof-capture helper for real timestamps, commands and exits. Keep proof task-bound at the repository's canonical checkpoint location; label it explicitly as a fresh isolated reproduction of an already implemented repair, NOT the original development sequence. Preserve the rejected historical proof unchanged in a clearly named previous-attempt artifact if the helper requires a free canonical path; do not overwrite an existing archive. No hand-filled historical timestamps. This reproduction already supplies the relevant nonzero-exit check; do not add a separate controlled failing test.
 
-## Boundaries/non-goals
-Bounded single-owner config/test repair; no architecture search, external repositories, credentials, live providers, downloads of video, deployment or application behavior changes. Preserve unrelated files. Existing expected42/44 counts are historical baselines, not fixed assertions. Do not relax acceptance, skip required plugins, or replace the mixed Node/Python gate.
-
-## Verification
-Host check now: `/opt/homebrew/bin/python3` is Python3.14 with pytest/pytest-cov but without pytest-env; requirements-dev already declares it. Prepare a repository-local ignored virtualenv from that interpreter using the documented requirements and requirements-dev (ordinary dependency installation only); no global installs. Put its bin directory first in PATH for BOTH focused checks and root `make test`, whose Python command is literal python3. Record interpreter/plugin versions. From pipeline directory run `python3 -m pytest test/test_config.py`; from root run `make test`. Record loaded testpaths/addopts/env, collection changes and actual exit codes; verify a controlled failing temporary test preserves nonzero exit. Keep temporary coverage outputs ignored/disposable. Final checkpoint: changed paths, fresh proof path, exact commands/results, and any unresolved blocker. Current tests and proof—not historical success—determine completion.
-
-## Previous Plan (rejected - attempt 1)
-Plan file: /Users/michal/Projects/ai-research/plans/2026-09-10_task-b521afdb-0ad4-41a6-bff2-7ad9dd9336df_fix-ignored-pytest-ini-section-in-ai-research.md
-Review feedback: The plan overengineers a one-line configuration fix, and its proposed RED test is invalid because creating a temporary INI during test execution cannot apply its `env` settings to the already-running pytest process.
-Read the previous plan, understand what was wrong, and produce a corrected plan.
+## Acceptance and stop conditions
+- Working repair and existing tests preserved; current focused check and mixed Node/Python `make test` pass in the same declared environment.
+- Fresh evidence distinguishes the bad versus good HEADER, with unchanged tests/environment, and records the copied scope transparently. Never claim it proves pre-implementation history.
+- Do not weaken/disable TDD or acceptance, invent a waiver, or treat proof formatting alone as semantic acceptance. If the existing evidence contract cannot accept this explicitly labelled reproduction, report that exact limitation and current verification results; do not manufacture another cycle or add tests to evade it.
+- Final note: changed paths (including none for production), commands/results, proof location and any blocker. Reuse required pipeline artifacts rather than inventing extra reports. Do not operate task/batch lifecycle yourself.
