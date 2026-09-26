@@ -1,0 +1,50 @@
+jscpd:
+  minTokens: 70
+  minLines: 6
+  ignore:
+    - data/**
+    - research/**
+    - transcripts/**
+    - docs/**
+    - plans/**
+    - learnings/**
+    - knowledge/**
+    - tmp/**
+    - youtube-transcript-pipeline/htmlcov/**
+  minTokensByFormat:
+    python: 60
+    javascript: 70
+knip:
+  entryPoints:
+    - quiz/app.js
+    - quiz/build-index.js
+    - quiz/validate-quiz.js
+    - yt-viewer/server.js
+  project:
+    - quiz/*.js
+    - yt-viewer/*.js
+  ignore:
+    - data/**
+    - research/**
+    - transcripts/**
+    - docs/**
+    - plans/**
+    - learnings/**
+    - knowledge/**
+    - youtube-transcript-pipeline/**
+    - helper-scripts/**
+depcruise:
+  entryPoints:
+    - quiz/*.js
+    - yt-viewer/*.js
+  ignore:
+    - data/**
+    - research/**
+    - transcripts/**
+    - docs/**
+    - plans/**
+    - learnings/**
+    - knowledge/**
+    - youtube-transcript-pipeline/**
+    - helper-scripts/**
+  couplingThreshold: 8
