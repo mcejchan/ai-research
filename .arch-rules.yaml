@@ -48,3 +48,36 @@ depcruise:
     - youtube-transcript-pipeline/**
     - helper-scripts/**
   couplingThreshold: 8
+
+codeHealth:
+  languages:
+    - .py
+    - .js
+    - .css
+  ignore:
+    - '*.test.*'
+    - '*.spec.*'
+    - tests/*
+    - .git/*
+    - .venv/*
+    - __pycache__/*
+    - node_modules/*
+    - dist/*
+    - build/*
+    - coverage/*
+    - tmp/*
+    - .tdd-test-runs/*
+    - data/*
+    - research/*
+    - transcripts/*
+    - docs/*
+    - plans/*
+    - learnings/*
+    - knowledge/*
+    - youtube-transcript-pipeline/htmlcov/*
+  pythonCoverage:
+    enabled: false
+  typescriptCoverage:
+    enabled: false
+archDebt:
+  suppressions: []
