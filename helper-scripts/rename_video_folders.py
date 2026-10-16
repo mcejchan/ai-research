@@ -6,18 +6,11 @@ to date_title-slug (ASCII kebab-case) and update references in KB files.
 
 import argparse
 import re
-import unicodedata
 import json
 from pathlib import Path
 from typing import Dict, Iterable, List, Tuple
 
-
-def slugify_title(title: str, max_length: int = 80) -> str:
-    normalized = unicodedata.normalize("NFKD", title or "").encode("ascii", "ignore").decode()
-    normalized = normalized.lower().strip()
-    normalized = re.sub(r"[^\w\s-]", "", normalized)
-    normalized = re.sub(r"[\s-]+", "-", normalized).strip("-")
-    return normalized[:max_length] if normalized else ""
+from _slug_owner import slugify_title
 
 
 def get_video_title(folder: Path) -> str:

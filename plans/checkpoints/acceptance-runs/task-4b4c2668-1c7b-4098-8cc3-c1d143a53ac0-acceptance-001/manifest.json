@@ -1,0 +1,55 @@
+{
+  "concurrentContext": [],
+  "evaluationTarget": {
+    "acceptanceDispatchAt": "2026-10-16T12:01:31+00:00",
+    "implementingStartedAt": "2026-10-16T11:54:15+00:00",
+    "taskFile": "plans/tasks/2026-10-16_tech-debt-decompose-youtube-run-and-unify-slugs.md",
+    "taskId": "task-4b4c2668-1c7b-4098-8cc3-c1d143a53ac0",
+    "title": "Tech debt: decompose YouTube processing and unify path slug ownership"
+  },
+  "goals": [
+    {
+      "id": "goal-001",
+      "summary": "`run_for_url` is below the configured function-length warning threshold and reads as a clear workflow coordinator."
+    },
+    {
+      "id": "goal-002",
+      "summary": "The duplicated path-slug algorithm has one implementation owner; `yt_pipeline.py` and `normalize_kb_paths.py` call it rather than carrying copies."
+    },
+    {
+      "id": "goal-003",
+      "summary": "The shared owner\u2019s placement/import mechanism is simple and works from both documented execution contexts; no runtime `sys.path` trick tied to the caller\u2019s current directory is introduced."
+    },
+    {
+      "id": "goal-004",
+      "summary": "Existing import contracts remain compatible or are explicitly migrated with tests."
+    },
+    {
+      "id": "goal-005",
+      "summary": "Focused tests cover extracted orchestration seams and cross-caller slug equivalence, including Unicode, slash/underscore, punctuation-only fallback, repeated separators, and title length behavior."
+    },
+    {
+      "id": "goal-006",
+      "summary": "Focused and broader offline test suites pass. The final note records exact commands/results, resulting `run_for_url` line count, the chosen slug owner, rewired callers, and any deliberately retained distinct title behavior."
+    }
+  ],
+  "policyVersion": "acceptance-policy-v2",
+  "runId": "task-4b4c2668-1c7b-4098-8cc3-c1d143a53ac0-acceptance-001",
+  "schemaVersion": "acceptance-run-v1",
+  "taskArtifacts": [
+    {
+      "mediaKind": "text/markdown",
+      "path": "plans/checkpoints/task-4b4c2668-1c7b-4098-8cc3-c1d143a53ac0.checkpoint.md",
+      "provenance": "untracked",
+      "size": 851
+    },
+    {
+      "mediaKind": "text/markdown",
+      "path": "plans/checkpoints/task-4b4c2668-1c7b-4098-8cc3-c1d143a53ac0.red-green-proof.md",
+      "provenance": "untracked",
+      "size": 9954
+    }
+  ],
+  "taskId": "task-4b4c2668-1c7b-4098-8cc3-c1d143a53ac0",
+  "tddRequired": true
+}

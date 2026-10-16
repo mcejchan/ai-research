@@ -1,4 +1,4 @@
-import os, re, json, tempfile, subprocess, pathlib, time, unicodedata
+import os, re, json, tempfile, subprocess, pathlib, time
 from dataclasses import dataclass
 from urllib.parse import urlparse, parse_qs
 from typing import List, Optional, Dict
@@ -14,6 +14,7 @@ load_dotenv()
 from src.llm_client import analyze_text, embed_text
 # Drive helpers
 from src.drive_client import DriveClient
+from src.path_slugs import slugify_title, slugify_path_segment
 # Transcript
 from youtube_transcript_api import YouTubeTranscriptApi, NoTranscriptFound
 
@@ -114,27 +115,6 @@ def fetch_transcript(video_id: str, lang_priorities=("en", "cs")) -> List[Dict]:
         raise
 
 
-def slugify_title(title: str, max_length: int = 80) -> str:
-    """Create a filesystem-friendly slug from a video title."""
-    normalized = unicodedata.normalize("NFKD", title or "").encode("ascii", "ignore").decode()
-    normalized = normalized.lower().strip()
-    # Allow word chars and spaces/hyphens, strip other punctuation
-    normalized = re.sub(r"[^\w\s-]", "", normalized)
-    normalized = re.sub(r"[\s-]+", "-", normalized).strip("-")
-    if not normalized:
-        return ""
-    return normalized[:max_length]
-
-def slugify_path_segment(text: str, fallback: str = "unknown") -> str:
-    """Normalize path segment to ASCII/kebab-case to avoid spaces/diacritics."""
-    normalized = unicodedata.normalize("NFKD", text or "").encode("ascii", "ignore").decode()
-    normalized = normalized.replace("/", " ").replace("_", " ")
-    normalized = normalized.lower().strip()
-    normalized = re.sub(r"[^\w\s-]", "", normalized)
-    normalized = re.sub(r"[\s-]+", "-", normalized).strip("-")
-    return normalized or fallback
-
-
 def whisper_transcribe(video_url: str, lang_hint: str = "auto") -> List[Dict]:
     # Download audio with yt-dlp
     with tempfile.TemporaryDirectory() as td:
@@ -182,6 +162,56 @@ def get_basic_meta(video_url: str) -> Dict:
         raise
 
 
+def acquire_transcript(video_id: str, url: str):
+    """Prefer platform captions, falling back only on retrieval failure."""
+    try:
+        return fetch_transcript(video_id, lang_priorities=("cs", "en"))
+    except Exception:
+        if not USE_WHISPER:
+            raise
+        return whisper_transcribe(url)
+
+
+def upload_transcript_artifacts(segments, clean_txt: str, drive: DriveClient, folder_id: str):
+    """Upload the original segment representation followed by the cleaned text."""
+    segments_dict = []
+    for s in segments:
+        if hasattr(s, 'text'):
+            segments_dict.append({
+                "text": s.text,
+                "start": getattr(s, 'start', 0),
+                "duration": getattr(s, 'duration', 0)
+            })
+        else:
+            segments_dict.append(s)
+
+    drive.upload_string(json.dumps(segments_dict, ensure_ascii=False, indent=2), "transcript_raw.json", folder_id)
+    drive.upload_string(clean_txt, "transcript_clean.txt", folder_id)
+
+
+def upload_analysis(clean_txt: str, meta: Dict, url: str, drive: DriveClient, folder_id: str):
+    """Attempt analysis without preventing transcript capture on LLM failure."""
+    try:
+        max_chars = 25000
+        analysis_text = clean_txt if len(clean_txt) <= max_chars else clean_txt[:max_chars] + "\n\n[PŘEPIS ZKRÁCEN PRO ANALÝZU]"
+
+        print(f"🧠 Spouštím LLM analýzu (délka: {len(analysis_text):,} znaků)...")
+        analysis = analyze_text(analysis_text, intent="video_general", lang=LANG, extra_context={
+            "title": meta.get("title"), "channel": meta.get("channel"), "url": url
+        })
+        drive.upload_string(analysis, "analysis_main.md", folder_id)
+        print("✅ LLM analýza úspěšně vytvořena")
+    except Exception as e:
+        print(f"⚠️ LLM analýza přeskočena ({str(e)})")
+
+
+def upload_embedding(clean_txt: str, drive: DriveClient, folder_id: str):
+    """Store minimal vector metadata for the full cleaned transcript."""
+    vec = embed_text(clean_txt)
+    # persist minimal NPZ next to transcript
+    drive.upload_string(json.dumps({"model": "openai", "dim": len(vec), "note": "store vectors locally if big"}), "vectors.json", folder_id)
+
+
 def run_for_url(url: str, drive: DriveClient):
     drive_folder_id = os.getenv("DRIVE_FOLDER_ID")
     if not drive_folder_id and not drive.mock_mode:
@@ -197,55 +227,15 @@ def run_for_url(url: str, drive: DriveClient):
     # Create channel/vid folder on Drive
     base_folder_id = drive.ensure_path(["youtube", channel, folder_name], root_id=drive_folder_id)
 
-    # 1) transcript
-    try:
-        segments = fetch_transcript(vid, lang_priorities=("cs", "en"))
-    except Exception:
-        if not USE_WHISPER:
-            raise
-        segments = whisper_transcribe(url)
-
-    # 2) clean text
+    segments = acquire_transcript(vid, url)
     clean_txt = clean_text_from_segments(segments)
+    upload_transcript_artifacts(segments, clean_txt, drive, base_folder_id)
+    upload_analysis(clean_txt, meta, url, drive, base_folder_id)
 
-    # 3) save raw + txt - konvertujeme objekty na dictionary
-    segments_dict = []
-    for s in segments:
-        if hasattr(s, 'text'):
-            segments_dict.append({
-                "text": s.text,
-                "start": getattr(s, 'start', 0),
-                "duration": getattr(s, 'duration', 0)
-            })
-        else:
-            segments_dict.append(s)
-    
-    drive.upload_string(json.dumps(segments_dict, ensure_ascii=False, indent=2), "transcript_raw.json", base_folder_id)
-    drive.upload_string(clean_txt, "transcript_clean.txt", base_folder_id)
-
-    # 4) LLM analyses - přeskočíme pokud nemáme kredity
-    try:
-        # Zkrátíme text pokud je příliš dlouhý (max ~25k znaků pro spolehlivost)
-        max_chars = 25000
-        analysis_text = clean_txt if len(clean_txt) <= max_chars else clean_txt[:max_chars] + "\n\n[PŘEPIS ZKRÁCEN PRO ANALÝZU]"
-        
-        print(f"🧠 Spouštím LLM analýzu (délka: {len(analysis_text):,} znaků)...")
-        analysis = analyze_text(analysis_text, intent="video_general", lang=LANG, extra_context={
-            "title": meta.get("title"), "channel": meta.get("channel"), "url": url
-        })
-        drive.upload_string(analysis, "analysis_main.md", base_folder_id)
-        print("✅ LLM analýza úspěšně vytvořena")
-    except Exception as e:
-        print(f"⚠️ LLM analýza přeskočena ({str(e)})")
-
-    # 5) cleanup - smazat raw transcript (už je duplicitní)
+    # Cleanup remains after analysis and before optional embeddings.
     drive.delete_file("transcript_raw.json", base_folder_id)
-
-    # 6) embeddings (volitelně)
     if MAKE_EMBED:
-        vec = embed_text(clean_txt)
-        # persist minimal NPZ next to transcript
-        drive.upload_string(json.dumps({"model": "openai", "dim": len(vec), "note": "store vectors locally if big"}), "vectors.json", base_folder_id)
+        upload_embedding(clean_txt, drive, base_folder_id)
 
 
 if __name__ == "__main__":

@@ -5,21 +5,11 @@ and update references in text files. Designed to be run locally (mock mode).
 """
 
 import argparse
-import re
-import unicodedata
 import urllib.parse
 from pathlib import Path
 from typing import Dict, Iterable, List, Tuple
 
-
-def slugify_path_segment(text: str, fallback: str = "unknown") -> str:
-    """Normalize path segment to ASCII/kebab-case to avoid spaces/diacritics."""
-    normalized = unicodedata.normalize("NFKD", text or "").encode("ascii", "ignore").decode()
-    normalized = normalized.replace("/", " ").replace("_", " ")
-    normalized = normalized.lower().strip()
-    normalized = re.sub(r"[^\w\s-]", "", normalized)
-    normalized = re.sub(r"[\s-]+", "-", normalized).strip("-")
-    return normalized or fallback
+from _slug_owner import slugify_path_segment
 
 
 def find_channels(root: Path) -> List[Path]:
