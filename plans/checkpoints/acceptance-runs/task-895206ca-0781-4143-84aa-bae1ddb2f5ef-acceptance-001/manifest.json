@@ -1,0 +1,35 @@
+{
+  "concurrentContext": [],
+  "evaluationTarget": {
+    "acceptanceDispatchAt": "2026-10-16T12:47:38+00:00",
+    "implementingStartedAt": "2026-10-16T12:40:43+00:00",
+    "taskFile": "plans/tasks/2026-10-16_followup-task-895206ca-0781-4143-84aa-bae1ddb2f5ef-acceptance-fix-tech-debt-decompose-youtube-processing-and-un.md",
+    "taskId": "task-895206ca-0781-4143-84aa-bae1ddb2f5ef",
+    "title": "[acceptance-fix] [acceptance-fix] Tech debt: decompose YouTube processing and unify path slug ownership: goal-006: Focus"
+  },
+  "goals": [
+    {
+      "id": "goal-001",
+      "summary": "[acceptance-fix] [acceptance-fix] Tech debt: decompose YouTube processing and unify path slug ownership: goal-006: Focus"
+    }
+  ],
+  "policyVersion": "acceptance-policy-v2",
+  "runId": "task-895206ca-0781-4143-84aa-bae1ddb2f5ef-acceptance-001",
+  "schemaVersion": "acceptance-run-v1",
+  "taskArtifacts": [
+    {
+      "mediaKind": "text/markdown",
+      "path": "plans/checkpoints/task-895206ca-0781-4143-84aa-bae1ddb2f5ef.checkpoint.md",
+      "provenance": "committed_from:2e6d3dc92ccd9e57dd5ecc4fb044da9d077e3796",
+      "size": 2633
+    },
+    {
+      "mediaKind": "text/markdown",
+      "path": "plans/checkpoints/task-895206ca-0781-4143-84aa-bae1ddb2f5ef.red-green-proof.md",
+      "provenance": "committed_from:2e6d3dc92ccd9e57dd5ecc4fb044da9d077e3796",
+      "size": 1804
+    }
+  ],
+  "taskId": "task-895206ca-0781-4143-84aa-bae1ddb2f5ef",
+  "tddRequired": true
+}

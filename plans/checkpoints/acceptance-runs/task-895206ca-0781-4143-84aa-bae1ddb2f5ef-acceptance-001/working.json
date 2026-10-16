@@ -1,0 +1,39 @@
+{
+  "findings": [
+    {
+      "claim": "Canonical evidence that the required focused and broader offline suites pass is missing.",
+      "crossCutting": false,
+      "findingType": "verification_evidence_missing",
+      "goalIds": [
+        "goal-001"
+      ],
+      "id": "finding-001",
+      "kind": "evidence",
+      "observed": "The supplied Test Gate status is not run and states that no Test Gate evidence exists. The checkpoint records five successful local shell runs but explicitly says they are not caller-owned canonical Test Gate runs and do not satisfy the required evidence.",
+      "rationale": "Goal 001 carries forward the requirement for focused and broader offline suites to pass, and the caller permits assessment of this test-artifact goal only from supplied artifacts and the canonical Test Gate reference. Local checkpoint results cannot establish the required canonical verification.",
+      "required": "Provide caller-owned canonical Test Gate evidence for all five required focused and broader offline verification commands, including cwd, argv, successful status, exit code, and test counts.",
+      "sources": [
+        {
+          "kind": "test-gate",
+          "reference": "status:not-run"
+        },
+        {
+          "kind": "artifact",
+          "reference": "plans/checkpoints/task-895206ca-0781-4143-84aa-bae1ddb2f5ef.checkpoint.md:Verification results"
+        }
+      ]
+    }
+  ],
+  "goals": [
+    {
+      "id": "goal-001",
+      "status": "UNMET",
+      "summary": "[acceptance-fix] [acceptance-fix] Tech debt: decompose YouTube processing and unify path slug ownership: goal-006: Focus"
+    }
+  ],
+  "policyVersion": "acceptance-policy-v2",
+  "runId": "task-895206ca-0781-4143-84aa-bae1ddb2f5ef-acceptance-001",
+  "schemaVersion": "acceptance-run-v1",
+  "status": "working",
+  "taskId": "task-895206ca-0781-4143-84aa-bae1ddb2f5ef"
+}
