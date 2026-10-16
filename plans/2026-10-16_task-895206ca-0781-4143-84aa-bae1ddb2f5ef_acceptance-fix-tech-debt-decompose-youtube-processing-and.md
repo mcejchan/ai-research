@@ -1,4 +1,4 @@
-# Canonical offline verification evidence follow-up
+# Plan: Canonical offline verification evidence follow-up
 
 ## Progress
 - [x] Resolve canonical plan path.
@@ -24,7 +24,7 @@
 - Require fresh successful canonical Test Gate results for all five commands in Implementation step 2, with the registered `cd ~/Projects/ai-research && make test` as the project-wide gate. Check the gate record against recorded cwd, exit 0, and suite summaries; do not infer counts from prior runs.
 - Read back checkpoint and state links; run `git diff --check` and verify no production/test files changed when gates pass.
 
-## TDD: skip
+## TDD
 - This is an evidence-only operation on an already implemented refactor; preserve the historical genuine RED and capture fresh canonical GREEN without inventing another RED.
 
 ## Files
