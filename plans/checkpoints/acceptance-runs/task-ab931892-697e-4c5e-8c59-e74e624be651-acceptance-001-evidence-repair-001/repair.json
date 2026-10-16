@@ -1,0 +1,92 @@
+{
+  "actor": "km-monitor:task-evidence",
+  "artifactProvenance": [
+    {
+      "path": "plans/checkpoints/task-ab931892-697e-4c5e-8c59-e74e624be651.evidence.md",
+      "provenance": "evidence_repair:task-ab931892-697e-4c5e-8c59-e74e624be651-acceptance-001-evidence-repair-001",
+      "size": 3701
+    }
+  ],
+  "artifacts": [
+    "plans/checkpoints/task-ab931892-697e-4c5e-8c59-e74e624be651.evidence.md"
+  ],
+  "auditPath": "plans/checkpoints/acceptance-runs/task-ab931892-697e-4c5e-8c59-e74e624be651-acceptance-001-evidence-repair-001/repair.json",
+  "commit": "68ed184f58f31ce39433a22944346bf826de39b1",
+  "escalationReason": "task_evidence_gap",
+  "finishedAt": "2026-10-16T12:25:38.852613+00:00",
+  "gaps": [
+    "command_lines_truncated",
+    "command_lines_truncated",
+    "outcome_lines_truncated"
+  ],
+  "mutationCheck": {
+    "changedPaths": [],
+    "clean": true
+  },
+  "pairs": [
+    {
+      "command": "TASK_ID=task-ab931892-697e-4c5e-8c59-e74e624be651 python3 /Users/michal/.config/opencode/skills/tdd/scripts/proof-capture.py red -- python3 -m pytest test/test_followup_note.py -q",
+      "outcome": "outcome_unavailable"
+    },
+    {
+      "command": "TASK_ID=task-ab931892-697e-4c5e-8c59-e74e624be651 python3 /Users/michal/.config/opencode/skills/tdd/scripts/proof-capture.py green -- python3 -m pytest test/test_followup_note.py -q",
+      "outcome": "outcome_unavailable"
+    },
+    {
+      "command": "python3 -m pytest youtube-transcript-pipeline/test/test_refactor_contracts.py -q -c youtube-transcript-pipeline/pytest.ini",
+      "outcome": "======================== 6 passed, 4 warnings in 1.16s ========================="
+    },
+    {
+      "command": "python3 -m pytest test/test_path_slug_callers.py -q",
+      "outcome": "4 passed, 4 warnings in 1.27s"
+    },
+    {
+      "command": "python3 -m pytest test/test_yt_pipeline.py test/test_config.py -q",
+      "outcome": "======================= 22 passed, 4 warnings in 18.81s ========================"
+    },
+    {
+      "command": "python3 -m pytest -q",
+      "outcome": "======================= 50 passed, 4 warnings in 21.52s ========================"
+    },
+    {
+      "command": "python3 /Users/michal/.config/opencode/skills/save-learning/add-frontmatter.py --title 'D\u016fkaz n\u00e1sledn\u00e9ho artefaktu nezastupuje kanonickou Test Gate' --category tooling --component tooling --tags 'acce",
+      "outcome": "outcome_unavailable"
+    },
+    {
+      "command": "python -m pytest test/test_yt_pipeline.py test/test_config.py -q",
+      "outcome": "outcome_unavailable"
+    },
+    {
+      "command": "python3 -m pytest test/test_yt_pipeline.py test/test_config.py -q",
+      "outcome": "======================= 22 passed, 4 warnings in 23.61s ========================"
+    },
+    {
+      "command": "TASK_ID=task-4b4c2668-1c7b-4098-8cc3-c1d143a53ac0 python3 /Users/michal/.config/opencode/skills/tdd/scripts/proof-capture.py red -- python3 -m pytest youtube-transcript-pipeline/test/test_refactor_con",
+      "outcome": "outcome_unavailable"
+    },
+    {
+      "command": "TASK_ID=task-4b4c2668-1c7b-4098-8cc3-c1d143a53ac0 python3 /Users/michal/.config/opencode/skills/tdd/scripts/proof-capture.py green -- python3 -m pytest youtube-transcript-pipeline/test/test_refactor_c",
+      "outcome": "outcome_unavailable"
+    },
+    {
+      "command": "python3 -m pytest test/test_path_slug_callers.py -q",
+      "outcome": "4 passed, 4 warnings in 1.74s"
+    },
+    {
+      "command": "python3 -m pytest -q",
+      "outcome": "======================= 50 passed, 4 warnings in 22.11s ========================"
+    },
+    {
+      "command": "python3 -m pytest test/test_yt_pipeline.py test/test_config.py -q",
+      "outcome": "======================= 22 passed, 4 warnings in 22.18s ========================"
+    },
+    {
+      "command": "python3 .claude/skills/save-learning/add-frontmatter.py --title \"TDD d\u016fkaz v podprojektu: pracovn\u00ed adres\u00e1\u0159 ur\u010duje um\u00edst\u011bn\u00ed\" --category tooling --component tooling --tags \"tdd,pytest,proof-capture,mono",
+      "outcome": "outcome_unavailable"
+    }
+  ],
+  "repairRunId": "task-ab931892-697e-4c5e-8c59-e74e624be651-acceptance-001-evidence-repair-001",
+  "sourceRunId": "task-ab931892-697e-4c5e-8c59-e74e624be651-acceptance-001",
+  "startedAt": "2026-10-16T12:25:38.123285+00:00",
+  "status": "escalated"
+}
