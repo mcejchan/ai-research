@@ -1,0 +1,100 @@
+{
+  "classification": "correctness_reject",
+  "findings": [
+    {
+      "claim": "Canonical evidence that the focused and broader offline suites pass is missing.",
+      "crossCutting": false,
+      "effect": "blocking",
+      "findingType": "verification_evidence_missing",
+      "goalIds": [
+        "goal-006"
+      ],
+      "id": "finding-001",
+      "kind": "evidence",
+      "observed": "The caller states that Test Gate was not run and no canonical Test Gate evidence exists; the supplied checkpoint only summarizes pass counts, while the detailed proof covers the six-test focused RED/GREEN command.",
+      "policyRule": "catalog:verification_evidence_missing:blocking",
+      "rationale": "Goal 006 explicitly requires focused and broader offline suites to pass, and acceptance may establish that test-artifact goal only from supplied artifacts and the canonical Test Gate reference. The canonical reference provides no execution evidence for the broader commands.",
+      "required": "Provide canonical Test Gate evidence for the required focused and broader offline verification commands and their results.",
+      "sources": [
+        {
+          "kind": "test-gate",
+          "reference": "status:not-run"
+        },
+        {
+          "kind": "artifact",
+          "reference": "plans/checkpoints/task-4b4c2668-1c7b-4098-8cc3-c1d143a53ac0.checkpoint.md:6"
+        },
+        {
+          "kind": "artifact",
+          "reference": "plans/checkpoints/task-4b4c2668-1c7b-4098-8cc3-c1d143a53ac0.red-green-proof.md"
+        }
+      ]
+    },
+    {
+      "claim": "The required final note is absent from the supplied task artifacts.",
+      "crossCutting": false,
+      "effect": "blocking",
+      "findingType": "required_artifact_missing",
+      "goalIds": [
+        "goal-006"
+      ],
+      "id": "finding-002",
+      "kind": "correctness",
+      "observed": "The supplied checkpoint is a brief completion summary and does not record the exact verification commands/results, identify  as the chosen owner, enumerate the rewired callers, or state the deliberately retained title behavior; the other supplied artifact is only RED/GREEN proof.",
+      "policyRule": "catalog:required_artifact_missing:blocking",
+      "rationale": "Goal 006 makes that detailed final note an explicit task deliverable, not merely optional verification commentary.",
+      "required": "Supply a final note recording exact commands and results, the 24-line  result, the chosen slug owner, all rewired callers, and the retained slash/underscore, empty-fallback, and 80-character title behavior.",
+      "sources": [
+        {
+          "kind": "artifact",
+          "reference": "plans/checkpoints/task-4b4c2668-1c7b-4098-8cc3-c1d143a53ac0.checkpoint.md:6"
+        },
+        {
+          "kind": "artifact",
+          "reference": "plans/checkpoints/task-4b4c2668-1c7b-4098-8cc3-c1d143a53ac0.red-green-proof.md"
+        },
+        {
+          "kind": "plan",
+          "reference": "plans/tasks/2026-10-16_tech-debt-decompose-youtube-run-and-unify-slugs.md:acceptance-criteria"
+        }
+      ]
+    }
+  ],
+  "goals": [
+    {
+      "id": "goal-001",
+      "status": "MET",
+      "summary": "`run_for_url` is below the configured function-length warning threshold and reads as a clear workflow coordinator."
+    },
+    {
+      "id": "goal-002",
+      "status": "MET",
+      "summary": "The duplicated path-slug algorithm has one implementation owner; `yt_pipeline.py` and `normalize_kb_paths.py` call it rather than carrying copies."
+    },
+    {
+      "id": "goal-003",
+      "status": "MET",
+      "summary": "The shared owner\u2019s placement/import mechanism is simple and works from both documented execution contexts; no runtime `sys.path` trick tied to the caller\u2019s current directory is introduced."
+    },
+    {
+      "id": "goal-004",
+      "status": "MET",
+      "summary": "Existing import contracts remain compatible or are explicitly migrated with tests."
+    },
+    {
+      "id": "goal-005",
+      "status": "MET",
+      "summary": "Focused tests cover extracted orchestration seams and cross-caller slug equivalence, including Unicode, slash/underscore, punctuation-only fallback, repeated separators, and title length behavior."
+    },
+    {
+      "id": "goal-006",
+      "status": "UNMET",
+      "summary": "Focused and broader offline test suites pass. The final note records exact commands/results, resulting `run_for_url` line count, the chosen slug owner, rewired callers, and any deliberately retained distinct title behavior."
+    }
+  ],
+  "policyVersion": "acceptance-policy-v2",
+  "runId": "task-4b4c2668-1c7b-4098-8cc3-c1d143a53ac0-acceptance-001",
+  "schemaVersion": "acceptance-run-v1",
+  "status": "finalized",
+  "taskId": "task-4b4c2668-1c7b-4098-8cc3-c1d143a53ac0"
+}
