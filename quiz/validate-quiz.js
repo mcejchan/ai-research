@@ -10,108 +10,125 @@ const THRESHOLDS = {
   perQuestionLengthRatioMax: 1.6,
 };
 
-function validateLevelData(data, file = '<level>') {
-  const structuralErrors = [];
-  const advisories = [];
-  const stats = {
-    total: 0,
-    correctIsLongest: 0,
-    correctIndexCounts: {},
-    correctMuchLongerThanDistractors: 0,
-    typeMismatch: 0,
-    missingExplanation: 0,
+function createValidationContext(file) {
+  return {
+    file,
+    structuralErrors: [],
+    advisories: [],
+    stats: {
+      total: 0,
+      correctIsLongest: 0,
+      correctIndexCounts: {},
+      correctMuchLongerThanDistractors: 0,
+      typeMismatch: 0,
+      missingExplanation: 0,
+    },
   };
+}
 
+function buildResult(context) {
+  const { file, structuralErrors, advisories, stats } = context;
+  return { file, ok: structuralErrors.length === 0, structuralErrors, advisories, stats };
+}
+
+function validateLevelHeader(data, context) {
+  const { structuralErrors } = context;
   if (!data || typeof data !== 'object' || Array.isArray(data)) {
     structuralErrors.push('Level must be a JSON object');
-    return { file, ok: false, structuralErrors, advisories, stats };
+    return false;
   }
   if (typeof data.title !== 'string' || !data.title.trim()) {
     structuralErrors.push('Missing or invalid top-level "title"');
   }
   if (!Array.isArray(data.questions) || data.questions.length === 0) {
     structuralErrors.push('Missing, empty, or invalid "questions" array');
-    return { file, ok: false, structuralErrors, advisories, stats };
+    return false;
+  }
+  return true;
+}
+
+function validateQuestionStructure(question, prefix, context) {
+  const { structuralErrors, advisories, stats } = context;
+  if (!question || typeof question !== 'object' || Array.isArray(question)) {
+    structuralErrors.push(`${prefix}: question must be an object`);
+    return { analyzable: false };
+  }
+  if (typeof question.question !== 'string' || !question.question.trim()) {
+    structuralErrors.push(`${prefix}: missing "question" text`);
+  }
+  if (!['single', 'multi'].includes(question.type)) {
+    structuralErrors.push(`${prefix}: "type" must be "single" or "multi"`);
+  }
+  if (typeof question.points !== 'number' || !Number.isFinite(question.points)
+    || question.points < 1 || question.points > 4) {
+    structuralErrors.push(`${prefix}: "points" must be a finite number from 1 to 4`);
   }
 
-  data.questions.forEach((question, index) => {
-    const prefix = `Q${index + 1}`;
-    stats.total++;
+  const validOptions = Array.isArray(question.options)
+    && question.options.length >= 2
+    && question.options.every((option) => typeof option === 'string');
+  if (!validOptions) {
+    structuralErrors.push(`${prefix}: needs at least 2 string options`);
+  }
 
-    if (!question || typeof question !== 'object' || Array.isArray(question)) {
-      structuralErrors.push(`${prefix}: question must be an object`);
-      return;
+  const validCorrect = Array.isArray(question.correct)
+    && question.correct.length > 0
+    && question.correct.every(Number.isInteger);
+  if (!validCorrect) {
+    structuralErrors.push(`${prefix}: "correct" must contain integer indices`);
+  } else {
+    if (new Set(question.correct).size !== question.correct.length) {
+      structuralErrors.push(`${prefix}: "correct" indices must be unique`);
     }
-    if (typeof question.question !== 'string' || !question.question.trim()) {
-      structuralErrors.push(`${prefix}: missing "question" text`);
+    if (validOptions && question.correct.some((answer) => answer < 0 || answer >= question.options.length)) {
+      structuralErrors.push(`${prefix}: "correct" indices out of range`);
     }
-    if (!['single', 'multi'].includes(question.type)) {
-      structuralErrors.push(`${prefix}: "type" must be "single" or "multi"`);
+    if (question.type === 'single' && question.correct.length !== 1) {
+      structuralErrors.push(`${prefix}: type="single" must have exactly 1 correct answer`);
     }
-    if (typeof question.points !== 'number' || !Number.isFinite(question.points)
-      || question.points < 1 || question.points > 4) {
-      structuralErrors.push(`${prefix}: "points" must be a finite number from 1 to 4`);
+    if (question.type === 'multi' && question.correct.length === 1) {
+      stats.typeMismatch++;
+      advisories.push(`${prefix}: type="multi" has only 1 correct answer; consider "single"`);
     }
+  }
 
-    const validOptions = Array.isArray(question.options)
-      && question.options.length >= 2
-      && question.options.every((option) => typeof option === 'string');
-    if (!validOptions) {
-      structuralErrors.push(`${prefix}: needs at least 2 string options`);
-    }
+  if (typeof question.explanation !== 'string' || !question.explanation.trim()) {
+    stats.missingExplanation++;
+    advisories.push(`${prefix}: missing "explanation"`);
+  }
 
-    const validCorrect = Array.isArray(question.correct)
-      && question.correct.length > 0
-      && question.correct.every(Number.isInteger);
-    if (!validCorrect) {
-      structuralErrors.push(`${prefix}: "correct" must contain integer indices`);
-    } else {
-      if (new Set(question.correct).size !== question.correct.length) {
-        structuralErrors.push(`${prefix}: "correct" indices must be unique`);
-      }
-      if (validOptions && question.correct.some((answer) => answer < 0 || answer >= question.options.length)) {
-        structuralErrors.push(`${prefix}: "correct" indices out of range`);
-      }
-      if (question.type === 'single' && question.correct.length !== 1) {
-        structuralErrors.push(`${prefix}: type="single" must have exactly 1 correct answer`);
-      }
-      if (question.type === 'multi' && question.correct.length === 1) {
-        stats.typeMismatch++;
-        advisories.push(`${prefix}: type="multi" has only 1 correct answer; consider "single"`);
-      }
-    }
+  return {
+    analyzable: validOptions && validCorrect
+      && question.correct.every((answer) => answer >= 0 && answer < question.options.length),
+  };
+}
 
-    if (typeof question.explanation !== 'string' || !question.explanation.trim()) {
-      stats.missingExplanation++;
-      advisories.push(`${prefix}: missing "explanation"`);
-    }
+function analyzeQuestionStatistics(question, prefix, context) {
+  const { advisories, stats } = context;
+  const lengths = question.options.map((option) => option.length);
+  const maxLength = Math.max(...lengths);
+  const correctLengths = question.correct.map((answer) => question.options[answer].length);
+  const maxCorrectLength = Math.max(...correctLengths);
+  const distractorLengths = question.options
+    .filter((_, optionIndex) => !question.correct.includes(optionIndex))
+    .map((option) => option.length);
+  const maxDistractorLength = distractorLengths.length ? Math.max(...distractorLengths) : 0;
 
-    const canAnalyze = validOptions && validCorrect
-      && question.correct.every((answer) => answer >= 0 && answer < question.options.length);
-    if (!canAnalyze) return;
-
-    const lengths = question.options.map((option) => option.length);
-    const maxLength = Math.max(...lengths);
-    const correctLengths = question.correct.map((answer) => question.options[answer].length);
-    const maxCorrectLength = Math.max(...correctLengths);
-    const distractorLengths = question.options
-      .filter((_, optionIndex) => !question.correct.includes(optionIndex))
-      .map((option) => option.length);
-    const maxDistractorLength = distractorLengths.length ? Math.max(...distractorLengths) : 0;
-
-    if (correctLengths.some((length) => length === maxLength)) stats.correctIsLongest++;
-    if (maxDistractorLength > 0
-      && maxCorrectLength / maxDistractorLength > THRESHOLDS.perQuestionLengthRatioMax) {
-      stats.correctMuchLongerThanDistractors++;
-      advisories.push(
-        `${prefix}: correct is ${(maxCorrectLength / maxDistractorLength).toFixed(1)}x longer than longest distractor`,
-      );
-    }
-    question.correct.forEach((answer) => {
-      stats.correctIndexCounts[answer] = (stats.correctIndexCounts[answer] || 0) + 1;
-    });
+  if (correctLengths.some((length) => length === maxLength)) stats.correctIsLongest++;
+  if (maxDistractorLength > 0
+    && maxCorrectLength / maxDistractorLength > THRESHOLDS.perQuestionLengthRatioMax) {
+    stats.correctMuchLongerThanDistractors++;
+    advisories.push(
+      `${prefix}: correct is ${(maxCorrectLength / maxDistractorLength).toFixed(1)}x longer than longest distractor`,
+    );
+  }
+  question.correct.forEach((answer) => {
+    stats.correctIndexCounts[answer] = (stats.correctIndexCounts[answer] || 0) + 1;
   });
+}
 
+function analyzeAggregateBias(context) {
+  const { advisories, structuralErrors, stats } = context;
   if (stats.total >= THRESHOLDS.minQuestionsForStats && structuralErrors.length === 0) {
     const longestRatio = stats.correctIsLongest / stats.total;
     if (longestRatio > THRESHOLDS.longestRatioMax) {
@@ -133,14 +150,21 @@ function validateLevelData(data, file = '<level>') {
       );
     }
   }
+}
 
-  return {
-    file,
-    ok: structuralErrors.length === 0,
-    structuralErrors,
-    advisories,
-    stats,
-  };
+function validateLevelData(data, file = '<level>') {
+  const context = createValidationContext(file);
+  if (!validateLevelHeader(data, context)) return buildResult(context);
+
+  data.questions.forEach((question, index) => {
+    context.stats.total++;
+    const prefix = `Q${index + 1}`;
+    const analysis = validateQuestionStructure(question, prefix, context);
+    if (analysis.analyzable) analyzeQuestionStatistics(question, prefix, context);
+  });
+
+  analyzeAggregateBias(context);
+  return buildResult(context);
 }
 
 function validateLevel(filePath) {
