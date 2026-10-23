@@ -1,0 +1,59 @@
+{
+  "concurrentContext": [],
+  "evaluationTarget": {
+    "acceptanceDispatchAt": "2026-10-23T10:47:32+00:00",
+    "implementingStartedAt": "2026-10-23T10:41:31+00:00",
+    "taskFile": "plans/tasks/2026-10-23_tech-debt-decompose-quiz-page-controllers.md",
+    "taskId": "task-76e9cc6c-1557-4dd4-a93f-2cc49993d0e4",
+    "title": "Tech debt: decompose quiz page controllers"
+  },
+  "goals": [
+    {
+      "id": "goal-001",
+      "summary": "`initLevelsPage` and `initQuizPage` are each below their configured warning threshold."
+    },
+    {
+      "id": "goal-002",
+      "summary": "Extracted units have explicit quiz-domain responsibilities and can be tested without reproducing controller internals."
+    },
+    {
+      "id": "goal-003",
+      "summary": "Existing public `sameSelection` and `levelUrl` CommonJS exports remain compatible; any additional exports are test-focused and minimal."
+    },
+    {
+      "id": "goal-004",
+      "summary": "Characterization tests cover the key flows above before/alongside the refactor and existing `quiz/build-index.test.js` remains green without weakened assertions."
+    },
+    {
+      "id": "goal-005",
+      "summary": "Browser behavior, localStorage schema, security validation, visible text and CSS/HTML contracts are preserved."
+    },
+    {
+      "id": "goal-006",
+      "summary": "No new generic modules or unrelated source churn are introduced."
+    },
+    {
+      "id": "goal-007",
+      "summary": "Final note records resulting function lengths and exact verification commands/results."
+    }
+  ],
+  "policyVersion": "acceptance-policy-v2",
+  "runId": "task-76e9cc6c-1557-4dd4-a93f-2cc49993d0e4-acceptance-001",
+  "schemaVersion": "acceptance-run-v1",
+  "taskArtifacts": [
+    {
+      "mediaKind": "text/markdown",
+      "path": "plans/checkpoints/task-76e9cc6c-1557-4dd4-a93f-2cc49993d0e4.checkpoint.md",
+      "provenance": "committed_from:36b696428857d78d9e0817d6d651500b538932ef+worktree",
+      "size": 1030
+    },
+    {
+      "mediaKind": "text/markdown",
+      "path": "plans/checkpoints/task-76e9cc6c-1557-4dd4-a93f-2cc49993d0e4.red-green-proof.md",
+      "provenance": "committed_from:36b696428857d78d9e0817d6d651500b538932ef+worktree",
+      "size": 2315
+    }
+  ],
+  "taskId": "task-76e9cc6c-1557-4dd4-a93f-2cc49993d0e4",
+  "tddRequired": true
+}
