@@ -1,0 +1,29 @@
+{
+  "concurrentContext": [],
+  "evaluationTarget": {
+    "acceptanceDispatchAt": "2026-10-23T11:53:40+00:00",
+    "implementingStartedAt": "2026-10-23T11:47:54+00:00",
+    "taskFile": "plans/tasks/2026-10-23_followup-task-48cbcb75-fb2d-4bd4-b2ed-d0cb8720c114-acceptance-fix-tech-debt-decompose-quiz-level-validation-sta.md",
+    "taskId": "task-48cbcb75-fb2d-4bd4-b2ed-d0cb8720c114",
+    "title": "[acceptance-fix] [acceptance-fix] Tech debt: decompose quiz level validation stages: goal-004: Focused characterization "
+  },
+  "goals": [
+    {
+      "id": "goal-001",
+      "summary": "[acceptance-fix] [acceptance-fix] Tech debt: decompose quiz level validation stages: goal-004: Focused characterization"
+    }
+  ],
+  "policyVersion": "acceptance-policy-v2",
+  "runId": "task-48cbcb75-fb2d-4bd4-b2ed-d0cb8720c114-acceptance-001",
+  "schemaVersion": "acceptance-run-v1",
+  "taskArtifacts": [
+    {
+      "mediaKind": "text/markdown",
+      "path": "plans/checkpoints/task-48cbcb75-fb2d-4bd4-b2ed-d0cb8720c114.checkpoint.md",
+      "provenance": "committed_from:26a7a42e5b50f7af55c4f21b08123a9a68cf1ffe",
+      "size": 898
+    }
+  ],
+  "taskId": "task-48cbcb75-fb2d-4bd4-b2ed-d0cb8720c114",
+  "tddRequired": true
+}
