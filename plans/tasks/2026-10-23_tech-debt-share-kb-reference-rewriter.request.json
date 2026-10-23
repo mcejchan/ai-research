@@ -1,0 +1,31 @@
+{
+  "envelope": "ask-jackie.assessed-task-completion",
+  "protocolVersion": 2,
+  "requestId": "c3cca0d0-95e0-44f4-a475-2af16e1c82af",
+  "attemptId": "ask-jackie:file:ai-research:1fc86d3e7a747332fa83a8e2:attempt-1",
+  "projectKey": "ai-research",
+  "taskFile": "/Users/michal/Projects/ai-research/plans/tasks/2026-10-23_tech-debt-share-kb-reference-rewriter.md",
+  "taskFileSha256": "bd7d200d06db356b8a8e84f5b048e05bac74ea02d3396c5a82e98c71863f7109",
+  "briefSha256": "bd7d200d06db356b8a8e84f5b048e05bac74ea02d3396c5a82e98c71863f7109",
+  "findingIdentity": "ai-research:code_duplication_jscpd:helper-scripts/normalize_kb_paths.py:36-54|helper-scripts/rename_video_folders.py:56-74",
+  "assessment": "create",
+  "findingEvidence": {
+    "finding": {
+      "recommendation": "Extract shared logic into a common module or shared helper.",
+      "pattern": "code_duplication_jscpd",
+      "severity": "high",
+      "description": "190 tokens duplicated between helper-scripts/normalize_kb_paths.py and helper-scripts/rename_video_folders.py",
+      "files": [
+        "helper-scripts/normalize_kb_paths.py:36-54",
+        "helper-scripts/rename_video_folders.py:56-74"
+      ],
+      "id": "ai-research:code_duplication_jscpd:helper-scripts/normalize_kb_paths.py:36-54|helper-scripts/rename_video_folders.py:56-74",
+      "firstDetected": "2026-10-19"
+    },
+    "relatedFindings": []
+  },
+  "scope": "file",
+  "path": "helper-scripts/normalize_kb_paths.py",
+  "channelId": "1506359676986593411",
+  "sessionKey": "agent:main:discord:channel:1506359676986593411"
+}
