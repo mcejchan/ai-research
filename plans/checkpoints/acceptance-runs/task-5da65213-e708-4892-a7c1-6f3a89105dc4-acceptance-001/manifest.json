@@ -1,0 +1,59 @@
+{
+  "concurrentContext": [],
+  "evaluationTarget": {
+    "acceptanceDispatchAt": "2026-10-23T11:25:38+00:00",
+    "implementingStartedAt": "2026-10-23T11:19:31+00:00",
+    "taskFile": "plans/tasks/2026-10-23_tech-debt-decompose-quiz-level-validation.md",
+    "taskId": "task-5da65213-e708-4892-a7c1-6f3a89105dc4",
+    "title": "Tech debt: decompose quiz level validation stages"
+  },
+  "goals": [
+    {
+      "id": "goal-001",
+      "summary": "`validateLevelData` is below the configured function-length warning threshold."
+    },
+    {
+      "id": "goal-002",
+      "summary": "Extracted helpers have explicit quiz-validation responsibilities and avoid hidden shared mutable state beyond a clearly scoped validation context."
+    },
+    {
+      "id": "goal-003",
+      "summary": "Existing exports, caller contracts, result shape, diagnostic ordering/text, statistics and thresholds remain compatible."
+    },
+    {
+      "id": "goal-004",
+      "summary": "Focused characterization covers the cases above and remains green after refactoring."
+    },
+    {
+      "id": "goal-005",
+      "summary": "`quiz/build-index.js` and validator CLI tests remain green without weakened assertions."
+    },
+    {
+      "id": "goal-006",
+      "summary": "No generic module names or unrelated source churn are introduced."
+    },
+    {
+      "id": "goal-007",
+      "summary": "Final note records the resulting function length and exact verification commands/results."
+    }
+  ],
+  "policyVersion": "acceptance-policy-v2",
+  "runId": "task-5da65213-e708-4892-a7c1-6f3a89105dc4-acceptance-001",
+  "schemaVersion": "acceptance-run-v1",
+  "taskArtifacts": [
+    {
+      "mediaKind": "text/markdown",
+      "path": "plans/checkpoints/task-5da65213-e708-4892-a7c1-6f3a89105dc4.checkpoint.md",
+      "provenance": "committed_from:97d137c7c55dfc0c574cf2aecccf288308d4d436",
+      "size": 1276
+    },
+    {
+      "mediaKind": "text/markdown",
+      "path": "plans/checkpoints/task-5da65213-e708-4892-a7c1-6f3a89105dc4.red-green-proof.md",
+      "provenance": "committed_from:97d137c7c55dfc0c574cf2aecccf288308d4d436",
+      "size": 3222
+    }
+  ],
+  "taskId": "task-5da65213-e708-4892-a7c1-6f3a89105dc4",
+  "tddRequired": true
+}
