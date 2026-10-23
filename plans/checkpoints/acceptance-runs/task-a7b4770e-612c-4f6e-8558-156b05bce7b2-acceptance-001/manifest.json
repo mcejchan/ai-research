@@ -1,0 +1,35 @@
+{
+  "concurrentContext": [],
+  "evaluationTarget": {
+    "acceptanceDispatchAt": "2026-10-23T11:05:31+00:00",
+    "implementingStartedAt": "2026-10-23T10:59:51+00:00",
+    "taskFile": "plans/tasks/2026-10-23_followup-task-a7b4770e-612c-4f6e-8558-156b05bce7b2-tech-debt-decompose-quiz-page-controllers.md",
+    "taskId": "task-a7b4770e-612c-4f6e-8558-156b05bce7b2",
+    "title": "[acceptance-fix] Tech debt: decompose quiz page controllers: goal-001: `initLevelsPage` and `initQuizPage` are each belo"
+  },
+  "goals": [
+    {
+      "id": "goal-001",
+      "summary": "[acceptance-fix] Tech debt: decompose quiz page controllers: goal-001: `initLevelsPage` and `initQuizPage` are each belo"
+    }
+  ],
+  "policyVersion": "acceptance-policy-v2",
+  "runId": "task-a7b4770e-612c-4f6e-8558-156b05bce7b2-acceptance-001",
+  "schemaVersion": "acceptance-run-v1",
+  "taskArtifacts": [
+    {
+      "mediaKind": "text/markdown",
+      "path": "plans/checkpoints/task-a7b4770e-612c-4f6e-8558-156b05bce7b2.checkpoint.md",
+      "provenance": "committed_from:5a51ad86f0d65fecfcdc69d53e9de1fe216f23d0",
+      "size": 1085
+    },
+    {
+      "mediaKind": "text/markdown",
+      "path": "plans/checkpoints/task-a7b4770e-612c-4f6e-8558-156b05bce7b2.red-green-proof.md",
+      "provenance": "committed_from:5a51ad86f0d65fecfcdc69d53e9de1fe216f23d0",
+      "size": 2432
+    }
+  ],
+  "taskId": "task-a7b4770e-612c-4f6e-8558-156b05bce7b2",
+  "tddRequired": true
+}

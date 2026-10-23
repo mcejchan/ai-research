@@ -1,0 +1,16 @@
+{
+  "classification": "ACCEPT",
+  "findings": [],
+  "goals": [
+    {
+      "id": "goal-001",
+      "status": "MET",
+      "summary": "[acceptance-fix] Tech debt: decompose quiz page controllers: goal-001: `initLevelsPage` and `initQuizPage` are each belo"
+    }
+  ],
+  "policyVersion": "acceptance-policy-v2",
+  "runId": "task-a7b4770e-612c-4f6e-8558-156b05bce7b2-acceptance-001",
+  "schemaVersion": "acceptance-run-v1",
+  "status": "finalized",
+  "taskId": "task-a7b4770e-612c-4f6e-8558-156b05bce7b2"
+}
