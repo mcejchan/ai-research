@@ -1,0 +1,52 @@
+{
+  "envelope": "ask-jackie.assessed-task-completion",
+  "protocolVersion": 2,
+  "requestId": "b371c166-fa87-415e-a749-97deff46bcc7",
+  "attemptId": "ask-jackie:file:ai-research:16c3dc8eaf90ba90b751fd08:attempt-1",
+  "projectKey": "ai-research",
+  "taskFile": "/Users/michal/Projects/ai-research/plans/tasks/2026-10-23_tech-debt-decompose-quiz-page-controllers.md",
+  "taskFileSha256": "efc5707867152e0c31bf9e440d3bdf64cd0c2c0bfaac32c5d7439d389a2df012",
+  "briefSha256": "efc5707867152e0c31bf9e440d3bdf64cd0c2c0bfaac32c5d7439d389a2df012",
+  "findingIdentity": "f0005",
+  "assessment": "create",
+  "findingEvidence": {
+    "finding": {
+      "projectKey": "ai-research",
+      "file": "quiz/app.js",
+      "metric": "function_lines",
+      "value": 62,
+      "threshold": "warning",
+      "level": "warning",
+      "detail": "function 'initLevelsPage' at line 69: 62 lines",
+      "status": "known",
+      "firstSeen": "2026-09-26",
+      "taskId": null,
+      "functionName": "initLevelsPage",
+      "startLine": 69,
+      "report_finding_id": "f0005",
+      "finding_fingerprint": "8f336ec63c4ef363f61592fa25a1d18d87b3b15ec381d4f378a44d399645bf6e"
+    },
+    "relatedFindings": [
+      {
+        "projectKey": "ai-research",
+        "file": "quiz/app.js",
+        "metric": "function_lines",
+        "value": 157,
+        "threshold": "critical",
+        "level": "critical",
+        "detail": "function 'initQuizPage' at line 138: 157 lines",
+        "status": "known",
+        "firstSeen": "2026-09-26",
+        "taskId": null,
+        "functionName": "initQuizPage",
+        "startLine": 138,
+        "report_finding_id": "f0006",
+        "finding_fingerprint": "3db3b8e7d08fe59efd24a030b57263d9b059ad48338ab6d63ad1825257a8348e"
+      }
+    ]
+  },
+  "scope": "file",
+  "path": "quiz/app.js",
+  "channelId": "1506359676986593411",
+  "sessionKey": "agent:main:discord:channel:1506359676986593411"
+}
