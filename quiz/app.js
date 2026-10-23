@@ -1,5 +1,5 @@
 const SCORE_KEY = 'quiz_scores';
-const { escapeHtml, filterLevels, renderLevelCards } = typeof module !== 'undefined'
+const { escapeHtml, filterLevels, renderLevelCards, createQuizSession } = typeof module !== 'undefined'
   ? require('./quiz-page-logic')
   : globalThis.quizPageLogic;
 
@@ -115,151 +115,79 @@ function initQuizPage() {
   const feedback = document.getElementById('feedback');
   const submitButton = document.getElementById('submit-answer');
   const nextButton = document.getElementById('next-question');
+  if (!levelPath) return showQuizError(loading, errorBox, 'Chybí parametr level. Vrať se na výběr levelů.');
+  let url;
+  try { url = levelUrl(levelPath); } catch (error) { return showQuizError(loading, errorBox, error.message); }
+  const page = { levelPath, loading, errorBox, quizScreen, resultsScreen, form, feedback, submitButton, nextButton };
+  fetchJson(url).then((level) => startQuiz(page, level)).catch((error) => showQuizError(loading, errorBox, `Nepodařilo se načíst level: ${error.message}`));
+}
 
-  let level;
-  let currentIndex = 0;
-  let score = 0;
-  let answered = false;
-  const results = [];
+function showQuizError(loading, errorBox, message) {
+  show(loading, false); show(errorBox, true); errorBox.textContent = message; setText('quiz-status', 'Error');
+}
 
-  function fail(message) {
-    show(loading, false);
-    show(errorBox, true);
-    errorBox.textContent = message;
-    setText('quiz-status', 'Error');
+function startQuiz(page, level) {
+  if (!Array.isArray(level.questions) || level.questions.length === 0) return showQuizError(page.loading, page.errorBox, 'Level neobsahuje žádné otázky.');
+  const session = createQuizSession({ levelPath: page.levelPath, questions: level.questions, saveScore });
+  const context = { ...page, level, session };
+  bindQuizActions(context);
+  renderLevelHeader(context);
+  show(page.loading, false); show(page.quizScreen, true); renderQuizQuestion(context);
+}
+
+function bindQuizActions(context) {
+  context.submitButton.addEventListener('click', () => submitQuizAnswer(context));
+  context.nextButton.addEventListener('click', () => advanceQuiz(context));
+}
+
+function renderLevelHeader({ level }) {
+  const thumb = document.getElementById('quiz-thumb');
+  thumb.src = level.thumbnail || ''; thumb.alt = `${level.title || 'Video'} thumbnail`;
+  setText('quiz-title', level.title || 'Untitled Level');
+  setText('quiz-channel', `${level.channel || 'Unknown Channel'}${level.date ? ` · ${level.date}` : ''}`);
+}
+
+function renderQuizQuestion({ form, feedback, submitButton, nextButton, session }) {
+  const { index, total, score, max } = session.progress();
+  const question = session.current();
+  feedback.innerHTML = ''; show(feedback, false); show(submitButton, true); show(nextButton, false);
+  document.getElementById('progress-bar').style.width = `${((index + 1) / total) * 100}%`;
+  setText('quiz-status', `${score}/${max} pts`); setText('question-counter', `Otázka ${index + 1} z ${total}`);
+  setText('question-type', question.type === 'multi' ? 'multi-select' : 'single-select');
+  setText('question-points', formatPoints(question.points)); setText('question-text', question.question || 'Bez textu otázky');
+  const type = question.type === 'multi' ? 'checkbox' : 'radio';
+  form.innerHTML = (question.options || []).map((option, index) => `<label class="answer-option" data-index="${index}"><input type="${type}" name="answer" value="${index}"><span>${escapeHtml(option)}</span></label>`).join('');
+}
+
+function submitQuizAnswer(context) {
+  const { form, feedback, submitButton, nextButton, session } = context;
+  const selected = Array.from(form.querySelectorAll('input:checked')).map((input) => Number(input.value));
+  const answer = session.submit(selected);
+  if (answer.message) {
+    feedback.textContent = answer.message; feedback.className = 'feedback fail'; show(feedback, true); return;
   }
+  form.querySelectorAll('.answer-option').forEach((option) => {
+    const index = Number(option.dataset.index); const input = option.querySelector('input'); input.disabled = true;
+    if (answer.correctIndexes.includes(index)) option.classList.add('correct');
+    if (selected.includes(index) && !answer.correctIndexes.includes(index)) option.classList.add('incorrect');
+  });
+  const explanation = answer.explanation ? `<div class="feedback-explanation">${escapeHtml(answer.explanation)}</div>` : '';
+  feedback.innerHTML = `${escapeHtml(answer.feedback)}${explanation}`;
+  feedback.className = `feedback ${answer.correct ? 'success' : 'fail'}`;
+  show(feedback, true); show(submitButton, false); show(nextButton, true);
+}
 
-  if (!levelPath) {
-    fail('Chybí parametr level. Vrať se na výběr levelů.');
-    return;
-  }
+function advanceQuiz(context) {
+  const result = context.session.next();
+  if (!result.complete) return renderQuizQuestion(context);
+  renderQuizResults(context, result);
+}
 
-  function maxPoints() {
-    return level.questions.reduce((total, question) => total + Number(question.points || 0), 0);
-  }
-
-  function renderQuestion() {
-    const question = level.questions[currentIndex];
-    answered = false;
-    feedback.innerHTML = '';
-    show(feedback, false);
-    show(submitButton, true);
-    show(nextButton, false);
-
-    const progress = ((currentIndex + 1) / level.questions.length) * 100;
-    document.getElementById('progress-bar').style.width = `${progress}%`;
-    setText('quiz-status', `${score}/${maxPoints()} pts`);
-    setText('question-counter', `Otázka ${currentIndex + 1} z ${level.questions.length}`);
-    setText('question-type', question.type === 'multi' ? 'multi-select' : 'single-select');
-    setText('question-points', formatPoints(question.points));
-    setText('question-text', question.question || 'Bez textu otázky');
-
-    const inputType = question.type === 'multi' ? 'checkbox' : 'radio';
-    form.innerHTML = (question.options || []).map((option, index) => `
-      <label class="answer-option" data-index="${index}">
-        <input type="${inputType}" name="answer" value="${index}">
-        <span>${escapeHtml(option)}</span>
-      </label>
-    `).join('');
-  }
-
-  function selectedAnswers() {
-    return Array.from(form.querySelectorAll('input:checked')).map((input) => Number(input.value));
-  }
-
-  function submitAnswer() {
-    if (answered) return;
-    const question = level.questions[currentIndex];
-    const selected = selectedAnswers();
-    if (selected.length === 0) {
-      feedback.textContent = 'Vyber alespoň jednu odpověď.';
-      feedback.className = 'feedback fail';
-      show(feedback, true);
-      return;
-    }
-
-    answered = true;
-    const correct = Array.isArray(question.correct) ? question.correct : [];
-    const isCorrect = sameSelection(selected, correct);
-    const points = isCorrect ? Number(question.points || 0) : 0;
-    score += points;
-    results.push({ question: question.question, earned: points, max: Number(question.points || 0), correct: isCorrect });
-
-    form.querySelectorAll('.answer-option').forEach((option) => {
-      const index = Number(option.dataset.index);
-      const input = option.querySelector('input');
-      input.disabled = true;
-      if (correct.includes(index)) option.classList.add('correct');
-      if (selected.includes(index) && !correct.includes(index)) option.classList.add('incorrect');
-    });
-
-    const correctText = correct.map((index) => question.options[index]).filter(Boolean).join(', ');
-    const feedbackText = isCorrect
-      ? `Správně. +${points} bodů.`
-      : `Špatně. Správná odpověď: ${correctText || 'není uvedena'}.`;
-    const explanation = question.explanation
-      ? `<div class="feedback-explanation">${escapeHtml(question.explanation)}</div>`
-      : '';
-    feedback.innerHTML = `${escapeHtml(feedbackText)}${explanation}`;
-    feedback.className = `feedback ${isCorrect ? 'success' : 'fail'}`;
-    show(feedback, true);
-    show(submitButton, false);
-    show(nextButton, true);
-  }
-
-  function renderResults() {
-    const max = maxPoints();
-    const saved = saveScore(levelPath, score, max);
-    show(quizScreen, false);
-    show(resultsScreen, true);
-    setText('quiz-status', 'Complete');
-    setText('final-score', `${score} / ${max}`);
-    setText('best-score', `Nejlepší skóre: ${saved.best} / ${saved.max}`);
-    document.getElementById('results-list').innerHTML = results.map((result, index) => `
-      <div class="result-row">
-        <strong>${index + 1}. ${escapeHtml(result.question || 'Otázka')}</strong>
-        <span class="${result.correct ? 'score-chip' : 'chip'}">${result.earned}/${result.max}</span>
-      </div>
-    `).join('');
-  }
-
-  function nextQuestion() {
-    if (currentIndex + 1 >= level.questions.length) {
-      renderResults();
-      return;
-    }
-    currentIndex += 1;
-    renderQuestion();
-  }
-
-  submitButton.addEventListener('click', submitAnswer);
-  nextButton.addEventListener('click', nextQuestion);
-
-  let quizUrl;
-  try {
-    quizUrl = levelUrl(levelPath);
-  } catch (error) {
-    fail(error.message);
-    return;
-  }
-
-  fetchJson(quizUrl)
-    .then((data) => {
-      level = data;
-      if (!Array.isArray(level.questions) || level.questions.length === 0) {
-        fail('Level neobsahuje žádné otázky.');
-        return;
-      }
-
-      document.getElementById('quiz-thumb').src = level.thumbnail || '';
-      document.getElementById('quiz-thumb').alt = `${level.title || 'Video'} thumbnail`;
-      setText('quiz-title', level.title || 'Untitled Level');
-      setText('quiz-channel', `${level.channel || 'Unknown Channel'}${level.date ? ` · ${level.date}` : ''}`);
-      show(loading, false);
-      show(quizScreen, true);
-      renderQuestion();
-    })
-    .catch((error) => fail(`Nepodařilo se načíst level: ${error.message}`));
+function renderQuizResults({ quizScreen, resultsScreen }, result) {
+  show(quizScreen, false); show(resultsScreen, true); setText('quiz-status', 'Complete');
+  setText('final-score', `${result.score} / ${result.max}`);
+  setText('best-score', `Nejlepší skóre: ${result.best.best} / ${result.best.max}`);
+  document.getElementById('results-list').innerHTML = result.results.map((item, index) => `<div class="result-row"><strong>${index + 1}. ${escapeHtml(item.question || 'Otázka')}</strong><span class="${item.correct ? 'score-chip' : 'chip'}">${item.earned}/${item.max}</span></div>`).join('');
 }
 
 if (typeof document !== 'undefined') {
@@ -271,5 +199,5 @@ if (typeof document !== 'undefined') {
 }
 
 if (typeof module !== 'undefined') {
-  module.exports = { sameSelection, levelUrl };
+  module.exports = { sameSelection, levelUrl, initQuizPage };
 }

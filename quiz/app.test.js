@@ -2,7 +2,11 @@ const assert = require('node:assert/strict');
 const test = require('node:test');
 
 const { renderLevelCards, filterLevels, evaluateAnswer, createQuizSession } = require('./quiz-page-logic');
-const { levelUrl } = require('./app');
+const { levelUrl, initQuizPage } = require('./app');
+
+test('quiz controller exposes its production initialization boundary for characterization', () => {
+  assert.equal(typeof initQuizPage, 'function');
+});
 
 test('levels filter, count, cards, badges and external text are rendered safely', () => {
   const levels = [
