@@ -1,0 +1,35 @@
+{
+  "concurrentContext": [],
+  "evaluationTarget": {
+    "acceptanceDispatchAt": "2026-10-23T11:39:35+00:00",
+    "implementingStartedAt": "2026-10-23T11:33:44+00:00",
+    "taskFile": "plans/tasks/2026-10-23_followup-task-b364dbad-44ba-4188-ab44-a38d38ee7433-tech-debt-decompose-quiz-level-validation-stages.md",
+    "taskId": "task-b364dbad-44ba-4188-ab44-a38d38ee7433",
+    "title": "[acceptance-fix] Tech debt: decompose quiz level validation stages: goal-004: Focused characterization covers the cases "
+  },
+  "goals": [
+    {
+      "id": "goal-001",
+      "summary": "[acceptance-fix] Tech debt: decompose quiz level validation stages: goal-004: Focused characterization covers the cases"
+    }
+  ],
+  "policyVersion": "acceptance-policy-v2",
+  "runId": "task-b364dbad-44ba-4188-ab44-a38d38ee7433-acceptance-001",
+  "schemaVersion": "acceptance-run-v1",
+  "taskArtifacts": [
+    {
+      "mediaKind": "text/markdown",
+      "path": "plans/checkpoints/task-b364dbad-44ba-4188-ab44-a38d38ee7433.checkpoint.md",
+      "provenance": "untracked",
+      "size": 1879
+    },
+    {
+      "mediaKind": "text/markdown",
+      "path": "plans/checkpoints/task-b364dbad-44ba-4188-ab44-a38d38ee7433.red-green-proof.md",
+      "provenance": "untracked",
+      "size": 5430
+    }
+  ],
+  "taskId": "task-b364dbad-44ba-4188-ab44-a38d38ee7433",
+  "tddRequired": true
+}

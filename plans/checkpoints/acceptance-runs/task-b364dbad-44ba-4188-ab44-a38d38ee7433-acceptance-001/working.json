@@ -1,0 +1,62 @@
+{
+  "findings": [
+    {
+      "claim": "The focused characterization still does not cover every required aggregate threshold at and across its boundary.",
+      "crossCutting": false,
+      "findingType": "required_implementation_missing",
+      "goalIds": [
+        "goal-001"
+      ],
+      "id": "finding-001",
+      "kind": "correctness",
+      "observed": "The added aggregate test checks the position-bias boundary at 9/20 versus 10/20 and checks a longest-answer crossing case at 7/10, but it does not characterize equality for the longest-answer aggregate cutoff or equality/crossing for the much-longer aggregate cutoff.",
+      "rationale": "The repair contract explicitly requires focused characterization at and across the aggregate threshold boundaries; leaving aggregate cutoffs unpinned does not fully establish compatibility for the validator contract.",
+      "required": "Add exact focused cases at equality and immediately across each established aggregate advisory cutoff, including longest-answer and much-longer ratios, while preserving exact advisory and result semantics.",
+      "sources": [
+        {
+          "kind": "file",
+          "reference": "quiz/validate-quiz.test.js:133-174"
+        },
+        {
+          "kind": "plan",
+          "reference": "plans/tasks/2026-10-23_followup-task-b364dbad-44ba-4188-ab44-a38d38ee7433-tech-debt-decompose-quiz-level-validation-stages.md"
+        }
+      ]
+    },
+    {
+      "claim": "The caller-required TDD proof is invalid for the delivered characterization repair.",
+      "crossCutting": false,
+      "findingType": "required_tdd_proof_missing",
+      "goalIds": [
+        "goal-001"
+      ],
+      "id": "finding-002",
+      "kind": "evidence",
+      "observed": "The RED phase failed because it expected correctIsLongest to be 0 instead of the established value 1 and expected no per-question length advisories where the validator produced them; the GREEN phase followed after those test expectations were corrected, with no production implementation change.",
+      "rationale": "A RED produced by mistaken characterization expectations and resolved by changing those expectations to match pre-existing behavior is not a requirement-driven failing test that demonstrates the delivered repair through RED/GREEN evidence.",
+      "required": "Provide valid task-scoped TDD provenance as required by the task instructions, using applicable genuine historical RED/GREEN evidence rather than treating corrected mistaken expectations as a fresh RED.",
+      "sources": [
+        {
+          "kind": "artifact",
+          "reference": "plans/checkpoints/task-b364dbad-44ba-4188-ab44-a38d38ee7433.red-green-proof.md"
+        },
+        {
+          "kind": "artifact",
+          "reference": "plans/checkpoints/task-b364dbad-44ba-4188-ab44-a38d38ee7433.checkpoint.md"
+        }
+      ]
+    }
+  ],
+  "goals": [
+    {
+      "id": "goal-001",
+      "status": "UNMET",
+      "summary": "[acceptance-fix] Tech debt: decompose quiz level validation stages: goal-004: Focused characterization covers the cases"
+    }
+  ],
+  "policyVersion": "acceptance-policy-v2",
+  "runId": "task-b364dbad-44ba-4188-ab44-a38d38ee7433-acceptance-001",
+  "schemaVersion": "acceptance-run-v1",
+  "status": "working",
+  "taskId": "task-b364dbad-44ba-4188-ab44-a38d38ee7433"
+}
