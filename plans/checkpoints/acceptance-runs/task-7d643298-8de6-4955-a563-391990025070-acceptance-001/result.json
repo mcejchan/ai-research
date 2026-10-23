@@ -1,0 +1,77 @@
+{
+  "classification": "correctness_reject",
+  "findings": [
+    {
+      "claim": "The required final note was not delivered.",
+      "crossCutting": false,
+      "effect": "blocking",
+      "findingType": "required_artifact_missing",
+      "goalIds": [
+        "goal-008"
+      ],
+      "id": "finding-001",
+      "kind": "correctness",
+      "observed": "The supplied task artifacts contain a checkpoint and RED/GREEN proof, but no final note; the checkpoint neither enumerates the changed files nor records the exact broader verification commands and their results.",
+      "policyRule": "catalog:required_artifact_missing:blocking",
+      "rationale": "Goal goal-008 explicitly requires a final note recording files changed and exact verification commands/results, making that note a required deliverable rather than optional test execution by Acceptance.",
+      "required": "Provide the task final note with the changed-file list and the exact verification commands and results.",
+      "sources": [
+        {
+          "kind": "artifact",
+          "reference": "plans/checkpoints/task-7d643298-8de6-4955-a563-391990025070.checkpoint.md:1"
+        },
+        {
+          "kind": "plan",
+          "reference": "plans/tasks/2026-10-23_tech-debt-share-kb-reference-rewriter.md:Acceptance criteria"
+        }
+      ]
+    }
+  ],
+  "goals": [
+    {
+      "id": "goal-001",
+      "status": "MET",
+      "summary": "The duplicated reference-update implementation exists in one source location and both scripts delegate to it."
+    },
+    {
+      "id": "goal-002",
+      "status": "MET",
+      "summary": "The shared module's filename and public helper name are knowledge-base/reference-rewrite specific."
+    },
+    {
+      "id": "goal-003",
+      "status": "MET",
+      "summary": "Both CLI workflows remain behaviorally compatible, including no reference writes during dry runs."
+    },
+    {
+      "id": "goal-004",
+      "status": "MET",
+      "summary": "Focused tests characterize extension filtering, unchanged files, multiple ordered replacements, touched-path reporting, and unreadable-file tolerance where practical on the test platform."
+    },
+    {
+      "id": "goal-005",
+      "status": "MET",
+      "summary": "Existing `test/test_path_slug_callers.py` remains green without weakened assertions."
+    },
+    {
+      "id": "goal-006",
+      "status": "MET",
+      "summary": "A duplication check no longer reports the cited clone between these two ranges."
+    },
+    {
+      "id": "goal-007",
+      "status": "MET",
+      "summary": "No unrelated cleanup or knowledge-base content changes are included."
+    },
+    {
+      "id": "goal-008",
+      "status": "UNMET",
+      "summary": "Final note records files changed and exact verification commands/results."
+    }
+  ],
+  "policyVersion": "acceptance-policy-v2",
+  "runId": "task-7d643298-8de6-4955-a563-391990025070-acceptance-001",
+  "schemaVersion": "acceptance-run-v1",
+  "status": "finalized",
+  "taskId": "task-7d643298-8de6-4955-a563-391990025070"
+}

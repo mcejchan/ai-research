@@ -1,0 +1,63 @@
+{
+  "concurrentContext": [],
+  "evaluationTarget": {
+    "acceptanceDispatchAt": "2026-10-23T09:14:24+00:00",
+    "implementingStartedAt": "2026-10-23T09:08:24+00:00",
+    "taskFile": "plans/tasks/2026-10-23_tech-debt-share-kb-reference-rewriter.md",
+    "taskId": "task-7d643298-8de6-4955-a563-391990025070",
+    "title": "Tech debt: consolidate knowledge-base reference rewriting"
+  },
+  "goals": [
+    {
+      "id": "goal-001",
+      "summary": "The duplicated reference-update implementation exists in one source location and both scripts delegate to it."
+    },
+    {
+      "id": "goal-002",
+      "summary": "The shared module's filename and public helper name are knowledge-base/reference-rewrite specific."
+    },
+    {
+      "id": "goal-003",
+      "summary": "Both CLI workflows remain behaviorally compatible, including no reference writes during dry runs."
+    },
+    {
+      "id": "goal-004",
+      "summary": "Focused tests characterize extension filtering, unchanged files, multiple ordered replacements, touched-path reporting, and unreadable-file tolerance where practical on the test platform."
+    },
+    {
+      "id": "goal-005",
+      "summary": "Existing `test/test_path_slug_callers.py` remains green without weakened assertions."
+    },
+    {
+      "id": "goal-006",
+      "summary": "A duplication check no longer reports the cited clone between these two ranges."
+    },
+    {
+      "id": "goal-007",
+      "summary": "No unrelated cleanup or knowledge-base content changes are included."
+    },
+    {
+      "id": "goal-008",
+      "summary": "Final note records files changed and exact verification commands/results."
+    }
+  ],
+  "policyVersion": "acceptance-policy-v2",
+  "runId": "task-7d643298-8de6-4955-a563-391990025070-acceptance-001",
+  "schemaVersion": "acceptance-run-v1",
+  "taskArtifacts": [
+    {
+      "mediaKind": "text/markdown",
+      "path": "plans/checkpoints/task-7d643298-8de6-4955-a563-391990025070.checkpoint.md",
+      "provenance": "committed_from:0045d345907d63a92245220e690c202558753894",
+      "size": 735
+    },
+    {
+      "mediaKind": "text/markdown",
+      "path": "plans/checkpoints/task-7d643298-8de6-4955-a563-391990025070.red-green-proof.md",
+      "provenance": "committed_from:0045d345907d63a92245220e690c202558753894",
+      "size": 2497
+    }
+  ],
+  "taskId": "task-7d643298-8de6-4955-a563-391990025070",
+  "tddRequired": true
+}
