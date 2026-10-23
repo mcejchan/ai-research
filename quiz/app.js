@@ -1,4 +1,7 @@
 const SCORE_KEY = 'quiz_scores';
+const { escapeHtml, filterLevels, renderLevelCards } = typeof module !== 'undefined'
+  ? require('./quiz-page-logic')
+  : globalThis.quizPageLogic;
 
 function getScores() {
   try {
@@ -16,15 +19,6 @@ function saveScore(levelPath, score, max) {
     localStorage.setItem(SCORE_KEY, JSON.stringify(scores));
   }
   return scores[levelPath] || previous;
-}
-
-function escapeHtml(value) {
-  return String(value)
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;')
-    .replace(/'/g, '&#039;');
 }
 
 function setText(id, value) {
@@ -74,41 +68,7 @@ function initLevelsPage() {
   const filters = Array.from(document.querySelectorAll('[data-difficulty-filter]'));
   let allLevels = [];
   let activeDifficulty = 'all';
-
-  function renderLevels() {
-    const levels = activeDifficulty === 'all'
-      ? allLevels
-      : allLevels.filter((level) => level.difficulty === activeDifficulty);
-
-    count.textContent = activeDifficulty === 'all'
-      ? `${allLevels.length} level${allLevels.length === 1 ? '' : 's'}`
-      : `${levels.length}/${allLevels.length} level${levels.length === 1 ? '' : 's'}`;
-    show(empty, levels.length === 0);
-
-    grid.innerHTML = levels.map((level) => {
-      const score = scores[level.path];
-      const played = score ? `<span class="played-badge">Best ${score.best}/${score.max}</span>` : '';
-      const thumb = level.thumbnail
-        ? `<img class="level-thumb" src="${escapeHtml(level.thumbnail)}" alt="${escapeHtml(level.title)} thumbnail" loading="lazy">`
-        : '';
-      const difficulty = level.difficulty || null;
-      const difficultyLabel = difficulty === 'extra-easy' ? 'Extra Easy' : difficulty === 'easy' ? 'Easy' : difficulty === 'hard' ? 'Hard' : null;
-
-      return `
-        <a class="level-card" href="quiz.html?level=${encodeURIComponent(level.path)}">
-          <div class="level-thumb-wrap">${thumb}${played}${difficultyLabel ? `<span class="difficulty-badge difficulty-${difficulty}">${difficultyLabel}</span>` : ''}</div>
-          <div class="level-body">
-            <h2>${escapeHtml(level.title)}</h2>
-            <p class="label">${escapeHtml(level.channel)}</p>
-            <div class="level-meta">
-              <span class="chip">${level.questionCount} otázek</span>
-              <span class="score-chip">${level.maxPoints} bodů</span>
-              ${level.date ? `<span class="chip">${escapeHtml(level.date)}</span>` : ''}
-            </div>
-          </div>
-        </a>`;
-    }).join('');
-  }
+  const renderLevels = () => renderLevelsView({ grid, empty, count, allLevels, activeDifficulty, scores });
 
   filters.forEach((button) => {
     button.addEventListener('click', () => {
@@ -127,6 +87,15 @@ function initLevelsPage() {
       count.textContent = 'Offline';
       grid.innerHTML = `<section class="panel state-panel">Nepodařilo se načíst levely: ${escapeHtml(error.message)}</section>`;
     });
+}
+
+function renderLevelsView({ grid, empty, count, allLevels, activeDifficulty, scores }) {
+  const levels = filterLevels(allLevels, activeDifficulty);
+  count.textContent = activeDifficulty === 'all'
+    ? `${allLevels.length} level${allLevels.length === 1 ? '' : 's'}`
+    : `${levels.length}/${allLevels.length} level${levels.length === 1 ? '' : 's'}`;
+  show(empty, levels.length === 0);
+  grid.innerHTML = renderLevelCards(levels, scores);
 }
 
 function sameSelection(selected, correct) {

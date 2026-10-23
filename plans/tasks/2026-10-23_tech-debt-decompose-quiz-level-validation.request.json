@@ -1,0 +1,35 @@
+{
+  "envelope": "ask-jackie.assessed-task-completion",
+  "protocolVersion": 2,
+  "requestId": "e3ca61d1-290d-4933-b1e8-8789fa45b5c8",
+  "attemptId": "ask-jackie:file:ai-research:46f8df91b2de4317ff711335:attempt-1",
+  "projectKey": "ai-research",
+  "taskFile": "/Users/michal/Projects/ai-research/plans/tasks/2026-10-23_tech-debt-decompose-quiz-level-validation.md",
+  "taskFileSha256": "0cdbc9de201fa47c49990d1e3498741274318be7d9b9991e0523121e22a00a72",
+  "briefSha256": "0cdbc9de201fa47c49990d1e3498741274318be7d9b9991e0523121e22a00a72",
+  "findingIdentity": "f0008",
+  "assessment": "create",
+  "findingEvidence": {
+    "finding": {
+      "projectKey": "ai-research",
+      "file": "quiz/validate-quiz.js",
+      "metric": "function_lines",
+      "value": 132,
+      "threshold": "critical",
+      "level": "critical",
+      "detail": "function 'validateLevelData' at line 13: 132 lines",
+      "status": "known",
+      "firstSeen": "2026-09-26",
+      "taskId": null,
+      "functionName": "validateLevelData",
+      "startLine": 13,
+      "report_finding_id": "f0008",
+      "finding_fingerprint": "8832795b0450dd09bcf303b2cb1394058fbfe9e4e5f039431acafccd5fef4c80"
+    },
+    "relatedFindings": []
+  },
+  "scope": "file",
+  "path": "quiz/validate-quiz.js",
+  "channelId": "1506359676986593411",
+  "sessionKey": "agent:main:discord:channel:1506359676986593411"
+}
