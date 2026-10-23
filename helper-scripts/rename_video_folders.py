@@ -11,6 +11,7 @@ from pathlib import Path
 from typing import Dict, Iterable, List, Tuple
 
 from _slug_owner import slugify_title
+from kb_reference_rewriter import rewrite_kb_references
 
 
 def get_video_title(folder: Path) -> str:
@@ -50,25 +51,6 @@ def replacement_patterns(channel: str, old: str, new: str) -> List[Tuple[str, st
         f"local-knowledge-base/youtube/{channel}/",
     ]
     return [(f"{base}{old}", f"{base}{new}") for base in bases]
-
-
-def update_references(ref_root: Path, patterns: List[Tuple[str, str]]) -> List[Path]:
-    touched: List[Path] = []
-    exts = {".md", ".txt", ".json", ".csv"}
-    for file in ref_root.rglob("*"):
-        if not file.is_file() or file.suffix.lower() not in exts:
-            continue
-        try:
-            text = file.read_text(encoding="utf-8")
-        except Exception:
-            continue
-        new_text = text
-        for old, new in patterns:
-            new_text = new_text.replace(old, new)
-        if new_text != text:
-            file.write_text(new_text, encoding="utf-8")
-            touched.append(file)
-    return touched
 
 
 def rename_videos(
@@ -146,7 +128,7 @@ def main():
         new_leaf = "/".join(new_rel.split("/")[1:])
         patterns.extend(replacement_patterns(channel, old_leaf, new_leaf))
 
-    touched = update_references(ref_root, patterns)
+    touched = rewrite_kb_references(ref_root, patterns)
     print(f"Updated references in {len(touched)} files.")
 
 

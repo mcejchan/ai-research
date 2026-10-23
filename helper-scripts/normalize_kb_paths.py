@@ -10,6 +10,7 @@ from pathlib import Path
 from typing import Dict, Iterable, List, Tuple
 
 from _slug_owner import slugify_path_segment
+from kb_reference_rewriter import rewrite_kb_references
 
 
 def find_channels(root: Path) -> List[Path]:
@@ -29,26 +30,6 @@ def replacement_patterns(old: str, new: str) -> List[Tuple[str, str]]:
         patterns.append((f"{base}{old}", f"{base}{new}"))
         patterns.append((f"{base}{quoted_old}", f"{base}{new}"))
     return patterns
-
-
-def update_references(ref_root: Path, patterns: List[Tuple[str, str]]) -> List[Path]:
-    """Replace occurrences of old channel names in text files."""
-    touched: List[Path] = []
-    exts = {".md", ".txt", ".json", ".csv"}
-    for file in ref_root.rglob("*"):
-        if not file.is_file() or file.suffix.lower() not in exts:
-            continue
-        try:
-            text = file.read_text(encoding="utf-8")
-        except Exception:
-            continue
-        new_text = text
-        for old, new in patterns:
-            new_text = new_text.replace(old, new)
-        if new_text != text:
-            file.write_text(new_text, encoding="utf-8")
-            touched.append(file)
-    return touched
 
 
 def rename_channels(root: Path, allowed: Iterable[str], dry_run: bool) -> Dict[str, str]:
@@ -109,7 +90,7 @@ def main():
     for old, new in mapping.items():
         patterns.extend(replacement_patterns(old, new))
 
-    touched = update_references(ref_root, patterns)
+    touched = rewrite_kb_references(ref_root, patterns)
     print(f"Updated references in {len(touched)} files.")
 
 
