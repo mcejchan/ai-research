@@ -1,0 +1,29 @@
+{
+  "concurrentContext": [],
+  "evaluationTarget": {
+    "acceptanceDispatchAt": "2026-10-23T09:30:24+00:00",
+    "implementingStartedAt": "2026-10-23T09:25:14+00:00",
+    "taskFile": "plans/tasks/2026-10-23_followup-task-054ebce5-a908-470c-b85e-1e91a797c679-tech-debt-consolidate-knowledge-base-reference-rewriting.md",
+    "taskId": "task-054ebce5-a908-470c-b85e-1e91a797c679",
+    "title": "[acceptance-fix] Tech debt: consolidate knowledge-base reference rewriting: goal-008: Final note records files changed a"
+  },
+  "goals": [
+    {
+      "id": "goal-001",
+      "summary": "[acceptance-fix] Tech debt: consolidate knowledge-base reference rewriting: goal-008: Final note records files changed a"
+    }
+  ],
+  "policyVersion": "acceptance-policy-v2",
+  "runId": "task-054ebce5-a908-470c-b85e-1e91a797c679-acceptance-001",
+  "schemaVersion": "acceptance-run-v1",
+  "taskArtifacts": [
+    {
+      "mediaKind": "text/markdown",
+      "path": "plans/checkpoints/task-054ebce5-a908-470c-b85e-1e91a797c679.checkpoint.md",
+      "provenance": "untracked",
+      "size": 701
+    }
+  ],
+  "taskId": "task-054ebce5-a908-470c-b85e-1e91a797c679",
+  "tddRequired": false
+}

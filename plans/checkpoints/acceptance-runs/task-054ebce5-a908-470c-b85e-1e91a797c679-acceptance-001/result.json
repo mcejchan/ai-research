@@ -1,0 +1,16 @@
+{
+  "classification": "ACCEPT",
+  "findings": [],
+  "goals": [
+    {
+      "id": "goal-001",
+      "status": "MET",
+      "summary": "[acceptance-fix] Tech debt: consolidate knowledge-base reference rewriting: goal-008: Final note records files changed a"
+    }
+  ],
+  "policyVersion": "acceptance-policy-v2",
+  "runId": "task-054ebce5-a908-470c-b85e-1e91a797c679-acceptance-001",
+  "schemaVersion": "acceptance-run-v1",
+  "status": "finalized",
+  "taskId": "task-054ebce5-a908-470c-b85e-1e91a797c679"
+}
