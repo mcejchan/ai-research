@@ -136,6 +136,11 @@ test('aggregate bias uses strict thresholds and suppresses aggregate advisories 
     options: longestIndices.includes(index) ? ['AAA', 'B', 'C'] : ['A', 'B', 'C'],
     correct: [correct], explanation: 'why',
   }));
+  const buildLongerAnswers = (count) => Array.from({ length: 10 }, (_, index) => ({
+    question: `Q${index + 1}?`, type: 'single', points: 1,
+    options: index < count ? ['AAA', 'B', 'C'] : ['A', 'BB', 'C'],
+    correct: [0], explanation: 'why',
+  }));
   const atThreshold = validateLevelData({
     title: 'Fixture', questions: build([...Array(9).fill(0), ...Array(9).fill(1), 2, 2]),
   });
@@ -164,6 +169,38 @@ test('aggregate bias uses strict thresholds and suppresses aggregate advisories 
     'BIAS: correct answer is at index 0 in 5/10 answers',
     'BIAS: correct answer is at index 1 in 5/10 answers',
   ]);
+
+  const longestAtThreshold = validateLevelData({
+    title: 'Fixture', questions: buildLongerAnswers(5),
+  });
+  assert.equal(longestAtThreshold.ok, true);
+  assert.equal(longestAtThreshold.stats.correctIsLongest, 5);
+  assert.equal(longestAtThreshold.advisories.some((advisory) => advisory.startsWith('BIAS: correct answer is longest')), false);
+
+  const longestAcrossThreshold = validateLevelData({
+    title: 'Fixture', questions: buildLongerAnswers(6),
+  });
+  assert.equal(longestAcrossThreshold.ok, true);
+  assert.equal(longestAcrossThreshold.stats.correctIsLongest, 6);
+  assert.equal(longestAcrossThreshold.advisories.includes('BIAS: correct answer is longest in 6/10 questions'), true);
+
+  const muchLongerAtThreshold = validateLevelData({
+    title: 'Fixture', questions: buildLongerAnswers(4),
+  });
+  assert.equal(muchLongerAtThreshold.ok, true);
+  assert.deepEqual(muchLongerAtThreshold.structuralErrors, []);
+  assert.equal(muchLongerAtThreshold.stats.correctMuchLongerThanDistractors, 4);
+  assert.equal(muchLongerAtThreshold.advisories.some((advisory) => advisory.startsWith('BIAS: correct answer is over 1.6x')), false);
+
+  const muchLongerAcrossThreshold = validateLevelData({
+    title: 'Fixture', questions: buildLongerAnswers(5),
+  });
+  assert.equal(muchLongerAcrossThreshold.ok, true);
+  assert.deepEqual(muchLongerAcrossThreshold.structuralErrors, []);
+  assert.equal(muchLongerAcrossThreshold.stats.correctMuchLongerThanDistractors, 5);
+  assert.equal(muchLongerAcrossThreshold.advisories.some((advisory) => advisory.startsWith('BIAS: correct answer is over 1.6x')), true);
+  assert.equal(muchLongerAcrossThreshold.advisories.filter((advisory) => advisory.startsWith('BIAS:')).at(-1),
+    'BIAS: correct answer is over 1.6x longer than the longest distractor in 5/10 questions');
 
   const structurallyInvalid = validateLevelData({ title: 'Fixture', questions: [
     ...build([...Array(9).fill(0), ...Array(9).fill(1), 2, 2]),
