@@ -1,0 +1,41 @@
+{
+  "concurrentContext": [],
+  "evaluationTarget": {
+    "acceptanceDispatchAt": "2026-10-25T13:39:50+00:00",
+    "implementingStartedAt": "2026-10-25T13:33:58+00:00",
+    "taskFile": "plans/tasks/2026-10-24_python315-project-standard.md",
+    "taskId": "task-a45bce59-6f99-4d3f-98fd-35bb161d44c8",
+    "title": "AI Research Python 3.15: Make test and pipeline child provenance"
+  },
+  "goals": [
+    {
+      "id": "goal-001",
+      "summary": "AI Research Python 3.15: Make test and pipeline child provenance"
+    }
+  ],
+  "policyVersion": "acceptance-policy-v2",
+  "runId": "task-a45bce59-6f99-4d3f-98fd-35bb161d44c8-acceptance-001",
+  "schemaVersion": "acceptance-run-v1",
+  "taskArtifacts": [
+    {
+      "mediaKind": "text/markdown",
+      "path": "plans/checkpoints/python315-host-handoff.md",
+      "provenance": "untracked+referenced",
+      "size": 4243
+    },
+    {
+      "mediaKind": "text/markdown",
+      "path": "plans/checkpoints/task-a45bce59-6f99-4d3f-98fd-35bb161d44c8.checkpoint.md",
+      "provenance": "untracked",
+      "size": 770
+    },
+    {
+      "mediaKind": "text/markdown",
+      "path": "plans/checkpoints/task-a45bce59-6f99-4d3f-98fd-35bb161d44c8.red-green-proof.md",
+      "provenance": "untracked",
+      "size": 6799
+    }
+  ],
+  "taskId": "task-a45bce59-6f99-4d3f-98fd-35bb161d44c8",
+  "tddRequired": true
+}

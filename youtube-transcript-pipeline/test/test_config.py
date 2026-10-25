@@ -10,6 +10,8 @@ def test_pipeline_import_does_not_require_drive_folder_id():
     env = os.environ.copy()
     env.pop("DRIVE_FOLDER_ID", None)
     command = (
+        "import json, platform, sys\n"
+        "print(json.dumps({'executable': sys.executable, 'implementation': platform.python_implementation(), 'version': platform.python_version()}))\n"
         "from unittest.mock import patch\n"
         "with patch('dotenv.load_dotenv', return_value=False):\n"
         "    import src.yt_pipeline\n"
@@ -24,6 +26,10 @@ def test_pipeline_import_does_not_require_drive_folder_id():
     )
 
     assert result.returncode == 0, result.stderr
+    identity = __import__("json").loads(result.stdout.splitlines()[0])
+    assert Path(identity["executable"]).resolve() == Path(sys.executable).resolve()
+    assert identity["implementation"] == "CPython"
+    assert identity["version"] == sys.version.split()[0]
 
 
 def test_real_drive_requires_folder_id_at_execution(monkeypatch):

@@ -1,0 +1,74 @@
+{
+  "findings": [
+    {
+      "claim": "The propagation and stale-runtime fixtures must replace the synthetic project runtime without modifying the real CPython executable to which it initially points.",
+      "crossCutting": false,
+      "findingType": "implemented_behavior_incorrect",
+      "goalIds": [
+        "goal-001"
+      ],
+      "id": "finding-001",
+      "kind": "correctness",
+      "observed": "_synthetic_checkout creates .venv/bin/python as a symlink to real_python, but both later fixtures call _write_executable on that symlink. Path.write_text follows the symlink, so these cases truncate and rewrite the real interpreter target instead of replacing the synthetic checkout entry; they therefore cannot safely or reliably exercise the intended pytest-propagation and stale-runtime branches.",
+      "rationale": "The required regression is itself incorrect and can damage the selected host interpreter, while leaving the synthetic runtime as a symlink rather than the intended fixture script.",
+      "required": "Unlink the synthetic .venv/bin/python symlink before writing each replacement script, or create isolated non-symlink fixture runtimes, then retain assertions for exact pytest arguments/status and stale-runtime rejection.",
+      "sources": [
+        {
+          "kind": "file",
+          "reference": "youtube-transcript-pipeline/test/test_research_python_runtime_contract.py:11-13"
+        },
+        {
+          "kind": "file",
+          "reference": "youtube-transcript-pipeline/test/test_research_python_runtime_contract.py:34-35"
+        },
+        {
+          "kind": "file",
+          "reference": "youtube-transcript-pipeline/test/test_research_python_runtime_contract.py:75-82"
+        },
+        {
+          "kind": "file",
+          "reference": "youtube-transcript-pipeline/test/test_research_python_runtime_contract.py:91-97"
+        }
+      ]
+    },
+    {
+      "claim": "Caller-required TDD evidence must include a credible fresh GREEN for the final repaired four-test regression under the required CPython 3.15.0 runtime, linked to the historical genuine RED.",
+      "crossCutting": false,
+      "findingType": "required_tdd_proof_missing",
+      "goalIds": [
+        "goal-001"
+      ],
+      "id": "finding-002",
+      "kind": "evidence",
+      "observed": "The supplied proof is the parent task artifact: its GREEN ran under Python 3.9.6, collected three tests, and predates the delivered four-test source. No follow-up task proof artifact supplies the planned fresh GREEN under CPython 3.15.0, and the follow-up checkpoint still marks repair and fresh GREEN capture incomplete.",
+      "rationale": "The parent proof cannot demonstrate that the final corrected source passes or that it observes the required real CPython 3.15.0 child provenance; tddRequired is true for this run.",
+      "required": "After correcting the final fixture source, capture the follow-up task's genuine GREEN with the real CPython 3.15.0 command and four repaired tests, while linking the authentic parent RED rather than fabricating a new RED.",
+      "sources": [
+        {
+          "kind": "artifact",
+          "reference": "plans/checkpoints/task-a45bce59-6f99-4d3f-98fd-35bb161d44c8.red-green-proof.md:GREEN-Phase"
+        },
+        {
+          "kind": "artifact",
+          "reference": "plans/checkpoints/task-91da195f-e8e0-4807-86c1-3ecda9071d25.checkpoint.md:Steps"
+        },
+        {
+          "kind": "plan",
+          "reference": "plans/2026-10-25_task-91da195f-e8e0-4807-86c1-3ecda9071d25_ai-research-python-3-15-make-test-and-pipeline-child.md:TDD"
+        }
+      ]
+    }
+  ],
+  "goals": [
+    {
+      "id": "goal-001",
+      "status": "UNMET",
+      "summary": "[acceptance-fix] AI Research Python 3.15: Make test and pipeline child provenance: goal-001: AI Research Python 3.15: Ma"
+    }
+  ],
+  "policyVersion": "acceptance-policy-v2",
+  "runId": "task-91da195f-e8e0-4807-86c1-3ecda9071d25-acceptance-001",
+  "schemaVersion": "acceptance-run-v1",
+  "status": "working",
+  "taskId": "task-91da195f-e8e0-4807-86c1-3ecda9071d25"
+}

@@ -1,0 +1,43 @@
+{
+  "findings": [
+    {
+      "claim": "Caller-required TDD evidence must include a fresh GREEN for the final repaired four-test regression under CPython 3.15.0, linked to the historical genuine RED.",
+      "crossCutting": false,
+      "findingType": "required_tdd_proof_missing",
+      "goalIds": [
+        "goal-001"
+      ],
+      "id": "finding-001",
+      "kind": "evidence",
+      "observed": "The supplied proof belongs to the parent task and records Python 3.9.6 with three collected tests. The follow-up checkpoint states that no focused CPython 3.15.0 GREEN was captured after repairing both symlink replacement fixtures.",
+      "rationale": "The historical proof predates the final four-test source and cannot establish that the repaired regression passes under the required CPython 3.15.0 runtime; the manifest declares TDD proof mandatory.",
+      "required": "Capture fresh GREEN evidence for all four repaired tests under CPython 3.15.0 and link the authentic historical RED without fabricating a new RED.",
+      "sources": [
+        {
+          "kind": "artifact",
+          "reference": "plans/checkpoints/task-a45bce59-6f99-4d3f-98fd-35bb161d44c8.red-green-proof.md:GREEN Phase"
+        },
+        {
+          "kind": "artifact",
+          "reference": "plans/checkpoints/task-9576667c-4cac-4e0c-92dc-0ef1a8644178.checkpoint.md:Steps"
+        },
+        {
+          "kind": "plan",
+          "reference": "plans/2026-10-25_task-9576667c-4cac-4e0c-92dc-0ef1a8644178_acceptance-fix-ai-research-python-3-15-make-test-and.md:TDD"
+        }
+      ]
+    }
+  ],
+  "goals": [
+    {
+      "id": "goal-001",
+      "status": "UNMET",
+      "summary": "[acceptance-fix] [acceptance-fix] AI Research Python 3.15: Make test and pipeline child provenance: goal-001: AI Researc"
+    }
+  ],
+  "policyVersion": "acceptance-policy-v2",
+  "runId": "task-9576667c-4cac-4e0c-92dc-0ef1a8644178-acceptance-001",
+  "schemaVersion": "acceptance-run-v1",
+  "status": "working",
+  "taskId": "task-9576667c-4cac-4e0c-92dc-0ef1a8644178"
+}

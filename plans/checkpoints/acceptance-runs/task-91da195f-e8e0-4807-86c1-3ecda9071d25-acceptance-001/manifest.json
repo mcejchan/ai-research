@@ -1,0 +1,53 @@
+{
+  "concurrentContext": [],
+  "evaluationTarget": {
+    "acceptanceDispatchAt": "2026-10-25T13:56:30+00:00",
+    "implementingStartedAt": "2026-10-25T13:50:50+00:00",
+    "taskFile": "plans/tasks/2026-10-25_followup-task-91da195f-e8e0-4807-86c1-3ecda9071d25-ai-research-python-3-15-make-test-and-pipeline-child-provena.md",
+    "taskId": "task-91da195f-e8e0-4807-86c1-3ecda9071d25",
+    "title": "[acceptance-fix] AI Research Python 3.15: Make test and pipeline child provenance: goal-001: AI Research Python 3.15: Ma"
+  },
+  "goals": [
+    {
+      "id": "goal-001",
+      "summary": "[acceptance-fix] AI Research Python 3.15: Make test and pipeline child provenance: goal-001: AI Research Python 3.15: Ma"
+    }
+  ],
+  "policyVersion": "acceptance-policy-v2",
+  "runId": "task-91da195f-e8e0-4807-86c1-3ecda9071d25-acceptance-001",
+  "schemaVersion": "acceptance-run-v1",
+  "taskArtifacts": [
+    {
+      "mediaKind": "text/markdown",
+      "path": "learnings/tooling/make-test-python-runtime-pin.md",
+      "provenance": "untracked+referenced",
+      "size": 1204
+    },
+    {
+      "mediaKind": "text/markdown",
+      "path": "plans/checkpoints/python315-host-handoff.md",
+      "provenance": "untracked+referenced",
+      "size": 4243
+    },
+    {
+      "mediaKind": "text/markdown",
+      "path": "plans/checkpoints/task-91da195f-e8e0-4807-86c1-3ecda9071d25.checkpoint.md",
+      "provenance": "untracked",
+      "size": 881
+    },
+    {
+      "mediaKind": "text/markdown",
+      "path": "plans/checkpoints/task-a45bce59-6f99-4d3f-98fd-35bb161d44c8.checkpoint.md",
+      "provenance": "untracked+referenced",
+      "size": 770
+    },
+    {
+      "mediaKind": "text/markdown",
+      "path": "plans/checkpoints/task-a45bce59-6f99-4d3f-98fd-35bb161d44c8.red-green-proof.md",
+      "provenance": "untracked+referenced",
+      "size": 6799
+    }
+  ],
+  "taskId": "task-91da195f-e8e0-4807-86c1-3ecda9071d25",
+  "tddRequired": true
+}
