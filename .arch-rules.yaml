@@ -55,6 +55,9 @@ codeHealth:
     - .js
     - .css
   ignore:
+    # Third-party virtualenvs, including versioned/prepared variants.
+    - '.venv*'
+    - '**/.venv*/**'
     - '*.test.*'
     - '*.spec.*'
     - tests/*
