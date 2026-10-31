@@ -1,0 +1,28 @@
+{
+  "runId": "task-b4290e3e-6e9b-439c-8209-46d584237c91-implementation-e2b3abf3db3aad05-acceptance-001",
+  "taskId": "task-b4290e3e-6e9b-439c-8209-46d584237c91",
+  "tddDecision": {
+    "attempt": 1,
+    "implSessionId": "dark-reef-0449",
+    "implementingStartedAt": "2026-10-31T11:09:02+00:00",
+    "review": {
+      "bindingId": "2a1832b810271201c219c0c2ac97aa92adc40c844a3a336c8d5b2ea95b171ba6",
+      "decision": "required",
+      "disposition": "pass",
+      "planFile": "plans/2026-10-31_task-b4290e3e-6e9b-439c-8209-46d584237c91_ai-research-make-test-accept-cpython-3-15-x-instead-of.md",
+      "planSha256": "cf0506fb5b2746dfb3d613afb5bf8495b6270e73b0bd40bb2575ecdb4441211f",
+      "reason": "Changing the executable runtime gate requires regression tests for accepted patch versions and rejected implementations and minor versions.",
+      "reviewId": "ef7e9fb0a7034b27a8bcc275770b5f0f",
+      "scopeMetadata": {
+        "description": "",
+        "project": "ai-research",
+        "task": "ai-research make test: accept CPython 3.15.x instead of exact 3.15.0"
+      },
+      "scopeSha256": "42791b2269bf96cb01d74d9422cccb782bc8059c5344ae432a0f5cae9dcd90a5",
+      "taskId": "task-b4290e3e-6e9b-439c-8209-46d584237c91",
+      "version": 1
+    },
+    "version": 1
+  },
+  "tddRequired": true
+}

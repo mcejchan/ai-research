@@ -1,0 +1,16 @@
+{
+  "classification": "ACCEPT",
+  "findings": [],
+  "goals": [
+    {
+      "id": "goal-001",
+      "status": "MET",
+      "summary": "ai-research make test: accept CPython 3.15.x instead of exact 3.15.0"
+    }
+  ],
+  "policyVersion": "acceptance-policy-v2",
+  "runId": "task-b4290e3e-6e9b-439c-8209-46d584237c91-implementation-e2b3abf3db3aad05-acceptance-001",
+  "schemaVersion": "acceptance-run-v1",
+  "status": "finalized",
+  "taskId": "task-b4290e3e-6e9b-439c-8209-46d584237c91"
+}
