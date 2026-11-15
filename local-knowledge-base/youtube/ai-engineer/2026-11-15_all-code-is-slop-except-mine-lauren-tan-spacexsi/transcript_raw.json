@@ -1,0 +1,2352 @@
+[
+  {
+    "text": "[music]",
+    "start": 1.309,
+    "duration": 2.02
+  },
+  {
+    "text": ">> All right. Um so again I'm my name is",
+    "start": 12.9,
+    "duration": 7.1
+  },
+  {
+    "text": "Potato. Uh I work on Grokbot at SpaceX",
+    "start": 16.299,
+    "duration": 4.901
+  },
+  {
+    "text": "SI.",
+    "start": 20.0,
+    "duration": 2.8
+  },
+  {
+    "text": "And can I just get a quick show of",
+    "start": 21.2,
+    "duration": 4.3
+  },
+  {
+    "text": "hands? How many of you have ever looked",
+    "start": 22.8,
+    "duration": 5.0
+  },
+  {
+    "text": "at code that somebody else wrote and you",
+    "start": 25.5,
+    "duration": 5.8
+  },
+  {
+    "text": "thought that's all slop.",
+    "start": 27.8,
+    "duration": 3.5
+  },
+  {
+    "text": "Well,",
+    "start": 31.7,
+    "duration": 3.6
+  },
+  {
+    "text": "I have too.",
+    "start": 32.8,
+    "duration": 4.0
+  },
+  {
+    "text": "But today I'm going to convince you that",
+    "start": 35.3,
+    "duration": 5.9
+  },
+  {
+    "text": "you can turn that slop into gold.",
+    "start": 36.8,
+    "duration": 4.4
+  },
+  {
+    "text": "Uh and so I did something crazy last",
+    "start": 42.6,
+    "duration": 4.4
+  },
+  {
+    "text": "month and I shipped 3,000 pull requests",
+    "start": 44.4,
+    "duration": 4.0
+  },
+  {
+    "text": "to production.",
+    "start": 47.0,
+    "duration": 3.5
+  },
+  {
+    "text": "Now before agents we never really cared",
+    "start": 48.4,
+    "duration": 6.1
+  },
+  {
+    "text": "about volume uh except for the outliers.",
+    "start": 50.5,
+    "duration": 6.0
+  },
+  {
+    "text": "And at my previous company we called",
+    "start": 54.5,
+    "duration": 4.0
+  },
+  {
+    "text": "these people coding machines. People",
+    "start": 56.5,
+    "duration": 4.3
+  },
+  {
+    "text": "like Brett Taylor who famously rewrote",
+    "start": 58.5,
+    "duration": 5.0
+  },
+  {
+    "text": "all of Google Maps uh in a weekend.",
+    "start": 60.8,
+    "duration": 5.5
+  },
+  {
+    "text": "Just an insanely productive engineer.",
+    "start": 63.5,
+    "duration": 5.1
+  },
+  {
+    "text": "Uh and well with agents anyone can now",
+    "start": 66.3,
+    "duration": 4.2
+  },
+  {
+    "text": "be a coding machine. And my thesis is",
+    "start": 68.6,
+    "duration": 4.6
+  },
+  {
+    "text": "that the job of the software engineer,",
+    "start": 70.5,
+    "duration": 4.8
+  },
+  {
+    "text": "the meta of being a software engineer is",
+    "start": 73.2,
+    "duration": 4.4
+  },
+  {
+    "text": "figuring out how to maintain or even",
+    "start": 75.3,
+    "duration": 4.8
+  },
+  {
+    "text": "improve the quality of your code while",
+    "start": 77.6,
+    "duration": 6.2
+  },
+  {
+    "text": "massively increasing your productivity.",
+    "start": 80.1,
+    "duration": 5.0
+  },
+  {
+    "text": "To get there some people like to call",
+    "start": 83.8,
+    "duration": 3.9
+  },
+  {
+    "text": "this a software factory. Uh but I like",
+    "start": 85.1,
+    "duration": 5.2
+  },
+  {
+    "text": "to keep it simple and I think of it as",
+    "start": 87.7,
+    "duration": 5.2
+  },
+  {
+    "text": "all about trust.",
+    "start": 90.3,
+    "duration": 4.9
+  },
+  {
+    "text": "Not blind trust but investing in your",
+    "start": 92.9,
+    "duration": 4.6
+  },
+  {
+    "text": "agents environment so you can trust that",
+    "start": 95.2,
+    "duration": 3.8
+  },
+  {
+    "text": "your agents are going to do the right",
+    "start": 97.5,
+    "duration": 2.9
+  },
+  {
+    "text": "thing.",
+    "start": 99.0,
+    "duration": 4.1
+  },
+  {
+    "text": "Now it takes quite a lot of effort to",
+    "start": 100.4,
+    "duration": 5.5
+  },
+  {
+    "text": "get there um and it took me six months",
+    "start": 103.1,
+    "duration": 5.1
+  },
+  {
+    "text": "to get to a point where I could ship",
+    "start": 105.9,
+    "duration": 3.9
+  },
+  {
+    "text": "thousands of pull requests, a lot of",
+    "start": 108.2,
+    "duration": 3.3
+  },
+  {
+    "text": "them in my sleep.",
+    "start": 109.8,
+    "duration": 4.0
+  },
+  {
+    "text": "But it's certainly possible and it will",
+    "start": 111.5,
+    "duration": 4.7
+  },
+  {
+    "text": "take you much less time than I did.",
+    "start": 113.8,
+    "duration": 4.5
+  },
+  {
+    "text": "So let's start by talking about how we",
+    "start": 116.2,
+    "duration": 3.792
+  },
+  {
+    "text": "move from a low trust",
+    "start": 118.3,
+    "duration": 4.692
+  },
+  {
+    "text": "to a high-trust one.",
+    "start": 119.992,
+    "duration": 3.0
+  },
+  {
+    "text": "So, this inverse pyramid is how I think",
+    "start": 123.392,
+    "duration": 4.0
+  },
+  {
+    "text": "about where to spend time on your",
+    "start": 125.192,
+    "duration": 4.8
+  },
+  {
+    "text": "agent's environment.",
+    "start": 127.392,
+    "duration": 5.0
+  },
+  {
+    "text": "The first two layers are deterministic,",
+    "start": 129.992,
+    "duration": 4.8
+  },
+  {
+    "text": "so using your code itself. So, things",
+    "start": 132.392,
+    "duration": 5.0
+  },
+  {
+    "text": "like good API design, architecture,",
+    "start": 134.792,
+    "duration": 5.5
+  },
+  {
+    "text": "refactoring, or using lint rules, type",
+    "start": 137.392,
+    "duration": 5.1
+  },
+  {
+    "text": "systems, compilers, or you know,",
+    "start": 140.292,
+    "duration": 4.0
+  },
+  {
+    "text": "different kinds of testing.",
+    "start": 142.492,
+    "duration": 3.7
+  },
+  {
+    "text": "And you can use both of these layers",
+    "start": 144.292,
+    "duration": 4.6
+  },
+  {
+    "text": "together to constrain what agents can do",
+    "start": 146.192,
+    "duration": 4.5
+  },
+  {
+    "text": "and force them to do the right thing by",
+    "start": 148.892,
+    "duration": 3.9
+  },
+  {
+    "text": "default.",
+    "start": 150.692,
+    "duration": 4.4
+  },
+  {
+    "text": "Verification, both runtime and formal,",
+    "start": 152.792,
+    "duration": 5.4
+  },
+  {
+    "text": "are great tools to layer on to find bugs",
+    "start": 155.092,
+    "duration": 5.1
+  },
+  {
+    "text": "and check properties and the invariance",
+    "start": 158.192,
+    "duration": 3.5
+  },
+  {
+    "text": "in your system that you want to hold",
+    "start": 160.192,
+    "duration": 2.4
+  },
+  {
+    "text": "true",
+    "start": 161.692,
+    "duration": 3.2
+  },
+  {
+    "text": "and also help you check whether or not",
+    "start": 162.592,
+    "duration": 4.3
+  },
+  {
+    "text": "the agent understood your goals and your",
+    "start": 164.892,
+    "duration": 4.1
+  },
+  {
+    "text": "intent.",
+    "start": 166.892,
+    "duration": 3.9
+  },
+  {
+    "text": "And then finally, you want to layer with",
+    "start": 168.992,
+    "duration": 3.7
+  },
+  {
+    "text": "a little bit of prose. So, things like",
+    "start": 170.792,
+    "duration": 5.7
+  },
+  {
+    "text": "rules, skills, agents.md, things that",
+    "start": 172.692,
+    "duration": 6.7
+  },
+  {
+    "text": "require judgment.",
+    "start": 176.492,
+    "duration": 4.7
+  },
+  {
+    "text": "But let's start with your codebase.",
+    "start": 179.392,
+    "duration": 4.1
+  },
+  {
+    "text": "Agents generate their outputs based on",
+    "start": 181.192,
+    "duration": 5.0
+  },
+  {
+    "text": "their inputs. And so the the quality of",
+    "start": 183.492,
+    "duration": 4.5
+  },
+  {
+    "text": "the input really matters, and it just so",
+    "start": 186.192,
+    "duration": 4.3
+  },
+  {
+    "text": "happens that your codebase is one of the",
+    "start": 187.992,
+    "duration": 4.5
+  },
+  {
+    "text": "largest inputs.",
+    "start": 190.492,
+    "duration": 3.3
+  },
+  {
+    "text": "So, whenever you're correcting your",
+    "start": 192.492,
+    "duration": 3.3
+  },
+  {
+    "text": "agent, think about how you can make that",
+    "start": 193.792,
+    "duration": 4.4
+  },
+  {
+    "text": "a deterministic check instead of adding",
+    "start": 195.792,
+    "duration": 4.7
+  },
+  {
+    "text": "another line to your rules or your",
+    "start": 198.192,
+    "duration": 4.4
+  },
+  {
+    "text": "agents.md because it's far more",
+    "start": 200.492,
+    "duration": 4.2
+  },
+  {
+    "text": "reproducible when it's in code and it",
+    "start": 202.592,
+    "duration": 4.9
+  },
+  {
+    "text": "lets you trust it more.",
+    "start": 204.692,
+    "duration": 4.6
+  },
+  {
+    "text": "And the analogy that I like to use is",
+    "start": 207.492,
+    "duration": 3.9
+  },
+  {
+    "text": "that your codebase is kind of like a",
+    "start": 209.292,
+    "duration": 3.2
+  },
+  {
+    "text": "garden.",
+    "start": 211.392,
+    "duration": 3.2
+  },
+  {
+    "text": "You know, code used to arrive a few pull",
+    "start": 212.492,
+    "duration": 3.6
+  },
+  {
+    "text": "requests at a time.",
+    "start": 214.592,
+    "duration": 4.3
+  },
+  {
+    "text": "And uh I remember going into work in",
+    "start": 216.092,
+    "duration": 5.4
+  },
+  {
+    "text": "2024 and reviewing the three pull",
+    "start": 218.892,
+    "duration": 4.0
+  },
+  {
+    "text": "requests that my colleagues wrote",
+    "start": 221.492,
+    "duration": 2.8
+  },
+  {
+    "text": "colleagues wrote.",
+    "start": 222.892,
+    "duration": 4.9
+  },
+  {
+    "text": "And today, that number is more like 300.",
+    "start": 224.292,
+    "duration": 5.6
+  },
+  {
+    "text": "So, you know, every engineer is now a",
+    "start": 227.792,
+    "duration": 4.7
+  },
+  {
+    "text": "team of hundreds or even thousands of",
+    "start": 229.892,
+    "duration": 6.0
+  },
+  {
+    "text": "agents, and code is arriving so rapidly",
+    "start": 232.492,
+    "duration": 5.6
+  },
+  {
+    "text": "that it almost feels like a continuous",
+    "start": 235.892,
+    "duration": 5.2
+  },
+  {
+    "text": "stream, and it almost feels organic,",
+    "start": 238.092,
+    "duration": 5.402
+  },
+  {
+    "text": "like a living thing.",
+    "start": 241.092,
+    "duration": 5.202
+  },
+  {
+    "text": "And in this analogy, your codebase, the",
+    "start": 243.494,
+    "duration": 4.8
+  },
+  {
+    "text": "constraints that you impose, the",
+    "start": 246.294,
+    "duration": 4.0
+  },
+  {
+    "text": "guardrails that you put up are the",
+    "start": 248.294,
+    "duration": 4.6
+  },
+  {
+    "text": "concrete foundations that the new code",
+    "start": 250.294,
+    "duration": 5.2
+  },
+  {
+    "text": "that your agents write grow around, just",
+    "start": 252.894,
+    "duration": 5.2
+  },
+  {
+    "text": "like uh the building in this picture.",
+    "start": 255.494,
+    "duration": 4.2
+  },
+  {
+    "text": "And so in many ways, the job of being a",
+    "start": 258.094,
+    "duration": 3.7
+  },
+  {
+    "text": "software engineer is kind of becoming",
+    "start": 259.694,
+    "duration": 5.1
+  },
+  {
+    "text": "like gardening.",
+    "start": 261.794,
+    "duration": 3.0
+  },
+  {
+    "text": "Because code is the biggest input for",
+    "start": 264.894,
+    "duration": 4.6
+  },
+  {
+    "text": "agents, it means that any workarounds,",
+    "start": 266.594,
+    "duration": 6.3
+  },
+  {
+    "text": "um anti-patterns, deprecated code, tech",
+    "start": 269.494,
+    "duration": 5.8
+  },
+  {
+    "text": "debt, it's now likely to be just copied",
+    "start": 272.894,
+    "duration": 4.4
+  },
+  {
+    "text": "by the next agent since it looks like",
+    "start": 275.294,
+    "duration": 3.3
+  },
+  {
+    "text": "the established pattern in your",
+    "start": 277.294,
+    "duration": 2.6
+  },
+  {
+    "text": "codebase.",
+    "start": 278.594,
+    "duration": 4.7
+  },
+  {
+    "text": "And uh it's like you have some weeds or",
+    "start": 279.894,
+    "duration": 5.5
+  },
+  {
+    "text": "pests growing in your garden, and then",
+    "start": 283.294,
+    "duration": 3.9
+  },
+  {
+    "text": "they spread everywhere before you know",
+    "start": 285.394,
+    "duration": 3.9
+  },
+  {
+    "text": "it.",
+    "start": 287.194,
+    "duration": 2.1
+  },
+  {
+    "text": "So you want to make your codebase as",
+    "start": 291.094,
+    "duration": 4.3
+  },
+  {
+    "text": "pristine as possible so that agents are",
+    "start": 293.094,
+    "duration": 5.1
+  },
+  {
+    "text": "always copying the good stuff.",
+    "start": 295.394,
+    "duration": 3.7
+  },
+  {
+    "text": "All right, let's look at some real",
+    "start": 298.194,
+    "duration": 2.5
+  },
+  {
+    "text": "examples.",
+    "start": 299.094,
+    "duration": 3.8
+  },
+  {
+    "text": "Uh so Dune is a client framework that we",
+    "start": 300.694,
+    "duration": 4.4
+  },
+  {
+    "text": "created for Graph Bot to implement this",
+    "start": 302.894,
+    "duration": 5.2
+  },
+  {
+    "text": "idea for organic architecture.",
+    "start": 305.094,
+    "duration": 4.2
+  },
+  {
+    "text": "It's not really that interesting",
+    "start": 308.094,
+    "duration": 3.3
+  },
+  {
+    "text": "technically. Uh you can kind of think of",
+    "start": 309.294,
+    "duration": 5.1
+  },
+  {
+    "text": "Dune as um kind of like Next.js for",
+    "start": 311.394,
+    "duration": 4.5
+  },
+  {
+    "text": "Electron apps.",
+    "start": 314.394,
+    "duration": 2.9
+  },
+  {
+    "text": "But the interesting part of Dune is that",
+    "start": 315.894,
+    "duration": 3.3
+  },
+  {
+    "text": "it has a lot of constraints and lint",
+    "start": 317.294,
+    "duration": 4.6
+  },
+  {
+    "text": "rules that we've encoded uh a lot of the",
+    "start": 319.194,
+    "duration": 4.8
+  },
+  {
+    "text": "lessons that we've learned building",
+    "start": 321.894,
+    "duration": 4.8
+  },
+  {
+    "text": "desktop applications.",
+    "start": 323.994,
+    "duration": 5.0
+  },
+  {
+    "text": "And one such lesson is that anything",
+    "start": 326.694,
+    "duration": 4.7
+  },
+  {
+    "text": "that requires nuance to use well often",
+    "start": 328.994,
+    "duration": 4.3
+  },
+  {
+    "text": "leads to slop.",
+    "start": 331.394,
+    "duration": 4.3
+  },
+  {
+    "text": "Uh you know your classic example is uh",
+    "start": 333.294,
+    "duration": 4.6
+  },
+  {
+    "text": "you know use effect in React, right? It",
+    "start": 335.694,
+    "duration": 4.8
+  },
+  {
+    "text": "has its use cases, uh but it's often",
+    "start": 337.894,
+    "duration": 4.6
+  },
+  {
+    "text": "misused. You know some people joke that",
+    "start": 340.494,
+    "duration": 4.6
+  },
+  {
+    "text": "you need a PhD to use use effect.",
+    "start": 342.494,
+    "duration": 4.5
+  },
+  {
+    "text": "Um and in in other words, it really",
+    "start": 345.094,
+    "duration": 5.0
+  },
+  {
+    "text": "requires a lot of nuance to use well.",
+    "start": 346.994,
+    "duration": 5.7
+  },
+  {
+    "text": "And agents are not good at using it.",
+    "start": 350.094,
+    "duration": 5.5
+  },
+  {
+    "text": "Um so our solution has been to just ban",
+    "start": 352.694,
+    "duration": 5.4
+  },
+  {
+    "text": "it in product code, and it's really only",
+    "start": 355.594,
+    "duration": 4.9
+  },
+  {
+    "text": "allowed in some places inside of Dune",
+    "start": 358.094,
+    "duration": 4.3
+  },
+  {
+    "text": "APIs.",
+    "start": 360.494,
+    "duration": 4.0
+  },
+  {
+    "text": "And effectively, this problem has now",
+    "start": 362.394,
+    "duration": 4.501
+  },
+  {
+    "text": "been categorically eliminated, and we",
+    "start": 364.494,
+    "duration": 3.901
+  },
+  {
+    "text": "never need to catch that during code",
+    "start": 366.895,
+    "duration": 4.0
+  },
+  {
+    "text": "review again.",
+    "start": 368.395,
+    "duration": 4.0
+  },
+  {
+    "text": "Another interesting pattern that we use",
+    "start": 370.895,
+    "duration": 4.5
+  },
+  {
+    "text": "is context through directory structure.",
+    "start": 372.395,
+    "duration": 5.0
+  },
+  {
+    "text": "Uh so one anti-pattern that we saw with",
+    "start": 375.395,
+    "duration": 4.4
+  },
+  {
+    "text": "Cursor, which is an Electron app, is",
+    "start": 377.395,
+    "duration": 4.3
+  },
+  {
+    "text": "that agents would often",
+    "start": 379.795,
+    "duration": 3.8
+  },
+  {
+    "text": "import main thread code into the",
+    "start": 381.695,
+    "duration": 3.7
+  },
+  {
+    "text": "renderer thread, which would cause long",
+    "start": 383.595,
+    "duration": 4.5
+  },
+  {
+    "text": "tasks and jank.",
+    "start": 385.395,
+    "duration": 5.4
+  },
+  {
+    "text": "So in uh Gulp bot and in Dunanaps, we've",
+    "start": 388.095,
+    "duration": 4.9
+  },
+  {
+    "text": "made this very very conventional.",
+    "start": 390.795,
+    "duration": 3.7
+  },
+  {
+    "text": "Uh we have these two top-level",
+    "start": 392.995,
+    "duration": 3.5
+  },
+  {
+    "text": "directories literally called Electron",
+    "start": 394.495,
+    "duration": 4.0
+  },
+  {
+    "text": "renderer and Electron main,",
+    "start": 396.495,
+    "duration": 5.0
+  },
+  {
+    "text": "and imports between them are forbidden",
+    "start": 398.495,
+    "duration": 5.1
+  },
+  {
+    "text": "or banned by our dependency graph",
+    "start": 401.495,
+    "duration": 4.6
+  },
+  {
+    "text": "analyzer and some lint rules.",
+    "start": 403.595,
+    "duration": 4.3
+  },
+  {
+    "text": "And again, you know, these are simple",
+    "start": 406.095,
+    "duration": 4.0
+  },
+  {
+    "text": "lint rules to set up, but it means one",
+    "start": 407.895,
+    "duration": 4.2
+  },
+  {
+    "text": "less thing that we need to review and",
+    "start": 410.095,
+    "duration": 3.6
+  },
+  {
+    "text": "think about uh",
+    "start": 412.095,
+    "duration": 4.4
+  },
+  {
+    "text": "you know, during code review.",
+    "start": 413.695,
+    "duration": 2.8
+  },
+  {
+    "text": "And then",
+    "start": 416.895,
+    "duration": 3.0
+  },
+  {
+    "text": "one more surprising thing that I've seen",
+    "start": 417.895,
+    "duration": 4.9
+  },
+  {
+    "text": "is agents using Markdown. So things like",
+    "start": 419.895,
+    "duration": 5.6
+  },
+  {
+    "text": "documentation, uh code comments, rules",
+    "start": 422.795,
+    "duration": 5.6
+  },
+  {
+    "text": "or skills, and they use this as a place",
+    "start": 425.495,
+    "duration": 5.0
+  },
+  {
+    "text": "to write down their justifications for",
+    "start": 428.395,
+    "duration": 4.6
+  },
+  {
+    "text": "not doing the right thing. Or I don't",
+    "start": 430.495,
+    "duration": 3.7
+  },
+  {
+    "text": "know if you've ever seen this, but",
+    "start": 432.995,
+    "duration": 3.0
+  },
+  {
+    "text": "they'll over rotate on some small",
+    "start": 434.195,
+    "duration": 3.7
+  },
+  {
+    "text": "correction that you made, and they treat",
+    "start": 435.995,
+    "duration": 3.7
+  },
+  {
+    "text": "it like a hard rule that can never be",
+    "start": 437.895,
+    "duration": 4.9
+  },
+  {
+    "text": "broken ever again.",
+    "start": 439.695,
+    "duration": 5.3
+  },
+  {
+    "text": "And here's another example from Cursor.",
+    "start": 442.795,
+    "duration": 4.8
+  },
+  {
+    "text": "So agents really loved using imperative",
+    "start": 444.995,
+    "duration": 4.8
+  },
+  {
+    "text": "timers, so things like set timeout,",
+    "start": 447.595,
+    "duration": 3.9
+  },
+  {
+    "text": "request animation frame, request idle",
+    "start": 449.795,
+    "duration": 3.8
+  },
+  {
+    "text": "callback. And they were using these as",
+    "start": 451.495,
+    "duration": 4.0
+  },
+  {
+    "text": "quick fixes because",
+    "start": 453.595,
+    "duration": 3.8
+  },
+  {
+    "text": "they were really patching over an",
+    "start": 455.495,
+    "duration": 4.1
+  },
+  {
+    "text": "architecture clash between",
+    "start": 457.395,
+    "duration": 4.5
+  },
+  {
+    "text": "uh VS Code's imperative style and",
+    "start": 459.595,
+    "duration": 4.8
+  },
+  {
+    "text": "React's declarative style.",
+    "start": 461.895,
+    "duration": 4.7
+  },
+  {
+    "text": "So our choice of architecture actually",
+    "start": 464.395,
+    "duration": 5.1
+  },
+  {
+    "text": "made both the client and the agent",
+    "start": 466.595,
+    "duration": 4.8
+  },
+  {
+    "text": "performance much worse.",
+    "start": 469.495,
+    "duration": 3.4
+  },
+  {
+    "text": "And if you've ever done any performance",
+    "start": 471.395,
+    "duration": 2.7
+  },
+  {
+    "text": "work in JavaScript, you'll know that",
+    "start": 472.895,
+    "duration": 3.2
+  },
+  {
+    "text": "when you have tons of timers being",
+    "start": 474.095,
+    "duration": 4.4
+  },
+  {
+    "text": "rapidly created and destroyed, causes a",
+    "start": 476.095,
+    "duration": 4.6
+  },
+  {
+    "text": "lot of uh major garbage collection,",
+    "start": 478.495,
+    "duration": 5.1
+  },
+  {
+    "text": "which causes a lot of lag and jank.",
+    "start": 480.695,
+    "duration": 4.4
+  },
+  {
+    "text": "Uh but the worst part is that agents",
+    "start": 483.595,
+    "duration": 3.602
+  },
+  {
+    "text": "wrote a a of code comments, like you can",
+    "start": 485.095,
+    "duration": 4.702
+  },
+  {
+    "text": "see in red here, explaining why this",
+    "start": 487.197,
+    "duration": 4.9
+  },
+  {
+    "text": "quick fix was justified.",
+    "start": 489.797,
+    "duration": 4.6
+  },
+  {
+    "text": "And before you know it, we had timers",
+    "start": 492.097,
+    "duration": 4.4
+  },
+  {
+    "text": "spreading everywhere and the you know",
+    "start": 494.397,
+    "duration": 3.5
+  },
+  {
+    "text": "the performance of the app really",
+    "start": 496.497,
+    "duration": 3.8
+  },
+  {
+    "text": "suffered.",
+    "start": 497.897,
+    "duration": 2.4
+  },
+  {
+    "text": "Now in Grabot, uh we learned our lesson",
+    "start": 500.597,
+    "duration": 5.1
+  },
+  {
+    "text": "there and we decided to just ban 99% of",
+    "start": 502.897,
+    "duration": 3.9
+  },
+  {
+    "text": "comments",
+    "start": 505.697,
+    "duration": 3.7
+  },
+  {
+    "text": "uh because they go stale easily. Uh you",
+    "start": 506.797,
+    "duration": 4.3
+  },
+  {
+    "text": "know humans just really don't bother",
+    "start": 509.397,
+    "duration": 3.9
+  },
+  {
+    "text": "reading the comment slot anyway.",
+    "start": 511.097,
+    "duration": 4.8
+  },
+  {
+    "text": "And again it gives an agent the an",
+    "start": 513.297,
+    "duration": 5.3
+  },
+  {
+    "text": "escape hatch to justify not doing the",
+    "start": 515.897,
+    "duration": 5.6
+  },
+  {
+    "text": "right thing because it's hard.",
+    "start": 518.597,
+    "duration": 4.4
+  },
+  {
+    "text": "Um and the worst part about comments",
+    "start": 521.497,
+    "duration": 3.7
+  },
+  {
+    "text": "though is that they're not enforceable.",
+    "start": 522.997,
+    "duration": 4.3
+  },
+  {
+    "text": "So what seems well intentioned, you know",
+    "start": 525.197,
+    "duration": 4.2
+  },
+  {
+    "text": "like I'm going to tell the the next",
+    "start": 527.297,
+    "duration": 4.1
+  },
+  {
+    "text": "agent not to do something,",
+    "start": 529.397,
+    "duration": 3.5
+  },
+  {
+    "text": "never ends up actually being anything",
+    "start": 531.397,
+    "duration": 3.3
+  },
+  {
+    "text": "that you can trust.",
+    "start": 532.897,
+    "duration": 3.1
+  },
+  {
+    "text": "So",
+    "start": 534.697,
+    "duration": 4.2
+  },
+  {
+    "text": "in Grabot and Dune and in Dune uh we now",
+    "start": 535.997,
+    "duration": 5.1
+  },
+  {
+    "text": "have lint rules that give uh",
+    "start": 538.897,
+    "duration": 4.0
+  },
+  {
+    "text": "good and very helpful error messages",
+    "start": 541.097,
+    "duration": 4.8
+  },
+  {
+    "text": "telling the agent to fix the root cause,",
+    "start": 542.897,
+    "duration": 5.1
+  },
+  {
+    "text": "the real problem uh rather than just",
+    "start": 545.897,
+    "duration": 4.8
+  },
+  {
+    "text": "patch around it.",
+    "start": 547.997,
+    "duration": 4.2
+  },
+  {
+    "text": "And so our general principle is that",
+    "start": 550.697,
+    "duration": 3.0
+  },
+  {
+    "text": "every time we correct our agents, it",
+    "start": 552.197,
+    "duration": 3.1
+  },
+  {
+    "text": "turns into one of these deterministic",
+    "start": 553.697,
+    "duration": 3.5
+  },
+  {
+    "text": "checks or we think about how to",
+    "start": 555.297,
+    "duration": 3.8
+  },
+  {
+    "text": "categorically eliminate that problem in",
+    "start": 557.197,
+    "duration": 4.3
+  },
+  {
+    "text": "the code through better API design,",
+    "start": 559.097,
+    "duration": 4.8
+  },
+  {
+    "text": "through better architecture.",
+    "start": 561.497,
+    "duration": 4.6
+  },
+  {
+    "text": "And if you do this enough times, you'll",
+    "start": 563.897,
+    "duration": 5.0
+  },
+  {
+    "text": "find that you have just less things to",
+    "start": 566.097,
+    "duration": 4.6
+  },
+  {
+    "text": "look out for in code review.",
+    "start": 568.897,
+    "duration": 3.9
+  },
+  {
+    "text": "And at some point you'll realize there's",
+    "start": 570.697,
+    "duration": 3.7
+  },
+  {
+    "text": "there's nothing left to review.",
+    "start": 572.797,
+    "duration": 3.8
+  },
+  {
+    "text": "And you can just let agents merge their",
+    "start": 574.397,
+    "duration": 6.1
+  },
+  {
+    "text": "most of their own pull requests.",
+    "start": 576.597,
+    "duration": 3.9
+  },
+  {
+    "text": "All right. Uh moving on, verification is",
+    "start": 580.897,
+    "duration": 4.7
+  },
+  {
+    "text": "also a really big part of how we make",
+    "start": 583.497,
+    "duration": 4.3
+  },
+  {
+    "text": "our agent more autonomous and also",
+    "start": 585.597,
+    "duration": 4.1
+  },
+  {
+    "text": "increase our confidence and trust in",
+    "start": 587.797,
+    "duration": 2.9
+  },
+  {
+    "text": "their work.",
+    "start": 589.697,
+    "duration": 3.0
+  },
+  {
+    "text": "And our code review process has now",
+    "start": 590.697,
+    "duration": 3.3
+  },
+  {
+    "text": "really shrunk into looking at",
+    "start": 592.697,
+    "duration": 3.7
+  },
+  {
+    "text": "verification artifacts instead. So",
+    "start": 593.997,
+    "duration": 4.8
+  },
+  {
+    "text": "things like videos, screenshots,",
+    "start": 596.397,
+    "duration": 5.7
+  },
+  {
+    "text": "diagrams, formal verification.",
+    "start": 598.797,
+    "duration": 5.6
+  },
+  {
+    "text": "Um and the most basic example of this is",
+    "start": 602.097,
+    "duration": 4.0
+  },
+  {
+    "text": "runtime verification",
+    "start": 604.397,
+    "duration": 3.4
+  },
+  {
+    "text": "uh which is just a fancy way of saying",
+    "start": 606.097,
+    "duration": 3.501
+  },
+  {
+    "text": "giving your agent a way to run the code",
+    "start": 607.797,
+    "duration": 4.301
+  },
+  {
+    "text": "for itself and use debugging tools that,",
+    "start": 609.598,
+    "duration": 4.4
+  },
+  {
+    "text": "you know, human developers use as well,",
+    "start": 612.098,
+    "duration": 4.7
+  },
+  {
+    "text": "like the Chrome DevTools protocol.",
+    "start": 613.998,
+    "duration": 4.9
+  },
+  {
+    "text": "Um, in our runtime verification skills,",
+    "start": 616.798,
+    "duration": 3.3
+  },
+  {
+    "text": "we have this thing that we call a",
+    "start": 618.898,
+    "duration": 2.9
+  },
+  {
+    "text": "feature map.",
+    "start": 620.098,
+    "duration": 3.7
+  },
+  {
+    "text": "And that's basically kind of like a site",
+    "start": 621.798,
+    "duration": 4.0
+  },
+  {
+    "text": "map of all of the features that are",
+    "start": 623.798,
+    "duration": 3.7
+  },
+  {
+    "text": "available in your application from the",
+    "start": 625.798,
+    "duration": 3.3
+  },
+  {
+    "text": "user's point of view.",
+    "start": 627.498,
+    "duration": 3.3
+  },
+  {
+    "text": "And so with this, agents don't need to",
+    "start": 629.098,
+    "duration": 3.9
+  },
+  {
+    "text": "guess when you say, you know, the thingy",
+    "start": 630.798,
+    "duration": 4.2
+  },
+  {
+    "text": "in the left sidebar, it gives you some",
+    "start": 632.998,
+    "duration": 4.7
+  },
+  {
+    "text": "shared vocabulary.",
+    "start": 634.998,
+    "duration": 4.7
+  },
+  {
+    "text": "And we also make use of custom CLIs",
+    "start": 637.698,
+    "duration": 4.6
+  },
+  {
+    "text": "inside these skills so that agents can",
+    "start": 639.698,
+    "duration": 5.6
+  },
+  {
+    "text": "reuse the the CLI and the driver every",
+    "start": 642.298,
+    "duration": 5.1
+  },
+  {
+    "text": "time, which cuts down on token usage and",
+    "start": 645.298,
+    "duration": 5.1
+  },
+  {
+    "text": "is also testable.",
+    "start": 647.398,
+    "duration": 3.0
+  },
+  {
+    "text": "Um, and then recently we've also started",
+    "start": 650.898,
+    "duration": 3.7
+  },
+  {
+    "text": "looking at formal verification.",
+    "start": 652.398,
+    "duration": 4.4
+  },
+  {
+    "text": "Uh, so we now use TLA Plus to do some",
+    "start": 654.598,
+    "duration": 4.6
+  },
+  {
+    "text": "model checking of major user flows such",
+    "start": 656.798,
+    "duration": 4.9
+  },
+  {
+    "text": "as notifications across multiple devices",
+    "start": 659.198,
+    "duration": 4.1
+  },
+  {
+    "text": "and platforms.",
+    "start": 661.698,
+    "duration": 3.2
+  },
+  {
+    "text": "Uh, we use a lean as well for proving",
+    "start": 663.298,
+    "duration": 3.3
+  },
+  {
+    "text": "certain algorithms.",
+    "start": 664.898,
+    "duration": 3.4
+  },
+  {
+    "text": "Uh, for example, we have our own we",
+    "start": 666.598,
+    "duration": 3.3
+  },
+  {
+    "text": "wrote our own custom virtualization",
+    "start": 668.298,
+    "duration": 3.7
+  },
+  {
+    "text": "library and we use lean there to check",
+    "start": 669.898,
+    "duration": 4.1
+  },
+  {
+    "text": "that we don't have, you know, flickering",
+    "start": 671.998,
+    "duration": 4.2
+  },
+  {
+    "text": "or jittering problems.",
+    "start": 673.998,
+    "duration": 3.6
+  },
+  {
+    "text": "Um, and we're still experimenting with",
+    "start": 676.198,
+    "duration": 3.2
+  },
+  {
+    "text": "this approach overall. It seems very",
+    "start": 677.598,
+    "duration": 3.7
+  },
+  {
+    "text": "promising. Uh, we've already found quite",
+    "start": 679.398,
+    "duration": 6.0
+  },
+  {
+    "text": "a few bugs with formal verification.",
+    "start": 681.298,
+    "duration": 5.5
+  },
+  {
+    "text": "Uh, but it's certainly not a silver",
+    "start": 685.398,
+    "duration": 4.8
+  },
+  {
+    "text": "bullet and we're treating it as another",
+    "start": 686.798,
+    "duration": 6.5
+  },
+  {
+    "text": "tool, another layer in our agents'",
+    "start": 690.198,
+    "duration": 5.6
+  },
+  {
+    "text": "environment.",
+    "start": 693.298,
+    "duration": 4.4
+  },
+  {
+    "text": "Uh, and then this is a very fast video,",
+    "start": 695.798,
+    "duration": 4.0
+  },
+  {
+    "text": "but another thing that we just started",
+    "start": 697.698,
+    "duration": 4.0
+  },
+  {
+    "text": "looking at is property-based testing as",
+    "start": 699.798,
+    "duration": 3.7
+  },
+  {
+    "text": "well for UIs.",
+    "start": 701.698,
+    "duration": 2.9
+  },
+  {
+    "text": "Uh, so we use this library called",
+    "start": 703.498,
+    "duration": 2.4
+  },
+  {
+    "text": "Bombadil.",
+    "start": 704.598,
+    "duration": 3.3
+  },
+  {
+    "text": "Um, and this has also caught a few UI",
+    "start": 705.898,
+    "duration": 5.2
+  },
+  {
+    "text": "bugs for us already.",
+    "start": 707.898,
+    "duration": 3.2
+  },
+  {
+    "text": "Okay, so zooming out, I saw this tweet",
+    "start": 711.998,
+    "duration": 4.7
+  },
+  {
+    "text": "from Cindy and 6 months ago she she said",
+    "start": 713.698,
+    "duration": 4.2
+  },
+  {
+    "text": "that she was",
+    "start": 716.698,
+    "duration": 3.1
+  },
+  {
+    "text": "oh, she was talking about not being able",
+    "start": 717.898,
+    "duration": 4.0
+  },
+  {
+    "text": "to trust her agents because of subtle",
+    "start": 719.798,
+    "duration": 5.4
+  },
+  {
+    "text": "bugs that were getting merged.",
+    "start": 721.898,
+    "duration": 5.0
+  },
+  {
+    "text": "And really what was missing for her in",
+    "start": 725.198,
+    "duration": 3.2
+  },
+  {
+    "text": "being able to trust her agents was the",
+    "start": 726.898,
+    "duration": 4.2
+  },
+  {
+    "text": "verification process. And now, 6 months",
+    "start": 728.398,
+    "duration": 5.201
+  },
+  {
+    "text": "later, she says that 70% of her daily",
+    "start": 731.098,
+    "duration": 5.201
+  },
+  {
+    "text": "tokens go into verification. And I'd say",
+    "start": 733.599,
+    "duration": 4.7
+  },
+  {
+    "text": "that that tracks with what I see as",
+    "start": 736.299,
+    "duration": 4.2
+  },
+  {
+    "text": "well, that most of my token usage goes",
+    "start": 738.299,
+    "duration": 4.3
+  },
+  {
+    "text": "to verification.",
+    "start": 740.499,
+    "duration": 3.2
+  },
+  {
+    "text": "And if you really look closely at her",
+    "start": 742.599,
+    "duration": 3.5
+  },
+  {
+    "text": "process, none of these things here are",
+    "start": 743.699,
+    "duration": 4.6
+  },
+  {
+    "text": "new or novel techniques that we've never",
+    "start": 746.099,
+    "duration": 4.6
+  },
+  {
+    "text": "had before.",
+    "start": 748.299,
+    "duration": 4.0
+  },
+  {
+    "text": "These are just good software engineering",
+    "start": 750.699,
+    "duration": 4.0
+  },
+  {
+    "text": "tools, but ones that might have been",
+    "start": 752.299,
+    "duration": 4.9
+  },
+  {
+    "text": "prohibitively expensive to use before as",
+    "start": 754.699,
+    "duration": 4.6
+  },
+  {
+    "text": "they were hard to understand or write or",
+    "start": 757.199,
+    "duration": 3.5
+  },
+  {
+    "text": "maintain.",
+    "start": 759.299,
+    "duration": 2.3
+  },
+  {
+    "text": "But",
+    "start": 760.699,
+    "duration": 3.0
+  },
+  {
+    "text": "agents drastically cut this cost down.",
+    "start": 761.599,
+    "duration": 4.1
+  },
+  {
+    "text": "And really, we are entering a golden age",
+    "start": 763.699,
+    "duration": 4.1
+  },
+  {
+    "text": "of software testing and verification",
+    "start": 765.699,
+    "duration": 4.3
+  },
+  {
+    "text": "because agents let us test everything to",
+    "start": 767.799,
+    "duration": 4.3
+  },
+  {
+    "text": "a much greater degree than used to be",
+    "start": 769.999,
+    "duration": 4.8
+  },
+  {
+    "text": "economical.",
+    "start": 772.099,
+    "duration": 2.7
+  },
+  {
+    "text": "And then formal verification can also",
+    "start": 774.999,
+    "duration": 3.3
+  },
+  {
+    "text": "help you better reason about how your",
+    "start": 776.799,
+    "duration": 3.1
+  },
+  {
+    "text": "product should work and whether your",
+    "start": 778.299,
+    "duration": 3.2
+  },
+  {
+    "text": "agents really understand your intent and",
+    "start": 779.899,
+    "duration": 2.8
+  },
+  {
+    "text": "goals.",
+    "start": 781.499,
+    "duration": 2.9
+  },
+  {
+    "text": "Uh I made this new skill called state",
+    "start": 782.699,
+    "duration": 4.6
+  },
+  {
+    "text": "chart uh in my plugin P stack, potato",
+    "start": 784.399,
+    "duration": 4.8
+  },
+  {
+    "text": "stack, uh which helps you visualize",
+    "start": 787.299,
+    "duration": 4.0
+  },
+  {
+    "text": "state machines from uh",
+    "start": 789.199,
+    "duration": 4.0
+  },
+  {
+    "text": "from the user's point of view.",
+    "start": 791.299,
+    "duration": 3.4
+  },
+  {
+    "text": "Uh and it's I find this much easier to",
+    "start": 793.199,
+    "duration": 3.3
+  },
+  {
+    "text": "review alongside the videos and",
+    "start": 794.699,
+    "duration": 4.1
+  },
+  {
+    "text": "screenshots that we provide.",
+    "start": 796.499,
+    "duration": 4.7
+  },
+  {
+    "text": "Um and so that's been great.",
+    "start": 798.799,
+    "duration": 4.1
+  },
+  {
+    "text": "Sorry for the flashback.",
+    "start": 801.199,
+    "duration": 3.9
+  },
+  {
+    "text": "Uh okay, now let's look at what the",
+    "start": 802.899,
+    "duration": 4.4
+  },
+  {
+    "text": "promised land looks like. What do you",
+    "start": 805.099,
+    "duration": 4.8
+  },
+  {
+    "text": "get in return for all of this uh you",
+    "start": 807.299,
+    "duration": 4.9
+  },
+  {
+    "text": "know investment?",
+    "start": 809.899,
+    "duration": 4.6
+  },
+  {
+    "text": "So on the Growth Bot team, our velocity",
+    "start": 812.199,
+    "duration": 5.5
+  },
+  {
+    "text": "is uh taking off and rapidly increasing.",
+    "start": 814.499,
+    "duration": 5.6
+  },
+  {
+    "text": "And last month, our team shipped",
+    "start": 817.699,
+    "duration": 5.3
+  },
+  {
+    "text": "a ridiculous 11,000 pull requests to",
+    "start": 820.099,
+    "duration": 4.2
+  },
+  {
+    "text": "production,",
+    "start": 822.999,
+    "duration": 2.9
+  },
+  {
+    "text": "which is a wild number.",
+    "start": 824.299,
+    "duration": 4.2
+  },
+  {
+    "text": "And our pace of releasing the client has",
+    "start": 825.899,
+    "duration": 4.9
+  },
+  {
+    "text": "also increased. And we cut a new stable",
+    "start": 828.499,
+    "duration": 5.6
+  },
+  {
+    "text": "version about once a day.",
+    "start": 830.799,
+    "duration": 5.1
+  },
+  {
+    "text": "And then the core team is also shipping",
+    "start": 834.099,
+    "duration": 4.4
+  },
+  {
+    "text": "much more. And we also have uh a lot",
+    "start": 835.899,
+    "duration": 5.9
+  },
+  {
+    "text": "more casual or drive-by contributors who",
+    "start": 838.499,
+    "duration": 5.9
+  },
+  {
+    "text": "don't always have a lot of context,",
+    "start": 841.799,
+    "duration": 5.1
+  },
+  {
+    "text": "uh but they're also contributing. Um and",
+    "start": 844.399,
+    "duration": 6.4
+  },
+  {
+    "text": "in October, we had about 227 people who",
+    "start": 846.899,
+    "duration": 8.0
+  },
+  {
+    "text": "contributed at least one pull request.",
+    "start": 850.799,
+    "duration": 4.1
+  },
+  {
+    "text": "So So this velocity accelerating, you",
+    "start": 854.999,
+    "duration": 3.102
+  },
+  {
+    "text": "might be thinking to yourself like isn't",
+    "start": 856.799,
+    "duration": 2.802
+  },
+  {
+    "text": "this going to be chaos? You know, isn't",
+    "start": 858.101,
+    "duration": 3.2
+  },
+  {
+    "text": "this going to be a bunch of slop?",
+    "start": 859.601,
+    "duration": 4.1
+  },
+  {
+    "text": "But actually, the number of PRs that get",
+    "start": 861.301,
+    "duration": 4.2
+  },
+  {
+    "text": "reverted has actually gotten lower on a",
+    "start": 863.701,
+    "duration": 4.0
+  },
+  {
+    "text": "relative basis and is steady at about",
+    "start": 865.501,
+    "duration": 4.8
+  },
+  {
+    "text": "half a percent.",
+    "start": 867.701,
+    "duration": 2.6
+  },
+  {
+    "text": "But I think the really interesting thing",
+    "start": 870.501,
+    "duration": 4.2
+  },
+  {
+    "text": "about this shipping pace and this volume",
+    "start": 872.101,
+    "duration": 4.5
+  },
+  {
+    "text": "of pull requests",
+    "start": 874.701,
+    "duration": 4.4
+  },
+  {
+    "text": "is that the performance of Graph Bot has",
+    "start": 876.601,
+    "duration": 5.2
+  },
+  {
+    "text": "stayed not just stable, but has improved",
+    "start": 879.101,
+    "duration": 4.4
+  },
+  {
+    "text": "on multiple dimensions compared to when",
+    "start": 881.801,
+    "duration": 5.1
+  },
+  {
+    "text": "we launched. So startup, typing, opening",
+    "start": 883.501,
+    "duration": 5.8
+  },
+  {
+    "text": "new chats, switching chats, all of this",
+    "start": 886.901,
+    "duration": 4.2
+  },
+  {
+    "text": "has gotten faster.",
+    "start": 889.301,
+    "duration": 4.5
+  },
+  {
+    "text": "And keep in mind, Graph Bot is still an",
+    "start": 891.101,
+    "duration": 4.0
+  },
+  {
+    "text": "Electron app",
+    "start": 893.801,
+    "duration": 2.3
+  },
+  {
+    "text": "for now.",
+    "start": 895.101,
+    "duration": 3.0
+  },
+  {
+    "text": "So there is a ceiling, right? But it's",
+    "start": 896.101,
+    "duration": 4.3
+  },
+  {
+    "text": "already much faster than many other",
+    "start": 898.101,
+    "duration": 4.3
+  },
+  {
+    "text": "agent UIs out there.",
+    "start": 900.401,
+    "duration": 5.0
+  },
+  {
+    "text": "And for an Electron app with this high",
+    "start": 902.401,
+    "duration": 4.7
+  },
+  {
+    "text": "velocity and this many people",
+    "start": 905.401,
+    "duration": 2.9
+  },
+  {
+    "text": "contributing,",
+    "start": 907.101,
+    "duration": 4.2
+  },
+  {
+    "text": "I'd say that's pretty good.",
+    "start": 908.301,
+    "duration": 4.9
+  },
+  {
+    "text": "So before you jump into building out a",
+    "start": 911.301,
+    "duration": 3.3
+  },
+  {
+    "text": "software factory and you know,",
+    "start": 913.201,
+    "duration": 3.9
+  },
+  {
+    "text": "automating everything that you can,",
+    "start": 914.601,
+    "duration": 4.3
+  },
+  {
+    "text": "whenever you correct your agent, try and",
+    "start": 917.101,
+    "duration": 4.1
+  },
+  {
+    "text": "do it by improving your codebase first.",
+    "start": 918.901,
+    "duration": 3.6
+  },
+  {
+    "text": "You know, start with a lint rule to",
+    "start": 921.201,
+    "duration": 4.0
+  },
+  {
+    "text": "prevent new occurrences of anti-patterns",
+    "start": 922.501,
+    "duration": 4.9
+  },
+  {
+    "text": "and then clean up those old patterns as",
+    "start": 925.201,
+    "duration": 3.0
+  },
+  {
+    "text": "well.",
+    "start": 927.401,
+    "duration": 1.9
+  },
+  {
+    "text": "And then make sure that your",
+    "start": 928.201,
+    "duration": 4.8
+  },
+  {
+    "text": "verification story is really strong.",
+    "start": 929.301,
+    "duration": 5.7
+  },
+  {
+    "text": "A lot of this work is a prerequisite to",
+    "start": 933.001,
+    "duration": 4.5
+  },
+  {
+    "text": "automation anyway. And if your inner",
+    "start": 935.001,
+    "duration": 5.6
+  },
+  {
+    "text": "coding loop produces slop, then",
+    "start": 937.501,
+    "duration": 5.1
+  },
+  {
+    "text": "automating that loop just produces more",
+    "start": 940.601,
+    "duration": 4.1
+  },
+  {
+    "text": "slop and you need to throw more and more",
+    "start": 942.601,
+    "duration": 3.9
+  },
+  {
+    "text": "and more tokens at the problem, which we",
+    "start": 944.701,
+    "duration": 4.9
+  },
+  {
+    "text": "all know is very expensive.",
+    "start": 946.501,
+    "duration": 4.5
+  },
+  {
+    "text": "And once you meet these investments",
+    "start": 949.601,
+    "duration": 3.5
+  },
+  {
+    "text": "into, you know, code into your codebase,",
+    "start": 951.001,
+    "duration": 4.1
+  },
+  {
+    "text": "static analysis, runtime informal",
+    "start": 953.101,
+    "duration": 3.4
+  },
+  {
+    "text": "verification,",
+    "start": 955.101,
+    "duration": 3.5
+  },
+  {
+    "text": "you'll start to find that many things",
+    "start": 956.501,
+    "duration": 4.9
+  },
+  {
+    "text": "become possible with these foundations",
+    "start": 958.601,
+    "duration": 4.3
+  },
+  {
+    "text": "and that you can really easily build",
+    "start": 961.401,
+    "duration": 3.5
+  },
+  {
+    "text": "your own factory on top of these",
+    "start": 962.901,
+    "duration": 4.3
+  },
+  {
+    "text": "foundations.",
+    "start": 964.901,
+    "duration": 3.8
+  },
+  {
+    "text": "And when you're ready, Graph Bot is a",
+    "start": 967.201,
+    "duration": 3.9
+  },
+  {
+    "text": "great way to build that outer loop. We",
+    "start": 968.701,
+    "duration": 4.2
+  },
+  {
+    "text": "have tons of connectors, routines that",
+    "start": 971.101,
+    "duration": 4.1
+  },
+  {
+    "text": "can kick off cursor, cloud agents, and",
+    "start": 972.901,
+    "duration": 3.601
+  },
+  {
+    "text": "projects",
+    "start": 975.201,
+    "duration": 2.701
+  },
+  {
+    "text": "uh which let you orchestrate thousands",
+    "start": 976.502,
+    "duration": 3.4
+  },
+  {
+    "text": "of uh hundreds or even thousands of",
+    "start": 977.902,
+    "duration": 3.1
+  },
+  {
+    "text": "agents.",
+    "start": 979.902,
+    "duration": 2.8
+  },
+  {
+    "text": "And as a quick example, you know,",
+    "start": 981.002,
+    "duration": 3.6
+  },
+  {
+    "text": "whenever we cut a new release now,",
+    "start": 982.702,
+    "duration": 4.0
+  },
+  {
+    "text": "Grokbot will automatically spin up a new",
+    "start": 984.602,
+    "duration": 4.4
+  },
+  {
+    "text": "cursor project for us that will fuzz the",
+    "start": 986.702,
+    "duration": 4.7
+  },
+  {
+    "text": "entire application, the entire build,",
+    "start": 989.002,
+    "duration": 4.5
+  },
+  {
+    "text": "and it will find bugs uh by running the",
+    "start": 991.402,
+    "duration": 4.3
+  },
+  {
+    "text": "app and using it like a real user.",
+    "start": 993.502,
+    "duration": 4.5
+  },
+  {
+    "text": "And then it's going to open fixed PRs",
+    "start": 995.702,
+    "duration": 4.1
+  },
+  {
+    "text": "for each of those bugs that it finds and",
+    "start": 998.002,
+    "duration": 4.6
+  },
+  {
+    "text": "it's going to auto merge it as uh",
+    "start": 999.802,
+    "duration": 5.1
+  },
+  {
+    "text": "crazy as that sounds. And that's because",
+    "start": 1002.602,
+    "duration": 4.3
+  },
+  {
+    "text": "our codebase is good enough that pull",
+    "start": 1004.902,
+    "duration": 4.2
+  },
+  {
+    "text": "requests tend to just be good by default",
+    "start": 1006.902,
+    "duration": 4.2
+  },
+  {
+    "text": "and most product code that we land no",
+    "start": 1009.102,
+    "duration": 4.0
+  },
+  {
+    "text": "longer really requires deep human",
+    "start": 1011.102,
+    "duration": 4.3
+  },
+  {
+    "text": "review.",
+    "start": 1013.102,
+    "duration": 2.3
+  },
+  {
+    "text": "So",
+    "start": 1016.002,
+    "duration": 3.5
+  },
+  {
+    "text": "when you have solid foundations and good",
+    "start": 1017.302,
+    "duration": 5.0
+  },
+  {
+    "text": "organic architecture, you can turn slop",
+    "start": 1019.502,
+    "duration": 5.0
+  },
+  {
+    "text": "into gold and you can ship with high",
+    "start": 1022.302,
+    "duration": 3.9
+  },
+  {
+    "text": "quality uh",
+    "start": 1024.502,
+    "duration": 3.9
+  },
+  {
+    "text": "high velocity without compromising on",
+    "start": 1026.202,
+    "duration": 3.3
+  },
+  {
+    "text": "quality.",
+    "start": 1028.402,
+    "duration": 3.1
+  },
+  {
+    "text": "My name is Potato, also known as Lauren.",
+    "start": 1029.502,
+    "duration": 3.5
+  },
+  {
+    "text": "Thanks to you again for listening to my",
+    "start": 1031.502,
+    "duration": 2.754
+  },
+  {
+    "text": "talk.",
+    "start": 1033.002,
+    "duration": 3.274
+  },
+  {
+    "text": ">> [applause]",
+    "start": 1034.256,
+    "duration": 2.02
+  }
+]
